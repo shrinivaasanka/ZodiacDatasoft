@@ -10,4 +10,5 @@ They have been segregated into (txt and pdf files):
 
 These will be updated periodically adapted for classroom teaching depending on feasibility of free courses.
 These contain copyrighted materials - author's publications and yet to be published drafts on various computer science topics.
-
+   
+http://neuronrain-documentation.readthedocs.io/en/latest/
