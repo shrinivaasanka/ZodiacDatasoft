@@ -1,0 +1,51 @@
+##############################################################################################################################################
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+##############################################################################################################################################
+Course Authored By:
+-----------------------------------------------------------------------------------------------------------
+Srinivasan Kannan 
+(also known as: Shrinivaasan Kannan, Shrinivas Kannan)
+Ph: 9791499106, 9003082186
+Krishna iResearch Open Source Products Profiles:
+http://sourceforge.net/users/ka_shrinivaasan,
+https://github.com/shrinivaasanka,
+https://www.openhub.net/accounts/ka_shrinivaasan
+Personal website(research): https://sites.google.com/site/kuja27/
+emails: ka.shrinivaasan@gmail.com, shrinivas.kannan@gmail.com,
+kashrinivaasan@live.com
+-----------------------------------------------------------------------------------------------------------
+##############################################################################################################################################
+
+This is a non-linearly organized, code puzzles oriented, continually updated set of course notes on C language. Though C is at present
+rapidly diminishing in usage because of many high level languages and big data tools for cloud processing, a primer in C is essential for
+grasping nuances of operating system memory management, networking and threading
+----------------------------------------------------------------------------------------------------------------
+References:
+-----------
+1. C Puzzle Book - Alan R.Feuer
+
+2 February 2017 
+----------------
+Arithmetic Operators:
+
+#include <stdio.h>
+
+main()
+{
+        int x;
+        x = -3 + 4 * 5 - 6; printf("%d\n",x);
+        x = 3 + 4 % 5 - 6; printf("%d\n",x);
+        x = -3 * 4 % -6 / 5; printf("%d\n",x);
+        x = (7 + 6) % 5 / 2; printf("%d\n",x);
+}
+
+/*
+        Above prints:
+        11 (-3 unary operator has precedence over binary, * has precedence over + and -. (-3)+(20) -6 = 11 )
+        1 ( remainder operator (modulus) % has precedence. 3 + (4) - 6 = 1)
+        0 ( (((-3 * 4) % -6)/5) = (-12 % -6) % (-1) = 0. Operator precedence is same and evaluation is from left to right )
+        1 ( ((13) % 5) / 2 = 3 % 2 = 1 )
+*/
+ 
+
+
