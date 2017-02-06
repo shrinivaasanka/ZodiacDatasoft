@@ -1,0 +1,41 @@
+##############################################################################################################################################
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+##############################################################################################################################################
+Course Authored By:
+-----------------------------------------------------------------------------------------------------------
+Srinivasan Kannan
+(also known as: Shrinivaasan Kannan, Shrinivas Kannan)
+Ph: 9791499106, 9003082186
+Krishna iResearch Open Source Products Profiles:
+http://sourceforge.net/users/ka_shrinivaasan,
+https://github.com/shrinivaasanka,
+https://www.openhub.net/accounts/ka_shrinivaasan
+Personal website(research): https://sites.google.com/site/kuja27/
+emails: ka.shrinivaasan@gmail.com, shrinivas.kannan@gmail.com,
+kashrinivaasan@live.com
+-----------------------------------------------------------------------------------------------------------
+##############################################################################################################################################
+
+This is a non-linearly organized, code puzzles oriented, continually updated set of course notes on Python language. This
+complements NeuronRain course materials on Linux Kernel, Cloud, BigData Analytics and Machine Learning and covers 
+fundamentals of Python.
+----------------------------------------------------------------------------------------------------------------------------
+6 February 2017
+---------------
+Code Reference:
+---------------
+https://github.com/shrinivaasanka/asfer-github-code/blob/master/python-src/CNFSATSolver.py
+
+Python's object oriented paradigm is quite similar to most of the languages like Java and C++ but the difference in number of lines code
+for same algorithm between Python and C++/Java is what makes it favourable for Natural Language Processing and writing microservices (services
+with small functionality which are interconnected). Python is more Haskell or LISP functional language-like and achieves both worlds of functional programming and imperative procedural programming by Lambda on-th-fly functions. Previous code demonstrates some of the minimum basic features of Python:
+	- Python Classes 
+	- Tuples
+	- Lists
+	- List Slicing
+	- Set operations on python objects
+	- Control structures (for, if)
+	- Python object member functions and self keyword
+
+Python classes are defined with class <class>(<baseclass>) and member functions are defined with def <function>(). Base class by default is object unless explicitly stated. Tuples are ordered pairs of arbitrary dimensions equivalent to vectorspaces in mathematics defined with (). Lists are equivalent to arrays in C defined with [] subscripts. Accessing an element in both tuples and lists are by [] subscript. Concepts of slicing is central to list comprehension in Python. Slicing can return a contiguous subset of a list by [<start>:<end>] notation. When either start or end is ignored implicit list start and end are assumed. For loops in python can iterate over any "iterable" object. Iterables include lists, dictionaries and user defined containers. if..else..elif is the python equivalent of conditional clauses with truth values being boolean keywords "True" or "False" which are builtins. Python classes denote self keyword to be the present object instantiated (equivalent to "this" in C++) 
+
