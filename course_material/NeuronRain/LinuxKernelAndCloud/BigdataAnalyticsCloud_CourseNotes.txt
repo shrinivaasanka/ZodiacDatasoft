@@ -1,0 +1,32 @@
+##############################################################################################################################################
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+##############################################################################################################################################
+Course Authored By:
+-----------------------------------------------------------------------------------------------------------
+Srinivasan Kannan
+(also known as: Shrinivaasan Kannan, Shrinivas Kannan)
+Ph: 9791499106, 9003082186
+Krishna iResearch Open Source Products Profiles:
+http://sourceforge.net/users/ka_shrinivaasan,
+https://github.com/shrinivaasanka,
+https://www.openhub.net/accounts/ka_shrinivaasan
+Personal website(research): https://sites.google.com/site/kuja27/
+emails: ka.shrinivaasan@gmail.com, shrinivas.kannan@gmail.com,
+kashrinivaasan@live.com
+-----------------------------------------------------------------------------------------------------------
+##############################################################################################################################################
+
+This is a non-linearly organized, code puzzles oriented, continually updated set of course notes on Cloud computing frameworks and 
+BigData analysis. 
+----------------------------------------------------------------------------------------------------------------------------
+
+7 Februrary 2017
+----------------
+Apache Spark is a Cloud computing software for processing bigdata. It is based on concept of Resilient Distributed Datasets (RDD) which are partitions of a dataset executed in parallel. Spark is divided into 2 components: 1) Driver and 2) Executor. Driver splits the dataset into RDDs and allocates each RDD to an executor in parallel. Parallelization can be in two ways: 1) For objects like lists,arrays etc., 2) For data in HDFS,cassandra, S3 etc.,  
+
+While executing in parallel, there is a necessity to share mutable state across executors. This is done in two ways: Broadcast variables and Accumulators (only increment is allowed). Spark streaming is a feature that allows realtime processing of streaming data by an abstraction of Discretized Streams or DStreams. Following code in neuronrain asfer receives generic data from any URL, does an ETL on it and stores in RDDs:
+https://github.com/shrinivaasanka/asfer-github-code/blob/master/java-src/bigdata_analytics/spark_streaming/SparkGenericStreaming.java
+
+There are 2 operations performed on RDDs: 1) Transformations - create a new set or subset of RDDs 2) Actions - do some iteration on transformed RDDs. Spark streaming allows custom streaming by implementing/overriding receive() method in Receiver interface. Receiver can be started and stopped by onStart() and onStop() methods. Receive method is overridden with customized code to access a remote URL, fetch HTML, parse it and do any ETL operation as deemed fit. From Spark 2.0.0 , support for lambda functions (new feature in Java 8) instead of *.function.* (Function objects) for RDD transformations has been included. Previous Spark Streaming code demonstrates these features and uses Jsoup GET RESTful API for ETL/scraping of remote URL data.
+
+ 
