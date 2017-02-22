@@ -1,0 +1,74 @@
+##############################################################################################################################################
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+##############################################################################################################################################
+Course Authored By:
+-----------------------------------------------------------------------------------------------------------
+Srinivasan Kannan
+(also known as: Shrinivaasan Kannan, Shrinivas Kannan)
+Ph: 9791499106, 9003082186
+Krishna iResearch Open Source Products Profiles:
+http://sourceforge.net/users/ka_shrinivaasan,
+https://github.com/shrinivaasanka,
+https://www.openhub.net/accounts/ka_shrinivaasan
+Personal website(research): https://sites.google.com/site/kuja27/
+emails: ka.shrinivaasan@gmail.com, shrinivas.kannan@gmail.com,
+kashrinivaasan@live.com
+-----------------------------------------------------------------------------------------------------------
+##############################################################################################################################################
+
+This is a non-linearly organized, code puzzles oriented, continually updated set of course notes on C++ language. This
+complements NeuronRain course materials on Linux Kernel, Cloud, BigData Analytics and Machine Learning and covers
+fundamentals of C++.
+----------------------------------------------------------------------------------------------------------------------------
+
+22 February 2017
+----------------
+An example on C++ templates and Runtime type identification:
+------------------------------------------------------------
+Example code snippet in code/templates.cpp implements a simple templatized book class with book type string as template parameter. Template
+book is instantiated with template and typename keywords and type T can be any subject type passed in as template parameter. Template class
+EBook derives from base class Book<T>. A subtlety in this example is absence of default constructor for Book<T> causes following compiler 
+error:
+
+g++ -g -o templates -I/usr/local/include -L/usr/local/lib -std=c++14 *.cpp
+templates.cpp: In instantiation of ‘EBook<T>::EBook(T) [with T = std::__cxx11::basic_string<char>]’:
+templates.cpp:47:28:   required from here
+templates.cpp:36:2: error: no matching function for call to ‘Book<std::__cxx11::basic_string<char> >::Book()’
+  {
+  ^
+templates.cpp:18:2: note: candidate: Book<T>::Book(T) [with T = std::__cxx11::basic_string<char>]
+  Book(T type)
+  ^
+templates.cpp:18:2: note:   candidate expects 1 argument, 0 provided
+templates.cpp:8:7: note: candidate: Book<std::__cxx11::basic_string<char> >::Book(const Book<std::__cxx11::basic_string<char> >&)
+ class Book
+       ^
+templates.cpp:8:7: note:   candidate expects 1 argument, 0 provided
+templates.cpp:8:7: note: candidate: Book<std::__cxx11::basic_string<char> >::Book(Book<std::__cxx11::basic_string<char> >&&)
+templates.cpp:8:7: note:   candidate expects 1 argument, 0 provided
+
+-----------------------------------------------------------------------------------------------------
+Adding default constructor:
+	Book()
+        {
+        }
+removes compilation error and following is printed:
+---------------------------------------------------
+Instantiating Book of type Maths
+template type:NSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+Instantiating Book of type ComputerScience
+template type:NSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+Instantiating Book of type Physics
+template type:NSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+Instantiating Book of type History
+template type:NSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+Instantiating EBook of type English
+Read book
+Read book
+Read book
+Read book
+Read book
+-----------------------------------------------------------------
+In above example, read_book() is a virtual function in superclass Book which can be overridden in derived classes. Previous output indicates
+how dynamic polymorphism works and read_book() of Book<T> is invoked from derived class EBook<T>. Type information is printed by typeid keyword of C++. This example is built using G++ with C++14 standard compiler option.
+
