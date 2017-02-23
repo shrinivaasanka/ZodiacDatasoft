@@ -149,3 +149,31 @@ Bottom-Up Shift-Reduce Parsing with a stack for previous Rightmost Derivation:
 	E			-			-			-			-
 
 Shift-Reduce parser actions at each step are determined by valid combinations of top of the stack and the lookahead - a pushdown automaton state diagram. Shift step advances to next unscanned symbol and Reduce step applies a production to top of the stack based on lookahead.
+
+------------------------------------------------------------------------------------------
+23 February 2017
+------------------------------------------------------------------------------------------
+Evaluate prefix expression:
+	*+3+3^3+333
+
+This can be evaluated with two stacks as below by popping topmost and storing it in another stack, evaluating next two operands and operator on first stack and pushing back the result and topmost popped from second stack to first stack:
+	3		3		3		3		3		=  2205
+	3		6		729		732		735
+	3		3		3		3		*
+	+		^		+		+
+	3		3		3		*
+	^		+		+
+	3		3		*
+	+		+
+	3		*
+	+
+	*
+------------------------------------------------------------------
+An egg dropped from a floor between 1 to 100 breaks if floor value is x or above. With 2 eggs find minimum number of drops required to find
+the highest floor from which egg does not break.
+
+Binary search on the floors 1 to 100 would require log(100) eggs. With 2 eggs binary search won't work. For this number 100 is split into
+intervals of powers of 2 (this is the idea behind logarithmic counters) - 2,4,16,32,64. First egg is dropped sequentially from 2,4,16,32,64th
+floors. Drop when first egg breaks is denoted as m. Maximum number of drops is 6 for first egg. Then the second egg is sequentially dropped from 2^(m-1) floor to 2^m floor which is equal to 2^(m-1). Thus total drops required is m + 2^(m-1). For maximum value of m=6, this is 6 + 32 = 38 . Thus with 38 drops, highest floor from where egg does not break can be found. Trivial one level binary search would require 50 (100/2) drops for second egg.
+-------------------------------------------------------------------
+------------------------------------------------------------------
