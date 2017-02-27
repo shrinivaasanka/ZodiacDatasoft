@@ -39,3 +39,14 @@ with small functionality which are interconnected). Python is more Haskell or LI
 
 Python classes are defined with class <class>(<baseclass>) and member functions are defined with def <function>(). Base class by default is object unless explicitly stated. Tuples are ordered pairs of arbitrary dimensions equivalent to vectorspaces in mathematics defined with (). Lists are equivalent to arrays in C defined with [] subscripts. Accessing an element in both tuples and lists are by [] subscript. Concepts of slicing is central to list comprehension in Python. Slicing can return a contiguous subset of a list by [<start>:<end>] notation. When either start or end is ignored implicit list start and end are assumed. For loops in python can iterate over any "iterable" object. Iterables include lists, dictionaries and user defined containers. if..else..elif is the python equivalent of conditional clauses with truth values being boolean keywords "True" or "False" which are builtins. Python classes denote self keyword to be the present object instantiated (equivalent to "this" in C++) 
 
+--------------------------------------------------
+27 February 2017 - Python Generators and Yield
+--------------------------------------------------
+Python has a notion of iterables where any sequential data structure can be made to return an element and resume from where it left to return the next element in the sequence. This is quite useful for problems which need to remember the last element accessed and resume from next element (can be constrasted with static keyword in C/C++ which live across function invocations with global scope) - typical streaming scenario.
+
+Streaming Abstract Generator implemented in :
+https://github.com/shrinivaasanka/asfer-github-code/blob/master/python-src/Streaming_AbstractGenerator.py
+is based on this idiom. It basically is facade frontend abstraction for multiple backend streaming datasources. It overrides the __iter__() method to access an element and yield it instead of returning it. User of this class, instantiates with desired data storage constructor arguments and iterates through it without any knowledge of how the data is accessed. In python terms, data is "generated" and "yielded" iteratively in a loop accessing consecutive elements. No storage is allocated by generator explicitly and backend client objects for HBase/Cassandra/Spark/Hive/File datasources handle them internally.
+
+This is a typical example of Iterator/Facade design pattern listed in Gof4.
+
