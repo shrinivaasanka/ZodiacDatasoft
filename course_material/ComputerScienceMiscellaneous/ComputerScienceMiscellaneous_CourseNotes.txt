@@ -181,3 +181,23 @@ floors. Drop when first egg breaks is denoted as m. Maximum number of drops is 6
 There is a list with integers in range 1..n with length n+1 elements. Find the repeated element (in least space without hash tables)
 
 Brute force requires O(n) space and hash tables require O(n) space too. This list has a pattern that all elements are in range 1..n with one repeat. Sum of this list can be computed in O(logN) space - single counter incremented - which is Total = n(n+1)/2 + repeating_element.  Total - n(n+1)/2 is the repeating element. Any other value of |Total - n(n+1)/2| which is not in 1..n indicates more than one repeating element and more than 1 repetition per repeating element. For arbitrary length of list, and multiple repetitive elements, this problem reduces to Element Distinctness Problem which has non-trivial algorithms (NlogN lowerbound with sorting, decision tree model, property testing, quantum etc.,).
+
+-------------------------------------------------------------------
+6 March 2017
+-------------------------------------------------------------------
+Types of Latches and FlipFlops:
+
+SR latch (Set-Reset):
+S   R   Q
+1   0   1
+0   1   0
+
+JK Latch(SR Latch with Toggle Q and !Q states for 00 and 11):
+J   K   Q
+1   0   1
+0   1   0
+
+D FlipFlop:
+D   Q
+0   0
+1   1
