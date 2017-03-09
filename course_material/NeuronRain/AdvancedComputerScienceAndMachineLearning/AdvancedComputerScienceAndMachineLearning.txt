@@ -17,7 +17,7 @@ kashrinivaasan@live.com
 ##############################################################################################################################################
 
 This is a non-linearly organized, continually updated set of course notes on miscellaneous topics in Graduate/Doctoral level
-Computer Science and supplements NeuronRain AsFer Design Notes in:
+Computer Science and Machine Learning and supplements NeuronRain AsFer Design Notes in:
 ----------------------------------------------------------------------------------------------------------------------------
 NeuronRain Enterprise Version Design Documents:
 -----------------------------------------------
@@ -27,4 +27,54 @@ NeuronRain Research Version Design Documents:
 -----------------------------------------------
 AsFer Machine Learning - https://sourceforge.net/p/asfer/code/HEAD/tree/asfer-docs/AstroInferDesign.txt
 ----------------------------------------------------------------------------------------------------------------------------
+9 March 2017
+----------------------------------------------------------------------------------------------------------------------------
+Recurrent Neural Network - Long Term Short Term Memory:
+-------------------------------------------------------
+Traditional neural networks have a threshold function which outputs 1 or 0 based on a threshold. But they don't preserve state information
+over points in time. For example, if there is a requirement that next state depends on present state and an input, usual neural network
+cannot satisfy it. Recurrent Neural Networks fill this void through ability to feedback while traditional neural network is feedforward.
+LongTerm-ShortTerm memory Recurrent Neural Networks are defined with schematic below:
 
+	Forget gate --------------> * <-------------- + ---------------> * ------------->
+				    |---------------->|			/|\
+						     /|\		 |
+						      |			 |
+	Cell gate ----------------> * --------------->|			 |
+				   /|\					 |
+				    |					 |
+	Input gate -----------------|					 |
+									 |
+	Output gate ------------------------------------------------------
+
+It has four gates: Forget gate, Cell gate, Input gate and Output gate and has a recurrence/feedback as shown in first line between Forget,
+Cell and Input gates. * is per-element product and + is per-element sum of vectors.
+
+-------------------------------------------------------------------
+Recurrent Neural Network - Gated Recurrent Unit:
+-------------------------------------------------------------------
+A slight variation of RNN LSTM diagram previously is RNN Gated Recurrent Unit (GRU). It lacks an output gate and merges the functionality
+of input gates into two gates - reset and update - as drawn in schematic below:
+
+h(t-1)-------------------> * --------------> Ct ----------------> * -------------------> h(t)
+	|		   /\ 	 	      /\                   /\
+	|		   | 		      | 		   |
+	|	reset	   * <----------------x------------------->* update
+	|		  /|\		      			  /|\
+	|		   |		      			   |
+	V------------------|---------------------------------------|
+
+with equations:
+	ut = sigmoid(Vu*xt + Wu*h(t-1) + bu)
+	rt = sigmoid(Vr*xt + Wr*h(t-1) + br)
+	Ct = tanh(Vc*xt + Wc*(h(t-1) * rt))
+	ht = (1-ut)*Ct + ut*h(t-1)
+where ut = update gate,
+      rt = reset gate,
+      Ct = cell gate
+      ht = state at time t
+      Vu,Vr,Vc,Wu,Wr,Wc are weight vectors.
+
+Both above have been implemented in:
+https://github.com/shrinivaasanka/asfer-github-code/blob/master/python-src/DeepLearning_LSTMRecurrentNeuralNetwork.py
+https://github.com/shrinivaasanka/asfer-github-code/blob/master/python-src/DeepLearning_GRURecurrentNeuralNetwork.py
