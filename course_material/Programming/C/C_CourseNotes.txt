@@ -47,5 +47,9 @@ main()
         1 ( ((13) % 5) / 2 = 3 % 2 = 1 )
 */
  
-
-
+--------------------------------
+10 March 2017
+--------------------------------
+Pointers in C are basic low level primitives of allocating memory and indexing them by contiguous bytes (malloc/free). Most of the vulnerabilities found in software are traced back to memory buffer overruns. Buffer overruns are conditions in which a pointer to a contiguously allocated block of memory goes past the bounds. Two major bugs in modern internet history are OpenSSL's Heartbleed and Cloudflare's Cloudbleed both being bugs in array bounds checking crept into software.
+1. HeartBleed fix for OpenSSL - https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=96db902 - This bug was introduced into OpenSSL in HeartBeat extensions for SSL connections keep-alive feature. Pointer was getting past without record length checks enforced in the fix commit diffs
+2. CloudBleed fix for Cloudflare proxies HTML parsing - https://blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug/. This is similar to HeartBleed buffer overrun, which happened during equality check for end of buffer pointer (which bypasses an increment check condition within Ragel HTML parser).
