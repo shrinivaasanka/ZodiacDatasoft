@@ -70,7 +70,8 @@ VIRGO Linux kernel has following new kernel modules (kernelsocket listeners) cor
 7. utils - utility driver that exports miscellaneous kernel functions that can be used across VIRGO Linux kernel
 8. EventNet - eventnet kernel driver to vfs_read()/vfs_write() text files for EventNet vertex and edge messages (port: 20000)
 9. Kernel_Analytics - kernel module that reads machine-learnt config key-value pairs set in /etc/virgo_kernel_analytics.conf. Any machine learning software can be used to get the key-value pairs for the config. This merges three facets - Machine Learning, Cloud Modules in VIRGO Linux-KingCobra-USBmd , Mainline Linux Kernel
-11. SATURN program analysis wrapper driver.
+10. SATURN program analysis wrapper driver.
+and userspace test cases for the above.
 
 Prerequisites for building VIRGO Linux kernel are similar to mainline kernel:
 apt install libncurses5-dev gcc make git exuberant-ctags bc libssl-dev
