@@ -35,5 +35,79 @@ VIRGO Linux - https://sourceforge.net/p/virgo-linux/code-0/HEAD/tree/trunk/virgo
 
 KingCobra Kernelspace Messaging - https://sourceforge.net/p/kcobra/code-svn/HEAD/tree/KingCobraDesignNotes.txt
 -----------------------------------------------------------------------------------------------------------------------------------
+17 March 2017
+-----------------------------------------------------------------------------------------------------------------------------------
+VIRGO Linux Kernel Build Steps
+-------------------------------
+VIRGO Linux kernel is an overlay of VIRGO codebase on kernel mainline (presently 4.1.5) source tree. Building a custom kernel for VIRGO
+is required for building new system calls and kernel modules in it. Shell script for builing kernel mainline is in:
+	https://github.com/shrinivaasanka/virgo-linux-github-code/blob/master/buildscript_4.1.5.sh
+	https://sourceforge.net/p/virgo-linux/code-0/HEAD/tree/trunk/buildscript_4.1.5.sh
 
+VIRGO Linux kernel has following new system calls:
+--------------------------------------------------
+Cloud RPC system call:
+	virgo_clone()
+Cloud Kernel Memory Cache (kernelspace equivalent of memcache):
+	virgo_malloc()
+	virgo_get()
+	virgo_set()
+	virgo_free()
+Cloud File System:
+	virgo_open()
+	virgo_close()
+	virgo_read()
+	virgo_write()
 
+VIRGO Linux kernel has following new kernel modules (kernelsocket listeners) corresponding to previous system call clients:
+---------------------------------------------------------------------------------------------------------------------------
+1. cpupooling virtualization - VIRGO_clone() system call and VIRGO cpupooling driver by which a remote procedure can be invoked in kernelspace.(port: 10000)
+2. memorypooling virtualization - VIRGO_malloc(), VIRGO_get(), VIRGO_set(), VIRGO_free() system calls and VIRGO memorypooling driver by which kernel memory can be allocated in remote node, written to, read and freed - A kernelspace memcache-ing.(port: 30000)
+3. filesystem virtualization - VIRGO_open(), VIRGO_read(), VIRGO_write(), VIRGO_close() system calls and VIRGO cloud filesystem driver by which file IO in remote node can be done in kernelspace.(port: 50000)
+4. config - VIRGO config driver for configuration symbols export.
+5. queueing - VIRGO Queuing driver kernel service for queuing incoming requests, handle them with workqueue and invoke KingCobra service routines in kernelspace. (port: 60000)
+6. cloudsync - kernel module for synchronization primitives (Bakery algorithm etc.,) with exported symbols that can be used in other VIRGO cloud modules for critical section lock() and unlock()
+7. utils - utility driver that exports miscellaneous kernel functions that can be used across VIRGO Linux kernel
+8. EventNet - eventnet kernel driver to vfs_read()/vfs_write() text files for EventNet vertex and edge messages (port: 20000)
+9. Kernel_Analytics - kernel module that reads machine-learnt config key-value pairs set in /etc/virgo_kernel_analytics.conf. Any machine learning software can be used to get the key-value pairs for the config. This merges three facets - Machine Learning, Cloud Modules in VIRGO Linux-KingCobra-USBmd , Mainline Linux Kernel
+11. SATURN program analysis wrapper driver.
+
+Prerequisites for building VIRGO Linux kernel are similar to mainline kernel:
+apt install libncurses5-dev gcc make git exuberant-ctags bc libssl-dev
+
+Presently VIRGO kernel is 32-bit. Building 64 bit linux kernel requires long mode CPU flag (lm) in /proc/cpuinfo. Also booting a 64 bit kernel built on 32 bit kernel could cause init to fail as "init not found". This is because init is a symbolic link to systemd binary when kernel boots up which is 32-bit and not 64-bit. For this menuconfig in Kbuild provides IA32 Emulation config parameter.
+
+Booting a custom kernel could also cause partition issues while grub is updated sometimes with error "no such partition" and could drop to grub rescue> prompt. This can be remedied by:
+	1. grub rescue> ls
+which lists the partitions in format (hd0, msdos<#number>)
+	2. grub rescue> set root=(hd0, msdos<#number>) {for each such partition}
+	3. grub rescue> set prefix=(hd0, msdos<#number>)/boot/grub
+	4. grub rescue> insmod normal
+	5. grub rescue> normal
+which boots grub normally. This has to be persisted with:
+	6. update-grub2
+	7. grub-install /dev/sda
+on reboot
+
+Some grub errors can be debugged by adding kernel boot parameters in /boot/grub/grub.cfg or at boot time edit of the entry with "... $vt_handoff". Appending options "debug init=<path-to-systemd>" to this line might help.
+
+Sometimes repetitive builds and grub updates also cause a rare file system corruption as below which causes root shell drop:
+	ALERT! <diskid> does not exist
+	Boot args (cat /proc/cmdline)
+	- Check rootdelay
+	- Check root
+	Missing modules (cat /proc/modules, ls /dev)
+	Dropping to root shell
+	(initramfs)
+This is remedied by:
+	(initramfs) modprobe dm-mod
+	(initramfs) lvm
+	lvm> vgchange -ay
+	lvm> exit
+	(initramfs) exit
+followed by:
+	mount -o remount,rw /dev/sda<number> <mount_point_directory>
+
+Complete documentation of VIRGO Linux with Design Documents is in:
+https://github.com/shrinivaasanka/virgo-linux-github-code/tree/master/virgo-docs/
+https://sourceforge.net/p/virgo-linux/code-0/HEAD/tree/trunk/virgo-docs/
