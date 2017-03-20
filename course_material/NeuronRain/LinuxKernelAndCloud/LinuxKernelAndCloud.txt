@@ -112,3 +112,18 @@ followed by:
 Complete documentation of VIRGO Linux with Design Documents is in:
 https://github.com/shrinivaasanka/virgo-linux-github-code/tree/master/virgo-docs/
 https://sourceforge.net/p/virgo-linux/code-0/HEAD/tree/trunk/virgo-docs/
+
+--------------------------------------------------------------------------------------------
+20 March 2017
+--------------------------------------------------------------------------------------------
+VIRGO Linux 64 bit build - continued:
+
+*) After configuring IA32 simulation and a successful build, there could still be initramfs errors
+because of i915 drivers mismatch as below:
+	"Possible missing firmware --------- for i915"
+*) Previous error requires installation of latest linux i915 graphics drivers (though there may not be a matching hardware for it) listed in https://01.org/linuxgraphics/downloads/firmware: for Kabylake, Skylake, Broxton graphics processors
+*) update-initramfs has to be done again for correct /boot initrd image to be created for 4.10.3 after updating i915 drivers previously listed
+*) In some cases image may be hidden in grub boot menu. For this an already available boot-repair tool scans the /boot images and reinstalls grub menu.
+*) On successful 64 bit build, uname -a should have x86_64 as below:
+Linux kashrinivaasan-Inspiron-1545 4.10.3 #1 SMP Fri Mar 17 18:30:40 IST 2017 x86_64 x86_64 x86_64 GNU/Linux
+ 
