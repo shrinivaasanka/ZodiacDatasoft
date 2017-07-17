@@ -72,3 +72,32 @@ Read book
 In above example, read_book() is a virtual function in superclass Book which can be overridden in derived classes. Previous output indicates
 how dynamic polymorphism works and read_book() of Book<T> is invoked from derived class EBook<T>. Type information is printed by typeid keyword of C++. This example is built using G++ with C++14 standard compiler option.
 
+--------------------------------------------------------------------
+17 July 2017
+--------------------------------------------------------------------
+Question: How can a program print its source itself as output ? [Quine - self-aware code]
+
+Answer: Theoretically, there exists a lambda function with a fixed point i.e f(x)=x. Unix/Linux binaries are stored in ELF format which have debugging information embedded in DWARF entries (as set of DIEs - Debugging Information Entries). There are utilities like objdump and dwarfdump which display the DIEs. For example, following is the DWARF dump of asfer executable pointing to the compilation source directory in DW_AT_comp_dir:
+
+root@Inspiron-1545:/media/shrinivaasanka/6944b01d-ff0d-43eb-8699-cca469511742/home/shrinivaasanka/Krishna_iResearch_OpenSource/GitHub/asfer-github-code/cpp-src# objdump --dwarf=info asfer |more
+
+asfer:     file format elf32-i386
+
+Contents of the .debug_info section:
+
+  Compilation Unit @ offset 0x0:
+   Length:        0x16f7e (32-bit)
+   Version:       4
+   Abbrev Offset: 0x0
+   Pointer Size:  4
+ <0><b>: Abbrev Number: 1 (DW_TAG_compile_unit)
+    <c>   DW_AT_producer    : (indirect string, offset: 0x35560): GNU C++14 5.2.1 20151010 -mtune=generic -march=i686 -g -std=c++14 -fstack-pro
+tector-strong
+    <10>   DW_AT_language    : 4	(C++)
+    <11>   DW_AT_name        : (indirect string, offset: 0xe304): DecisionTreeClassifier.cpp
+    <15>   DW_AT_comp_dir    : (indirect string, offset: 0x7933): /media/shrinivaasanka/0fc4d8a2-1c74-42b8-8099-9ef78d8c8ea24/home/kashrinivaasan/KrishnaiResearch_OpenSource/GitHub/asfer-github-code/cpp-src
+    <19>   DW_AT_ranges      : 0x210
+    <1d>   DW_AT_low_pc      : 0x0
+    <21>   DW_AT_stmt_list   : 0x0
+
+There are libdwarf libraries for programmatically querying ELF DWARF DIEs. Thus a wrapper reflection code invoking the dwarfdump on executable can be written to print the source(assumes fresh compilation everytime).
