@@ -101,3 +101,11 @@ tector-strong
     <21>   DW_AT_stmt_list   : 0x0
 
 There are libdwarf libraries for programmatically querying ELF DWARF DIEs. Thus a wrapper reflection code invoking the dwarfdump on executable can be written to print the source(assumes fresh compilation everytime).
+
+-------------------------------------------------------------------
+12 September 2017
+-------------------------------------------------------------------
+Question: Remove duplicates in a string in-place (no extra space) e.g shrink aabbcba to abc
+
+Answer: One possible solution is to sort the string (by an in place sorting algorithm like quicksort) in ascending order of unicode value e.g aabbcba is sorted to aaabbbc. Implement the string as linked-list of literals, Scan the string linked list and remove repetitive alphabets and repeat till duplicates are removed. Code example for this is at code/remove_duplicates.cpp uses STL string sort() to sort the string, STL erase() to simulate a linked list node erasure, and shows how STL iterators for strings begin() and end() are applied. 
+
