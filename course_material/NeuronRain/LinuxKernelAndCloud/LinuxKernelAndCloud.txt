@@ -126,4 +126,11 @@ because of i915 drivers mismatch as below:
 *) In some cases image may be hidden in grub boot menu. For this an already available boot-repair tool scans the /boot images and reinstalls grub menu.
 *) On successful 64 bit build, uname -a should have x86_64 as below:
 Linux kashrinivaasan-Inspiron-1545 4.10.3 #1 SMP Fri Mar 17 18:30:40 IST 2017 x86_64 x86_64 x86_64 GNU/Linux
- 
+
+------------------------------------------------------------------------------------------------------------------
+24 September 2017
+------------------------------------------------------------------------------------------------------------------
+NeuronRain VIRGO64 presently has been ported to 4.13.3 Linux Kernel. Also the accompanying USBmd and KingCobra kernel modules have been
+split into 32-bit and 64-bit versions and separate repositories have been created for them in SourceForge and GitHub. 4.13.3 kernel has
+transport layer security enshrined in kernel which is essential for securing kernelspace cloud traffic. A detailed FAQ on technical aspects
+of VIRGO 64-bit version and KTLS is in http://neuronrain-documentation.readthedocs.io/en/latest/ .
