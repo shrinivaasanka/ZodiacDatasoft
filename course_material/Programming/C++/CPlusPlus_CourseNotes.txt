@@ -108,4 +108,77 @@ There are libdwarf libraries for programmatically querying ELF DWARF DIEs. Thus 
 Question: Remove duplicates in a string in-place (no extra space) e.g shrink aabbcba to abc
 
 Answer: One possible solution is to sort the string (by an in place sorting algorithm like quicksort) in ascending order of unicode value e.g aabbcba is sorted to aaabbbc. Implement the string as linked-list of literals, Scan the string linked list and remove repetitive alphabets and repeat till duplicates are removed. Code example for this is at code/remove_duplicates.cpp uses STL string sort() to sort the string, STL erase() to simulate a linked list node erasure, and shows how STL iterators for strings begin() and end() are applied. 
+---------------------------------------------------
+str:9aaabbbcccddddddddeeeffggjjksss
+str:9aaabbbcccddddddddeeeffggjjksss
+str:9aaabbbcccddddddddeeeffggjjksss
+str:9aabbbcccddddddddeeeffggjjksss
+str:9aabbbcccddddddddeeeffggjjksss
+str:9aabbcccddddddddeeeffggjjksss
+str:9aabbcccddddddddeeeffggjjksss
+str:9aabbccddddddddeeeffggjjksss
+str:9aabbccddddddddeeeffggjjksss
+str:9aabbccdddddddeeeffggjjksss
+str:9aabbccddddddeeeffggjjksss
+str:9aabbccdddddeeeffggjjksss
+str:9aabbccddddeeeffggjjksss
+str:9aabbccddddeeffggjjksss
+str:9aabbccddddeeffggjjksss
+str:9aabbccddddeefggjjksss
+str:9aabbccddddeefgjjksss
+str:9aabbccddddeefgjksss
+str:9aabbccddddeefgjksss
+duplicateexists(): true
+str:9aabbccddddeefgjkss
+str:9aabbccddddeefgjkss
+str:9aabbccddddeefgjkss
+str:9aabbccddddeefgjkss
+str:9abbccddddeefgjkss
+str:9abccddddeefgjkss
+str:9abcddddeefgjkss
+str:9abcdddeefgjkss
+str:9abcddeefgjkss
+str:9abcddefgjkss
+str:9abcddefgjkss
+str:9abcddefgjkss
+str:9abcddefgjkss
+str:9abcddefgjkss
+str:9abcddefgjks
+str:9abcddefgjks
+str:9abcddefgjks
+str:9abcddefgjks
+str:9abcddefgjks
+str:9abcddefgjks
+str:9abcdefgjks
+str:9abcdefgjks
+str:9abcdefgjks
+str:9abcdefgjks
+str:9abcdefgjks
+
+---------------------------------------------------------------------------------------
+2 October 2017 - Placement New and Operator Overloading
+---------------------------------------------------------------------------------------
+C++ provides mechanisms to override default storage allocation by overloading operator new. There are two types of operator new(): Plain overload and Placement Overload. Placement new supplies storage as argument to operator new. Code example in code/placement_new.cpp illustrates this
+as below (this has been compiled to C++2017 standard). Older ways of overriding pointer this have been described in comments. Recent compilers
+do not allow direct *this overrides and prefer operator new. Operator new facility is useful for writing new storage allocators and memory debuggers which can instrument and bypass default memory allocation for profiling. This example also explains the rvalue reference operator && for *this. Rvalue references alias the right side of an assignment while Lvalue references(&) alias the left side of assignment. 
+=====================================
+auto allocation
+=====================================
+this...0xffa08a90
+overwriting this...
+rvaluethis :0xffa08a90
+=====================================
+operator new:
+=====================================
+operator new overloaded and this is from a heap allocator
+this...0x96a3e18
+overwriting this...
+rvaluethis :0x96a3e18
+operator delete overloaded and this is freed to a heap allocator
+=====================================
+placement operator new:
+=====================================
+this...0xffa08aa8
+overwriting this...
+rvaluethis :0xffa08aa8
 
