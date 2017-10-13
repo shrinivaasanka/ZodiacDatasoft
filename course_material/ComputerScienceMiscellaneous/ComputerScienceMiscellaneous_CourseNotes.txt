@@ -223,3 +223,10 @@ bit 1 appears = (1-0.75)/0.75 = 1/3 and Expected number of bits before 0 appears
 It has to be noted that Expectation of Appearance of Head and Expectation of Failures before Head Appears are two different random variables.
 
 Reference: https://en.wikipedia.org/wiki/Geometric_distribution
+
+------------------------------------------------------------------------------------------------------------------
+13 October 2017
+------------------------------------------------------------------------------------------------------------------
+How can all nodes of same level in a binary tree be retrieved (of least time complexity)?
+------------------------------------------------------------------------------------------------------------------
+Assuming array representation of a binary tree, each node of the array of size 2^(logN) for N tree nodes is filled from the tree top-down and left-right and missing nodes are blank in array. In this array representation, nodes of level l are the consecutive nodes from indices 2^(l-1) to (2^l) - 1 and can be printed by iterating through array.
