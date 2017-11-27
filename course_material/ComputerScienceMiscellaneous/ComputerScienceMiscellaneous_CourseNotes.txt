@@ -230,3 +230,17 @@ Reference: https://en.wikipedia.org/wiki/Geometric_distribution
 How can all nodes of same level in a binary tree be retrieved (of least time complexity)?
 ------------------------------------------------------------------------------------------------------------------
 Assuming array representation of a binary tree, each node of the array of size 2^(logN) for N tree nodes is filled from the tree top-down and left-right and missing nodes are blank in array. In this array representation, nodes of level l are the consecutive nodes from indices 2^(l-1) to (2^l) - 1 and can be printed by iterating through array.
+
+------------------------------------------------------------------------------------------------------------------
+27 November 2017
+------------------------------------------------------------------------------------------------------------------
+How can a hashmap be inverted i.e keys and values are interchanged?
+------------------------------------------------------------------------------------------------------------------
+If the hashmap is perfect hash function, there are programming language supports e.g bidirectional dictionaries - bidict in Python, Ruby Hash#invert - http://ruby-doc.org/core-1.9.3/Hash.html#method-i-invert. If the hashmap is not perfect and has collisions each key is mapped to multiple values. Inverting this amounts to unwinding each of the collision buckets as keys and map them to the erstwhile key as value. Bruteforce algorithm is O(N) time where N is total number of values in the map. An alternative version of this problem is : Given a value v in the map find the key k which maps to v. Theoretically, this problem is parallel to Proving existence of One Way Function which is defined as Probability[f(finverse(y))==y] < epsilon for a function f and its inverse. For a hashmap H, this is equivalently stated as Probability[H(Hinverse(v))=v] where Hinverse is hashmap inverted. Difference is Function has unique range value per domain key while a hashmap has multiple values. Sublinear parallel algorithm to invert a hashmap which is not perfect could be as below:
+	for each key k in hashmap H1 accessed in parallel
+	{
+		each element v=H1[k] in collision bucket is accessed in parallel and added as key in a new hashmap H2 as H2[v] = k
+	}
+Both keys and buckets are accessed in parallel. Theoretically if hashmap is on a PRAM, previous algorithm is O(1) parallel time and requires
+O(N) PRAMs.
+
