@@ -182,3 +182,24 @@ this...0xffa08aa8
 overwriting this...
 rvaluethis :0xffa08aa8
 
+---------------------------------------------------------------------------------------------------------------
+21 December 2017 - Rvalue References in C++ and Move semantics
+---------------------------------------------------------------------------------------------------------------
+Rvalue references were introduced in C++11 standard specification. Cloud move implementation of NeuronRain Neuro Currency applies the
+move semantics and rvalue references (client,server and header in https://github.com/shrinivaasanka/asfer-github-code/blob/master/cpp-src/cloud_move/).  Traditionally lvalue refers to LHS of an assignment operator and rvalue to RHS of it. For example:
+	int x=5 
+assigns rvalue 5 to lvalue x. Lvalue references are declared by alias operator & as:
+	int& y=x
+and Rvalue references are declared by && operator:
+	int&& y=10
+Move semantics in C++ specify moving an object by move constructor (std::move() and operator= overload) vis-a-vis copying an object by
+copy constructor. Move constructor is defined in Neuro currency as:
+	T& operator=(cloudmove<T>&& rvalue) {
+	...
+	} 
+and this move constructor is invoked by:
+	cloudmove<currency::Currency> currency_src(&c1,"localhost");
+	cloudmove<currency::Currency> currency_dest(&c2,"localhost");
+	...
+	currency_dest = std::move(currency_src);
+Move differs from Copy by returning rvalue of the argument to std::move() and renders the operand currency_src nullified by moving the resources to lvalue currency_dest.
