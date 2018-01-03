@@ -268,7 +268,7 @@ Following algorithm finds the bit distance sum in O(logM*N) time for all pairs o
                        Set of all possible pairs - (Set of all possible pairs having both 1s + Set of all possible pairs having both 0s)
                        This contributes to the sum of distances for all bits
                */
-               BitDifferenceSum += NCR-((N-R)CR + RCR)
+               BitDifferenceSum += NC2-((N-R)C2 + RC2)
        }
 
 Following example executes above algorithm for array: [5,6,7,8,10] represented as 5*ceil(log10) 2-dimensional array - there are 5C2=10 possible sets of pairs:
@@ -282,3 +282,6 @@ Following example executes above algorithm for array: [5,6,7,8,10] represented a
        ---------------------
        There 3C2+2C2 pairs of (1,1) and (0,0) which are subtracted:
        5C2-(3C2+2C2) + 5C2-(3C2+2C2) + 5C2-(3C2+2C2) + 5C2-(3C2+2C2) = 10-4 + 10-4 + 10-4 + 10-4 = 6+6+6+6 = 24
+
+An implementation of this algorithm has been included in NeuronRain AsFer Pairwise Encoded String Pattern Mining function in: 
+https://github.com/shrinivaasanka/asfer-github-code/blob/master/cpp-src/asferencodestr.cpp
