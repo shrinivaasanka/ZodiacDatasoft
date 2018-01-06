@@ -50,3 +50,34 @@ is based on this idiom. It basically is facade frontend abstraction for multiple
 
 This is a typical example of Iterator/Facade design pattern listed in Gof4.
 
+---------------------------------------------------------------------------------------------------------------------
+6 January 2018 - Currying and Partial Function Application in Python
+---------------------------------------------------------------------------------------------------------------------
+Python has functional programming (Haskell) equivalents of Currying and Partial Application support. Currying converts a function of n parameters to n functions of one parameter each invoked in nesting, and returns a function in each function. Partial Application Function is similar to currying but takes 2 arguments instead of 1 in currying, and returns a function. Code examples for these are below - committed to code/Currying.py and code/PartialFunctionApplication.py
+
+------------
+Currying.py:
+------------
+1
+2
+3
+4
+5
+6
+===========
+Curried :
+===========
+6 5 4 3 2 1
+
+------------------------------
+PartialFunctionApplication.py:
+------------------------------
+=========================================
+Equivalent Partially applied functions
+=========================================
+1 2 3 4 5 6
+1 2 3 4 5 6
+1 2 3 4 5 6
+1 2 3 4 5 6
+1 2 3 4 5 6
+1 2 3 4 5 6
