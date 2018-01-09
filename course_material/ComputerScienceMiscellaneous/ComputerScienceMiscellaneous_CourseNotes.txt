@@ -285,3 +285,16 @@ Following example executes above algorithm for array: [5,6,7,8,10] represented a
 
 An implementation of this algorithm has been included in NeuronRain AsFer Pairwise Encoded String Pattern Mining function in: 
 https://github.com/shrinivaasanka/asfer-github-code/blob/master/cpp-src/asferencodestr.cpp
+
+---------------------------------------------------------------------------------------------------------------------------------
+9 January 2018 - Find the heavier ball
+---------------------------------------------------------------------------------------------------------------------------------
+Question: There are 8 balls of same size. One of them is heavier and all other 7 are of equal lesser weight. Find the heavier ball
+in just 2 weighings.
+
+Answer: Assuming a balance, split the 8 balls into 2 sets of 4 each placed on either trays of the balance. One of the trays goes down
+Heavier ball is one of the 4 in going down tray. Split the set having heavier element into 2 sets of 2 each placed on either trays. This is
+second weighing. One of the trays goes down. Heavier ball is one of the 2 in down tray. Third weighing is not necessary because one ball each
+can be removed from each tray and there are two possibilities: 1) The trays level - ball taken from going up tray is heavier, 2) the trays don't level - both balls taken are of equal weight and down tray has heavier ball.
+
+Previous problem has deep rooted connection to finding the larger value in a balanced search tree. Two trays of the balance are two subtrees of a BST in each weighing and query time is O(logN).
