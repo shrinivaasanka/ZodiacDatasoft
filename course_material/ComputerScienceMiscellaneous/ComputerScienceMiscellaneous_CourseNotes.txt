@@ -11,6 +11,7 @@ http://sourceforge.net/users/ka_shrinivaasan,
 https://github.com/shrinivaasanka,
 https://www.openhub.net/accounts/ka_shrinivaasan
 Personal website(research): https://sites.google.com/site/kuja27/
+NeuronRain Documentation: http://neuronrain-documentation.readthedocs.io/
 emails: ka.shrinivaasan@gmail.com, shrinivas.kannan@gmail.com,
 kashrinivaasan@live.com
 -----------------------------------------------------------------------------------------------------------
