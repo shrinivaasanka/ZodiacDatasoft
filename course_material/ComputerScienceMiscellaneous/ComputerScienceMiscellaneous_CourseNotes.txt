@@ -298,3 +298,19 @@ second weighing. One of the trays goes down. Heavier ball is one of the 2 in dow
 can be removed from each tray and there are two possibilities: 1) The trays level - ball taken from going up tray is heavier, 2) the trays don't level - both balls taken are of equal weight and down tray has heavier ball.
 
 Previous problem has deep rooted connection to finding the larger value in a balanced search tree. Two trays of the balance are two subtrees of a BST in each weighing and query time is O(logN).
+
+-------------------------------------------------------------------------------------------------------------------------------
+12 January 2018 - How would you uniquely identify an object from a plethora of objects?
+------------------------------------------------------------------------------------------------------------------------------- 
+That is, how can a universally unique identifier be created? This is an open-ended question. In the context of Public Key Infrastructure,
+creating unique non-repetitive keys has been a challenge - Sections 4.1 and 4.2 in https://factorable.net/weakkeys12.conference.pdf on repetitive and factorable keys. Boost C++ has UUID generation algorithm based on https://www.itu.int/en/ITU-T/asn1/Pages/UUID/uuids.aspx. UUID is a misnomer because there is a negligible probability of collisions known as birthday paradox. Birthday paradox is problem of any two persons in a congregation having same birthday. If a unique id is of maximum value N and size of population is M ( M < N ): 
+	probability of person2 having different id than person1  =  (N-1)/N
+	probability of person3 having different id than person1 and person2 = (N-2)/N
+	probability of person4 having different id than person1, person2 and person3 = (N-3)/N
+	... and so on. 
+
+Probability of all persons in population having different UUIDs = (N-1)(N-2)....(N-M) / N*N*N...N
+Probability of some of the population having same UUIDs = 1 - [(N-1)(N-2)....(N-M)/ N^M]
+
+This problem has direct bearing on Tabulation Hashing where two objects have same hash digest and are hashed to same bucket. Minimizing hash collisions therefore requires increase in denominator and lowering numerator i.e N >> M.
+
