@@ -12,6 +12,9 @@ They have been segregated into:
 (*) NeuronRain - Linux Kernel and Cloud (for students and Linux Kernel/Cloud professionals)
 
 ./NeuronRain/LinuxKernelAndCloud/LinuxKernelAndCloud.txt
+
+(*) NeuronRain - Cloud and Bigdata Analytics (for students and Cloud Data science professionals)
+
 ./NeuronRain/LinuxKernelAndCloud/BigdataAnalyticsCloud_CourseNotes.txt
 
 (*) Programming - C/C++/Java/Python (for students and Professionals)
