@@ -1,0 +1,280 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+18/01/18 13:42:53 WARN Utils: Your hostname, shrinivaasanka-Inspiron-1545 resolves to a loopback address: 127.0.1.1; using 192.168.122.1 instead (on interface virbr0)
+18/01/18 13:42:53 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+18/01/18 13:42:54 INFO SparkContext: Running Spark version 2.1.0
+18/01/18 13:42:54 WARN SparkContext: Support for Java 7 is deprecated as of Spark 2.0.0
+18/01/18 13:42:55 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/01/18 13:42:56 WARN SparkConf: Detected deprecated memory fraction settings: [spark.shuffle.memoryFraction, spark.storage.memoryFraction]. As of Spark 1.6, execution and storage memory management are unified. All memory fractions used in the old model are now deprecated and no longer read. If you wish to use the old memory management, you may explicitly enable `spark.memory.useLegacyMode` (not recommended).
+18/01/18 13:42:56 INFO SecurityManager: Changing view acls to: root
+18/01/18 13:42:56 INFO SecurityManager: Changing modify acls to: root
+18/01/18 13:42:56 INFO SecurityManager: Changing view acls groups to: 
+18/01/18 13:42:56 INFO SecurityManager: Changing modify acls groups to: 
+18/01/18 13:42:56 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+18/01/18 13:42:57 INFO Utils: Successfully started service 'sparkDriver' on port 39704.
+18/01/18 13:42:57 INFO SparkEnv: Registering MapOutputTracker
+18/01/18 13:42:57 INFO SparkEnv: Registering BlockManagerMaster
+18/01/18 13:42:57 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+18/01/18 13:42:57 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+18/01/18 13:42:57 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-1b61db3f-662c-4d0a-991a-3d5500fb598d
+18/01/18 13:42:57 INFO MemoryStore: MemoryStore started with capacity 912.3 MB
+18/01/18 13:42:57 INFO SparkEnv: Registering OutputCommitCoordinator
+18/01/18 13:42:58 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+18/01/18 13:42:58 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://192.168.122.1:4040
+18/01/18 13:42:59 INFO SparkContext: Added file file:/home/shrinivaasanka/Krishna_iResearch_OpenSource/GitHub/GitHub_Grafit_TrainingRelated/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Broadcast_Accumulator.py at file:/home/shrinivaasanka/Krishna_iResearch_OpenSource/GitHub/GitHub_Grafit_TrainingRelated/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Broadcast_Accumulator.py with timestamp 1516263179364
+18/01/18 13:42:59 INFO Utils: Copying /home/shrinivaasanka/Krishna_iResearch_OpenSource/GitHub/GitHub_Grafit_TrainingRelated/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Broadcast_Accumulator.py to /tmp/spark-c93af012-cf20-433a-ac92-bdf05843b06a/userFiles-1f27972f-3525-499b-b64f-6c020fd8f01b/Spark_Broadcast_Accumulator.py
+18/01/18 13:42:59 INFO Executor: Starting executor ID driver on host localhost
+18/01/18 13:42:59 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 33159.
+18/01/18 13:42:59 INFO NettyBlockTransferService: Server created on 192.168.122.1:33159
+18/01/18 13:42:59 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+18/01/18 13:42:59 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.122.1, 33159, None)
+18/01/18 13:42:59 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.122.1:33159 with 912.3 MB RAM, BlockManagerId(driver, 192.168.122.1, 33159, None)
+18/01/18 13:42:59 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.122.1, 33159, None)
+18/01/18 13:42:59 INFO BlockManager: external shuffle service port = 7337
+18/01/18 13:42:59 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.168.122.1, 33159, None)
+18/01/18 13:43:00 INFO EventLoggingListener: Logging events to file:///home/shrinivaasanka/SparkEventLogs/local-1516263179566
+18/01/18 13:43:00 WARN SizeEstimator: Failed to check whether UseCompressedOops is set; assuming yes
+18/01/18 13:43:01 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 288.0 B, free 912.3 MB)
+18/01/18 13:43:01 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 131.0 B, free 912.3 MB)
+18/01/18 13:43:01 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 192.168.122.1:33159 (size: 131.0 B, free: 912.3 MB)
+18/01/18 13:43:01 INFO SparkContext: Created broadcast 0 from broadcast at PythonRDD.scala:482
+18/01/18 13:43:02 INFO SparkContext: Starting job: foreach at /home/shrinivaasanka/Krishna_iResearch_OpenSource/GitHub/GitHub_Grafit_TrainingRelated/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Broadcast_Accumulator.py:42
+18/01/18 13:43:02 INFO DAGScheduler: Got job 0 (foreach at /home/shrinivaasanka/Krishna_iResearch_OpenSource/GitHub/GitHub_Grafit_TrainingRelated/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Broadcast_Accumulator.py:42) with 3 output partitions
+18/01/18 13:43:02 INFO DAGScheduler: Final stage: ResultStage 0 (foreach at /home/shrinivaasanka/Krishna_iResearch_OpenSource/GitHub/GitHub_Grafit_TrainingRelated/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Broadcast_Accumulator.py:42)
+18/01/18 13:43:02 INFO DAGScheduler: Parents of final stage: List()
+18/01/18 13:43:02 INFO DAGScheduler: Missing parents: List()
+18/01/18 13:43:02 INFO DAGScheduler: Submitting ResultStage 0 (PythonRDD[1] at foreach at /home/shrinivaasanka/Krishna_iResearch_OpenSource/GitHub/GitHub_Grafit_TrainingRelated/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Broadcast_Accumulator.py:42), which has no missing parents
+18/01/18 13:43:02 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 7.3 KB, free 912.3 MB)
+18/01/18 13:43:02 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.4 KB, free 912.3 MB)
+18/01/18 13:43:02 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 192.168.122.1:33159 (size: 4.4 KB, free: 912.3 MB)
+18/01/18 13:43:02 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:996
+18/01/18 13:43:02 INFO DAGScheduler: Submitting 3 missing tasks from ResultStage 0 (PythonRDD[1] at foreach at /home/shrinivaasanka/Krishna_iResearch_OpenSource/GitHub/GitHub_Grafit_TrainingRelated/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Broadcast_Accumulator.py:42)
+18/01/18 13:43:02 INFO TaskSchedulerImpl: Adding task set 0.0 with 3 tasks
+18/01/18 13:43:02 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 6243 bytes)
+18/01/18 13:43:02 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+18/01/18 13:43:02 INFO Executor: Fetching file:/home/shrinivaasanka/Krishna_iResearch_OpenSource/GitHub/GitHub_Grafit_TrainingRelated/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Broadcast_Accumulator.py with timestamp 1516263179364
+18/01/18 13:43:02 INFO Utils: /home/shrinivaasanka/Krishna_iResearch_OpenSource/GitHub/GitHub_Grafit_TrainingRelated/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Broadcast_Accumulator.py has been previously copied to /tmp/spark-c93af012-cf20-433a-ac92-bdf05843b06a/userFiles-1f27972f-3525-499b-b64f-6c020fd8f01b/Spark_Broadcast_Accumulator.py
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 3
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 6
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 10
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 15
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 21
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 28
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 36
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 45
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 55
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 66
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 78
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 91
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 105
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 120
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 136
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 153
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 171
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 190
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 210
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 231
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 253
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 276
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 300
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 325
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 351
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 378
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 406
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 435
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 465
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 496
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 528
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 561
+18/01/18 13:43:03 INFO PythonRunner: Times: total = 665, boot = 639, init = 24, finish = 2
+18/01/18 13:43:03 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1563 bytes result sent to driver
+18/01/18 13:43:03 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, localhost, executor driver, partition 1, PROCESS_LOCAL, 6243 bytes)
+18/01/18 13:43:03 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+18/01/18 13:43:03 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 1141 ms on localhost (executor driver) (1/3)
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 34
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 69
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 105
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 142
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 180
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 219
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 259
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 300
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 342
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 385
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 429
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 474
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 520
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 567
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 615
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 664
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 714
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 765
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 817
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 870
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 924
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 979
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1035
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1092
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1150
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1209
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1269
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1330
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1392
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1455
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1519
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1584
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1650
+18/01/18 13:43:03 INFO PythonRunner: Times: total = 16, boot = 9, init = 4, finish = 3
+18/01/18 13:43:03 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 1563 bytes result sent to driver
+18/01/18 13:43:03 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2, localhost, executor driver, partition 2, PROCESS_LOCAL, 6243 bytes)
+18/01/18 13:43:03 INFO Executor: Running task 2.0 in stage 0.0 (TID 2)
+18/01/18 13:43:03 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 198 ms on localhost (executor driver) (2/3)
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 67
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 135
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 204
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 274
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 345
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 417
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 490
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 564
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 639
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 715
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 792
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 870
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 949
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1029
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1110
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1192
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1275
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1359
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1444
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1530
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1617
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1705
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1794
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1884
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 1975
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 2067
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 2160
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 2254
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 2349
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 2445
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 2542
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 2640
+broadcast_accumulator_receiver():broadcast_var= broadcast_message
+broadcast_accumulator_receiver():accumulator_var= 2739
+18/01/18 13:43:03 INFO PythonRunner: Times: total = 12, boot = 5, init = 5, finish = 2
+18/01/18 13:43:03 INFO Executor: Finished task 2.0 in stage 0.0 (TID 2). 1563 bytes result sent to driver
+18/01/18 13:43:04 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 170 ms on localhost (executor driver) (3/3)
+18/01/18 13:43:04 INFO DAGScheduler: ResultStage 0 (foreach at /home/shrinivaasanka/Krishna_iResearch_OpenSource/GitHub/GitHub_Grafit_TrainingRelated/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Broadcast_Accumulator.py:42) finished in 1.426 s
+18/01/18 13:43:04 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+18/01/18 13:43:04 INFO DAGScheduler: Job 0 finished: foreach at /home/shrinivaasanka/Krishna_iResearch_OpenSource/GitHub/GitHub_Grafit_TrainingRelated/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Broadcast_Accumulator.py:42, took 1.692900 s
+18/01/18 13:43:04 INFO SparkContext: Invoking stop() from shutdown hook
+18/01/18 13:43:04 INFO SparkUI: Stopped Spark web UI at http://192.168.122.1:4040
+18/01/18 13:43:04 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+18/01/18 13:43:04 INFO MemoryStore: MemoryStore cleared
+18/01/18 13:43:04 INFO BlockManager: BlockManager stopped
+18/01/18 13:43:04 INFO BlockManagerMaster: BlockManagerMaster stopped
+18/01/18 13:43:04 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+18/01/18 13:43:04 INFO SparkContext: Successfully stopped SparkContext
+18/01/18 13:43:04 INFO ShutdownHookManager: Shutdown hook called
+18/01/18 13:43:04 INFO ShutdownHookManager: Deleting directory /tmp/spark-c93af012-cf20-433a-ac92-bdf05843b06a/pyspark-c4beb23b-d2c4-4793-a5ac-e5ae279f40c7
+18/01/18 13:43:04 INFO ShutdownHookManager: Deleting directory /tmp/spark-c93af012-cf20-433a-ac92-bdf05843b06a
