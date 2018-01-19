@@ -312,14 +312,16 @@ This problem has direct bearing on Tabulation Hashing where two objects have sam
 --------------------------------------------------------------------------------------------------------------------------------
 Question can be translated to finding a number in a set of unsorted numbers. Trivial brute-force search is of O(N). Can this be
 improved? There are some ways to go about:
+
 1. Searching set of numbers is one dimensional. If each integer is mapped to a tuple in
 n-dimensional space, then searching reduces to shooting a ray from origin and doing a sweepline which is computational geometric
 reduction of search problem. For example, 2387283 is mapped to [2,3,8,7,2,8,3] which is 7 dimensional tuple. Each dimension has
 maximum of 10 values - 0 to 9. Each number in set is thus a tuple in this space. This has some parallels to kernel trick and
 Support Vector Machines in Machine Learning which lift data in low dimension to higher dimension (Mercer polynomial Kernels). Previous
 reduction depends on the radix of the numbers. Representing in hexadecimals, widens the ease of search. This reduction creates a
-new n-dimensional dataset from one dimensional and distance of any point from origin is the L2 norm upperbounded by sqrt(N*100).This shrinks
-the distance of any point in the haystack from other point from O(N) to O(sqrt(N)).
+new d-dimensional dataset from one dimensional and distance of any point from origin is the L2 norm upperbounded by sqrt(d*100).This shrinks
+the distance of any point in the haystack from other point from O(N) to O(sqrt(d)).
+
 2. Represent the numbers in dataset as M*N matrix where N is the size of set and M is the number of digits. Each column is then
 transformed into a hashtable of size N. There are M such hashtables. Searching the number is then looking up each digit of the query
 in respective digit's hashtable. For example, 123,235,534,323,333 form the matrix:
@@ -331,3 +333,5 @@ in respective digit's hashtable. For example, 123,235,534,323,333 form the matri
 Next create 3 hashtables for 3 digits: [1,2,5,3,3],[2,3,3,2,3],[3,5,4,3,3]
 Searching 323 then requires 3 lookups for 3,2,3 in each of previous tables successively.
 This is O(M) assuming O(1) hash lookup and no sorting is needed. Overhead is the preprocessing step of creating hashtables.
+
+Algorithm 1 can search a query point by Algorithm 2.
