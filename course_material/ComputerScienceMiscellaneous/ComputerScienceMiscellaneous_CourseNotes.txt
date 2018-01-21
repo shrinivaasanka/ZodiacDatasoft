@@ -335,3 +335,17 @@ Searching 323 then requires 3 lookups for 3,2,3 in each of previous tables succe
 This is O(M) assuming O(1) hash lookup and no sorting is needed. Overhead is the preprocessing step of creating hashtables.
 
 Algorithm 1 can search a query point by Algorithm 2.
+
+This algorithm has been implemented in NeuronRain AsFer - https://github.com/shrinivaasanka/asfer-github-code/blob/master/python-src/UnsortedSearch.py
+Example unsorted search - https://github.com/shrinivaasanka/asfer-github-code/blob/master/python-src/testlogs/UnsortedSearch.log.21January2018
+---------------------------------------------------
+...
+Is Queried integer 99455 in unsorted array: False
+Is Queried integer 43 in unsorted array: True
+Is Queried integer 31 in unsorted array: True
+Is Queried integer 17 in unsorted array: True
+Is Queried integer 3278 in unsorted array: False
+Is Queried integer 333 in unsorted array: False
+Is Queried integer 29 in unsorted array: True
+---------------------------------------------------
+
