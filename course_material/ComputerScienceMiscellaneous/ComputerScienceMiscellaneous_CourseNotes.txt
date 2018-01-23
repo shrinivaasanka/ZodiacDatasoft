@@ -348,4 +348,5 @@ Is Queried integer 3278 in unsorted array: False
 Is Queried integer 333 in unsorted array: False
 Is Queried integer 29 in unsorted array: True
 ---------------------------------------------------
-
+Previous matrix representation of the unsorted numerical dataset replaces the traditional array storage and requires O(M*N) space. Sequential
+search time of O(M) derived previously can be shrunk to O(1) by searching each digit parallelly in M processors, because each digit can be lookedup independent of others. If number of digits is upperbounded by a constant, storage is O(N) which is of same space complexity as array storage.
