@@ -148,3 +148,41 @@ Cost = 4h^2 + 2h(4h) = 12h^2 = 12*(6.2996)^2 = 476.21
 Reference:
 ---------
 Mathematical Puzzles of SAM LOYD - Selected and Edited by MARTIN GARDNER
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Catalan Numbers - How many squares and lattice paths are in a grid e.g 4 * 4 - Puzzle 142 - Puzzles To Puzzle You - 
+Shakuntala Devi - 26 January 2018
+-------------------------------------------------------------------------------------------------------------------------------------------
+In a grid of 4 * 4, number of possible squares are obtained by moving a sliding 2 dimensional square window left-right, top-down as in
+algorithm below:
+	for square sliding window size w*w
+	{
+		slide window top-down
+		{	
+			slide window left-right 
+			number_of_squares += 1
+		}
+		w = w+1
+	}
+Sliding window square increases in size from 1*1 to 4*4.
+Number of squares of size 1*1 = 16 = 4*4
+Number of squares of size 2*2 = 9  = 3*3
+Number of squares of size 3*3 = 4  = 2*2
+Number of squares of size 4*4 = 1  = 1*1
+			-----------
+			Total = 30
+			-----------
+Generic series is = 1 + 2^2 + 3^2 + ... + n^2
+
+Number of lattice paths in the grid which lead from bottom left to top right of the grid is the Catalan Number = 1/(n+1) * 2nCn which is
+same as number of Dyck words of the form XXYXX,... number of possible rooted binary trees of node size n and number of possible balanced 
+parenthesizations of an infix arithmetic expression. Catalan numbers are ubiquitous in combinatorial algorithms involving recursions and
+self-similarity. Catalan number is also the number of random walks in the grid graph.
+
+Most celebrated result involving Catalan numbers is the Bertrand Ballot Theorem: In an election of two candidates A and B, if A receives
+p votes and B receives q votes, p > q, what is the probability A is strictly ahead of B throughout counting? This problem reduces to counting
+dyck paths in the grid (time versus votes). Ballot Theorem applies to Streaming binary datasets and gives the probability of 1s dominating the stream if 1s outnumber 0s and vice versa.
+
+Reference:
+---------
+Puzzles To Puzzle You - Shakuntala Devi 
