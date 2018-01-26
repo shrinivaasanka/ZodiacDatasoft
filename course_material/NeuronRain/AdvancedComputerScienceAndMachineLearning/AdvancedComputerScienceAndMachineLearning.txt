@@ -78,3 +78,80 @@ where ut = update gate,
 Both above have been implemented in:
 https://github.com/shrinivaasanka/asfer-github-code/blob/master/python-src/DeepLearning_LSTMRecurrentNeuralNetwork.py
 https://github.com/shrinivaasanka/asfer-github-code/blob/master/python-src/DeepLearning_GRURecurrentNeuralNetwork.py
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Mathematical Puzzles of Sam Loyd (selected and edited by Martin Gardner) - Puzzle 18 - What is the most economical form of a tank
+designed to hold 1000 cubic feet? - 26 January 2018
+--------------------------------------------------------------------------------------------------------------------------------------
+A Plumber wanted to estimate the lowest possible cost of a copper tank to hold 1000 cubic feet. Copper costs $1 per square foot. Problem
+is to determine most economical dimensions of the rectangular tank of capacity 1000 cubic feet. Trivial solution of 10 feet * 10 feet *
+10 feet = 1000 cubic feet tank costs $500 of copper surface (100 in bottom + 4*100 in sides). Another solution which costs less than
+$500 for copper surfacing is expected.
+
+Plumber's problem has applications in packing/knapsack algorithms which minimize the cost of packing items in least volume. This is also
+equivalent to storing set of 1000 elements in a 3 dimensional array (cube) subject to minimizing the objective function xy + 2z(x+y) and constraint xyz = 1000 for array indices x,y,z.
+
+This problem can be cast into a (Multi)Linear Program formulation - sums of products 
+Let l,b,h be the length,breadth and height of the tank.
+
+The objective cost function for copper plating the surface to be minimized is:
+	l*b + 2*h*l + 2*h*b = cost
+subject to constraint:
+	l*b*h = 1000 
+
+Objective function can be rewritten as:
+	1000/h + 2h(l + b) = cost
+
+Solving multilinear programs is non-trivial requiring reformulation and linearization creating a new LP(RL algorithms).  
+
+------------------------
+1. (l+b) is a constant:
+------------------------
+If (l+b) = sum of sides of rectangles is fixed to be a constant elementary calculus can solve this:
+first derivative of cost function is equated to zero:
+	d(cost)/dh = -1000/h^2 + 2(l+b) = 0
+	2(l+b) = 1000/h^2
+	h^2 = 1000/[2(l+b)]
+	h = 22.36068/sqrt(l+b)
+[ => lbh = lb*22.36068/sqrt(l+b) = 1000, lb/sqrt(l+b) = 1000/22.36068 = 44.72 ]
+
+Second derivative of cost function is positive, implying a local minima. Thus if height of the tank h is inversely related to square root of sum of length and breadth of bottom rectangle as h = 22.36/sqrt(l+b), cost of copper plating is minimized. If bottom is a square, l = b and
+h = 22.36/(1.414*sqrt(l)) = 15.811/sqrt(l).
+
+=> lbh = ll*15.811/sqrt(l) = 15.811*l*sqrt(l) = 1000
+=> l^1.5 = 1000/15.811 = 63.247
+=> 1.5 log l = log 63.247
+=> l = 15.874
+=> h = 15.811/sqrt(15.874) = 3.968
+
+Dimensions of the tank of least copper plating cost by local mimima = 15.874 * 15.874 * 3.968 
+Cost = 500 which is not less than 10 * 10 * 10.
+
+---------------------------------------------
+2. Bottom is a square and is a function of h:
+---------------------------------------------
+Bottom is square : l=b=kh
+Cost function: kh*kh + 2h*kh + 2h*kh = k^2*h^2 + 4k*h^2
+Cost = (k^2 + 4k) * h^2
+Volume = lbh = kh*kh*h = k^2*h^3 = 1000
+=> h^3 = 1000/(k^2)
+
+Cost = (k^2 + 4k) * (1000)^0.66/k^1.33) = (k^2 + 4k)/k^1.33 * 95.49926
+Cost = (k^0.66 + 4k^(-0.33)) * 95.49926
+d(Cost)/dk = 0.66*k^(-0.33) - 1.33*k^(-1.33) = 0
+=> minima at k = 2.
+
+Dimensions are 2h*2h*h and 
+Cost is 12h^2 = 476.21 for h=6.2966
+
+-------------
+Book Solution: 
+-------------
+If bottom is a square of side = 2h for height h, economical cost is attained.
+=> 2h*2h*h = 4h^3 = 1000
+=> h = 6.2996
+Cost = 4h^2 + 2h(4h) = 12h^2 = 12*(6.2996)^2 = 476.21  
+
+Reference:
+---------
+Mathematical Puzzles of SAM LOYD - Selected and Edited by MARTIN GARDNER
