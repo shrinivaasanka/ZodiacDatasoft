@@ -186,3 +186,17 @@ dyck paths in the grid (time versus votes). Ballot Theorem applies to Streaming 
 Reference:
 ---------
 Puzzles To Puzzle You - Shakuntala Devi 
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Binary Search of a sorted array containing gaps - 6 February 2018
+-------------------------------------------------------------------------------------------------------------------------------------
+Q:Usual binary searches are made on arrays of contiguous sorted elements. How can binary search be made to work if the array has gaps/holes
+and yet the contents are in sorted order? E.g Array 12,33,44,-,-,56,-,66,-,-,-,88,99,-,-,123 is sorted ascending but has gaps.
+
+A1: One possible solution is to fill the gaps with placeholder numbers or replicate the integers in hole boundaries to fill the gap. Previous
+example array is filled as 12,33,44,44,44,56,56,66,66,66,66,88,99,99,99,123.
+A2: Other possibility is to fill the gaps with an arithmetic progression on difference of the integers on the boundaries. Previous example array is filled as 12,33,44,48,52,56,61,66,...
+A3: Filling is necessary because to choose the subtree of search, an integer is necessary. Non-filling solution has to branch off to a subtree based on some other meta data on the gaps. Alternative: when a "-" is found, scan the array in one direction till an integer appears and branch off. This is similar to open addressing in hash tables. But this linear scan increases the amortized binary search cost from O(logN) to something higher. But filling the gaps by placeholders or arithmetic progressions is also linear and makes binary search superlogarithmic.
+
+This problem has applications in splitting a single huge sorted array into multiple smaller arrays, distributed geographically but logically mapped to virtual memory pages in single address space, and searching them.
+
