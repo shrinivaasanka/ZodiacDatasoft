@@ -200,3 +200,27 @@ A3: Filling is necessary because to choose the subtree of search, an integer is 
 
 This problem has applications in splitting a single huge sorted array into multiple smaller arrays, distributed geographically but logically mapped to virtual memory pages in single address space, and searching them.
 
+---------------------------------------------------------------------------------------------------------------------------------------
+Sublinear Multiple String Concatenation - 8 February 2018
+---------------------------------------------------------------------------------------------------------------------------------------
+Q: Concatenation of multiple strings is trivially doable in O(N). Can N strings be concatenated in sublinear time?
+
+A: Subject to certain assumptions following algorithm does sublinear multiple string concatenation:
+
+Let the number of strings be N each of length l. Each string is fingerprinted/compressed to length logN by a standard algorithm e.g Rabin string fingerprint which computes a polynomial of degree l over Galois Field GF(2) and divides this by an irreducible polynomial of degree logN over GF(2) to create a fingerprint of logN-bit length. 
+
+Create a matrix of logN * N (transpose) which has logN rows and as many columns as number of strings. Entries of this matrix are the bits of string fingerprint hashes. This transformation converts N strings of length l to logN strings of length N. Hashes are stored as Rope strings to facilitate logN time pairwise computation. These logN strings are concatenated as a binary tree bottom-up and each pairwise concatenation is O(logN). Following series sums up the runtime:
+	logN*(logN/2 + logN/4 + logN/8 + logN/16 + ...)
+	= logN*logN*2 
+	= 2(logN)^2
+This indirectly concatenates N strings in O(logN*logN) time. But it messes up with original string. This requires slight modification to pairwise Rope string concatenation routine. Before concatenation hash has to be reverse engineered (Rabin fingerprint polynomials have to be stored) to unicode string and location in the resultant single concatenation has to be ingredient of this routine. 
+
+Fingerprinting is not a necessity. Without fingerprint, previous matrix is l * N (l strings of length N) and the concatenation tree has following runtime geometric recurrence:
+	logN*(l/2 + l/4 + l/8 + l/16 + ...) 
+	[because each internal node of concatenation tree needs O(logN) time for 2 Rope string concatenation]
+	= logN*2l 
+	= 2*l*logN
+
+This runtime is sublinear if:
+	2*l*logN < N
+	length of each string = l < N/(2*logN)
