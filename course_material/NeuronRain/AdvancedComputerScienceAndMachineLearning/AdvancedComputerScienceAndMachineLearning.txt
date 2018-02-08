@@ -224,3 +224,24 @@ Fingerprinting is not a necessity. Without fingerprint, previous matrix is l * N
 This runtime is sublinear if:
 	2*l*logN < N
 	length of each string = l < N/(2*logN)
+
+Example:
+-------
+Set of 5 strings of length 2:
+	aaaa
+	bbbb
+	cccc
+	dddd
+	eeee
+is transformed to transpose matrix of 4 strings of length 5:
+	abcde
+	abcde
+	abcde
+	abcde
+Rope representation of these 4 strings are 4 binary trees. Rope concatenation routine has to be changed to write the literals of new string
+in correct locations in the final concatenation e.g abcde + abcde = abcdeabcde has to be surgically mapped to aa---bb---cc---dd---ee---. Rope insertion is also O(logN). This might require storing index information for each literal in original set of strings.
+
+References:
+-----------
+1. Rope Strings - http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.9450&rep=rep1&type=pdf - [hans-j. boehm, russ atkinson and michael plass, Xerox PARC, 3333 Coyote Hill Rd., Palo Alto, CA 94304, U.S.A.]
+2. Rabin-Karp String Fingerprinting by Random polynomials - [Michael O.Rabin] - http://www.xmailserver.org/rabin.pdf 
