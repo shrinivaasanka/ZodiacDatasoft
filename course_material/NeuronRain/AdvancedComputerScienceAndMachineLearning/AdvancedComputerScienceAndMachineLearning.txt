@@ -227,7 +227,7 @@ This runtime is sublinear if:
 
 Example:
 -------
-Set of 5 strings of length 2:
+Set of 5 strings of length 4:
 	aaaa
 	bbbb
 	cccc
@@ -238,8 +238,12 @@ is transformed to transpose matrix of 4 strings of length 5:
 	abcde
 	abcde
 	abcde
-Rope representation of these 4 strings are 4 binary trees. Rope concatenation routine has to be changed to write the literals of new string
-in correct locations in the final concatenation e.g abcde + abcde = abcdeabcde has to be surgically mapped to aa---bb---cc---dd---ee---. Rope insertion is also O(logN). This might require storing index information for each literal in original set of strings.
+Rope representation of these 4 strings are 4 binary trees. Rope concatenation routine has to be changed to write the literals of new string in correct locations in the final concatenation e.g abcde + abcde = abcdeabcde has to be surgically mapped to aa--bb--cc--dd--ee--. Rope insertion is also O(logN). This might require storing index information for each literal in original set of strings.
+
+Following is an example for the changed Rope concatenation by storing indices of matrix entries for abcde and abcde:
+	a(1,1)b(2,1)c(3,1)d(4,1)e(5,1)
+	a(1,2)b(2,2)c(3,2)d(4,2)e(5,2)
+In final concatenation, new indices for previous literals are (length_of_string*(i-1) + j). Rope concatenation is just O(1) for merging two trees as subtrees of a new root. Only updating sum of left subtree leaf weights is O(logN). Storing matrix index information multiplies the string length by 5 (length of "(i,j)") which is a constant multiple and string lengths remain O(N).
 
 References:
 -----------
