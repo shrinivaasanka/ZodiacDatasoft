@@ -263,7 +263,6 @@ References:
 -----------
 1. Rope Strings - http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.9450&rep=rep1&type=pdf - [hans-j. boehm, russ atkinson and michael plass, Xerox PARC, 3333 Coyote Hill Rd., Palo Alto, CA 94304, U.S.A.]
 2. Rabin-Karp String Fingerprinting by Random polynomials - [Michael O.Rabin] - http://www.xmailserver.org/rabin.pdf 
-i
 
 ---------------------------------------------------------------------------------
 How would you move Mount Fuji? - 11 February 2018
@@ -280,7 +279,7 @@ mountain is moved by an intermediate stack:
 		   5  ---   1 2
 		   3	    3 4
 		   1	    5 6
-Previous move is O(Volume_of_mount). Towers of Hanoi (Towers of Brahma in Kashi Vishwanath temple) problem is akin to this and requires exponential number of moves. For 64 disks of Towers of Brahma, this requires 2^64 - 1 moves which is legendary lifetime of universe (1 second per move translates to 585 billion years). Non-trivial requirement in this problem is no disk should be on smaller disk.
+Previous move is O(Volume_of_mount). Towers of Hanoi (Towers of Brahma in Kashi Vishwanath temple) problem is akin to this and requires exponential number of moves. For 64 disks of Towers of Brahma, this requires 2^64 - 1 moves which is legendary lifetime of universe (1 second per move translates to 585 billion years). Non-trivial requirement in this problem is no disk should be on smaller disk. Moving mount Fuji of height h sliced as horizontal disks instead of cubes is exactly Tower of Hanoi problem of time O(2^h-1).
 
 Reference:
 ---------
