@@ -284,3 +284,46 @@ Previous move is O(Volume_of_mount). Towers of Hanoi (Towers of Brahma in Kashi 
 Reference:
 ---------
 Towers of Brahma - https://en.wikipedia.org/wiki/Tower_of_Hanoi
+
+----------------------------------------------------------------------------------------------------
+Number of Perfect (Mis)Matchings - Hat Puzzle - 17 February 2018
+----------------------------------------------------------------------------------------------------
+There are N people in a congregation and they have to choose matching hat for each. But they endup choosing a non-matching hat at random. What is the probability of everyone choosing a non-matching hat?
+
+This problem can be formulated as Bipartite Matching in Bipartite Graph - Set of vertices of people and Set of Hats forming the bipartisan. Each choice corresponds to an edge in this graph. Usual problem of perfect matching tries to find edges between these sets which create a bijection. Hat problem goes further beyond this and tries to match the index of the vertices too. For example:
+	p1 p2 p3
+	1  2  3
+	1  3  2
+	2  1  3
+	2  3  1
+	3  1  2
+	3  2  1
+is the set of permutations of persons p1,p2,p3 choosing the humbered hats 1,2,3. Non-matching choices are:
+	p1 p2 p3
+	2  3  1
+	3  1  2
+in which everyone has a mismatch.Counting the number of mismatches has the following algorithm:
+	for each person
+	{
+	  remove permutations which match the person's index from set of all permutations
+	}
+
+In previous example following are the iteratively curtailed set of permutations:
+	person3:
+	1 3 2
+	2 3 1
+	3 1 2
+	3 2 1
+	person2:
+	1 3 2
+	2 3 1
+	3 1 2
+	person1:
+	2 3 1
+	3 1 2
+
+Contrasting this with Mulmuley-Vazirani-Vazirani Theorem for number of perfect matchings by Isolation Lemma, hat puzzle estimates Perfect Mismatches in Bipartite Graphs.
+
+Reference:
+----------
+Puzzle 113 and its Solution Recurrence - Mathematical Puzzles of SAM LOYD - Selected and Edited by MARTIN GARDNER
