@@ -330,6 +330,7 @@ for n=number_of_hats/persons, m=number of hats/persons not yet chosen. Intuition
 
 Contrasting this with Mulmuley-Vazirani-Vazirani Theorem for number of perfect matchings by Isolation Lemma, hat puzzle estimates Perfect Mismatches in Bipartite Graphs.In Group Theoretic terms, previous number of perfect matchings is the number of permutations of cycle 6 in Symmetric Group S6 i.e each element in a permutation is mapped to a different element and all elements are moved.
 
-Reference:
+References:
 ----------
-Puzzle 113 and its Solution Recurrence (tends to 1/e for large n) - Mathematical Puzzles of SAM LOYD - Selected and Edited by MARTIN GARDNER
+(#) Puzzle 113 and its Solution Recurrence (tends to 1/e for large n) - Mathematical Puzzles of SAM LOYD - Selected and Edited by MARTIN GARDNER
+(#) The Art Of Computer Programming - Combinatorial Algorithms - Volume 4a - [Don Knuth] - Section 7.2.1.2 - Generating All Permutations - Reverse Colex Order, Sims table for succinct representation of Symmetric Group elements.
