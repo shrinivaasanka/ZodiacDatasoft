@@ -351,3 +351,10 @@ A: One possible solution is to have set of fair coins and tossing them all simul
 	111
 number of streaks matching regex 11 are 011,110,111 which is probability 3/8. This creates an unfair randomness bias and set of streaks matching regex correspond to 1 and rest are 0 in the unfair coin. Pr(streaks having 11=1) = 3/8 and Pr(streaks not having 11=0) = 5/8. This is a very primitive epsilon bias generator.
 
+-----------------------------------------------------------------------------------------------------------------------
+Print the Nth element of a Fibonacci Sequence - 12 March 2018
+-----------------------------------------------------------------------------------------------------------------------
+Trivial solution uses the recurrence f(n) = f(n-1) + f(n-2) and f(0)=f(1)=1 and is exponential. Assuming Memoization/Cacheing of results,f(n-2)
+and f(n-1) can be memoized to compute f(n). Mathematically, Nth Fibonacci number is expressed in terms of Golden Ratio Phi = (1 + sqrt(5))/2 as:
+	f(n) = (Phi^n-(1-Phi)^n/sqrt(5)
+which is based on definition of Golden Ratio = f(n+1)/f(n) for large n
