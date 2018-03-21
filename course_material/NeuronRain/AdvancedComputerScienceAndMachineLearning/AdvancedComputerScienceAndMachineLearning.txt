@@ -354,9 +354,17 @@ number of streaks matching regex 11 are 011,110,111 which is probability 3/8. Th
 2) Another solution which expands a uniformly chosen permutation array by replicating an extra skew variable and all but skew variable have a biased probability of choice has been implemented in NeuronRain AsFer (https://github.com/shrinivaasanka/asfer-github-code/blob/master/python-src/EpsilonBiasNonUniformChoice.py) and is used in generating random 3SAT instances for SAT Solver - https://github.com/shrinivaasanka/asfer-github-code/blob/master/python-src/CNFSATSolver.py. This is based on creating a Random Matrix per random 3SAT , computing Expected average per literal probability and is different from the standard Survey Propagation Message Passing Algorithm which represents SAT as a factor graph - https://arxiv.org/pdf/cs/0212002.pdf - graph having 2 types of vertices for variables and clauses and edges are between variables and clauses having variables - message passing belief propagation of potentials of a variable taking value 1 or 0.
 
 -----------------------------------------------------------------------------------------------------------------------
-Print the Nth element of a Fibonacci Sequence - 12 March 2018
+Print the Nth element of a Fibonacci Sequence - 12 March 2018, 21 March 2018
 -----------------------------------------------------------------------------------------------------------------------
 Trivial solution uses the recurrence f(n) = f(n-1) + f(n-2) and f(0)=f(1)=1 and is exponential. Assuming Memoization/Cacheing of results,f(n-2)
 and f(n-1) can be memoized to compute f(n). Mathematically, Nth Fibonacci number is expressed in terms of Golden Ratio Phi = (1 + sqrt(5))/2 as:
 	f(n) = (Phi^n-(1-Phi)^n/sqrt(5)
 which is based on definition of Golden Ratio = f(n+1)/f(n) for large n
+
+Related fibonacci recurrence is the problem of finding number of 1s in set of all n-bit strings. Number of 1s or 0s in set of all n-bit strings is denoted by the recurrence:
+	f(n)=2*f(n-1) + 2^(n-1)
+Expanding the recurrence recursively creates a geometric series summation which gives the Nth element in sequence:
+	f(n) = [2^n-1 + 2 + 2^2 + 2^3 + ... + 2^(n-1)]
+Probability of finding 1s or 0s in set of all n-bit strings = [2*f(n-1) + 2^(n-1)] / n*2^n = 0.5
+
+This recurrence is quite ubiquitous in problems involving uniform distribution e.g number of positive/negative votes in voting patterns, number of Heads/Tails in Bernoulli Coin Toss Streaks etc.,.It has been mentioned in the context of 2-coloring/Complementation in https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt .
