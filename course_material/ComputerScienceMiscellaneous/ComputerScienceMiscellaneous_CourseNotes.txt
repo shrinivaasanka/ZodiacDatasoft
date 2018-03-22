@@ -322,17 +322,19 @@ reduction depends on the radix of the numbers. Representing in hexadecimals, wid
 new d-dimensional dataset from one dimensional and distance of any point from origin is the L2 norm upperbounded by sqrt(d*100).This shrinks
 the distance of any point in the haystack from other point from O(N) to O(sqrt(d)).
 
-2. Represent the numbers in dataset as M*N matrix where N is the size of set and M is the number of digits. Each column is then
-transformed into a hashtable of size N. There are M such hashtables. Searching the number is then looking up each digit of the query
-in respective digit's hashtable. For example, 123,235,534,323,333 form the matrix:
-	1 2 3
-	2 3 5
-	5 3 4
-	3 2 3
-	3 3 3
-Next create 3 hashtables for 3 digits: [1,2,5,3,3],[2,3,3,2,3],[3,5,4,3,3]
-Searching 323 then requires 3 lookups for 3,2,3 in each of previous tables successively.
-This is O(M) assuming O(1) hash lookup and no sorting is needed. Overhead is the preprocessing step of creating hashtables.
+2. Represent the numbers in dataset as M*N matrix where N is the size of set and M is the number of digits. Each contiguous subset of columns
+are transformed into a hashtable of size N corresponding to O(M^2) substrings. Searching the number is then looking up each digit/substring of the query in respective digit's/substring's hashtable. For example, 123,235,534,323,333,343 form the contiguous column subsets:
+	1 2 3 12 23
+	2 3 5 23 35
+	5 3 4 53 34
+	3 2 3 32 23
+	3 3 3 33 33
+	3 4 3 34 43
+Next create 5 hashtables for 3*2-1 digit substrings: [1,2,5,3,3,3],[2,3,3,2,3,4],[3,5,4,3,3,3],[12,23,53,32,33,34],[23,35,34,23,33,43]
+Searching 323 then requires 5 lookups for 3,2,3,32,23 in each of previous tables successively.
+Searching 545 returns true (false positive) if 4th and 5th contiguous substring columns are not considered which fail the lookup of 54 and 45.
+Number of substrings of an integer string of length M is M + M-1 + M-2 + ... + 1 = M(M-1)/2 and each hashtable is for a substring.
+Trivial M-length string hashtable is not created (which obviates this algorithm). This is O(M^2) total lookup assuming O(1) per table hash lookup and no sorting is needed. Overhead is the preprocessing step of creating hashtables. If M*M << N, this O(M^2) lookups is too less than bruteforce search of O(N). Number of possible M-digit strings are 10^M which is maximum possible value of N, and M^2 << 10^M.
 
 Algorithm 1 can search a query point by Algorithm 2.
 
