@@ -339,7 +339,8 @@ Trivial M-length string hashtable is not created (which obviates this algorithm)
 Algorithm 1 can search a query point by Algorithm 2.
 
 This algorithm has been implemented in NeuronRain AsFer - https://github.com/shrinivaasanka/asfer-github-code/blob/master/python-src/UnsortedSearch.py
-Example unsorted search - https://github.com/shrinivaasanka/asfer-github-code/blob/master/python-src/testlogs/UnsortedSearch.log.21January2018
+
+Example unsorted search 1 - https://github.com/shrinivaasanka/asfer-github-code/blob/master/python-src/testlogs/UnsortedSearch.log.21January2018
 ---------------------------------------------------
 ...
 Is Queried integer 99455 in unsorted array: False
@@ -350,8 +351,22 @@ Is Queried integer 3278 in unsorted array: False
 Is Queried integer 333 in unsorted array: False
 Is Queried integer 29 in unsorted array: True
 ---------------------------------------------------
-Previous matrix representation of the unsorted numerical dataset replaces the traditional array storage and requires O(M*N) space. Sequential
-search time of O(M) derived previously can be shrunk to O(1) by searching each digit parallelly in M processors, because each digit can be lookedup independent of others. If number of digits is upperbounded by a constant, storage is O(N) which is of same space complexity as array storage.
+Example unsorted search 2 - https://raw.githubusercontent.com/shrinivaasanka/asfer-github-code/1b543857e41824a1ed0e10211ceb1e0906bd670c/python-src/testlogs/UnsortedSearch.log.23March2018
+----------------------------------------------------
+Is Queried integer 99455 in unsorted array: False
+Is Queried integer 43 in unsorted array: True
+Is Queried integer 31 in unsorted array: True
+Is Queried integer 17 in unsorted array: True
+Is Queried integer 3278 in unsorted array: False
+Is Queried integer 333 in unsorted array: False
+Is Queried integer 29 in unsorted array: True
+Is Queried integer 327 in unsorted array: False
+Is Queried integer 115 in unsorted array: False
+----------------------------------------------------
+Previous matrix representation of the unsorted numerical dataset replaces the traditional array storage and requires O(M^2*N) space. Sequential
+search time of O(M^2) derived previously can be shrunk to O(1) by searching each substring parallelly in M^2 processors. If number of digits is upperbounded by a constant, storage is O(N) which is of same space complexity as array storage. With respect to overhead of creating hashtables, the benefit of Unsorted Search is the ability to exit the search if prefix or suffix is not found and entire number string need not be matched and is significant optimization for large M. Insertion of an M-digit integer into this Hash storage is O(M^2) for all substrings whereas in traditional lists appending is O(1). But lookup in traditional unsorted list is O(N) and O(M^2) in Unsorted Search of Substring hashtables. Thus the latency of Unsorted Search is only in adding an integer to list and is O(N*M^2) for all integers.
+
+Present implementation in NeuronRain AsFer creates hashtables only for all prefixes and suffixes of strings. Similar to Bloom Filters, Unsorted Search of single digit hashtable lookup can have only False Positives and not False Negatives - if a number does not exist it can be wrongly flagged as match, but if it exists match is always correct. False Positives are removed by matching all prefixes and suffixes. Hashtables for just prefixes and suffixes are sufficient because Set of Unsorted Integers can be stored in a TRIE M-ary Tree datastructure in which numbers in list are marked in internal nodes by a delimiter and all root to nodes paths are the prefixes. Mismatch is flagged by an absence of root-to-node path prefix in TRIE. Maximum size of the TRIE is 10^M.
 
 -----------------------------------------------------------------------------------------------------
 How can a Binary Search Tree be verified? - 12 March 2018
