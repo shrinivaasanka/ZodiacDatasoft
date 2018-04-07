@@ -368,3 +368,13 @@ Expanding the recurrence recursively creates a geometric series summation which 
 Probability of finding 1s or 0s in set of all n-bit strings = [2*f(n-1) + 2^(n-1)] / n*2^n = 0.5
 
 This recurrence is quite ubiquitous in problems involving uniform distribution e.g number of positive/negative votes in voting patterns, number of Heads/Tails in Bernoulli Coin Toss Streaks etc.,.It has been mentioned in the context of 2-coloring/Complementation in https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt .
+
+----------------------------------------------------------------------------------------------------------------------
+Newton-Raphson approximate factoring - 6 April 2018
+----------------------------------------------------------------------------------------------------------------------
+https://kuja27.blogspot.in/2018/04/grafit-course-material-newton-raphson.html
+
+----------------------------------------------------------------------------------------------------------------------
+Chomsky Sentences - 6 April 2018
+----------------------------------------------------------------------------------------------------------------------
+https://kuja27.blogspot.in/2018/04/grafit-course-material-chomsky.html
