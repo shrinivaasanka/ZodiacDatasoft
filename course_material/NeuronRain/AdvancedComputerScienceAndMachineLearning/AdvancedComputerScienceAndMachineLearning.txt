@@ -374,6 +374,10 @@ Newton-Raphson approximate factoring - 6 April 2018
 ----------------------------------------------------------------------------------------------------------------------
 https://kuja27.blogspot.in/2018/04/grafit-course-material-newton-raphson.html
 
+References:
+---------
+1. http://www.math.lsa.umich.edu/~lagarias/TALK-SLIDES/dioph-cplx-icerm2011aug.pdf - Binary Quadratic Diophantine Equations (BQDE) and Factorization are equivalent. BQDE is known to be in NP(Succinct Certificates for Solutions to BQDE). If BQDE is in P, Factorization is in P. Computational Geometric NC algorithm for Factorization probably implies BQDE is in P (probably because implication is in opposite direction).
+
 ----------------------------------------------------------------------------------------------------------------------
 Chomsky Sentences - 6 April 2018
 ----------------------------------------------------------------------------------------------------------------------
