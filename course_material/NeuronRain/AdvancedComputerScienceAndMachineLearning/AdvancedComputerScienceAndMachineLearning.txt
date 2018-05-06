@@ -382,3 +382,23 @@ References:
 Chomsky Sentences - 6 April 2018
 ----------------------------------------------------------------------------------------------------------------------
 https://kuja27.blogspot.in/2018/04/grafit-course-material-chomsky.html
+
+----------------------------------------------------------------------------------------------------------------
+Money-Changing Problem and minimum partition - 6 May 2018
+----------------------------------------------------------------------------------------------------------------
+Q: How can all integers be generated as sum of elements of a minimum sized set (or) What are the least number
+of denominations for a currency to sum up to all possible values of money?
+
+A: Money Changing Problem or Coin Problem is an NP-hard problem (strong-NP or weak-NP depending on encoding) and is a variant of Integer Partition Problem. Most currencies use 1-2-5 series (and 10^x multiples of 1,2,5). Linear combinations of multiples of 1,2,5 can create all possible values minimizing the number of coins/bills e.g 2950 neuros (fictitious currency in NeuronRain) can be written as 2950 = 2*1000 + 1*500 + 2*200 + 1*50 and only 6 notes/coins are sufficient. There is a polynomial time Greedy algorithm for this as below(but exponential in number of bits):
+	Sort the denominations descending (1-2-5 series and multiples)
+	while (value != sum)
+	{
+		Choose the largest possible currency denomination remaining (ci) from sorted denominations
+		subtract largest multiple m of it from value (value = value - ci*m)
+		coins[ci] = coins[ci] + m 
+	}
+This algorithm also maps the partition to a hash table of optimum size - if each currency is assigned a serial number and denominations are keys, each per-key bucket is a chain of serial numbers for that denomination.In previous example, 2950 is mapped to hash table as below for serial numbers s1,s2,...,s6 and denominations 1000,500,200,50:
+	1000 - s1, s2
+	500 - s3
+	200 - s4, s5
+	50 - s6
