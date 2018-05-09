@@ -384,7 +384,7 @@ Chomsky Sentences - 6 April 2018
 https://kuja27.blogspot.in/2018/04/grafit-course-material-chomsky.html
 
 ----------------------------------------------------------------------------------------------------------------
-Money-Changing Problem and minimum partition - 6 May 2018
+Money-Changing Problem and minimum partition - 6 May 2018, 9 May 2018
 ----------------------------------------------------------------------------------------------------------------
 Q: How can all integers be generated as sum of elements of a minimum sized set (or) What are the least number
 of denominations for a currency to sum up to all possible values of money?
