@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------------------------
 GRAFIT Open Learning - Free Online Course Material based on NeuronRain OpenSource Codebase
 --------------------------------------------------------------------------------------------------
-Free course materials which are compiled from NeuronRain OpenSource Codebase Design Documents are committed in course_material/NeuronRain.
+Free course materials which are based on NeuronRain OpenSource Codebase are committed in course_material/NeuronRain.
 
 They have been segregated into:
 
@@ -17,12 +17,16 @@ They have been segregated into:
 
 ./NeuronRain/LinuxKernelAndCloud/BigdataAnalyticsCloud_CourseNotes.txt
 
-(*) Programming - C/C++/Java/Python (for students and Professionals)
+Generic Programming and Computer Science Miscellany course materials are in course_material/Programming and
+course_material/ComputerScienceMiscellaneous:
+
+(*) Programming - C/C++/Java/Python/GUI (for students and Professionals)
 
 ./Programming/Python/Python_CourseNotes.txt
 ./Programming/Java/Java_CourseNotes.txt
 ./Programming/C/C_CourseNotes.txt
 ./Programming/C++/CPlusPlus_CourseNotes.txt
+./Programming/GUI/
 
 (*) Miscellaneous Computer Science (Undergraduate Computer Science) 
 
