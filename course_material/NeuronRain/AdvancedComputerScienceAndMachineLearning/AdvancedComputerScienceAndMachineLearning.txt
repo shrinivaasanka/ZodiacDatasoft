@@ -404,3 +404,38 @@ This algorithm also maps the partition to a hash table of optimum size - if each
 	50 - s6
 	
 This algorithm solves the linear diophantine equation 1*exp(10)*x1 + 2*exp(10)*x2 + 5*exp(10)*x3 = N and also creates an exact cover/partition of the currencies represented by some diophantine.
+
+----------------------------------------------------------------------------------------------------------------
+Products of Other Integers - 22 May 2018
+----------------------------------------------------------------------------------------------------------------
+Q: Find an efficient algorithm to find the product of all other integers excluding an element or elements in an array.  Naive algorithm for excluding one element is O(N). For example, array [2,3,7,5,6] is multiplied to find product of all : 2*3*7*5*6 = 1260 and array of products of all other integers is found by iterated division per element : [1260/2,1260/3,1260/7,1260/5,1260/6]. Generalizing this to all possible subset exclusions is non-trivial.
+
+A: Following optimization is a way out. Downward closure subset product computations are cached in hash table at the outset as below by traversing array :
+		(2,3) - 6
+		(3,7) - 21
+		(7,5) - 35
+		(5,6) - 30
+		(2,3,7) - 42
+		(3,7,5) - 105
+		(7,5,6) - 210
+		(2,3,7,5) - 210
+		(3,7,5,6) - 630
+		(2,3,7,5,6) - 1260
+
+This precomputation is O(N*N) and done only once as prerequisite. This does not compute 2^N=2^5=32 subsets but only (N-1 + N-2 + N-3=) 9 subsets.
+
+For excluding subset {3,5} naive algorithm has to find product of set {3,5} or set difference {2,7,6} and compute the product 84 by division of 1260 which is O(N). 
+
+Algorithm based on previous lookup table:
+-----------------------------------------
+1. For a subset X to exclude, find the maximum overlapping subset of minimum size S in the lookup table i.e X intersection S is maximum but S has smallest possible size.
+
+2. Divide the product for S by the product for set difference of X with S to get product Z. (This could be recursive lookup for set difference in the previous cache) 
+
+3. Divide the product lookedup for all elements by Z for product of other integers 
+
+E.g 1. for excluding X={3,5}, lookup of the table results in S={3,7,5} which has maximum overlap with {3,5} but of smallest size ({2,3,7,5} also overlaps but is of larger size). Dividing the product lookedup for {3,7,5}=105 by set difference 7 with {3,5} yields Z=15. Finally, dividing product of all elements 1260 by 15 = 84 = 2*7*6.
+
+E.g 2. for excluding X={3,6}, lookup of the table results in S={3,7,5,6} which has maximum overlap for {3,6}. Dividing the product lookup for {3,7,5,6}=630 by recursive lookup for set difference {7,5}=35 yields 630/35=18. Final exclusion is 1260/18 = 70 = 2*5*7
+
+This algorithm is subset oblivious and is a slight improvement over brute-force multiplication of set or set difference because of cached subset products and is sublinear mostly. Previous examples required only 2 divisions whereas brute-force would need 3 multiplications assuming lookups are O(1). Cacheing has benefits in large arrays (when number of elements to be excluded are almost O(N)) for reducing number of multiplications.
