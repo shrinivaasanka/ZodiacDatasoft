@@ -481,6 +481,13 @@ A: Usually hash table keys are static not allowing dynamism. This requires an ov
 and hash_code() for a key is key_clockticks - timerticks. For example to lookup process p6, hash_code() returns
 45-2=43 at time t=2 re-routing to bucket for 43 instead of 45 at time t=0. Similarly two processes pi and pj of time slices 14 and 12 but having elapsed timerticks 4 and 2 have equal hashcodes - 14-4 = 12-2 = 10 - pi is older than pj and pj is enqueued in scheduler 2 ticks after pi when 14-2 = 12-0 = 12. Therefore both pi and pj are in same clocktick queue for 10. 
 
+When implemented as LSH partition, clockticks-to-processes map is isomorphic to some random integer partition of n(number of processes) and both n and partition of n oscillate dynamically based on clockticks. Mining patterns in streaming dataset of clockticks-to-processes maps is an indicator of performance of the system. Each clockticks-to-processes dictionary can be represented as a matrix:
+	c1 p11 p12 ... p1m
+	c2 p21 p22 ... p2m
+	...
+	cn pn1 pn2 ... pnm
+ci are clockticks and p(i,k) are processes having ci clockticks remaining before being swapped out scheduler. Because of matrix representation each LSH partition is a graph too (previous matrix is its adjacency). Frequent subgraph mining algorithms can mine patterns in the clockticks-to-processes dictionaries. If the dictionary is string encoded, string search algorithms - multiple alignment, longest common subsequence etc., - can be applied for pattern mining. These elicited patterns are samples of how system behaves - number of processes consuming most clockticks, average load etc.,
+
 Reference:
 ----------
 Previous algorithm is a generalization of Survival Index Based Transaction Timeout Management mentioned in patent disclosure https://sites.google.com/site/kuja27/SurvivalIndexBasedTxnTimeoutManager.pdf (Patent Pending - Copyright - Sun Microsystems/Oracle)
