@@ -488,6 +488,8 @@ When implemented as LSH partition, clockticks-to-processes map is isomorphic to 
 	cn pn1 pn2 ... pnm
 ci are clockticks and p(i,k) are processes having ci clockticks remaining before being swapped out of scheduler. Because of matrix representation each LSH partition is a graph too (previous matrix is its adjacency). Frequent subgraph mining algorithms can mine patterns in the clockticks-to-processes dictionaries. If the dictionary is string encoded, string search algorithms - multiple alignment, longest common subsequence etc., - can be applied for pattern mining. These elicited patterns are samples of how system behaves - number of processes consuming most clockticks, average load etc.,
 
+runqlat utility in linux kernel 4.x (BPF/bcc-tools) has close resemblance to clockticks-to-processes dictionary but in the histogram format (https://github.com/iovisor/bcc/blob/master/tools/runqlat_example.txt). But this histogram is a map of waiting clockticks to number of processes and not runqueue - consumed timeslice clockticks to processes.
+
 Reference:
 ----------
 Previous algorithm is a generalization of Survival Index Based Transaction Timeout Management mentioned in patent disclosure https://sites.google.com/site/kuja27/SurvivalIndexBasedTxnTimeoutManager.pdf (Patent Pending - Copyright - Sun Microsystems/Oracle)
