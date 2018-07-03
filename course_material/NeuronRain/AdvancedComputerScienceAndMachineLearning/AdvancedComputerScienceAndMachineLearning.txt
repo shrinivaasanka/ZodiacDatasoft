@@ -495,7 +495,7 @@ Reference:
 Previous algorithm is a generalization of Survival Index Based Transaction Timeout Management mentioned in patent disclosure https://sites.google.com/site/kuja27/SurvivalIndexBasedTxnTimeoutManager.pdf (Patent Pending - Copyright - Sun Microsystems/Oracle)
 
 -----------------------------------------------------------------------------------------------------------
-Markov Chains Random Walks on a Random Graph and Television Viewership - 4 June 2018
+Markov Chains Random Walks on a Random Graph and Television Viewership - 4 June 2018 and 3 July 2018
 -----------------------------------------------------------------------------------------------------------
 Q: How would you predict/model/analyse a viewer watching Television?
 
@@ -504,4 +504,4 @@ Intelligence). A viewer randomly shuffling channels creates a Channel Random Gra
 	*) Channels are the vertices
 	*) Switching Channels creates a random hyperlink edge between two Channel vertices c1 and c2 with some probability
 
-This random graph is similar to World Wide Web and a converging random walk on this Channel graph implies viewer is finally satisfied at some point (Random Walk Mixing Time) after traversing the hyperlinks. Each such random edge is a Markov transition depending on previous state. This is similar to PageRank iteration applied on the Channel Random Graph which is converging Markov Random Walk and most ranked vertices/channels can be approximate preferences of the viewer. Infact there is more to it than PageRank - amount of time spent per channel between switches is crucial.
+This random graph is similar to World Wide Web and a converging random walk on this Channel graph implies viewer is finally satisfied at some point (Random Walk Mixing Time) after traversing the hyperlinks. Each such random edge is a Markov transition depending on previous state. This is similar to PageRank iteration applied on the Channel Random Graph which is converging Markov Random Walk and most ranked vertices/channels can be approximate preferences of the viewer. Infact there is more to it than PageRank - amount of time spent per channel between switches is crucial. There is a subtlety: Predicting Viewers Makes them More Unpredictable - This is because ranking channel vertices from previous random graph and directing more ads to the topmost channel, repels the viewer and causes a random channel switch. Again the PageRank has to be recomputed for finding new topmost channel and this process repeats endlessly - kind of Uncertainty Principle in macrocosm - measuring momentum and location of a subatomic particle changes its momentum and location.
