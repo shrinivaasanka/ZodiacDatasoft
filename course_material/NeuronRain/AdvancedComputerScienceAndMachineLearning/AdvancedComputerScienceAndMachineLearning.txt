@@ -505,3 +505,17 @@ Intelligence). A viewer randomly shuffling channels creates a Channel Random Gra
 	*) Switching Channels creates a random hyperlink edge between two Channel vertices c1 and c2 with some probability
 
 This random graph is similar to World Wide Web and a converging random walk on this Channel graph implies viewer is finally satisfied at some point (Random Walk Mixing Time) after traversing the hyperlinks. Each such random edge is a Markov transition depending on previous state. This is similar to PageRank iteration applied on the Channel Random Graph which is converging Markov Random Walk and most ranked vertices/channels can be approximate preferences of the viewer. Infact there is more to it than PageRank - amount of time spent per channel between switches is crucial. There is a subtlety: Predicting Viewers Makes them More Unpredictable - This is because ranking channel vertices from previous random graph and directing more ads to the topmost channel, repels the viewer and causes a random channel switch. Again the PageRank has to be recomputed for finding new topmost channel and this process repeats endlessly - kind of Uncertainty Principle in macrocosm - measuring momentum and location of a subatomic particle changes its momentum and location.
+
+--------------------------------------------------------------------------------------------------------------
+Reputation Rankings, Sybils and Collusions - 16 July 2018
+--------------------------------------------------------------------------------------------------------------
+Most search engines rank websites based on their fame/reputation which is a function of incoming links to a
+website and reputations of vertices from which the links are incoming e.g PageRank. These Reputations can be
+manipulated by creating fake incoming links (Sybils) and collusions between websites to inflate PageRank 
+artificially. Identifying Sybils and Collusions is an open problem. Intrinsic fitness/merit of a website is
+a valuable measure to filter Sybils. It is known from most research papers on Fame Versus Merit that Fame is
+either linearly or almost-exponentially proportional to the merit of a social/academic profile vertex in the 
+context of Social networking and Citations in Science publications. If the function relating merit to fame is
+known approximately by some least squares fit on a training dataset, Fame of a new website can be related to
+Intrinsic fitness of the website. Huge Distance between observed Fame and Fame predicted by least squares 
+regression from training dataset could be a prima facie indicator of a Sybil.
