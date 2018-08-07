@@ -53,3 +53,39 @@ main()
 Pointers in C are basic low level primitives of allocating memory and indexing them by contiguous bytes (malloc/free). Most of the vulnerabilities found in software are traced back to memory buffer overruns. Buffer overruns are conditions in which a pointer to a contiguously allocated block of memory goes past the bounds. Two major bugs in modern internet history are OpenSSL's Heartbleed and Cloudflare's Cloudbleed both being bugs in array bounds checking crept into software.
 1. HeartBleed fix for OpenSSL - https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=96db902 - This bug was introduced into OpenSSL in HeartBeat extensions for SSL connections keep-alive feature. Pointer was getting past without record length checks enforced in the fix commit diffs
 2. CloudBleed fix for Cloudflare proxies HTML parsing - https://blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug/. This is similar to HeartBleed buffer overrun, which happened during equality check for end of buffer pointer (which bypasses an increment check condition within Ragel HTML parser).
+
+-------------------------------------------------------------------------
+Duff's Device - 7 August 2018
+-------------------------------------------------------------------------
+Duff's device is C loop unrolling design pattern which mixes switch and looping for fall throughs. Example code is in code/duffs_device.c which decrements a counter in a loop - switch statement falls through when counter is not divisible by 5 to case statement selected by switch and number for chosen case statement is decremented by fall through to other cases till end. This is an optimized loop unrolling inspired by jmp statements with in loops in assembly language routines. Previous example prints (in "case: counter" format):
+0: 29 
+1: 28 
+2: 27 
+3: 26 
+4: 25 
+0: 24 
+1: 23 
+2: 22 
+3: 21 
+4: 20 
+0: 19 
+1: 18 
+2: 17 
+3: 16 
+4: 15 
+0: 14 
+1: 13 
+2: 12 
+3: 11 
+4: 10 
+0: 9 
+1: 8 
+2: 7 
+3: 6 
+4: 5 
+0: 4 
+1: 3 
+2: 2 
+3: 1 
+4: 0 
+

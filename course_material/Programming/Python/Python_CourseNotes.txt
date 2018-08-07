@@ -81,3 +81,25 @@ Equivalent Partially applied functions
 1 2 3 4 5 6
 1 2 3 4 5 6
 1 2 3 4 5 6
+
+---------------------------------------------------------------------------------------------------------
+7 August 2018 - Python Dictionaries
+---------------------------------------------------------------------------------------------------------
+Python dictionaries are the hashtable implementations using linear probing(open addressing) to find next
+available slot (preferred to Chaining/Buckets). Open addressing in python applies the following function
+recurrently to find next available slot:
+	x = 5*x + perturb + 1
+	perturb >> PERTURB_SHIFT (some constant) 
+This function  has been found to be optimal in python benchmarks. Simulating buckets/chaining in builtin
+dictionaries is therefore done by an alternative dictionary implementation defaultdict() which initializes
+the dictionary to a default key whose type is defined by argument to constructor. An example, chaining/buckets
+has been described in code/Dictionaries.py which prints :
+
+['__class__', '__cmp__', '__contains__', '__delattr__', '__delitem__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'has_key', 'items', 'iteritems', 'iterkeys', 'itervalues', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values', 'viewitems', 'viewkeys', 'viewvalues']
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+defaultdict(<type 'list'>, {0: [0], 1: [1, 81], 4: [4, 64], 5: [25], 6: [16, 36], 9: [9, 49]})
+
+References:
+-----------
+1. CPython PyDictObject source - code comments - https://github.com/python/cpython/blob/master/Objects/dictobject.c
+2. Beautiful Code - [Greg wilson]

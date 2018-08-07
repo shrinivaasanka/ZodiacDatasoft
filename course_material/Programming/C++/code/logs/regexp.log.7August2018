@@ -1,0 +1,28 @@
+ :regexp matchks does not match at 0
+ :regexp matchks does not match at 1
+ :regexp matchks does not match at 2
+ :regexp matchks does not match at 3
+ :regexp matchks does not match at 4
+ :regexp matchks does not match at 5
+ :regexp matchks does not match at 6
+ :regexp matchks does not match at 7
+ :regexp matchks does not match at 8
+ :regexp matchks does not match at 9
+ :regexp matchks does not match at 10
+ :regexp matchks matches at 11
+ :regexp atchks matches at 12
+ :regexp tchks matches at 13
+ :regexp chks matches at 14
+ :regexp hks does not match at 15
+ :regexp matchks does not match at 16
+ :regexp matchks does not match at 17
+ :regexp matchks does not match at 18
+ :regexp matchks does not match at 19
+ :regexp matchks does not match at 20
+ :regexp matchks matches at 21
+ :regexp atchks matches at 22
+ :regexp tchks matches at 23
+ :regexp chks matches at 24
+ :regexp hks matches at 25
+ :regexp ks matches at 26
+ :regexp s matches at 27

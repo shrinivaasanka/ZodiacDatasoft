@@ -203,3 +203,38 @@ and this move constructor is invoked by:
 	...
 	currency_dest = std::move(currency_src);
 Move differs from Copy by returning rvalue of the argument to std::move() and renders the operand currency_src nullified by moving the resources to lvalue currency_dest.
+
+-------------------------------------------------------------------------------------
+7 August 2018 - Substring/Regular Expression Matcher
+-------------------------------------------------------------------------------------
+Matching a substring within a larger string is regular expression matching problem of writing a DFA. Deterministic Finite State Automatons are usually state transition tables on a graph. String is looped through and state transition table is looked up for next state till accept is reached. Designing this as a recursion saves lot of lines of code. An example recursive regexp substring matcher is in code/regexp.cpp which prints all matching positions of a substring as below:
+
+:regexp matchks does not match at 0
+ :regexp matchks does not match at 1
+ :regexp matchks does not match at 2
+ :regexp matchks does not match at 3
+ :regexp matchks does not match at 4
+ :regexp matchks does not match at 5
+ :regexp matchks does not match at 6
+ :regexp matchks does not match at 7
+ :regexp matchks does not match at 8
+ :regexp matchks does not match at 9
+ :regexp matchks does not match at 10
+ :regexp matchks matches at 11
+ :regexp atchks matches at 12
+ :regexp tchks matches at 13
+ :regexp chks matches at 14
+ :regexp hks does not match at 15
+ :regexp matchks does not match at 16
+ :regexp matchks does not match at 17
+ :regexp matchks does not match at 18
+ :regexp matchks does not match at 19
+ :regexp matchks does not match at 20
+ :regexp matchks matches at 21
+ :regexp atchks matches at 22
+ :regexp tchks matches at 23
+ :regexp chks matches at 24
+ :regexp hks matches at 25
+ :regexp ks matches at 26
+ :regexp s matches at 27
+

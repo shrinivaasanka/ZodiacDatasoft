@@ -519,3 +519,13 @@ context of Social networking and Citations in Science publications. If the funct
 known approximately by some least squares fit on a training dataset, Fame of a new website can be related to
 Intrinsic fitness of the website. Huge Distance between observed Fame and Fame predicted by least squares 
 regression from training dataset could be a prima facie indicator of a Sybil.
+
+---------------------------------------------------------------------------------------------------------
+Difference between two trees (delta) - 7 August 2018
+---------------------------------------------------------------------------------------------------------
+Two graphs are similar if they are isomorphic (i.e there is a bijection between 2 graphs by vertex renumbering).
+Finding difference between two graphs or trees is therefore Graph Non-Isomorphism problem (GNI). Tree difference
+is a frequent requirement in source code version control systems and file sync-ing software which transmit delta
+(what changed) between source and destination. For example, SVN delta editor in https://subversion.apache.org/docs/api/1.9/svn__delta_8h_source.html overlays the new revision delta on existing tree by replicating only the
+changed subtrees while unchanged tree is shared between versions. 
+
