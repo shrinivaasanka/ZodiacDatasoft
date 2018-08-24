@@ -259,6 +259,8 @@ Thus total time to access an element in concatenation = 2*l*logN + l which is su
 	l*(2logN + 1) < N
 	=> l < N/(2logN + 1) which is a tighter upperbound assumption for length of strings, than previous N/2logN.
 
+If each string is compressed as burrows-wheeler transform, columns in concatenation matrix are compressed strings and l is reduced by compression ratio.
+
 References:
 -----------
 1. Rope Strings - http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.9450&rep=rep1&type=pdf - [hans-j. boehm, russ atkinson and michael plass, Xerox PARC, 3333 Coyote Hill Rd., Palo Alto, CA 94304, U.S.A.]
