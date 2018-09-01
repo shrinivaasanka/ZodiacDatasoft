@@ -259,12 +259,13 @@ Thus total time to access an element in concatenation = 2*l*logN + l which is su
 	l*(2logN + 1) < N
 	=> l < N/(2logN + 1) which is a tighter upperbound assumption for length of strings, than previous N/2logN.
 
-If each string is compressed as burrows-wheeler transform, columns in concatenation matrix are compressed strings and l is reduced by compression ratio.
+If each string is compressed as burrows-wheeler transform, columns in concatenation matrix are compressed strings and l is reduced by compression ratio. If N strings in the concatenation can be represented as N Wavelet trees in compressed format (runlength encoding etc.,), each column in previous concatenation matrix is a wavelet tree and access()/select()/rank() of a column are logarithmic time.
 
 References:
 -----------
 1. Rope Strings - http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.9450&rep=rep1&type=pdf - [hans-j. boehm, russ atkinson and michael plass, Xerox PARC, 3333 Coyote Hill Rd., Palo Alto, CA 94304, U.S.A.]
-2. Rabin-Karp String Fingerprinting by Random polynomials - [Michael O.Rabin] - http://www.xmailserver.org/rabin.pdf 
+2. Rabin-Karp String Fingerprinting by Random polynomials - [Michael O.Rabin] - http://www.xmailserver.org/rabin.pdf
+3. Myriad Virtues of Wavelet Trees - Pruned Wavelet Tree of Compressed Strings - [Paolo Ferragina, Raffaele Giancarlo, Giovanni Manzini] - http://www.ittc.ku.edu/~jsv/Papers/FGM09.wavelettrees.pdf
 
 ---------------------------------------------------------------------------------
 How would you move Mount Fuji? - 11 February 2018
