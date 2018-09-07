@@ -532,3 +532,17 @@ is a frequent requirement in source code version control systems and file sync-i
 (what changed) between source and destination. For example, SVN delta editor in https://subversion.apache.org/docs/api/1.9/svn__delta_8h_source.html overlays the new revision delta on existing tree by replicating only the
 changed subtrees while unchanged tree is shared between versions. 
 
+-------------------------------------------------------------------------------------------------------
+Stable Matchings for Dynamic Population - 7 September 2018
+-------------------------------------------------------------------------------------------------------
+[This is mentioned more like an open puzzle/question than answering it]
+Stable Marriage Theorem implies there exists an algorithm for finding bipartite matchings between two
+sets (bipartite graph) when vertices in both sets have ranking preferences of choosing a match in other set.
+Gale-Shapley algorithm finds such an optimal matching between two sets based on preferences in quadratic time.
+This algorithm is for static bipartite sets/graphs. Would the same hold for dynamic bipartite graphs in which
+either set grows/diminishes over time? A real world example: Population is a bipartite graph of either genders
+and stable marriage theorem implies there is always an optimal match between vertices of two genders. This graph grows in time and size of both sets (gender populations) remain equal approximately despite births/deaths (which is a natural mystery implying order emerging from an apparent random process).
+
+References:
+-----------
+1. Gale-Shapley Algorithm - Stable Marriage Problem - https://en.wikipedia.org/wiki/Stable_marriage_problem
