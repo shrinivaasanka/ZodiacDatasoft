@@ -238,3 +238,12 @@ Matching a substring within a larger string is regular expression matching probl
  :regexp ks matches at 26
  :regexp s matches at 27
 
+---------------------------------------------------------------------------------------
+7 September 2018 - Unordered Map, Hash table buckets and Auto Iterator
+---------------------------------------------------------------------------------------
+C++ supports hashtables via unordered_map which is initialized either by emplace() or by {{...}} notation.
+C++ from 2011 has new kind of iterators similar to Java 8 which automatically identify the type by auto keyword:
+	auto& it: <container>
+Bucket containing an entry in the map is accessed by bucket() member function. An example code which populates
+an unordered_map by process-clockticks pairs, auto iterates them and prints the buckets is committed in:
+code/unordered_map_auto_iter.cpp and logs are committed to code/logs/unordered_map_auto_iter.log.7September2018.
