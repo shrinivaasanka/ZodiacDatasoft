@@ -1,0 +1,30 @@
+#################################
+process:ps -eaf
+clockticks:44
+bucket containing the process:9
+#################################
+process:chrome
+clockticks:43
+bucket containing the process:8
+#################################
+process:ls
+clockticks:89
+bucket containing the process:6
+#################################
+process:python
+clockticks:25
+bucket containing the process:6
+#################################
+process:gcc
+clockticks:35
+bucket containing the process:7
+#################################
+process:java
+clockticks:3
+bucket containing the process:7
+sum_duration(): total:44
+sum_duration(): total:87
+sum_duration(): total:176
+sum_duration(): total:201
+sum_duration(): total:236
+sum_duration(): total:239

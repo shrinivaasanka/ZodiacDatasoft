@@ -13,8 +13,17 @@
 
 #include <unordered_map>
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
+
+int total=0;
+
+void sum_duration(std::pair<string,int> val)
+{
+	total += val.second;
+	cout<<"sum_duration(): total:"<<total<<endl;
+}
 
 int main()
 {
@@ -27,4 +36,5 @@ int main()
 		cout<<"clockticks:"<<it.second<<endl;
 		cout<<"bucket containing the process:"<<process_clocktick_map.bucket(it.first)<<endl;
 	}	
+	for_each(process_clocktick_map.begin(), process_clocktick_map.end(), sum_duration);
 }

@@ -247,3 +247,10 @@ C++ from 2011 has new kind of iterators similar to Java 8 which automatically id
 Bucket containing an entry in the map is accessed by bucket() member function. An example code which populates
 an unordered_map by process-clockticks pairs, auto iterates them and prints the buckets is committed in:
 code/unordered_map_auto_iter.cpp and logs are committed to code/logs/unordered_map_auto_iter.log.7September2018.
+
+-----------------------------------------------------------------------------------------
+10 September 2018 - Unordered Map and for_each()
+-----------------------------------------------------------------------------------------
+Previous example for auto iterator has been changed to iterate the unordered map by for_each() primitive
+from <algorithm>. This is C++ equivalent of map() in python which invokes a function on each element of the
+container. Unordered map has std::pair<> elements accessed by .first and .second members.
