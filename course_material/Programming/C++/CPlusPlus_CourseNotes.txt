@@ -254,3 +254,19 @@ code/unordered_map_auto_iter.cpp and logs are committed to code/logs/unordered_m
 Previous example for auto iterator has been changed to iterate the unordered map by for_each() primitive
 from <algorithm>. This is C++ equivalent of map() in python which invokes a function on each element of the
 container. Unordered map has std::pair<> elements accessed by .first and .second members.
+
+------------------------------------------------------------------------------------------------------------
+24 September 2018 - Fowler-Noll-Vo Hashing, Custom Hash Functions in unordered_map, Nested Template Classes
+------------------------------------------------------------------------------------------------------------
+FNV or Fowler-Noll-Vo Hashing is a non-cryptographic hash algorithm which has high dispersion and minimizes
+collisions in same bucket. It iterates through literals in text and multiplies their unicode values by a
+prime and XORs with an offset. This has avalanche effect - hash is very sensitive to small change in input. 
+An example FNV implementation based on Boost C++ example has been added to course material at code/fnv.cpp.
+This defines a namespace class and nested fnv templatized struct through which prime number and offsets can
+be passed as arguments. FNV hashing is widely used in search engines, text processing, MS Visual Studio,
+memcache etc., 
+
+References:
+----------
+1.Boost FNV example - https://www.boost.org/doc/libs/1_68_0/libs/unordered/examples/fnv1.hpp
+2.Fowler-Noll-Vo - FNV - Hashing: http://www.isthe.com/chongo/tech/comp/fnv/

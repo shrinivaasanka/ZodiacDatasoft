@@ -1,0 +1,13 @@
+hash for [string]:1953080703
+hash for [java]:3981991573
+hash for [python]:3362705748
+hash for [chrome]:3158701621
+hash for [gcc]:3187174306
+hash for [ls]:3359150159
+hash for [ps -eaf]:881283064
+first=ps -eaf; second=44
+first=ls; second=89
+first=gcc; second=35
+first=chrome; second=43
+first=python; second=25
+first=java; second=3
