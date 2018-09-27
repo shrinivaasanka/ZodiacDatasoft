@@ -270,3 +270,4 @@ References:
 ----------
 1.Boost FNV example - https://www.boost.org/doc/libs/1_68_0/libs/unordered/examples/fnv1.hpp
 2.Fowler-Noll-Vo - FNV - Hashing: http://www.isthe.com/chongo/tech/comp/fnv/
+3.Go Lang FNV package - https://golang.org/pkg/hash/fnv/
