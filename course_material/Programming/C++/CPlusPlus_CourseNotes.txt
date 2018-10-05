@@ -271,3 +271,15 @@ References:
 1.Boost FNV example - https://www.boost.org/doc/libs/1_68_0/libs/unordered/examples/fnv1.hpp
 2.Fowler-Noll-Vo - FNV - Hashing: http://www.isthe.com/chongo/tech/comp/fnv/
 3.Go Lang FNV package - https://golang.org/pkg/hash/fnv/
+
+-----------------------------------------------------------------------------------------------------------
+5 October 2018 - C++ Move-Assign Threads, Unordered Map Rehash and Concurrent Access
+-----------------------------------------------------------------------------------------------------------
+In C++ threads can be created in C++ specific move-assign paradigm which moves RHS thread object to LHS and
+destroys LHS. Move-assign is done by std:thread() operator= overloaded function which takes thread function
+and arguments to it as parameters. An example C++ source file threads.cpp has been committed in code/ which
+creates 50 thread objects, move-assigns thread objects to them by invoking a function to populate an unordered
+map. populate_hashmap() waits for few nanoseconds, makes a key-value pair and places them in unordered map.
+Load factor (number of items/number of buckets ratio) is recomputed to by invoking max_load_factor() and
+rehash() functions alternately for odd and even values. This is a contrived example to demonstrate concurrent
+accesses to a container in C++. Logs for this example are in code/logs/threads.log.5October2018.

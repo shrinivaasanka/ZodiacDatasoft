@@ -14,12 +14,12 @@ import requests
 
 #Function to post in user wall - not invoked at present 
 def grafit_wall_post(user,mss):
-	token="EAACvK6dFKs8BAIDjYPBdfh4eRivZAtIeaaUDejRSwcVC4HdZCvWJs9yiyFS9jNS3O9kEDicCIPPbvZCQZCIM5zg3kiTVtpc7hRFooPIZAkxyDAkzgoydlJY9H2keUqAbVb3gLzeDC7IkYrmiZBumaqjK19AWnZB8h6f3ivuFDMGZB8zxcicOYgZClLUn3GlKOOWkZD"
+	token="EAACvK6dFKs8BAPwfAJTDXPvZCXHo42KDAkqZC1WDabI2cba3SYKRZAkr3VxZBgWfsdfwJKEvcMUoqIq7V1ni5PrE9JztHJu58n8N9qQEjVPHQfEZA1SZBdLRwFZCcijdnlwF6XdLNxnzF3zNRuqdI8ZCXmrubKhDKiYfiBXWUwbjCtu1GyJhNOHVCA8Ky8VwMZAqgDZB7kIbP3GAZDZD"
 	graph=facebook.GraphAPI(access_token=token,version=3.0)
 	profile=graph.put_object(parent_object=user,connection_name="feed",message=mss)
 	
 def facebook_graph(user):
-	token="EAACvK6dFKs8BAIDjYPBdfh4eRivZAtIeaaUDejRSwcVC4HdZCvWJs9yiyFS9jNS3O9kEDicCIPPbvZCQZCIM5zg3kiTVtpc7hRFooPIZAkxyDAkzgoydlJY9H2keUqAbVb3gLzeDC7IkYrmiZBumaqjK19AWnZB8h6f3ivuFDMGZB8zxcicOYgZClLUn3GlKOOWkZD"
+	token="EAACvK6dFKs8BAPwfAJTDXPvZCXHo42KDAkqZC1WDabI2cba3SYKRZAkr3VxZBgWfsdfwJKEvcMUoqIq7V1ni5PrE9JztHJu58n8N9qQEjVPHQfEZA1SZBdLRwFZCcijdnlwF6XdLNxnzF3zNRuqdI8ZCXmrubKhDKiYfiBXWUwbjCtu1GyJhNOHVCA8Ky8VwMZAqgDZB7kIbP3GAZDZD"
 
 	graph=facebook.GraphAPI(access_token=token,version=3.0)
 	profile=graph.get_object(user)
@@ -56,5 +56,5 @@ def facebook_graph(user):
 		print(f)
 
 if __name__=="__main__":
-	facebook_graph(sys.argv[1])
-	#grafit_wall_post(sys.argv[1],sys.argv[2])
+	#facebook_graph(sys.argv[1])
+	grafit_wall_post(sys.argv[1],sys.argv[2])
