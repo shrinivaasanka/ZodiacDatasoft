@@ -1,0 +1,17 @@
+This is function1()
+('function1() : division ', 10, '%', 3, '; quotient = ', 3, '; remainder = ', 1)
+classmethod invoked on instance:
+('This is classmethod function2():', 10)
+('cls: ', <class __main__.Reflect at 0xb7657e9c>)
+classmethod invoked on class:
+('This is classmethod function2():', 10)
+('cls: ', <class __main__.Reflect at 0xb7657e9c>)
+classmethod invoked on derived class:
+('This is classmethod function2():', 10)
+('cls: ', <class __main__.ReflectDerived at 0xb7657ecc>)
+['__call__', '__class__', '__closure__', '__code__', '__defaults__', '__delattr__', '__dict__', '__doc__', '__format__', '__get__', '__getattribute__', '__globals__', '__hash__', '__init__', '__module__', '__name__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'func_closure', 'func_code', 'func_defaults', 'func_dict', 'func_doc', 'func_globals', 'func_name']
+('__func__.whoami = ', 'This is function1')
+('func_code = ', <code object function1 at 0xb764ad10, file "Reflection.py", line 16>)
+('func_closure = ', None)
+('func_dict = ', {'whoami': 'This is function1'})
+('func_globals = ', {'__builtins__': <module '__builtin__' (built-in)>, '__file__': 'Reflection.py', 'rdivder': <__main__.ReflectDerived instance at 0xb73f320c>, 'ReflectDerived': <class __main__.ReflectDerived at 0xb7657ecc>, '__package__': None, 'Reflect': <class __main__.Reflect at 0xb7657e9c>, '__name__': '__main__', 'rdiv': <__main__.Reflect instance at 0xb73f314c>, '__doc__': None})

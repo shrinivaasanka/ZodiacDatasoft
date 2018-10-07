@@ -103,3 +103,12 @@ References:
 -----------
 1. CPython PyDictObject source - code comments - https://github.com/python/cpython/blob/master/Objects/dictobject.c
 2. Beautiful Code - [Greg wilson]
+
+---------------------------------------------------------------------------------------------------------
+7 October 2018 - Python Reflection, Derived Classes and Class Methods
+---------------------------------------------------------------------------------------------------------
+Python has support for reflection in the form of function and code objects. Python function objects are accessed
+by __func__ member of any function considered as an object. Python classmethods are decorators declared before
+defining a function by @classmethod annotation and defined as class method and defined by def <func>(cls, ...)
+declarative containing cls keyword. Class methods are useful for defining a classwide method common to all instances . This is different from static keyword in other languages and there is a @staticmethod decorator in python, the static equivalent. Class methods called on derived class take derived class objects for cls. An example for reflection and class methods is in code/Reflection.py and logs in code/logs/Reflection.log.7October2018
+
