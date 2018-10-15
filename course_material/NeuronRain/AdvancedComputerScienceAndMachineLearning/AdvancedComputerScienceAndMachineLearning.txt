@@ -553,3 +553,29 @@ and stable marriage theorem implies there is always an optimal match between ver
 References:
 -----------
 1. Gale-Shapley Algorithm - Stable Marriage Problem - https://en.wikipedia.org/wiki/Stable_marriage_problem
+
+---------------------------------------------------------------------------------------------------------
+Gordian Knot and One Way Functions - 15 October 2018
+---------------------------------------------------------------------------------------------------------
+Gordian Knot is an impossible-to-unravel knot which was allegedly solved by Alexander the Great by cutting it.
+There exists a striking parallel between one way functions for Psuedorandom Generators and difficulty in
+untying knots. Gordian knot is open problem in knot theory. One way functions are defined as:
+	f(x) = y
+	Pr(finverse(y) = x) = 2^(-n) for bit length n of x. 
+
+Hardness of inversion and difficulty in untying a knot can be correlated by following contrivance:
+Assuming a knot is a map of sequence of points in straightline to sequence of non-linear points in 3 dimensions,
+every knot is a polynomial of degree 3 drawing a locus in 3-D plane. A function for this polynomial is the mapping : 
+	f(x1,x2,x3):<set of straightline points in 3-D plane>-----<knot polynomial configuration in 3-D plane>. 
+
+Inverting the previous function implies untying a knot to straightline points:
+	finverse(x1,x2,x3):<knot polynomial configuration in 3-D plane>-----<set of straightline points in 3-D plane>. 
+
+On the contrary a proof of existence of one way functions implies there exists an impossible-to-unravel knot by previous reduction:
+	Pr(finverse(knot polynomial configuration in 3-D plane>) == <set of straightline points in 3-D plane>) isexponentially small.
+
+Infact this definition of One Way Functions is a stronger version of Gordian Knot because inversion should restore the same status-quo-ante straightline configuration of a sequence of points earlier and not some other alignment.
+
+References:
+-----------
+1. Gordian Knot Simulation - [Keith Devlin] - https://www.theguardian.com/science/2001/sep/13/physicalsciences.highereducation 
