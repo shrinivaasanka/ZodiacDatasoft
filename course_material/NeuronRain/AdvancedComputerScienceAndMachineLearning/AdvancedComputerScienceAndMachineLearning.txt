@@ -555,7 +555,7 @@ References:
 1. Gale-Shapley Algorithm - Stable Marriage Problem - https://en.wikipedia.org/wiki/Stable_marriage_problem
 
 ---------------------------------------------------------------------------------------------------------
-Gordian Knot and One Way Functions - 15 October 2018
+Gordian Knot and One Way Functions - 15 October 2018, 19 October 2018
 ---------------------------------------------------------------------------------------------------------
 Gordian Knot is an impossible-to-unravel knot which was allegedly solved by Alexander the Great by cutting it.
 There exists a striking parallel between one way functions for Psuedorandom Generators and difficulty in
@@ -575,6 +575,8 @@ On the contrary a proof of existence of one way functions implies there exists a
 	Pr(finverse(knot polynomial configuration in 3-D plane>) == <set of straightline points in 3-D plane>) isexponentially small.
 
 Infact this definition of One Way Functions is a stronger version of Gordian Knot because inversion should restore the same status-quo-ante straightline configuration of a sequence of points earlier and not some other alignment.
+
+Defining Boolean Gordian Knot One Way Function is not straightforward: For example every point on a string to knot has to be defined as binary inputs to some boolean function which outputs 0 or 1 corresponding to some bit position of a point on the resultant knot polynomial. If there are n points on string and m bit positions each per point, this requires m*n boolean functions of the form f:{0,1}^m-{0,1} all of which have to be inverted to unravel the knot - this is a family of one way boolean functions harder than plain one way boolean function.
 
 References:
 -----------
