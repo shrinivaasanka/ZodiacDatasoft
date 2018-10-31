@@ -444,7 +444,7 @@ E.g 2. for excluding X={3,6}, lookup of the table results in S={3,7,5,6} which h
 This algorithm is subset oblivious and is a slight improvement over brute-force multiplication of set or set difference because of cached subset products and is sublinear mostly. Previous examples required only 2 divisions whereas brute-force would need 3 multiplications assuming lookups are O(1). Cacheing has benefits in large arrays (when number of elements to be excluded are almost O(N)) for reducing number of multiplications.
 
 -------------------------------------------------------------------------------------------------------------
-Hashing Dynamic Sets - 24 May 2018
+Hashing Dynamic Sets - 24 May 2018, 31 October 2018
 -------------------------------------------------------------------------------------------------------------
 Q: How can sets of elements which are dynamically modified at runtime be hashed by tabulation? E.g set of 
 clockticks remaining per process in an OS scheduler for 15 processes is [23,45,12,44,55,14] at time t=1. This
@@ -503,6 +503,9 @@ References:
 1.Previous algorithm is a generalization of Survival Index Based Transaction Timeout Management mentioned in patent disclosure https://sites.google.com/site/kuja27/SurvivalIndexBasedTxnTimeoutManager.pdf (Patent Pending - Copyright - Sun Microsystems/Oracle)
 2.Continuous Parameter Markov Chains - Probability and Statistics,Reliability,Queueing and Computer Science - [Kishore Shridharbhai Trivedi, Duke University] - Birth and Death Processes - Response Time of RoundRobin Scheduling - Little's Formula - [Chapter 8] and Network of Queues - Open Queueing Networks - [Chapter 9] - Program state transition markov chain
 3.Program Analysis - Analysis of Control Statements - expected and variance of execution times and laplace transforms - Appendix E - Probability and Statistics, Queueing, Reliability and Computer Science - [Kishore Shridharbhai Trivedi, Duke University]
+4.Introduction to Algorithms - [Cormen,Leiserson,Rivest,Stein] - Chapter 12 - Hashing by Chaining - http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap12.htm - Static Hashing - all runtime analyses for searching in static hashtables still apply to hashing dynamic sets - Note: Hashing Dynamic Sets is different from Dynamic Hashing which facilitates fast insertion/deletion of elements and not dynamism of element itself. Also previous adaptation of hash chaining for timeout and schedulers assumes the hash function for any process is defined as:
+		h(p) = new_execution_time_of(p) = old_execution_time_of(p) - clockticks_elapsed 
+5.Hashing by Chaining - http://cglab.ca/~morin/teaching/5408/notes/hashing.pdf - Section 1.3.1 - Gonnet's result on worst case search time in a Chain.
 
 -----------------------------------------------------------------------------------------------------------
 Markov Chains Random Walks on a Random Graph and Television Viewership - 4 June 2018 and 3 July 2018
