@@ -305,3 +305,18 @@ Following are the size of each line segment sets grepped from log:
 References:
 -----------
 1.The Art of Computer Programming - Volume 3 - Sorting and Searching - Page 518 - [Don Knuth] - Proof of Steinhaus Conjecture - Theorem S - [Vera Turan Sos]
+
+-----------------------------------------------------------------------------------------------------------
+1 November 2018, 2 November 2018 - Polymorphism, RTTI, Pure Virtual Functions, Friend classes, Scope
+Resolution operator, protected and private members, Initializers in Constructors, const correctness
+----------------------------------------------------------------------------------------------------------- 
+C++ specifies polymorphic classes by deriving a base super class by syntax:
+	class <derived> : <qualifier> <super>
+code example in code/polymorphism.cpp defines a base class Animal and 2 derived classes: Tiger and Lion.
+Keyword protected in derived classes imply the derived class access to base class's protected members. Base
+class Animal has a private member which is accessible by the derived classes through friend class declarations
+in base class. There are two virtual functions in base class one of which is declared pure and makes Animal
+an Abstract Data Type. Derived classes Tiger and Lion implement the pure virtual function in abstract base
+class and override the other virtual function. Runtime Type Identification (RTTI) is from typeinfo infrastructureprovided by C++ standard for inferring the type of the object at runtime - typeid() keyword prints the typename
+of the object. Constructor Initializers are mentioned by a list of variables suffixed by () operators and values assigned to private member variables. Const qualifier informs the compiler that the function should not alter
+the variables (immutables).
