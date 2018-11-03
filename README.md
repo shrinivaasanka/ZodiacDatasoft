@@ -36,3 +36,12 @@ These will be updated periodically adapted for classroom teaching depending on f
 These contain copyrighted materials - author's publications and yet to be published drafts on various computer science topics.
    
 NeuronRain Documentation: http://neuronrain-documentation.readthedocs.io/en/latest/
+
+------------------------------
+Pedagogy
+------------------------------
+Course notes in GRAFIT are non-linearly written than bottom-up or top-down textbook style of teaching. This is an
+ experimental pedagogy based on following monte carlo simulation:
+(*) Concepts/topics are vertices of a universal graph of concepts/topics. 
+(*) By random sampling and exposition of concept vertices, related neighbouring concepts are also touched.
+(*) Eventually high percentage of Topics in the Graph are traversed after lot of monte carlo sampling.
