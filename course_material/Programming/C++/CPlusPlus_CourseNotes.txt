@@ -307,8 +307,7 @@ References:
 1.The Art of Computer Programming - Volume 3 - Sorting and Searching - Page 518 - [Don Knuth] - Proof of Steinhaus Conjecture - Theorem S - [Vera Turan Sos]
 
 -----------------------------------------------------------------------------------------------------------
-1 November 2018, 2 November 2018 - Polymorphism, RTTI, Pure Virtual Functions, Friend classes, Scope
-Resolution operator, protected and private members, Initializers in Constructors, const correctness
+1 November 2018, 2 November 2018, 3 November 2018 - Polymorphism, RTTI, Pure Virtual Functions, Friend classes, Scope Resolution operator, protected and private members, Initializers in Constructors, const correctness
 ----------------------------------------------------------------------------------------------------------- 
 C++ specifies polymorphic classes by deriving a base super class by syntax:
 	class <derived> : <qualifier> <super>
@@ -320,3 +319,14 @@ an Abstract Data Type. Derived classes Tiger and Lion implement the pure virtual
 class and override the other virtual function. Runtime Type Identification (RTTI) is from typeinfo infrastructureprovided by C++ standard for inferring the type of the object at runtime - typeid() keyword prints the typename
 of the object. Constructor Initializers are mentioned by a list of variables suffixed by () operators and values assigned to private member variables. Const qualifier informs the compiler that the function should not alter
 the variables (immutables).
+
+Scope resolution operator :: resolves the private (by friendship) and protected members of the super class(by
+protected derivative classing). Header cxxabi.h has been included for C++ ABI name demangling of RTTI typenames.
+const disambiguation has been demonstrated by two functions legs() with const and without const qualifier. Both
+legs() are invoked by base class pointer Animal* (->legs()) and as member invocation (.legs()) and difference
+in behaviour is obvious from logs/polymorphism.log.3November2018.
+
+References:
+-----------
+1. The C++ Programming Language - [Bjarne Stroustrup]
+2. Essential C++ - C++ in depth series : Bjarne Stroustrup - [Stanley Lippman, Dreamworks] - const example - Section 5.9 - Page 161 - Previous example differs because of g++-6 idiosyncracy: const Animal* is required to invoke legs() having const qualifier.

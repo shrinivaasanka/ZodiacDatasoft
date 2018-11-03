@@ -1,6 +1,7 @@
 #include <iostream>
 #include <typeinfo>
 #include <string>
+#include <cxxabi.h>
 
 using namespace std;
 
@@ -15,7 +16,13 @@ public:
 		cout<<"base class Animal"<<endl;
 	}
 	virtual void trait()=0;
-	virtual int legs() const 
+	const virtual int legs() const 
+	{
+		cout<<"const number_of_legs"<<endl;
+		cout<<"number of legs "<<number_of_legs<<endl;
+		return number_of_legs;
+	}
+	const virtual int legs() 
 	{
 	}
 	friend class Lion;
@@ -32,8 +39,11 @@ public:
 		Animal::number_of_wings = w;
 	}
 
-	int legs() const
+	const int legs()
 	{
+		trait();
+		cout<<"adding 4 more legs"<<endl;
+		number_of_legs+=4;
 		cout<<"number of legs "<<number_of_legs<<endl;
 		return number_of_legs;
 	}
@@ -46,7 +56,8 @@ public:
 
 	void trait()
 	{
-		cout<<typeid(this).name()<<" roars"<<endl;
+		int status;
+		cout<<abi::__cxa_demangle(typeid(this).name(),NULL,NULL,&status)<<" roars"<<endl;
 	}
 };
 
@@ -60,8 +71,11 @@ public:
 		Animal::number_of_wings = w;
 	}
 
-	int legs() const
+	const int legs()
 	{
+		trait();
+		cout<<"adding 4 more legs"<<endl;
+		number_of_legs+=4;
 		cout<<"number of legs "<<number_of_legs<<endl;
 		return number_of_legs;
 	}
@@ -74,7 +88,8 @@ public:
 
 	void trait()
 	{
-		cout<<typeid(this).name()<<" gallops"<<endl;
+		int status;
+		cout<<abi::__cxa_demangle(typeid(this).name(),NULL,NULL,&status)<<" gallops"<<endl;
 	}
 };
 
@@ -82,11 +97,17 @@ int main()
 {
 	Lion l(true,4,0);
 	l.trait();
-	l.legs();
 	l.wings(); 
 	cout<<"========================="<<endl;
 	Tiger t(true,4,0);
 	t.trait();
-	t.legs();
 	t.wings();
+	cout<<"========================="<<endl;
+	const Animal *a=&l;
+	const Animal *b=&t;
+	a->legs();
+	b->legs();
+	cout<<"========================="<<endl;
+	l.legs();
+	t.legs();
 }

@@ -1,0 +1,20 @@
+root@HCL:/media/Ubuntu2# ./polymorphism 
+base class Animal
+Lion* roars
+number of wings 0
+=========================
+base class Animal
+Tiger* gallops
+number of wings 0
+=========================
+const number_of_legs
+number of legs 4
+const number_of_legs
+number of legs 4
+=========================
+Lion* roars
+adding 4 more legs
+number of legs 8
+Tiger* gallops
+adding 4 more legs
+number of legs 8
