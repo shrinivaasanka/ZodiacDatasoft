@@ -372,3 +372,40 @@ Present implementation in NeuronRain AsFer creates hashtables only for all prefi
 How can a Binary Search Tree be verified? - 12 March 2018
 -----------------------------------------------------------------------------------------------------
 An obvious solution is to do an inorder traversal of BST and verify the list of traversed nodes is sorted ascending or descending. This is O(n) for number of nodes in tree n. Array representation of BST can be directly scanned for sortedness.
+
+-------------------------------------------------------------------------------------------------------
+How would you avert collision of two trains speeding along on same track in opposing directions? 
+- Critical Sections and Synchronization - 3 November 2018
+-------------------------------------------------------------------------------------------------------
+(*) This puzzle is based on P and V Binary Semaphores - Mutexes (Dijkstra):
+	Process1(Train1)			Process2(Train2)
+	----------------			-----------------
+	P() 					P()
+	track(critical_section)			track(critical_section)
+	V()					V()
+(*) P():
+	while mutex==0
+	{
+		wait()
+	}
+(*) V():
+	mutex=1
+	
+(*) Difference between Binary Semaphores and this puzzle is how to avert collision after both processes have entered critical section by mistake (track) which is more susceptible to happen (e.g signals P and V fail) in real life than operating systems (even in Operating Systems this can occur when atomic instructions for P and V fail theoretically). 
+(*) In modern architectures, synchronization is supported in hardware by a fine-grained primitive - compare and swap instruction - atomically which has following algorithm:
+	compare_and_swap(p,old,new)
+	{
+		if(p != old)
+			return false
+		p = new
+		return true
+	}
+
+------------------------------------------
+Some assumptions for solving this puzzle:
+------------------------------------------
+(*) Assuming electric traction or maglev, shutting down power supply is an obvious option. But this requires atleast one of the trains to be aware that the other train is on same track or a third party's intervention. Assuming zero-knowledge by everyone (e.g no GPS location info) and both trains are unstoppable, there exists a non-zero probability of collision.
+
+References:
+-----------
+1. Compare and Swap can simulate Lock-free synchronization and mutexes - [Maurice Herlihy] and P and V Semaphores - https://en.wikipedia.org/wiki/Compare-and-swap and https://en.wikipedia.org/wiki/Semaphore_(programming)
