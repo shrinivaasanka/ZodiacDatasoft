@@ -401,11 +401,26 @@ How would you avert collision of two trains speeding along on same track in oppo
 		return true
 	}
 
+(*) Multiprocessor Hardwares support memory fencing instructions, bus locking etc., for serializing instructions issued before fence and to allow maximum of one thread of execution to load and store. 
+
 ------------------------------------------
 Some assumptions for solving this puzzle:
 ------------------------------------------
 (*) Assuming electric traction or maglev, shutting down power supply is an obvious option. But this requires atleast one of the trains to be aware that the other train is on same track or a third party's intervention. Assuming zero-knowledge by everyone (e.g no GPS location info) and both trains are unstoppable, there exists a non-zero probability of collision.
 
+---------------------------------------------------------------
+Variant of the previous critical section when two tracks cross
+---------------------------------------------------------------
+Problem is to cross two tracks by overlap. Railway tracks are undirected cyclic graphs having 2 parallel edges. Overlapping two track edges makes it non-planar and following example gadget schematic creates a planar crossing of two parallel track edges (disconnects the graph at the crossing and adds two point vertices ( and )). This is a dimensional critical section which allows a planar intersection (reduces 3D to 2D):
+	
+			\ \  / /
+			 \ \/ /
+			  )  (
+			 / /\ \
+		        / /  \ \
+
 References:
 -----------
 1. Compare and Swap can simulate Lock-free synchronization and mutexes - [Maurice Herlihy] and P and V Semaphores - https://en.wikipedia.org/wiki/Compare-and-swap and https://en.wikipedia.org/wiki/Semaphore_(programming)
+2. UNIX Internals: New Frontiers - [Uresh Vahalia - EMC] - Multiprocessor Synchronization Issues - Pages 193,200,201 - Semaphores, Convoys, Necessity of Atomic test_and_set instruction in multiprocessors. Convoys are formed in Semaphores when a queued process in Scheduler waiting on a lock is prevented from being runnable because another process holds the lock.
+3. UNIX - [Maurice J.Bach - AT&T] - Page 396 - Monitors as Synchronization Primitives in Multiprocessor UNIX - Monitors differ from Semaphores by modularizing scope of critical section to subroutine and serializing access by processes.
