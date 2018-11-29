@@ -1,0 +1,103 @@
+root@HCL:/media/Ubuntu2# g++-6 -O3 -g -v pointerstew.cpp -o pointerstew
+Using built-in specs.
+COLLECT_GCC=g++-6
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-linux-gnu/6/lto-wrapper
+Target: i686-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 6.2.0-3ubuntu11~12.04' --with-bugurl=file:///usr/share/doc/gcc-6/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-6 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=gcc4-compatible --disable-libstdcxx-dual-abi --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-6-i386/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-6-i386 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-6-i386 --with-arch-directory=i386 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-targets=all --enable-multiarch --disable-werror --with-arch-32=i686 --with-multilib-list=m32,m64 --enable-multilib --with-tune=generic --enable-checking=release --build=i686-linux-gnu --host=i686-linux-gnu --target=i686-linux-gnu
+Thread model: posix
+gcc version 6.2.0 20160901 (Ubuntu 6.2.0-3ubuntu11~12.04) 
+COLLECT_GCC_OPTIONS='-O3' '-g' '-v' '-o' 'pointerstew' '-shared-libgcc' '-mtune=generic' '-march=i686'
+ /usr/lib/gcc/i686-linux-gnu/6/cc1plus -quiet -v -imultiarch i386-linux-gnu -D_GNU_SOURCE pointerstew.cpp -quiet -dumpbase pointerstew.cpp -mtune=generic -march=i686 -auxbase pointerstew -g -O3 -version -fstack-protector -Wformat -Wformat-security -o /tmp/ccF2GizS.s
+GNU C++14 (Ubuntu 6.2.0-3ubuntu11~12.04) version 6.2.0 20160901 (i686-linux-gnu)
+	compiled by GNU C version 6.2.0 20160901, GMP version 5.0.2, MPFR version 3.1.0-p3, MPC version 0.9, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/usr/include/i386-linux-gnu/c++/6"
+ignoring nonexistent directory "/usr/local/include/i386-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/i686-linux-gnu/6/../../../../i686-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/6
+ /usr/include/i386-linux-gnu/c++/6
+ /usr/include/c++/6/backward
+ /usr/lib/gcc/i686-linux-gnu/6/include
+ /usr/local/include
+ /usr/lib/gcc/i686-linux-gnu/6/include-fixed
+ /usr/include/i386-linux-gnu
+ /usr/include
+End of search list.
+GNU C++14 (Ubuntu 6.2.0-3ubuntu11~12.04) version 6.2.0 20160901 (i686-linux-gnu)
+	compiled by GNU C version 6.2.0 20160901, GMP version 5.0.2, MPFR version 3.1.0-p3, MPC version 0.9, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: b4c219729d56142aae1616971d17e57d
+COLLECT_GCC_OPTIONS='-O3' '-g' '-v' '-o' 'pointerstew' '-shared-libgcc' '-mtune=generic' '-march=i686'
+ as -v --32 -o /tmp/cccy1iJS.o /tmp/ccF2GizS.s
+GNU assembler version 2.22 (i686-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.22
+COMPILER_PATH=/usr/lib/gcc/i686-linux-gnu/6/:/usr/lib/gcc/i686-linux-gnu/6/:/usr/lib/gcc/i686-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/6/:/usr/lib/gcc/i686-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i686-linux-gnu/6/:/usr/lib/gcc/i686-linux-gnu/6/../../../i386-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/6/../../../../lib/:/lib/i386-linux-gnu/:/lib/../lib/:/usr/lib/i386-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/i686-linux-gnu/6/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-O3' '-g' '-v' '-o' 'pointerstew' '-shared-libgcc' '-mtune=generic' '-march=i686'
+ /usr/lib/gcc/i686-linux-gnu/6/collect2 -plugin /usr/lib/gcc/i686-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOb1qZS.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_i386 --hash-style=gnu --as-needed -dynamic-linker /lib/ld-linux.so.2 -z relro -o pointerstew /usr/lib/gcc/i686-linux-gnu/6/../../../i386-linux-gnu/crt1.o /usr/lib/gcc/i686-linux-gnu/6/../../../i386-linux-gnu/crti.o /usr/lib/gcc/i686-linux-gnu/6/crtbegin.o -L/usr/lib/gcc/i686-linux-gnu/6 -L/usr/lib/gcc/i686-linux-gnu/6/../../../i386-linux-gnu -L/usr/lib/gcc/i686-linux-gnu/6/../../../../lib -L/lib/i386-linux-gnu -L/lib/../lib -L/usr/lib/i386-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/i686-linux-gnu/6/../../.. /tmp/cccy1iJS.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/i686-linux-gnu/6/crtend.o /usr/lib/gcc/i686-linux-gnu/6/../../../i386-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-O3' '-g' '-v' '-o' 'pointerstew' '-shared-libgcc' '-mtune=generic' '-march=i686'
+
+##########################################################################################################
+
+/*	int&& rvaluerefx1=1; */
+==================================
+x=1
+rvaluerefx1=134514146
+lvaluerefx2=1
+==================================
+==================================
+x=1
+xx=1
+pint1=134514146
+pint2=1
+rvaluerefx1=134514146
+lvaluerefx2=1
+==================================
+==================================
+x=2
+xx=1
+pint1=134514146
+pint2=2
+rvaluerefx1=134514146
+lvaluerefx2=2
+==================================
+==================================
+x=3
+xx=1
+pint1=134514146
+pint2=3
+rvaluerefx1=134514146
+lvaluerefx2=3
+==================================
+#################################################################################
+/* 	int&& rvaluerefx1=std::forward<int>(x); */
+==================================
+x=2
+rvaluerefx1=2
+lvaluerefx2=2
+==================================
+==================================
+x=2
+xx=1
+pint1=2
+pint2=2
+rvaluerefx1=2
+lvaluerefx2=2
+==================================
+==================================
+x=3
+xx=1
+pint1=3
+pint2=3
+rvaluerefx1=3
+lvaluerefx2=3
+==================================
+==================================
+x=4
+xx=1
+pint1=4
+pint2=4
+rvaluerefx1=4
+lvaluerefx2=4
+==================================

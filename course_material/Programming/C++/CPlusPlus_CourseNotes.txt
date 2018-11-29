@@ -330,3 +330,30 @@ References:
 -----------
 1. The C++ Programming Language - [Bjarne Stroustrup]
 2. Essential C++ - C++ in depth series : Bjarne Stroustrup - [Stanley Lippman, Dreamworks] - const example - Section 5.9 - Page 161 - Previous example differs because of g++-6 idiosyncracy: const Animal* is required to invoke legs() having const qualifier.
+
+------------------------------------------------------------------------------------------------------------
+29 November 2018 - Pointers and References (Lvalue and Rvalue)
+------------------------------------------------------------------------------------------------------------
+An example C++ code for miscellaneous permutations of pointers and aliases usage has been committed at code/pointerstew.cpp. C++ pointers which are supersets of C pointers have additional facilities for aliasing to an object location in the form of right value references(&& operator) and left value references(& operator). References or aliases do not consume extra memory storage as opposed pointers which are object memory locations themselves. Points-to and Reference-to graph of the variables declared in pointerstew.cpp is below (legend: pointer ######>, rvaluereferences: ==========>, lvaluereferences: ------------->):
+		psptr ############> ps <========= psrvalueref				
+		pint1 ############> ps.rvaluerefx1 ====> ps.x
+		pint2 ############> ps.lvaluerefx2 -----> ps.x
+		func1() parameter y =========> forwarded rvalue of arg to func1()
+
+Assigning an lvalue to rvalue of same datatype throws following GCC error:
+pointerstew.cpp: In function ‘int main()’:
+pointerstew.cpp:33:28: error: cannot bind ‘pointerstew’ lvalue to ‘pointerstew&&’
+  pointerstew&& psrvalueref=ps;
+
+Logs for this example code have some surprising values for rvalue references. Assigning values directly to rvalue references corrupts the rvalue in GCC (shown in logs):
+	int&& rvaluerefx1=1;	
+whereas std::Forward<int>(1) is required to forward the rvalue to lvalue for any assignment and across function invocations as parameters:
+ 	int&& rvaluerefx1=std::forward<int>(x); 
+
+func1() has been overloaded with parameters and without them. Difference between effect of post-increment of rvalue (ps.rvaluerefx1++;) with and without std::forward() (previous two ways initializing rvaluerefx1 within pointerstew object) is evident. One time std::move of rvalue and std::forward() of rvalue is demonstrated by static value of xx across multiple invocations in std::move() while rvalues always reflect x dynamically.
+
+-----------
+References:
+-----------
+1.C++ Programming Language - [Bjarne Stroustrup]
+2.C Puzzles - Pointer Stew - [Alan Feuer]
