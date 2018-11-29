@@ -334,7 +334,7 @@ References:
 ------------------------------------------------------------------------------------------------------------
 29 November 2018 - Pointers and References (Lvalue and Rvalue)
 ------------------------------------------------------------------------------------------------------------
-An example C++ code for miscellaneous permutations of pointers and aliases usage has been committed at code/pointerstew.cpp. C++ pointers which are supersets of C pointers have additional facilities for aliasing to an object location in the form of right value references(&& operator) and left value references(& operator). References or aliases do not consume extra memory storage as opposed pointers which are object memory locations themselves. Points-to and Reference-to graph of the variables declared in pointerstew.cpp is below (legend: pointer ######>, rvaluereferences: ==========>, lvaluereferences: ------------->):
+An example C++ code for miscellaneous permutations of pointers and aliases usage has been committed at code/pointerstew.cpp. C++ pointers which are supersets of C pointers have additional facilities for aliasing to an object location in the form of right value references(&& operator) and left value references(& operator). References or aliases do not consume extra memory storage as opposed to pointers which are object memory locations themselves. Points-to and Reference-to graph of the variables declared in pointerstew.cpp is below (legend: pointer ######>, rvaluereferences: ==========>, lvaluereferences: ------------->):
 		psptr ############> ps <========= psrvalueref				
 		pint1 ############> ps.rvaluerefx1 ====> ps.x
 		pint2 ############> ps.lvaluerefx2 -----> ps.x
@@ -350,7 +350,7 @@ Logs for this example code have some surprising values for rvalue references. As
 whereas std::Forward<int>(1) is required to forward the rvalue to lvalue for any assignment and across function invocations as parameters:
  	int&& rvaluerefx1=std::forward<int>(x); 
 
-func1() has been overloaded with parameters and without them. Difference between effect of post-increment of rvalue (ps.rvaluerefx1++;) with and without std::forward() (previous two ways initializing rvaluerefx1 within pointerstew object) is evident. One time std::move of rvalue and std::forward() of rvalue is demonstrated by static value of xx across multiple invocations in std::move() while rvalues always reflect x dynamically.
+func1() has been overloaded with parameters and without them. Difference between effect of post-increment of rvalue (ps.rvaluerefx1++;) with and without std::forward() (previous two ways of initializing rvaluerefx1 within pointerstew object) is evident. One time std::move of rvalue and std::forward() of rvalue is demonstrated by static value of xx across multiple invocations in std::move() while rvalues always reflect x dynamically.
 
 -----------
 References:
