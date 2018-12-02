@@ -518,6 +518,7 @@ References:
 10.Dynamic Graph Algorithms - http://cs.ioc.ee/ewscs/2012/italiano/dynamic1.pdf
 11.Different version of Timeout in Global Decision Platform 3.0 - C++ - https://sites.google.com/site/kuja27/PhDThesisProposal.pdf - (Copyright: Global Analytics)
 12.Intel Threading Building Blocks (TBB) Concurrent Hash Table Bucket Interface - https://www.threadingbuildingblocks.org/docs/help/index.htm#reference/containers_overview/concurrent_unordered_map_cls.html
+13.Introduction to Algorithms - [Cormen-Leiserson-Rivest-Stein] - Coupon Collector Problem/Balls and Bins Problem - Page 134 (5.4.2), Page 1201 (C.4) 
 
 -----------------------------------------------------------------------------------------------------------
 Markov Chains Random Walks on a Random Graph and Television Viewership - 4 June 2018 and 3 July 2018
