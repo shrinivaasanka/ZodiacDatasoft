@@ -519,6 +519,7 @@ References:
 11.Different version of Timeout in Global Decision Platform 3.0 - C++ - https://sites.google.com/site/kuja27/PhDThesisProposal.pdf - (Copyright: Global Analytics)
 12.Intel Threading Building Blocks (TBB) Concurrent Hash Table Bucket Interface - https://www.threadingbuildingblocks.org/docs/help/index.htm#reference/containers_overview/concurrent_unordered_map_cls.html
 13.Introduction to Algorithms - [Cormen-Leiserson-Rivest-Stein] - Coupon Collector Problem/Balls and Bins Problem - Page 134 (5.4.2), Page 1201 (C.4) 
+14.Balls and Bins Problem, Set Partitions, Bell Numbers and Multinomial Theorem - https://math.dartmouth.edu/~m68f15/lectec.pdf - Multinomial Theorem is applicable to previous Survival Index Separate Chain Set Partition if size of each bucket is some constant - e.g Processes are numbered balls and Timeout values are numbered bins and Multinomial Theorem gives all possible configurations of Timeout datastructure subject to rider: bin for timeout value t(i) must contain m(i) processes. Stirling Numbers of Second Kind (Bell Numbers) is the number of all possible Timeout datastructure configurations of p processes and n timeout values (unrestricted bin size).
 
 -----------------------------------------------------------------------------------------------------------
 Markov Chains Random Walks on a Random Graph and Television Viewership - 4 June 2018 and 3 July 2018
