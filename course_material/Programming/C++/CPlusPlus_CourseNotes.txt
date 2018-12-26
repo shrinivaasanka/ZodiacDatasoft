@@ -1,20 +1,15 @@
+/*
 ##############################################################################################################################################
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+#<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+###############################################################################################################################################
+#Course Authored By:
+#-----------------------------------------------------------------------------------------------------------
+#K.Srinivasan
+#NeuronRain Documentation and Licensing: http://neuronrain-documentation.readthedocs.io/en/latest/
+#Personal website(research): https://sites.google.com/site/kuja27/
+#-----------------------------------------------------------------------------------------------------------
 ##############################################################################################################################################
-Course Authored By:
------------------------------------------------------------------------------------------------------------
-Srinivasan Kannan
-(also known as: Shrinivaasan Kannan, Shrinivas Kannan)
-Ph: 9791499106, 9003082186
-Krishna iResearch Open Source Products Profiles:
-http://sourceforge.net/users/ka_shrinivaasan,
-https://github.com/shrinivaasanka,
-https://www.openhub.net/accounts/ka_shrinivaasan
-Personal website(research): https://sites.google.com/site/kuja27/
-emails: ka.shrinivaasan@gmail.com, shrinivas.kannan@gmail.com,
-kashrinivaasan@live.com
------------------------------------------------------------------------------------------------------------
-##############################################################################################################################################
+*/
 
 This is a non-linearly organized, code puzzles oriented, continually updated set of course notes on C++ language. This
 complements NeuronRain course materials on Linux Kernel, Cloud, BigData Analytics and Machine Learning and covers
@@ -357,3 +352,23 @@ References:
 -----------
 1.C++ Programming Language - [Bjarne Stroustrup]
 2.C Puzzles - Pointer Stew - [Alan Feuer]
+
+-----------------------------------------------------------------------------------------------------------
+26 December 2018 - Bridge and Iterator Design Patterns 
+-----------------------------------------------------------------------------------------------------------
+Bridge is a design pattern mentioned in Gang-of-Four catalog of C++ Design Patterns. Bridge separates
+implementations and the interfaces by defining implementation itself as an abstract data type. Iterators
+are the patterns to enumerate iterable containers - arrays, hashmaps, linkedlists etc.,C++ code example bridgeiteratordesignpatterns.cpp which 
+demonstrates how timeout pattern described in https://github.com/shrinivaasanka/Grafit/blob/master/course_material/NeuronRain/AdvancedComputerScienceAndMachineLearning/AdvancedComputerScienceAndMachineLearning.txt fits as an amalgamation of Bridge and Iterator Design Patterns, has been committed in C++/code. Timeout is a dictionary of timeout values to lists of objects to timeout. Timeout as a pattern has universal occurrence across whole gamut of software engineering. Code example defines
+following classes - Timeout and TCPTimeout are interfaces and TimeoutImp and TCPTimeoutImp are implementations
+which are bridged by a pointer reference Timeout holds to TimeoutImp. This Decoupling is by passing any derivative TimeoutImp object in TCPTimeout constructor which in turns assigns to timeoutimp reference in Timeout. timeout() overridden virtual member function in TCPTimeout invokes imptimeout() unaware of implementation TimeoutImp :
+
+	Timeout -------------------- implemented-by ----------------- TimeoutImp (derived by TCPTimeoutImp)
+(derived by TCPTimeout)
+
+References:
+-----------
+1.Design Patterns - Elements of Reusable Object Oriented Software - [1995] - [Erich Gamma - Richard Helm - Ralph Johnson - John Vlissides] - Bridge and Iterator Patterns - Page 160 - Shared Strings Class - [Coplien] and [Stroustrup] -															|
+																										
+
+

@@ -1,0 +1,22 @@
+TCPTimeout::timeout()
+TCPTimeoutImp::imptimeout()
+====================================
+TCP packet sequence number:237878
+Packet timeout TTL:55
+====================================
+====================================
+TCP packet sequence number:738278
+Packet timeout TTL:67
+====================================
+====================================
+TCP packet sequence number:899899
+Packet timeout TTL:34
+====================================
+====================================
+TCP packet sequence number:212121
+Packet timeout TTL:21
+====================================
+====================================
+TCP packet sequence number:891299
+Packet timeout TTL:12
+====================================
