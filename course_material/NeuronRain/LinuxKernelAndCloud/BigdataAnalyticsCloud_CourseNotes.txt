@@ -54,3 +54,34 @@ References:
 1.Apache Modules Mailing list - Apache 1.3.27 and iPlanet Application Server - https://marc.info/?l=apache-modules&m=105610024116012 (Copyright: Sun Microsystems/Oracle)
 2.Apache Modules Mailing list - Apache 2.0.47 and iPlanet Application Server - https://marc.info/?l=apache-modules&m=106267009905554 (Copyright: Sun Microsystems/Oracle)
 3.Apache Config Directives - ApacheCon - http://events17.linuxfoundation.org/sites/events/files/slides/ConfigurationDirectiveAPI.pdf
+
+------------------------------------------------------------------------------------------------------------
+2 January 2019 - Searching, Indexing - Binary Search Nuances, B-Trees, Sharding
+------------------------------------------------------------------------------------------------------------
+Traditional Binary Search still remains the standard for sifting huge datasets and has undergone significant
+refinements. Usual Binary Search is centred around midpoint computation and branching:
+	midpoint = (left + right)/2
+	if query > midpoint:
+		search interval [midpoint, right] 
+	else:
+		search interval [left, midpoint]
+
+Bug in Midpoint computation by previous averaging in some earlier versions of languages like Java caused an overflow error in 32-bit architectures which necessitated replacing it by >>> operator (unsigned right shift):
+	midpoint = (right-left) >>> 1;
+B-Trees are generalized Binary Search Trees in which each internal and root nodes contain more than one element and every element of a node acts as a separator for values of its subtrees as in example:
+				2,10
+				|
+			1 ----- 3,9 ---- 11,12
+				|
+				4,5
+B+-Trees extend B-Trees by additional linked-list of leaf nodes.
+
+Indexing Bigdata e.g web pages involves storing them as huge set of key-value pairs of the form:
+		word	--- (document1, location1), (document2, location2) ...
+which is termed as posting in inverted indices. Size of an Index in search engine could be unimaginably large requiring partitions into set of rows located across geographically distant servers on cloud. This is horizontal partition based on rows as against vertical partitions of columns in DBMS Normalizations. Each partition is named a Shard.
+		
+References:
+-----------
+1.The Art of Computer Programming - Volume 3 - [Donald Knuth] - Sorting and Searching - 6.2.2
+2.Beautiful Code - Finding Things - [Tim Bray - Sun Microsystems]
+3.Google AI Blog - [Joshua Bloch] - https://ai.googleblog.com/2006/06/extra-extra-read-all-about-it-nearly.html
