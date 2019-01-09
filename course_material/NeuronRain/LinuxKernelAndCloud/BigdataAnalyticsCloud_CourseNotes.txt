@@ -56,7 +56,7 @@ References:
 3.Apache Config Directives - ApacheCon - http://events17.linuxfoundation.org/sites/events/files/slides/ConfigurationDirectiveAPI.pdf
 
 ------------------------------------------------------------------------------------------------------------
-2 January 2019 - Searching, Indexing - Binary Search Nuances, B-Trees, Sharding
+2 January 2019, 9 January 2019 - Searching, Indexing - Binary Search Nuances, B-Trees, Sharding
 ------------------------------------------------------------------------------------------------------------
 Traditional Binary Search still remains the standard for sifting huge datasets and has undergone significant
 refinements. Usual Binary Search is centred around midpoint computation and branching:
@@ -79,6 +79,18 @@ B+-Trees extend B-Trees by additional linked-list of leaf nodes.
 Indexing Bigdata e.g web pages involves storing them as huge set of key-value pairs of the form:
 		word	--- (document1, location1), (document2, location2) ...
 which is termed as posting in inverted indices. Size of an Index in search engine could be unimaginably large requiring partitions into set of rows located across geographically distant servers on cloud. This is horizontal partition based on rows as against vertical partitions of columns in DBMS Normalizations. Each partition is named a Shard.
+
+Fundamental question is: can items in a list be found efficiently by a search graph instead of binary search trees. Lower bound for search is Omega(logN). Binary Search Trees can be alternatively defined as recursive bipartite graph which is an indefinite recursive fractal bipartition of sets - Example:- Set of integers [2,4,5,1,3,7,9,10,8,6] are represented recursively as bipartite graph by assuming an initial midpoint pivot separator of each subset similar to quicksort which partitions a set into two halves of elements > pivot and elements < pivot in each depth of recursion:
+	pivot 6
+	[2,3,5,1,4] ----- [7,9,10,8,6]
+	pivot 3			pivot 8
+	[[4,5,3]--[2,1]] ---- [[6,8,7]--[10,9]]
+	pivot 4			pivot 7
+	[[[4,3]-[5]]--[2,1]] ---- [[[7,8]-[6]]---[[10]-[9]]]
+	pivot 4		pivot 2			pivot 7
+	[[[[4]-[3]]-[5]]--[[2]-[1]]] ---- [[[[7]-[8]]-[6]]---[[10]-[9]]]
+
+Edges are denoted by ----- which connect each parenthesized subset vertex for a subtree obtained by traversing the binary search tree. Last line encodes a recursive bipartite search graph which is the top view of the binary search tree and is a multidimensional tensor - a kind of binary space partition. Searching this tensor locates a point in the nested parentheses by comparing against pivots. Advantage of recursive bipartite graph representation of binary search tree is each subtree can be retrieved by array indexing.
 		
 References:
 -----------
