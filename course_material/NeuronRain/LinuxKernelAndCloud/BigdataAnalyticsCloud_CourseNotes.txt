@@ -97,3 +97,4 @@ References:
 1.The Art of Computer Programming - Volume 3 - [Donald Knuth] - Sorting and Searching - 6.2.2
 2.Beautiful Code - Finding Things - [Tim Bray - Sun Microsystems]
 3.Google AI Blog - [Joshua Bloch] - https://ai.googleblog.com/2006/06/extra-extra-read-all-about-it-nearly.html
+4.Topological Sorting - Fast Parallel Algorithms - [SA Cook] - https://www.sciencedirect.com/science/article/pii/S0019995885800413 - If set of integers are randomly assigned as labels of a random graph, topological sorting of vertices by some ordering can be done efficiently in NC^2 and a following binary search can find the element in additional logarithmic time. But the topologically sorted vertex list may not be sorted by total ordering always.Dekel-Nassimi-Sahni algorithm works by Repeated Matrix Multiplication logarithmically many times and sorting by longest paths.
