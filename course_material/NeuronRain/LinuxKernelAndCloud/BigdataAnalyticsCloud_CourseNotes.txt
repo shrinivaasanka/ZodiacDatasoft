@@ -98,3 +98,15 @@ References:
 2.Beautiful Code - Finding Things - [Tim Bray - Sun Microsystems]
 3.Google AI Blog - [Joshua Bloch] - https://ai.googleblog.com/2006/06/extra-extra-read-all-about-it-nearly.html
 4.Topological Sorting - Fast Parallel Algorithms - [SA Cook] - https://www.sciencedirect.com/science/article/pii/S0019995885800413 - If set of integers are randomly assigned as labels of a random graph, topological sorting of vertices by some ordering can be done efficiently in NC^2 and a following binary search can find the element in additional logarithmic time. But the topologically sorted vertex list may not be sorted by total ordering always.Dekel-Nassimi-Sahni algorithm works by Repeated Matrix Multiplication logarithmically many times and sorting by longest paths.
+
+-----------------------------------------------------------------------------------------------------
+21 January 2019 - FP Growth Algorithm for mining frequent patterns and mining timeout dictionaries
+example
+-----------------------------------------------------------------------------------------------------
+Timeout design pattern implemented as a separate chaining/dictionary of timeouts-to-processes has been described in ../AdvancedComputerScienceAndMachineLearning/AdvancedComputerScienceAndMachineLearning.txt. Discussion there is restricted to a process id present in only one bucket per timeout value. But there are possibilities when same process_id has to be multilocated in many timeout buckets e.g multiple threads spawned by a process can have different timer values for varied functionalities and all those threads per process have to be timedout. 
+
+Spark MLlib implements parallel version of FP-Growth algorithm  which mines frequent itemsets in multiple baskets with no candidate generation (downward closure) by growing suffix trees. Survival Index Timeout Map is also a set of baskets (buckets) from which frequently occurring process subsets can be mined by Spark FPGrowth. Example Spark code for this has been committed to code/Spark_FPGrowth_SurvivalIndexTimeout.py and logs in code/testlogs/Spark_FPGrowth_SurvivalIndexTimeout.log.21January2019 which demonstrate minimum support for frequent occurrences and minimum confidence for association rules. These frequently occurring process subsets point to some lurking relationship among the colocated processes in some way and thus a measure of system load and behaviour.
+
+References:
+-----------
+1.Spark MLLib Documentation - https://spark.apache.org/docs/2.3.0/ml-frequent-pattern-mining.html
