@@ -107,6 +107,8 @@ Timeout design pattern implemented as a separate chaining/dictionary of timeouts
 
 Spark MLlib implements parallel version of FP-Growth algorithm  which mines frequent itemsets in multiple baskets with no candidate generation (downward closure) by growing suffix trees. Survival Index Timeout Map is also a set of baskets (buckets) from which frequently occurring process subsets can be mined by Spark FPGrowth. Example Spark code for this has been committed to code/Spark_FPGrowth_SurvivalIndexTimeout.py and logs in code/testlogs/Spark_FPGrowth_SurvivalIndexTimeout.log.21January2019 which demonstrate minimum support for frequent occurrences and minimum confidence for association rules. These frequently occurring process subsets point to some lurking relationship among the colocated processes in some way and thus a measure of system load and behaviour.
 
+Multilocation of process id(s) in multiple time out buckets creates hyperedges amongst the timer bucket vertices and thereby a hypergraph.
+
 References:
 -----------
 1.Spark MLLib Documentation - https://spark.apache.org/docs/2.3.0/ml-frequent-pattern-mining.html
