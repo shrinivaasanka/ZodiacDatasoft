@@ -499,6 +499,8 @@ Dynamism of this timeout hashtable/dictionary graph warrants mention of Dynamic 
 An example pattern: Sort the previous pending clockticks(Survival Index) to processes map by descending values of clockticks. Percentage of processes flocking in top ranking clocktick bucket chains is a measure of system load. 
 runqlat utility in linux kernel 4.x (BPF/bcc-tools) has close resemblance to clockticks-to-processes dictionary but in the histogram format (https://github.com/iovisor/bcc/blob/master/tools/runqlat_example.txt). But this histogram is a map of waiting clockticks to number of processes and not runqueue - consumed timeslice clockticks to processes.
 
+Traditional timeout implementations are timer wheel based which are circular arrays of linked lists sweeped periodically like clockwork and are not hashable. Previous hashing of dynamic sets is also a timer wheel but takes a detour and converts hash table separate chaining itself into a dynamic clock in which, for example, hour keys are decremented periodically. 
+
 Caveat:
 -------
 Previous adaptation of Survival Index based Transaction Timeout Management (mentioned in the references) to OS Scheduler assumes prior knowledge of execution times of processes which is undecidable in exact sense by Halting Problem. Only an approximate estimate of execution time of a process can be derived by Analysis of control statements in the program (e.g Sum of execution times of control statements in longest path in the control flow graph of the program is the upperbound).  
