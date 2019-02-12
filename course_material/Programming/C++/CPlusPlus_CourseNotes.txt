@@ -368,7 +368,18 @@ which are bridged by a pointer reference Timeout holds to TimeoutImp. This Decou
 
 References:
 -----------
-1.Design Patterns - Elements of Reusable Object Oriented Software - [1995] - [Erich Gamma - Richard Helm - Ralph Johnson - John Vlissides] - Bridge and Iterator Patterns - Page 160 - Shared Strings Class - [Coplien] and [Stroustrup] -															|
-																										
+1.Design Patterns - Elements of Reusable Object Oriented Software - [1995] - [Erich Gamma - Richard Helm - Ralph Johnson - John Vlissides] - Bridge and Iterator Patterns - Page 160 - Shared Strings Class - [Coplien] and [Stroustrup] -	
 
+														|																									
+------------------------------------------------------------------------------------------------------
+12 February 2019 - Software Transactional Memory 
+------------------------------------------------------------------------------------------------------
+Software Transactional Memory is supported by C++ by synchronized blocks of compound statements and transaction_safe directive in function declaration. Software Transaction Memory is the intrinsic facility for transactional rollback or commit of set of statements similar to RDBMS - either all are executed or none. An example transactional memory code has been committed to code/softwaretransactionalmemory.cpp. It declares two functions - function1() executing a synchronized block and function2() declared transaction_safe which is a tighter restriction preventing unsafe code. Compiler error flagged for unsafe function calls have been added in code comments. Curious statement in the code is:
+		t=std::thread([]{for(int n=0; n < 10;n++) function1(n);});
+which is a lambda expression doing null capture by [] operator and just invoking the function function1() within lambda expression loop block. Auto iterator variable t is assigned to the thread object. Logs in logs/softwaretransactionalmemory.log.12February2019 show serialized execution of 10 threads instantiated.
+
+References:
+-----------
+1.C++ Lambda Expressions - https://en.cppreference.com/w/cpp/language/lambda
+2.C++ Software Transactional Memory - https://en.cppreference.com/w/cpp/language/transactional_memory
 
