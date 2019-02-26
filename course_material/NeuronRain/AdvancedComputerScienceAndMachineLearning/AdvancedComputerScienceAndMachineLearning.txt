@@ -505,6 +505,8 @@ Caveat:
 -------
 Previous adaptation of Survival Index based Transaction Timeout Management (mentioned in the references) to OS Scheduler assumes prior knowledge of execution times of processes which is undecidable in exact sense by Halting Problem. Only an approximate estimate of execution time of a process can be derived by Analysis of control statements in the program (e.g Sum of execution times of control statements in longest path in the control flow graph of the program is the upperbound).  
 
+Linux Kernel has Earliest Deadline First Scheduler (work in progress) which requires user to specify Worst Case Execution Time (WCET) of a process and deadline (runtime << deadline) explicitly by chrt in commandline or programmatically by sched_setattr().
+
 References:
 ----------
 1.Previous algorithm is a generalization of Survival Index Based Transaction Timeout Management mentioned in patent disclosure https://sites.google.com/site/kuja27/SurvivalIndexBasedTxnTimeoutManager.pdf (Patent Pending - Copyright - Sun Microsystems/Oracle) - Specific to Java Hashmap (CustomizedHashMap) and Open Addressing
@@ -524,6 +526,8 @@ References:
 14.Balls and Bins Problem, Set Partitions, Bell Numbers and Multinomial Theorem - https://math.dartmouth.edu/~m68f15/lectec.pdf - Multinomial Theorem is applicable to previous Survival Index Separate Chain Set Partition if size of each bucket is some constant - e.g Processes are numbered balls and Timeout values are numbered bins and Multinomial Theorem gives all possible configurations of Timeout datastructure subject to rider: bin for timeout value t(i) must contain m(i) processes. Stirling Numbers of Second Kind (Bell Numbers) is the number of all possible Timeout datastructure configurations of p processes and n timeout values (unrestricted bin size).
 15. Kruskal-Katona Theorem and Erdos-Ko-Rado Theorem for families of intersecting sets - https://en.wikipedia.org/wiki/Kruskal%E2%80%93Katona_theorem - Uniform Hypergraphs (size of each hyperedge set is equal) are families of intersecting sets if the hyperedges have non-empty intersection. These two theorems upperbound number of hyperedges in a hypergraph by a binomial coefficient. ThoughtNet which is Hypergraph of sentence hyperedges and each hyperedge is set of evocative vertices usually has high intersection (each element in intersection is represented by a stack hypervertex).
 16. Linux Kernel Timer Wheel implementation - https://lwn.net/Articles/646950/ - as tree hierarchy of arrays of linked lists
+17. Earliest Deadline First Scheduler (EDF) in Linux Kernel - Part 1 - Dhall Effect in multicores - https://lwn.net/Articles/743740/ - "...The run time is the amount of CPU time that the application needs to produce the output. In the most conservative case, the runtime must be the worst-case execution time (WCET), which is the maximum amount of time the task needs to process one period's worth of work. For example, a video processing tool may take, in the worst case, five milliseconds to process the image. Hence its run time is five milliseconds...."
+18. Earliest Deadline First Scheduler (EDF) in Linux Kernel - Part 2 - sched_setattr() for setting worst case execution time and deadline explicitly - https://lwn.net/Articles/743946/
 
 -----------------------------------------------------------------------------------------------------------
 Markov Chains Random Walks on a Random Graph and Television Viewership - 4 June 2018 and 3 July 2018
