@@ -307,6 +307,8 @@ Probability of some of the population having same UUIDs = 1 - [(N-1)(N-2)....(N-
 
 This problem has direct bearing on Tabulation Hashing where two objects have same hash digest and are hashed to same bucket. Minimizing hash collisions therefore requires increase in denominator and lowering numerator i.e N >> M.
 
+This problem is all the more serious in People Analytics where a person has to be uniquely identified in ,say, social networks undisputably (e.g there are abundant duplicate social profiles of same name, photos etc., and handles are sometimes prefixed as "real<name>"). Usually it suffices that N is logM bit integer. Digital Unique IDs stored on cloud often are vulnerable to attacks. An example Unique Person Search therefore might involve a decision tree of depth O(logM) and UniqueID is not just an integer but is a concatenation of various not-so-forgeable human non-digital features (e.g age, voice metric, biometric, blood group, height, birthmarks, educational qualifications, work experience, circle of human acquaintances, non-invasive unique private event in a person's timeline history etc.,)
+
 --------------------------------------------------------------------------------------------------------------------------------
 19 January 2018 - How would you find needle in haystack?
 --------------------------------------------------------------------------------------------------------------------------------
