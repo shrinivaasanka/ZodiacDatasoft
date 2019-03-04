@@ -531,6 +531,8 @@ References:
 16. Linux Kernel Timer Wheel implementation - https://lwn.net/Articles/646950/ - as tree hierarchy of arrays of linked lists
 17. Earliest Deadline First Scheduler (EDF) in Linux Kernel - Part 1 - Dhall Effect in multicores - https://lwn.net/Articles/743740/ - "...The run time is the amount of CPU time that the application needs to produce the output. In the most conservative case, the runtime must be the worst-case execution time (WCET), which is the maximum amount of time the task needs to process one period's worth of work. For example, a video processing tool may take, in the worst case, five milliseconds to process the image. Hence its run time is five milliseconds...."
 18. Earliest Deadline First Scheduler (EDF) in Linux Kernel - Part 2 - sched_setattr() for setting worst case execution time and deadline explicitly - https://lwn.net/Articles/743946/
+19. Partition distance - [D. Gusfield.] - Partition-distance: A problem and a class of perfect graphs
+arising in clustering - https://csiflabs.cs.ucdavis.edu/~gusfield/cpartition.pdf
 
 -----------------------------------------------------------------------------------------------------------
 Markov Chains Random Walks on a Random Graph and Television Viewership - 4 June 2018 and 3 July 2018
