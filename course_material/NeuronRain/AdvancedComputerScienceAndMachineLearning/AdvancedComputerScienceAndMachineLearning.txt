@@ -602,7 +602,7 @@ Inverting the previous function implies untying a knot to straightline points:
 	finverse(x1,x2,x3):<knot polynomial configuration in 3-D plane>-----<set of straightline points in 3-D plane>. 
 
 On the contrary a proof of existence of one way functions implies there exists an impossible-to-unravel knot by previous reduction:
-	Pr(finverse(knot polynomial configuration in 3-D plane>) == <set of straightline points in 3-D plane>) isexponentially small.
+	Pr(finverse(knot polynomial configuration in 3-D plane>) == <set of straightline points in 3-D plane>) is exponentially small.
 
 Infact this definition of One Way Functions is a stronger version of Gordian Knot because inversion should restore the same status-quo-ante straightline configuration of a sequence of points earlier and not some other alignment.
 
@@ -611,6 +611,6 @@ Defining Boolean Gordian Knot One Way Function is not straightforward: For examp
 References:
 -----------
 1. Gordian Knot Simulation - [Keith Devlin] - https://www.theguardian.com/science/2001/sep/13/physicalsciences.highereducation 
-2. Knot Polynomials - Jones and Alexander - https://en.wikipedia.org/wiki/Knot_theory#Knot_polynomials - Topologically, Knot is an embedding of a circle in R^3 (and also to all the homeomorphisms of the circle obtained by deformations - Knot equivalence - ambient isotopy) - Previous definition of one way function as a map from straightline string to knot becomes circular string to all equivalent homeomorphic knots denoted by a knot polynomial. Inversion of one way function reduces to inverse homeomorphism. Example: Handwritings of different persons (of same language and text) are homeomorphic deformations in R^2.
+2. Knot Polynomials - Jones and Alexander - https://en.wikipedia.org/wiki/Knot_theory#Knot_polynomials - Topologically, Knot is an embedding of a circle in R^3 (and also to all the homeomorphisms of the circle obtained by deformations - Knot equivalence - ambient isotopy) - Previous definition of one way function maps a circular or straightline string to one of the homeomorphic knot denoted by a knot polynomial and there are as many one way functions as there are knot polynomials. Inversion of one way function reduces to inverse homeomorphism. Example: Handwritings of different persons (of same language and text) are homeomorphic deformations in R^2.
 3. Homeomorphic inverse - http://at.yorku.ca/cgi-bin/bbqa?forum=ask_a_topologist_2010&task=show_msg&msg=1138.0001
  - "Thirdly, the inverse of f^{-1} is just f itself - in other words, the inverse of the inverse of f is f itself, so that (f^{-1})^{-1} = f. By assumption, f is continuous, and as f is the inverse of f^{-1}, the function f^{-1} has a continuous inverse."
