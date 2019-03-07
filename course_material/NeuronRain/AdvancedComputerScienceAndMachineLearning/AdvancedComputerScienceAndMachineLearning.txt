@@ -535,7 +535,7 @@ References:
 arising in clustering - https://csiflabs.cs.ucdavis.edu/~gusfield/cpartition.pdf
 
 -----------------------------------------------------------------------------------------------------------
-Markov Chains Random Walks on a Random Graph and Television Viewership - 4 June 2018 and 3 July 2018
+Markov Chains Random Walks on a Random Graph and Television Viewership - 4 June 2018,3 July 2018,7 March 2019
 -----------------------------------------------------------------------------------------------------------
 Q: How would you predict/model/analyse a viewer watching Television?
 
@@ -545,6 +545,14 @@ Intelligence). A viewer randomly shuffling channels creates a Channel Random Gra
 	*) Switching Channels creates a random hyperlink edge between two Channel vertices c1 and c2 with some probability
 
 This random graph is similar to World Wide Web and a converging random walk on this Channel graph implies viewer is finally satisfied at some point (Random Walk Mixing Time) after traversing the hyperlinks. Each such random edge is a Markov transition depending on previous state. This is similar to PageRank iteration applied on the Channel Random Graph which is converging Markov Random Walk and most ranked vertices/channels can be approximate preferences of the viewer. Infact there is more to it than PageRank - amount of time spent per channel between switches is crucial. There is a subtlety: Predicting Viewers Makes them More Unpredictable - This is because ranking channel vertices from previous random graph and directing more ads to the topmost channel, repels the viewer and causes a random channel switch. Again the PageRank has to be recomputed for finding new topmost channel and this process repeats endlessly - kind of Uncertainty Principle in macrocosm - measuring momentum and location of a subatomic particle changes its momentum and location.
+
+Previous example differs from reputation rankings on the net because TV ads cannot be personalized similar to web adverts and each viewer creates a channel switch random graph independent of others (assuming each individual viewership statistics is recorded in a device or access meter in a set-top box and transmitted). This creates set of ranking preferences per viewer all of which have to be rank correlated and mapped to TRP for ad(s) which satisfies majority. Rank correlations are measures which measure similarity between two rank labeled sets.
+
+Previous Converging markov random walk algorithm applies to Business Analytics particularly in FMCG where customers have lot of options to try out.
+
+References:
+-----------
+1.Ranks as Symmetric Permutation Group Sn and Rank correlations - Spearman's Footrule as measure of Disarray - [Persi Diaconis and R.L.Graham] - https://statweb.stanford.edu/~cgates/PERSI/papers/77_04_spearmans.pdf
 
 --------------------------------------------------------------------------------------------------------------
 Reputation Rankings, Sybils and Collusions - 16 July 2018
