@@ -112,3 +112,13 @@ by __func__ member of any function considered as an object. Python classmethods 
 defining a function by @classmethod annotation and defined as class method and defined by def <func>(cls, ...)
 declarative containing cls keyword. Class methods are useful for defining a classwide method common to all instances . This is different from static keyword in other languages and there is a @staticmethod decorator in python, the static equivalent. Class methods called on derived class take derived class objects for cls. An example for reflection and class methods is in code/Reflection.py and logs in code/logs/Reflection.log.7October2018
 
+----------------------------------------------------------------------------------------------------
+13 March 2019 - Async/Await - Asynchronous IO in Python 3.7
+----------------------------------------------------------------------------------------------------
+Python 3.7 supports asynchronous invocations of coroutines by async and await pairs of keywords similar to promise-future in C++. An example Chatbot Client and Server in AsyncIO_Client.py and AsyncIO_Server.py
+define two classes for Chat Server and Client which implement connection_made() and data_received() interface functions. Notable feature in 3.7 is the "async def" for function declarations in lieu of @asyncio coroutine decorators in previous versions of Python 3. Both client and server instantiate a loop object and invoke create_connection() and create_server() respectively for client and server by await semantics. Notion is to make client-server transport completely event driven by await and non-blocking by async.This example applies as a pattern to any algorithm doing asyncio. Logs in logs/AsyncIO_ClientServer.log.13March2019 show a sample chat.
+
+References:
+----------
+1.Python 3.7 documentation - Async/Await - https://docs.python.org/3/library/asyncio-protocol.html 
+
