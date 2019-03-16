@@ -550,7 +550,7 @@ This random graph is similar to World Wide Web and a converging random walk on t
 
 Previous example differs from reputation rankings on the net because TV ads cannot be personalized similar to web adverts and each viewer creates a channel switch random graph independent of others (assuming each individual viewership statistics is recorded in a device or access meter in a set-top box and transmitted). This creates set of ranking preferences per viewer all of which have to be rank correlated and mapped to TRP for ad(s) which satisfies majority. Rank correlations are measures which measure similarity between two rank labeled sets.
 
-Previous Converging markov random walk algorithm applies to Business Analytics particularly in FMCG where customers have lot of options to try out.
+Previous Converging markov random walk algorithm applies to Business Analytics particularly in FMCG where customers have lot of options to try out. An alternative histogram analytics perspective for mining stream of business intelligence dictionary data (distance metric based on rand index) is described in https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
 
 References:
 -----------
