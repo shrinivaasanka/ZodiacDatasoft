@@ -112,3 +112,15 @@ Multilocation of process id(s) in multiple time out buckets creates hyperedges a
 References:
 -----------
 1.Spark MLLib Documentation - https://spark.apache.org/docs/2.3.0/ml-frequent-pattern-mining.html
+
+------------------------------------------------------------------------------------------------------
+19 March 2019 - String Search in Large Files
+------------------------------------------------------------------------------------------------------
+BigData or Large Text Files on clouds often require a functionality to quickly search for a string of patterns or text. There are standard string matching algorithms like Knuth-Morris-Pratt, Boyer-Moore etc., which are standard algorithms implemented in text editors for "find". For large filesystems, wavelet trees are fast alternatives which support rank(c,p) [number of occurrences of character c before position p], select(c,q) [q-th occurrence of character c], access(k)[access k-th position] operations in O(1) time for binary vectors. For substring pattern p of size n, repetitive n invocations of select(p[i],q) returns all substrings of pattern p in the large text file - Example Pseudocode below for first match:
+		for k in xrange(n):
+			pos=wavelettree.select(p[k],1)
+			if prevpos + 1 != pos
+				return matchfound==false
+			prevpos=pos
+		return matchfound==true
+
