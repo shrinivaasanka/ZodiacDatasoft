@@ -624,3 +624,15 @@ References:
 2. Knot Polynomials - Jones and Alexander - https://en.wikipedia.org/wiki/Knot_theory#Knot_polynomials - Topologically, Knot is an embedding of a circle in R^3 (and also to all the homeomorphisms of the circle obtained by deformations - Knot equivalence - ambient isotopy) - Previous definition of one way function maps a circular or straightline string to one of the homeomorphic knot denoted by a knot polynomial and there are as many one way functions as there are knot polynomials. Inversion of one way function reduces to inverse homeomorphism. Example: Handwritings of different persons (of same language and text) are homeomorphic deformations in R^2.
 3. Homeomorphic inverse - http://at.yorku.ca/cgi-bin/bbqa?forum=ask_a_topologist_2010&task=show_msg&msg=1138.0001
  - "Thirdly, the inverse of f^{-1} is just f itself - in other words, the inverse of the inverse of f is f itself, so that (f^{-1})^{-1} = f. By assumption, f is continuous, and as f is the inverse of f^{-1}, the function f^{-1} has a continuous inverse."
+
+--------------------------------------------------------------------------------------------------------
+Circle Packing and Planarity - 21 March 2019
+--------------------------------------------------------------------------------------------------------
+Drawing non-crossing paths between points is a non-trivial planar graph embedding problem. There are planarity criteria defined by various theorems as below:
+	(*) Wagner's Theorem - Graph is planar if and only if it is free from K5 or K3,3 minors. Kn is a complete graph of n vertices and K3,3 is a complete bipartite graph on 2 sets of size 3. Graph minor is obtained by contracting edges to vertices.
+	(*) Circle Packing Theorem - Circles of varied sizes are drawn tangentially (osculation) on plane and a graph comprising edges among osculating circles is the coin graph. Graph is planar if and only if it is a circle intersection graph or coin graph.
+
+References:
+-----------
+1. Mathematical Puzzles of Sam Lloyd - Selected and Edited by Martin Gardner - Chicken Puzzle - Puzzle 82
+2. Circle Packing Theorem - [Koebe-Andreev-Thurston] - https://en.wikipedia.org/wiki/Circle_packing_theorem
