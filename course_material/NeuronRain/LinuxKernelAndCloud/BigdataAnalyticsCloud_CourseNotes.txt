@@ -124,3 +124,17 @@ BigData or Large Text Files on clouds often require a functionality to quickly s
 			prevpos=pos
 		return matchfound==true
 
+------------------------------------------------------------------------------------------------------
+26 March 2019 - Example MapReduce in Spark 2.4 Cloud - Bitonic Sequences of Integers
+------------------------------------------------------------------------------------------------------
+Spark framework parallelizes work by partitioning a bigdata set into Resilient Distributed Datasets
+which are map()-ped to Spark cloud nodes by Spark Executor Driver and local computations in cloud node are unified by reduce(). Spark 2.4 + Python Spark code example in code/Spark_MapReduce.py defines two functions map() and reduce(). Spark context is instantiated and an array of integers is parallelized to
+Spark resilient distributed dataset partitions and map() is invoked per RDD on Map function - Map() which returns a single element array as a tuple. This is followed by reduce() on Reduce function - Reduce() which takes as args two mapped tuples and merges the integer arrays after > or <= checks to create a subarray which is either strictly ascending or descending. Resultant array is checked for sortedness by a function and mapreduces further if not. Logs for this in Spark_MapReduce.log.26March2019 demonstrate the bitonic sequence n1 + n2 which fluctuate (ascending-descending-ascending):
+Reduce: (1, [15], 1, [16], 1, [12], 1, [7], 1, [6], 1, [3], 1, [2], 1, [4], 1, [5])
+n1: (1, [15], 1, [16], 1, [12], 1, [7], 1, [6], 1, [3], 1, [2], 1, [4], 1, [5])
+n2: (1, [23], 1, [32])
+Reduce: (1, [15], 1, [16], 1, [12], 1, [7], 1, [6], 1, [3], 1, [2], 1, [4], 1, [5], 1, [23], 1, [32])
+Bitonic Sequence of Integers:
+[15, 16, 12, 7, 6, 3, 2, 4, 5, 23, 32]
+
+As can be seen, the reduce produces a huge tuple from which an integer array is extracted after typecheck by Python keyword "type".
