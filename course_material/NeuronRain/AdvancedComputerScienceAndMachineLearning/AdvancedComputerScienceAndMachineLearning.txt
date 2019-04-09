@@ -554,6 +554,8 @@ Previous Converging markov random walk algorithm applies to Business Analytics p
 
 Previous PageRank computation on Channel Switch Random Graph per viewer can be mapped to a histogram of PageRank score range buckets clustering almost similarly scored channels (intuitively channels of similar genre have almost similar scores thereby partitioning the set of channels by genre buckets) which is a probability distribution per viewer. Majority viewership trend has to be inferred from this stream of per viewer histograms e.g clustering the viewer histograms by adjusted rand index distance measure and largest cluster histogram trend wins by majority vote. It is worth noting that Television Rating Points are intrinsic merit measures for media analytics. 
 
+An intrinsic alternative to previous PageRank based voting by viewers is to rank content of channels by EventNet Tensor Products Audio-Visual Merit algorithm implemented in NeuronRain AsFer which considers every audio-visual as stream of causally related frame graphs inferred from ImageNet. This algorithm is not restricted to videos alone but models physical reality of event cause-effect (kind of simplified PetriNets where places are events and transitions are causations between events). Based on genre (Sports, Info, Entertainment etc.,) Empath or LIWC sentiment analysis might be necessary for emotional content.
+
 References:
 -----------
 1.Ranks as Symmetric Permutation Group Sn and Rank correlations - Spearman's Footrule as measure of Disarray - [Persi Diaconis and R.L.Graham] - https://statweb.stanford.edu/~cgates/PERSI/papers/77_04_spearmans.pdf
