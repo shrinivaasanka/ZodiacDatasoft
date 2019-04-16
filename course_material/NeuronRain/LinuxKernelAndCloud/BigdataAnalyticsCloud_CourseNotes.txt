@@ -138,3 +138,15 @@ Bitonic Sequence of Integers:
 [15, 16, 12, 7, 6, 3, 2, 4, 5, 23, 32]
 
 As can be seen, the reduce produces a huge tuple from which an integer array is extracted after typecheck by Python keyword "type".
+
+------------------------------------------------------------------------------------------------------
+16 March 2019 - Set Partitions in SymPy, Survival Index Timeout OS Scheduler 
+------------------------------------------------------------------------------------------------------
+Spark_FPGrowth_SurvivalIndexTimeout.py example previously described for FPGrowth mining of dictionaries
+has been changed to print all possible partitions of set of processes in OS. Partition API in SymPy have been invoked for this. OS Scheduler/Timer is in itself a set partition histogram which maps timeout values to subsets of processes. This demonstrates the integer partition and LSH/set partition-separate chaining isomorphism. Logs in Spark_FPGrowth_SurvivalIndexTimeout.log.16April2019 show the all possible permutations of process set partitions.Rank of a partition is printed which is the difference between size of largest part and number of parts (or) equivalently side of largest square in Durfee Diagram.
+
+References:
+-----------
+1.Durfee Square - https://en.wikipedia.org/wiki/Durfee_square
+2.Rank of a partition and Partitions fitting within a rectangle - Gauss Binomial Coefficient - https://en.wikipedia.org/wiki/Rank_of_a_partition
+3.Ferrers Diagram or Young Tableau of a Partition - https://en.wikipedia.org/wiki/Partition_(number_theory)#Ferrers_diagram
