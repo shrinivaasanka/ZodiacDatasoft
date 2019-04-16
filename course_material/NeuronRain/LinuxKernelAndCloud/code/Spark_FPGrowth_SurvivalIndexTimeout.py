@@ -11,9 +11,20 @@
 from pyspark import SparkContext, SparkConf
 from pyspark.sql import SQLContext, Row
 from pyspark.ml.fpm import FPGrowth
+from sympy.combinatorics.partitions import Partition
+from sympy.functions.combinatorial.numbers import nT
+spcon = SparkContext("local[2]","Spark_FPGrowth_SurvivalIndexTimeout")
+
+def processes_set_partitions(processes):
+	number_of_partitions=nT(len(processes))
+	processes_partitions=Partition(processes)
+	for p in spcon.range(number_of_partitions).collect():
+		print "======================================================="
+		print "Partition:",processes_partitions + p
+		print "Partition Rank:",(processes_partitions + p).rank
 
 def SurvivalIndexTimeout(timeoutpidsmap):
-	spcon = SparkContext("local[2]","Spark_FPGrowth_SurvivalIndexTimeout")
+	global spcon
 	sqlcon = SQLContext(spcon)
 	timeoutdf=sqlcon.createDataFrame(timeoutpidsmap,['index','process_ids'])
 	fpGrowth=FPGrowth(itemsCol="process_ids",minSupport=0.5,minConfidence=0.5)
@@ -24,4 +35,5 @@ def SurvivalIndexTimeout(timeoutpidsmap):
 if __name__=="__main__":
 	timeoutpidsmap=[(10,[1,2,3]),(11,[2,3,4,5]),(12,[7,5,8,9]),(19,[2,3,4,5,6,7]),(20,[1,2,5,6,7])]
 	SurvivalIndexTimeout(timeoutpidsmap)
+	processes_set_partitions([1,2,3,4,5,6,7,8,9])
 
