@@ -556,9 +556,12 @@ Previous PageRank computation on Channel Switch Random Graph per viewer can be m
 
 An intrinsic alternative to previous PageRank based voting by viewers is to rank content of channels by EventNet Tensor Products Audio-Visual Merit algorithm implemented in NeuronRain AsFer which considers every audio-visual as stream of causally related frame graphs inferred from ImageNet. This algorithm is not restricted to videos alone but models physical reality of event cause-effect (kind of simplified PetriNets where places are events and transitions are causations between events). Based on genre (Sports, Info, Entertainment etc.,) Empath or LIWC sentiment analysis might be necessary for emotional content.
 
+H-index measure of merit in academic research is defined as h number of articles by an academic each of which have citations by atleast h other academics. Similar notion can be generalized to text,audio,video and people too. In the context of video merit, for example, h number of atleast h-times retweeted videos is a measure of quality.
+
 References:
 -----------
 1.Ranks as Symmetric Permutation Group Sn and Rank correlations - Spearman's Footrule as measure of Disarray - [Persi Diaconis and R.L.Graham] - https://statweb.stanford.edu/~cgates/PERSI/papers/77_04_spearmans.pdf
+2.H-index - Measure of Academic Research Quality - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1283832/
 
 --------------------------------------------------------------------------------------------------------------
 Reputation Rankings, Sybils and Collusions - 16 July 2018
