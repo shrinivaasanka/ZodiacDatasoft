@@ -147,3 +147,32 @@ References:
 2.Beautiful Code - Chapter 26 - Labor-Saving Architecture - An Object Oriented Framework for Networked Architecture - Concurrent Logging Servers in C++ - Reactor Pattern for Logging Concurrent Events
 3.EventNet Kernel Service Module and EventNet Logging Client function in NeuronRain VIRGO Linux Kernel - https://gitlab.com/shrinivaasanka/virgo64-linux-github-code/tree/master/linux-kernel-extensions/drivers/virgo/eventnet and https://gitlab.com/shrinivaasanka/virgo64-linux-github-code/blob/master/linux-kernel-extensions/drivers/virgo/utils/virgo_generic_kernelsock_client.c - eventnet_log()
 4.ZeroMQ Pub-Sub for distributed logging - http://zguide.zeromq.org/php:chapter8#toc31
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Linux Kernel Development (System calls and Drivers) - some low level architecture specific issues - 14 May 2019
+------------------------------------------------------------------------------------------------------------------------------------------
+Following are few architecture specific idiosyncracies and heisen bugs that could cause harrowing experience while writing new kernel system calls and drivers (32 bit versus 64 bit, dual core versus quad core versus octa core):
+
+1.strcpy() buffer overflow (kernel has its own implementation of glic string library in include/linux) - there is a documented intel x86_64 buffer overrun error in some chips
+2.char * to const char* cast requirement
+3. (u8*) cast for sin_addr in kernel sockets
+4. memcpy() versus copy_to_user() or copy_from_user() - in some architectures memcpy() works while in others copy_xxx() pairs work without crashes
+5. Requirement for __user qualifier macro for some system call parameters passed to copy_from_user() and copy_to_user()
+6. Correct location of kernel glibc string library headers in Makefile paths
+7. strscpy() instead of strcpy() - works some times
+8. Usage of BUF_SIZE (buffer size as macro) instead of strlen()
+9. kstrdup() might crash sometimes in strlen() which can be replaced by strcpy() and strcat() 
+10. User memory access warning/error in KASAN because of copy_from_user() and copy_to_user() (access_ok() assertions crash)
+11. memcpy() is less secure than copy_xxx() pairs
+12. __put_user() and strncpy_from_user() might sometimes circumvent crashes
+13. Setting the segment correctly - get_fs()/set_ds(KERNEL_DS) must correctly encapsulate kernel data access.
+14. copy_user_generic() avoids crashes in some cases if previous do not work
+15. cast char to unsigned long long which bypasses lot of buffer issues and __put_user() supports only unsigned long long
+16. unsigned long long has the advantage of abstracting any datatype.
+17. Being compatible for both 32 and 64 bits simultaneously could be a problem - u8 and const char* cast
+18. memcpy() could fail in certain multicores
+19. strncpy_from_user() in place of copy_from_user() creates stabler kernel syscalls and driver builds
+20. __put_user() in place of copy_to_user() is stabler in some multicores
+21. unsigned long long is sometimes stabler than char __user*  
+22. sizeof() might have to be replaced by BUF_SIZE macro for all copy functions
+23. in4_pton() might fail in some cases while in_aton() might work
