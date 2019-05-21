@@ -33,3 +33,6 @@ Spark Streaming code in https://github.com/shrinivaasanka/asfer-github-code/blob
 	T1<T2,T3> t1 = new T1<>();
 which automatically infers type as T1<T2,T3>.
 
+21 May 2019
+------------
+Lambda functions in Java are illustrated by LambdaExpressions.java which implements a functional interface and a lambda expression to print N  consecutive numbers without looping. Function recursion() implements the recursive part while lambda expression just consists of printing an integer which is captured from argument to lambda function. Logs for this code example are in testlogs/LambdaExpressions.log.21May2019. 
