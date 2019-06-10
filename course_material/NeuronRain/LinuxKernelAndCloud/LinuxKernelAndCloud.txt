@@ -176,3 +176,24 @@ Following are few architecture specific idiosyncracies and heisen bugs that coul
 21. unsigned long long is sometimes stabler than char __user*  
 22. sizeof() might have to be replaced by BUF_SIZE macro for all copy functions
 23. in4_pton() might fail in some cases while in_aton() might work
+
+---------------------------------------------------------------------------------------------------------------------------------------
+Linux Kernel Development (System calls and Drivers) - some low level architecture specific issues 2 - 10 June 2019
+---------------------------------------------------------------------------------------------------------------------------------------
+Following are some architecture specific problems while invoking kernel sockets (e.g simulating a telnet client and server within 
+kernel):
+1. System calls (especially written new) often involve userspace strings passed on to kernel (and sometimes transported to a remote
+kernel by kernel sockets) which are mandated to be marked as "const __user char*"
+2. __user pointer marked as previous informs the kernel that a userspace data has to be handled by kernel by copying it to kernelspace
+3. Accessing __user pointers directly within system calls and kernel modules (e.g in printk) creates a fault because a userspace 
+pointer is accessed in kernel space illegitimately.
+4. Special functions like copy_from_user()/strncpy_from_user() are meant for copying userspace __user pointed data to kernelspace
+pointers.
+5. This userspace to kernelspace copy requires setting kernel data segments appropriately by set_ds(KERNEL_DS) followed by the invocation and 
+resetting the datasegment to status quo ante.
+6. Buffers used within the kernel modules and system calls for copying user buffers must have sufficient size and strlen() may not
+work for strings which are not null terminated causing overflow.
+7. copy_to_user() causes weird faults and there is no equivalent strncpy_to_user() for out parameters in system calls which might
+necessitate __put_user() to a generic data type e.g unsigned long long and reinterpret-cast to a char literal. Sequential invocation
+of these creates an array of chars or strings.
+8. -32, -107, -101 errors are often witnessed in kernel_connect() which is probably caused by in4_pton()
