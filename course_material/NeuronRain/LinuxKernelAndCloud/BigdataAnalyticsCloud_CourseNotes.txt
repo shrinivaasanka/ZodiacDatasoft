@@ -150,3 +150,12 @@ References:
 1.Durfee Square - https://en.wikipedia.org/wiki/Durfee_square
 2.Rank of a partition and Partitions fitting within a rectangle - Gauss Binomial Coefficient - https://en.wikipedia.org/wiki/Rank_of_a_partition
 3.Ferrers Diagram or Young Tableau of a Partition - https://en.wikipedia.org/wiki/Partition_(number_theory)#Ferrers_diagram
+
+---------------------------------------------------------------------------------------------------------
+9 July 2019 - Fraud Analytics in Spark 2.4.3
+---------------------------------------------------------------------------------------------------------
+NeuronRain AstroInfer implements a primitive fraud analytics on a credit card transactions dataset - https://gitlab.com/shrinivaasanka/asfer-github-code/blob/master/python-src/FraudAnalytics.py which analyzes https://www.kaggle.com/mlg-ulb/creditcardfraud csv dataset. Alternatively Spark provides some basic statistics functions for analyzing DataFrames of BigData. An example Spark Python code on Spark 2.4.3 at code/Spark_FraudAnalytics.py does the following :
+	(*) Group the transactions by first few columns of cardholder identity and computes average amount withdrawn by aggregating column "Amount"
+	(*) Find Frequent Items in the DataFrame
+	(*) Describe the columns and compute basic statistics - mean, standard deviation etc.,
+which are captured in code/testlogs/Spark_FraudAnalytics.log.9July2019
