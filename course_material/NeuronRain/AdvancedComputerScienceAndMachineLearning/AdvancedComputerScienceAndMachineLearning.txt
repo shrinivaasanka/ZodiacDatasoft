@@ -512,6 +512,10 @@ Previous adaptation of Survival Index based Transaction Timeout Management (ment
 
 Linux Kernel has Earliest Deadline First Scheduler (work in progress) which requires user to specify Worst Case Execution Time (WCET) of a process and deadline (runtime << deadline) explicitly by chrt in commandline or programmatically by sched_setattr().
 
+Timeout as Graph Partition:
+---------------------------
+Previous Survival Index based OS process dynamic set partition can be theorized by a Dynamic Graph Partition too - each process has a dependency to some other process by parent/child fork() relationship as graph edge and processes as vertices. At any instant, survival index graph partition captures both the buckets of the processes set partition for timeout values and dependencies among buckets. 
+
 References:
 ----------
 1.Previous algorithm is a generalization of Survival Index Based Transaction Timeout Management mentioned in patent disclosure https://sites.google.com/site/kuja27/SurvivalIndexBasedTxnTimeoutManager.pdf (Patent Pending - Copyright - Sun Microsystems/Oracle) - Specific to Java Hashmap (CustomizedHashMap) and Open Addressing
@@ -537,6 +541,7 @@ References:
 arising in clustering - https://csiflabs.cs.ucdavis.edu/~gusfield/cpartition.pdf
 20. Various distance measures between 2 set partitions - http://igm.univ-mlv.fr/~gambette/Re20121025.pdf - Overlap Distance - Minimum Number of elements to be removed to remove all overlaps between subsets of 2 partitions
 21. Rand Index -  Distance between two sets of classified subsets (set partitions) - https://en.wikipedia.org/wiki/Rand_index
+22. Graph Partition - https://en.wikipedia.org/wiki/Graph_partition
 
 -----------------------------------------------------------------------------------------------------------
 Markov Chains Random Walks on a Random Graph and Television Viewership - 4 June 2018,3 July 2018,7 March 2019
