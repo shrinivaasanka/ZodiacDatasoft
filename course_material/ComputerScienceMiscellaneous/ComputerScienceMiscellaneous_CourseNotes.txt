@@ -309,6 +309,8 @@ This problem has direct bearing on Tabulation Hashing where two objects have sam
 
 This problem is all the more serious in People Analytics where a person has to be uniquely identified in ,say, social networks undisputably (e.g there are abundant duplicate social profiles of same name, photos etc., and handles are sometimes prefixed as "real<name>"). Usually it suffices that N is logM bit integer. Digital Unique IDs stored on cloud often are vulnerable to attacks. An example Unique Person Search therefore might involve a decision tree of depth O(logM) and UniqueID is not just an integer but is a concatenation of various not-so-forgeable human non-digital features (e.g age, voice metric, biometric, blood group, height, birthmarks, educational qualifications, work experience, circle of human acquaintances, non-invasive unique private event in a person's timeline history etc.,)
 
+Name Syllable based Unique Person Search (by scraping PIPL.com data) is described and PIPL.com python API search of similar persons is implemented in NeuronRain AstroInfer commit https://gitlab.com/shrinivaasanka/asfer-github-code/commit/d855882c3e8c2f97f6709c6f4a03728f95377ca1 (and in GitHub and SourceForge AstroInfer repositories)
+
 --------------------------------------------------------------------------------------------------------------------------------
 19 January 2018 - How would you find needle in haystack?
 --------------------------------------------------------------------------------------------------------------------------------
