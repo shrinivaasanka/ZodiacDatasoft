@@ -444,7 +444,7 @@ E.g 2. for excluding X={3,6}, lookup of the table results in S={3,7,5,6} which h
 This algorithm is subset oblivious and is a slight improvement over brute-force multiplication of set or set difference because of cached subset products and is sublinear mostly. Previous examples required only 2 divisions whereas brute-force would need 3 multiplications assuming lookups are O(1). Cacheing has benefits in large arrays (when number of elements to be excluded are almost O(N)) for reducing number of multiplications.
 
 -------------------------------------------------------------------------------------------------------------
-Hashing Dynamic Sets - 24 May 2018, 31 October 2018, 11 March 2019
+Hashing Dynamic Sets - 24 May 2018, 31 October 2018, 11 March 2019, 8 October 2019
 -------------------------------------------------------------------------------------------------------------
 Q: How can sets of elements which are dynamically modified at runtime be hashed by tabulation? E.g set of 
 clockticks remaining per process in an OS scheduler for 15 processes is [23,45,12,44,55,14] at time t=1. This
@@ -542,6 +542,7 @@ arising in clustering - https://csiflabs.cs.ucdavis.edu/~gusfield/cpartition.pdf
 20. Various distance measures between 2 set partitions - http://igm.univ-mlv.fr/~gambette/Re20121025.pdf - Overlap Distance - Minimum Number of elements to be removed to remove all overlaps between subsets of 2 partitions
 21. Rand Index -  Distance between two sets of classified subsets (set partitions) - https://en.wikipedia.org/wiki/Rand_index
 22. Graph Partition - https://en.wikipedia.org/wiki/Graph_partition
+23. Dynamic Graph Partition - [Chen Avin et al] - https://arxiv.org/pdf/1511.02074.pdf - Previous Survival Index OS Scheduler is a Dynamic Graph Partition and requires online algorithms (all inputs are not readily available and processes are streamed data) because processes are forked and timedout frequently and parent-child fork relation edges between process vertices (which could be in different timeout buckets) are deleted and created dynamically.
 
 -----------------------------------------------------------------------------------------------------------
 Markov Chains Random Walks on a Random Graph and Television Viewership - 4 June 2018,3 July 2018,7 March 2019
