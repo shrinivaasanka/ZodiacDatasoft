@@ -158,7 +158,6 @@ NeuronRain AstroInfer implements a primitive fraud analytics on a credit card tr
 	(*) Group the transactions by first few columns of cardholder identity and computes average amount withdrawn by aggregating column "Amount"
 	(*) Find Frequent Items in the DataFrame
 	(*) Describe the columns and compute basic statistics - mean, standard deviation etc.,
-which are captured in code/testlogs/Spark_FraudAnalytics.log.9July2019:
 ...
 +-------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+------------------+
 |summary|                  V1|                  V2|                  V3|                  V4|                  V5|                  V6|                  V7|                  V8|                  V9|            Amount|
@@ -169,4 +168,13 @@ which are captured in code/testlogs/Spark_FraudAnalytics.log.9July2019:
 |    min|-0.00012931370800...|-0.00010296722561...|-0.00010859127517...|-0.00011921826106...|-0.00010366562678...|-0.00010234903761...|-0.00010533581684...|-0.00010065655617...|-0.00010181309940...|                 0|
 |    max|7.55406974741191e-05|    9.99769856171626|9.67444968403876e-05|    9.92501936512661|9.99846034625664e-05|    9.91116576052911|    9.97044721041161|    9.90825458583455|9.96754672601408e-05|             999.9|
 +-------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+------------------+
+
+-----------------------------------------------------------------------------------------------------
+21 October 2019 - Advertisement Analytics - Recommender Systems - ALS Collaborative Filtering
+-----------------------------------------------------------------------------------------------------
+Collaborative Filtering based Recommender Systems works by plotting a matrix of users versus their item choices and predicting preferences of new users or missing preferences based on inferences from the user-items matrix. Advertisement Analytics by computing PageRank of viewer channel switch graph (converging markov random walk) is explained in https://github.com/shrinivaasanka/Grafit/blob/master/course_material/NeuronRain/AdvancedComputerScienceAndMachineLearning/AdvancedComputerScienceAndMachineLearning.txt. Spark MLLib predefines a function for alternating least squares (ALS) collaborative filtering on cloud. Code example in Spark_RecommenderSystems.py which is a modified version of documentation example in https://spark.apache.org/docs/latest/ml-collaborative-filtering.html adapts to channel recommendation systems based on user surveyed matrix of viewer-channel matrix.This is an alternative advertisment analytics.Channel ratings of viewers are read from text file AdvertisementAnalytics_RecommenderSystemsCF.txt having fields - viewer, channelid, rating and timestamp.
+ALS factorizes the user-item matrix into User and Item matrix factors and minimizes a quadratic optimization function:
+	UserItem = User * Item (Factorization)
+	(UserItem - User * Item)^2 (Minimization)
+ALS makes either User or Item factor constant alternatingly and converts to a quadratic optimization problem.
 
