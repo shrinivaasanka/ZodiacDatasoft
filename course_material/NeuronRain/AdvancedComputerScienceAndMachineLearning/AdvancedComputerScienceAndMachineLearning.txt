@@ -510,9 +510,9 @@ Caveat:
 -------
 Previous adaptation of Survival Index based Transaction Timeout Management (mentioned in the references) to OS Scheduler assumes prior knowledge of execution times of processes which is undecidable in exact sense by Halting Problem. Only an approximate estimate of execution time of a process can be derived by Analysis of control statements in the program (e.g Sum of execution times of control statements in longest path in the control flow graph of the program is the upperbound).  
 
-Survival Index Timeout as Earlist Deadline First (EDF) OS Scheduler:
+Survival Index Timeout as Earliest Deadline First (EDF) OS Scheduler:
 --------------------------------------------------------------
-Linux Kernel has Earliest Deadline First Scheduler (work in progress) which requires user to specify Worst Case Execution Time (WCET) of a process and deadline (runtime << deadline) explicitly by chrt in commandline or programmatically by sched_setattr(). EDF schduler prioritizes low deadline processes/threads first, causing long deadline processes to wait longer. Commentaries in References below mention an example constraint to be satisfied: 
+Linux Kernel has Earliest Deadline First Scheduler (work in progress) which requires user to specify Worst Case Execution Time (WCET) of a process and deadline (runtime << deadline) explicitly by chrt in commandline or programmatically by sched_setattr(). EDF scheduler prioritizes low deadline processes/threads first, causing long deadline processes to wait longer. Commentaries in References below mention an example constraint to be satisfied: 
 	WCET_deadline_timeout_value_of_bucket * number_of_processes_in_the_bucket = constant. 
 This constraint makes the OS Scheduler histogram lopsided - shortest deadline buckets are longest and longest deadline buckets are shortest. Enforcement of this kind of EDF constraint is tantamount to mapping deadline(timeout) values of buckets to process priorities (nice values) - lowest deadlines/timeouts have highest priorities and viceversa. 
 
