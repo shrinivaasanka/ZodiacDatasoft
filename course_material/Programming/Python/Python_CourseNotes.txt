@@ -122,3 +122,19 @@ References:
 ----------
 1.Python 3.7 documentation - Async/Await - https://docs.python.org/3/library/asyncio-protocol.html 
 
+--------------------------------------------------------------------------------------------------------
+14 November 2019 - Multidimensional Array Slicing - slice() function and NumPy - and StringIO
+--------------------------------------------------------------------------------------------------------
+Python has in-built slice() function which is an iterator for array indices to slice. Numeric Python
+NumPy has library support for multidimensional array slicing by subscripts. Code example code/Slicing.py
+ demonstrates 5 variants of slicing of a 2 dimensional ndarray parsed from a string text. Text of multiple
+lines separated by newline "\n" is read by StringIO object by genfromtxt() and parsed to a multidimensional array by delimiter ",". Five different slicings in the example are:
+  1. slicedarray1 - equal slices for 2 dimensions by slice()
+  2. slicedarray2 - unequal slices for 2 dimensions by slice() - only larger slice is effected
+  3. slicedarray3 - slice() for one dimension and tuple of indices for the other - only indices from tuple are effected
+  4. slicedarray4 - equal slices of 2 dimensions with an added step parameter - only one dimension is sliced
+  5. tuple of indices for both the dimensions raises Python error:
+	Traceback (most recent call last):
+	  File "Slicing.py", line 23, in <module>
+    		slicedarray3=parsedarray[(0,3),(0,3)]
+	IndexError: index 3 is out of bounds for axis 0 with size 2

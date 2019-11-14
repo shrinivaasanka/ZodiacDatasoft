@@ -1,0 +1,13 @@
+[[  1.   2.   3.   4.   5.   6.   7.   8.]
+ [  9.  10.  11.  12.  13.  14.  15.  16.]]
+slicedarray1 - slice() of equal slices:
+[[  1.   2.   3.]
+ [  9.  10.  11.]]
+slicedarray2 - slice() of unequal slices:
+[[  1.   2.   3.]
+ [  9.  10.  11.]]
+slicedarray3 - slice() and tuple:
+[[  1.   4.]
+ [  9.  12.]]
+slicedarray4 - step slice() :
+[[ 1.  3.  5.  7.]]
