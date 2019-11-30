@@ -670,3 +670,16 @@ Naive 2-dimensional (multidimensional) array slicing loops through rows and find
 
 	(*) Entropy bound for Wavelet Tree point grids - Lemma 2 - https://www.sciencedirect.com/science/article/pii/S0925772113000953 - [Arash Farzan, Travis Gagie, Gonzalo Navarro] - set of all possible point grids (slices) of size m carved from n * n square are populated in a wavelet tree and size of this set is {n^2Cm} and of entropy log{n^2Cm} - "...Furthermore, query rel_acc(i1,i2,j1,j2) (giving all the k points in [i1,i2]×[j1,j2]), is answered in time O((k+1)lgσ/lglgn)...". Query rel_acc() range reports all k points in the rectangular slice [i1,i2] * [j1,j2] of n*n square for an alphabet size (which could be 2 or 10 depending on binary or decimal radix of the 2-dimensional array) in O((n^n+1)lg2/lglgn) and O((n^n+1)lg10/lglgn) for k=O(n^2). This is slightly better than O(n^2) naive bound because O((n^n+1)lg2/lglgn) and O((n^n+1)lg10/lglgn) = O(n^2/lglgn) < O(n^2). 2-dimensional arrays are labelled points on 2-d plane and computational geometric wavelet tree planar range search selects an array slice in its entirety in time O(n^2/lglgN). 
 
+---------------------------------------------------------------------------------------------------------
+Leaky Bucket Algorithm and Time Series Analysis - 30 November 2019
+---------------------------------------------------------------------------------------------------------
+NeuronRain AstroInfer Research Version in SourceForge implements lot of algorithms to mine patterns in strings especially encoded astronomical datasets of celestial configurations which might be helpful to correlate gravitational influence of an n-body planetary system on sky and terrestrial weather-seismic events. NOAA JAWF Climate Prediction Centre precipitation analytics based on time series and leaky bucket are alternative examples of machine learning driven weather forecasts (Leaky Bucket Model - https://www.cpc.ncep.noaa.gov/products/JAWF_Monitoring/India/monthly_maps.shtml, Rainfall Time Series - https://www.cpc.ncep.noaa.gov/products/JAWF_Monitoring/India/30d_time_series.shtml).
+
+Leaky Bucket Algorithm is primarily used in traffic policing and scheduling of networks (in NOAA example previously, daily rainfall statistics replace network traffic and are plotted as timeseries) and operates as follows:
+	(*) Bucket datastructure (e.g store-forward buffers in routers) is predefined for certain average expected traffic
+	(*) Network Traffic trickles in a leaky bucket datastructure at random rate 
+	(*) Some amount of traffic leaks out of bucket at random rate
+	(*) Bucket might either overflow or be emptied depending on rate of incoming network packets (similar to detour of vehicles in a jammed junction)
+	(*) Bandwidth rate limiting and outlier detection can be enforced based on leaky bucket model (e.g any overflow is caused by outlier packets and indicates abnormal exorbitant incoming traffic)
+	(*) Bursts of packets in network traffic can also be plotted as time series of periodic intervals (number of packets versus time)
+	(*) Time-Series of network traffic and Leaky-Bucket model often have an one-to-one correspondence - Any peak (outlier) in timeseries might trigger a bucket overflow and vice-versa.
