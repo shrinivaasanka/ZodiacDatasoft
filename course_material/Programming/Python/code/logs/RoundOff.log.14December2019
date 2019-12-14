@@ -1,0 +1,74 @@
+====================================================================================
+Python 2.7
+====================================================================================
+# python RoundOff.py 
+('x1:', -1)
+('x2:', 0)
+====================================================================================
+Python 3.7.5
+====================================================================================
+# python3.7m RoundOff.py 
+x1: -0.5
+x2: 0.5
+=====================================================================================
+Python 2.7 - PDB - Python Bytecode disassembly
+=====================================================================================
+# python -m pdb RoundOff.py
+-> class RoundOff:
+(Pdb) import dis
+(Pdb) import RoundOff
+(Pdb) dis.dis(RoundOff)
+Disassembly of RoundOff:
+Disassembly of __init__:
+ 15           0 LOAD_CONST               5 (-1)
+              3 LOAD_CONST               2 (2)
+              6 BINARY_DIVIDE       
+              7 STORE_FAST               1 (x1)
+
+ 16          10 LOAD_CONST               6 (1)
+             13 LOAD_CONST               2 (2)
+             16 BINARY_DIVIDE       
+             17 STORE_FAST               2 (x2)
+
+ 17          20 LOAD_CONST               3 ('x1:')
+             23 LOAD_FAST                1 (x1)
+             26 BUILD_TUPLE              2
+             29 PRINT_ITEM          
+             30 PRINT_NEWLINE       
+
+ 18          31 LOAD_CONST               4 ('x2:')
+             34 LOAD_FAST                2 (x2)
+             37 BUILD_TUPLE              2
+             40 PRINT_ITEM          
+             41 PRINT_NEWLINE       
+             42 LOAD_CONST               0 (None)
+             45 RETURN_VALUE        
+=====================================================================================
+Python 3.7.5 - PDB - Python Bytecode disassembly
+=====================================================================================
+# python3.7m -m pdb RoundOff.py
+-> class RoundOff:
+(Pdb) import RoundOff
+(Pdb) import dis
+(Pdb) dis.dis(RoundOff)
+Disassembly of RoundOff:
+Disassembly of __init__:
+ 15           0 LOAD_CONST               1 (-0.5)
+              2 STORE_FAST               1 (x1)
+
+ 16           4 LOAD_CONST               2 (0.5)
+              6 STORE_FAST               2 (x2)
+
+ 17           8 LOAD_GLOBAL              0 (print)
+             10 LOAD_CONST               3 ('x1:')
+             12 LOAD_FAST                1 (x1)
+             14 CALL_FUNCTION            2
+             16 POP_TOP
+
+ 18          18 LOAD_GLOBAL              0 (print)
+             20 LOAD_CONST               4 ('x2:')
+             22 LOAD_FAST                2 (x2)
+             24 CALL_FUNCTION            2
+             26 POP_TOP
+             28 LOAD_CONST               0 (None)
+             30 RETURN_VALUE
