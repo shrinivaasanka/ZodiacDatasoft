@@ -191,7 +191,7 @@ References:
 1.Sage OrderedSetPartition - http://doc.sagemath.org/html/en/reference/combinat/sage/combinat/set_partition_ordered.html
 
 ----------------------------------------------------------------------------------------------------------------------------------
-18 December 2019 - Intrinsic Performance Ratings and Sports Analytics, Streaming Histogram analytics, Partition distance measures 
+18 December 2019, 19 December 2019 - Intrinsic Performance Ratings and Sports Analytics, Streaming Histogram analytics, Partition distance measures, Random graph streams 
 ----------------------------------------------------------------------------------------------------------------------------------
 Non-perceptive intrinsic performance rankings (IPR) have been mentioned as one of the multiple classes of measuring intrinsic fitness/merit as part of People Analytics in https://neuronrain-documentation.readthedocs.io/en/latest/ without voting. IPRs are widely used to rank Chess players (e.g Elo ratings). As an alternative bigdata usecase, stream of cricket match statistics is analyzed for intrinsic merit (Example hawkeye statistics - wagon wheel, trajectories, pitch maps - in https://www.bcci.tv/events/15305/india-v-west-indies-2019/match/15309/1st-odi?tab=overview#hawkeye). NeuronRain Set Partition and Histogram analytics implementations elicit patterns from stream of histogram set partitions by multitude of distance measures - earth mover distance, partition rank, correlation among others:
 	(*) Batting and Bowling figures per match for 11 players can be plotted as a histogram of player versus runs/wickets. 
@@ -202,3 +202,5 @@ Non-perceptive intrinsic performance rankings (IPR) have been mentioned as one o
 	(*) Time series of Earth mover distance between consecutive match statistics histograms in the stream sheds light on seasonal trend in team performance.
 	(*) Patterns in Wagon wheel graphics of shots played per player measures strengths of each player - stream of wagon wheels can be mapped to a histogram of shots and aforementioned metrics apply.  
 	(*) Clustering of Bowling trajectories/pitch maps extract stereotypes.
+
+Mining soccer patterns is complex because of random trajectories of the ball which draws a random directed graph on field whose vertices are 2-colored (bichromatic for vertices belonging to two opponent teams). Consecutive match statistics create a stream of 2-colored random graphs and frequent subgraph patterns in this stream of random trajectory graphs show patterns across matches.
