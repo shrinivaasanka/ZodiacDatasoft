@@ -683,3 +683,16 @@ Leaky Bucket Algorithm is primarily used in traffic policing and scheduling of n
 	(*) Bandwidth rate limiting and outlier detection can be enforced based on leaky bucket model (e.g any overflow is caused by outlier packets and indicates abnormal exorbitant incoming traffic)
 	(*) Bursts of packets in network traffic can also be plotted as time series of periodic intervals (number of packets versus time)
 	(*) Time-Series of network traffic and Leaky-Bucket model often have an one-to-one correspondence - Any peak (outlier) in timeseries might trigger a bucket overflow and vice-versa.
+
+------------------------------------------------------------------------------------------------------
+Finding penultimate element in a linked list, sublinear Depth First Search and Breadth First Search, Survival Index Timeout WCET EDF OS Scheduler - 3 January 2020
+------------------------------------------------------------------------------------------------------
+Finding the last but one element in a singly linked list of N elements requires linear traversal of the list, pushing the elements to stack and popping top two elements from it by a naive O(N) algorithm. Breadth First and Depth First Searches are cornerstones of Artificial Intelligence having vast literature in motion planning and robotics. Because singly linked list is a directed acyclic line graph parallel versions of traditional O(V+E) breadth first search and depth first search algorithms which are sub-linear and logarithmic can locate the penultimate element in a singly linked list in parallel faster. There are many parallel BFS and DFS algorithms e.g iterative deepening A* (IDA*), parallel shortest path, Depth First Branch and Bound which are based on PRAMs and thus are polylogdepth NC circuits. Parallel DFS and BFS are quite useful in Survival Index Timeout OS EDF Scheduler algorithm described earlier where every per WCET timeout bucket is a linked list of process id(s) and a process id needs to be searched.
+
+References:
+-----------
+1.Parallel DFS - [Nageshwara Rao - Vipin  Kumar] - https://www.lrde.epita.fr/~bleton/doc/parallel-depth-first-search.pdf
+2.Parallel DFS - Chapter 11 - Introduction to Parallel Computing - http://parallelcomp.uw.hu/ch11lev1sec4.html
+3.Parallel DFS - http://www2.inf.uos.de/papers_html/zeus_95/node5.html
+4.Parallel RAM Breadth First Search - https://en.wikipedia.org/wiki/Parallel_breadth-first_search 
+5.Parallel Breadth First Search and Depth First Search - [Taenam Kim & Kyungyong Chwa] - https://www.tandfonline.com/doi/abs/10.1080/00207168608803503?journalCode=gcom20 - is of parallel time O(log d - log n) for diameter d (longest of shortest paths between all pairs of vertices) of the graph and n is the number of vertices - "...we develop a parallel breadth first search algorithm for general graphs and a parallel depth first search algorithm for acyclic digraphs which run in time O(logd-logn) using 0(n^2[n/log n]) processors....". For singly linked lists diameter d = number of vertices n
