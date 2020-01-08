@@ -56,7 +56,7 @@ References:
 3.Apache Config Directives - ApacheCon - http://events17.linuxfoundation.org/sites/events/files/slides/ConfigurationDirectiveAPI.pdf
 
 ------------------------------------------------------------------------------------------------------------
-2 January 2019, 9 January 2019 - Searching, Indexing - Binary Search Nuances, B-Trees, Sharding
+2 January 2019, 9 January 2019, 8 January 2020 - Searching, Indexing, Computational Geometric point location queries - Binary Search Nuances, B-Trees, Sharding
 ------------------------------------------------------------------------------------------------------------
 Traditional Binary Search still remains the standard for sifting huge datasets and has undergone significant
 refinements. Usual Binary Search is centred around midpoint computation and branching:
@@ -91,13 +91,32 @@ Fundamental question is: can items in a list be found efficiently by a search gr
 	[[[[4]-[3]]-[5]]--[[2]-[1]]] ---- [[[[7]-[8]]-[6]]---[[10]-[9]]]
 
 Edges are denoted by ----- which connect each parenthesized subset vertex for a subtree obtained by traversing the binary search tree. Last line encodes a recursive bipartite search graph which is the top view of the binary search tree and is a multidimensional tensor - a kind of binary space partition. Searching this tensor locates a point in the nested parentheses by comparing against pivots. Advantage of recursive bipartite graph representation of binary search tree is each subtree can be retrieved by array indexing.
-		
+
+Planar Point Location in Computational Geometry is the most fundamental generalization of conventional one dimensional list search to arbitrary dimensions. Computational Geometric Factorization algorithm implemented in NeuronRain AstroInfer is a two dimensional parallel geometric search which locates , in polylogarithmic time, factor points with in rectangular faces of planar straight line graph (PSLG) formed by rasterizing (pixel polygon approximation of an algebraic curve on a grid) hyperbolic arc bow on Parallel RAMs - this search involves two phases:
+	(*) Locating a rectangle in PSLG polygon subdivision containing factor point in polylogarithmic time by some Parallel RAM Planar Point Location algorithm - PSLG has ~(3N+1) vertices and ~4N edges and each polygonal face is a pixel array rectangle of dimensions 1 * N/[x(x-1)]
+	(*) Binary search the rectangle containing factor point - every rectangle in PSLG of rasterized hyperbolic arc is an arithmetic progression of pixels (ordinate products)
+
+---------------------------------------------------------------------------------
+An example hyperbolic arc rasterization - schematic - pixel array polygonal faces 
+(arithmetic progression rectangles marked f denote faces containing factor points):
+---------------------------------------------------------------------------------
+
+	########
+		###f####
+			###############
+				       #########
+						###########f###
+
+Such a Planar Point Location can be extended to arbitrary dimensions > 2 and any other algebraic curve - E.g. algebraic curve uvwxyz=N is a 6-dimensional hyperbola and requires rasterization in 6-dimensional hyperplane to locate factor point (u,v,w,x,y,z). Multidimensional Point Location factorization is the problem of Factorisatio Numerorum (multiplicative partition). 
+
 References:
 -----------
 1.The Art of Computer Programming - Volume 3 - [Donald Knuth] - Sorting and Searching - 6.2.2
 2.Beautiful Code - Finding Things - [Tim Bray - Sun Microsystems]
 3.Google AI Blog - [Joshua Bloch] - https://ai.googleblog.com/2006/06/extra-extra-read-all-about-it-nearly.html
 4.Topological Sorting - Fast Parallel Algorithms - [SA Cook] - https://www.sciencedirect.com/science/article/pii/S0019995885800413 - If set of integers are randomly assigned as labels of a random graph, topological sorting of vertices by some ordering can be done efficiently in NC^2 and a following binary search can find the element in additional logarithmic time. But the topologically sorted vertex list may not be sorted by total ordering always.Dekel-Nassimi-Sahni algorithm works by Repeated Matrix Multiplication logarithmically many times and sorting by longest paths.
+5.Planar Separator Theorem for Graphs - [Richard J. Lipton and Robert Endre Tarjan] - https://epubs.siam.org/doi/abs/10.1137/0209046 - PSLG from rasterized hyperbolic arc xy=N can be partitioned to almost equal subgraphs by removing O(sqrt(3N+1)) vertices - quite useful in parallelizing and fair load balancing the rasterized polygon faces amongst PRAMs for point location queries
+6.Planar Point Location in sublogarithmic time - [(Late) Mihai Patrascu] and [Timothy Chan] - https://ieeexplore.ieee.org/document/4031368
 
 -----------------------------------------------------------------------------------------------------
 21 January 2019 - FP Growth Algorithm for mining frequent patterns and mining timeout dictionaries
