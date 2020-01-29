@@ -129,6 +129,13 @@ Probability of hitting a query point after m-th trial (success after m-1 trials)
 	(1-[p/(delta * sqrt(a^2 + b^2))])^(m-1)[p/(delta * sqrt(a^2 + b^2))]
 which amplifies success probability of finding a factor point.
 
+For finding prime factors, number of query points p = kloglogN (Hardy-Ramanujan Theorem) and success probability of finding a factor point is substituted for p:
+	(1-[kloglogN/(delta * sqrt(a^2 + b^2))])^(m-1)[kloglogN/(delta * sqrt(a^2 + b^2))]
+
+For a square embedding of hyperbolic arc a=b and success probability amplifies to (delta is configurable):
+	(1-[kloglogN/(delta * N * sqrt(2))])^(m-1)[kloglogN/(delta * N * sqrt(2))]
+
+
 References:
 -----------
 1.The Art of Computer Programming - Volume 3 - [Donald Knuth] - Sorting and Searching - 6.2.2
