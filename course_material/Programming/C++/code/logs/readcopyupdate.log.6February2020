@@ -1,0 +1,900 @@
+multithreaded_rcu_assign(): thread-0
+operator= invoked
+==================================
+READ: lvalue=lvalue
+COPY: valuecopy=lvalue
+UPDATE: lvaluecopy updated=rvalue0
+WRITEBACK: lvalue updated=rvalue0
+==================================
+multithreaded_read(): thread-0 lvalue=rvalue0
+multithreaded_rcu_assign(): thread-1
+operator= invoked
+==================================
+READ: lvalue=rvalue0
+COPY: valuecopy=rvalue0
+UPDATE: lvaluecopy updated=rvalue1
+WRITEBACK: lvalue updated=rvalue1
+==================================
+multithreaded_read(): thread-1 lvalue=rvalue1
+multithreaded_rcu_assign(): thread-2
+operator= invoked
+==================================
+READ: lvalue=rvalue1
+COPY: valuecopy=rvalue1
+UPDATE: lvaluecopy updated=rvalue2
+WRITEBACK: lvalue updated=rvalue2
+==================================
+multithreaded_read(): thread-2 lvalue=rvalue2
+multithreaded_rcu_assign(): thread-3
+operator= invoked
+==================================
+READ: lvalue=rvalue2
+COPY: valuecopy=rvalue2
+UPDATE: lvaluecopy updated=rvalue3
+WRITEBACK: lvalue updated=rvalue3
+==================================
+multithreaded_read(): thread-3 lvalue=rvalue3
+multithreaded_rcu_assign(): thread-4
+operator= invoked
+==================================
+READ: lvalue=rvalue3
+COPY: valuecopy=rvalue3
+UPDATE: lvaluecopy updated=rvalue4
+WRITEBACK: lvalue updated=rvalue4
+==================================
+multithreaded_read(): thread-4 lvalue=rvalue4
+multithreaded_rcu_assign(): thread-5
+operator= invoked
+==================================
+READ: lvalue=rvalue4
+COPY: valuecopy=rvalue4
+UPDATE: lvaluecopy updated=rvalue5
+WRITEBACK: lvalue updated=rvalue5
+==================================
+multithreaded_read(): thread-5 lvalue=rvalue5
+multithreaded_rcu_assign(): thread-6
+operator= invoked
+==================================
+READ: lvalue=rvalue5
+COPY: valuecopy=rvalue5
+UPDATE: lvaluecopy updated=rvalue6
+WRITEBACK: lvalue updated=rvalue6
+==================================
+multithreaded_read(): thread-6 lvalue=rvalue6
+multithreaded_rcu_assign(): thread-7
+operator= invoked
+==================================
+READ: lvalue=rvalue6
+COPY: valuecopy=rvalue6
+UPDATE: lvaluecopy updated=rvalue7
+WRITEBACK: lvalue updated=rvalue7
+==================================
+multithreaded_read(): thread-7 lvalue=rvalue7
+multithreaded_rcu_assign(): thread-8
+operator= invoked
+==================================
+READ: lvalue=rvalue7
+COPY: valuecopy=rvalue7
+UPDATE: lvaluecopy updated=rvalue8
+WRITEBACK: lvalue updated=rvalue8
+==================================
+multithreaded_read(): thread-8 lvalue=rvalue8
+multithreaded_rcu_assign(): thread-9
+operator= invoked
+==================================
+READ: lvalue=rvalue8
+COPY: valuecopy=rvalue8
+UPDATE: lvaluecopy updated=rvalue9
+WRITEBACK: lvalue updated=rvalue9
+==================================
+multithreaded_read(): thread-9 lvalue=rvalue9
+multithreaded_rcu_assign(): thread-10
+operator= invoked
+==================================
+READ: lvalue=rvalue9
+COPY: valuecopy=rvalue9
+UPDATE: lvaluecopy updated=rvalue10
+WRITEBACK: lvalue updated=rvalue10
+==================================
+multithreaded_read(): thread-10 lvalue=rvalue10
+multithreaded_rcu_assign(): thread-11
+operator= invoked
+==================================
+READ: lvalue=rvalue10
+COPY: valuecopy=rvalue10
+UPDATE: lvaluecopy updated=rvalue11
+WRITEBACK: lvalue updated=rvalue11
+==================================
+multithreaded_read(): thread-11 lvalue=rvalue11
+multithreaded_rcu_assign(): thread-12
+operator= invoked
+==================================
+READ: lvalue=rvalue11
+COPY: valuecopy=rvalue11
+UPDATE: lvaluecopy updated=rvalue12
+WRITEBACK: lvalue updated=rvalue12
+==================================
+multithreaded_read(): thread-12 lvalue=rvalue12
+multithreaded_rcu_assign(): thread-13
+operator= invoked
+==================================
+READ: lvalue=rvalue12
+COPY: valuecopy=rvalue12
+UPDATE: lvaluecopy updated=rvalue13
+WRITEBACK: lvalue updated=rvalue13
+==================================
+multithreaded_read(): thread-13 lvalue=rvalue13
+multithreaded_rcu_assign(): thread-14
+operator= invoked
+==================================
+READ: lvalue=rvalue13
+COPY: valuecopy=rvalue13
+UPDATE: lvaluecopy updated=rvalue14
+WRITEBACK: lvalue updated=rvalue14
+==================================
+multithreaded_read(): thread-14 lvalue=rvalue14
+multithreaded_rcu_assign(): thread-15
+operator= invoked
+==================================
+READ: lvalue=rvalue14
+COPY: valuecopy=rvalue14
+UPDATE: lvaluecopy updated=rvalue15
+WRITEBACK: lvalue updated=rvalue15
+==================================
+multithreaded_read(): thread-15 lvalue=rvalue15
+multithreaded_rcu_assign(): thread-16
+operator= invoked
+==================================
+READ: lvalue=rvalue15
+COPY: valuecopy=rvalue15
+UPDATE: lvaluecopy updated=rvalue16
+WRITEBACK: lvalue updated=rvalue16
+==================================
+multithreaded_read(): thread-16 lvalue=rvalue16
+multithreaded_rcu_assign(): thread-17
+operator= invoked
+==================================
+READ: lvalue=rvalue16
+COPY: valuecopy=rvalue16
+UPDATE: lvaluecopy updated=rvalue17
+WRITEBACK: lvalue updated=rvalue17
+==================================
+multithreaded_read(): thread-17 lvalue=rvalue17
+multithreaded_rcu_assign(): thread-18
+operator= invoked
+==================================
+READ: lvalue=rvalue17
+COPY: valuecopy=rvalue17
+UPDATE: lvaluecopy updated=rvalue18
+WRITEBACK: lvalue updated=rvalue18
+==================================
+multithreaded_read(): thread-18 lvalue=rvalue18
+multithreaded_rcu_assign(): thread-19
+operator= invoked
+==================================
+READ: lvalue=rvalue18
+COPY: valuecopy=rvalue18
+UPDATE: lvaluecopy updated=rvalue19
+WRITEBACK: lvalue updated=rvalue19
+==================================
+multithreaded_read(): thread-19 lvalue=rvalue19
+multithreaded_rcu_assign(): thread-20
+operator= invoked
+==================================
+READ: lvalue=rvalue19
+COPY: valuecopy=rvalue19
+UPDATE: lvaluecopy updated=rvalue20
+WRITEBACK: lvalue updated=rvalue20
+==================================
+multithreaded_read(): thread-20 lvalue=rvalue20
+multithreaded_rcu_assign(): thread-21
+operator= invoked
+==================================
+READ: lvalue=rvalue20
+COPY: valuecopy=rvalue20
+UPDATE: lvaluecopy updated=rvalue21
+WRITEBACK: lvalue updated=rvalue21
+==================================
+multithreaded_read(): thread-21 lvalue=rvalue21
+multithreaded_rcu_assign(): thread-22
+operator= invoked
+==================================
+READ: lvalue=rvalue21
+COPY: valuecopy=rvalue21
+UPDATE: lvaluecopy updated=rvalue22
+WRITEBACK: lvalue updated=rvalue22
+==================================
+multithreaded_read(): thread-22 lvalue=rvalue22
+multithreaded_rcu_assign(): thread-23
+operator= invoked
+==================================
+READ: lvalue=rvalue22
+COPY: valuecopy=rvalue22
+UPDATE: lvaluecopy updated=rvalue23
+WRITEBACK: lvalue updated=rvalue23
+==================================
+multithreaded_read(): thread-23 lvalue=rvalue23
+multithreaded_rcu_assign(): thread-24
+operator= invoked
+==================================
+READ: lvalue=rvalue23
+COPY: valuecopy=rvalue23
+UPDATE: lvaluecopy updated=rvalue24
+WRITEBACK: lvalue updated=rvalue24
+==================================
+multithreaded_read(): thread-24 lvalue=rvalue24
+multithreaded_rcu_assign(): thread-25
+operator= invoked
+==================================
+READ: lvalue=rvalue24
+COPY: valuecopy=rvalue24
+UPDATE: lvaluecopy updated=rvalue25
+WRITEBACK: lvalue updated=rvalue25
+==================================
+multithreaded_read(): thread-25 lvalue=rvalue25
+multithreaded_rcu_assign(): thread-26
+operator= invoked
+==================================
+READ: lvalue=rvalue25
+COPY: valuecopy=rvalue25
+UPDATE: lvaluecopy updated=rvalue26
+WRITEBACK: lvalue updated=rvalue26
+==================================
+multithreaded_read(): thread-26 lvalue=rvalue26
+multithreaded_rcu_assign(): thread-27
+operator= invoked
+==================================
+READ: lvalue=rvalue26
+COPY: valuecopy=rvalue26
+UPDATE: lvaluecopy updated=rvalue27
+WRITEBACK: lvalue updated=rvalue27
+==================================
+multithreaded_read(): thread-27 lvalue=rvalue27
+multithreaded_rcu_assign(): thread-28
+operator= invoked
+==================================
+READ: lvalue=rvalue27
+COPY: valuecopy=rvalue27
+UPDATE: lvaluecopy updated=rvalue28
+WRITEBACK: lvalue updated=rvalue28
+==================================
+multithreaded_read(): thread-28 lvalue=rvalue28
+multithreaded_rcu_assign(): thread-29
+operator= invoked
+==================================
+READ: lvalue=rvalue28
+COPY: valuecopy=rvalue28
+UPDATE: lvaluecopy updated=rvalue29
+WRITEBACK: lvalue updated=rvalue29
+==================================
+multithreaded_read(): thread-29 lvalue=rvalue29
+multithreaded_rcu_assign(): thread-30
+operator= invoked
+==================================
+READ: lvalue=rvalue29
+COPY: valuecopy=rvalue29
+UPDATE: lvaluecopy updated=rvalue30
+WRITEBACK: lvalue updated=rvalue30
+==================================
+multithreaded_read(): thread-30 lvalue=rvalue30
+multithreaded_rcu_assign(): thread-31
+operator= invoked
+==================================
+READ: lvalue=rvalue30
+COPY: valuecopy=rvalue30
+UPDATE: lvaluecopy updated=rvalue31
+WRITEBACK: lvalue updated=rvalue31
+==================================
+multithreaded_read(): thread-31 lvalue=rvalue31
+multithreaded_rcu_assign(): thread-32
+operator= invoked
+==================================
+READ: lvalue=rvalue31
+COPY: valuecopy=rvalue31
+UPDATE: lvaluecopy updated=rvalue32
+WRITEBACK: lvalue updated=rvalue32
+==================================
+multithreaded_read(): thread-32 lvalue=rvalue32
+multithreaded_rcu_assign(): thread-33
+operator= invoked
+==================================
+READ: lvalue=rvalue32
+COPY: valuecopy=rvalue32
+UPDATE: lvaluecopy updated=rvalue33
+WRITEBACK: lvalue updated=rvalue33
+==================================
+multithreaded_read(): thread-33 lvalue=rvalue33
+multithreaded_rcu_assign(): thread-34
+operator= invoked
+==================================
+READ: lvalue=rvalue33
+COPY: valuecopy=rvalue33
+UPDATE: lvaluecopy updated=rvalue34
+WRITEBACK: lvalue updated=rvalue34
+==================================
+multithreaded_read(): thread-34 lvalue=rvalue34
+multithreaded_rcu_assign(): thread-35
+operator= invoked
+==================================
+READ: lvalue=rvalue34
+COPY: valuecopy=rvalue34
+UPDATE: lvaluecopy updated=rvalue35
+WRITEBACK: lvalue updated=rvalue35
+==================================
+multithreaded_read(): thread-35 lvalue=rvalue35
+multithreaded_rcu_assign(): thread-36
+operator= invoked
+==================================
+READ: lvalue=rvalue35
+COPY: valuecopy=rvalue35
+UPDATE: lvaluecopy updated=rvalue36
+WRITEBACK: lvalue updated=rvalue36
+==================================
+multithreaded_read(): thread-36 lvalue=rvalue36
+multithreaded_rcu_assign(): thread-37
+operator= invoked
+==================================
+READ: lvalue=rvalue36
+COPY: valuecopy=rvalue36
+UPDATE: lvaluecopy updated=rvalue37
+WRITEBACK: lvalue updated=rvalue37
+==================================
+multithreaded_read(): thread-37 lvalue=rvalue37
+multithreaded_rcu_assign(): thread-38
+operator= invoked
+==================================
+READ: lvalue=rvalue37
+COPY: valuecopy=rvalue37
+UPDATE: lvaluecopy updated=rvalue38
+WRITEBACK: lvalue updated=rvalue38
+==================================
+multithreaded_read(): thread-38 lvalue=rvalue38
+multithreaded_rcu_assign(): thread-39
+operator= invoked
+==================================
+READ: lvalue=rvalue38
+COPY: valuecopy=rvalue38
+UPDATE: lvaluecopy updated=rvalue39
+WRITEBACK: lvalue updated=rvalue39
+==================================
+multithreaded_read(): thread-39 lvalue=rvalue39
+multithreaded_rcu_assign(): thread-40
+operator= invoked
+==================================
+READ: lvalue=rvalue39
+COPY: valuecopy=rvalue39
+UPDATE: lvaluecopy updated=rvalue40
+WRITEBACK: lvalue updated=rvalue40
+==================================
+multithreaded_read(): thread-40 lvalue=rvalue40
+multithreaded_rcu_assign(): thread-41
+operator= invoked
+==================================
+READ: lvalue=rvalue40
+COPY: valuecopy=rvalue40
+UPDATE: lvaluecopy updated=rvalue41
+WRITEBACK: lvalue updated=rvalue41
+==================================
+multithreaded_read(): thread-41 lvalue=rvalue41
+multithreaded_rcu_assign(): thread-42
+operator= invoked
+==================================
+READ: lvalue=rvalue41
+COPY: valuecopy=rvalue41
+UPDATE: lvaluecopy updated=rvalue42
+WRITEBACK: lvalue updated=rvalue42
+==================================
+multithreaded_read(): thread-42 lvalue=rvalue42
+multithreaded_rcu_assign(): thread-43
+operator= invoked
+==================================
+READ: lvalue=rvalue42
+COPY: valuecopy=rvalue42
+UPDATE: lvaluecopy updated=rvalue43
+WRITEBACK: lvalue updated=rvalue43
+==================================
+multithreaded_read(): thread-43 lvalue=rvalue43
+multithreaded_rcu_assign(): thread-44
+operator= invoked
+==================================
+READ: lvalue=rvalue43
+COPY: valuecopy=rvalue43
+UPDATE: lvaluecopy updated=rvalue44
+WRITEBACK: lvalue updated=rvalue44
+==================================
+multithreaded_read(): thread-44 lvalue=rvalue44
+multithreaded_rcu_assign(): thread-45
+operator= invoked
+==================================
+READ: lvalue=rvalue44
+COPY: valuecopy=rvalue44
+UPDATE: lvaluecopy updated=rvalue45
+WRITEBACK: lvalue updated=rvalue45
+==================================
+multithreaded_read(): thread-45 lvalue=rvalue45
+multithreaded_rcu_assign(): thread-46
+operator= invoked
+==================================
+READ: lvalue=rvalue45
+COPY: valuecopy=rvalue45
+UPDATE: lvaluecopy updated=rvalue46
+WRITEBACK: lvalue updated=rvalue46
+==================================
+multithreaded_read(): thread-46 lvalue=rvalue46
+multithreaded_rcu_assign(): thread-47
+operator= invoked
+==================================
+READ: lvalue=rvalue46
+COPY: valuecopy=rvalue46
+UPDATE: lvaluecopy updated=rvalue47
+WRITEBACK: lvalue updated=rvalue47
+==================================
+multithreaded_read(): thread-47 lvalue=rvalue47
+multithreaded_rcu_assign(): thread-48
+operator= invoked
+==================================
+READ: lvalue=rvalue47
+COPY: valuecopy=rvalue47
+UPDATE: lvaluecopy updated=rvalue48
+WRITEBACK: lvalue updated=rvalue48
+==================================
+multithreaded_read(): thread-48 lvalue=rvalue48
+multithreaded_rcu_assign(): thread-49
+operator= invoked
+==================================
+READ: lvalue=rvalue48
+COPY: valuecopy=rvalue48
+UPDATE: lvaluecopy updated=rvalue49
+WRITEBACK: lvalue updated=rvalue49
+==================================
+multithreaded_read(): thread-49 lvalue=rvalue49
+multithreaded_rcu_assign(): thread-50
+operator= invoked
+==================================
+READ: lvalue=rvalue49
+COPY: valuecopy=rvalue49
+UPDATE: lvaluecopy updated=rvalue50
+WRITEBACK: lvalue updated=rvalue50
+==================================
+multithreaded_read(): thread-50 lvalue=rvalue50
+multithreaded_rcu_assign(): thread-51
+operator= invoked
+==================================
+READ: lvalue=rvalue50
+COPY: valuecopy=rvalue50
+UPDATE: lvaluecopy updated=rvalue51
+WRITEBACK: lvalue updated=rvalue51
+==================================
+multithreaded_read(): thread-51 lvalue=rvalue51
+multithreaded_rcu_assign(): thread-52
+operator= invoked
+==================================
+READ: lvalue=rvalue51
+COPY: valuecopy=rvalue51
+UPDATE: lvaluecopy updated=rvalue52
+WRITEBACK: lvalue updated=rvalue52
+==================================
+multithreaded_read(): thread-52 lvalue=rvalue52
+multithreaded_rcu_assign(): thread-53
+operator= invoked
+==================================
+READ: lvalue=rvalue52
+COPY: valuecopy=rvalue52
+UPDATE: lvaluecopy updated=rvalue53
+WRITEBACK: lvalue updated=rvalue53
+==================================
+multithreaded_read(): thread-53 lvalue=rvalue53
+multithreaded_rcu_assign(): thread-54
+operator= invoked
+==================================
+READ: lvalue=rvalue53
+COPY: valuecopy=rvalue53
+UPDATE: lvaluecopy updated=rvalue54
+WRITEBACK: lvalue updated=rvalue54
+==================================
+multithreaded_read(): thread-54 lvalue=rvalue54
+multithreaded_rcu_assign(): thread-55
+operator= invoked
+==================================
+READ: lvalue=rvalue54
+COPY: valuecopy=rvalue54
+UPDATE: lvaluecopy updated=rvalue55
+WRITEBACK: lvalue updated=rvalue55
+==================================
+multithreaded_read(): thread-55 lvalue=rvalue55
+multithreaded_rcu_assign(): thread-56
+operator= invoked
+==================================
+READ: lvalue=rvalue55
+COPY: valuecopy=rvalue55
+UPDATE: lvaluecopy updated=rvalue56
+WRITEBACK: lvalue updated=rvalue56
+==================================
+multithreaded_read(): thread-56 lvalue=rvalue56
+multithreaded_rcu_assign(): thread-57
+operator= invoked
+==================================
+READ: lvalue=rvalue56
+COPY: valuecopy=rvalue56
+UPDATE: lvaluecopy updated=rvalue57
+WRITEBACK: lvalue updated=rvalue57
+==================================
+multithreaded_read(): thread-57 lvalue=rvalue57
+multithreaded_rcu_assign(): thread-58
+operator= invoked
+==================================
+READ: lvalue=rvalue57
+COPY: valuecopy=rvalue57
+UPDATE: lvaluecopy updated=rvalue58
+WRITEBACK: lvalue updated=rvalue58
+==================================
+multithreaded_read(): thread-58 lvalue=rvalue58
+multithreaded_rcu_assign(): thread-59
+operator= invoked
+==================================
+READ: lvalue=rvalue58
+COPY: valuecopy=rvalue58
+UPDATE: lvaluecopy updated=rvalue59
+WRITEBACK: lvalue updated=rvalue59
+==================================
+multithreaded_read(): thread-59 lvalue=rvalue59
+multithreaded_rcu_assign(): thread-60
+operator= invoked
+==================================
+READ: lvalue=rvalue59
+COPY: valuecopy=rvalue59
+UPDATE: lvaluecopy updated=rvalue60
+WRITEBACK: lvalue updated=rvalue60
+==================================
+multithreaded_read(): thread-60 lvalue=rvalue60
+multithreaded_rcu_assign(): thread-61
+operator= invoked
+==================================
+READ: lvalue=rvalue60
+COPY: valuecopy=rvalue60
+UPDATE: lvaluecopy updated=rvalue61
+WRITEBACK: lvalue updated=rvalue61
+==================================
+multithreaded_read(): thread-61 lvalue=rvalue61
+multithreaded_rcu_assign(): thread-62
+operator= invoked
+==================================
+READ: lvalue=rvalue61
+COPY: valuecopy=rvalue61
+UPDATE: lvaluecopy updated=rvalue62
+WRITEBACK: lvalue updated=rvalue62
+==================================
+multithreaded_read(): thread-62 lvalue=rvalue62
+multithreaded_rcu_assign(): thread-63
+operator= invoked
+==================================
+READ: lvalue=rvalue62
+COPY: valuecopy=rvalue62
+UPDATE: lvaluecopy updated=rvalue63
+WRITEBACK: lvalue updated=rvalue63
+==================================
+multithreaded_read(): thread-63 lvalue=rvalue63
+multithreaded_rcu_assign(): thread-64
+operator= invoked
+==================================
+READ: lvalue=rvalue63
+COPY: valuecopy=rvalue63
+UPDATE: lvaluecopy updated=rvalue64
+WRITEBACK: lvalue updated=rvalue64
+==================================
+multithreaded_read(): thread-64 lvalue=rvalue64
+multithreaded_rcu_assign(): thread-65
+operator= invoked
+==================================
+READ: lvalue=rvalue64
+COPY: valuecopy=rvalue64
+UPDATE: lvaluecopy updated=rvalue65
+WRITEBACK: lvalue updated=rvalue65
+==================================
+multithreaded_read(): thread-65 lvalue=rvalue65
+multithreaded_rcu_assign(): thread-66
+operator= invoked
+==================================
+READ: lvalue=rvalue65
+COPY: valuecopy=rvalue65
+UPDATE: lvaluecopy updated=rvalue66
+WRITEBACK: lvalue updated=rvalue66
+==================================
+multithreaded_read(): thread-66 lvalue=rvalue66
+multithreaded_rcu_assign(): thread-67
+operator= invoked
+==================================
+READ: lvalue=rvalue66
+COPY: valuecopy=rvalue66
+UPDATE: lvaluecopy updated=rvalue67
+WRITEBACK: lvalue updated=rvalue67
+==================================
+multithreaded_read(): thread-67 lvalue=rvalue67
+multithreaded_rcu_assign(): thread-68
+operator= invoked
+==================================
+READ: lvalue=rvalue67
+COPY: valuecopy=rvalue67
+UPDATE: lvaluecopy updated=rvalue68
+WRITEBACK: lvalue updated=rvalue68
+==================================
+multithreaded_read(): thread-68 lvalue=rvalue68
+multithreaded_rcu_assign(): thread-69
+operator= invoked
+==================================
+READ: lvalue=rvalue68
+COPY: valuecopy=rvalue68
+UPDATE: lvaluecopy updated=rvalue69
+WRITEBACK: lvalue updated=rvalue69
+==================================
+multithreaded_read(): thread-69 lvalue=rvalue69
+multithreaded_rcu_assign(): thread-70
+operator= invoked
+==================================
+READ: lvalue=rvalue69
+COPY: valuecopy=rvalue69
+UPDATE: lvaluecopy updated=rvalue70
+WRITEBACK: lvalue updated=rvalue70
+==================================
+multithreaded_read(): thread-70 lvalue=rvalue70
+multithreaded_rcu_assign(): thread-71
+operator= invoked
+==================================
+READ: lvalue=rvalue70
+COPY: valuecopy=rvalue70
+UPDATE: lvaluecopy updated=rvalue71
+WRITEBACK: lvalue updated=rvalue71
+==================================
+multithreaded_read(): thread-71 lvalue=rvalue71
+multithreaded_rcu_assign(): thread-72
+operator= invoked
+==================================
+READ: lvalue=rvalue71
+COPY: valuecopy=rvalue71
+UPDATE: lvaluecopy updated=rvalue72
+WRITEBACK: lvalue updated=rvalue72
+==================================
+multithreaded_read(): thread-72 lvalue=rvalue72
+multithreaded_rcu_assign(): thread-73
+operator= invoked
+==================================
+READ: lvalue=rvalue72
+COPY: valuecopy=rvalue72
+UPDATE: lvaluecopy updated=rvalue73
+WRITEBACK: lvalue updated=rvalue73
+==================================
+multithreaded_read(): thread-73 lvalue=rvalue73
+multithreaded_rcu_assign(): thread-74
+operator= invoked
+==================================
+READ: lvalue=rvalue73
+COPY: valuecopy=rvalue73
+UPDATE: lvaluecopy updated=rvalue74
+WRITEBACK: lvalue updated=rvalue74
+==================================
+multithreaded_read(): thread-74 lvalue=rvalue74
+multithreaded_rcu_assign(): thread-75
+operator= invoked
+==================================
+READ: lvalue=rvalue74
+COPY: valuecopy=rvalue74
+UPDATE: lvaluecopy updated=rvalue75
+WRITEBACK: lvalue updated=rvalue75
+==================================
+multithreaded_read(): thread-75 lvalue=rvalue75
+multithreaded_rcu_assign(): thread-76
+operator= invoked
+==================================
+READ: lvalue=rvalue75
+COPY: valuecopy=rvalue75
+UPDATE: lvaluecopy updated=rvalue76
+WRITEBACK: lvalue updated=rvalue76
+==================================
+multithreaded_read(): thread-76 lvalue=rvalue76
+multithreaded_rcu_assign(): thread-77
+operator= invoked
+==================================
+READ: lvalue=rvalue76
+COPY: valuecopy=rvalue76
+UPDATE: lvaluecopy updated=rvalue77
+WRITEBACK: lvalue updated=rvalue77
+==================================
+multithreaded_read(): thread-77 lvalue=rvalue77
+multithreaded_rcu_assign(): thread-78
+operator= invoked
+==================================
+READ: lvalue=rvalue77
+COPY: valuecopy=rvalue77
+UPDATE: lvaluecopy updated=rvalue78
+WRITEBACK: lvalue updated=rvalue78
+==================================
+multithreaded_read(): thread-78 lvalue=rvalue78
+multithreaded_rcu_assign(): thread-79
+operator= invoked
+==================================
+READ: lvalue=rvalue78
+COPY: valuecopy=rvalue78
+UPDATE: lvaluecopy updated=rvalue79
+WRITEBACK: lvalue updated=rvalue79
+==================================
+multithreaded_read(): thread-79 lvalue=rvalue79
+multithreaded_rcu_assign(): thread-80
+operator= invoked
+==================================
+READ: lvalue=rvalue79
+COPY: valuecopy=rvalue79
+UPDATE: lvaluecopy updated=rvalue80
+WRITEBACK: lvalue updated=rvalue80
+==================================
+multithreaded_read(): thread-80 lvalue=rvalue80
+multithreaded_rcu_assign(): thread-81
+operator= invoked
+==================================
+READ: lvalue=rvalue80
+COPY: valuecopy=rvalue80
+UPDATE: lvaluecopy updated=rvalue81
+WRITEBACK: lvalue updated=rvalue81
+==================================
+multithreaded_read(): thread-81 lvalue=rvalue81
+multithreaded_rcu_assign(): thread-82
+operator= invoked
+==================================
+READ: lvalue=rvalue81
+COPY: valuecopy=rvalue81
+UPDATE: lvaluecopy updated=rvalue82
+WRITEBACK: lvalue updated=rvalue82
+==================================
+multithreaded_read(): thread-82 lvalue=rvalue82
+multithreaded_rcu_assign(): thread-83
+operator= invoked
+==================================
+READ: lvalue=rvalue82
+COPY: valuecopy=rvalue82
+UPDATE: lvaluecopy updated=rvalue83
+WRITEBACK: lvalue updated=rvalue83
+==================================
+multithreaded_read(): thread-83 lvalue=rvalue83
+multithreaded_rcu_assign(): thread-84
+operator= invoked
+==================================
+READ: lvalue=rvalue83
+COPY: valuecopy=rvalue83
+UPDATE: lvaluecopy updated=rvalue84
+WRITEBACK: lvalue updated=rvalue84
+==================================
+multithreaded_read(): thread-84 lvalue=rvalue84
+multithreaded_rcu_assign(): thread-85
+operator= invoked
+==================================
+READ: lvalue=rvalue84
+COPY: valuecopy=rvalue84
+UPDATE: lvaluecopy updated=rvalue85
+WRITEBACK: lvalue updated=rvalue85
+==================================
+multithreaded_read(): thread-85 lvalue=rvalue85
+multithreaded_rcu_assign(): thread-86
+operator= invoked
+==================================
+READ: lvalue=rvalue85
+COPY: valuecopy=rvalue85
+UPDATE: lvaluecopy updated=rvalue86
+WRITEBACK: lvalue updated=rvalue86
+==================================
+multithreaded_read(): thread-86 lvalue=rvalue86
+multithreaded_rcu_assign(): thread-87
+operator= invoked
+==================================
+READ: lvalue=rvalue86
+COPY: valuecopy=rvalue86
+UPDATE: lvaluecopy updated=rvalue87
+WRITEBACK: lvalue updated=rvalue87
+==================================
+multithreaded_read(): thread-87 lvalue=rvalue87
+multithreaded_rcu_assign(): thread-88
+operator= invoked
+==================================
+READ: lvalue=rvalue87
+COPY: valuecopy=rvalue87
+UPDATE: lvaluecopy updated=rvalue88
+WRITEBACK: lvalue updated=rvalue88
+==================================
+multithreaded_read(): thread-88 lvalue=rvalue88
+multithreaded_rcu_assign(): thread-89
+operator= invoked
+==================================
+READ: lvalue=rvalue88
+COPY: valuecopy=rvalue88
+UPDATE: lvaluecopy updated=rvalue89
+WRITEBACK: lvalue updated=rvalue89
+==================================
+multithreaded_read(): thread-89 lvalue=rvalue89
+multithreaded_rcu_assign(): thread-90
+operator= invoked
+==================================
+READ: lvalue=rvalue89
+COPY: valuecopy=rvalue89
+UPDATE: lvaluecopy updated=rvalue90
+WRITEBACK: lvalue updated=rvalue90
+==================================
+multithreaded_read(): thread-90 lvalue=rvalue90
+multithreaded_rcu_assign(): thread-91
+operator= invoked
+==================================
+READ: lvalue=rvalue90
+COPY: valuecopy=rvalue90
+UPDATE: lvaluecopy updated=rvalue91
+WRITEBACK: lvalue updated=rvalue91
+==================================
+multithreaded_read(): thread-91 lvalue=rvalue91
+multithreaded_rcu_assign(): thread-92
+operator= invoked
+==================================
+READ: lvalue=rvalue91
+COPY: valuecopy=rvalue91
+UPDATE: lvaluecopy updated=rvalue92
+WRITEBACK: lvalue updated=rvalue92
+==================================
+multithreaded_read(): thread-92 lvalue=rvalue92
+multithreaded_rcu_assign(): thread-93
+operator= invoked
+==================================
+READ: lvalue=rvalue92
+COPY: valuecopy=rvalue92
+UPDATE: lvaluecopy updated=rvalue93
+WRITEBACK: lvalue updated=rvalue93
+==================================
+multithreaded_read(): thread-93 lvalue=rvalue93
+multithreaded_rcu_assign(): thread-94
+operator= invoked
+==================================
+READ: lvalue=rvalue93
+COPY: valuecopy=rvalue93
+UPDATE: lvaluecopy updated=rvalue94
+WRITEBACK: lvalue updated=rvalue94
+==================================
+multithreaded_read(): thread-94 lvalue=rvalue94
+multithreaded_rcu_assign(): thread-95
+operator= invoked
+==================================
+READ: lvalue=rvalue94
+COPY: valuecopy=rvalue94
+UPDATE: lvaluecopy updated=rvalue95
+WRITEBACK: lvalue updated=rvalue95
+==================================
+multithreaded_read(): thread-95 lvalue=rvalue95
+multithreaded_rcu_assign(): thread-96
+operator= invoked
+==================================
+READ: lvalue=rvalue95
+COPY: valuecopy=rvalue95
+UPDATE: lvaluecopy updated=rvalue96
+WRITEBACK: lvalue updated=rvalue96
+==================================
+multithreaded_read(): thread-96 lvalue=rvalue96
+multithreaded_rcu_assign(): thread-97
+operator= invoked
+==================================
+READ: lvalue=rvalue96
+COPY: valuecopy=rvalue96
+UPDATE: lvaluecopy updated=rvalue97
+WRITEBACK: lvalue updated=rvalue97
+==================================
+multithreaded_read(): thread-97 lvalue=rvalue97
+multithreaded_rcu_assign(): thread-98
+operator= invoked
+==================================
+READ: lvalue=rvalue97
+COPY: valuecopy=rvalue97
+UPDATE: lvaluecopy updated=rvalue98
+WRITEBACK: lvalue updated=rvalue98
+==================================
+multithreaded_read(): thread-98 lvalue=rvalue98
+multithreaded_rcu_assign(): thread-99
+operator= invoked
+==================================
+READ: lvalue=rvalue98
+COPY: valuecopy=rvalue98
+UPDATE: lvaluecopy updated=rvalue99
+WRITEBACK: lvalue updated=rvalue99
+==================================
+multithreaded_read(): thread-99 lvalue=rvalue99

@@ -394,3 +394,42 @@ An example C++ code which dynamically creates lambda functions and returns them 
 -------------------------------------------------------------------------------------------------------
 C++ facilitates asynchronous communication between concurrent threads by Promise and Future. Promise is instantiated by std::promise template and passed on as arguments to threads similar to shared_ptr which are shared mutables within thread functions. Future associated to Promise is acquired at a later time point asynchronously and value set by threads is readable. Code example at code/promisefuture.cpp describes two fictitious train threads having access to Promise and sets the nanoseconds time duration between present and an epoch as its value. std::chrono high resolution clock is invoked for time duration in nanoseconds. Future value for this Promise is later read by get() on Future object. Logs are shown in logs/promisefuture.log.23February2019
 
+------------------------------------------------------------------------------------------------------
+6 February 2020 - Read-Copy-Update mentioned in VIRGO Design Document has been implemented in userspace
+------------------------------------------------------------------------------------------------------
+Read-Copy-Update (RCU) has been mentioned as a feature in VIRGO32 and VIRGO64 design documents. Read-Copy-Update which is an efficient synchronization primitive implemented in most OS kernels works quite similar to local CPU caches of global RAM memory:
+	(*) READ - Read the variable 
+	(*) COPY - Copy it to a temporary variable
+	(*) UPDATE - Update the temporary variable
+	(*) WRITEBACK - Write back temporary variable to the actual source
+
+Advantage of Read-Copy-Update is the lack of necessity of mutexes:
+	(*) multiple concurrent readers have access to an older version of variable while a writer updates the copy of it 
+	(*) older version of the variable is updated by new after all existing reads of older versions are done and no new read is allowed.
+	(*) older version is updated by the new version of the writer's working copy.
+
+All the previous steps require no synchronization though it has to be ensured no new reads are performed while older version is updated. This kind of lockfree synchronization is quite useful for multiple readers of a linked list while some writer removes an element of the linked list. [Example of such a necessity is the WCET EDF Survival Index Scheduler design in GRAFIT course material - https://github.com/shrinivaasanka/Grafit/blob/master/course_material/NeuronRain/AdvancedComputerScienceAndMachineLearning/AdvancedComputerScienceAndMachineLearning.txt - which is a set partition of linked list of process id(s) where frequently process id(s) are read by almost every compoenent of OS kernel and deleted by scheduler]. Writer marks the node to delete and updates the links bypassing the deleted node. Thus both node pointed to by new link and deletion-marked node of the linked list are available to existing readers. After all existing queued reads are over, node marked for deletion is really deleted. Efficiency stems from the fact that no locks are necessay for concurrent RCU.   
+
+Code example in code/readupdatecopy.cpp implements a C++ class and wraps the RCU assign functionality as its operator= overloaded member function. As evident from example synchronized blocks for software transactional memory and mutexes have been commented. It can be compiled by commandline - g++ -g readcopyupdate.cpp -fgnu-tm -lpthread -o readcopyupdate.  Three kinds of copy have been shown - invoking operator=, copy assign of RCU object and copy assign of members. Third clause for copy assign of member has the following schematic:
+
+				valuecopy=value; //READ and COPY
+                                cout<<"COPY: valuecopy="<<valuecopy<<endl;
+                                valuecopy=rvalue.value; //UPDATE
+                                cout<<"UPDATE: lvaluecopy updated="<<valuecopy<<endl;
+                                value=valuecopy; //WRITEBACK
+
+				===================
+				
+				value		
+				| (READ)
+				V
+			(COPY) valuecopy <- rvalue.value (UPDATE)
+				|
+				V
+				value (WRITEBACK)
+
+Logs in code/logs/readcopyupdate.log.6February2020 demonstrate a concurrent read-write by RCU of 200 threads. This code example is in effect a userspace implementation of RCU in VIRGO linux kernel (and is a spillover code of VIRGO repositories in GRAFIT) because reads and writes in thread functions can be replaced by syscall invocations of virgo_get() and virgo_set() preceded and succeeded by a global virgo_malloc() and virgo_free() respectively and no kernel codechange is necessary.
+
+References:
+----------
+1.Read-Copy-Update - https://en.wikipedia.org/wiki/Read-copy-update 
