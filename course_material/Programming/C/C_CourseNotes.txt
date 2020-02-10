@@ -1,20 +1,15 @@
+/*
 ##############################################################################################################################################
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+#<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+###############################################################################################################################################
+#Course Authored By:
+#-----------------------------------------------------------------------------------------------------------
+#K.Srinivasan
+#NeuronRain Documentation and Licensing: http://neuronrain-documentation.readthedocs.io/en/latest/
+#Personal website(research): https://sites.google.com/site/kuja27/
+#-----------------------------------------------------------------------------------------------------------
 ##############################################################################################################################################
-Course Authored By:
------------------------------------------------------------------------------------------------------------
-Srinivasan Kannan 
-(also known as: Shrinivaasan Kannan, Shrinivas Kannan)
-Ph: 9791499106, 9003082186
-Krishna iResearch Open Source Products Profiles:
-http://sourceforge.net/users/ka_shrinivaasan,
-https://github.com/shrinivaasanka,
-https://www.openhub.net/accounts/ka_shrinivaasan
-Personal website(research): https://sites.google.com/site/kuja27/
-emails: ka.shrinivaasan@gmail.com, shrinivas.kannan@gmail.com,
-kashrinivaasan@live.com
------------------------------------------------------------------------------------------------------------
-##############################################################################################################################################
+*/
 
 This is a non-linearly organized, code puzzles oriented, continually updated set of course notes on C language. Though C is at present
 rapidly diminishing in usage because of many high level languages and big data tools for cloud processing, a primer in C is essential for
@@ -23,6 +18,7 @@ grasping nuances of operating system memory management, networking and threading
 References:
 -----------
 1. C Puzzle Book - Alan R.Feuer
+2. C Programming Language - ANSI C - [Kernighan-Ritchie]
 
 2 February 2017 
 ----------------
@@ -89,3 +85,8 @@ Duff's device is C loop unrolling design pattern which mixes switch and looping 
 3: 1 
 4: 0 
 
+------------------------------------------------------------------------------------------------------
+10 February 2020 - C++ Class simulation in C, Function pointers, Private and Public
+------------------------------------------------------------------------------------------------------
+Example code class_in_c.c simulates object oriented programming of C++ in C. C only has the facility of
+struct {} declaration which is exploited to declare few private and public variables (variables are structs containing primitive type unions of type "struct variable". A flag to distinguish private variables is part of the struct variable) and member function pointers for class "struct classinc". Member private and public variables are assigned to by set<type>() functions which check private flag of a variable and deny access for private variables. Member function function1() clears the private flag and invokes set<type>() reinstating the private flag after for member variable thus simulating privileged member function access of private. set<type>() functions simulate type overloading. Logs in code/logs/class_in_c.log.10February2020 trace the public and private access by functions pointed to.

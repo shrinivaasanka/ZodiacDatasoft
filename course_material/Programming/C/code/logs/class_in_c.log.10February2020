@@ -1,0 +1,6 @@
+setint(): variable access 
+setfloat(): private variable access denied 
+classinc::f1(): Setting private variable priv_variable from function classinc::f1() 
+setfloat(): variable access 
+classinc::f1(): arg1=20121920.000000, arg2=198289819289812.312500 
+cinc.pub_variable = 9128, cinc.priv_variable.x2=198289815240704.000000 
