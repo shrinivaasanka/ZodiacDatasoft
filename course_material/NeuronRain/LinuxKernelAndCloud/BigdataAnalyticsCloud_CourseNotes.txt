@@ -290,8 +290,8 @@ On the contrary, rationale for ranking social profiles by their intrinsic least 
 	- Salubrious and Cool climes (less likely)
 	...
 
-Extent of correlation between Rankings of Urban Sprawls by Population (mostly caused by preferential attachment - Urban Area Rankings in Section 375 of https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt) and Intrinsic Lognormal Sum Least Energy Merit is a measure of Fame-Merit coincidence. 
+Extent of correlation between Rankings of Urban Sprawls by Population (mostly caused by preferential attachment - Urban Area Rankings in Section 675 of https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt) and Intrinsic Lognormal Sum Least Energy Merit is a measure of Fame-Merit coincidence. 
 
 References:
 ----------
-1.Preferential attachment,Bose-Einstein Condensation in Networks,Double Jeopardy in business intelligence (low market share brands have low buyers and low brand loyalty - low market share brand is not necessarilyof low merit) - https://en.wikipedia.org/wiki/Preferential_attachment
+1.Preferential attachment,Bose-Einstein Condensation in Networks,Double Jeopardy in business intelligence (low market share brands have low buyers and low brand loyalty - low market share brand is not necessarily of low merit) - https://en.wikipedia.org/wiki/Preferential_attachment
