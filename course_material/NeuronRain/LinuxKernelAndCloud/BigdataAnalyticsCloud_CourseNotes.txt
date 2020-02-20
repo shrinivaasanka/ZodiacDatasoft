@@ -274,3 +274,24 @@ Mining soccer patterns is complex because of random trajectories of the ball whi
 Reference:
 ---------
 1.Real Plus Minus of NBA - http://www.espn.com/nba/statistics/rpm - Player Efficiency Ratings in Basketball 
+
+---------------------------------------------------------------------------------------------------------
+Social Network Analytics, People Analytics, Preferential Attachment, Urban Sprawls and Intrinsic Merit Rankings - 20 February 2020 - this section is an extended draft on urban planning analytics, GIS analytics among other topics in NeuronRain AstroInfer Design - https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt 
+---------------------------------------------------------------------------------------------------------
+NeuronRain AstroInfer codebase has implementations for urban planning analytics including analytics of Remote sensing imagery , GIS 2-D patches extraction, Watershed image segmentation specific to urban sprawls et al. Urban planning analytics could be termed a special category lying in intersection of People analytics and Social Network analytics - difference being people profiles and social profile vertices in world wide web are replaced by real humans and urban clusters. There exists a striking parallel between preferential attachment in social networks and formation and growth of urban agglomerations - Processes underneath why certain social profiles attract more incoming links and why people flock to megapolises (and megalopolises formed by countermagnets) have clustering similarities. Preferential attachment in social networks causes profiles of large followers to be larger or famous become more famous while big cities become megacities. It is self-explanatory that perception underlies preferential attachment (because population is swayed by and gravitates to majority). 
+
+On the contrary, rationale for ranking social profiles by their intrinsic least energy merit characterized by inverse lognormal sum of education(E), wealth(W) and valour(V) (energy of social profile vertex is directly proportional to 1/(logE + logW + logV)) defined and implemented in NeuronRain AstroInfer applies as well to the ability of an urban sprawl to attract population and ranking urban areas absolutely. Some of the following example standard of living factors could be classified into three divisions of lognormal sum (inverse lognormal sum could be broken-up into following finer contributing factors):
+	- Harbours, Coastal areas (Wealth)
+	- Infrastructure (Wealth)
+	- Manufacturing,IT and ITES jobs (Wealth)
+	- Education and R&D institutions (Education)
+	- Financial institutions (Wealth)
+	- Antiquity, Tourism and Culture (Valour)
+	- Salubrious and Cool climes (less likely)
+	...
+
+Extent of correlation between Rankings of Urban Sprawls by Population (mostly caused by preferential attachment - Urban Area Rankings in Section 375 of https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt) and Intrinsic Lognormal Sum Least Energy Merit is a measure of Fame-Merit coincidence. 
+
+References:
+----------
+1.Preferential attachment,Bose-Einstein Condensation in Networks,Double Jeopardy in business intelligence (low market share brands have low buyers and low brand loyalty - low market share brand is not necessarilyof low merit) - https://en.wikipedia.org/wiki/Preferential_attachment
