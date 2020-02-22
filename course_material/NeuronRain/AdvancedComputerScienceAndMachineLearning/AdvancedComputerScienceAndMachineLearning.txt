@@ -387,7 +387,7 @@ Chomsky Sentences - 6 April 2018
 https://kuja27.blogspot.in/2018/04/grafit-course-material-chomsky.html
 
 ----------------------------------------------------------------------------------------------------------------
-Money-Changing Problem and minimum partition - 6 May 2018, 9 May 2018, 18 February 2020 - this section is an extended theory draft on set partitions, optimal denomination and coin problems among other topics in NeuronRain AstroInfer Design - https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
+750. (THEORY and FEATURE) Money-Changing Problem and minimum partition - 6 May 2018, 9 May 2018, 18 February 2020 - this section is an extended theory draft on set partitions, optimal denomination and coin problems among other topics in NeuronRain AstroInfer Design - https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
 ----------------------------------------------------------------------------------------------------------------
 Q: How can all integers be generated as sum of elements of a minimum sized set (or) What are the least number
 of denominations for a currency to sum up to all possible values of money?
@@ -444,7 +444,7 @@ E.g 2. for excluding X={3,6}, lookup of the table results in S={3,7,5,6} which h
 This algorithm is subset oblivious and is a slight improvement over brute-force multiplication of set or set difference because of cached subset products and is sublinear mostly. Previous examples required only 2 divisions whereas brute-force would need 3 multiplications assuming lookups are O(1). Cacheing has benefits in large arrays (when number of elements to be excluded are almost O(N)) for reducing number of multiplications.
 
 -------------------------------------------------------------------------------------------------------------
-Hashing Dynamic Sets - 24 May 2018, 31 October 2018, 11 March 2019, 8 October 2019, 6 November 2019, 18 February 2020 - this section is an extended theory draft on set partitions, computational geometry, program analysis/software analytics among other topics in NeuronRain AstroInfer Design - https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt 
+751. (THEORY and FEATURE) Hashing Dynamic Sets - 24 May 2018, 31 October 2018, 11 March 2019, 8 October 2019, 6 November 2019, 18 February 2020 - this section is an extended theory draft on set partitions, computational geometry, program analysis/software analytics among other topics in NeuronRain AstroInfer Design - https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt 
 -------------------------------------------------------------------------------------------------------------
 Q: How can sets of elements which are dynamically modified at runtime be hashed by tabulation? E.g set of 
 clockticks remaining per process in an OS scheduler for 15 processes is [23,45,12,44,55,14] at time t=1. This
