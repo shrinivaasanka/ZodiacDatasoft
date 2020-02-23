@@ -22,6 +22,8 @@ AsFer Machine Learning - https://sourceforge.net/p/asfer/code/HEAD/tree/asfer-do
 ----------------------------------------------------------------------------------------------------------------------------
 9 March 2017
 ----------------------------------------------------------------------------------------------------------------------------
+759. (THEORY and FEATURE) RNN and GRU - this section is an extended draft on respective topics in NeuronRain AstroInfer design -  https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
+-------------------------------------------------------
 Recurrent Neural Network - Long Term Short Term Memory:
 -------------------------------------------------------
 Traditional neural networks have a threshold function which outputs 1 or 0 based on a threshold. But they don't preserve state information
@@ -373,7 +375,7 @@ Probability of finding 1s or 0s in set of all n-bit strings = [2*f(n-1) + 2^(n-1
 This recurrence is quite ubiquitous in problems involving uniform distribution e.g number of positive/negative votes in voting patterns, number of Heads/Tails in Bernoulli Coin Toss Streaks etc.,.It has been mentioned in the context of 2-coloring/Complementation in https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt .
 
 ----------------------------------------------------------------------------------------------------------------------
-Newton-Raphson approximate factoring - 6 April 2018
+760. (THEORY and FEATURE) Newton-Raphson approximate factoring - 6 April 2018 - this section is an extended draft on respective topics in NeuronRain AstroInfer design -  https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
 ----------------------------------------------------------------------------------------------------------------------
 https://kuja27.blogspot.in/2018/04/grafit-course-material-newton-raphson.html
 
@@ -382,7 +384,7 @@ References:
 1. http://www.math.lsa.umich.edu/~lagarias/TALK-SLIDES/dioph-cplx-icerm2011aug.pdf - Binary Quadratic Diophantine Equations (BQDE) and Factorization are equivalent. BQDE is known to be in NP(Succinct Certificates for Solutions to BQDE). If BQDE is in P, Factorization is in P. Computational Geometric NC algorithm for Factorization probably implies BQDE is in P (probably because implication is in opposite direction).
 
 ----------------------------------------------------------------------------------------------------------------------
-Chomsky Sentences - 6 April 2018
+761. (THEORY and FEATURE) Chomsky Sentences - 6 April 2018 - this section is an extended draft on respective topics in NeuronRain AstroInfer design -  https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
 ----------------------------------------------------------------------------------------------------------------------
 https://kuja27.blogspot.in/2018/04/grafit-course-material-chomsky.html
 
@@ -560,7 +562,7 @@ arising in clustering - https://csiflabs.cs.ucdavis.edu/~gusfield/cpartition.pdf
 27. Rectangle Partitions of Orthogonal Polygon - [David Eppstein] - Graph-Theoretic Solutions to Computational Geometry Problems - Section 3 and Figure 2 - Matching and Maximum Independent Sets in Bipartite Graph of Intersections of Good Diagonals - https://arxiv.org/pdf/0908.3916v1.pdf
 
 -----------------------------------------------------------------------------------------------------------
-Markov Chains Random Walks on a Random Graph and Television Viewership - 4 June 2018,3 July 2018,7 March 2019
+762. (THEORY and FEATURE) Markov Chains Random Walks on a Random Graph and Television Viewership - 4 June 2018,3 July 2018,7 March 2019 - this section is an extended draft on respective topics in NeuronRain AstroInfer design -  https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
 -----------------------------------------------------------------------------------------------------------
 Q: How would you predict/model/analyse a viewer watching Television?
 
@@ -587,7 +589,7 @@ References:
 2.H-index - Measure of Academic Research Quality - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1283832/
 
 --------------------------------------------------------------------------------------------------------------
-Reputation Rankings, Sybils and Collusions - 16 July 2018
+763. (THEORY and FEATURE) Reputation Rankings, Sybils and Collusions - 16 July 2018 - this section is an extended draft on respective topics in NeuronRain AstroInfer design -  https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
 --------------------------------------------------------------------------------------------------------------
 Most search engines rank websites based on their fame/reputation which is a function of incoming links to a
 website and reputations of vertices from which the links are incoming e.g PageRank. These Reputations can be
@@ -625,7 +627,7 @@ References:
 1. Gale-Shapley Algorithm - Stable Marriage Problem - https://en.wikipedia.org/wiki/Stable_marriage_problem
 
 ---------------------------------------------------------------------------------------------------------
-Gordian Knot and One Way Functions - 15 October 2018, 19 October 2018
+764. (THEORY and FEATURE) Gordian Knot and One Way Functions - 15 October 2018, 19 October 2018 - this section is an extended draft on respective topics in NeuronRain AstroInfer design -  https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
 ---------------------------------------------------------------------------------------------------------
 Gordian Knot is an impossible-to-unravel knot which was allegedly solved by Alexander the Great by cutting it.
 There exists a striking parallel between one way functions for Psuedorandom Generators and difficulty in
@@ -656,7 +658,7 @@ References:
  - "Thirdly, the inverse of f^{-1} is just f itself - in other words, the inverse of the inverse of f is f itself, so that (f^{-1})^{-1} = f. By assumption, f is continuous, and as f is the inverse of f^{-1}, the function f^{-1} has a continuous inverse."
 
 --------------------------------------------------------------------------------------------------------
-Circle Packing and Planarity - 21 March 2019
+765. (THEORY) Circle Packing and Planarity - 21 March 2019 - this section is an extended draft on respective topics in NeuronRain AstroInfer design -  https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
 --------------------------------------------------------------------------------------------------------
 Drawing non-crossing paths between points is a non-trivial planar graph embedding problem. There are planarity criteria defined by various theorems as below:
 	(*) Wagner's Theorem - Graph is planar if and only if it is free from K5 or K3,3 minors. Kn is a complete graph of n vertices and K3,3 is a complete bipartite graph on 2 sets of size 3. Graph minor is obtained by contracting edges to vertices.
@@ -668,7 +670,7 @@ References:
 2. Circle Packing Theorem - [Koebe-Andreev-Thurston] - https://en.wikipedia.org/wiki/Circle_packing_theorem
 
 -------------------------------------------------------------------------------------------------------------------------------------------
-Multidimensional array slicing - 12 November 2019, 13 November 2019
+766. (THEORY) Multidimensional array slicing - 12 November 2019, 13 November 2019 - this section is an extended draft on respective topics in NeuronRain AstroInfer design -  https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
 -------------------------------------------------------------------------------------------------------------------------------------------
 Naive 2-dimensional (multidimensional) array slicing loops through rows and finds per row slice which are united to a square slice. In Python  SciPy and NumPy have a multidimensional subscript slicing facility e.g x[2:10,2:10] for an ndarray object x extracts a square slice of 9 * 9. Naive loop slicing is O(n^d) for d dimensional arrays. Low level languages C,C++ etc., store arrays in contiguous memory locations in flat 1-dimension and 2-d slice of (a,b) is expressed by an equation r*(x+a) + y (r <= b, y <= a) which uniquely identifies an element in square slice of origin (x,y) obviating loops. But extracting the square slice still needs looping. Doing better than naive bound necessitates storing the two dimensional array in a wavelet tree and computational geometric range search on it:
 
@@ -677,7 +679,7 @@ Naive 2-dimensional (multidimensional) array slicing loops through rows and find
 	(*) Entropy bound for Wavelet Tree point grids - Lemma 2 - https://www.sciencedirect.com/science/article/pii/S0925772113000953 - [Arash Farzan, Travis Gagie, Gonzalo Navarro] - set of all possible point grids (slices) of size m carved from n * n square are populated in a wavelet tree and size of this set is {n^2Cm} and of entropy log{n^2Cm} - "...Furthermore, query rel_acc(i1,i2,j1,j2) (giving all the k points in [i1,i2]×[j1,j2]), is answered in time O((k+1)lgσ/lglgn)...". Query rel_acc() range reports all k points in the rectangular slice [i1,i2] * [j1,j2] of n*n square for an alphabet size (which could be 2 or 10 depending on binary or decimal radix of the 2-dimensional array) in O((n^n+1)lg2/lglgn) and O((n^n+1)lg10/lglgn) for k=O(n^2). This is slightly better than O(n^2) naive bound because O((n^n+1)lg2/lglgn) and O((n^n+1)lg10/lglgn) = O(n^2/lglgn) < O(n^2). 2-dimensional arrays are labelled points on 2-d plane and computational geometric wavelet tree planar range search selects an array slice in its entirety in time O(n^2/lglgN). 
 
 ---------------------------------------------------------------------------------------------------------
-Leaky Bucket Algorithm and Time Series Analysis - 30 November 2019
+767. (THEORY and FEATURE) Leaky Bucket Algorithm and Time Series Analysis - 30 November 2019 - this section is an extended draft on respective topics in NeuronRain AstroInfer design -  https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
 ---------------------------------------------------------------------------------------------------------
 NeuronRain AstroInfer Research Version in SourceForge implements lot of algorithms to mine patterns in strings especially encoded astronomical datasets of celestial configurations which might be helpful to correlate gravitational influence of an n-body planetary system on sky and terrestrial weather-seismic events (example Sequence Mined astronomical pattern based on swiss ephemeris and maitreya8t - commit - https://sourceforge.net/p/asfer/code/2606/) . NOAA JAWF Climate Prediction Centre precipitation analytics based on time series and leaky bucket are alternative examples of machine learning driven weather forecasts (Leaky Bucket Model - https://www.cpc.ncep.noaa.gov/products/JAWF_Monitoring/India/monthly_maps.shtml, Rainfall Time Series - https://www.cpc.ncep.noaa.gov/products/JAWF_Monitoring/India/30d_time_series.shtml).
 
@@ -691,7 +693,7 @@ Leaky Bucket Algorithm is primarily used in traffic policing and scheduling of n
 	(*) Time-Series of network traffic and Leaky-Bucket model often have an one-to-one correspondence - Any peak (outlier) in timeseries might trigger a bucket overflow and vice-versa.
 
 ------------------------------------------------------------------------------------------------------
-Finding penultimate element in a linked list, sublinear Depth First Search and Breadth First Search, Survival Index Timeout WCET EDF OS Scheduler - 3 January 2020
+768. (THEORY) Finding penultimate element in a linked list, sublinear Depth First Search and Breadth First Search, Survival Index Timeout WCET EDF OS Scheduler - 3 January 2020 - this section is an extended draft on respective topics in NeuronRain AstroInfer design -  https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
 ------------------------------------------------------------------------------------------------------
 Finding the last but one element in a singly linked list of N elements requires linear traversal of the list, pushing the elements to stack and popping top two elements from it by a naive O(N) algorithm. Breadth First and Depth First Searches are cornerstones of Artificial Intelligence having vast literature in motion planning and robotics. Because singly linked list is a directed acyclic line graph parallel versions of traditional O(V+E) breadth first search and depth first search algorithms which are sub-linear and logarithmic can locate the penultimate element in a singly linked list in parallel faster. There are many parallel BFS and DFS algorithms e.g iterative deepening A* (IDA*), parallel shortest path, Depth First Branch and Bound which are based on PRAMs and thus are polylogdepth NC circuits. Parallel DFS and BFS are quite useful in Survival Index Timeout OS EDF Scheduler algorithm described earlier where every per WCET timeout bucket is a linked list of process id(s) and a process id needs to be searched.
 
