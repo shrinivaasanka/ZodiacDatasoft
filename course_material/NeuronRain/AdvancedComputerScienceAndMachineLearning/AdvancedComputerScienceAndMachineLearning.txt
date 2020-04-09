@@ -692,6 +692,10 @@ Leaky Bucket Algorithm is primarily used in traffic policing and scheduling of n
 	(*) Bursts of packets in network traffic can also be plotted as time series of periodic intervals (number of packets versus time)
 	(*) Time-Series of network traffic and Leaky-Bucket model often have an one-to-one correspondence - Any peak (outlier) in timeseries might trigger a bucket overflow and vice-versa.
 
+References:
+----------
+767.1 Visual and Audio Data Mining - Section 11.3.3 - Page 670 - Data Mining- [Jiawei Han-Micheline Kamber] - Visual Data mining of Rainfalls in SAS Enterprise Miner and Mining data as music or audio signals
+
 ------------------------------------------------------------------------------------------------------
 768. (THEORY) Finding penultimate element in a linked list, sublinear Depth First Search and Breadth First Search, Survival Index Timeout WCET EDF OS Scheduler - 3 January 2020 - this section is an extended draft on respective topics in NeuronRain AstroInfer design -  https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
 ------------------------------------------------------------------------------------------------------
