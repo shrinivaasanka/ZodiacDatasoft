@@ -115,7 +115,7 @@ References:
 1.Python 3.7 documentation - Async/Await - https://docs.python.org/3/library/asyncio-protocol.html 
 
 --------------------------------------------------------------------------------------------------------
-14 November 2019 - Multidimensional Array Slicing - slice() function and NumPy - and StringIO
+14 November 2019, 23 April 2020 - Multidimensional Array Slicing - List comprehension, slice() function and NumPy - and StringIO
 --------------------------------------------------------------------------------------------------------
 Python has in-built slice() function which is an iterator for array indices to slice. Numeric Python
 NumPy has library support for multidimensional array slicing by subscripts. Code example code/Slicing.py
@@ -130,6 +130,13 @@ lines separated by newline "\n" is read by StringIO object by genfromtxt() and p
 	  File "Slicing.py", line 23, in <module>
     		slicedarray3=parsedarray[(0,3),(0,3)]
 	IndexError: index 3 is out of bounds for axis 0 with size 2
+
+Code example chooses either Slicing or List comprehension to extract a slice by a flag - List comprehension being the most fundamental Python primitive is the obvious choice for slicing. Following list comprehension:
+        slicedarray5=[row[2:5] for row in parsedarray]
+extracts a rectangular slice:
+	[['1', '2', '3', '4', '5', '6', '7', '8'], ['9', '10', '11', '12', '13', '14', '15', '16']]
+	slicedarray5 - list comprehension:
+	[['3', '4', '5'], ['11', '12', '13']]
 
 ---------------------------------------------------------------------------------------------------------
 14 December 2019 - Rounding off, Floating point division, Python 2.7 and Python 3.7.5, PDB
