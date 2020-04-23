@@ -589,18 +589,13 @@ References:
 2.H-index - Measure of Academic Research Quality - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1283832/
 
 --------------------------------------------------------------------------------------------------------------
-763. (THEORY and FEATURE) Reputation Rankings, Sybils and Collusions - 16 July 2018 - this section is an extended draft on respective topics in NeuronRain AstroInfer design -  https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
+763. (THEORY and FEATURE) Non-graph theoretic Intrinsic merit measures of texts, Reputation Rankings, Sybils and Collusions - 16 July 2018, 23 April 2020 - this section is an extended draft on respective topics in NeuronRain AstroInfer design -  https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
 --------------------------------------------------------------------------------------------------------------
-Most search engines rank websites based on their fame/reputation which is a function of incoming links to a
-website and reputations of vertices from which the links are incoming e.g PageRank. These Reputations can be
-manipulated by creating fake incoming links (Sybils) and collusions between websites to inflate PageRank 
-artificially. Identifying Sybils and Collusions is an open problem. Intrinsic fitness/merit of a website is
-a valuable measure to filter Sybils. It is known from most research papers on Fame Versus Merit that Fame is
-either linearly or almost-exponentially proportional to the merit of a social/academic profile vertex in the 
-context of Social networking and Citations in Science publications. If the function relating merit to fame is
-known approximately by some least squares fit on a training dataset, Fame of a new website can be related to
-Intrinsic fitness of the website. Huge Distance between observed Fame and Fame predicted by least squares 
-regression from training dataset could be a prima facie indicator of a Sybil.
+Most search engines rank websites based on their fame/reputation which is a function of incoming links to a website and reputations of vertices from which the links are incoming e.g PageRank. These Reputations can be manipulated by creating fake incoming links (Sybils) and collusions between websites to inflate PageRank artificially. Identifying Sybils and Collusions is an open problem. Intrinsic fitness/merit of a website is a valuable measure to filter Sybils. It is known from most research papers on Fame Versus Merit that Fame is either linearly or almost-exponentially proportional to the merit of a social/academic profile vertex in the context of Social networking and Citations in Science publications. If the function relating merit to fame is known approximately by some least squares fit on a training dataset, Fame of a new website can be related to Intrinsic fitness of the website. Huge Distance between observed Fame and Fame predicted by least squares regression from training dataset could be a prima facie indicator of a Sybil. There are quite a few standard non-graph theoretic tools to quantify connectedness of words in text of a website and its narrative style which could confront Fame measures - Coh Metrix, L2 Syntactic Complexity, TAACO, WAT among others. Most of these metrics measure local cohesion(intra-sentence connectivity), global cohesion (inter-sentence connectivity), coherence (mental representation of meaning) quantitatively by correlation between a text and human pre-judged essays.
+
+References:
+-----------
+763.1 TAACO - https://alsl.gsu.edu/files/2014/03/The-tool-for-the-automatic-analysis-of-text-cohesion-TAACO_Automatic-assessment-of-local-global-and-text-cohesion.pdf - [Scott A. Crossley, Kristopher Kyle, Danielle S. McNamara] - Cohesion features - Connectives,Givenness,Type-Token Ratio(TTR),Lexical overlap,Synonymy overlap,Semantic overlap - Table 1 - Of these Lexical,Synonymy and Semantic overlap are already subsumed by Recursive Gloss Overlap and Recursive Lambda Function Growth (which approximates a natural language text by a Lambda function tree - Turing Machine - thus attaining maximum theoretical limit) TextGraph algorithms for graph complexity merit of text implemented in NeuronRain.
 
 ---------------------------------------------------------------------------------------------------------
 Difference between two trees (delta) - 7 August 2018
