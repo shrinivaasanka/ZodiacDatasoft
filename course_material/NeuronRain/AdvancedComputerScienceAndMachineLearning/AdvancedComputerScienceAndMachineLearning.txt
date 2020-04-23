@@ -596,6 +596,7 @@ Most search engines rank websites based on their fame/reputation which is a func
 References:
 -----------
 763.1 TAACO - https://alsl.gsu.edu/files/2014/03/The-tool-for-the-automatic-analysis-of-text-cohesion-TAACO_Automatic-assessment-of-local-global-and-text-cohesion.pdf - [Scott A. Crossley, Kristopher Kyle, Danielle S. McNamara] - Cohesion features - Connectives,Givenness,Type-Token Ratio(TTR),Lexical overlap,Synonymy overlap,Semantic overlap - Table 1 - Of these Lexical,Synonymy and Semantic overlap are already subsumed by Recursive Gloss Overlap and Recursive Lambda Function Growth (which approximates a natural language text by a Lambda function tree - Turing Machine - thus attaining maximum theoretical limit) TextGraph algorithms for graph complexity merit of text implemented in NeuronRain.
+763.2 Manipulability of PageRank under Sybil Strategies - 4.1 - Theorem 2 - http://www.eecs.harvard.edu/cs286r/courses/fall09/papers/friedman2.pdf
 
 ---------------------------------------------------------------------------------------------------------
 Difference between two trees (delta) - 7 August 2018
