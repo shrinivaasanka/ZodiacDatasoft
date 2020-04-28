@@ -433,3 +433,11 @@ Logs in code/logs/readcopyupdate.log.6February2020 demonstrate a concurrent read
 References:
 ----------
 1.Read-Copy-Update - https://en.wikipedia.org/wiki/Read-copy-update 
+
+----------------------------------------------------------------------------------------------------
+28 April 2020 - Name filter - C++ STL containers and algorithms - copy,copy_if,shared_ptr,tokenizer
+----------------------------------------------------------------------------------------------------
+C++ Standard Templates Library implements algorithms for manipulating containers - for copying,filtering
+and erasure. A contrived example C++ name filter class has been defined in namefilter.cpp which accepts a textfile and parses it to filter the words having a substring name pattern. An example list of names from linkedin profile of author is namefiltered for a certain prefix. Lines are tokenized by stringstream iterator and copied to a vector by copy(). Name filter is done twice - for non-zero length of strings in lambda function capture of copy_if() and in auto iterator loop by find() of the pattern. Shared pointers are C++ STL facility for refcounted pointers. Wordcount of the strings containing pattern is incremented via a shared_ptr. Arbitrary filtering implementation can be plugged-in to lambda function capture block of copy_if() - Most names are of persons,organizations,locations and namefiltering or proper noun extraction has multiple solutions:
+	(*) NER PoS tagging by Conditional Random Fields(Supervised-costly-requires culture neutral training corpora e.g https://www.aclweb.org/anthology/P95-1032.pdf)
+	(*) Natural Language Dictionary or Ontology lookup(Unsupervised-preferred-no training data-if word is not in dictionary or semantic network - WordNet,ConceptNet,NameNet - https://pdfs.semanticscholar.org/56f9/cf53333a46c9ea355578f6b7b9424a4737e2.pdf - it is most likely a proper noun) are some of them. NeuronRain AstroInfer People Analytics implements dictionary filter.
