@@ -428,3 +428,14 @@ References:
 1. Compare and Swap can simulate Lock-free synchronization and mutexes - [Maurice Herlihy] and P and V Semaphores - https://en.wikipedia.org/wiki/Compare-and-swap and https://en.wikipedia.org/wiki/Semaphore_(programming)
 2. UNIX Internals: New Frontiers - [Uresh Vahalia - EMC] - Multiprocessor Synchronization Issues - Pages 193,200,201 - Semaphores, Convoys, Necessity of Atomic test_and_set instruction in multiprocessors. Convoys are formed in Semaphores when a queued process in Scheduler waiting on a lock is prevented from being runnable because another process holds the lock.
 3. UNIX - [Maurice J.Bach - AT&T] - Page 396 - Monitors as Synchronization Primitives in Multiprocessor UNIX - Monitors differ from Semaphores by modularizing scope of critical section to subroutine and serializing access by processes.
+
+-------------------------------------------------------------------------------------------------------
+1 May 2020 - Insertion in numbered lists
+-------------------------------------------------------------------------------------------------------
+Q: It is trivial to insert an element in unnumbered lists and linked lists. How can an element be inserted
+in numbered lists without re-ordering - e.g element 6 is inserted in 1,2,3,4,5,6,7,8,9,10 between 6 and 7 making the list 1,2,3,4,5,6,6+1,7+1,8+1,9+1,10+1 (all elements after 6 are re-numbered):
+
+A1: (*) TRIE solution is to append a Dewey decimal suffix to 6 as 6.1 - In previous example 1,2,3,4,5,6,7,8,9,10 becomes 1,2,3,4,5,6,6.1,7,8,9,10 preserving sorted order without renumbering.
+A2: (*) List is represented as variable expression array which is lazy evaluated before and after insertion - 1+x,2+x,3+x,4+x,5+x,6+x,7+x,8+x,9+x,10+x for a global shared pointer variable x initialized to 0. All element expressions upto insertion point are evaluated for x=0. After insertion of 6+x next to 6+0, x is incremented by 1 and all element expressions after insertion point are evaluated:
+	1+0,2+0,3+0,4+0,5+0,6+0,6+1,7+1,8+1,9+1,10+1
+This is not a sequential renumbering because global increment of x is reflected at once across all elements of variable array. 
