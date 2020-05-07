@@ -566,11 +566,10 @@ arising in clustering - https://csiflabs.cs.ucdavis.edu/~gusfield/cpartition.pdf
 31. Master Theorem - Case 2 - [Goodrich-Tamassia] - Algorithm Design: Foundation, Analysis and Internet Examples - Pages 268-270 
 
 -----------------------------------------------------------------------------------------------------------
-762. (THEORY and FEATURE) Markov Chains Random Walks on a Random Graph and Television Viewership - 4 June 2018,3 July 2018,7 March 2019 - this section is an extended draft on respective topics in NeuronRain AstroInfer design -  https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
+762. (THEORY and FEATURE) Markov Chains Random Walks on a Random Graph and Television Viewership, Merit of Large Scale Visuals, Media Analytics, Business Intelligence, Computational Geometry, Intrinsic Merit and Originality/Creative Genius - 4 June 2018,3 July 2018,7 March 2019,7 May 2020 - this section is an extended draft on respective topics in NeuronRain AstroInfer design -  https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
 -----------------------------------------------------------------------------------------------------------
-Q: How would you predict/model/analyse a viewer watching Television?
 
-A: Television viewership is the most researched subject for Media and Advertisement Analytics (Business
+Television viewership is the most researched subject for Media and Advertisement Analytics (Business
 Intelligence). A viewer randomly shuffling channels creates a Channel Random Graph dynamically where :
 	*) Channels are the vertices
 	*) Switching Channels creates a random hyperlink edge between two Channel vertices c1 and c2 with some probability
@@ -585,7 +584,10 @@ Previous PageRank computation on Channel Switch Random Graph per viewer can be m
 
 An intrinsic alternative to previous PageRank based voting by viewers is to rank content of channels by EventNet Tensor Products Audio-Visual Merit algorithm implemented in NeuronRain AsFer which considers every audio-visual as stream of causally related frame graphs inferred from ImageNet. This algorithm is not restricted to videos alone but models physical reality of event cause-effect (kind of simplified PetriNets where places are events and transitions are causations between events). Based on genre (Sports, Info, Entertainment etc.,) Empath or LIWC sentiment analysis might be necessary for emotional content.
 
-H-index measure of merit in academic research is defined as h number of articles by an academic each of which have citations by atleast h other academics. Similar notion can be generalized to text,audio,video and people too. In the context of video merit, for example, h number of atleast h-times retweeted videos is a measure of quality.
+H-index measure of merit in academic research is defined as h number of articles by an academic each of which have citations by atleast h other academics. Similar notion can be generalized to text,audio,video and people too. In the context of video merit, for example, h number of atleast h-times retweeted videos is a measure of quality. An alternative definition of merit in the context of music has been presented in NeuronRain AstroInfer Audio and Music Analytics which is based on how original an Audio waveform is, measured by distance dissimilarity (between other composers) and similarity (theme amongst works of oneself). Similar definition of originality can be arrived at for following categories of merit:
+	Text - Semantic (Conceptual) Dissimilarity/Similarity between TextGraphs of academic publications by different authors and Self
+	People - Semantic Dissimilarity/Similarity between Career transition (modelled by some state machine automaton) of different people and self - Choices made across tenures define people  
+	Video - Narrative Dissimilarity/Similarity between FaceGraph (Voronoi tesselated frames by centroid tracking) and EventNet Tensor Product representation of movies, youtube videos by different creators and Self
 
 References:
 -----------
