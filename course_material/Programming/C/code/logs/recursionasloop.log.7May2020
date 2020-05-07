@@ -1,0 +1,46 @@
+*x1=0
+*x1=1
+*x1=2
+*x1=3
+*x1=4
+*x1=5
+*x1=6
+*x1=7
+*x1=8
+*x1=9
+*x1=10
+n=10
+Search Tree 1:
+comparison: 0 7 
+comparison: 0 2 
+comparison: 0 1 
+comparison: 1 2 
+comparison: 2 7 
+comparison: 2 5 
+comparison: 5 7 
+comparison: 7 9999 
+comparison: 7 16 
+comparison: 7 15 
+comparison: 15 16 
+comparison: 16 9999 
+comparison: 16 27 
+comparison: 27 9999 
+comparison: 27 38 
+comparison: 38 9999 
+Search Tree 2:
+comparison: 0 7 
+comparison: 0 2 
+comparison: 0 11 
+array is not inorder traversal of binary search tree
+comparison: 2 7 
+comparison: 2 5 
+comparison: 5 7 
+comparison: 7 9999 
+comparison: 7 166 
+comparison: 7 15 
+comparison: 15 166 
+comparison: 166 9999 
+array is not inorder traversal of binary search tree
+comparison: 27 9999 
+comparison: 27 38 
+comparison: 38 9999 
