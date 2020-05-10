@@ -1,0 +1,674 @@
+2020-05-10 16:10:51 WARN  Utils:66 - Your hostname, HCL resolves to a loopback address: 127.0.1.1; using 192.168.1.173 instead (on interface wlan0)
+2020-05-10 16:10:51 WARN  Utils:66 - Set SPARK_LOCAL_IP if you need to bind to another address
+2020-05-10 16:10:52 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-10 16:10:54 INFO  SparkContext:54 - Running Spark version 2.4.0
+2020-05-10 16:10:54 INFO  SparkContext:54 - Submitted application: Publications_Word2Vec
+2020-05-10 16:10:54 INFO  SecurityManager:54 - Changing view acls to: root
+2020-05-10 16:10:54 INFO  SecurityManager:54 - Changing modify acls to: root
+2020-05-10 16:10:54 INFO  SecurityManager:54 - Changing view acls groups to: 
+2020-05-10 16:10:54 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2020-05-10 16:10:54 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+2020-05-10 16:10:55 INFO  Utils:54 - Successfully started service 'sparkDriver' on port 48511.
+2020-05-10 16:10:55 INFO  SparkEnv:54 - Registering MapOutputTracker
+2020-05-10 16:10:55 INFO  SparkEnv:54 - Registering BlockManagerMaster
+2020-05-10 16:10:55 INFO  BlockManagerMasterEndpoint:54 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2020-05-10 16:10:55 INFO  BlockManagerMasterEndpoint:54 - BlockManagerMasterEndpoint up
+2020-05-10 16:10:55 INFO  DiskBlockManager:54 - Created local directory at /tmp/blockmgr-b30e2890-a335-4940-907b-e6c17f4a1957
+2020-05-10 16:10:55 INFO  MemoryStore:54 - MemoryStore started with capacity 413.9 MB
+2020-05-10 16:10:55 INFO  SparkEnv:54 - Registering OutputCommitCoordinator
+2020-05-10 16:10:55 INFO  log:192 - Logging initialized @6452ms
+2020-05-10 16:10:56 INFO  Server:351 - jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+2020-05-10 16:10:56 INFO  Server:419 - Started @6664ms
+2020-05-10 16:10:56 INFO  AbstractConnector:278 - Started ServerConnector@4ef185{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2020-05-10 16:10:56 INFO  Utils:54 - Successfully started service 'SparkUI' on port 4040.
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6d6e85{/jobs,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@cd59bf{/jobs/json,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@baf24d{/jobs/job,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1c1b2d6{/jobs/job/json,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1d307b0{/stages,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5ca35d{/stages/json,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@151f367{/stages/stage,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1dac200{/stages/stage/json,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1b2c897{/stages/pool,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1c40c93{/stages/pool/json,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1adb472{/storage,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@e8a185{/storage/json,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1732bbf{/storage/rdd,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@ce1ed6{/storage/rdd/json,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@443659{/environment,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@183491d{/environment/json,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@13fa241{/executors,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@161305e{/executors/json,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@243055{/executors/threadDump,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@144442d{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1b7c86e{/static,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1d79457{/,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@959126{/api,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@915362{/jobs/job/kill,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5b68a5{/stages/stage/kill,null,AVAILABLE,@Spark}
+2020-05-10 16:10:56 INFO  SparkUI:54 - Bound SparkUI to 0.0.0.0, and started at http://192.168.1.173:4040
+2020-05-10 16:10:56 INFO  Executor:54 - Starting executor ID driver on host localhost
+2020-05-10 16:10:56 INFO  Utils:54 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 54628.
+2020-05-10 16:10:56 INFO  NettyBlockTransferService:54 - Server created on 192.168.1.173:54628
+2020-05-10 16:10:56 INFO  BlockManager:54 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2020-05-10 16:10:56 INFO  BlockManagerMaster:54 - Registering BlockManager BlockManagerId(driver, 192.168.1.173, 54628, None)
+2020-05-10 16:10:56 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 192.168.1.173:54628 with 413.9 MB RAM, BlockManagerId(driver, 192.168.1.173, 54628, None)
+2020-05-10 16:10:56 INFO  BlockManagerMaster:54 - Registered BlockManager BlockManagerId(driver, 192.168.1.173, 54628, None)
+2020-05-10 16:10:56 INFO  BlockManager:54 - Initialized BlockManager: BlockManagerId(driver, 192.168.1.173, 54628, None)
+2020-05-10 16:10:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1f4f27a{/metrics/json,null,AVAILABLE,@Spark}
+2020-05-10 16:10:57 INFO  SharedState:54 - Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/media/Krishna_iResearch_/Krishna_iResearch_Opensource/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/spark-warehouse').
+2020-05-10 16:10:57 INFO  SharedState:54 - Warehouse path is 'file:/media/Krishna_iResearch_/Krishna_iResearch_Opensource/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/spark-warehouse'.
+2020-05-10 16:10:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@208180{/SQL,null,AVAILABLE,@Spark}
+2020-05-10 16:10:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@29aad3{/SQL/json,null,AVAILABLE,@Spark}
+2020-05-10 16:10:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3130d6{/SQL/execution,null,AVAILABLE,@Spark}
+2020-05-10 16:10:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1bc3d53{/SQL/execution/json,null,AVAILABLE,@Spark}
+2020-05-10 16:10:57 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@f5ce36{/static/sql,null,AVAILABLE,@Spark}
+2020-05-10 16:10:59 INFO  StateStoreCoordinatorRef:54 - Registered StateStoreCoordinator endpoint
+2020-05-10 16:11:01 WARN  SizeEstimator:66 - Failed to check whether UseCompressedOops is set; assuming yes
+2020-05-10 16:11:08 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2020-05-10 16:11:08 INFO  FileSourceStrategy:54 - Post-Scan Filters: 
+2020-05-10 16:11:08 INFO  FileSourceStrategy:54 - Output Data Schema: struct<value: string>
+2020-05-10 16:11:08 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2020-05-10 16:11:09 INFO  CodeGenerator:54 - Code generated in 799.17252 ms
+2020-05-10 16:11:10 INFO  MemoryStore:54 - Block broadcast_0 stored as values in memory (estimated size 255.0 KB, free 413.7 MB)
+2020-05-10 16:11:10 INFO  MemoryStore:54 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 23.3 KB, free 413.7 MB)
+2020-05-10 16:11:10 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 192.168.1.173:54628 (size: 23.3 KB, free: 413.9 MB)
+2020-05-10 16:11:10 INFO  SparkContext:54 - Created broadcast 0 from javaToPython at NativeMethodAccessorImpl.java:0
+2020-05-10 16:11:10 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 4195353 bytes, open cost is considered as scanning 4194304 bytes.
+2020-05-10 16:11:11 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2020-05-10 16:11:11 INFO  FileSourceStrategy:54 - Post-Scan Filters: 
+2020-05-10 16:11:11 INFO  FileSourceStrategy:54 - Output Data Schema: struct<value: string>
+2020-05-10 16:11:11 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2020-05-10 16:11:11 INFO  MemoryStore:54 - Block broadcast_1 stored as values in memory (estimated size 255.0 KB, free 413.4 MB)
+2020-05-10 16:11:11 INFO  MemoryStore:54 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 23.3 KB, free 413.4 MB)
+2020-05-10 16:11:11 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on 192.168.1.173:54628 (size: 23.3 KB, free: 413.9 MB)
+2020-05-10 16:11:11 INFO  SparkContext:54 - Created broadcast 1 from javaToPython at NativeMethodAccessorImpl.java:0
+2020-05-10 16:11:11 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 4196546 bytes, open cost is considered as scanning 4194304 bytes.
+2020-05-10 16:11:12 INFO  ContextCleaner:54 - Cleaned accumulator 7
+2020-05-10 16:11:12 INFO  ContextCleaner:54 - Cleaned accumulator 9
+2020-05-10 16:11:12 INFO  ContextCleaner:54 - Cleaned accumulator 8
+2020-05-10 16:11:12 INFO  SparkContext:54 - Starting job: collect at /media/Krishna_iResearch_/Krishna_iResearch_Opensource/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:23
+2020-05-10 16:11:12 INFO  DAGScheduler:54 - Got job 0 (collect at /media/Krishna_iResearch_/Krishna_iResearch_Opensource/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:23) with 1 output partitions
+2020-05-10 16:11:12 INFO  DAGScheduler:54 - Final stage: ResultStage 0 (collect at /media/Krishna_iResearch_/Krishna_iResearch_Opensource/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:23)
+2020-05-10 16:11:12 INFO  DAGScheduler:54 - Parents of final stage: List()
+2020-05-10 16:11:12 INFO  DAGScheduler:54 - Missing parents: List()
+2020-05-10 16:11:12 INFO  DAGScheduler:54 - Submitting ResultStage 0 (PythonRDD[8] at collect at /media/Krishna_iResearch_/Krishna_iResearch_Opensource/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:23), which has no missing parents
+2020-05-10 16:11:12 INFO  MemoryStore:54 - Block broadcast_2 stored as values in memory (estimated size 10.1 KB, free 413.4 MB)
+2020-05-10 16:11:12 INFO  MemoryStore:54 - Block broadcast_2_piece0 stored as bytes in memory (estimated size 5.8 KB, free 413.4 MB)
+2020-05-10 16:11:12 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on 192.168.1.173:54628 (size: 5.8 KB, free: 413.9 MB)
+2020-05-10 16:11:12 INFO  SparkContext:54 - Created broadcast 2 from broadcast at DAGScheduler.scala:1161
+2020-05-10 16:11:12 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 0 (PythonRDD[8] at collect at /media/Krishna_iResearch_/Krishna_iResearch_Opensource/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:23) (first 15 tasks are for partitions Vector(0))
+2020-05-10 16:11:12 INFO  TaskSchedulerImpl:54 - Adding task set 0.0 with 1 tasks
+2020-05-10 16:11:12 INFO  TaskSetManager:54 - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 8440 bytes)
+2020-05-10 16:11:12 INFO  Executor:54 - Running task 0.0 in stage 0.0 (TID 0)
+2020-05-10 16:11:14 INFO  FileScanRDD:54 - Reading File path: file:///media/Krishna_iResearch_/Krishna_iResearch_Opensource/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec_SemanticScholar.txt, range: 0-1049, partition values: [empty row]
+2020-05-10 16:11:14 INFO  CodeGenerator:54 - Code generated in 56.390687 ms
+2020-05-10 16:11:14 INFO  PythonRunner:54 - Times: total = 1015, boot = 732, init = 281, finish = 2
+2020-05-10 16:11:14 INFO  Executor:54 - Finished task 0.0 in stage 0.0 (TID 0). 4122 bytes result sent to driver
+2020-05-10 16:11:14 INFO  TaskSetManager:54 - Finished task 0.0 in stage 0.0 (TID 0) in 1975 ms on localhost (executor driver) (1/1)
+2020-05-10 16:11:14 INFO  TaskSchedulerImpl:54 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2020-05-10 16:11:14 INFO  PythonAccumulatorV2:54 - Connected to AccumulatorServer at host: 127.0.0.1 port: 42904
+2020-05-10 16:11:14 INFO  DAGScheduler:54 - ResultStage 0 (collect at /media/Krishna_iResearch_/Krishna_iResearch_Opensource/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:23) finished in 2.406 s
+2020-05-10 16:11:14 INFO  DAGScheduler:54 - Job 0 finished: collect at /media/Krishna_iResearch_/Krishna_iResearch_Opensource/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:23, took 2.585005 s
+('words1:', [[u'Decidability', u'of', u'Existence', u'and', u'Construction', u'of', u'a', u'Complement', u'of', u'a', u'given', u'Function'], [u'Ka.', u'Shrinivaasan'], [u'Mathematics,', u'Computer', u'Science'], [u'ArXiv'], [u'2011'], [u'This', u'article', u'de', u'nes', u'a', u'complement', u'of', u'a', u'function', u'and', u'conditions', u'for', u'existence', u'of', u'such', u'a', u'complement', u'function', u'and', u'presents', u'few', u'algorithms', u'to', u'construct', u'a', u'complement.'], [u''], [u'Cite'], [u''], [u'Save'], [u''], [u'Feed'], [u'TAC', u'2010', u'Summarization', u'Track', u'-', u'Update', u'Summarization', u'with', u'Interview', u'Algorithm'], [u'Ka.', u'Shrinivaasan'], [u'Computer', u'Science'], [u'TAC'], [u'2010'], [u'Existing', u'models', u'for', u'ranking', u'documents(mostly', u'in', u'world', u'wide', u'web)', u'are', u'prestige', u'based.', u'In', u'this', u'article,', u'alternative', u'graph-theoretic', u'schemes', u'to', u'objectively', u'judge', u'the', u'merit', u'of', u'a', u'document', u'independent', u'of\u2026', u'Continue', u'Reading'], [u'View', u'PDF'], [u''], [u'Cite'], [u''], [u'Save'], [u''], [u'Feed'], [u'Few', u'Algorithms', u'for', u'ascertaining', u'merit', u'of', u'a', u'document', u'and', u'their', u'applications'], [u'Ka.', u'Shrinivaasan'], [u'Computer', u'Science'], [u'ArXiv'], [u'2010', u'(First', u'Publication:', u'23', u'June', u'2010)'], [u'Existing', u'models', u'for', u'ranking', u'documents(mostly', u'in', u'world', u'wide', u'web)', u'are', u'prestige', u'based.', u'In', u'this', u'article,', u'three', u'algorithms', u'to', u'objectively', u'judge', u'the', u'merit', u'of', u'a', u'document', u'are', u'proposed-1)', u'Citation', u'graph\u2026', u'Continue', u'Reading'], [u'']])
+2020-05-10 16:11:14 INFO  SparkContext:54 - Starting job: collect at /media/Krishna_iResearch_/Krishna_iResearch_Opensource/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:24
+2020-05-10 16:11:14 INFO  DAGScheduler:54 - Got job 1 (collect at /media/Krishna_iResearch_/Krishna_iResearch_Opensource/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:24) with 1 output partitions
+2020-05-10 16:11:14 INFO  DAGScheduler:54 - Final stage: ResultStage 1 (collect at /media/Krishna_iResearch_/Krishna_iResearch_Opensource/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:24)
+2020-05-10 16:11:14 INFO  DAGScheduler:54 - Parents of final stage: List()
+2020-05-10 16:11:14 INFO  DAGScheduler:54 - Missing parents: List()
+2020-05-10 16:11:14 INFO  DAGScheduler:54 - Submitting ResultStage 1 (PythonRDD[9] at collect at /media/Krishna_iResearch_/Krishna_iResearch_Opensource/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:24), which has no missing parents
+2020-05-10 16:11:14 INFO  MemoryStore:54 - Block broadcast_3 stored as values in memory (estimated size 10.1 KB, free 413.4 MB)
+2020-05-10 16:11:14 INFO  MemoryStore:54 - Block broadcast_3_piece0 stored as bytes in memory (estimated size 5.8 KB, free 413.4 MB)
+2020-05-10 16:11:14 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on 192.168.1.173:54628 (size: 5.8 KB, free: 413.9 MB)
+2020-05-10 16:11:14 INFO  SparkContext:54 - Created broadcast 3 from broadcast at DAGScheduler.scala:1161
+2020-05-10 16:11:14 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 1 (PythonRDD[9] at collect at /media/Krishna_iResearch_/Krishna_iResearch_Opensource/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:24) (first 15 tasks are for partitions Vector(0))
+2020-05-10 16:11:14 INFO  TaskSchedulerImpl:54 - Adding task set 1.0 with 1 tasks
+2020-05-10 16:11:14 INFO  TaskSetManager:54 - Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, PROCESS_LOCAL, 8429 bytes)
+2020-05-10 16:11:14 INFO  Executor:54 - Running task 0.0 in stage 1.0 (TID 1)
+2020-05-10 16:11:14 INFO  FileScanRDD:54 - Reading File path: file:///media/Krishna_iResearch_/Krishna_iResearch_Opensource/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec_DBLP.txt, range: 0-2242, partition values: [empty row]
+2020-05-10 16:11:15 INFO  PythonRunner:54 - Times: total = 42, boot = -283, init = 324, finish = 1
+2020-05-10 16:11:15 INFO  Executor:54 - Finished task 0.0 in stage 1.0 (TID 1). 6613 bytes result sent to driver
+2020-05-10 16:11:15 INFO  TaskSetManager:54 - Finished task 0.0 in stage 1.0 (TID 1) in 106 ms on localhost (executor driver) (1/1)
+2020-05-10 16:11:15 INFO  DAGScheduler:54 - ResultStage 1 (collect at /media/Krishna_iResearch_/Krishna_iResearch_Opensource/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:24) finished in 0.151 s
+2020-05-10 16:11:15 INFO  TaskSchedulerImpl:54 - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2020-05-10 16:11:15 INFO  DAGScheduler:54 - Job 1 finished: collect at /media/Krishna_iResearch_/Krishna_iResearch_Opensource/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:24, took 0.164034 s
+('words2:', [[u'@article{DBLP:journals/corr/abs-1106-4102,'], [u'', u'', u'author', u'', u'', u'', u'=', u'{Ka.', u'Shrinivaasan},'], [u'', u'', u'title', u'', u'', u'', u'', u'=', u'{Decidability', u'of', u'Existence', u'and', u'Construction', u'of', u'a', u'Complement', u'of', u'a', u'given'], [u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'Function},'], [u'', u'', u'journal', u'', u'', u'=', u'{CoRR},'], [u'', u'', u'volume', u'', u'', u'', u'=', u'{abs/1106.4102},'], [u'', u'', u'year', u'', u'', u'', u'', u'', u'=', u'{2011},'], [u'', u'', u'url', u'', u'', u'', u'', u'', u'', u'=', u'{http://arxiv.org/abs/1106.4102},'], [u'', u'', u'archivePrefix', u'=', u'{arXiv},'], [u'', u'', u'eprint', u'', u'', u'', u'=', u'{1106.4102},'], [u'', u'', u'timestamp', u'=', u'{Mon,', u'13', u'Aug', u'2018', u'01:00:00', u'+0200},'], [u'', u'', u'biburl', u'', u'', u'', u'=', u'{https://dblp.org/rec/journals/corr/abs-1106-4102.bib},'], [u'', u'', u'bibsource', u'=', u'{dblp', u'computer', u'science', u'bibliography,', u'https://dblp.org}'], [u'}'], [u''], [u'@inproceedings{DBLP:conf/tac/Shrinivaasan10,'], [u'', u'', u'author', u'', u'', u'', u'=', u'{Ka.', u'Shrinivaasan},'], [u'', u'', u'title', u'', u'', u'', u'', u'=', u'{{TAC}', u'2010', u'Summarization', u'Track', u'-', u'Update', u'Summarization', u'with', u'Interview'], [u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'Algorithm},'], [u'', u'', u'booktitle', u'=', u'{Proceedings', u'of', u'the', u'Third', u'Text', u'Analysis', u'Conference,', u'{TAC}', u'2010,', u'Gaithersburg,'], [u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'Maryland,', u'USA,', u'November', u'15-16,', u'2010},'], [u'', u'', u'year', u'', u'', u'', u'', u'', u'=', u'{2010},'], [u'', u'', u'crossref', u'', u'=', u'{DBLP:conf/tac/2010},'], [u'', u'', u'url', u'', u'', u'', u'', u'', u'', u'=', u'{https://tac.nist.gov/publications/2010/participant.papers/CMI\\_IIT.proceedings.pdf},'], [u'', u'', u'timestamp', u'=', u'{Tue,', u'20', u'Aug', u'2019', u'13:25:20', u'+0200},'], [u'', u'', u'biburl', u'', u'', u'', u'=', u'{https://dblp.org/rec/conf/tac/Shrinivaasan10.bib},'], [u'', u'', u'bibsource', u'=', u'{dblp', u'computer', u'science', u'bibliography,', u'https://dblp.org}'], [u'}'], [u''], [u'@article{DBLP:journals/corr/abs-1006-4458,'], [u'', u'', u'author', u'', u'', u'', u'=', u'{Ka.', u'Shrinivaasan},'], [u'', u'', u'title', u'', u'', u'', u'', u'=', u'{Few', u'Algorithms', u'for', u'ascertaining', u'merit', u'of', u'a', u'document', u'and', u'their', u'applications},'], [u'', u'', u'journal', u'', u'', u'=', u'{CoRR},'], [u'', u'', u'volume', u'', u'', u'', u'=', u'{abs/1006.4458},'], [u'', u'', u'year', u'', u'', u'', u'', u'', u'=', u'{2010},'], [u'', u'', u'url', u'', u'', u'', u'', u'', u'', u'=', u'{http://arxiv.org/abs/1006.4458},'], [u'', u'', u'archivePrefix', u'=', u'{arXiv},'], [u'', u'', u'eprint', u'', u'', u'', u'=', u'{1006.4458},'], [u'', u'', u'timestamp', u'=', u'{Mon,', u'13', u'Aug', u'2018', u'01:00:00', u'+0200},'], [u'', u'', u'biburl', u'', u'', u'', u'=', u'{https://dblp.org/rec/journals/corr/abs-1006-4458.bib},'], [u'', u'', u'bibsource', u'=', u'{dblp', u'computer', u'science', u'bibliography,', u'https://dblp.org}'], [u'}'], [u''], [u'@proceedings{DBLP:conf/tac/2010,'], [u'', u'', u'title', u'', u'', u'', u'', u'=', u'{Proceedings', u'of', u'the', u'Third', u'Text', u'Analysis', u'Conference,', u'{TAC}', u'2010,', u'Gaithersburg,'], [u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'', u'Maryland,', u'USA,', u'November', u'15-16,', u'2010},'], [u'', u'', u'publisher', u'=', u'{{NIST}},'], [u'', u'', u'year', u'', u'', u'', u'', u'', u'=', u'{2010},'], [u'', u'', u'url', u'', u'', u'', u'', u'', u'', u'=', u'{https://tac.nist.gov/publications/2010/papers.html},'], [u'', u'', u'timestamp', u'=', u'{Tue,', u'20', u'Aug', u'2019', u'13:25:20', u'+0200},'], [u'', u'', u'biburl', u'', u'', u'', u'=', u'{https://dblp.org/rec/conf/tac/2010.bib},'], [u'', u'', u'bibsource', u'=', u'{dblp', u'computer', u'science', u'bibliography,', u'https://dblp.org}'], [u'}'], [u'']])
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 47
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 42
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 46
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 38
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 40
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 36
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 50
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 43
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 49
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 41
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 54
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 59
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 39
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 44
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 51
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 60
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 52
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 58
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 55
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 37
+2020-05-10 16:11:15 INFO  BlockManagerInfo:54 - Removed broadcast_3_piece0 on 192.168.1.173:54628 in memory (size: 5.8 KB, free: 413.9 MB)
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 56
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 57
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 48
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 53
+2020-05-10 16:11:15 INFO  ContextCleaner:54 - Cleaned accumulator 45
+2020-05-10 16:11:15 INFO  SparkContext:54 - Starting job: collect at Word2Vec.scala:196
+2020-05-10 16:11:15 INFO  DAGScheduler:54 - Registering RDD 13 (map at Word2Vec.scala:187)
+2020-05-10 16:11:15 INFO  DAGScheduler:54 - Got job 2 (collect at Word2Vec.scala:196) with 1 output partitions
+2020-05-10 16:11:15 INFO  DAGScheduler:54 - Final stage: ResultStage 3 (collect at Word2Vec.scala:196)
+2020-05-10 16:11:15 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 2)
+2020-05-10 16:11:15 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 2)
+2020-05-10 16:11:16 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 2 (MapPartitionsRDD[13] at map at Word2Vec.scala:187), which has no missing parents
+2020-05-10 16:11:16 INFO  MemoryStore:54 - Block broadcast_4 stored as values in memory (estimated size 12.1 KB, free 413.4 MB)
+2020-05-10 16:11:16 INFO  MemoryStore:54 - Block broadcast_4_piece0 stored as bytes in memory (estimated size 6.8 KB, free 413.3 MB)
+2020-05-10 16:11:16 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 192.168.1.173:54628 (size: 6.8 KB, free: 413.9 MB)
+2020-05-10 16:11:16 INFO  SparkContext:54 - Created broadcast 4 from broadcast at DAGScheduler.scala:1161
+2020-05-10 16:11:16 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[13] at map at Word2Vec.scala:187) (first 15 tasks are for partitions Vector(0))
+2020-05-10 16:11:16 INFO  TaskSchedulerImpl:54 - Adding task set 2.0 with 1 tasks
+2020-05-10 16:11:16 INFO  TaskSetManager:54 - Starting task 0.0 in stage 2.0 (TID 2, localhost, executor driver, partition 0, PROCESS_LOCAL, 8429 bytes)
+2020-05-10 16:11:16 INFO  Executor:54 - Running task 0.0 in stage 2.0 (TID 2)
+2020-05-10 16:11:16 INFO  FileScanRDD:54 - Reading File path: file:///media/Krishna_iResearch_/Krishna_iResearch_Opensource/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec_SemanticScholar.txt, range: 0-1049, partition values: [empty row]
+2020-05-10 16:11:16 INFO  PythonRunner:54 - Times: total = 51, boot = -1035, init = 1082, finish = 4
+2020-05-10 16:11:16 INFO  MemoryStore:54 - Block rdd_10_0 stored as values in memory (estimated size 1041.0 B, free 413.3 MB)
+2020-05-10 16:11:16 INFO  BlockManagerInfo:54 - Added rdd_10_0 in memory on 192.168.1.173:54628 (size: 1041.0 B, free: 413.9 MB)
+2020-05-10 16:11:16 INFO  Executor:54 - Finished task 0.0 in stage 2.0 (TID 2). 2129 bytes result sent to driver
+2020-05-10 16:11:16 INFO  TaskSetManager:54 - Finished task 0.0 in stage 2.0 (TID 2) in 318 ms on localhost (executor driver) (1/1)
+2020-05-10 16:11:16 INFO  DAGScheduler:54 - ShuffleMapStage 2 (map at Word2Vec.scala:187) finished in 0.392 s
+2020-05-10 16:11:16 INFO  TaskSchedulerImpl:54 - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2020-05-10 16:11:16 INFO  DAGScheduler:54 - looking for newly runnable stages
+2020-05-10 16:11:16 INFO  DAGScheduler:54 - running: Set()
+2020-05-10 16:11:16 INFO  DAGScheduler:54 - waiting: Set(ResultStage 3)
+2020-05-10 16:11:16 INFO  DAGScheduler:54 - failed: Set()
+2020-05-10 16:11:16 INFO  DAGScheduler:54 - Submitting ResultStage 3 (MapPartitionsRDD[16] at map at Word2Vec.scala:190), which has no missing parents
+2020-05-10 16:11:16 INFO  MemoryStore:54 - Block broadcast_5 stored as values in memory (estimated size 4.9 KB, free 413.3 MB)
+2020-05-10 16:11:16 INFO  MemoryStore:54 - Block broadcast_5_piece0 stored as bytes in memory (estimated size 2.7 KB, free 413.3 MB)
+2020-05-10 16:11:16 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 192.168.1.173:54628 (size: 2.7 KB, free: 413.9 MB)
+2020-05-10 16:11:16 INFO  SparkContext:54 - Created broadcast 5 from broadcast at DAGScheduler.scala:1161
+2020-05-10 16:11:16 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 3 (MapPartitionsRDD[16] at map at Word2Vec.scala:190) (first 15 tasks are for partitions Vector(0))
+2020-05-10 16:11:16 INFO  TaskSchedulerImpl:54 - Adding task set 3.0 with 1 tasks
+2020-05-10 16:11:16 INFO  TaskSetManager:54 - Starting task 0.0 in stage 3.0 (TID 3, localhost, executor driver, partition 0, ANY, 7662 bytes)
+2020-05-10 16:11:16 INFO  Executor:54 - Running task 0.0 in stage 3.0 (TID 3)
+2020-05-10 16:11:16 INFO  ShuffleBlockFetcherIterator:54 - Getting 1 non-empty blocks including 1 local blocks and 0 remote blocks
+2020-05-10 16:11:16 INFO  ShuffleBlockFetcherIterator:54 - Started 0 remote fetches in 14 ms
+2020-05-10 16:11:16 INFO  Executor:54 - Finished task 0.0 in stage 3.0 (TID 3). 2419 bytes result sent to driver
+2020-05-10 16:11:16 INFO  TaskSetManager:54 - Finished task 0.0 in stage 3.0 (TID 3) in 174 ms on localhost (executor driver) (1/1)
+2020-05-10 16:11:16 INFO  DAGScheduler:54 - ResultStage 3 (collect at Word2Vec.scala:196) finished in 0.235 s
+2020-05-10 16:11:16 INFO  DAGScheduler:54 - Job 2 finished: collect at Word2Vec.scala:196, took 1.243135 s
+2020-05-10 16:11:16 INFO  Word2Vec:54 - vocabSize = 3, trainWordsCount = 24
+2020-05-10 16:11:16 INFO  TaskSchedulerImpl:54 - Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2020-05-10 16:11:16 INFO  MemoryStore:54 - Block broadcast_6 stored as values in memory (estimated size 3.9 KB, free 413.3 MB)
+2020-05-10 16:11:16 INFO  BlockManagerInfo:54 - Removed broadcast_5_piece0 on 192.168.1.173:54628 in memory (size: 2.7 KB, free: 413.9 MB)
+2020-05-10 16:11:16 INFO  MemoryStore:54 - Block broadcast_6_piece0 stored as bytes in memory (estimated size 4.0 KB, free 413.3 MB)
+2020-05-10 16:11:16 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 192.168.1.173:54628 (size: 4.0 KB, free: 413.9 MB)
+2020-05-10 16:11:16 INFO  SparkContext:54 - Created broadcast 6 from broadcast at Word2Vec.scala:315
+2020-05-10 16:11:16 INFO  MemoryStore:54 - Block broadcast_7 stored as values in memory (estimated size 1320.0 B, free 413.3 MB)
+2020-05-10 16:11:16 INFO  MemoryStore:54 - Block broadcast_7_piece0 stored as bytes in memory (estimated size 317.0 B, free 413.3 MB)
+2020-05-10 16:11:16 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 192.168.1.173:54628 (size: 317.0 B, free: 413.9 MB)
+2020-05-10 16:11:16 INFO  SparkContext:54 - Created broadcast 7 from broadcast at Word2Vec.scala:316
+2020-05-10 16:11:16 INFO  MemoryStore:54 - Block broadcast_8 stored as values in memory (estimated size 368.0 B, free 413.3 MB)
+2020-05-10 16:11:16 INFO  MemoryStore:54 - Block broadcast_8_piece0 stored as bytes in memory (estimated size 212.0 B, free 413.3 MB)
+2020-05-10 16:11:16 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 192.168.1.173:54628 (size: 212.0 B, free: 413.9 MB)
+2020-05-10 16:11:16 INFO  SparkContext:54 - Created broadcast 8 from broadcast at Word2Vec.scala:317
+2020-05-10 16:11:16 INFO  MemoryStore:54 - Block broadcast_9 stored as values in memory (estimated size 160.0 B, free 413.3 MB)
+2020-05-10 16:11:16 INFO  MemoryStore:54 - Block broadcast_9_piece0 stored as bytes in memory (estimated size 189.0 B, free 413.3 MB)
+2020-05-10 16:11:16 INFO  BlockManagerInfo:54 - Added broadcast_9_piece0 in memory on 192.168.1.173:54628 (size: 189.0 B, free: 413.9 MB)
+2020-05-10 16:11:16 INFO  SparkContext:54 - Created broadcast 9 from broadcast at Word2Vec.scala:360
+2020-05-10 16:11:16 INFO  MemoryStore:54 - Block broadcast_10 stored as values in memory (estimated size 160.0 B, free 413.3 MB)
+2020-05-10 16:11:16 INFO  MemoryStore:54 - Block broadcast_10_piece0 stored as bytes in memory (estimated size 81.0 B, free 413.3 MB)
+2020-05-10 16:11:16 INFO  BlockManagerInfo:54 - Added broadcast_10_piece0 in memory on 192.168.1.173:54628 (size: 81.0 B, free: 413.9 MB)
+2020-05-10 16:11:16 INFO  SparkContext:54 - Created broadcast 10 from broadcast at Word2Vec.scala:361
+2020-05-10 16:11:17 INFO  SparkContext:54 - Starting job: collect at Word2Vec.scala:442
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - Registering RDD 18 (repartition at Word2Vec.scala:344)
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - Registering RDD 22 (mapPartitionsWithIndex at Word2Vec.scala:364)
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - Got job 3 (collect at Word2Vec.scala:442) with 1 output partitions
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - Final stage: ResultStage 6 (collect at Word2Vec.scala:442)
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 5)
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 5)
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 4 (MapPartitionsRDD[18] at repartition at Word2Vec.scala:344), which has no missing parents
+2020-05-10 16:11:17 INFO  MemoryStore:54 - Block broadcast_11 stored as values in memory (estimated size 13.2 KB, free 413.3 MB)
+2020-05-10 16:11:17 INFO  MemoryStore:54 - Block broadcast_11_piece0 stored as bytes in memory (estimated size 7.3 KB, free 413.3 MB)
+2020-05-10 16:11:17 INFO  BlockManagerInfo:54 - Added broadcast_11_piece0 in memory on 192.168.1.173:54628 (size: 7.3 KB, free: 413.9 MB)
+2020-05-10 16:11:17 INFO  SparkContext:54 - Created broadcast 11 from broadcast at DAGScheduler.scala:1161
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 4 (MapPartitionsRDD[18] at repartition at Word2Vec.scala:344) (first 15 tasks are for partitions Vector(0))
+2020-05-10 16:11:17 INFO  TaskSchedulerImpl:54 - Adding task set 4.0 with 1 tasks
+2020-05-10 16:11:17 INFO  TaskSetManager:54 - Starting task 0.0 in stage 4.0 (TID 4, localhost, executor driver, partition 0, PROCESS_LOCAL, 8429 bytes)
+2020-05-10 16:11:17 INFO  Executor:54 - Running task 0.0 in stage 4.0 (TID 4)
+2020-05-10 16:11:17 INFO  BlockManager:54 - Found block rdd_10_0 locally
+2020-05-10 16:11:17 INFO  Executor:54 - Finished task 0.0 in stage 4.0 (TID 4). 1914 bytes result sent to driver
+2020-05-10 16:11:17 INFO  TaskSetManager:54 - Finished task 0.0 in stage 4.0 (TID 4) in 100 ms on localhost (executor driver) (1/1)
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - ShuffleMapStage 4 (repartition at Word2Vec.scala:344) finished in 0.156 s
+2020-05-10 16:11:17 INFO  TaskSchedulerImpl:54 - Removed TaskSet 4.0, whose tasks have all completed, from pool 
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - looking for newly runnable stages
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - running: Set()
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 5, ResultStage 6)
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - failed: Set()
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 5 (MapPartitionsRDD[22] at mapPartitionsWithIndex at Word2Vec.scala:364), which has no missing parents
+2020-05-10 16:11:17 INFO  MemoryStore:54 - Block broadcast_12 stored as values in memory (estimated size 6.5 KB, free 413.3 MB)
+2020-05-10 16:11:17 INFO  MemoryStore:54 - Block broadcast_12_piece0 stored as bytes in memory (estimated size 3.5 KB, free 413.3 MB)
+2020-05-10 16:11:17 INFO  BlockManagerInfo:54 - Added broadcast_12_piece0 in memory on 192.168.1.173:54628 (size: 3.5 KB, free: 413.9 MB)
+2020-05-10 16:11:17 INFO  SparkContext:54 - Created broadcast 12 from broadcast at DAGScheduler.scala:1161
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 5 (MapPartitionsRDD[22] at mapPartitionsWithIndex at Word2Vec.scala:364) (first 15 tasks are for partitions Vector(0))
+2020-05-10 16:11:17 INFO  TaskSchedulerImpl:54 - Adding task set 5.0 with 1 tasks
+2020-05-10 16:11:17 INFO  TaskSetManager:54 - Starting task 0.0 in stage 5.0 (TID 5, localhost, executor driver, partition 0, ANY, 7927 bytes)
+2020-05-10 16:11:17 INFO  Executor:54 - Running task 0.0 in stage 5.0 (TID 5)
+2020-05-10 16:11:17 INFO  ShuffleBlockFetcherIterator:54 - Getting 1 non-empty blocks including 1 local blocks and 0 remote blocks
+2020-05-10 16:11:17 INFO  ShuffleBlockFetcherIterator:54 - Started 0 remote fetches in 5 ms
+2020-05-10 16:11:17 INFO  MemoryStore:54 - Block rdd_21_0 stored as values in memory (estimated size 384.0 B, free 413.3 MB)
+2020-05-10 16:11:17 INFO  BlockManagerInfo:54 - Added rdd_21_0 in memory on 192.168.1.173:54628 (size: 384.0 B, free: 413.9 MB)
+2020-05-10 16:11:17 WARN  BLAS:61 - Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+2020-05-10 16:11:17 WARN  BLAS:61 - Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+2020-05-10 16:11:17 INFO  Executor:54 - Finished task 0.0 in stage 5.0 (TID 5). 1369 bytes result sent to driver
+2020-05-10 16:11:17 INFO  TaskSetManager:54 - Finished task 0.0 in stage 5.0 (TID 5) in 151 ms on localhost (executor driver) (1/1)
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - ShuffleMapStage 5 (mapPartitionsWithIndex at Word2Vec.scala:364) finished in 0.198 s
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - looking for newly runnable stages
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - running: Set()
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - waiting: Set(ResultStage 6)
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - failed: Set()
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - Submitting ResultStage 6 (ShuffledRDD[23] at reduceByKey at Word2Vec.scala:439), which has no missing parents
+2020-05-10 16:11:17 INFO  TaskSchedulerImpl:54 - Removed TaskSet 5.0, whose tasks have all completed, from pool 
+2020-05-10 16:11:17 INFO  MemoryStore:54 - Block broadcast_13 stored as values in memory (estimated size 4.5 KB, free 413.3 MB)
+2020-05-10 16:11:17 INFO  BlockManagerInfo:54 - Removed broadcast_11_piece0 on 192.168.1.173:54628 in memory (size: 7.3 KB, free: 413.9 MB)
+2020-05-10 16:11:17 INFO  MemoryStore:54 - Block broadcast_13_piece0 stored as bytes in memory (estimated size 2.5 KB, free 413.3 MB)
+2020-05-10 16:11:17 INFO  BlockManagerInfo:54 - Added broadcast_13_piece0 in memory on 192.168.1.173:54628 (size: 2.5 KB, free: 413.9 MB)
+2020-05-10 16:11:17 INFO  SparkContext:54 - Created broadcast 13 from broadcast at DAGScheduler.scala:1161
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 6 (ShuffledRDD[23] at reduceByKey at Word2Vec.scala:439) (first 15 tasks are for partitions Vector(0))
+2020-05-10 16:11:17 INFO  TaskSchedulerImpl:54 - Adding task set 6.0 with 1 tasks
+2020-05-10 16:11:17 INFO  TaskSetManager:54 - Starting task 0.0 in stage 6.0 (TID 6, localhost, executor driver, partition 0, ANY, 7662 bytes)
+2020-05-10 16:11:17 INFO  Executor:54 - Running task 0.0 in stage 6.0 (TID 6)
+2020-05-10 16:11:17 INFO  ShuffleBlockFetcherIterator:54 - Getting 1 non-empty blocks including 1 local blocks and 0 remote blocks
+2020-05-10 16:11:17 INFO  ShuffleBlockFetcherIterator:54 - Started 0 remote fetches in 1 ms
+2020-05-10 16:11:17 INFO  Executor:54 - Finished task 0.0 in stage 6.0 (TID 6). 1540 bytes result sent to driver
+2020-05-10 16:11:17 INFO  TaskSetManager:54 - Finished task 0.0 in stage 6.0 (TID 6) in 40 ms on localhost (executor driver) (1/1)
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - ResultStage 6 (collect at Word2Vec.scala:442) finished in 0.094 s
+2020-05-10 16:11:17 INFO  TaskSchedulerImpl:54 - Removed TaskSet 6.0, whose tasks have all completed, from pool 
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - Job 3 finished: collect at Word2Vec.scala:442, took 0.487768 s
+2020-05-10 16:11:17 INFO  TorrentBroadcast:54 - Destroying Broadcast(9) (from destroy at Word2Vec.scala:453)
+2020-05-10 16:11:17 INFO  TorrentBroadcast:54 - Destroying Broadcast(10) (from destroy at Word2Vec.scala:454)
+2020-05-10 16:11:17 INFO  BlockManagerInfo:54 - Removed broadcast_9_piece0 on 192.168.1.173:54628 in memory (size: 189.0 B, free: 413.9 MB)
+2020-05-10 16:11:17 INFO  MapPartitionsRDD:54 - Removing RDD 21 from persistence list
+2020-05-10 16:11:17 INFO  BlockManagerInfo:54 - Removed broadcast_10_piece0 on 192.168.1.173:54628 in memory (size: 81.0 B, free: 413.9 MB)
+2020-05-10 16:11:17 INFO  BlockManager:54 - Removing RDD 21
+2020-05-10 16:11:17 INFO  TorrentBroadcast:54 - Destroying Broadcast(6) (from destroy at Word2Vec.scala:321)
+2020-05-10 16:11:17 INFO  TorrentBroadcast:54 - Destroying Broadcast(7) (from destroy at Word2Vec.scala:322)
+2020-05-10 16:11:17 INFO  BlockManagerInfo:54 - Removed broadcast_6_piece0 on 192.168.1.173:54628 in memory (size: 4.0 KB, free: 413.9 MB)
+2020-05-10 16:11:17 INFO  TorrentBroadcast:54 - Destroying Broadcast(8) (from destroy at Word2Vec.scala:323)
+2020-05-10 16:11:17 INFO  BlockManagerInfo:54 - Removed broadcast_7_piece0 on 192.168.1.173:54628 in memory (size: 317.0 B, free: 413.9 MB)
+2020-05-10 16:11:17 INFO  MapPartitionsRDD:54 - Removing RDD 10 from persistence list
+2020-05-10 16:11:17 INFO  BlockManagerInfo:54 - Removed broadcast_8_piece0 on 192.168.1.173:54628 in memory (size: 212.0 B, free: 413.9 MB)
+2020-05-10 16:11:17 INFO  BlockManager:54 - Removing RDD 10
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 175
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 124
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 129
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 159
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 126
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 158
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 119
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 144
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned shuffle 2
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 136
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 114
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 131
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 120
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 151
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 135
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 149
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 147
+2020-05-10 16:11:17 INFO  BlockManagerInfo:54 - Removed broadcast_12_piece0 on 192.168.1.173:54628 in memory (size: 3.5 KB, free: 413.9 MB)
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 161
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 128
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 184
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 127
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 179
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 176
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 122
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 167
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 142
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 185
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 137
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 153
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 130
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 112
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 154
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 162
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 163
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 181
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 111
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 138
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 116
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 133
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 143
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 173
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 164
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 132
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 178
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 171
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 152
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 121
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 140
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 139
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 117
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 145
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 141
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 157
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 118
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 174
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 134
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 115
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 113
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 123
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 177
+2020-05-10 16:11:17 INFO  BlockManagerInfo:54 - Removed broadcast_13_piece0 on 192.168.1.173:54628 in memory (size: 2.5 KB, free: 413.9 MB)
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 146
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 160
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 166
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 182
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 155
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 150
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 165
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 125
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 170
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 180
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 169
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 148
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 156
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 168
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 183
+2020-05-10 16:11:17 INFO  ContextCleaner:54 - Cleaned accumulator 172
+2020-05-10 16:11:17 INFO  SparkContext:54 - Starting job: collect at Word2Vec.scala:196
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - Registering RDD 27 (map at Word2Vec.scala:187)
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - Got job 4 (collect at Word2Vec.scala:196) with 1 output partitions
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - Final stage: ResultStage 8 (collect at Word2Vec.scala:196)
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 7)
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 7)
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 7 (MapPartitionsRDD[27] at map at Word2Vec.scala:187), which has no missing parents
+2020-05-10 16:11:17 INFO  MemoryStore:54 - Block broadcast_14 stored as values in memory (estimated size 12.1 KB, free 413.3 MB)
+2020-05-10 16:11:17 INFO  MemoryStore:54 - Block broadcast_14_piece0 stored as bytes in memory (estimated size 6.8 KB, free 413.3 MB)
+2020-05-10 16:11:17 INFO  BlockManagerInfo:54 - Added broadcast_14_piece0 in memory on 192.168.1.173:54628 (size: 6.8 KB, free: 413.9 MB)
+2020-05-10 16:11:17 INFO  SparkContext:54 - Created broadcast 14 from broadcast at DAGScheduler.scala:1161
+2020-05-10 16:11:17 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 7 (MapPartitionsRDD[27] at map at Word2Vec.scala:187) (first 15 tasks are for partitions Vector(0))
+2020-05-10 16:11:17 INFO  TaskSchedulerImpl:54 - Adding task set 7.0 with 1 tasks
+2020-05-10 16:11:17 INFO  TaskSetManager:54 - Starting task 0.0 in stage 7.0 (TID 7, localhost, executor driver, partition 0, PROCESS_LOCAL, 8418 bytes)
+2020-05-10 16:11:17 INFO  Executor:54 - Running task 0.0 in stage 7.0 (TID 7)
+2020-05-10 16:11:18 INFO  FileScanRDD:54 - Reading File path: file:///media/Krishna_iResearch_/Krishna_iResearch_Opensource/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec_DBLP.txt, range: 0-2242, partition values: [empty row]
+2020-05-10 16:11:18 INFO  PythonRunner:54 - Times: total = 46, boot = -1788, init = 1832, finish = 2
+2020-05-10 16:11:18 INFO  MemoryStore:54 - Block rdd_24_0 stored as values in memory (estimated size 1448.0 B, free 413.3 MB)
+2020-05-10 16:11:18 INFO  BlockManagerInfo:54 - Added rdd_24_0 in memory on 192.168.1.173:54628 (size: 1448.0 B, free: 413.9 MB)
+2020-05-10 16:11:18 INFO  Executor:54 - Finished task 0.0 in stage 7.0 (TID 7). 2043 bytes result sent to driver
+2020-05-10 16:11:18 INFO  TaskSetManager:54 - Finished task 0.0 in stage 7.0 (TID 7) in 205 ms on localhost (executor driver) (1/1)
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - ShuffleMapStage 7 (map at Word2Vec.scala:187) finished in 0.248 s
+2020-05-10 16:11:18 INFO  TaskSchedulerImpl:54 - Removed TaskSet 7.0, whose tasks have all completed, from pool 
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - looking for newly runnable stages
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - running: Set()
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - waiting: Set(ResultStage 8)
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - failed: Set()
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - Submitting ResultStage 8 (MapPartitionsRDD[30] at map at Word2Vec.scala:190), which has no missing parents
+2020-05-10 16:11:18 INFO  MemoryStore:54 - Block broadcast_15 stored as values in memory (estimated size 4.9 KB, free 413.3 MB)
+2020-05-10 16:11:18 INFO  MemoryStore:54 - Block broadcast_15_piece0 stored as bytes in memory (estimated size 2.7 KB, free 413.3 MB)
+2020-05-10 16:11:18 INFO  BlockManagerInfo:54 - Added broadcast_15_piece0 in memory on 192.168.1.173:54628 (size: 2.7 KB, free: 413.9 MB)
+2020-05-10 16:11:18 INFO  SparkContext:54 - Created broadcast 15 from broadcast at DAGScheduler.scala:1161
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 8 (MapPartitionsRDD[30] at map at Word2Vec.scala:190) (first 15 tasks are for partitions Vector(0))
+2020-05-10 16:11:18 INFO  TaskSchedulerImpl:54 - Adding task set 8.0 with 1 tasks
+2020-05-10 16:11:18 INFO  TaskSetManager:54 - Starting task 0.0 in stage 8.0 (TID 8, localhost, executor driver, partition 0, ANY, 7662 bytes)
+2020-05-10 16:11:18 INFO  Executor:54 - Running task 0.0 in stage 8.0 (TID 8)
+2020-05-10 16:11:18 INFO  ShuffleBlockFetcherIterator:54 - Getting 1 non-empty blocks including 1 local blocks and 0 remote blocks
+2020-05-10 16:11:18 INFO  ShuffleBlockFetcherIterator:54 - Started 0 remote fetches in 4 ms
+2020-05-10 16:11:18 INFO  Executor:54 - Finished task 0.0 in stage 8.0 (TID 8). 2419 bytes result sent to driver
+2020-05-10 16:11:18 INFO  TaskSetManager:54 - Finished task 0.0 in stage 8.0 (TID 8) in 53 ms on localhost (executor driver) (1/1)
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - ResultStage 8 (collect at Word2Vec.scala:196) finished in 0.096 s
+2020-05-10 16:11:18 INFO  TaskSchedulerImpl:54 - Removed TaskSet 8.0, whose tasks have all completed, from pool 
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - Job 4 finished: collect at Word2Vec.scala:196, took 0.367318 s
+2020-05-10 16:11:18 INFO  Word2Vec:54 - vocabSize = 3, trainWordsCount = 282
+2020-05-10 16:11:18 INFO  MemoryStore:54 - Block broadcast_16 stored as values in memory (estimated size 3.9 KB, free 413.3 MB)
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 192
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 189
+2020-05-10 16:11:18 INFO  BlockManagerInfo:54 - Removed broadcast_14_piece0 on 192.168.1.173:54628 in memory (size: 6.8 KB, free: 413.9 MB)
+2020-05-10 16:11:18 INFO  MemoryStore:54 - Block broadcast_16_piece0 stored as bytes in memory (estimated size 4.0 KB, free 413.3 MB)
+2020-05-10 16:11:18 INFO  BlockManagerInfo:54 - Added broadcast_16_piece0 in memory on 192.168.1.173:54628 (size: 4.0 KB, free: 413.9 MB)
+2020-05-10 16:11:18 INFO  SparkContext:54 - Created broadcast 16 from broadcast at Word2Vec.scala:315
+2020-05-10 16:11:18 INFO  MemoryStore:54 - Block broadcast_17 stored as values in memory (estimated size 1320.0 B, free 413.3 MB)
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 235
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 217
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 230
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 196
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 227
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 210
+2020-05-10 16:11:18 INFO  BlockManagerInfo:54 - Removed broadcast_15_piece0 on 192.168.1.173:54628 in memory (size: 2.7 KB, free: 413.9 MB)
+2020-05-10 16:11:18 INFO  MemoryStore:54 - Block broadcast_17_piece0 stored as bytes in memory (estimated size 324.0 B, free 413.3 MB)
+2020-05-10 16:11:18 INFO  BlockManagerInfo:54 - Added broadcast_17_piece0 in memory on 192.168.1.173:54628 (size: 324.0 B, free: 413.9 MB)
+2020-05-10 16:11:18 INFO  SparkContext:54 - Created broadcast 17 from broadcast at Word2Vec.scala:316
+2020-05-10 16:11:18 INFO  MemoryStore:54 - Block broadcast_18 stored as values in memory (estimated size 368.0 B, free 413.3 MB)
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 204
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 214
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 216
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 225
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 234
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 219
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 206
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 213
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 221
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 186
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned shuffle 3
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 187
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 222
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 202
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 212
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 188
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 193
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 211
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 209
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 223
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 207
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 191
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 215
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 205
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 208
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 220
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 229
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 218
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 195
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 224
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 190
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 199
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 201
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 198
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 194
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 200
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 228
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 226
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 233
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 231
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 203
+2020-05-10 16:11:18 INFO  MemoryStore:54 - Block broadcast_18_piece0 stored as bytes in memory (estimated size 212.0 B, free 413.3 MB)
+2020-05-10 16:11:18 INFO  BlockManagerInfo:54 - Added broadcast_18_piece0 in memory on 192.168.1.173:54628 (size: 212.0 B, free: 413.9 MB)
+2020-05-10 16:11:18 INFO  SparkContext:54 - Created broadcast 18 from broadcast at Word2Vec.scala:317
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 232
+2020-05-10 16:11:18 INFO  ContextCleaner:54 - Cleaned accumulator 197
+2020-05-10 16:11:18 INFO  MemoryStore:54 - Block broadcast_19 stored as values in memory (estimated size 160.0 B, free 413.3 MB)
+2020-05-10 16:11:18 INFO  MemoryStore:54 - Block broadcast_19_piece0 stored as bytes in memory (estimated size 189.0 B, free 413.3 MB)
+2020-05-10 16:11:18 INFO  BlockManagerInfo:54 - Added broadcast_19_piece0 in memory on 192.168.1.173:54628 (size: 189.0 B, free: 413.9 MB)
+2020-05-10 16:11:18 INFO  SparkContext:54 - Created broadcast 19 from broadcast at Word2Vec.scala:360
+2020-05-10 16:11:18 INFO  MemoryStore:54 - Block broadcast_20 stored as values in memory (estimated size 160.0 B, free 413.3 MB)
+2020-05-10 16:11:18 INFO  MemoryStore:54 - Block broadcast_20_piece0 stored as bytes in memory (estimated size 81.0 B, free 413.3 MB)
+2020-05-10 16:11:18 INFO  BlockManagerInfo:54 - Added broadcast_20_piece0 in memory on 192.168.1.173:54628 (size: 81.0 B, free: 413.9 MB)
+2020-05-10 16:11:18 INFO  SparkContext:54 - Created broadcast 20 from broadcast at Word2Vec.scala:361
+2020-05-10 16:11:18 INFO  SparkContext:54 - Starting job: collect at Word2Vec.scala:442
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - Registering RDD 32 (repartition at Word2Vec.scala:344)
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - Registering RDD 36 (mapPartitionsWithIndex at Word2Vec.scala:364)
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - Got job 5 (collect at Word2Vec.scala:442) with 1 output partitions
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - Final stage: ResultStage 11 (collect at Word2Vec.scala:442)
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 10)
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 10)
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 9 (MapPartitionsRDD[32] at repartition at Word2Vec.scala:344), which has no missing parents
+2020-05-10 16:11:18 INFO  MemoryStore:54 - Block broadcast_21 stored as values in memory (estimated size 13.2 KB, free 413.3 MB)
+2020-05-10 16:11:18 INFO  MemoryStore:54 - Block broadcast_21_piece0 stored as bytes in memory (estimated size 7.2 KB, free 413.3 MB)
+2020-05-10 16:11:18 INFO  BlockManagerInfo:54 - Added broadcast_21_piece0 in memory on 192.168.1.173:54628 (size: 7.2 KB, free: 413.9 MB)
+2020-05-10 16:11:18 INFO  SparkContext:54 - Created broadcast 21 from broadcast at DAGScheduler.scala:1161
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 9 (MapPartitionsRDD[32] at repartition at Word2Vec.scala:344) (first 15 tasks are for partitions Vector(0))
+2020-05-10 16:11:18 INFO  TaskSchedulerImpl:54 - Adding task set 9.0 with 1 tasks
+2020-05-10 16:11:18 INFO  TaskSetManager:54 - Starting task 0.0 in stage 9.0 (TID 9, localhost, executor driver, partition 0, PROCESS_LOCAL, 8418 bytes)
+2020-05-10 16:11:18 INFO  Executor:54 - Running task 0.0 in stage 9.0 (TID 9)
+2020-05-10 16:11:18 INFO  BlockManager:54 - Found block rdd_24_0 locally
+2020-05-10 16:11:18 INFO  Executor:54 - Finished task 0.0 in stage 9.0 (TID 9). 1914 bytes result sent to driver
+2020-05-10 16:11:18 INFO  TaskSetManager:54 - Finished task 0.0 in stage 9.0 (TID 9) in 51 ms on localhost (executor driver) (1/1)
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - ShuffleMapStage 9 (repartition at Word2Vec.scala:344) finished in 0.090 s
+2020-05-10 16:11:18 INFO  TaskSchedulerImpl:54 - Removed TaskSet 9.0, whose tasks have all completed, from pool 
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - looking for newly runnable stages
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - running: Set()
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 10, ResultStage 11)
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - failed: Set()
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 10 (MapPartitionsRDD[36] at mapPartitionsWithIndex at Word2Vec.scala:364), which has no missing parents
+2020-05-10 16:11:18 INFO  MemoryStore:54 - Block broadcast_22 stored as values in memory (estimated size 6.5 KB, free 413.3 MB)
+2020-05-10 16:11:18 INFO  MemoryStore:54 - Block broadcast_22_piece0 stored as bytes in memory (estimated size 3.5 KB, free 413.3 MB)
+2020-05-10 16:11:18 INFO  BlockManagerInfo:54 - Added broadcast_22_piece0 in memory on 192.168.1.173:54628 (size: 3.5 KB, free: 413.9 MB)
+2020-05-10 16:11:18 INFO  SparkContext:54 - Created broadcast 22 from broadcast at DAGScheduler.scala:1161
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 10 (MapPartitionsRDD[36] at mapPartitionsWithIndex at Word2Vec.scala:364) (first 15 tasks are for partitions Vector(0))
+2020-05-10 16:11:18 INFO  TaskSchedulerImpl:54 - Adding task set 10.0 with 1 tasks
+2020-05-10 16:11:18 INFO  TaskSetManager:54 - Starting task 0.0 in stage 10.0 (TID 10, localhost, executor driver, partition 0, ANY, 7927 bytes)
+2020-05-10 16:11:18 INFO  Executor:54 - Running task 0.0 in stage 10.0 (TID 10)
+2020-05-10 16:11:18 INFO  ShuffleBlockFetcherIterator:54 - Getting 1 non-empty blocks including 1 local blocks and 0 remote blocks
+2020-05-10 16:11:18 INFO  ShuffleBlockFetcherIterator:54 - Started 0 remote fetches in 2 ms
+2020-05-10 16:11:18 INFO  MemoryStore:54 - Block rdd_35_0 stored as values in memory (estimated size 2.1 KB, free 413.3 MB)
+2020-05-10 16:11:18 INFO  BlockManagerInfo:54 - Added rdd_35_0 in memory on 192.168.1.173:54628 (size: 2.1 KB, free: 413.8 MB)
+2020-05-10 16:11:18 INFO  Executor:54 - Finished task 0.0 in stage 10.0 (TID 10). 1326 bytes result sent to driver
+2020-05-10 16:11:18 INFO  TaskSetManager:54 - Finished task 0.0 in stage 10.0 (TID 10) in 82 ms on localhost (executor driver) (1/1)
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - ShuffleMapStage 10 (mapPartitionsWithIndex at Word2Vec.scala:364) finished in 0.130 s
+2020-05-10 16:11:18 INFO  TaskSchedulerImpl:54 - Removed TaskSet 10.0, whose tasks have all completed, from pool 
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - looking for newly runnable stages
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - running: Set()
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - waiting: Set(ResultStage 11)
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - failed: Set()
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - Submitting ResultStage 11 (ShuffledRDD[37] at reduceByKey at Word2Vec.scala:439), which has no missing parents
+2020-05-10 16:11:18 INFO  MemoryStore:54 - Block broadcast_23 stored as values in memory (estimated size 4.5 KB, free 413.3 MB)
+2020-05-10 16:11:18 INFO  BlockManagerInfo:54 - Removed broadcast_21_piece0 on 192.168.1.173:54628 in memory (size: 7.2 KB, free: 413.9 MB)
+2020-05-10 16:11:18 INFO  MemoryStore:54 - Block broadcast_23_piece0 stored as bytes in memory (estimated size 2.5 KB, free 413.3 MB)
+2020-05-10 16:11:18 INFO  BlockManagerInfo:54 - Added broadcast_23_piece0 in memory on 192.168.1.173:54628 (size: 2.5 KB, free: 413.9 MB)
+2020-05-10 16:11:18 INFO  SparkContext:54 - Created broadcast 23 from broadcast at DAGScheduler.scala:1161
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 11 (ShuffledRDD[37] at reduceByKey at Word2Vec.scala:439) (first 15 tasks are for partitions Vector(0))
+2020-05-10 16:11:18 INFO  TaskSchedulerImpl:54 - Adding task set 11.0 with 1 tasks
+2020-05-10 16:11:18 INFO  TaskSetManager:54 - Starting task 0.0 in stage 11.0 (TID 11, localhost, executor driver, partition 0, ANY, 7662 bytes)
+2020-05-10 16:11:18 INFO  Executor:54 - Running task 0.0 in stage 11.0 (TID 11)
+2020-05-10 16:11:18 INFO  ShuffleBlockFetcherIterator:54 - Getting 1 non-empty blocks including 1 local blocks and 0 remote blocks
+2020-05-10 16:11:18 INFO  ShuffleBlockFetcherIterator:54 - Started 0 remote fetches in 1 ms
+2020-05-10 16:11:18 INFO  Executor:54 - Finished task 0.0 in stage 11.0 (TID 11). 1606 bytes result sent to driver
+2020-05-10 16:11:18 INFO  TaskSetManager:54 - Finished task 0.0 in stage 11.0 (TID 11) in 32 ms on localhost (executor driver) (1/1)
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - ResultStage 11 (collect at Word2Vec.scala:442) finished in 0.074 s
+2020-05-10 16:11:18 INFO  TaskSchedulerImpl:54 - Removed TaskSet 11.0, whose tasks have all completed, from pool 
+2020-05-10 16:11:18 INFO  DAGScheduler:54 - Job 5 finished: collect at Word2Vec.scala:442, took 0.335714 s
+2020-05-10 16:11:18 INFO  TorrentBroadcast:54 - Destroying Broadcast(19) (from destroy at Word2Vec.scala:453)
+2020-05-10 16:11:18 INFO  TorrentBroadcast:54 - Destroying Broadcast(20) (from destroy at Word2Vec.scala:454)
+2020-05-10 16:11:18 INFO  BlockManagerInfo:54 - Removed broadcast_19_piece0 on 192.168.1.173:54628 in memory (size: 189.0 B, free: 413.9 MB)
+2020-05-10 16:11:18 INFO  MapPartitionsRDD:54 - Removing RDD 35 from persistence list
+2020-05-10 16:11:19 INFO  BlockManagerInfo:54 - Removed broadcast_20_piece0 on 192.168.1.173:54628 in memory (size: 81.0 B, free: 413.9 MB)
+2020-05-10 16:11:19 INFO  BlockManager:54 - Removing RDD 35
+2020-05-10 16:11:19 INFO  TorrentBroadcast:54 - Destroying Broadcast(16) (from destroy at Word2Vec.scala:321)
+2020-05-10 16:11:19 INFO  TorrentBroadcast:54 - Destroying Broadcast(17) (from destroy at Word2Vec.scala:322)
+2020-05-10 16:11:19 INFO  BlockManagerInfo:54 - Removed broadcast_16_piece0 on 192.168.1.173:54628 in memory (size: 4.0 KB, free: 413.9 MB)
+2020-05-10 16:11:19 INFO  TorrentBroadcast:54 - Destroying Broadcast(18) (from destroy at Word2Vec.scala:323)
+2020-05-10 16:11:19 INFO  BlockManagerInfo:54 - Removed broadcast_17_piece0 on 192.168.1.173:54628 in memory (size: 324.0 B, free: 413.9 MB)
+2020-05-10 16:11:19 INFO  MapPartitionsRDD:54 - Removing RDD 24 from persistence list
+2020-05-10 16:11:19 INFO  BlockManagerInfo:54 - Removed broadcast_18_piece0 on 192.168.1.173:54628 in memory (size: 212.0 B, free: 413.9 MB)
+('vectors1:', 2020-05-10 16:11:19 INFO  BlockManager:54 - Removing RDD 24
+{u'a': [0.024032835, -0.02087133, 0.034978427, 0.047021333, -0.042686746, 0.010013454, -0.014774778, 0.012520688, 0.037358996, 0.047811504], u'of': [0.0068026707, -0.008382773, -0.018084964, -0.03797318, -0.028982133, -0.016922068, 0.04787918, 0.040646303, -0.016349038, 0.04703608], u'': [0.0040496765, 0.025384516, -0.025253505, 0.04171654, -0.040256083, -0.0009039879, 0.0030299127, -0.0045036315, 0.020145107, 0.036715824]})
+('vectors2:', {u'': [0.3346049, -0.31645325, 0.49020064, 0.58547765, -0.5806104, 0.12565422, -0.16836196, 0.20964935, 0.48703173, 0.6689633], u'=': [0.20715839, -0.19823171, 0.2680251, 0.29985815, -0.38125145, 0.053263545, -0.039627355, 0.17556548, 0.26855105, 0.4563954], u'of': [0.010804774, 0.018974178, -0.015409412, 0.053391635, -0.05200147, 0.0015854256, -0.000243605, -0.00017610169, 0.02990357, 0.05028822]})
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 274
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 276
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 304
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 267
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 280
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 258
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 251
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 292
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 301
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 247
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 238
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 307
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 303
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 257
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 282
+2020-05-10 16:11:19 INFO  BlockManagerInfo:54 - Removed broadcast_22_piece0 on 192.168.1.173:54628 in memory (size: 3.5 KB, free: 413.9 MB)
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 242
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 244
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 288
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 279
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 253
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 254
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 300
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 239
+2020-05-10 16:11:19 INFO  BlockManagerInfo:54 - Removed broadcast_23_piece0 on 192.168.1.173:54628 in memory (size: 2.5 KB, free: 413.9 MB)
+('synonym1:', u'', ' - cosine distance:', 0.15761245787143707)
+('synonym1:', u'a', ' - cosine distance:', 0.04311036691069603)
+('synonym2:', u'', ' - cosine distance:', 0.98942267894744873)
+('synonym2:', u'of', ' - cosine distance:', 0.74062013626098633)
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 310
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 306
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 236
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 241
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 261
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 308
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 259
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 260
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 268
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 305
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 255
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 265
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 263
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 245
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 287
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 270
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 295
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 237
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 281
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 293
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned shuffle 5
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 252
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 283
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 289
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 297
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 285
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 277
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 296
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 273
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 269
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 299
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 264
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 243
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 309
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 256
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 294
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 284
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 290
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 262
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 271
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 302
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 275
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 240
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 250
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 249
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 246
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 286
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 278
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 248
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 272
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 298
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 291
+2020-05-10 16:11:19 INFO  ContextCleaner:54 - Cleaned accumulator 266
+2020-05-10 16:11:19 INFO  SparkContext:54 - Invoking stop() from shutdown hook
+2020-05-10 16:11:19 INFO  AbstractConnector:318 - Stopped Spark@4ef185{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2020-05-10 16:11:19 INFO  SparkUI:54 - Stopped Spark web UI at http://192.168.1.173:4040
+2020-05-10 16:11:19 INFO  MapOutputTrackerMasterEndpoint:54 - MapOutputTrackerMasterEndpoint stopped!
+2020-05-10 16:11:19 INFO  MemoryStore:54 - MemoryStore cleared
+2020-05-10 16:11:19 INFO  BlockManager:54 - BlockManager stopped
+2020-05-10 16:11:19 INFO  BlockManagerMaster:54 - BlockManagerMaster stopped
+2020-05-10 16:11:19 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54 - OutputCommitCoordinator stopped!
+2020-05-10 16:11:19 INFO  SparkContext:54 - Successfully stopped SparkContext
+2020-05-10 16:11:19 INFO  ShutdownHookManager:54 - Shutdown hook called
+2020-05-10 16:11:19 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-59567ccd-48e3-459a-82c6-531ec323fa6a
+2020-05-10 16:11:19 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-3d62e3d5-03f5-4f76-acb9-93d10108701b/pyspark-7296f53f-0fd3-481d-90c0-80bda83567df
+2020-05-10 16:11:19 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-3d62e3d5-03f5-4f76-acb9-93d10108701b
