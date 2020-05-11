@@ -10,31 +10,41 @@
 
 from pyspark.sql import SparkSession
 from pyspark.mllib.feature import Word2Vec
+from pyspark.sql.types import StringType
 
-#reference: https://spark.apache.org/docs/latest/ml-collaborative-filtering.html
+#reference: https://spark.apache.org/docs/latest/api/python/pyspark.ml.html?highlight=word2vec 
 
-if __name__=="__main__":
-	spsess=SparkSession.builder.master("local").appName("Publications_Word2Vec").getOrCreate()
-	#lines1 = spsess.read.text("Spark_Word2Vec_GoogleScholar.txt").rdd
-	lines1 = spsess.read.text("Spark_Word2Vec_SemanticScholar.txt").rdd
-	lines2 = spsess.read.text("Spark_Word2Vec_DBLP.txt").rdd
-	words1 = lines1.map(lambda row: row.value.split(" "))
-	words2 = lines2.map(lambda row: row.value.split(" "))
-	print("words1:",words1.collect())
-	print("words2:",words2.collect())
+def tokenize(row):
+	words = row.value.split(" ")
+	words = [[w.encode("utf-8")] for w in words if w != '']
+	print("tokenize() - words:",words)
+	return words
+
+def concat(str1,str2):
+	if str1 is not None and str2 is not None:
+		return str1 + str2
+
+def bibliometric_word2vec(bibliography,pattern):
+	spsess=SparkSession.builder.master("local[4]").appName("Publications_Word2Vec").getOrCreate()
+	lines1 = spsess.read.text(bibliography).rdd
+	words1 = lines1.map(tokenize).reduce(concat)
+	print("words1:",words1)
 	word2vec = Word2Vec()
 	word2vec.setVectorSize(10)
 	word2vec.setSeed(100)
-	model1 = word2vec.fit(words1)
-	model2 = word2vec.fit(words2)
+	words1rdd = spsess.sparkContext.parallelize(words1)
+	print("words1rdd:",words1rdd.collect())
+	words1df = spsess.createDataFrame(words1rdd,StringType())
+	words1df.show()
+	words1df.printSchema()
+	model1 = word2vec.fit(words1rdd)
 	vectors1 = model1.getVectors()
-	vectors2 = model2.getVectors()
 	print("vectors1:",vectors1)
-	print("vectors2:",vectors2)
-	synonyms1 = model1.findSynonyms("of",5)
-	synonyms2 = model2.findSynonyms("=",5)
+	synonyms1 = model1.findSynonyms(pattern,5)
 	for w,cosdist in synonyms1:
 		print("synonym1:",w," - cosine distance:",cosdist) 
-	for w,cosdist in synonyms2:
-		print("synonym2:",w," - cosine distance:",cosdist) 
 
+if __name__=="__main__":
+	bibliometric_word2vec("Spark_Word2Vec_SemanticScholar.txt","of")
+	bibliometric_word2vec("Spark_Word2Vec_GoogleScholar.txt","of")
+	bibliometric_word2vec("Spark_Word2Vec_DBLP.txt","of")

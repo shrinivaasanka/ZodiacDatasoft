@@ -306,10 +306,25 @@ References:
 1.Preferential attachment,Bose-Einstein Condensation in Networks,Double Jeopardy in business intelligence (low market share brands have low buyers and low brand loyalty - low market share brand is not necessarily of low merit) - https://en.wikipedia.org/wiki/Preferential_attachment
 
 ---------------------------------------------------------------------------------------------------------
-821. (THEORY and FEATURE) Word Embedding on a Vectorspace - Spark SkipGram Log Likelihood - Text Similarity, Dissimilarity and Merit Measure of Originality - 10 May 2020 - related to 762,815 and all sections on
-Kernel Lifting, Intrinsic Merit and Shell Turing Machines
+821. (THEORY and FEATURE) Word Embedding on a Vectorspace - Spark SkipGram Log Likelihood - Text Similarity, Dissimilarity and Merit Measure of Originality - 10 May 2020,11 May 2020 - related to 762,815 and all sections on Kernel Lifting, Intrinsic Merit of Academic publications/Large Scale Visuals/Music/People, Psychoanalysis and Shell Turing Machines
 ---------------------------------------------------------------------------------------------------------
 Word2Vec Embedding in Spark MLLib maps words in a text to vectors in a Vectorspace which facilitates 
 clustering of synonymous words - Words of similar meaning and context are in proximity on the vector space. This kind of kernel lifting from one dimensional text to multidimensional vectorspace of words in Spark MLLib is implemented as a SkipGram. SkipGram maximizes average loglikelihood for a word wt and a context training window for wt of width 2k - w(t-k),...,w(t+k):
 		1/T ∑t=1,T ∑j=−k,k logp(w(t+j)|wt)
-Code example Spark_Word2Vec.py analyzes text file bibliographies from Semantic Scholar(https://www.semanticscholar.org/author/Ka.-Shrinivaasan/1861803), DBLP(https://dblp.dagstuhl.de/pers/hd/s/Shrinivaasan:Ka=) profiles of author and tries to find synonyms and clustering similarities (by cosine distance). Sections 762 and 815 propound an alternative merit measure of "Originality" (how dissimilar a work is from other authorships and common theme similarity amongst author's works) which can be best captured by Word2Vec vectorspace embeddings of texts wherein computation of euclidean distance clustering similarity between word vectors is easier. Analyzing academic publications is a field in itself - Bibliometrics. It is worth noting that TextGraph representation of texts offers Graph Isomorphism and Graph Edit Distance as graph theoretic similarity alternatives.
+Code example Spark_Word2Vec.py defines a function bibliometrics_word2vec() which analyzes text file bibliographies from Semantic Scholar(https://www.semanticscholar.org/author/Ka.-Shrinivaasan/1861803), DBLP(https://dblp.dagstuhl.de/pers/hd/s/Shrinivaasan:Ka=) and GoogleScholar (https://scholar.google.co.in/citations?user=eLZY7CIAAAAJ&hl=en) profiles of author on quadcore and Python 3.7.5 and tries to find synonyms and clustering similarities (by cosine distance). Sections 762 and 815 propound an alternative merit measure of "Originality" (how dissimilar a work is from other authorships and common theme similarity amongst author's works) which can be best captured by Word2Vec vectorspace embeddings of texts wherein computation of euclidean distance clustering similarity between word vectors is easier. Analyzing academic publications is a field in itself - Bibliometrics and Scientometrics - once touted to be an alternative to peer review. It is worth noting that TextGraph representation of texts offers Graph Isomorphism and Graph Edit Distance as graph theoretic concept similarity alternatives. Originality thus distinguishes seminal papers (differentiated by huge conceptual distance from earlier works), independent of H-index (Fame measure based on voting - citations), which ushered a revolution when they were published. H-index is the Durfee Square of the Integer Partition of Citations amongst papers and approximately equals 0.54*sqrt(N) for total citations N. Concept similarity is defined by archetypes (Thought motif from which copies are made) in Carl Jungian Psychoanalysis (Pattern of Thought in collective unconscious).
+
+References:
+----------
+821.1 H-index - https://en.wikipedia.org/wiki/H-index
+821.2 Bibliometrics for Internet Media: Applying H-index to YouTube - https://arxiv.org/abs/1303.0766
+821.3 Spark MLLib Word2Vec - https://spark.apache.org/docs/latest/api/python/pyspark.ml.html?highlight=word2vec
+
+--------------------------------------------------------------------------------------------------------
+822. (FEATURE) Word Embedding of Text on Vectorspace - Merit of Academic Publications - an alternative to H-index - implementation changes - 11 May 2020 - related to 821
+--------------------------------------------------------------------------------------------------------
+1.Spark_Word2Vec.py has been refactored to include separate mapreduce functions for tokenizing the text
+to words after utf-8 encoding.
+2.To circumvent Spark Java String to Iterable cast error in Word2Vec fit(), list comprehension in mapreduce creates one element arrays per word (instead of array per line earlier).
+3.Parsed data is printed by DataFrame show() and printSchema() - StringType Spark type has been imported.
+4.GoogleScholar bibliography has been included.
+5.Spark logs are at testlogs/Spark_Word2Vec.log.11May2020
