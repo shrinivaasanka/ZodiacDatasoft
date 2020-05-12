@@ -739,5 +739,5 @@ sequential traversals.
 
 References:
 -----------
-1. Algorithms - [Cormen-Leiserson-Rivest-Shamir] - Page 692 - Algorithms for Parallel Computers - 30.1.1
+1. Algorithms - [Cormen-Leiserson-Rivest-Stein] - Page 692 - Algorithms for Parallel Computers - 30.1.1
 - List ranking 
