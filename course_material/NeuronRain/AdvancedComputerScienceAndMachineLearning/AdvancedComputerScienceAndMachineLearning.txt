@@ -712,3 +712,32 @@ References:
 3.Parallel DFS - http://www2.inf.uos.de/papers_html/zeus_95/node5.html
 4.Parallel RAM Breadth First Search - https://en.wikipedia.org/wiki/Parallel_breadth-first_search 
 5.Parallel Breadth First Search and Depth First Search - [Taenam Kim & Kyungyong Chwa] - https://www.tandfonline.com/doi/abs/10.1080/00207168608803503?journalCode=gcom20 - is of parallel time O(log d - log n) for diameter d (longest of shortest paths between all pairs of vertices) of the graph and n is the number of vertices - "...we develop a parallel breadth first search algorithm for general graphs and a parallel depth first search algorithm for acyclic digraphs which run in time O(logd-logn) using 0(n^2[n/log n]) processors....". For singly linked lists diameter d = number of vertices n
+
+-------------------------------------------------------------------------------------------------------
+12 May 2020 - Finding number of elements in a linked list - Sequential and Parallel - List Ranking
+-------------------------------------------------------------------------------------------------------
+Counting number of elements in a linked list of N elements has a naive sequential bound of O(N). List
+Ranking is the problem of computing distance of every element in a linked list from the end of the list.
+Thus counting number of elements in a linked list is a List Ranking problem for finding distance of 
+the first element from end of the list. List Ranking has a Parallel RAM pointer jumping algorithm which
+finds the rank in O(logN) parallel time. Following is a pointer jumping pseudocode for parallel 
+list ranking:
+		allocate one element per processor
+		for every processor and element i
+			distance[i] += distance[next[i]]
+			next[i] = next[next[i]]
+
+Sequential sublinear algorithm for counting number of elements in a linked list and list ranking is an
+open problem. Every linked list is an inorder traversal of a balanced AVL tree equipped with successor
+(and predecessor in doubly linked list) pointers - this structure can be exploited to approximately
+estimate number of elements in a linked list as 2^(average length of root to leaves). Parallel List 
+Ranking by Pointer Jumping is central to many parallel algorithms for linked lists. Primitive next[i]
+is architecture dependent and if its recursive version next(next(next....))) could be upperbounded by
+(log M)^k for M >> N, N can be written as N = a*N/(log M)^k + b, a <= (log M)^k. Huge linked lists could
+be approximately estimated by this heuristic for sequential pointer jumping a times plus additional b 
+sequential traversals.
+
+References:
+-----------
+1. Algorithms - [Cormen-Leiserson-Rivest-Shamir] - Page 692 - Algorithms for Parallel Computers - 30.1.1
+- List ranking 
