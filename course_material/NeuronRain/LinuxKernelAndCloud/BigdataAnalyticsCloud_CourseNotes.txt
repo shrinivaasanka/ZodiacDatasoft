@@ -289,7 +289,7 @@ Reference:
 1.Real Plus Minus of NBA - http://www.espn.com/nba/statistics/rpm - Player Efficiency Ratings in Basketball 
 
 ---------------------------------------------------------------------------------------------------------
-753. (THEORY and FEATURE) Social Network Analytics, People Analytics, Preferential Attachment, Urban Sprawls and Intrinsic Merit Rankings - 20 February 2020,26 February 2020,29 April 2020 - this section is an extended draft on urban planning analytics, GIS analytics among other topics in NeuronRain AstroInfer Design - https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt 
+753. (THEORY and FEATURE) Social Network Analytics, People Analytics, Preferential Attachment, Urban Sprawls and Intrinsic Merit Rankings - 20 February 2020,26 February 2020,29 April 2020,17 May 2020,18 May 2020 - this section is an extended draft on urban planning analytics, GIS analytics among other topics in NeuronRain AstroInfer Design - https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt - related to 762,821
 ---------------------------------------------------------------------------------------------------------
 NeuronRain AstroInfer codebase has implementations for urban planning analytics including analytics of Remote sensing imagery , GIS 2-D patches extraction, Watershed image segmentation specific to urban sprawls et al. Urban planning analytics could be termed a special category lying in intersection of People analytics and Social Network analytics - difference being people profiles and social profile vertices in world wide web are replaced by real humans and urban clusters. There exists a striking parallel between preferential attachment in social networks and formation and growth of urban agglomerations - Processes underneath why certain social profiles attract more incoming links and why people flock to megapolises (and megalopolises formed by countermagnets) have clustering similarities. Preferential attachment in social networks causes profiles of large followers to be larger or famous become more famous while big cities become megacities. It is self-explanatory that perception underlies preferential attachment (because population is swayed by and gravitates to majority). Average degree of a vertex in Social networks is replaced by population density in Urban sprawls. 
 
@@ -303,6 +303,20 @@ On the contrary, rationale for ranking social profiles by their intrinsic least 
 	- Salubrious and Cool climes (less likely)
 	...
 
+Previous division of Social profile vertices into 3 categories may infact be 4 if Wealth category is segregated into Working class and Business profiles:
+	(*) Profiles of Academics and Researchers - Education (E)
+	(*) Profiles of Sports personalities - Valour (V)
+	(*) Profiles of Business - Wealth1 (W1)
+	(*) Profiles of Working class - Wealth2 (W2)
+which would consummate to lognormal least energy sum logE + logV + logW1 + logW2. On the contrary such a division of social profiles may not be Four color theorem compliant - there is no or least avoidance of colors (categories) of neighbours (though W1 and W2 are repulsive). NeuronRain People Analytics implements Chaotic HMM state machine model for tenure transitions of a profile and an alternative weighted automaton model is put forth (state transitions between organizations are incentivized by weights). Attributing merit to people tenure transitions reduces to rating incentives for choices made e.g:
+	(*) transition from industry to academics is considered nobler than industry-to-industry.
+	(*) transition from academics to industry is majority choice 
+	(*) transition from low remuneration to high is a majority choice 
+	(*) transition from high remuneration to low is rare
+	(*) transition from employment to entrepreneur is rare and considered less risk-averse
+	(*) transition from low designation to high is majority choice
+Weights of the transitions in Weighted Automata Tenure model are decided by ranking of rarity of choices earlier. Comparing state machines (ChaoticHMM or Weighted Automata) of tenures of two social profiles is the problem of Equivalence of Regular languages (verify if two automata are similar) solved by Table filling algorithm. In the context of "original music score" merit measurement, equivalence of weighted automata of two music compositions is verifiable by Table filling.
+ 
 GIS imagery of any urban sprawl can be segmented by watershed algorithm to following categories (or by approximate color of pixels):
 	(*) Manufacturing,IT and ITES
 	(*) Residential
@@ -315,6 +329,7 @@ Extent of correlation between Rankings of Urban Sprawls by Population (mostly ca
 References:
 ----------
 1.Preferential attachment,Bose-Einstein Condensation in Networks,Double Jeopardy in business intelligence (low market share brands have low buyers and low brand loyalty - low market share brand is not necessarily of low merit) - https://en.wikipedia.org/wiki/Preferential_attachment
+2.Automata - [Hopcroft-Motwani-Ullman] - Page 157 - 4.4.2 - Table Filling algorithm for Equivalence of two automata (NFA and DFA) - If two states are not distinguished by Table filling, they are equivalent
 
 ---------------------------------------------------------------------------------------------------------
 821. (THEORY and FEATURE) Word Embedding on a Vectorspace - Spark SkipGram Log Likelihood - Text Similarity, Dissimilarity and Merit Measure of Originality - 10 May 2020,11 May 2020 - related to 762,815 and all sections on Kernel Lifting, Intrinsic Merit of Academic publications/Large Scale Visuals/Music/People, Psychoanalysis and Shell Turing Machines
