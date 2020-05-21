@@ -1,0 +1,10 @@
+----------------------------------------------------------------------------------------------------------
+Ricker - Population Dynamics - Functions, Loops, Variables, Timeseries and Plots in R - 22,23,24,25,26 May 2020 
+----------------------------------------------------------------------------------------------------------
+R along with SAS is a standard BigData analytics programming language having MATLAB capabilities. Code example Ricker.R in code/ defines a function ricker() which computes the Ricker Chaotic Biological logistic function for population dynamics (Nt * exp(r(1 - Nt/K)) a variant of [Robert May] logistic for pandemic non-linear dynamics modelling (Initial condition is per generation and K=1). The code example demonstrates assignment of variables by "<-" operator, for loop block, list initialization by ":", initialization of timeseries by ts and plotting graphics by plot(). Function block by "<- function()" has been commented which can be run as main. R scripts could be executed either by RStudio or Rscript CLI. R Graphics plot from RStudio and logs from Rscript have been committed.
+
+References:
+----------
+1.R for Beginners - [Emmanuel Paradis] - https://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf
+2.Biological Logistic - [Robert May] - http://abel.harvard.edu/archive/118r_spring_05/docs/may.pdf - equation 4
+
