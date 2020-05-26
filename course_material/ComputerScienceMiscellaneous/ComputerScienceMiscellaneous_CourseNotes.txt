@@ -439,3 +439,16 @@ A1: (*) TRIE solution is to append a Dewey decimal suffix to 6 as 6.1 - In previ
 A2: (*) List is represented as variable expression array which is lazy evaluated before and after insertion - 1+x,2+x,3+x,4+x,5+x,6+x,7+x,8+x,9+x,10+x for a global shared pointer variable x initialized to 0. All element expressions upto insertion point are evaluated for x=0. After insertion of 6+x next to 6+0, x is incremented by 1 and all element expressions after insertion point are evaluated:
 	1+0,2+0,3+0,4+0,5+0,6+0,6+1,7+1,8+1,9+1,10+1
 This is not a sequential renumbering because global increment of x is reflected at once across all elements of variable array. 
+
+----------------------------------------------------------------------------------------------------------
+29 May 2020 - Probability of Odd number of Heads in Coin Toss
+----------------------------------------------------------------------------------------------------------
+Q: A coin is tossed n times. What is the chance that the Head will present itself odd number of times (IIT-JEE 1970)
+
+A: Total number of possible toss strings from alphabet {H,T} are 2^n. Number of possibilities of odd number of Heads 
+	= number of ways of arranging odd number of Hs in toss string
+	= number of ways of choosing strings of 1H + number of ways of choosing strings of 3H + number of ways of choosing strings of 5H + ...
+	= (n,1) + (n,3) + (n,5) + ... = 2^(n-1)
+=> Probability of odd number of heads = 2^(n-1) / 2^n = 0.5
+
+For binary strings H and T are replaced by 1 and 0 and previous probability corresponds to a randomly chosen binary string to be of odd parity.
