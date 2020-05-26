@@ -17,14 +17,14 @@ They have been segregated into:
 
 ./NeuronRain/LinuxKernelAndCloud/BigdataAnalyticsCloud_CourseNotes.txt
 
-Generic Programming and Computer Science Miscellany course materials are in course_material/Programming and
-course_material/ComputerScienceMiscellaneous:
+Generic Programming and Computer Science Miscellany course materials are in course_material/Programming and course_material/ComputerScienceMiscellaneous:
 
 (*) Programming - C/C++/Java/Python/GUI (for students and Professionals)
 
 ./Programming/Python/Python_CourseNotes.txt
 ./Programming/Java/Java_CourseNotes.txt
 ./Programming/C/C_CourseNotes.txt
+./Programming/R/R_CourseNotes.txt
 ./Programming/C++/CPlusPlus_CourseNotes.txt
 ./Programming/GUI/
 
@@ -32,8 +32,7 @@ course_material/ComputerScienceMiscellaneous:
 
 ./ComputerScienceMiscellaneous/ComputerScienceMiscellaneous_CourseNotes.txt
 
-These will be updated periodically adapted for classroom teaching depending on feasibility of free courses.
-These contain copyrighted materials - author's publications and yet to be published drafts on various computer science topics.
+These will be updated periodically adapted for classroom teaching depending on feasibility of free courses. Puzzles and Questions are sourced from various textbooks, competitive examinations, bigdata usecases and refer to copyrighted materials - author's publications and yet to be published drafts on various computer science topics.
    
 NeuronRain Documentation: http://neuronrain-documentation.readthedocs.io/en/latest/
 
@@ -84,8 +83,7 @@ KingCobra64 - https://gitlab.com/shrinivaasanka/kingcobra64-github-code/blob/mas
 ------------------------------
 Pedagogy
 ------------------------------
-Course notes in GRAFIT are non-linearly written than bottom-up or top-down textbook style of teaching. This is an
- experimental pedagogy based on following monte carlo simulation:
+Course notes in GRAFIT are non-linearly written than bottom-up or top-down textbook style of teaching. This is an experimental pedagogy based on following monte carlo simulation:
 (*) Concepts/topics are vertices of a universal graph of concepts/topics. 
 (*) By random sampling and exposition of concept vertices, related neighbouring concepts are also touched.
 (*) Eventually high percentage of Topics in the Graph are traversed after lot of monte carlo sampling.
