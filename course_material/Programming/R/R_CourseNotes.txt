@@ -1,3 +1,16 @@
+/*
+##############################################################################################################################################
+#<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+###############################################################################################################################################
+#Course Authored By:
+#-----------------------------------------------------------------------------------------------------------
+#K.Srinivasan
+#NeuronRain Documentation and Licensing: http://neuronrain-documentation.readthedocs.io/en/latest/
+#Personal website(research): https://sites.google.com/site/kuja27/
+#-----------------------------------------------------------------------------------------------------------
+##############################################################################################################################################
+*/
+
 ----------------------------------------------------------------------------------------------------------
 Ricker - Population Dynamics - Functions, Loops, Variables, Timeseries and Plots in R - 22,23,24,25,26 May 2020 
 ----------------------------------------------------------------------------------------------------------
@@ -8,3 +21,25 @@ References:
 1.R for Beginners - [Emmanuel Paradis] - https://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf
 2.Biological Logistic - [Robert May] - http://abel.harvard.edu/archive/118r_spring_05/docs/may.pdf - equation 4
 
+----------------------------------------------------------------------------------------------------------
+Statistics in R - Data Frames,Factors,Histograms,Fitting a Probability Distribution - 27 May 2020
+----------------------------------------------------------------------------------------------------------
+R is the prominent choice for data science because of immense builtins for statistical analysis. Contrived Code example FileIOVectStats.R demonstrates analysis of CoronaVirus2019 dataset from https://www.worldometers.info/coronavirus/ by computing following metrics from it:
+	- Histogram
+	- ECDF - Cumulative Density Function
+	- Stem
+	- Rug
+	- Find the correlation to Bell curve - Shapiro-Wilk test
+	- Find the correlation to Bell curve - Kolmogorov-Smirnov (KS) test
+	- T-two sample test
+	- Mean,Median,Quantiles summary
+COVID2019 data requires preprocessing of the text data and R script executes the  following:
+	- attaching a dataframe by attach()
+	- instantiate Data Frame after reading the data file by read.table()
+	- summary() from dataframe
+	- accessing each field of read.table() dataframe by [[]] operator
+	- converting string fields to numeric by as.numeric()
+	- splitting sample into two for T-test
+	- instantiate a factor object (which categorizes the data) 
+Statistical tests - Shapiro,KS,T-test - try to find the proximity of the dataset to normal distribution.
+Histogram bucketization of COVID2019 shows an initial huge bucket followed by almost equal sized buckets.
