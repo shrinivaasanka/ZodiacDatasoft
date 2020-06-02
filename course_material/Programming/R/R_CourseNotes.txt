@@ -12,7 +12,7 @@
 */
 
 ----------------------------------------------------------------------------------------------------------
-Ricker - Population Dynamics - Functions, Loops, Variables, Timeseries and Plots in R - 22,23,24,25,26 May 2020 
+823. (THEORY and FEATURE) People Analytics - Social Network and Urban Sprawl Analytics - Ricker - Population Dynamics - Functions, Loops, Variables, Timeseries and Plots in R - 22,23,24,25,26 May 2020, 2,3,4 June 2020 - related to 487,572,770
 ----------------------------------------------------------------------------------------------------------
 R along with SAS is a standard BigData analytics programming language having MATLAB capabilities. Code example Ricker.R in code/ defines a function ricker() which computes the Ricker Chaotic Biological logistic function for population dynamics (Nt * exp(r(1 - Nt/K)) a variant of [Robert May] logistic for pandemic non-linear dynamics modelling (Initial condition is per generation and K=1). The code example demonstrates assignment of variables by "<-" operator, for loop block, list initialization by ":", initialization of timeseries by ts and plotting graphics by plot(). Function block by "<- function()" has been commented which can be run as main. R scripts could be executed either by RStudio or Rscript CLI. R Graphics plot from RStudio and logs from Rscript have been committed.
 
@@ -22,7 +22,7 @@ References:
 2.Biological Logistic - [Robert May] - http://abel.harvard.edu/archive/118r_spring_05/docs/may.pdf - equation 4
 
 ----------------------------------------------------------------------------------------------------------
-Statistics in R - Data Frames,Factors,Histograms,Fitting a Probability Distribution - 27 May 2020
+824. (FEATURE) People Analytics - Social Network Analysis - CoronaVirus2019 analyzer - Statistics in R - Data Frames,Factors,Histograms,Fitting a Probability Distribution - 27 May 2020, 2,3,4 June 2020 - related to 487,572,770
 ----------------------------------------------------------------------------------------------------------
 R is the prominent choice for data science because of immense builtins for statistical analysis. Contrived Code example FileIOVectStats.R demonstrates analysis of CoronaVirus2019 dataset from https://www.worldometers.info/coronavirus/ by computing following metrics from it:
 	- Histogram
@@ -43,3 +43,12 @@ COVID2019 data requires preprocessing of the text data and R script executes the
 	- instantiate a factor object (which categorizes the data) 
 Statistical tests - Shapiro,KS,T-test - try to find the proximity of the dataset to normal distribution.
 Histogram bucketization of COVID2019 shows an initial huge bucket followed by almost equal sized buckets.
+
+----------------------------------------------------------------------------------------------------------
+825. (THEORY and FEATURE) People Analytics - Social Network Analysis - CoronaVirus2019 analyzer - Correlation coefficients in R - Concatenation of Vectors, c() function, Vector arithmetic, Correlation of two datasets - related to 487,572,770 - 2,3,4 June 2020
+----------------------------------------------------------------------------------------------------------
+R provides various facilities for creating sequences - seq(), array(), c(), data.frame(), vector(). Code example VerhulstPearlReed.R analyzes the correlation between a Chaotic sequence from Verhulst-Pearl-Reed logistic law (and biological logistic) and CoronaVirus2019 dataset, both of same length. Spread of memes,fads,epidemics and diffusion of concepts in community is a Chaotic process which can be modelled by Erdos-Renyi random graphs and Cellular automata. Though Chaotic fractal datasets (Mandelbrot) are undecidable, from social network analysis literature it is evident that emergence of giant components in scalefree (Pareto 80-20 rule - number of vertices of degree r is propertional to 1/r^k - high degree vertices are least and low degree vertices are numerous) random graphs are inevitable. Approximate correlation to onset of Chaos could be deciphered by varying initial condition and bifurcation parameter(lambda) of logistic and finding maximum correlation to CoronaVirus2019 dataset. COVID2019 dataset is scaled to decimals in interval [0,1] by vector division feature of R which applies division by maximum element to each element of sequence. Vector division could also be performed on dataframe objects (commented). Scale-normalized dataset is then correlated to Chaotic sequence by Kendall,Spearman,Pearson coefficients (~45% maximum). Concatenation is done by c() function within for loop which reassigns the vector after concatenating next element. Double precision arithmetic has been coerced. Factor objects of both logistics are printed which show the levels of data. Graphics are plotted by timeseries plot() function (most recent to the left) - Chaotic sequence oscillates heavily by period doubling. Low p-value implies null hypothesis (no correlation) can be rejected with high confidence. Maximum correlation occurs at lambda=4.0 and initial condition=0.00000000000001 and for increasing lambda both logistics coincide (resemble a heaviside step function). Return value is a concatenated vector by c().
+
+References:
+-----------
+825.1 R and S documentation - https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/c 
