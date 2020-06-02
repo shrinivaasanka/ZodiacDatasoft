@@ -452,3 +452,43 @@ A: Total number of possible toss strings from alphabet {H,T} are 2^n. Number of 
 => Probability of odd number of heads = 2^(n-1) / 2^n = 0.5
 
 For binary strings H and T are replaced by 1 and 0 and previous probability corresponds to a randomly chosen binary string to be of odd parity.
+
+---------------------------------------------------------------------------------------------------------
+2,3,4 June 2020 - Union of Probabilities, Bayes Rule, Venn Diagrams, Pairwise and Mutual independence
+---------------------------------------------------------------------------------------------------------
+Q: Three outcomes of an experiment are w1,w2 and w3 such that w1 is twice as likely as w2 which is twice
+likely as w3. What are the probabilities of w1,w2 and w3  (UPSC Civil Services - IAS(Main) - 2003)
+
+A: P(w1) = 2P(w2), P(w2) = 2P(w3)
+
+Straightforward solution neglecting dependence of outcomes:
+-----------------------------------------------------------
+
+4P(w3) + 2P(w3) + P(w3) = 1
+P(w3) = 1/7, P(w2) = 2/7 and P(w1) = 4/7
+
+Dependent events (if "as likely as" implies dependence):
+------------------------------------------------------
+=> By union bound for dependent events w1,w2 and w3, P(w1 U w2 U w3) = P(w1) + P(w2) + P(w3) - P(w1 /\ w2 /\ w3) = 1
+
+7P(w3) - P(w1 /\ w2 /\ w3) = 1
+
+By Bayes Rule for Total Probability if W is the total outcome event space, probability of total outcome:
+	P(W) = Sum(P(W/Wi)*P(Wi))
+from which per event conditional probability is derived as:
+	P(Wi/W) = P(W /\ Wi)/P(W)
+
+By General Multiplication Chain Rule for dependent events:
+	P(w1 /\ w2 /\ w3) = P(w1 / (w2 /\ w3)) * P(w2 / w3) * P(w3)
+
+=> 7P(w3) - P(w1 / (w2 /\ w3)) * P(w2 / w3) * P(w3) = 1 solving which requires knowledge of conditional probabilities
+
+P(w1 /\ w2 /\ w3) is the intersection of three circles for P(w1),P(w2) and P(w3) in Venn Diagram - overlap of circles is the dependence of events.
+
+Independent events - Pairwise and Mutual:
+------------------------------------------
+if the outcomes of experiment are mutually independent, P(w1 /\ w2 /\ w3) = P(w1)P(w2)P(w3) = 8P(w3) = 8/7 > 1 for P(w3) = 1/7 implying outcomes are not mutually independent (which is stricter than pairwise independence for w1-w2, w2-w3 and w1-w3)
+
+References:
+-----------
+1.Probability and Statistics with Reliability,Queueing and Computer Science Applications - [Kishor Shridharbhai Trivedi] - Chapter 1 - Page 33 - Problem 4 - General Multiplication Rule (GMR)
