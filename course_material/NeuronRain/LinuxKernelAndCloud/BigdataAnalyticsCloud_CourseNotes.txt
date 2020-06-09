@@ -371,8 +371,8 @@ There exists a fine division in quantifying merit of a natural language text and
 
 References:
 ----------
-826.1 Coq Proof Assistant and Four Color Theorem - https://www.ams.org/notices/200811/tx081101382p.pdf 
-826.2 Proof Nets - Sequent Calculus and Girard Geometry of Interactions - https://en.wikipedia.org/wiki/Proof_net
-826.3 E Theorem prover - https://wwwlehre.dhbw-stuttgart.de/~sschulz/E/E.html
-826.4 Concept Cloud Wordle example for publications - https://ui.adsabs.harvard.edu/search/q=author%3A%22Shrinivaasan%2C%20Ka.%22&sort=date%20desc%2C%20bibcode%20desc/concept-cloud - prominent concepts in a set of publications are highlighted
-826.5 Equivalence of FOL statements - Biconditional - http://iiitdm.ac.in/old/Faculty_Teaching/Sadagopan/pdf/Discrete/Logic.pdf - Indian Institute of Information Technology Design and Manufacturing, Kancheepuram, Chennai 600 127, India
+827.1 Coq Proof Assistant and Four Color Theorem - https://www.ams.org/notices/200811/tx081101382p.pdf 
+827.2 Proof Nets - Sequent Calculus and Girard Geometry of Interactions - https://en.wikipedia.org/wiki/Proof_net
+827.3 E Theorem prover - https://wwwlehre.dhbw-stuttgart.de/~sschulz/E/E.html
+827.4 Concept Cloud Wordle example for publications - https://ui.adsabs.harvard.edu/search/q=author%3A%22Shrinivaasan%2C%20Ka.%22&sort=date%20desc%2C%20bibcode%20desc/concept-cloud - prominent concepts in a set of publications are highlighted
+827.5 Equivalence of FOL statements - Biconditional - http://iiitdm.ac.in/old/Faculty_Teaching/Sadagopan/pdf/Discrete/Logic.pdf - Indian Institute of Information Technology Design and Manufacturing, Kancheepuram, Chennai 600 127, India
