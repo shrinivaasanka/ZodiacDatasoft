@@ -1,0 +1,378 @@
+2020-06-09 16:00:58 WARN  Utils:66 - Your hostname, HCL resolves to a loopback address: 127.0.1.1; using 192.168.1.173 instead (on interface wlan0)
+2020-06-09 16:00:58 WARN  Utils:66 - Set SPARK_LOCAL_IP if you need to bind to another address
+2020-06-09 16:00:59 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-06-09 16:01:01 INFO  SparkContext:54 - Running Spark version 2.4.0
+2020-06-09 16:01:01 INFO  SparkContext:54 - Submitted application: Publications_Word2Vec
+2020-06-09 16:01:01 INFO  SecurityManager:54 - Changing view acls to: root
+2020-06-09 16:01:01 INFO  SecurityManager:54 - Changing modify acls to: root
+2020-06-09 16:01:01 INFO  SecurityManager:54 - Changing view acls groups to: 
+2020-06-09 16:01:01 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2020-06-09 16:01:01 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+2020-06-09 16:01:02 INFO  Utils:54 - Successfully started service 'sparkDriver' on port 35249.
+2020-06-09 16:01:02 INFO  SparkEnv:54 - Registering MapOutputTracker
+2020-06-09 16:01:02 INFO  SparkEnv:54 - Registering BlockManagerMaster
+2020-06-09 16:01:02 INFO  BlockManagerMasterEndpoint:54 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2020-06-09 16:01:02 INFO  BlockManagerMasterEndpoint:54 - BlockManagerMasterEndpoint up
+2020-06-09 16:01:02 INFO  DiskBlockManager:54 - Created local directory at /tmp/blockmgr-21b0b5d8-0379-4398-8c49-480205775350
+2020-06-09 16:01:02 INFO  MemoryStore:54 - MemoryStore started with capacity 413.9 MB
+2020-06-09 16:01:02 INFO  SparkEnv:54 - Registering OutputCommitCoordinator
+2020-06-09 16:01:02 INFO  log:192 - Logging initialized @6362ms
+2020-06-09 16:01:02 INFO  Server:351 - jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+2020-06-09 16:01:02 INFO  Server:419 - Started @6584ms
+2020-06-09 16:01:02 INFO  AbstractConnector:278 - Started ServerConnector@14f1a82{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2020-06-09 16:01:02 INFO  Utils:54 - Successfully started service 'SparkUI' on port 4040.
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@602e22{/jobs,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1b2c897{/jobs/json,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1c40c93{/jobs/job,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@e8a185{/jobs/job/json,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1732bbf{/stages,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@ce1ed6{/stages/json,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@443659{/stages/stage,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@161305e{/stages/stage/json,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@243055{/stages/pool,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@144442d{/stages/pool/json,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1b7c86e{/storage,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@118fb86{/storage/json,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@69dca8{/storage/rdd,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@17396a4{/storage/rdd/json,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@bad69c{/environment,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@76d286{/environment/json,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@acc8fc{/executors,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@191b87b{/executors/json,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1139f23{/executors/threadDump,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1159125{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@19c4013{/static,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@dfdcb3{/,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1602ce5{/api,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1877d5b{/jobs/job/kill,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1cc3aef{/stages/stage/kill,null,AVAILABLE,@Spark}
+2020-06-09 16:01:02 INFO  SparkUI:54 - Bound SparkUI to 0.0.0.0, and started at http://192.168.1.173:4040
+2020-06-09 16:01:03 INFO  Executor:54 - Starting executor ID driver on host localhost
+2020-06-09 16:01:03 INFO  Utils:54 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 55440.
+2020-06-09 16:01:03 INFO  NettyBlockTransferService:54 - Server created on 192.168.1.173:55440
+2020-06-09 16:01:03 INFO  BlockManager:54 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2020-06-09 16:01:03 INFO  BlockManagerMaster:54 - Registering BlockManager BlockManagerId(driver, 192.168.1.173, 55440, None)
+2020-06-09 16:01:03 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 192.168.1.173:55440 with 413.9 MB RAM, BlockManagerId(driver, 192.168.1.173, 55440, None)
+2020-06-09 16:01:03 INFO  BlockManagerMaster:54 - Registered BlockManager BlockManagerId(driver, 192.168.1.173, 55440, None)
+2020-06-09 16:01:03 INFO  BlockManager:54 - Initialized BlockManager: BlockManagerId(driver, 192.168.1.173, 55440, None)
+2020-06-09 16:01:03 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@fc2580{/metrics/json,null,AVAILABLE,@Spark}
+2020-06-09 16:01:04 INFO  SharedState:54 - Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/media/Krishna_iResearch_/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/spark-warehouse').
+2020-06-09 16:01:04 INFO  SharedState:54 - Warehouse path is 'file:/media/Krishna_iResearch_/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/spark-warehouse'.
+2020-06-09 16:01:04 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@71c47a{/SQL,null,AVAILABLE,@Spark}
+2020-06-09 16:01:04 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@927376{/SQL/json,null,AVAILABLE,@Spark}
+2020-06-09 16:01:04 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@527b95{/SQL/execution,null,AVAILABLE,@Spark}
+2020-06-09 16:01:04 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@19f1234{/SQL/execution/json,null,AVAILABLE,@Spark}
+2020-06-09 16:01:04 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1c36cf0{/static/sql,null,AVAILABLE,@Spark}
+2020-06-09 16:01:05 INFO  StateStoreCoordinatorRef:54 - Registered StateStoreCoordinator endpoint
+2020-06-09 16:01:06 WARN  SizeEstimator:66 - Failed to check whether UseCompressedOops is set; assuming yes
+2020-06-09 16:01:11 INFO  FileSourceStrategy:54 - Pruning directories with: 
+2020-06-09 16:01:11 INFO  FileSourceStrategy:54 - Post-Scan Filters: 
+2020-06-09 16:01:11 INFO  FileSourceStrategy:54 - Output Data Schema: struct<value: string>
+2020-06-09 16:01:11 INFO  FileSourceScanExec:54 - Pushed Filters: 
+2020-06-09 16:01:12 INFO  CodeGenerator:54 - Code generated in 658.863348 ms
+2020-06-09 16:01:13 INFO  MemoryStore:54 - Block broadcast_0 stored as values in memory (estimated size 255.0 KB, free 413.7 MB)
+2020-06-09 16:01:13 INFO  MemoryStore:54 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 23.4 KB, free 413.7 MB)
+2020-06-09 16:01:13 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on 192.168.1.173:55440 (size: 23.4 KB, free: 413.9 MB)
+2020-06-09 16:01:13 INFO  SparkContext:54 - Created broadcast 0 from javaToPython at NativeMethodAccessorImpl.java:0
+2020-06-09 16:01:13 INFO  FileSourceScanExec:54 - Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+2020-06-09 16:01:13 INFO  SparkContext:54 - Starting job: reduce at /media/Krishna_iResearch_/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:30
+2020-06-09 16:01:13 INFO  DAGScheduler:54 - Got job 0 (reduce at /media/Krishna_iResearch_/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:30) with 1 output partitions
+2020-06-09 16:01:13 INFO  DAGScheduler:54 - Final stage: ResultStage 0 (reduce at /media/Krishna_iResearch_/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:30)
+2020-06-09 16:01:13 INFO  DAGScheduler:54 - Parents of final stage: List()
+2020-06-09 16:01:13 INFO  DAGScheduler:54 - Missing parents: List()
+2020-06-09 16:01:13 INFO  DAGScheduler:54 - Submitting ResultStage 0 (PythonRDD[4] at reduce at /media/Krishna_iResearch_/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:30), which has no missing parents
+2020-06-09 16:01:14 INFO  MemoryStore:54 - Block broadcast_1 stored as values in memory (estimated size 11.6 KB, free 413.6 MB)
+2020-06-09 16:01:14 INFO  MemoryStore:54 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 6.7 KB, free 413.6 MB)
+2020-06-09 16:01:14 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on 192.168.1.173:55440 (size: 6.7 KB, free: 413.9 MB)
+2020-06-09 16:01:14 INFO  SparkContext:54 - Created broadcast 1 from broadcast at DAGScheduler.scala:1161
+2020-06-09 16:01:14 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 0 (PythonRDD[4] at reduce at /media/Krishna_iResearch_/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:30) (first 15 tasks are for partitions Vector(0))
+2020-06-09 16:01:14 INFO  TaskSchedulerImpl:54 - Adding task set 0.0 with 1 tasks
+2020-06-09 16:01:14 INFO  TaskSetManager:54 - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 8441 bytes)
+2020-06-09 16:01:14 INFO  Executor:54 - Running task 0.0 in stage 0.0 (TID 0)
+2020-06-09 16:01:15 INFO  FileScanRDD:54 - Reading File path: file:///media/Krishna_iResearch_/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec_Bibliography.txt, range: 0-8485, partition values: [empty row]
+2020-06-09 16:01:15 INFO  CodeGenerator:54 - Code generated in 62.495372 ms
+2020-06-09 16:01:15 INFO  ContextCleaner:54 - Cleaned accumulator 2
+2020-06-09 16:01:15 INFO  ContextCleaner:54 - Cleaned accumulator 3
+2020-06-09 16:01:15 INFO  ContextCleaner:54 - Cleaned accumulator 4
+2020-06-09 16:01:15 INFO  PythonRunner:54 - Times: total = 1460, boot = 629, init = 601, finish = 230
+2020-06-09 16:01:16 INFO  Executor:54 - Finished task 0.0 in stage 0.0 (TID 0). 18687 bytes result sent to driver
+2020-06-09 16:01:16 INFO  TaskSetManager:54 - Finished task 0.0 in stage 0.0 (TID 0) in 1878 ms on localhost (executor driver) (1/1)
+2020-06-09 16:01:16 INFO  TaskSchedulerImpl:54 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2020-06-09 16:01:16 INFO  PythonAccumulatorV2:54 - Connected to AccumulatorServer at host: 127.0.0.1 port: 51708
+2020-06-09 16:01:16 INFO  DAGScheduler:54 - ResultStage 0 (reduce at /media/Krishna_iResearch_/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:30) finished in 2.106 s
+2020-06-09 16:01:16 INFO  DAGScheduler:54 - Job 0 finished: reduce at /media/Krishna_iResearch_/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:30, took 2.266362 s
+('words1:', [['@article{k2010few,'], ['title={Few'], ['Algorithms'], ['for'], ['ascertaining'], ['merit'], ['of'], ['a'], ['document'], ['and'], ['their'], ['applications},'], ['author={K'], ['Shrinivaasan,'], ['Balaraman'], ['Ravindran,'], ['Madhavan'], ['Mukund},'], ['journal={arXiv'], ['preprint'], ['arXiv:1006.4458},'], ['year={2010}'], ['}'], ['@article{shrinivaasan2011decidability,'], ['title={Decidability'], ['of'], ['Existence'], ['and'], ['Construction'], ['of'], ['a'], ['Complement'], ['of'], ['a'], ['given'], ['Function},'], ['author={Shrinivaasan,'], ['K},'], ['journal={arXiv'], ['preprint'], ['arXiv:1106.4102},'], ['year={2011},'], ['publisher={acknowledgement:'], ['advised'], ['by'], ['Meena'], ['Mahajan,'], ['Institute'], ['of'], ['Mathematical~\xe2\x80\xa6}'], ['}'], ['@inproceedings{k2010update,'], ['title={Update'], ['summarization'], ['with'], ['Interview'], ['Algorithm'], ['-'], ['http://www.nist.gov/tac/publications/2010/participant.papers/CMI\\_IIT.proceedings.pdf},'], ['author={K'], ['Shrinivaasan,'], ['Balaraman'], ['Ravindran,'], ['Madhavan'], ['Mukund},'], ['booktitle={NIST'], ['TAC'], ['2010},'], ['year={2010},'], ['organization={NIST}'], ['}'], ['@article{shrinivaasan2013indepth,'], ['title={Indepth'], ['analysis'], ['of'], ['a'], ['variant'], ['of'], ['Majority'], ['Voting'], ['and'], ['relation'], ['to'], ['Zermelo-Fraenkel'], ['Set'], ['Theory'], ['With'], ['Axiom'], ['of'], ['Choice'], ['(ZFC)},'], ['author={Shrinivaasan,'], ['Ka},'], ['year={2013}'], ['}'], ['Decidability'], ['of'], ['Existence'], ['and'], ['Construction'], ['of'], ['a'], ['Complement'], ['of'], ['a'], ['given'], ['Function'], ['Ka.'], ['Shrinivaasan'], ['Mathematics,'], ['Computer'], ['Science'], ['ArXiv'], ['2011'], ['This'], ['article'], ['de'], ['nes'], ['a'], ['complement'], ['of'], ['a'], ['function'], ['and'], ['conditions'], ['for'], ['existence'], ['of'], ['such'], ['a'], ['complement'], ['function'], ['and'], ['presents'], ['few'], ['algorithms'], ['to'], ['construct'], ['a'], ['complement.'], ['Cite'], ['Save'], ['Feed'], ['TAC'], ['2010'], ['Summarization'], ['Track'], ['-'], ['Update'], ['Summarization'], ['with'], ['Interview'], ['Algorithm'], ['Ka.'], ['Shrinivaasan'], ['Computer'], ['Science'], ['TAC'], ['2010'], ['Existing'], ['models'], ['for'], ['ranking'], ['documents(mostly'], ['in'], ['world'], ['wide'], ['web)'], ['are'], ['prestige'], ['based.'], ['In'], ['this'], ['article,'], ['alternative'], ['graph-theoretic'], ['schemes'], ['to'], ['objectively'], ['judge'], ['the'], ['merit'], ['of'], ['a'], ['document'], ['independent'], ['of\xe2\x80\xa6'], ['Continue'], ['Reading'], ['View'], ['PDF'], ['Cite'], ['Save'], ['Feed'], ['Few'], ['Algorithms'], ['for'], ['ascertaining'], ['merit'], ['of'], ['a'], ['document'], ['and'], ['their'], ['applications'], ['Ka.'], ['Shrinivaasan'], ['Computer'], ['Science'], ['ArXiv'], ['2010'], ['(First'], ['Publication:'], ['23'], ['June'], ['2010)'], ['Existing'], ['models'], ['for'], ['ranking'], ['documents(mostly'], ['in'], ['world'], ['wide'], ['web)'], ['are'], ['prestige'], ['based.'], ['In'], ['this'], ['article,'], ['three'], ['algorithms'], ['to'], ['objectively'], ['judge'], ['the'], ['merit'], ['of'], ['a'], ['document'], ['are'], ['proposed-1)'], ['Citation'], ['graph\xe2\x80\xa6'], ['Continue'], ['Reading'], ['@article{DBLP:journals/corr/abs-1106-4102,'], ['author'], ['='], ['{Ka.'], ['Shrinivaasan},'], ['title'], ['='], ['{Decidability'], ['of'], ['Existence'], ['and'], ['Construction'], ['of'], ['a'], ['Complement'], ['of'], ['a'], ['given'], ['Function},'], ['journal'], ['='], ['{CoRR},'], ['volume'], ['='], ['{abs/1106.4102},'], ['year'], ['='], ['{2011},'], ['url'], ['='], ['{http://arxiv.org/abs/1106.4102},'], ['archivePrefix'], ['='], ['{arXiv},'], ['eprint'], ['='], ['{1106.4102},'], ['timestamp'], ['='], ['{Mon,'], ['13'], ['Aug'], ['2018'], ['01:00:00'], ['+0200},'], ['biburl'], ['='], ['{https://dblp.org/rec/journals/corr/abs-1106-4102.bib},'], ['bibsource'], ['='], ['{dblp'], ['computer'], ['science'], ['bibliography,'], ['https://dblp.org}'], ['}'], ['@inproceedings{DBLP:conf/tac/Shrinivaasan10,'], ['author'], ['='], ['{Ka.'], ['Shrinivaasan},'], ['title'], ['='], ['{{TAC}'], ['2010'], ['Summarization'], ['Track'], ['-'], ['Update'], ['Summarization'], ['with'], ['Interview'], ['Algorithm},'], ['booktitle'], ['='], ['{Proceedings'], ['of'], ['the'], ['Third'], ['Text'], ['Analysis'], ['Conference,'], ['{TAC}'], ['2010,'], ['Gaithersburg,'], ['Maryland,'], ['USA,'], ['November'], ['15-16,'], ['2010},'], ['year'], ['='], ['{2010},'], ['crossref'], ['='], ['{DBLP:conf/tac/2010},'], ['url'], ['='], ['{https://tac.nist.gov/publications/2010/participant.papers/CMI\\_IIT.proceedings.pdf},'], ['timestamp'], ['='], ['{Tue,'], ['20'], ['Aug'], ['2019'], ['13:25:20'], ['+0200},'], ['biburl'], ['='], ['{https://dblp.org/rec/conf/tac/Shrinivaasan10.bib},'], ['bibsource'], ['='], ['{dblp'], ['computer'], ['science'], ['bibliography,'], ['https://dblp.org}'], ['}'], ['@article{DBLP:journals/corr/abs-1006-4458,'], ['author'], ['='], ['{Ka.'], ['Shrinivaasan},'], ['title'], ['='], ['{Few'], ['Algorithms'], ['for'], ['ascertaining'], ['merit'], ['of'], ['a'], ['document'], ['and'], ['their'], ['applications},'], ['journal'], ['='], ['{CoRR},'], ['volume'], ['='], ['{abs/1006.4458},'], ['year'], ['='], ['{2010},'], ['url'], ['='], ['{http://arxiv.org/abs/1006.4458},'], ['archivePrefix'], ['='], ['{arXiv},'], ['eprint'], ['='], ['{1006.4458},'], ['timestamp'], ['='], ['{Mon,'], ['13'], ['Aug'], ['2018'], ['01:00:00'], ['+0200},'], ['biburl'], ['='], ['{https://dblp.org/rec/journals/corr/abs-1006-4458.bib},'], ['bibsource'], ['='], ['{dblp'], ['computer'], ['science'], ['bibliography,'], ['https://dblp.org}'], ['}'], ['@proceedings{DBLP:conf/tac/2010,'], ['title'], ['='], ['{Proceedings'], ['of'], ['the'], ['Third'], ['Text'], ['Analysis'], ['Conference,'], ['{TAC}'], ['2010,'], ['Gaithersburg,'], ['Maryland,'], ['USA,'], ['November'], ['15-16,'], ['2010},'], ['publisher'], ['='], ['{{NIST}},'], ['year'], ['='], ['{2010},'], ['url'], ['='], ['{https://tac.nist.gov/publications/2010/papers.html},'], ['timestamp'], ['='], ['{Tue,'], ['20'], ['Aug'], ['2019'], ['13:25:20'], ['+0200},'], ['biburl'], ['='], ['{https://dblp.org/rec/conf/tac/2010.bib},'], ['bibsource'], ['='], ['{dblp'], ['computer'], ['science'], ['bibliography,'], ['https://dblp.org}'], ['}'], ['6/9/2020'], ['ka'], ['shrinivaasan'], ['-'], ['Search'], ['Results'], ['|'], ['Microsoft'], ['Academic'], ['Microsoft'], ['Academic'], ['\xee\xa4\x8e'], ['ka\xc2\xa0shrinivaasan'], ['\xee\xa4\x8c'], ['\xee\xa4\x8d'], ['Sign\xc2\xa0up\xc2\xa0/\xc2\xa0'], ['Sign\xc2\xa0in'], ['CLEAR\xc2\xa0ALL'], ['FILTER\xc2\xa0BY:\xc2\xa0\xee\xa4\x92'], ['\xee\xa4\xb0'], ['\xc2\xa0Time'], ['\xee\xa4\x91'], ['\xef\x83\x83'], ['Top\xc2\xa0Topics'], ['\xee\xa4\x91'], ['\xef\x87\xaa'], ['Publication\xc2\xa0Types'], ['\xee\xa4\x91'], ['\xef\x80\x87'], ['Top\xc2\xa0Authors'], ['\xee\xa4\x91'], ['\xef\x80\xad'], ['Top\xc2\xa0Journals'], ['\xee\xa4\x91'], ['\xef\x80\x87'], ['\xc2\xa0Ka.\xc2\xa0Shrinivaasan'], ['PUBLICATIONS\xc2\xa0(2)\xc2\xa0'], ['\xee\xa4\x8c'], ['CITATIONS*\xc2\xa0(0)'], ['Authors\xc2\xa0with\xc2\xa0similar\xc2\xa0name'], ['\xef\x80\x87'], ['Ka.\xc2\xa0Shrinivaasan'], ['PUBLICATIONS\xc2\xa0(1)\xc2\xa0'], ['\xee\xa4\x8c'], ['CITATIONS*\xc2\xa0(0)'], ['Showing\xc2\xa01\xc2\xad3*\xc2\xa0of\xc2\xa03\xc2\xa0(2.102\xc2\xa0seconds)'], ['VIEW'], ['\xee\xa4\xa5'], ['\xee\xa4\xa6'], ['\xee\xa4\xa7'], ['SORT\xc2\xa0BY'], ['SALIENCY\xc2\xa0'], ['\xee\xa4\x93'], ['\xef\x87\xaa'], ['\xc2\xa0Decidability\xc2\xa0of\xc2\xa0Existence\xc2\xa0and\xc2\xa0Construction\xc2\xa0of\xc2\xa0a'], ['Complement\xc2\xa0of\xc2\xa0a\xc2\xa0given\xc2\xa0Function'], ['0\xc2\xa0citations*'], ['2011'], ['Ka.\xc2\xa0Shrinivaasan'], ['\xef\x83\x83'], ['Mathematics'], ['\xef\x83\x83'], ['Discrete\xc2\xa0mathematics'], ['\xef\x83\x83'], ['Decidability'], ['\xee\xa4\xa8'], ['\xee\xa4\x8d'], ['Feedback'], ['\xee\xa4\xac'], ['https://academic.microsoft.com/search?q=ka%20shrinivaasan&qe=%40%40%40Composite(AA.AuN%3D%3D%27ka%20shrinivaasa\xe2\x80\xa6'], ['1/2'], ['\x0c6/9/2020'], ['ka'], ['shrinivaasan'], ['-'], ['Search'], ['Results'], ['|'], ['Microsoft'], ['Academic'], ['\xef\x87\xaa'], ['\xc2\xa0TAC\xc2\xa02010\xc2\xa0Summarization\xc2\xa0Track\xc2\xa0\xc2\xad\xc2\xa0Update'], ['Summarization\xc2\xa0with\xc2\xa0Interview\xc2\xa0Algorithm.'], ['0\xc2\xa0citations*'], ['2010\xc2\xa0THEORY\xc2\xa0AND\xc2\xa0APPLICATIONS\xc2\xa0OF'], ['CATEGORIES'], ['Ka.\xc2\xa0Shrinivaasan'], ['\xef\x83\x83'], ['Information\xc2\xa0retrieval'], ['\xef\x83\x83'], ['Data\xc2\xa0mining'], ['\xef\x83\x83'], ['Computer\xc2\xa0science'], ['View\xc2\xa0More\xc2\xa0(1+)\xc2\xa0\xee\xa4\xb4'], ['\xee\xa4\xab'], ['\xee\xa4\xac'], ['\xef\x87\xaa'], ['\xc2\xa0Few\xc2\xa0Algorithms\xc2\xa0for\xc2\xa0ascertaining\xc2\xa0merit\xc2\xa0of\xc2\xa0a'], ['document\xc2\xa0and\xc2\xa0their\xc2\xa0applications'], ['\xee\xa4\xa8'], ['\xee\xa4\x8d'], ['0\xc2\xa0citations*'], ['2010'], ['Ka.\xc2\xa0Shrinivaasan'], ['\xef\x83\x83'], ['World\xc2\xa0Wide\xc2\xa0Web'], ['\xef\x83\x83'], ['Information\xc2\xa0retrieval'], ['\xef\x83\x83'], ['Computer\xc2\xa0science'], ['\xee\xa4\xab'], ['\xee\xa4\xac'], ['\xee\xa4\xa8'], ['\xee\xa4\x8d'], ['FAQ'], ['Contact\xc2\xa0Us'], ['Privacy\xc2\xa0and\xc2\xa0Cookies'], ['Terms\xc2\xa0of\xc2\xa0Use'], ['Trademarks'], ['Specific\xc2\xa0Terms'], ['*\xc2\xa0Estimated\xc2\xa0Count'], ['\xc2\xa9\xc2\xa02020\xc2\xa0Microsoft'], ['https://academic.microsoft.com/search?q=ka%20shrinivaasan&qe=%40%40%40Composite(AA.AuN%3D%3D%27ka%20shrinivaasa\xe2\x80\xa6'], ['2/2'], ['\x0c'], ['@ARTICLE{2011arXiv1106.4102S,'], ['author'], ['='], ['{{Shrinivaasan},'], ['Ka.},'], ['title'], ['='], ['"{Decidability'], ['of'], ['Existence'], ['and'], ['Construction'], ['of'], ['a'], ['Complement'], ['of'], ['a'], ['given'], ['Function}",'], ['journal'], ['='], ['{arXiv'], ['e-prints},'], ['keywords'], ['='], ['{Computer'], ['Science'], ['-'], ['Logic'], ['in'], ['Computer'], ['Science},'], ['year'], ['='], ['2011,'], ['month'], ['='], ['jun,'], ['eid'], ['='], ['{arXiv:1106.4102},'], ['pages'], ['='], ['{arXiv:1106.4102},'], ['archivePrefix'], ['='], ['{arXiv},'], ['eprint'], ['='], ['{1106.4102},'], ['primaryClass'], ['='], ['{cs.LO},'], ['adsurl'], ['='], ['{https://ui.adsabs.harvard.edu/abs/2011arXiv1106.4102S},'], ['adsnote'], ['='], ['{Provided'], ['by'], ['the'], ['SAO/NASA'], ['Astrophysics'], ['Data'], ['System}'], ['}'], ['@ARTICLE{2010arXiv1006.4458S,'], ['author'], ['='], ['{{Shrinivaasan},'], ['Ka.},'], ['title'], ['='], ['"{Few'], ['Algorithms'], ['for'], ['ascertaining'], ['merit'], ['of'], ['a'], ['document'], ['and'], ['their'], ['applications}",'], ['journal'], ['='], ['{arXiv'], ['e-prints},'], ['keywords'], ['='], ['{Computer'], ['Science'], ['-'], ['Information'], ['Retrieval},'], ['year'], ['='], ['2010,'], ['month'], ['='], ['jun,'], ['eid'], ['='], ['{arXiv:1006.4458},'], ['pages'], ['='], ['{arXiv:1006.4458},'], ['archivePrefix'], ['='], ['{arXiv},'], ['eprint'], ['='], ['{1006.4458},'], ['primaryClass'], ['='], ['{cs.IR},'], ['adsurl'], ['='], ['{https://ui.adsabs.harvard.edu/abs/2010arXiv1006.4458S},'], ['adsnote'], ['='], ['{Provided'], ['by'], ['the'], ['SAO/NASA'], ['Astrophysics'], ['Data'], ['System}'], ['}'], ['6/9/2020'], ['Documents'], ['CiteSeerX'], ['\xe2\x80\x94'], ['Search'], ['Results'], ['\xe2\x80\x94'], ['Ka.'], ['Shrinivaasan'], ['Authors'], ['Tables'], ['Donate'], ['DMCA'], ['MetaCart'], ['Results\xc2\xa01\xc2\xa0\xc2\xad\xc2\xa02\xc2\xa0of\xc2\xa02'], ['Sign\xc2\xa0up'], ['Log\xc2\xa0in'], ['Tools'], ['Ka.Shrinivaasan'], ['Sorted\xc2\xa0by:'], ['Relevance'], ['by\xc2\xa0Dr.\xc2\xa0Madhavan\xc2\xa0Mukund\xc2\xa0Cmi\xc2\xa0,\xc2\xa02010'], ['"...\xc2\xa0algorithms\xc2\xa0for\xc2\xa0ascertaining\xc2\xa0merit\xc2\xa0of\xc2\xa0documents\xc2\xa0and\xc2\xa0their\xc2\xa0applications\xc2\xa0..."'], ['Abstract\xc2\xa0\xc2\xad\xc2\xa0Add\xc2\xa0to\xc2\xa0MetaCart'], ['Try\xc2\xa0your\xc2\xa0query\xc2\xa0at:'], ['TAC\xc2\xa02010\xc2\xa0Summarization\xc2\xa0Track\xc2\xad\xc2\xa0Update\xc2\xa0Summarization\xc2\xa0with\xc2\xa0Interview\xc2\xa0Algorithm'], ['by\xc2\xa0unknown\xc2\xa0authors'], ['"...\xc2\xa0Existing\xc2\xa0models\xc2\xa0for\xc2\xa0ranking\xc2\xa0documents(mostly\xc2\xa0in\xc2\xa0world\xc2\xa0wide\xc2\xa0web)\xc2\xa0are\xc2\xa0prestige\xc2\xa0based.\xc2\xa0In\xc2\xa0this\xc2\xa0article,\xc2\xa0alternative\xc2\xa0graph\xc2\xadtheoretic'], ['schemes\xc2\xa0to\xc2\xa0objectively\xc2\xa0judge\xc2\xa0the\xc2\xa0merit\xc2\xa0of\xc2\xa0a\xc2\xa0document\xc2\xa0independent\xc2\xa0of\xc2\xa0any\xc2\xa0external\xc2\xa0factors\xc2\xa0(like\xc2\xa0link\xc2\xa0graph)\xc2\xa0and\xc2\xa0without\xc2\xa0probabilistic'], ['inference\xc2\xa0are\xc2\xa0proposed\xc2\xa0and\xc2\xa0application\xc2\xa0..."'], ['Abstract\xc2\xa0\xc2\xad\xc2\xa0Add\xc2\xa0to\xc2\xa0MetaCart'], ['Results\xc2\xa01\xc2\xa0\xc2\xad\xc2\xa02\xc2\xa0of\xc2\xa02'], ['Powered\xc2\xa0by:\xc2\xa0'], ['About\xc2\xa0CiteSeerX'], ['\xc2\xa0'], ['Submit\xc2\xa0and\xc2\xa0Index\xc2\xa0Documents'], ['\xc2\xa0'], ['Privacy\xc2\xa0Policy'], ['\xc2\xa0'], ['Help'], ['\xc2\xa0'], ['Data'], ['\xc2\xa0'], ['Source'], ['\xc2\xa0'], ['Contact\xc2\xa0Us'], ['Developed\xc2\xa0at\xc2\xa0and\xc2\xa0hosted\xc2\xa0by\xc2\xa0The\xc2\xa0College\xc2\xa0of\xc2\xa0Information\xc2\xa0Sciences\xc2\xa0and\xc2\xa0Technology'], ['\xc2\xa9\xc2\xa02007\xc2\xad2019\xc2\xa0The\xc2\xa0Pennsylvania\xc2\xa0State\xc2\xa0University'], ['https://citeseerx.ist.psu.edu/search?q=Ka.+Shrinivaasan'], ['1/1'], ['\x0c']])
+2020-06-09 16:01:16 INFO  SparkContext:54 - Starting job: collect at /media/Krishna_iResearch_/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:36
+2020-06-09 16:01:16 INFO  DAGScheduler:54 - Got job 1 (collect at /media/Krishna_iResearch_/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:36) with 4 output partitions
+2020-06-09 16:01:16 INFO  DAGScheduler:54 - Final stage: ResultStage 1 (collect at /media/Krishna_iResearch_/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:36)
+2020-06-09 16:01:16 INFO  DAGScheduler:54 - Parents of final stage: List()
+2020-06-09 16:01:16 INFO  DAGScheduler:54 - Missing parents: List()
+2020-06-09 16:01:16 INFO  DAGScheduler:54 - Submitting ResultStage 1 (ParallelCollectionRDD[5] at parallelize at PythonRDD.scala:195), which has no missing parents
+2020-06-09 16:01:16 INFO  MemoryStore:54 - Block broadcast_2 stored as values in memory (estimated size 1432.0 B, free 413.6 MB)
+2020-06-09 16:01:16 INFO  MemoryStore:54 - Block broadcast_2_piece0 stored as bytes in memory (estimated size 949.0 B, free 413.6 MB)
+2020-06-09 16:01:16 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on 192.168.1.173:55440 (size: 949.0 B, free: 413.9 MB)
+2020-06-09 16:01:16 INFO  SparkContext:54 - Created broadcast 2 from broadcast at DAGScheduler.scala:1161
+2020-06-09 16:01:16 INFO  DAGScheduler:54 - Submitting 4 missing tasks from ResultStage 1 (ParallelCollectionRDD[5] at parallelize at PythonRDD.scala:195) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+2020-06-09 16:01:16 INFO  TaskSchedulerImpl:54 - Adding task set 1.0 with 4 tasks
+2020-06-09 16:01:16 INFO  TaskSetManager:54 - Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, PROCESS_LOCAL, 11200 bytes)
+2020-06-09 16:01:16 INFO  TaskSetManager:54 - Starting task 1.0 in stage 1.0 (TID 2, localhost, executor driver, partition 1, PROCESS_LOCAL, 11096 bytes)
+2020-06-09 16:01:16 INFO  TaskSetManager:54 - Starting task 2.0 in stage 1.0 (TID 3, localhost, executor driver, partition 2, PROCESS_LOCAL, 11605 bytes)
+2020-06-09 16:01:16 INFO  TaskSetManager:54 - Starting task 3.0 in stage 1.0 (TID 4, localhost, executor driver, partition 3, PROCESS_LOCAL, 11980 bytes)
+2020-06-09 16:01:16 INFO  Executor:54 - Running task 0.0 in stage 1.0 (TID 1)
+2020-06-09 16:01:16 INFO  Executor:54 - Running task 1.0 in stage 1.0 (TID 2)
+2020-06-09 16:01:16 INFO  Executor:54 - Running task 2.0 in stage 1.0 (TID 3)
+2020-06-09 16:01:16 INFO  Executor:54 - Running task 3.0 in stage 1.0 (TID 4)
+2020-06-09 16:01:16 INFO  Executor:54 - Finished task 2.0 in stage 1.0 (TID 3). 4476 bytes result sent to driver
+2020-06-09 16:01:16 INFO  Executor:54 - Finished task 0.0 in stage 1.0 (TID 1). 4071 bytes result sent to driver
+2020-06-09 16:01:16 INFO  Executor:54 - Finished task 1.0 in stage 1.0 (TID 2). 3964 bytes result sent to driver
+2020-06-09 16:01:16 INFO  Executor:54 - Finished task 3.0 in stage 1.0 (TID 4). 4853 bytes result sent to driver
+2020-06-09 16:01:16 INFO  TaskSetManager:54 - Finished task 3.0 in stage 1.0 (TID 4) in 94 ms on localhost (executor driver) (1/4)
+2020-06-09 16:01:16 INFO  TaskSetManager:54 - Finished task 0.0 in stage 1.0 (TID 1) in 116 ms on localhost (executor driver) (2/4)
+2020-06-09 16:01:16 INFO  TaskSetManager:54 - Finished task 2.0 in stage 1.0 (TID 3) in 104 ms on localhost (executor driver) (3/4)
+2020-06-09 16:01:16 INFO  TaskSetManager:54 - Finished task 1.0 in stage 1.0 (TID 2) in 118 ms on localhost (executor driver) (4/4)
+2020-06-09 16:01:16 INFO  DAGScheduler:54 - ResultStage 1 (collect at /media/Krishna_iResearch_/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:36) finished in 0.185 s
+2020-06-09 16:01:16 INFO  TaskSchedulerImpl:54 - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2020-06-09 16:01:16 INFO  DAGScheduler:54 - Job 1 finished: collect at /media/Krishna_iResearch_/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/NeuronRain/LinuxKernelAndCloud/code/Spark_Word2Vec.py:36, took 0.199904 s
+('words1rdd:', [['@article{k2010few,'], ['title={Few'], ['Algorithms'], ['for'], ['ascertaining'], ['merit'], ['of'], ['a'], ['document'], ['and'], ['their'], ['applications},'], ['author={K'], ['Shrinivaasan,'], ['Balaraman'], ['Ravindran,'], ['Madhavan'], ['Mukund},'], ['journal={arXiv'], ['preprint'], ['arXiv:1006.4458},'], ['year={2010}'], ['}'], ['@article{shrinivaasan2011decidability,'], ['title={Decidability'], ['of'], ['Existence'], ['and'], ['Construction'], ['of'], ['a'], ['Complement'], ['of'], ['a'], ['given'], ['Function},'], ['author={Shrinivaasan,'], ['K},'], ['journal={arXiv'], ['preprint'], ['arXiv:1106.4102},'], ['year={2011},'], ['publisher={acknowledgement:'], ['advised'], ['by'], ['Meena'], ['Mahajan,'], ['Institute'], ['of'], ['Mathematical~\xe2\x80\xa6}'], ['}'], ['@inproceedings{k2010update,'], ['title={Update'], ['summarization'], ['with'], ['Interview'], ['Algorithm'], ['-'], ['http://www.nist.gov/tac/publications/2010/participant.papers/CMI\\_IIT.proceedings.pdf},'], ['author={K'], ['Shrinivaasan,'], ['Balaraman'], ['Ravindran,'], ['Madhavan'], ['Mukund},'], ['booktitle={NIST'], ['TAC'], ['2010},'], ['year={2010},'], ['organization={NIST}'], ['}'], ['@article{shrinivaasan2013indepth,'], ['title={Indepth'], ['analysis'], ['of'], ['a'], ['variant'], ['of'], ['Majority'], ['Voting'], ['and'], ['relation'], ['to'], ['Zermelo-Fraenkel'], ['Set'], ['Theory'], ['With'], ['Axiom'], ['of'], ['Choice'], ['(ZFC)},'], ['author={Shrinivaasan,'], ['Ka},'], ['year={2013}'], ['}'], ['Decidability'], ['of'], ['Existence'], ['and'], ['Construction'], ['of'], ['a'], ['Complement'], ['of'], ['a'], ['given'], ['Function'], ['Ka.'], ['Shrinivaasan'], ['Mathematics,'], ['Computer'], ['Science'], ['ArXiv'], ['2011'], ['This'], ['article'], ['de'], ['nes'], ['a'], ['complement'], ['of'], ['a'], ['function'], ['and'], ['conditions'], ['for'], ['existence'], ['of'], ['such'], ['a'], ['complement'], ['function'], ['and'], ['presents'], ['few'], ['algorithms'], ['to'], ['construct'], ['a'], ['complement.'], ['Cite'], ['Save'], ['Feed'], ['TAC'], ['2010'], ['Summarization'], ['Track'], ['-'], ['Update'], ['Summarization'], ['with'], ['Interview'], ['Algorithm'], ['Ka.'], ['Shrinivaasan'], ['Computer'], ['Science'], ['TAC'], ['2010'], ['Existing'], ['models'], ['for'], ['ranking'], ['documents(mostly'], ['in'], ['world'], ['wide'], ['web)'], ['are'], ['prestige'], ['based.'], ['In'], ['this'], ['article,'], ['alternative'], ['graph-theoretic'], ['schemes'], ['to'], ['objectively'], ['judge'], ['the'], ['merit'], ['of'], ['a'], ['document'], ['independent'], ['of\xe2\x80\xa6'], ['Continue'], ['Reading'], ['View'], ['PDF'], ['Cite'], ['Save'], ['Feed'], ['Few'], ['Algorithms'], ['for'], ['ascertaining'], ['merit'], ['of'], ['a'], ['document'], ['and'], ['their'], ['applications'], ['Ka.'], ['Shrinivaasan'], ['Computer'], ['Science'], ['ArXiv'], ['2010'], ['(First'], ['Publication:'], ['23'], ['June'], ['2010)'], ['Existing'], ['models'], ['for'], ['ranking'], ['documents(mostly'], ['in'], ['world'], ['wide'], ['web)'], ['are'], ['prestige'], ['based.'], ['In'], ['this'], ['article,'], ['three'], ['algorithms'], ['to'], ['objectively'], ['judge'], ['the'], ['merit'], ['of'], ['a'], ['document'], ['are'], ['proposed-1)'], ['Citation'], ['graph\xe2\x80\xa6'], ['Continue'], ['Reading'], ['@article{DBLP:journals/corr/abs-1106-4102,'], ['author'], ['='], ['{Ka.'], ['Shrinivaasan},'], ['title'], ['='], ['{Decidability'], ['of'], ['Existence'], ['and'], ['Construction'], ['of'], ['a'], ['Complement'], ['of'], ['a'], ['given'], ['Function},'], ['journal'], ['='], ['{CoRR},'], ['volume'], ['='], ['{abs/1106.4102},'], ['year'], ['='], ['{2011},'], ['url'], ['='], ['{http://arxiv.org/abs/1106.4102},'], ['archivePrefix'], ['='], ['{arXiv},'], ['eprint'], ['='], ['{1106.4102},'], ['timestamp'], ['='], ['{Mon,'], ['13'], ['Aug'], ['2018'], ['01:00:00'], ['+0200},'], ['biburl'], ['='], ['{https://dblp.org/rec/journals/corr/abs-1106-4102.bib},'], ['bibsource'], ['='], ['{dblp'], ['computer'], ['science'], ['bibliography,'], ['https://dblp.org}'], ['}'], ['@inproceedings{DBLP:conf/tac/Shrinivaasan10,'], ['author'], ['='], ['{Ka.'], ['Shrinivaasan},'], ['title'], ['='], ['{{TAC}'], ['2010'], ['Summarization'], ['Track'], ['-'], ['Update'], ['Summarization'], ['with'], ['Interview'], ['Algorithm},'], ['booktitle'], ['='], ['{Proceedings'], ['of'], ['the'], ['Third'], ['Text'], ['Analysis'], ['Conference,'], ['{TAC}'], ['2010,'], ['Gaithersburg,'], ['Maryland,'], ['USA,'], ['November'], ['15-16,'], ['2010},'], ['year'], ['='], ['{2010},'], ['crossref'], ['='], ['{DBLP:conf/tac/2010},'], ['url'], ['='], ['{https://tac.nist.gov/publications/2010/participant.papers/CMI\\_IIT.proceedings.pdf},'], ['timestamp'], ['='], ['{Tue,'], ['20'], ['Aug'], ['2019'], ['13:25:20'], ['+0200},'], ['biburl'], ['='], ['{https://dblp.org/rec/conf/tac/Shrinivaasan10.bib},'], ['bibsource'], ['='], ['{dblp'], ['computer'], ['science'], ['bibliography,'], ['https://dblp.org}'], ['}'], ['@article{DBLP:journals/corr/abs-1006-4458,'], ['author'], ['='], ['{Ka.'], ['Shrinivaasan},'], ['title'], ['='], ['{Few'], ['Algorithms'], ['for'], ['ascertaining'], ['merit'], ['of'], ['a'], ['document'], ['and'], ['their'], ['applications},'], ['journal'], ['='], ['{CoRR},'], ['volume'], ['='], ['{abs/1006.4458},'], ['year'], ['='], ['{2010},'], ['url'], ['='], ['{http://arxiv.org/abs/1006.4458},'], ['archivePrefix'], ['='], ['{arXiv},'], ['eprint'], ['='], ['{1006.4458},'], ['timestamp'], ['='], ['{Mon,'], ['13'], ['Aug'], ['2018'], ['01:00:00'], ['+0200},'], ['biburl'], ['='], ['{https://dblp.org/rec/journals/corr/abs-1006-4458.bib},'], ['bibsource'], ['='], ['{dblp'], ['computer'], ['science'], ['bibliography,'], ['https://dblp.org}'], ['}'], ['@proceedings{DBLP:conf/tac/2010,'], ['title'], ['='], ['{Proceedings'], ['of'], ['the'], ['Third'], ['Text'], ['Analysis'], ['Conference,'], ['{TAC}'], ['2010,'], ['Gaithersburg,'], ['Maryland,'], ['USA,'], ['November'], ['15-16,'], ['2010},'], ['publisher'], ['='], ['{{NIST}},'], ['year'], ['='], ['{2010},'], ['url'], ['='], ['{https://tac.nist.gov/publications/2010/papers.html},'], ['timestamp'], ['='], ['{Tue,'], ['20'], ['Aug'], ['2019'], ['13:25:20'], ['+0200},'], ['biburl'], ['='], ['{https://dblp.org/rec/conf/tac/2010.bib},'], ['bibsource'], ['='], ['{dblp'], ['computer'], ['science'], ['bibliography,'], ['https://dblp.org}'], ['}'], ['6/9/2020'], ['ka'], ['shrinivaasan'], ['-'], ['Search'], ['Results'], ['|'], ['Microsoft'], ['Academic'], ['Microsoft'], ['Academic'], ['\xee\xa4\x8e'], ['ka\xc2\xa0shrinivaasan'], ['\xee\xa4\x8c'], ['\xee\xa4\x8d'], ['Sign\xc2\xa0up\xc2\xa0/\xc2\xa0'], ['Sign\xc2\xa0in'], ['CLEAR\xc2\xa0ALL'], ['FILTER\xc2\xa0BY:\xc2\xa0\xee\xa4\x92'], ['\xee\xa4\xb0'], ['\xc2\xa0Time'], ['\xee\xa4\x91'], ['\xef\x83\x83'], ['Top\xc2\xa0Topics'], ['\xee\xa4\x91'], ['\xef\x87\xaa'], ['Publication\xc2\xa0Types'], ['\xee\xa4\x91'], ['\xef\x80\x87'], ['Top\xc2\xa0Authors'], ['\xee\xa4\x91'], ['\xef\x80\xad'], ['Top\xc2\xa0Journals'], ['\xee\xa4\x91'], ['\xef\x80\x87'], ['\xc2\xa0Ka.\xc2\xa0Shrinivaasan'], ['PUBLICATIONS\xc2\xa0(2)\xc2\xa0'], ['\xee\xa4\x8c'], ['CITATIONS*\xc2\xa0(0)'], ['Authors\xc2\xa0with\xc2\xa0similar\xc2\xa0name'], ['\xef\x80\x87'], ['Ka.\xc2\xa0Shrinivaasan'], ['PUBLICATIONS\xc2\xa0(1)\xc2\xa0'], ['\xee\xa4\x8c'], ['CITATIONS*\xc2\xa0(0)'], ['Showing\xc2\xa01\xc2\xad3*\xc2\xa0of\xc2\xa03\xc2\xa0(2.102\xc2\xa0seconds)'], ['VIEW'], ['\xee\xa4\xa5'], ['\xee\xa4\xa6'], ['\xee\xa4\xa7'], ['SORT\xc2\xa0BY'], ['SALIENCY\xc2\xa0'], ['\xee\xa4\x93'], ['\xef\x87\xaa'], ['\xc2\xa0Decidability\xc2\xa0of\xc2\xa0Existence\xc2\xa0and\xc2\xa0Construction\xc2\xa0of\xc2\xa0a'], ['Complement\xc2\xa0of\xc2\xa0a\xc2\xa0given\xc2\xa0Function'], ['0\xc2\xa0citations*'], ['2011'], ['Ka.\xc2\xa0Shrinivaasan'], ['\xef\x83\x83'], ['Mathematics'], ['\xef\x83\x83'], ['Discrete\xc2\xa0mathematics'], ['\xef\x83\x83'], ['Decidability'], ['\xee\xa4\xa8'], ['\xee\xa4\x8d'], ['Feedback'], ['\xee\xa4\xac'], ['https://academic.microsoft.com/search?q=ka%20shrinivaasan&qe=%40%40%40Composite(AA.AuN%3D%3D%27ka%20shrinivaasa\xe2\x80\xa6'], ['1/2'], ['\x0c6/9/2020'], ['ka'], ['shrinivaasan'], ['-'], ['Search'], ['Results'], ['|'], ['Microsoft'], ['Academic'], ['\xef\x87\xaa'], ['\xc2\xa0TAC\xc2\xa02010\xc2\xa0Summarization\xc2\xa0Track\xc2\xa0\xc2\xad\xc2\xa0Update'], ['Summarization\xc2\xa0with\xc2\xa0Interview\xc2\xa0Algorithm.'], ['0\xc2\xa0citations*'], ['2010\xc2\xa0THEORY\xc2\xa0AND\xc2\xa0APPLICATIONS\xc2\xa0OF'], ['CATEGORIES'], ['Ka.\xc2\xa0Shrinivaasan'], ['\xef\x83\x83'], ['Information\xc2\xa0retrieval'], ['\xef\x83\x83'], ['Data\xc2\xa0mining'], ['\xef\x83\x83'], ['Computer\xc2\xa0science'], ['View\xc2\xa0More\xc2\xa0(1+)\xc2\xa0\xee\xa4\xb4'], ['\xee\xa4\xab'], ['\xee\xa4\xac'], ['\xef\x87\xaa'], ['\xc2\xa0Few\xc2\xa0Algorithms\xc2\xa0for\xc2\xa0ascertaining\xc2\xa0merit\xc2\xa0of\xc2\xa0a'], ['document\xc2\xa0and\xc2\xa0their\xc2\xa0applications'], ['\xee\xa4\xa8'], ['\xee\xa4\x8d'], ['0\xc2\xa0citations*'], ['2010'], ['Ka.\xc2\xa0Shrinivaasan'], ['\xef\x83\x83'], ['World\xc2\xa0Wide\xc2\xa0Web'], ['\xef\x83\x83'], ['Information\xc2\xa0retrieval'], ['\xef\x83\x83'], ['Computer\xc2\xa0science'], ['\xee\xa4\xab'], ['\xee\xa4\xac'], ['\xee\xa4\xa8'], ['\xee\xa4\x8d'], ['FAQ'], ['Contact\xc2\xa0Us'], ['Privacy\xc2\xa0and\xc2\xa0Cookies'], ['Terms\xc2\xa0of\xc2\xa0Use'], ['Trademarks'], ['Specific\xc2\xa0Terms'], ['*\xc2\xa0Estimated\xc2\xa0Count'], ['\xc2\xa9\xc2\xa02020\xc2\xa0Microsoft'], ['https://academic.microsoft.com/search?q=ka%20shrinivaasan&qe=%40%40%40Composite(AA.AuN%3D%3D%27ka%20shrinivaasa\xe2\x80\xa6'], ['2/2'], ['\x0c'], ['@ARTICLE{2011arXiv1106.4102S,'], ['author'], ['='], ['{{Shrinivaasan},'], ['Ka.},'], ['title'], ['='], ['"{Decidability'], ['of'], ['Existence'], ['and'], ['Construction'], ['of'], ['a'], ['Complement'], ['of'], ['a'], ['given'], ['Function}",'], ['journal'], ['='], ['{arXiv'], ['e-prints},'], ['keywords'], ['='], ['{Computer'], ['Science'], ['-'], ['Logic'], ['in'], ['Computer'], ['Science},'], ['year'], ['='], ['2011,'], ['month'], ['='], ['jun,'], ['eid'], ['='], ['{arXiv:1106.4102},'], ['pages'], ['='], ['{arXiv:1106.4102},'], ['archivePrefix'], ['='], ['{arXiv},'], ['eprint'], ['='], ['{1106.4102},'], ['primaryClass'], ['='], ['{cs.LO},'], ['adsurl'], ['='], ['{https://ui.adsabs.harvard.edu/abs/2011arXiv1106.4102S},'], ['adsnote'], ['='], ['{Provided'], ['by'], ['the'], ['SAO/NASA'], ['Astrophysics'], ['Data'], ['System}'], ['}'], ['@ARTICLE{2010arXiv1006.4458S,'], ['author'], ['='], ['{{Shrinivaasan},'], ['Ka.},'], ['title'], ['='], ['"{Few'], ['Algorithms'], ['for'], ['ascertaining'], ['merit'], ['of'], ['a'], ['document'], ['and'], ['their'], ['applications}",'], ['journal'], ['='], ['{arXiv'], ['e-prints},'], ['keywords'], ['='], ['{Computer'], ['Science'], ['-'], ['Information'], ['Retrieval},'], ['year'], ['='], ['2010,'], ['month'], ['='], ['jun,'], ['eid'], ['='], ['{arXiv:1006.4458},'], ['pages'], ['='], ['{arXiv:1006.4458},'], ['archivePrefix'], ['='], ['{arXiv},'], ['eprint'], ['='], ['{1006.4458},'], ['primaryClass'], ['='], ['{cs.IR},'], ['adsurl'], ['='], ['{https://ui.adsabs.harvard.edu/abs/2010arXiv1006.4458S},'], ['adsnote'], ['='], ['{Provided'], ['by'], ['the'], ['SAO/NASA'], ['Astrophysics'], ['Data'], ['System}'], ['}'], ['6/9/2020'], ['Documents'], ['CiteSeerX'], ['\xe2\x80\x94'], ['Search'], ['Results'], ['\xe2\x80\x94'], ['Ka.'], ['Shrinivaasan'], ['Authors'], ['Tables'], ['Donate'], ['DMCA'], ['MetaCart'], ['Results\xc2\xa01\xc2\xa0\xc2\xad\xc2\xa02\xc2\xa0of\xc2\xa02'], ['Sign\xc2\xa0up'], ['Log\xc2\xa0in'], ['Tools'], ['Ka.Shrinivaasan'], ['Sorted\xc2\xa0by:'], ['Relevance'], ['by\xc2\xa0Dr.\xc2\xa0Madhavan\xc2\xa0Mukund\xc2\xa0Cmi\xc2\xa0,\xc2\xa02010'], ['"...\xc2\xa0algorithms\xc2\xa0for\xc2\xa0ascertaining\xc2\xa0merit\xc2\xa0of\xc2\xa0documents\xc2\xa0and\xc2\xa0their\xc2\xa0applications\xc2\xa0..."'], ['Abstract\xc2\xa0\xc2\xad\xc2\xa0Add\xc2\xa0to\xc2\xa0MetaCart'], ['Try\xc2\xa0your\xc2\xa0query\xc2\xa0at:'], ['TAC\xc2\xa02010\xc2\xa0Summarization\xc2\xa0Track\xc2\xad\xc2\xa0Update\xc2\xa0Summarization\xc2\xa0with\xc2\xa0Interview\xc2\xa0Algorithm'], ['by\xc2\xa0unknown\xc2\xa0authors'], ['"...\xc2\xa0Existing\xc2\xa0models\xc2\xa0for\xc2\xa0ranking\xc2\xa0documents(mostly\xc2\xa0in\xc2\xa0world\xc2\xa0wide\xc2\xa0web)\xc2\xa0are\xc2\xa0prestige\xc2\xa0based.\xc2\xa0In\xc2\xa0this\xc2\xa0article,\xc2\xa0alternative\xc2\xa0graph\xc2\xadtheoretic'], ['schemes\xc2\xa0to\xc2\xa0objectively\xc2\xa0judge\xc2\xa0the\xc2\xa0merit\xc2\xa0of\xc2\xa0a\xc2\xa0document\xc2\xa0independent\xc2\xa0of\xc2\xa0any\xc2\xa0external\xc2\xa0factors\xc2\xa0(like\xc2\xa0link\xc2\xa0graph)\xc2\xa0and\xc2\xa0without\xc2\xa0probabilistic'], ['inference\xc2\xa0are\xc2\xa0proposed\xc2\xa0and\xc2\xa0application\xc2\xa0..."'], ['Abstract\xc2\xa0\xc2\xad\xc2\xa0Add\xc2\xa0to\xc2\xa0MetaCart'], ['Results\xc2\xa01\xc2\xa0\xc2\xad\xc2\xa02\xc2\xa0of\xc2\xa02'], ['Powered\xc2\xa0by:\xc2\xa0'], ['About\xc2\xa0CiteSeerX'], ['\xc2\xa0'], ['Submit\xc2\xa0and\xc2\xa0Index\xc2\xa0Documents'], ['\xc2\xa0'], ['Privacy\xc2\xa0Policy'], ['\xc2\xa0'], ['Help'], ['\xc2\xa0'], ['Data'], ['\xc2\xa0'], ['Source'], ['\xc2\xa0'], ['Contact\xc2\xa0Us'], ['Developed\xc2\xa0at\xc2\xa0and\xc2\xa0hosted\xc2\xa0by\xc2\xa0The\xc2\xa0College\xc2\xa0of\xc2\xa0Information\xc2\xa0Sciences\xc2\xa0and\xc2\xa0Technology'], ['\xc2\xa9\xc2\xa02007\xc2\xad2019\xc2\xa0The\xc2\xa0Pennsylvania\xc2\xa0State\xc2\xa0University'], ['https://citeseerx.ist.psu.edu/search?q=Ka.+Shrinivaasan'], ['1/1'], ['\x0c']])
+root
+ |-- value: string (nullable = true)
+
+2020-06-09 16:01:16 INFO  BlockManagerInfo:54 - Removed broadcast_2_piece0 on 192.168.1.173:55440 in memory (size: 949.0 B, free: 413.9 MB)
+2020-06-09 16:01:17 INFO  SparkContext:54 - Starting job: collect at Word2Vec.scala:196
+2020-06-09 16:01:17 INFO  DAGScheduler:54 - Registering RDD 14 (map at Word2Vec.scala:187)
+2020-06-09 16:01:17 INFO  DAGScheduler:54 - Got job 2 (collect at Word2Vec.scala:196) with 4 output partitions
+2020-06-09 16:01:17 INFO  DAGScheduler:54 - Final stage: ResultStage 3 (collect at Word2Vec.scala:196)
+2020-06-09 16:01:17 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 2)
+2020-06-09 16:01:17 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 2)
+2020-06-09 16:01:17 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 2 (MapPartitionsRDD[14] at map at Word2Vec.scala:187), which has no missing parents
+2020-06-09 16:01:17 INFO  MemoryStore:54 - Block broadcast_3 stored as values in memory (estimated size 6.8 KB, free 413.6 MB)
+2020-06-09 16:01:17 INFO  MemoryStore:54 - Block broadcast_3_piece0 stored as bytes in memory (estimated size 4.1 KB, free 413.6 MB)
+2020-06-09 16:01:17 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on 192.168.1.173:55440 (size: 4.1 KB, free: 413.9 MB)
+2020-06-09 16:01:17 INFO  SparkContext:54 - Created broadcast 3 from broadcast at DAGScheduler.scala:1161
+2020-06-09 16:01:17 INFO  DAGScheduler:54 - Submitting 4 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[14] at map at Word2Vec.scala:187) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+2020-06-09 16:01:17 INFO  TaskSchedulerImpl:54 - Adding task set 2.0 with 4 tasks
+2020-06-09 16:01:17 INFO  TaskSetManager:54 - Starting task 0.0 in stage 2.0 (TID 5, localhost, executor driver, partition 0, PROCESS_LOCAL, 11189 bytes)
+2020-06-09 16:01:17 INFO  TaskSetManager:54 - Starting task 1.0 in stage 2.0 (TID 6, localhost, executor driver, partition 1, PROCESS_LOCAL, 11085 bytes)
+2020-06-09 16:01:17 INFO  TaskSetManager:54 - Starting task 2.0 in stage 2.0 (TID 7, localhost, executor driver, partition 2, PROCESS_LOCAL, 11594 bytes)
+2020-06-09 16:01:17 INFO  TaskSetManager:54 - Starting task 3.0 in stage 2.0 (TID 8, localhost, executor driver, partition 3, PROCESS_LOCAL, 11969 bytes)
+2020-06-09 16:01:17 INFO  Executor:54 - Running task 0.0 in stage 2.0 (TID 5)
+2020-06-09 16:01:17 INFO  Executor:54 - Running task 1.0 in stage 2.0 (TID 6)
+2020-06-09 16:01:17 INFO  Executor:54 - Running task 3.0 in stage 2.0 (TID 8)
+2020-06-09 16:01:17 INFO  Executor:54 - Running task 2.0 in stage 2.0 (TID 7)
+2020-06-09 16:01:17 INFO  PythonRunner:54 - Times: total = 15, boot = -1857, init = 1871, finish = 1
+2020-06-09 16:01:18 INFO  MemoryStore:54 - Block rdd_11_3 stored as values in memory (estimated size 2.2 KB, free 413.6 MB)
+2020-06-09 16:01:18 INFO  BlockManagerInfo:54 - Added rdd_11_3 in memory on 192.168.1.173:55440 (size: 2.2 KB, free: 413.9 MB)
+2020-06-09 16:01:18 INFO  PythonRunner:54 - Times: total = 120, boot = 54, init = 64, finish = 2
+2020-06-09 16:01:18 INFO  MemoryStore:54 - Block rdd_11_2 stored as values in memory (estimated size 2025.0 B, free 413.6 MB)
+2020-06-09 16:01:18 INFO  PythonRunner:54 - Times: total = 136, boot = 80, init = 54, finish = 2
+2020-06-09 16:01:18 INFO  MemoryStore:54 - Block rdd_11_0 stored as values in memory (estimated size 1675.0 B, free 413.6 MB)
+2020-06-09 16:01:18 INFO  PythonRunner:54 - Times: total = 105, boot = 38, init = 65, finish = 2
+2020-06-09 16:01:18 INFO  BlockManagerInfo:54 - Added rdd_11_2 in memory on 192.168.1.173:55440 (size: 2025.0 B, free: 413.9 MB)
+2020-06-09 16:01:18 INFO  MemoryStore:54 - Block rdd_11_1 stored as values in memory (estimated size 1589.0 B, free 413.6 MB)
+2020-06-09 16:01:18 INFO  BlockManagerInfo:54 - Added rdd_11_0 in memory on 192.168.1.173:55440 (size: 1675.0 B, free: 413.9 MB)
+2020-06-09 16:01:18 INFO  BlockManagerInfo:54 - Added rdd_11_1 in memory on 192.168.1.173:55440 (size: 1589.0 B, free: 413.9 MB)
+2020-06-09 16:01:19 INFO  Executor:54 - Finished task 3.0 in stage 2.0 (TID 8). 1722 bytes result sent to driver
+2020-06-09 16:01:19 INFO  Executor:54 - Finished task 2.0 in stage 2.0 (TID 7). 1722 bytes result sent to driver
+2020-06-09 16:01:19 INFO  Executor:54 - Finished task 1.0 in stage 2.0 (TID 6). 1722 bytes result sent to driver
+2020-06-09 16:01:19 INFO  Executor:54 - Finished task 0.0 in stage 2.0 (TID 5). 1722 bytes result sent to driver
+2020-06-09 16:01:19 INFO  TaskSetManager:54 - Finished task 1.0 in stage 2.0 (TID 6) in 1236 ms on localhost (executor driver) (1/4)
+2020-06-09 16:01:19 INFO  TaskSetManager:54 - Finished task 0.0 in stage 2.0 (TID 5) in 1246 ms on localhost (executor driver) (2/4)
+2020-06-09 16:01:19 INFO  TaskSetManager:54 - Finished task 2.0 in stage 2.0 (TID 7) in 1237 ms on localhost (executor driver) (3/4)
+2020-06-09 16:01:19 INFO  TaskSetManager:54 - Finished task 3.0 in stage 2.0 (TID 8) in 1235 ms on localhost (executor driver) (4/4)
+2020-06-09 16:01:19 INFO  TaskSchedulerImpl:54 - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2020-06-09 16:01:19 INFO  DAGScheduler:54 - ShuffleMapStage 2 (map at Word2Vec.scala:187) finished in 1.326 s
+2020-06-09 16:01:19 INFO  DAGScheduler:54 - looking for newly runnable stages
+2020-06-09 16:01:19 INFO  DAGScheduler:54 - running: Set()
+2020-06-09 16:01:19 INFO  DAGScheduler:54 - waiting: Set(ResultStage 3)
+2020-06-09 16:01:19 INFO  DAGScheduler:54 - failed: Set()
+2020-06-09 16:01:19 INFO  DAGScheduler:54 - Submitting ResultStage 3 (MapPartitionsRDD[17] at map at Word2Vec.scala:190), which has no missing parents
+2020-06-09 16:01:19 INFO  MemoryStore:54 - Block broadcast_4 stored as values in memory (estimated size 4.9 KB, free 413.6 MB)
+2020-06-09 16:01:19 INFO  MemoryStore:54 - Block broadcast_4_piece0 stored as bytes in memory (estimated size 2.7 KB, free 413.6 MB)
+2020-06-09 16:01:19 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on 192.168.1.173:55440 (size: 2.7 KB, free: 413.9 MB)
+2020-06-09 16:01:19 INFO  SparkContext:54 - Created broadcast 4 from broadcast at DAGScheduler.scala:1161
+2020-06-09 16:01:19 INFO  DAGScheduler:54 - Submitting 4 missing tasks from ResultStage 3 (MapPartitionsRDD[17] at map at Word2Vec.scala:190) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+2020-06-09 16:01:19 INFO  TaskSchedulerImpl:54 - Adding task set 3.0 with 4 tasks
+2020-06-09 16:01:19 INFO  TaskSetManager:54 - Starting task 0.0 in stage 3.0 (TID 9, localhost, executor driver, partition 0, ANY, 7662 bytes)
+2020-06-09 16:01:19 INFO  TaskSetManager:54 - Starting task 1.0 in stage 3.0 (TID 10, localhost, executor driver, partition 1, ANY, 7662 bytes)
+2020-06-09 16:01:19 INFO  TaskSetManager:54 - Starting task 2.0 in stage 3.0 (TID 11, localhost, executor driver, partition 2, ANY, 7662 bytes)
+2020-06-09 16:01:19 INFO  TaskSetManager:54 - Starting task 3.0 in stage 3.0 (TID 12, localhost, executor driver, partition 3, ANY, 7662 bytes)
+2020-06-09 16:01:19 INFO  Executor:54 - Running task 0.0 in stage 3.0 (TID 9)
+2020-06-09 16:01:19 INFO  Executor:54 - Running task 1.0 in stage 3.0 (TID 10)
+2020-06-09 16:01:19 INFO  Executor:54 - Running task 2.0 in stage 3.0 (TID 11)
+2020-06-09 16:01:19 INFO  Executor:54 - Running task 3.0 in stage 3.0 (TID 12)
+2020-06-09 16:01:19 INFO  ShuffleBlockFetcherIterator:54 - Getting 4 non-empty blocks including 4 local blocks and 0 remote blocks
+2020-06-09 16:01:19 INFO  ShuffleBlockFetcherIterator:54 - Getting 4 non-empty blocks including 4 local blocks and 0 remote blocks
+2020-06-09 16:01:19 INFO  ShuffleBlockFetcherIterator:54 - Getting 4 non-empty blocks including 4 local blocks and 0 remote blocks
+2020-06-09 16:01:19 INFO  ShuffleBlockFetcherIterator:54 - Started 0 remote fetches in 15 ms
+2020-06-09 16:01:19 INFO  ShuffleBlockFetcherIterator:54 - Getting 4 non-empty blocks including 4 local blocks and 0 remote blocks
+2020-06-09 16:01:19 INFO  ShuffleBlockFetcherIterator:54 - Started 0 remote fetches in 18 ms
+2020-06-09 16:01:19 INFO  ShuffleBlockFetcherIterator:54 - Started 0 remote fetches in 16 ms
+2020-06-09 16:01:19 INFO  ShuffleBlockFetcherIterator:54 - Started 0 remote fetches in 16 ms
+2020-06-09 16:01:19 INFO  Executor:54 - Finished task 2.0 in stage 3.0 (TID 11). 1701 bytes result sent to driver
+2020-06-09 16:01:19 INFO  TaskSetManager:54 - Finished task 2.0 in stage 3.0 (TID 11) in 301 ms on localhost (executor driver) (1/4)
+2020-06-09 16:01:19 INFO  Executor:54 - Finished task 0.0 in stage 3.0 (TID 9). 2066 bytes result sent to driver
+2020-06-09 16:01:19 INFO  Executor:54 - Finished task 3.0 in stage 3.0 (TID 12). 3566 bytes result sent to driver
+2020-06-09 16:01:19 INFO  TaskSetManager:54 - Finished task 3.0 in stage 3.0 (TID 12) in 310 ms on localhost (executor driver) (2/4)
+2020-06-09 16:01:19 INFO  Executor:54 - Finished task 1.0 in stage 3.0 (TID 10). 4591 bytes result sent to driver
+2020-06-09 16:01:19 INFO  TaskSetManager:54 - Finished task 1.0 in stage 3.0 (TID 10) in 321 ms on localhost (executor driver) (3/4)
+2020-06-09 16:01:19 INFO  TaskSetManager:54 - Finished task 0.0 in stage 3.0 (TID 9) in 328 ms on localhost (executor driver) (4/4)
+2020-06-09 16:01:19 INFO  TaskSchedulerImpl:54 - Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2020-06-09 16:01:19 INFO  DAGScheduler:54 - ResultStage 3 (collect at Word2Vec.scala:196) finished in 0.378 s
+2020-06-09 16:01:19 INFO  DAGScheduler:54 - Job 2 finished: collect at Word2Vec.scala:196, took 2.318744 s
+2020-06-09 16:01:19 INFO  Word2Vec:54 - vocabSize = 18, trainWordsCount = 210
+2020-06-09 16:01:19 INFO  MemoryStore:54 - Block broadcast_5 stored as values in memory (estimated size 3.9 KB, free 413.6 MB)
+2020-06-09 16:01:19 INFO  MemoryStore:54 - Block broadcast_5_piece0 stored as bytes in memory (estimated size 4.0 KB, free 413.6 MB)
+2020-06-09 16:01:19 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on 192.168.1.173:55440 (size: 4.0 KB, free: 413.9 MB)
+2020-06-09 16:01:19 INFO  SparkContext:54 - Created broadcast 5 from broadcast at Word2Vec.scala:315
+2020-06-09 16:01:19 INFO  MemoryStore:54 - Block broadcast_6 stored as values in memory (estimated size 7.6 KB, free 413.6 MB)
+2020-06-09 16:01:19 INFO  MemoryStore:54 - Block broadcast_6_piece0 stored as bytes in memory (estimated size 873.0 B, free 413.6 MB)
+2020-06-09 16:01:19 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on 192.168.1.173:55440 (size: 873.0 B, free: 413.9 MB)
+2020-06-09 16:01:19 INFO  SparkContext:54 - Created broadcast 6 from broadcast at Word2Vec.scala:316
+2020-06-09 16:01:19 INFO  MemoryStore:54 - Block broadcast_7 stored as values in memory (estimated size 1680.0 B, free 413.6 MB)
+2020-06-09 16:01:19 INFO  MemoryStore:54 - Block broadcast_7_piece0 stored as bytes in memory (estimated size 379.0 B, free 413.6 MB)
+2020-06-09 16:01:19 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on 192.168.1.173:55440 (size: 379.0 B, free: 413.9 MB)
+2020-06-09 16:01:19 INFO  SparkContext:54 - Created broadcast 7 from broadcast at Word2Vec.scala:317
+2020-06-09 16:01:19 INFO  MemoryStore:54 - Block broadcast_8 stored as values in memory (estimated size 400.0 B, free 413.6 MB)
+2020-06-09 16:01:19 INFO  MemoryStore:54 - Block broadcast_8_piece0 stored as bytes in memory (estimated size 429.0 B, free 413.6 MB)
+2020-06-09 16:01:19 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on 192.168.1.173:55440 (size: 429.0 B, free: 413.9 MB)
+2020-06-09 16:01:19 INFO  SparkContext:54 - Created broadcast 8 from broadcast at Word2Vec.scala:360
+2020-06-09 16:01:19 INFO  MemoryStore:54 - Block broadcast_9 stored as values in memory (estimated size 400.0 B, free 413.6 MB)
+2020-06-09 16:01:19 INFO  MemoryStore:54 - Block broadcast_9_piece0 stored as bytes in memory (estimated size 82.0 B, free 413.6 MB)
+2020-06-09 16:01:19 INFO  BlockManagerInfo:54 - Added broadcast_9_piece0 in memory on 192.168.1.173:55440 (size: 82.0 B, free: 413.9 MB)
+2020-06-09 16:01:19 INFO  SparkContext:54 - Created broadcast 9 from broadcast at Word2Vec.scala:361
+2020-06-09 16:01:19 INFO  SparkContext:54 - Starting job: collect at Word2Vec.scala:442
+2020-06-09 16:01:19 INFO  DAGScheduler:54 - Registering RDD 19 (repartition at Word2Vec.scala:344)
+2020-06-09 16:01:19 INFO  DAGScheduler:54 - Registering RDD 23 (mapPartitionsWithIndex at Word2Vec.scala:364)
+2020-06-09 16:01:19 INFO  DAGScheduler:54 - Got job 3 (collect at Word2Vec.scala:442) with 1 output partitions
+2020-06-09 16:01:19 INFO  DAGScheduler:54 - Final stage: ResultStage 6 (collect at Word2Vec.scala:442)
+2020-06-09 16:01:19 INFO  DAGScheduler:54 - Parents of final stage: List(ShuffleMapStage 5)
+2020-06-09 16:01:19 INFO  DAGScheduler:54 - Missing parents: List(ShuffleMapStage 5)
+2020-06-09 16:01:19 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 4 (MapPartitionsRDD[19] at repartition at Word2Vec.scala:344), which has no missing parents
+2020-06-09 16:01:19 INFO  MemoryStore:54 - Block broadcast_10 stored as values in memory (estimated size 8.6 KB, free 413.6 MB)
+2020-06-09 16:01:19 INFO  MemoryStore:54 - Block broadcast_10_piece0 stored as bytes in memory (estimated size 4.8 KB, free 413.6 MB)
+2020-06-09 16:01:19 INFO  BlockManagerInfo:54 - Added broadcast_10_piece0 in memory on 192.168.1.173:55440 (size: 4.8 KB, free: 413.9 MB)
+2020-06-09 16:01:19 INFO  SparkContext:54 - Created broadcast 10 from broadcast at DAGScheduler.scala:1161
+2020-06-09 16:01:19 INFO  DAGScheduler:54 - Submitting 4 missing tasks from ShuffleMapStage 4 (MapPartitionsRDD[19] at repartition at Word2Vec.scala:344) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+2020-06-09 16:01:19 INFO  TaskSchedulerImpl:54 - Adding task set 4.0 with 4 tasks
+2020-06-09 16:01:19 INFO  TaskSetManager:54 - Starting task 0.0 in stage 4.0 (TID 13, localhost, executor driver, partition 0, PROCESS_LOCAL, 11189 bytes)
+2020-06-09 16:01:19 INFO  TaskSetManager:54 - Starting task 1.0 in stage 4.0 (TID 14, localhost, executor driver, partition 1, PROCESS_LOCAL, 11085 bytes)
+2020-06-09 16:01:20 INFO  TaskSetManager:54 - Starting task 2.0 in stage 4.0 (TID 15, localhost, executor driver, partition 2, PROCESS_LOCAL, 11594 bytes)
+2020-06-09 16:01:20 INFO  TaskSetManager:54 - Starting task 3.0 in stage 4.0 (TID 16, localhost, executor driver, partition 3, PROCESS_LOCAL, 11969 bytes)
+2020-06-09 16:01:20 INFO  Executor:54 - Running task 0.0 in stage 4.0 (TID 13)
+2020-06-09 16:01:20 INFO  Executor:54 - Running task 1.0 in stage 4.0 (TID 14)
+2020-06-09 16:01:20 INFO  Executor:54 - Running task 2.0 in stage 4.0 (TID 15)
+2020-06-09 16:01:20 INFO  Executor:54 - Running task 3.0 in stage 4.0 (TID 16)
+2020-06-09 16:01:20 INFO  BlockManager:54 - Found block rdd_11_3 locally
+2020-06-09 16:01:20 INFO  BlockManager:54 - Found block rdd_11_0 locally
+2020-06-09 16:01:20 INFO  BlockManager:54 - Found block rdd_11_2 locally
+2020-06-09 16:01:20 INFO  BlockManager:54 - Found block rdd_11_1 locally
+2020-06-09 16:01:20 INFO  Executor:54 - Finished task 1.0 in stage 4.0 (TID 14). 1590 bytes result sent to driver
+2020-06-09 16:01:20 INFO  Executor:54 - Finished task 2.0 in stage 4.0 (TID 15). 1590 bytes result sent to driver
+2020-06-09 16:01:20 INFO  Executor:54 - Finished task 3.0 in stage 4.0 (TID 16). 1590 bytes result sent to driver
+2020-06-09 16:01:20 INFO  TaskSetManager:54 - Finished task 1.0 in stage 4.0 (TID 14) in 162 ms on localhost (executor driver) (1/4)
+2020-06-09 16:01:20 INFO  TaskSetManager:54 - Finished task 2.0 in stage 4.0 (TID 15) in 160 ms on localhost (executor driver) (2/4)
+2020-06-09 16:01:20 INFO  Executor:54 - Finished task 0.0 in stage 4.0 (TID 13). 1590 bytes result sent to driver
+2020-06-09 16:01:20 INFO  TaskSetManager:54 - Finished task 3.0 in stage 4.0 (TID 16) in 166 ms on localhost (executor driver) (3/4)
+2020-06-09 16:01:20 INFO  TaskSetManager:54 - Finished task 0.0 in stage 4.0 (TID 13) in 183 ms on localhost (executor driver) (4/4)
+2020-06-09 16:01:20 INFO  TaskSchedulerImpl:54 - Removed TaskSet 4.0, whose tasks have all completed, from pool 
+2020-06-09 16:01:20 INFO  DAGScheduler:54 - ShuffleMapStage 4 (repartition at Word2Vec.scala:344) finished in 0.242 s
+2020-06-09 16:01:20 INFO  DAGScheduler:54 - looking for newly runnable stages
+2020-06-09 16:01:20 INFO  DAGScheduler:54 - running: Set()
+2020-06-09 16:01:20 INFO  DAGScheduler:54 - waiting: Set(ShuffleMapStage 5, ResultStage 6)
+2020-06-09 16:01:20 INFO  DAGScheduler:54 - failed: Set()
+2020-06-09 16:01:20 INFO  DAGScheduler:54 - Submitting ShuffleMapStage 5 (MapPartitionsRDD[23] at mapPartitionsWithIndex at Word2Vec.scala:364), which has no missing parents
+2020-06-09 16:01:20 INFO  MemoryStore:54 - Block broadcast_11 stored as values in memory (estimated size 6.5 KB, free 413.6 MB)
+2020-06-09 16:01:20 INFO  MemoryStore:54 - Block broadcast_11_piece0 stored as bytes in memory (estimated size 3.5 KB, free 413.6 MB)
+2020-06-09 16:01:20 INFO  BlockManagerInfo:54 - Added broadcast_11_piece0 in memory on 192.168.1.173:55440 (size: 3.5 KB, free: 413.9 MB)
+2020-06-09 16:01:20 INFO  SparkContext:54 - Created broadcast 11 from broadcast at DAGScheduler.scala:1161
+2020-06-09 16:01:20 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ShuffleMapStage 5 (MapPartitionsRDD[23] at mapPartitionsWithIndex at Word2Vec.scala:364) (first 15 tasks are for partitions Vector(0))
+2020-06-09 16:01:20 INFO  TaskSchedulerImpl:54 - Adding task set 5.0 with 1 tasks
+2020-06-09 16:01:20 INFO  TaskSetManager:54 - Starting task 0.0 in stage 5.0 (TID 17, localhost, executor driver, partition 0, ANY, 7927 bytes)
+2020-06-09 16:01:20 INFO  Executor:54 - Running task 0.0 in stage 5.0 (TID 17)
+2020-06-09 16:01:20 INFO  ShuffleBlockFetcherIterator:54 - Getting 4 non-empty blocks including 4 local blocks and 0 remote blocks
+2020-06-09 16:01:20 INFO  ShuffleBlockFetcherIterator:54 - Started 0 remote fetches in 2 ms
+2020-06-09 16:01:20 INFO  MemoryStore:54 - Block rdd_22_0 stored as values in memory (estimated size 5.8 KB, free 413.6 MB)
+2020-06-09 16:01:20 INFO  BlockManagerInfo:54 - Added rdd_22_0 in memory on 192.168.1.173:55440 (size: 5.8 KB, free: 413.9 MB)
+2020-06-09 16:01:20 INFO  Executor:54 - Finished task 0.0 in stage 5.0 (TID 17). 1240 bytes result sent to driver
+2020-06-09 16:01:20 INFO  TaskSetManager:54 - Finished task 0.0 in stage 5.0 (TID 17) in 108 ms on localhost (executor driver) (1/1)
+2020-06-09 16:01:20 INFO  DAGScheduler:54 - ShuffleMapStage 5 (mapPartitionsWithIndex at Word2Vec.scala:364) finished in 0.176 s
+2020-06-09 16:01:20 INFO  TaskSchedulerImpl:54 - Removed TaskSet 5.0, whose tasks have all completed, from pool 
+2020-06-09 16:01:20 INFO  DAGScheduler:54 - looking for newly runnable stages
+2020-06-09 16:01:20 INFO  DAGScheduler:54 - running: Set()
+2020-06-09 16:01:20 INFO  DAGScheduler:54 - waiting: Set(ResultStage 6)
+2020-06-09 16:01:20 INFO  DAGScheduler:54 - failed: Set()
+2020-06-09 16:01:20 INFO  DAGScheduler:54 - Submitting ResultStage 6 (ShuffledRDD[24] at reduceByKey at Word2Vec.scala:439), which has no missing parents
+2020-06-09 16:01:20 INFO  MemoryStore:54 - Block broadcast_12 stored as values in memory (estimated size 4.5 KB, free 413.6 MB)
+2020-06-09 16:01:20 INFO  MemoryStore:54 - Block broadcast_12_piece0 stored as bytes in memory (estimated size 2.5 KB, free 413.6 MB)
+2020-06-09 16:01:20 INFO  BlockManagerInfo:54 - Added broadcast_12_piece0 in memory on 192.168.1.173:55440 (size: 2.5 KB, free: 413.9 MB)
+2020-06-09 16:01:20 INFO  SparkContext:54 - Created broadcast 12 from broadcast at DAGScheduler.scala:1161
+2020-06-09 16:01:20 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 6 (ShuffledRDD[24] at reduceByKey at Word2Vec.scala:439) (first 15 tasks are for partitions Vector(0))
+2020-06-09 16:01:20 INFO  TaskSchedulerImpl:54 - Adding task set 6.0 with 1 tasks
+2020-06-09 16:01:20 INFO  TaskSetManager:54 - Starting task 0.0 in stage 6.0 (TID 18, localhost, executor driver, partition 0, PROCESS_LOCAL, 7662 bytes)
+2020-06-09 16:01:20 INFO  Executor:54 - Running task 0.0 in stage 6.0 (TID 18)
+2020-06-09 16:01:20 INFO  BlockManagerInfo:54 - Removed broadcast_10_piece0 on 192.168.1.173:55440 in memory (size: 4.8 KB, free: 413.9 MB)
+2020-06-09 16:01:20 INFO  ShuffleBlockFetcherIterator:54 - Getting 0 non-empty blocks including 0 local blocks and 0 remote blocks
+2020-06-09 16:01:20 INFO  ShuffleBlockFetcherIterator:54 - Started 0 remote fetches in 2 ms
+2020-06-09 16:01:20 INFO  Executor:54 - Finished task 0.0 in stage 6.0 (TID 18). 1134 bytes result sent to driver
+2020-06-09 16:01:20 INFO  TaskSetManager:54 - Finished task 0.0 in stage 6.0 (TID 18) in 51 ms on localhost (executor driver) (1/1)
+2020-06-09 16:01:20 INFO  DAGScheduler:54 - ResultStage 6 (collect at Word2Vec.scala:442) finished in 0.086 s
+2020-06-09 16:01:20 INFO  TaskSchedulerImpl:54 - Removed TaskSet 6.0, whose tasks have all completed, from pool 
+2020-06-09 16:01:20 INFO  DAGScheduler:54 - Job 3 finished: collect at Word2Vec.scala:442, took 0.547765 s
+2020-06-09 16:01:20 INFO  TorrentBroadcast:54 - Destroying Broadcast(8) (from destroy at Word2Vec.scala:453)
+2020-06-09 16:01:20 INFO  TorrentBroadcast:54 - Destroying Broadcast(9) (from destroy at Word2Vec.scala:454)
+2020-06-09 16:01:20 INFO  BlockManagerInfo:54 - Removed broadcast_8_piece0 on 192.168.1.173:55440 in memory (size: 429.0 B, free: 413.9 MB)
+2020-06-09 16:01:20 INFO  MapPartitionsRDD:54 - Removing RDD 22 from persistence list
+2020-06-09 16:01:20 INFO  BlockManagerInfo:54 - Removed broadcast_9_piece0 on 192.168.1.173:55440 in memory (size: 82.0 B, free: 413.9 MB)
+2020-06-09 16:01:20 INFO  BlockManager:54 - Removing RDD 22
+2020-06-09 16:01:20 WARN  BLAS:61 - Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+2020-06-09 16:01:20 WARN  BLAS:61 - Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+2020-06-09 16:01:20 INFO  TorrentBroadcast:54 - Destroying Broadcast(5) (from destroy at Word2Vec.scala:321)
+2020-06-09 16:01:20 INFO  TorrentBroadcast:54 - Destroying Broadcast(6) (from destroy at Word2Vec.scala:322)
+2020-06-09 16:01:20 INFO  TorrentBroadcast:54 - Destroying Broadcast(7) (from destroy at Word2Vec.scala:323)
+2020-06-09 16:01:20 INFO  BlockManagerInfo:54 - Removed broadcast_5_piece0 on 192.168.1.173:55440 in memory (size: 4.0 KB, free: 413.9 MB)
+2020-06-09 16:01:20 INFO  BlockManagerInfo:54 - Removed broadcast_6_piece0 on 192.168.1.173:55440 in memory (size: 873.0 B, free: 413.9 MB)
+2020-06-09 16:01:20 INFO  MapPartitionsRDD:54 - Removing RDD 11 from persistence list
+2020-06-09 16:01:20 INFO  BlockManagerInfo:54 - Removed broadcast_7_piece0 on 192.168.1.173:55440 in memory (size: 379.0 B, free: 413.9 MB)
+2020-06-09 16:01:20 INFO  BlockManager:54 - Removing RDD 11
+('vectors1:', {u'for': [0.050442625, 0.04927964, -0.09251021, -0.04389292, 0.013548625], u'author': [0.06299474, -0.020130957, -0.013903379, -0.03502034, -0.0316964], u'}': [-0.04961977, -0.09177053, -0.049979497, -0.086733714, 0.047003616], u'\xee\xa4\x91': [0.064762995, -0.056998897, 0.05542656, 0.055001438, 0.040885843], u'document': [-0.08008748, 0.08888296, -0.073216006, -0.07213501, 0.04768275], u'=': [0.03289894, -0.057451297, -0.0133479, -0.024376404, 0.031197082], u'a': [-0.05374676, -0.044174124, -0.09714653, -0.04203123, -0.00212754], u'year': [-0.041920923, 0.09160373, 0.023021257, 0.019066084, 0.0071049454], u'-': [0.040556192, -0.09892237, 0.032070957, -0.07389013, 0.04920218], u'2010': [-0.05037254, 0.00044116974, 0.06253217, -0.03485142, 0.048669875], u'\xc2\xa0': [0.00694263, 0.057401083, -0.078547455, -0.037171066, 0.013593066], u'title': [0.04868394, -0.045239937, -0.03528478, 0.012356746, -0.04706367], u'merit': [-0.042374454, -0.08861615, 0.050490856, 0.06514416, 0.044456363], u'\xef\x83\x83': [0.027914692, 0.0090247635, 0.06265031, 0.020052146, 0.07705244], u'of': [0.057361327, -0.0068045976, -0.048957456, 0.044026066, 0.018757831], u'and': [-0.06139902, -0.04793813, -0.0515378, 0.055475116, 0.021272887], u'Science': [0.060065936, 0.08929201, -0.055744816, -0.035934757, -0.06529926], u'the': [0.09213897, 0.07657625, -0.0761141, 0.067719236, -0.021903431]})
+('synonym1:', u'\xee\xa4\x91', ' - cosine distance:', 0.62765461206436157)
+('synonym1:', u'and', ' - cosine distance:', 0.58624672889709473)
+('synonym1:', u'\xef\x83\x83', ' - cosine distance:', 0.41304430365562439)
+('synonym1:', u'2010', ' - cosine distance:', 0.37859585881233215)
+('synonym1:', u'-', ' - cosine distance:', 0.31210207939147949)
+2020-06-09 16:01:21 INFO  SparkContext:54 - Invoking stop() from shutdown hook
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 155
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 148
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 156
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 108
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 170
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 151
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 137
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 139
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 128
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 135
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 153
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 131
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 109
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 142
+2020-06-09 16:01:21 INFO  AbstractConnector:318 - Stopped Spark@14f1a82{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 114
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 157
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 132
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 106
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 160
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 152
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 141
+2020-06-09 16:01:21 INFO  ContextCleaner:54 - Cleaned accumulator 149
+2020-06-09 16:01:21 INFO  SparkUI:54 - Stopped Spark web UI at http://192.168.1.173:4040
+2020-06-09 16:01:21 INFO  BlockManagerInfo:54 - Removed broadcast_11_piece0 on 192.168.1.173:55440 in memory (size: 3.5 KB, free: 413.9 MB)
+2020-06-09 16:01:21 INFO  MapOutputTrackerMasterEndpoint:54 - MapOutputTrackerMasterEndpoint stopped!
+2020-06-09 16:01:21 INFO  MemoryStore:54 - MemoryStore cleared
+2020-06-09 16:01:21 INFO  BlockManager:54 - BlockManager stopped
+2020-06-09 16:01:21 INFO  BlockManagerMaster:54 - BlockManagerMaster stopped
+2020-06-09 16:01:21 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54 - OutputCommitCoordinator stopped!
+2020-06-09 16:01:21 INFO  SparkContext:54 - Successfully stopped SparkContext
+2020-06-09 16:01:21 INFO  ShutdownHookManager:54 - Shutdown hook called
+2020-06-09 16:01:21 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-9aa05ab8-1db5-44dd-ba40-0f2b0154ff3e/pyspark-7b5f3ec8-e1e1-426b-bf7f-1c00aafd8f1b
+2020-06-09 16:01:21 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-9aa05ab8-1db5-44dd-ba40-0f2b0154ff3e
+2020-06-09 16:01:21 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-b102bd89-e1c0-471f-80d2-f489fed115be

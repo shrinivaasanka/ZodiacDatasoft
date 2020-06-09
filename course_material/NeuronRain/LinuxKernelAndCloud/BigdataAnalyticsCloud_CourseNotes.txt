@@ -354,3 +354,25 @@ to words after utf-8 encoding.
 3.Parsed data is printed by DataFrame show() and printSchema() - StringType Spark type has been imported.
 4.GoogleScholar bibliography has been included.
 5.Spark logs are at testlogs/Spark_Word2Vec.log.11May2020
+
+--------------------------------------------------------------------------------------------------------
+826. (FEATURE) Spark SkipGram Word2Vec Bibliometrics - increased vocabulary and accuracy - 9 June 2020
+- related to 821,822
+--------------------------------------------------------------------------------------------------------
+1.Spark_Word2Vec.py has been changed to parse an expanded Bibliography text file (Spark_Word2Vec_Bibliography.txt) which is a concatenation of BibTeX from various Bibliography sources (Google Scholar,CiteSeerX,Microsoft Academic,Semantic Scholar,Harvard NASA ADS,DBLP) instead of parsing a single source.
+2.Because of enlarged BibTeX training data, vocabulary of Word2Vec bibliometrics has improved and more meaningful words e.g author,year,Science,merit,title,document have been vectorized (All BibTeX are from author search of self - "Ka Shrinivaasan").
+3.Vector size and Seed size have been set to 5 and 42 respectively.
+
+---------------------------------------------------------------------------------------------------------
+827. (THEORY and FEATURE) Intrinsic Merit of Academic Publications - Bibliometrics - First Order Logic,
+Girard Geometry of Interactions (GoI), Sequent Calculus, ProofNets - related to 624,821,822,826 - 10 June 2020
+---------------------------------------------------------------------------------------------------------
+There exists a fine division in quantifying merit of a natural language text and academic publications cutting across disciplines - theoretical and experimental. Natural language texts are measurable by mental representation of meaning and its lambda function approximation (Recursive Lambda Function Growth) whereas every academic publication could be construed as sequence of first order logic formulae connected by logical implications - from conjecture to QED. In Sequent Calculus proof has a tree structure and every line of a proof is a conditional tautology on previous lines. Girard Geometry of Interactions maps every theorem-proof to geometry of logical statements (ProofNets) by defining trip operator (Long Trip Criterion) on proof network. For instance, Coq Theorem Prover has been used to verify proof of Four Color Theorem by [Appel-Haken]. Thus Concept distance for Originality merit measure between any two academic publications could be defined as the distance between their ProofNet GoIs. On a related note, Distance between two First order logic (FOL) statements is the problem of equivalence of 2 FOL formulae F1 and F2: If F1 == F2, distance is 0 else distance is the number of mismatches in truth table - To prove F1 == F2, both F1 => F2 and F2 => F1 have to be established. 
+
+References:
+----------
+826.1 Coq Proof Assistant and Four Color Theorem - https://www.ams.org/notices/200811/tx081101382p.pdf 
+826.2 Proof Nets - Sequent Calculus and Girard Geometry of Interactions - https://en.wikipedia.org/wiki/Proof_net
+826.3 E Theorem prover - https://wwwlehre.dhbw-stuttgart.de/~sschulz/E/E.html
+826.4 Concept Cloud Wordle example for publications - https://ui.adsabs.harvard.edu/search/q=author%3A%22Shrinivaasan%2C%20Ka.%22&sort=date%20desc%2C%20bibcode%20desc/concept-cloud - prominent concepts in a set of publications are highlighted
+826.5 Equivalence of FOL statements - Biconditional - http://iiitdm.ac.in/old/Faculty_Teaching/Sadagopan/pdf/Discrete/Logic.pdf - Indian Institute of Information Technology Design and Manufacturing, Kancheepuram, Chennai 600 127, India
