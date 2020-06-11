@@ -356,18 +356,26 @@ to words after utf-8 encoding.
 5.Spark logs are at testlogs/Spark_Word2Vec.log.11May2020
 
 --------------------------------------------------------------------------------------------------------
-826. (FEATURE) Spark SkipGram Word2Vec Bibliometrics - increased vocabulary and accuracy - 9 June 2020
+826. (FEATURE) Spark SkipGram Word2Vec Bibliometrics - increased vocabulary and accuracy - 9,11 June 2020
 - related to 821,822
 --------------------------------------------------------------------------------------------------------
 1.Spark_Word2Vec.py has been changed to parse an expanded Bibliography text file (Spark_Word2Vec_Bibliography.txt) which is a concatenation of BibTeX from various Bibliography sources (Google Scholar,CiteSeerX,Microsoft Academic,Semantic Scholar,Harvard NASA ADS,DBLP) instead of parsing a single source.
-2.Because of enlarged BibTeX training data, vocabulary of Word2Vec bibliometrics has improved and more meaningful words e.g author,year,Science,merit,title,document have been vectorized (All BibTeX are from author search of self - "Ka Shrinivaasan").
-3.Vector size and Seed size have been set to 5 and 42 respectively.
+2.Because of enlarged BibTeX training data, vocabulary of Word2Vec bibliometrics has improved and more meaningful words e.g author,year,Science,merit,title,document have been vectorized
+3.All BibTeX are from author search of self - "Ka Shrinivaasan" - from URLs:
+	Google Scholar - https://scholar.google.co.in/citations?user=eLZY7CIAAAAJ&hl=en
+	DBLP - http://dblp.dagstuhl.de/pers/hd/s/Shrinivaasan:Ka=
+	Microsoft Academic - https://academic.microsoft.com/search?q=ka%20shrinivaasan&qe=%40%40%40Composite(AA.AuN%3D%3D%27ka%20shrinivaasan%27)&f=&orderBy=4&skip=0&take=10 
+	Semantic Scholar - https://www.semanticscholar.org/author/Ka.-Shrinivaasan/1861803
+	CiteSeerX - https://citeseerx.ist.psu.edu/search?q=Ka.+Shrinivaasan 
+	NASA/ADS - https://ui.adsabs.harvard.edu/search/q=author%3A%22Shrinivaasan%2C%20Ka.%22&sort=date%20desc%2C%20bibcode%20desc&p_=0 
+4.Vector size and Seed size have been set to 5 and 42 respectively
+5.Vocabulary could be further improved by word2vec embedding of entire article instead of BibTex abstracts which is a concept cloud of vectors.
 
 ---------------------------------------------------------------------------------------------------------
 827. (THEORY and FEATURE) Intrinsic Merit of Academic Publications - Bibliometrics - First Order Logic,
-Girard Geometry of Interactions (GoI), Sequent Calculus, ProofNets - related to 624,821,822,826 - 10 June 2020
+Girard Geometry of Interactions (GoI), Sequent Calculus, ProofNets - related to 624,821,822,826 - 10,11 June 2020
 ---------------------------------------------------------------------------------------------------------
-There exists a fine division in quantifying merit of a natural language text and academic publications cutting across disciplines - theoretical and experimental. Natural language texts are measurable by mental representation of meaning and its lambda function approximation (Recursive Lambda Function Growth) whereas every academic publication could be construed as sequence of first order logic formulae connected by logical implications - from conjecture to QED. In Sequent Calculus proof has a tree structure and every line of a proof is a conditional tautology on previous lines. Girard Geometry of Interactions maps every theorem-proof to geometry of logical statements (ProofNets) by defining trip operator (Long Trip Criterion) on proof network. For instance, Coq Theorem Prover has been used to verify proof of Four Color Theorem by [Appel-Haken]. Thus Concept distance for Originality merit measure between any two academic publications could be defined as the distance between their ProofNet GoIs. On a related note, Distance between two First order logic (FOL) statements is the problem of equivalence of 2 FOL formulae F1 and F2: If F1 == F2, distance is 0 else distance is the number of mismatches in truth table - To prove F1 == F2, both F1 => F2 and F2 => F1 have to be established. 
+There exists a fine division in quantifying merit of a natural language text and academic publications cutting across disciplines - theoretical and experimental. Natural language texts are measurable by mental representation of meaning and its lambda function approximation (Recursive Lambda Function Growth) whereas every academic publication could be construed as sequence of first order logic formulae connected by logical implications - from conjecture to QED. In Sequent Calculus proof has a tree structure and every line of a proof is a conditional tautology on previous lines. Girard Geometry of Interactions maps every theorem-proof to geometry of logical statements (ProofNets) by defining trip operator (Long Trip Criterion) on proof network. For instance, Coq Theorem Prover has been used to verify proof of Four Color Theorem by [Appel-Haken]. Thus Concept distance for Originality merit measure between any two academic publications could be defined as the distance between their ProofNet GoIs. On a related note, Distance between two First order logic (FOL) statements is the problem of equivalence of 2 FOL formulae F1 and F2: If F1 == F2, distance is 0 else distance is the number of mismatches in truth table - To prove F1 == F2, both F1 => F2 and F2 => F1 have to be established. There are two other prominent proof calculi - Hilbert and Natural Deduction. Analyzing academic publications and theorem-lemma-proofs therein thus has two facets: 1) Natural Language Processing - Lambda Function approximation, Word2Vec embedding of concepts and their clustering 2) Formal Logic - Proof theory - Sequents, Gentzen Cut-Elimination (A |- B,C and D,B |- E then A,D |- C,E), ProofNet-GoIs 
 
 References:
 ----------
