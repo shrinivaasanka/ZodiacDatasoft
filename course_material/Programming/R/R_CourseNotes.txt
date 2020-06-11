@@ -52,3 +52,11 @@ R provides various facilities for creating sequences - seq(), array(), c(), data
 References:
 -----------
 825.1 R and S documentation - https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/c 
+
+----------------------------------------------------------------------------------------------------------
+828. (THEORY and FEATURE) People Analytics - Social Network Analysis - CoronaVirus2019 analyzer - Linear Models - 11,12 June 2020 - related to 487,572,752,770,823,824,825
+----------------------------------------------------------------------------------------------------------
+R has variety of builtins for Linear Regression and Logistic Regression - Linear Models - lm() and glm() functions. Code example LinearModels.R computes linear model lm() and generalized linear model glm() for CoronaVirus2019 dataset which correlate per-day and total fields by various family of fit measures - gaussian, gamma, poisson, binomial and link functions - logit, identity, log, inverse, 1/mu^2. It also demonstrates matrix creation by cbind() which combines vectors and $ notation for dataframe fields. Summary including linear.predictor for each model is printed to testlogs/LinearModels.log.11June2020. Pandemics as Social network fad diffusion are traditionally fit to Chaos, Cellular automata, ERSIR random graph model, SIS random graph model, exponential or poisson distributions. An example Theoretical regression model which explains the spread based on population density (average degree in urban sprawl social networks) could be:
+	Per day Spread = weight1 * total_infected - weight2 * total_recovered - weight3 * deaths + weight4 * recovery_time ... + constant 
+for variables total_infected, deaths, recovery time and total_recovered and weights weights3=1, weight4, weight1=average_degree and weight2=1 (spread is en masse and depends on degree of network and recovery time but recovery benefits only individual). By CAGraph social network concept diffusion model, weight1=average_degree=8 for 2 dimensional cellular automaton increment growth rule. Linear model is dependent mostly on recovery time which then becomes:
+	Per day Spread = 8 * total_infected - 1 * total_recovered - 1 * deaths + weight4 * recovery_time ... + constant 
