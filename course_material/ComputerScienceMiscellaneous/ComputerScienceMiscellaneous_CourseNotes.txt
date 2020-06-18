@@ -492,3 +492,27 @@ if the outcomes of experiment are mutually independent, P(w1 /\ w2 /\ w3) = P(w1
 References:
 -----------
 1.Probability and Statistics with Reliability,Queueing and Computer Science Applications - [Kishor Shridharbhai Trivedi] - Chapter 1 - Page 33 - Problem 4 - General Multiplication Rule (GMR)
+
+-----------------------------------------------------------------------------------------------------
+830. (THEORY and FEATURE) Set Partition Analytics, Voting Analytics, Ramsey 2-coloring - m men and n women are to be seated in a row so that no two women sit together. If m > n, show that the number of ways in which they can be seated is m! (m+1)! / (m-n+1)! - (Question from IIT-JEE 1983) - related to all sections of NeuronRain Theory Drafts on Set Partitions, Theoretical Electronic Voting Machines, Ramsey coloring of sequences, Complementary Sets, Avoidance Patterns in Primes - 18 June 2020
+-----------------------------------------------------------------------------------------------------
+A1) m men can be seated in m! ways and for each such permutation, n women can be seated in (m+1)
+vacancies - including an extra seat beyond a row - between each male in (m+1)Pn = (m+1)!/(m+1-n)! ways. Multiplying, total number of such arrangements are m! * (m+1)!/(m-n+1)! 
+
+A2) But previous answer assumes set of m men is partitioned into m parts of size 1 each. Generalizing
+it to a set partition of m males of arbitrary sized parts (unrestricted set partition) no two women might still sit together - a woman sandwiched between any 2 male parts - if number of male parts exceed number of women:
+	- m men could be partitioned in B(m) ways where B(m) is the Bell number = number of partitions of a set of size m = Sum of Stirling numbers of second kind
+	- Number of ways m men could be partitioned into k parts = Stirling number of second kind {m,k} = 1/k!*Sum_over_i=0,...,k((-1)^i (k,i) (k-i)^n)
+	- n women could be seated in each of the (k+1) vacancies for all k > n
+	- Total arrangements possible = Sum_over_k[{m,k}*(k + 1)Pn] for all k > n 
+
+A3) Problem is symmetric:
+	- instead of partitioning m males first, n females could be partitioned in {n,1} ways where {n,1} is the Stirling number of second kind for number of partitions of size 1 parts.
+	- m males could be partitioned into k parts in {m,k} ways (from A2)
+	- {m,k} parts of set of males could be seated in (n+1) vacancies between each female if {m,k} < (n+1) - including extra seat beyond end of row - in Sum_over_k[((n+1)P({m,k})] ways for all k > n
+	- Total arrangements possible = {n,1}*Sum_over_k[(n+1)P({m,k})] for all k > n
+
+A2 and A3 are equivalent:
+	Sum_over_k[{m,k}*(k + 1)Pn] = {n,1}*Sum_over_k[(n+1)P({m,k})] for all k > n
+	
+Computer Science Theory Applications of such an avoidance are numerous - biased binary strings, patterns in primes, 2-colored sequences, bipartisan voting patterns are some of them (by replacing men-women by 0-1 or Red-Blue colors).
