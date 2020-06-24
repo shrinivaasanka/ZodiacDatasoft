@@ -1,0 +1,351 @@
+[1] "==================================="
+[1] "CAGraph Logit - R learnt weights - Iterative Weighted Least Squares (IWLS):"
+[1] "==================================="
+[1] "./CAGraphLogit.dat"
+  Infected Deaths Recovered Perdiem RecoveryTime
+1  2263749 120688    931076   30000           11
+2   983359  47869    520360   10000           12
+3   569063   7841    324406    7972           20
+4   381485  12605    205183   15000           14
+5   244388   7461    131190    1000           15
+6   238159  34514    180544    2000           15
+[1] "CAGraph Logit:"
+[1] "=================="
+[1] "GLM:"
+
+Call:
+glm(formula = Perdiem ~ Infected + Deaths + Recovered + RecoveryTime, 
+    family = poisson())
+
+Deviance Residuals: 
+      1        2        3        4        5        6  
+  1.195  -17.328    3.387   59.635  -85.567   17.918  
+
+Coefficients:
+               Estimate Std. Error z value Pr(>|z|)    
+(Intercept)   1.075e+01  4.585e-02  234.47   <2e-16 ***
+Infected      4.507e-06  7.407e-08   60.84   <2e-16 ***
+Deaths       -5.381e-05  8.907e-07  -60.41   <2e-16 ***
+Recovered    -2.638e-06  1.219e-07  -21.65   <2e-16 ***
+RecoveryTime -1.546e-01  2.972e-03  -52.02   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 50904  on 5  degrees of freedom
+Residual deviance: 11512  on 1  degrees of freedom
+AIC: 11586
+
+Number of Fisher Scoring iterations: 5
+
+[1] "================================="
+[1] "LM:"
+
+Call:
+lm(formula = Perdiem ~ Infected + Deaths + Recovered + RecoveryTime)
+
+Residuals:
+      1       2       3       4       5       6 
+  223.3 -1983.4   322.8  6671.2 -5988.8   754.8 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)
+(Intercept)   1.170e+04  3.284e+04   0.356    0.782
+Infected      3.451e-02  4.608e-02   0.749    0.591
+Deaths       -1.259e-01  3.498e-01  -0.360    0.780
+Recovered    -4.299e-02  1.092e-01  -0.394    0.761
+RecoveryTime -4.379e+02  1.987e+03  -0.220    0.862
+
+Residual standard error: 9221 on 1 degrees of freedom
+Multiple R-squared:  0.8503,	Adjusted R-squared:  0.2517 
+F-statistic: 1.421 on 4 and 1 DF,  p-value: 0.5513
+
+[1] "================================="
+[1] "==================================="
+[1] "Summary:"
+[1] "==================================="
+$coefficients
+  (Intercept)      Infected        Deaths     Recovered  RecoveryTime 
+ 1.075065e+01  4.506570e-06 -5.380609e-05 -2.637778e-06 -1.546023e-01 
+
+$residuals
+           1            2            3            4            5            6 
+ 0.006932235 -0.154999085  0.038909945  0.698685412 -0.847060304  0.536194410 
+
+$fitted.values
+        1         2         3         4         5         6 
+29793.465 11834.307  7673.427  8830.358  6538.525  1301.919 
+
+$effects
+ (Intercept)     Infected       Deaths    Recovered RecoveryTime              
+ -2466.73294    170.69029    -30.90318    -10.11786     52.01886     98.35519 
+
+$R
+             (Intercept)   Infected    Deaths  Recovered RecoveryTime
+(Intercept)    -256.8503 -345437179 -17237293 -152976591   -3365.5438
+Infected          0.0000  221426322  12834001   83014297    -532.5776
+Deaths            0.0000          0   1740953   -1593071    -378.8333
+Recovered         0.0000          0         0    8425340     -78.3062
+RecoveryTime      0.0000          0         0          0    -336.4688
+
+$rank
+[1] 5
+
+$qr
+$qr
+   (Intercept)      Infected        Deaths     Recovered  RecoveryTime
+1 -256.8502575 -3.454372e+08 -1.723729e+07 -1.529766e+08 -3365.5438138
+2    0.4235370  2.214263e+08  1.283400e+07  8.301430e+07  -532.5775828
+3    0.3410474  4.530266e-01  1.740953e+06 -1.593071e+06  -378.8332928
+4    0.3658557  5.655860e-01 -2.387337e-02  8.425340e+06   -78.3062012
+5    0.3148188  5.367523e-01 -1.470486e-01  7.754841e-01  -336.4687596
+6    0.1404792  2.405259e-01 -6.337122e-01  7.485596e-02     0.9743293
+
+$rank
+[1] 5
+
+$qraux
+[1] 1.672017 1.359059 1.759089 1.626914 1.225128
+
+$pivot
+[1] 1 2 3 4 5
+
+$tol
+[1] 1e-11
+
+attr(,"class")
+[1] "qr"
+
+$family
+
+Family: poisson 
+Link function: log 
+
+
+$linear.predictors
+        1         2         3         4         5         6 
+10.302044  9.378758  8.945519  9.085951  8.785467  7.171594 
+
+$deviance
+[1] 11512.21
+
+$aic
+[1] 11585.87
+
+$null.deviance
+[1] 50904.45
+
+$iter
+[1] 5
+
+$weights
+        1         2         3         4         5         6 
+29793.465 11834.306  7673.427  8830.387  6538.550  1301.920 
+
+$prior.weights
+1 2 3 4 5 6 
+1 1 1 1 1 1 
+
+$df.residual
+[1] 1
+
+$df.null
+[1] 5
+
+$y
+    1     2     3     4     5     6 
+30000 10000  7972 15000  1000  2000 
+
+$converged
+[1] TRUE
+
+$boundary
+[1] FALSE
+
+$model
+  Perdiem Infected Deaths Recovered RecoveryTime
+1   30000  2263749 120688    931076           11
+2   10000   983359  47869    520360           12
+3    7972   569063   7841    324406           20
+4   15000   381485  12605    205183           14
+5    1000   244388   7461    131190           15
+6    2000   238159  34514    180544           15
+
+$call
+glm(formula = Perdiem ~ Infected + Deaths + Recovered + RecoveryTime, 
+    family = poisson())
+
+$formula
+Perdiem ~ Infected + Deaths + Recovered + RecoveryTime
+<environment: 0x560136b2fee0>
+
+$terms
+Perdiem ~ Infected + Deaths + Recovered + RecoveryTime
+attr(,"variables")
+list(Perdiem, Infected, Deaths, Recovered, RecoveryTime)
+attr(,"factors")
+             Infected Deaths Recovered RecoveryTime
+Perdiem             0      0         0            0
+Infected            1      0         0            0
+Deaths              0      1         0            0
+Recovered           0      0         1            0
+RecoveryTime        0      0         0            1
+attr(,"term.labels")
+[1] "Infected"     "Deaths"       "Recovered"    "RecoveryTime"
+attr(,"order")
+[1] 1 1 1 1
+attr(,"intercept")
+[1] 1
+attr(,"response")
+[1] 1
+attr(,".Environment")
+<environment: 0x560136b2fee0>
+attr(,"predvars")
+list(Perdiem, Infected, Deaths, Recovered, RecoveryTime)
+attr(,"dataClasses")
+     Perdiem     Infected       Deaths    Recovered RecoveryTime 
+   "numeric"    "numeric"    "numeric"    "numeric"    "numeric" 
+
+$data
+<environment: 0x560136b2fee0>
+
+$offset
+NULL
+
+$control
+$control$epsilon
+[1] 1e-08
+
+$control$maxit
+[1] 25
+
+$control$trace
+[1] FALSE
+
+
+$method
+[1] "glm.fit"
+
+$contrasts
+NULL
+
+$xlevels
+named list()
+
+$coefficients
+  (Intercept)      Infected        Deaths     Recovered  RecoveryTime 
+ 1.170306e+04  3.450641e-02 -1.259413e-01 -4.298682e-02 -4.378770e+02 
+
+$residuals
+         1          2          3          4          5          6 
+  223.3252 -1983.4236   322.8446  6671.1930 -5988.7701   754.8308 
+
+$effects
+ (Intercept)     Infected       Deaths    Recovered RecoveryTime              
+  -26932.956    21420.166    -2335.831    -3838.313     2031.838     9221.064 
+
+$rank
+[1] 5
+
+$fitted.values
+        1         2         3         4         5         6 
+29776.675 11983.424  7649.155  8328.807  6988.770  1245.169 
+
+$assign
+[1] 0 1 2 3 4
+
+$qr
+$qr
+  (Intercept)      Infected        Deaths     Recovered RecoveryTime
+1  -2.4494897 -1.910685e+06 -9.429637e+04 -9.360149e+05  -35.5176013
+2   0.4082483  1.739726e+06  9.163681e+04  6.719073e+05   -4.1392389
+3   0.4082483  3.685045e-01  3.217412e+04 -6.692933e+03   -3.2623539
+4   0.4082483  4.763249e-01  1.557990e-01  8.482408e+04    0.4384681
+5   0.4082483  5.551287e-01  8.579897e-02  8.330604e-01   -4.6402041
+6   0.4082483  5.587091e-01 -7.654768e-01  1.280340e-01    0.9862112
+attr(,"assign")
+[1] 0 1 2 3 4
+
+$qraux
+[1] 1.408248 1.130366 1.618393 1.538161 1.165491
+
+$pivot
+[1] 1 2 3 4 5
+
+$tol
+[1] 1e-07
+
+$rank
+[1] 5
+
+attr(,"class")
+[1] "qr"
+
+$df.residual
+[1] 1
+
+$xlevels
+named list()
+
+$call
+lm(formula = Perdiem ~ Infected + Deaths + Recovered + RecoveryTime)
+
+$terms
+Perdiem ~ Infected + Deaths + Recovered + RecoveryTime
+attr(,"variables")
+list(Perdiem, Infected, Deaths, Recovered, RecoveryTime)
+attr(,"factors")
+             Infected Deaths Recovered RecoveryTime
+Perdiem             0      0         0            0
+Infected            1      0         0            0
+Deaths              0      1         0            0
+Recovered           0      0         1            0
+RecoveryTime        0      0         0            1
+attr(,"term.labels")
+[1] "Infected"     "Deaths"       "Recovered"    "RecoveryTime"
+attr(,"order")
+[1] 1 1 1 1
+attr(,"intercept")
+[1] 1
+attr(,"response")
+[1] 1
+attr(,".Environment")
+<environment: 0x560136b2fee0>
+attr(,"predvars")
+list(Perdiem, Infected, Deaths, Recovered, RecoveryTime)
+attr(,"dataClasses")
+     Perdiem     Infected       Deaths    Recovered RecoveryTime 
+   "numeric"    "numeric"    "numeric"    "numeric"    "numeric" 
+
+$model
+  Perdiem Infected Deaths Recovered RecoveryTime
+1   30000  2263749 120688    931076           11
+2   10000   983359  47869    520360           12
+3    7972   569063   7841    324406           20
+4   15000   381485  12605    205183           14
+5    1000   244388   7461    131190           15
+6    2000   238159  34514    180544           15
+
+[1] "==================================="
+[1] "Global - Per day Projections from learnt model:"
+[1] "==================================="
+[1] "1:"
+(Intercept) 
+   10.75065 
+[1] "2:"
+   Infected 
+4.50657e-06 
+[1] "3:"
+       Deaths 
+-5.380609e-05 
+[1] "4"
+    Recovered 
+-2.637778e-06 
+[1] "5"
+RecoveryTime 
+  -0.1546023 
+[1] "Per day spread(abs):"
+[1] 121087.5
+[1] "Per day spread:"
+[1] 149975.7
