@@ -158,3 +158,34 @@ x1: -0.5
 x2: 0.5
 
 Python 3.7.5 does auto type promotion to float while Python 2.7 rounds off to floor. PDB is imported by -m pdb in commandline and disassembler is imported as dis in pdb. Roundoff class is loaded in PDB. PDB Python VM bytecode disassembly shows absence of binary divide opcode in Python 3.7.5
+
+------------------------------------------------------------------------------------------------------
+26 June 2020 - Object Marshalling and Unmarshalling - Python Serialization and Persistence
+------------------------------------------------------------------------------------------------------
+Python has variety of infrastructure to support serialization and deserialization of objects - some of
+them being Pickle,Marshal,DBM and Shelve modules. While pickling is widely used, marshal,dbm and shelve are lowlevel alternatives - marshal is most widely used for persisting compiled binaries (.pyc) and restricted to python types while shelve and DBM depend on file and linux database backends and can persist arbitrary user defined types as persistence dictionaries of name-values. Thus lookup is easier making them powerful than pickle and marshal. Code example Marshal.py demonstrates the serialization and deserialization of an example Python 3.7 class and primitive list datatypes. Class Marshal defines __init__(), marshal(),unmarshal() and sync() functions which respectively wrap following shelve innards:
+
+- init - opening a file persistence by shelve.open() in writeback=True mode and retrieve serializer dict
+- marshal - populating serializer dict by object name ("array1" and "exampleobject1") and object. 
+- unmarshal - retrieval of a persisted object by object name from serializer dict
+- sync - which synchronizes the persistence if writeback=True 
+
+Marshal databases and logs are in:
+code/MarshalDB.bak
+code/MarshalDB.dat
+code/MarshalDB.dir
+code/logs/Marshal.log.26June2020
+
+Fields of deserialized Example() object and array are printed by print():
+-------------------------------------------------------------------------
+Marshalling object: array1
+Shelve serializer: [('array1', [1, 2, 3]), ('exampleobject1', <__main__.Example object at 0xb7396aec>)]
+Unmarshalling object: array1
+Shelve serializer: [('array1', [1, 2, 3]), ('exampleobject1', <__main__.Example object at 0xb7396aec>)]
+[1, 2, 3]
+Marshalling object: exampleobject1
+Shelve serializer: [('array1', [1, 2, 3]), ('exampleobject1', <__main__.Example object at 0xb7396aec>)]
+Unmarshalling object: exampleobject1
+Shelve serializer: [('array1', [1, 2, 3]), ('exampleobject1', <__main__.Example object at 0xb746188c>)]
+field1: field1
+field2: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
