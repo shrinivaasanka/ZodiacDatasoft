@@ -231,7 +231,7 @@ References:
 3.Ferrers Diagram or Young Tableau of a Partition - https://en.wikipedia.org/wiki/Partition_(number_theory)#Ferrers_diagram
 
 ---------------------------------------------------------------------------------------------------------
-9 July 2019 - Fraud Analytics in Spark 2.4.3
+837. (THEORY and FEATURE) People Analytics and Economic merit (Spending Analyzer) - Credit Card Datasets - 9 July 2019 - Fraud Analytics in Spark 2.4.3
 ---------------------------------------------------------------------------------------------------------
 NeuronRain AstroInfer implements a primitive fraud analytics on a credit card transactions dataset - https://gitlab.com/shrinivaasanka/asfer-github-code/blob/master/python-src/FraudAnalytics.py which analyzes https://www.kaggle.com/mlg-ulb/creditcardfraud csv dataset. Alternatively Spark provides some basic statistics functions for analyzing DataFrames of BigData. An example Spark Python code on Spark 2.4.3 at code/Spark_FraudAnalytics.py does the following :
 	(*) Group the transactions by first few columns of cardholder identity and computes average amount withdrawn by aggregating column "Amount"
@@ -404,3 +404,18 @@ and model {Whiskers,catnip} satisfies it. Recursive Lambda Function Growth algor
 References:
 ----------
 829.1 Meaning Representation by First order logic and Lambda calculus - https://www.cs.mcgill.ca/~jcheung/teaching/fall-2015/comp599/lectures/lecture14.pdf
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+836. (THEORY and FEATURE) People Analytics - Theoretical (Drone) Electronic Voting Machines - Population Count - Number of 1s (Decimal parity) in a bitstream - Various algorithms - Parallel computation in Spark - 3 July 2020
+---------------------------------------------------------------------------------------------------------------------------------------------
+Finding parity of a boolean string is a major open problem in Computational Complexity which is not known to be in AC0 (constant depth) but in NC1 (log depth parallel computing).
+BigData version of parity is the problem of Population Count which pertains to finding number of 1s in a stream of bits. Lot of algorithms
+for population count have been invented in Hardware and Artificial Intelligence literature - Divide and Conquer, HAKMEM, CSA(Carry Save Adder) etc., . Code example Spark_PopulationCount.py reads a CSV file containing a huge binary string and computes the number of 1s in it by sequential and parallel mapreduce. String is split into words of length 32 and parallelized to RDDs. Each word is then scanned by a mapbitstream() and population_count() functions which sequentially compute the function:
+	pop(x) = -1 * Summation((x << n)) for each bit position n.
+Bit left shift has been replaced by access to literal in bitstream string. Reduce function reducebitstream() gathers and sums each 32-bit word. Population count gains importance in the context of efficiently counting number of votes in a theoretical Electronic Voting Machine.
+
+References:
+-----------
+1.The Quest for an Accelerated Population Count - Beautiful Code - [Oram-Wilson] - Chapter 10 - Population Count by Divide and Conquer, HAKMEM, CSA  
+2.HAKMEM - [Beeler-Gosper-Schroeppel] - MIT Artificial Intelligence Laboratory AIM 239, February 1972 - https://w3.pppl.gov/~hammett/work/2009/AIM-239-ocr.pdf 
+3.Computer Architecture: A Quantitative approach - [Hennessy - Patterson] - Full Adder of 3 1-bit inputs and 2 1-bit outputs of sum and carry - CSA is sequence of full adders

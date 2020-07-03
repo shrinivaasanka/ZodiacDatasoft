@@ -722,7 +722,7 @@ References:
 5.Parallel Breadth First Search and Depth First Search - [Taenam Kim & Kyungyong Chwa] - https://www.tandfonline.com/doi/abs/10.1080/00207168608803503?journalCode=gcom20 - is of parallel time O(log d - log n) for diameter d (longest of shortest paths between all pairs of vertices) of the graph and n is the number of vertices - "...we develop a parallel breadth first search algorithm for general graphs and a parallel depth first search algorithm for acyclic digraphs which run in time O(logd-logn) using 0(n^2[n/log n]) processors....". For singly linked lists diameter d = number of vertices n
 
 -------------------------------------------------------------------------------------------------------
-12 May 2020 - Finding number of elements in a linked list - Sequential and Parallel - List Ranking
+838. (THEORY) 12 May 2020 - Finding number of elements in a linked list - Sequential and Parallel - List Ranking - Pointer Jumping - related to 751,768
 -------------------------------------------------------------------------------------------------------
 Counting number of elements in a linked list of N elements has a naive sequential bound of O(N). List
 Ranking is the problem of computing distance of every element in a linked list from the end of the list.

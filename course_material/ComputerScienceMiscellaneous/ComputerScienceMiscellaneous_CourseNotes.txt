@@ -293,7 +293,7 @@ can be removed from each tray and there are two possibilities: 1) The trays leve
 Previous problem has deep rooted connection to finding the larger value in a balanced search tree. Two trays of the balance are two subtrees of a BST in each weighing and query time is O(logN).
 
 -------------------------------------------------------------------------------------------------------------------------------
-12 January 2018 - How would you uniquely identify an object from a plethora of objects?
+834. (THEORY and FEATURE) Social Network Analysis - People Analytics - Unique Identification - 12 January 2018 - How would you uniquely identify an object from a plethora of objects? - Birthday Paradox, Contextual Name Parsing, PIPL Name syllable based unique person search - related to all sections of People Analytics
 ------------------------------------------------------------------------------------------------------------------------------- 
 That is, how can a universally unique identifier be created? This is an open-ended question. In the context of Public Key Infrastructure,
 creating unique non-repetitive keys has been a challenge - Sections 4.1 and 4.2 in https://factorable.net/weakkeys12.conference.pdf on repetitive and factorable keys. Boost C++ has UUID generation algorithm based on https://www.itu.int/en/ITU-T/asn1/Pages/UUID/uuids.aspx. UUID is a misnomer because there is a negligible probability of collisions known as birthday paradox. Birthday paradox is problem of any two persons in a congregation having same birthday. If a unique id is of maximum value N and size of population is M ( M < N ): 
@@ -312,7 +312,7 @@ This problem is all the more serious in People Analytics where a person has to b
 Name Syllable based Unique Person Search (by scraping PIPL.com data) is described and PIPL.com python API search of similar persons is implemented in NeuronRain AstroInfer commit https://gitlab.com/shrinivaasanka/asfer-github-code/commit/d855882c3e8c2f97f6709c6f4a03728f95377ca1 (and in GitHub and SourceForge AstroInfer repositories). Contextual Name Parsing to parse First and Last Names from Full Name based on ID context has been implemented in NeuronRain AstroInfer commit https://gitlab.com/shrinivaasanka/asfer-github-code/commit/3ae9054a1311176c87304ed85e3835510657fc8b (and in GitHub and SourceForge AstroInfer repositories)
 
 --------------------------------------------------------------------------------------------------------------------------------
-19 January 2018 - How would you find needle in haystack?
+835. (THEORY and FEATURE) Unsorted Search - Kernel lifting and Computational Geometric search - 19 January 2018 - How would you find needle in haystack? - related to all sections on Computational Geometric Hyperplanar Point Location, Locality Sensitive Hashing and Shell Turing Machines
 --------------------------------------------------------------------------------------------------------------------------------
 Question can be translated to finding a number in a set of unsorted numbers. Trivial brute-force search is of O(N). Can this be
 improved? There are some ways to go about:
