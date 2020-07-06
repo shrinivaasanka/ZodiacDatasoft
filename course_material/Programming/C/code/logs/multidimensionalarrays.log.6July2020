@@ -1,0 +1,19 @@
+**a = 1
+**(a + **a + 2) = 16
+*(*(a + **a + 2) + 3) = 19
+array[0] - 0 
+array[1] - 0 
+array[2] - 1 
+pp(3,4) = 81
+array[0] - 1 
+array[1] - 0 
+array[2] - 1 
+pp(3,5) = 243
+array[0] - 0 
+array[1] - 1 
+array[2] - 1 
+pp(3,6) = 729
+array[0] - 1 
+array[1] - 1 
+array[2] - 1 
+pp(3,7) = 2187

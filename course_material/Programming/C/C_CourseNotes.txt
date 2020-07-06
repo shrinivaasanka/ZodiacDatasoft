@@ -108,3 +108,16 @@ requires on-the-fly code generation. Code example dynamicnestedloop.c implements
 version of nested looping of arbitrary depth. Function nestedloop() accepts from,to and function pointer 
 to body of the loop. nestedloop() is recursively invoked along with loopbody() till depth is decremented 
 to 0. Subtle difference to usual n depth for loop of range 10 - counter is incremented to 10^n + 10^(n-1) + ...  instead of 10^n (and thus powerful compared to hardcoded nested for loop) which is filtered by depth==1 check within loopbody(). Removing depth==1 clause increments counter to 1110 and not 1000 (depth 3 nesting). Iterative version of dynamic nesting is again non-trivial.
+
+-------------------------------------------------------------------------------------------------------
+2,3,4,7 July 2020 - Arrays as Pointers, Recursive exponentiation in binary (variant of questions
+22,48 from GATE 2020)
+-------------------------------------------------------------------------------------------------------
+Questions 22 and 48 of GATE 2020 have been merged to code example multidimensionalarrays.c which
+demonstrate:
+	- 2-d arrays as objects and their multidimensional pointer dereferencing
+	- exponentiation function pp(a,b) which raises a to the exponent b after converting b
+	to binary string by modulo 2 division recursively (to-binary function - tob()) 
+pp() function obtains the binary string of b from tob() which is looped through and tot is updated
+only for bits "1" in binary string of b. Auto variable array arr[] is allocated on stack and dereferenced
+by tob().
