@@ -64,3 +64,5 @@ if __name__ == "__main__":
     bibliometric_word2vec("Spark_Word2Vec_MicrosoftAcademic.txt","merit")
     bibliometric_word2vec("Spark_Word2Vec_Bibliography.txt","merit")
     bibliometric_word2vec("Spark_Word2Vec_PublicationFullText.txt", "majority")
+    bibliometric_word2vec("Spark_Word2Vec_PatentExample1.txt", "transaction")
+    bibliometric_word2vec("Spark_Word2Vec_PatentExample2.txt", "transaction")
