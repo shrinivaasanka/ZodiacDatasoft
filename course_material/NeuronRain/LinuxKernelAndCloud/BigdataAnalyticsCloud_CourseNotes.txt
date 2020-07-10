@@ -180,6 +180,7 @@ References:
 8.On Implementing an o(log n) Planar Point Location Algorithm - [Yifei Zhang, Wei Yu, Decheng Dai] - https://dsa.cs.tsinghua.edu.cn/~deng/cg/project/2006f/2006f-b.pdf
 9.Clarkson-Shor Random Sampling, Partitioning Theorem - http://courses.cs.tau.ac.il/0368-3249-01/michasodaslid.pdf - "...Q a set of n points in the plane R a random sample of r points of Q Then, with high probability, any triangle that does not contain a point of R contains at most cn/r * log r points of Q (c an absolute constant)...For any r < n, P can be partitioned into O (r) subsets P1, . . . , Pt, each of ≤ n/r points, so that any hyperplane h separates the points of only O (r^(1 − 1/d)) subsets..." - Query could be a hyperplane or triangle and not necessarily a point. Random sampling is quite necessary in pre-poll and post-poll forecast analytics - if voters are points on a 2-d plane, Clarkson-Shor estimate upperbounds the extent of voters excluded by a random sampling triangle. For plural multipartisan voting, Partitioning theorem has a direct bearing - Set of Voters P is partitioned to r subsets of candidates voted for and query hyperplane (forecast sample) separates only a fraction of subsets. 
 10.SIR ODE model of How Gossips and Rumours spread in Social network - https://scholarship.claremont.edu/cgi/viewcontent.cgi?article=1036&context=codee
+11.Random Walks and Diffusion in Networks - Brownian Motion - https://www.sciencedirect.com/science/article/pii/S0370157317302946
 
 -----------------------------------------------------------------------------------------------------
 758. (THEORY and FEATURE) 21 January 2019 - FP Growth Algorithm for mining frequent patterns and mining timeout dictionaries example - this section is an extended draft on respective topics in NeuronRain AstroInfer design -  https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
@@ -444,3 +445,14 @@ Predominant attacks which render RSA dysfunctional are Radio-Frequency Van Eck P
 References:
 -----------
 840.1 Van Eck Phreaking of Electronic Voting Machines - https://yro.slashdot.org/story/09/11/22/027229/brazilian-breaks-secrecy-of-brazils-e-voting-machines-with-van-eck-phreaking 
+
+--------------------------------------------------------------------------------------------------------
+841. (THEORY and FEATURE) Digital Watermarking of Large Scale Visuals in OpenCV - related to 581,840 and all sections on Large Scale Visual Recognition Analytics, Handwriting Recognition and Fraud analytics - 10,11,12 July 2020
+--------------------------------------------------------------------------------------------------------
+This commit implements an OpenCV python function which reads a large scale visual (Video) and a watermark
+image and writes out a new MP4 video overlaying the watermark image on each frame of the visual. New
+MP4 video captures the OpenHub,SourceForge,GitHub and GitLab NeuronRain repository profiles of Krishna iResearch Free Open Source Software initiative of the author having both images and text (testlogs/Krishna_iResearch_NeuronRain_Repositories-2020-07-10_13.17.20.mp4). Function watermark() in DigitalWatermarking.py reads each frame of the video and watermark image in BGRA 4-channel mode (Blue-Green-Red-Alpha). Alpha channel controls the opacity of each pixel.An overlay ndarray is created of the same dimension as each frame of the video. Pixels of overlay array are filled by watermark image. OpenCV addWeighted() function computes a weighted sum of each pixel of watermark and frame images in BGRA 4-color channel - opacity of watermark is controlled by weights. This example watermarks first 2 frames of the video by a Sanskrit name text image (in testlogs/). Alternatively, Image text could be a handwritten signature. Previous watermark is quite primitive and overlay array could be filled by an arbitrary complex pixel cryptographic hash checksum function prior to addWeighted() invocation. Such a steganographic information hiding finds applications in Copyright Protection, Licensing violations, Software Piracy, Currency watermarking, Fraud and Tamper protection, Antitheft Cybercrime software inter alia. 
+
+References:
+-----------
+841.1 Digital Watermarking - overview - https://www.sciencedirect.com/topics/computer-science/digital-watermark - Movie Piracy example - every frame of DVD is copyright watermarked and can be tracked. On the similar lines watermarked open source software repositories should be able to track each fork-off and flag OSS violations if necessary.
