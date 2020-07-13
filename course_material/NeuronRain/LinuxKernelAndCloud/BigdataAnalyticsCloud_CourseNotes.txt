@@ -390,7 +390,7 @@ References:
 827.6 n-Category Lab - Geometry of Interaction - https://ncatlab.org/nlab/show/Geometry+of+Interaction
 
 ----------------------------------------------------------------------------------------------------------
-829. (THEORY and FEATURE) Intrinsic Merit of Academic Publications - Bibliometrics - SkipGram Word2Vec of publication full text - Concept Cloud Wordle - TOP Categories, Shell Turing Machines and Kernel Lifting,Lambda functions and Beta Reduction, Meaning representation - related to 827 - 13,14,15,16,17 June 2020
+829. (THEORY and FEATURE) Intrinsic Merit of Academic Publications - Bibliometrics - SkipGram Word2Vec of publication full text - Concept Cloud Wordle - TOP Categories, Shell Turing Machines and Kernel Lifting,Lambda functions and Beta Reduction, Meaning representation - related to 827 - 13,14,15,16,17 June 2020,13 July 2020
 ----------------------------------------------------------------------------------------------------------
 1.This commit revamps Spark_Word2Vec.py implementation to parse an entire article text to extract a concept cloud wordle from it by Spark SkipGram Word2Vec. Word2Vec is computationally intensive and corpora-hungry for producing accurate embedding.
 2.New text file Spark_Word2Vec_PublicationFullText.txt is read which contains a draft publication of author on "Majority Voting" - https://5d99cf42-a-62cb3a1a-s-sites.googlegroups.com/site/kuja27/IndepthAnalysisOfVariantOfMajorityVotingwithZFAOC_2014.pdf
@@ -408,6 +408,7 @@ and model {Whiskers,catnip} satisfies it. Recursive Lambda Function Growth algor
 References:
 ----------
 829.1 Meaning Representation by First order logic and Lambda calculus - https://www.cs.mcgill.ca/~jcheung/teaching/fall-2015/comp599/lectures/lecture14.pdf
+829.2 Logical Representations of Sentence Meaning - Chapter 16 - Speech and Language Processing - [Jurafsky-Martin] - https://web.stanford.edu/~jurafsky/slp3/edbook_oct162019.pdf - Model theory, Currying and Beta-reduction in Lambda calculus,Tense and Temporal Logics - Modus Ponens on FOL sentences and Lambda function meaning and event representation - Examples: " ... VegetarianRestaurant(AyCaramba) ⇒ Serves(AyCaramba,VegetarianFood) ... ∃ e Eating(e) ∧ Eater(e,Speaker)∧ Eaten(e,TurkeySandwich) ∧ Meal(e,Lunch) ∧ Location(e,Desk)..."
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 836. (THEORY and FEATURE) People Analytics - Theoretical (Drone) Electronic Voting Machines - Population Count - Number of 1s (Decimal parity) in a bitstream - Various algorithms - Parallel computation in Spark - 3 July 2020
