@@ -202,9 +202,9 @@ A3: Filling is necessary because to choose the subtree of search, an integer is 
 
 This problem has applications in splitting a single huge sorted array into multiple smaller arrays, distributed geographically but logically mapped to virtual memory pages in single address space, and searching them.
 
----------------------------------------------------------------------------------------------------------------------------------------
-Sublinear Multiple String Concatenation - 8 February 2018
----------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+842. (THEORY and FEATURE) Computational Geometric Factorization and Planar Point Location, Wavelet Trees, Sublinear Multiple String Concatenation - related to all sections on String analytics and Planar Factor Point Location by Wavelet Trees - 8 February 2018, 18 July 2020
+----------------------------------------------------------------------------------------------------------
 Q: Concatenation of multiple strings is trivially doable in O(N). Can N strings be concatenated in sublinear time?
 
 A: Subject to certain assumptions following algorithm does sublinear multiple string concatenation:
@@ -261,13 +261,13 @@ Thus total time to access an element in concatenation = 2*l*logN + l which is su
 	l*(2logN + 1) < N
 	=> l < N/(2logN + 1) which is a tighter upperbound assumption for length of strings, than previous N/2logN.
 
-If each string is compressed as burrows-wheeler transform, columns in concatenation matrix are compressed strings and l is reduced by compression ratio. If N strings in the concatenation can be represented as N Wavelet trees in compressed format (runlength encoding etc.,), each column in previous concatenation matrix is a wavelet tree and access()/select()/rank() of a column are logarithmic time.
+If each string is compressed as burrows-wheeler transform, columns in concatenation matrix are compressed strings and l is reduced by compression ratio. If N strings in the concatenation can be represented as N Wavelet trees in compressed format (runlength encoding etc.,), each column in previous concatenation matrix is a wavelet tree and access()/select()/rank() of a column are logarithmic time. Rectified hyperbolic arc in computational geometric factorization could be a huge string stored in wavelet trees and factor points have to be located by rank() and select() queries. Fragments of Rectified hyperbolic arc segments in the vicinity of approximate factors found by number theoretic ray queries could be concatenated efficiently in sublogarithmic time to lessen the length of the relevant rectified hyperbolic arc string stored in wavelet tree which has to be searched for factor points because individually searching each fragment would require as many wavelet trees as number of factors. Sublinear string concatenation is considerably useful for text analytics problems as well involving huge set of strings (e.g. Bioinformatics)
 
 References:
 -----------
-1. Rope Strings - http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.9450&rep=rep1&type=pdf - [hans-j. boehm, russ atkinson and michael plass, Xerox PARC, 3333 Coyote Hill Rd., Palo Alto, CA 94304, U.S.A.]
-2. Rabin-Karp String Fingerprinting by Random polynomials - [Michael O.Rabin] - http://www.xmailserver.org/rabin.pdf
-3. Myriad Virtues of Wavelet Trees - Pruned Wavelet Tree of Compressed Strings - [Paolo Ferragina, Raffaele Giancarlo, Giovanni Manzini] - http://www.ittc.ku.edu/~jsv/Papers/FGM09.wavelettrees.pdf
+842.1. Rope Strings - http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.9450&rep=rep1&type=pdf - [hans-j. boehm, russ atkinson and michael plass, Xerox PARC, 3333 Coyote Hill Rd., Palo Alto, CA 94304, U.S.A.]
+842.2. Rabin-Karp String Fingerprinting by Random polynomials - [Michael O.Rabin] - http://www.xmailserver.org/rabin.pdf
+842.3. Myriad Virtues of Wavelet Trees - Pruned Wavelet Tree of Compressed Strings - [Paolo Ferragina, Raffaele Giancarlo, Giovanni Manzini] - http://www.ittc.ku.edu/~jsv/Papers/FGM09.wavelettrees.pdf
 
 ---------------------------------------------------------------------------------
 How would you move Mount Fuji? - 11 February 2018
@@ -290,9 +290,10 @@ Reference:
 ---------
 Towers of Brahma - https://en.wikipedia.org/wiki/Tower_of_Hanoi
 
-----------------------------------------------------------------------------------------------------
-Number of Perfect (Mis)Matchings - Hat Puzzle - 17 February 2018
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+843. (THEORY) Social networks, Bipartite and General Graph Maximum Matching, Permanent, Boolean majority,
+Ramsey coloring - Number of Perfect (Mis)Matchings - Hat Puzzle - 17 February 2018, 18 July 2020 - related to 14, 801 
+----------------------------------------------------------------------------------------------------------
 There are N people in a congregation and they have to choose matching hat for each. But they endup choosing a non-matching hat at random. What is the probability of everyone choosing a non-matching hat?
 
 This problem can be formulated as Bipartite Matching in Bipartite Graph - Set of vertices of people and Set of Hats forming the bipartisan. Each choice corresponds to an edge in this graph. Usual problem of perfect matching tries to find edges between these sets which create a bijection. Hat problem goes further beyond this and tries to match the index of the vertices too. For example:
@@ -333,12 +334,30 @@ for n=number_of_hats/persons, m=number of hats/persons not yet chosen. Intuition
 	- Remove all strings ending with person index for pn.
 	- for all person indices m less than n, remove strings having m in index m minus set of all permuted strings ending with suffix (m, (m+1),...,(n)) already removed
 
-Contrasting this with Mulmuley-Vazirani-Vazirani Theorem for number of perfect matchings by Isolation Lemma, hat puzzle estimates Perfect Mismatches in Bipartite Graphs.In Group Theoretic terms, previous number of perfect matchings is the number of permutations of cycle 6 in Symmetric Group S6 i.e each element in a permutation is mapped to a different element and all elements are moved.
+Contrasting this with Mulmuley-Vazirani-Vazirani Theorem for number of perfect matchings by Isolation Lemma in randomized parallel polylog time, hat puzzle estimates Perfect Mismatches in Bipartite Graphs. Perfect matching in Bipartite graph is equal to Permanent of its incidence matrix. In Group Theoretic terms, previous number of perfect matchings is the number of permutations of cycle 6 in Symmetric Group S6 i.e each element in a permutation is mapped to a different element and all elements are moved.
+
+Finding perfect mismatches has applications to majority voting in Social Networks - by replacing indices of hats by candidate indices. Each voter has to find a mismatching voter peer (who has voted differently). In previous hat puzzle, p1,p2 and p3 are voters who have voted to candidates 1,2,3 respectively and each of them need to find a mismatching candidate index (hat):
+	p1 p2 p3
+	2  3  1
+	3  1  2
+
+An example of maximum (mis)match in a complete social network graph of 5 vertices (adjacency list) which are two colored (bipartisan) while earlier example is tripartisan. It is both a maximum match (number of edges having disjoint vertices is maximized) and a mismatch (because each pair of voter vertices in matching are complementarily 2-colored by candididate index 0-1):
+	v1 - v2,v3,v4,v5
+	v2 - v1,v3,v4,v5
+	v3 - v2,v1,v4,v5
+	v4 - v2,v3,v1,v5
+	v5 - v2,v3,v4,v1
+
+One of the Maximum (mis)matchings is: 
+	v1 - v3, v2 - v4 
+leaving v5 unmatched. v1,v2,v5 are colored red (voters of red) while v3,v4 are colored blue (voters of blue). Thus party red is the winner.
 
 References:
 ----------
-(#) Puzzle 113 and its Solution Recurrence (tends to 1/e for large n) - Mathematical Puzzles of SAM LOYD - Selected and Edited by MARTIN GARDNER
-(#) The Art Of Computer Programming - Combinatorial Algorithms - Volume 4a - [Don Knuth] - Section 7.2.1.2 - Generating All Permutations - Reverse Colex Order, Sims table for succinct representation of Symmetric Group elements.
+843.1 Puzzle 113 and its Solution Recurrence (tends to 1/e for large n) - Mathematical Puzzles of SAM LOYD - Selected and Edited by MARTIN GARDNER
+843.2 The Art Of Computer Programming - Combinatorial Algorithms - Volume 4a - [Don Knuth] - Section 7.2.1.2 - Generating All Permutations - Reverse Colex Order, Sims table for succinct representation of Symmetric Group elements.
+843.3 Mulmuley-Vazirani-Vazirani Theorem and Perfect matchings - Theorem 5.5 and Theorem 5.6 (Isolation Lemma) - https://courses.cs.washington.edu/courses/cse521/16sp/521-lecture-5.pdf
+843.4 Number of Perfect matchings in Bipartite graph = Permanent of Incidence matrix - Section 2 - https://lbgi.fr/~sereni/Lectures/GC_Spring09/gc09_4.pdf
 
 -----------------------------------------------------------------------------------------------------------------------
 Creating Biased Coin from Fair Coin - 27 February 2018

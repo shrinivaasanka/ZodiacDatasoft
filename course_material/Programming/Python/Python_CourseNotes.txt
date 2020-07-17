@@ -42,9 +42,9 @@ is based on this idiom. It basically is facade frontend abstraction for multiple
 
 This is a typical example of Iterator/Facade design pattern listed in Gof4.
 
----------------------------------------------------------------------------------------------------------------------
-6 January 2018 - Currying and Partial Function Application in Python
----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+844. (THEORY and FEATURE) 6 January 2018,18 July 2020 - Currying and Partial Function Application in Python - related to all sections on Recursive Lambda Function Growth algorithm implementation for learning lambda functions from Natural Language Texts and Text analytics
+----------------------------------------------------------------------------------------------------------
 Python has functional programming (Haskell) equivalents of Currying and Partial Application support. Currying converts a function of n parameters to n functions of one parameter each invoked in nesting, and returns a function in each function. Partial Application Function is similar to currying but takes 2 arguments instead of 1 in currying, and returns a function. Code examples for these are below - committed to code/Currying.py and code/PartialFunctionApplication.py
 
 ------------
@@ -73,6 +73,9 @@ Equivalent Partially applied functions
 1 2 3 4 5 6
 1 2 3 4 5 6
 1 2 3 4 5 6
+
+Currying by Partial Functions (as Beta reduction) are used in Recursive Lambda Function Growth - Graph Tensor Neuron Network algorithm implementation of NeuronRain which converts a natural language text to tree composition of functions of 2 arguments (a function operator acting on two operands) by traversing a random walk or cycle of the textgraph. Example:
+maximum_per_random_walk_graph_tensor_neuron_network_intrinsic_merit= ('one((integer(digit,(definite_quantity(abstraction,(measure(number,(command(act,(speech_act(psychological_feature,(order(abstraction,(event(order,(speech_act(event,(act(abstraction,(digit(three,(psychological_feature(number,(abstraction(measure,(definite_quantity(integer,command)))))))))))))))))))))))))))', 10.804699467199468)
 
 ---------------------------------------------------------------------------------------------------------
 7 August 2018 - Python Dictionaries
