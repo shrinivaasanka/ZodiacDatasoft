@@ -454,7 +454,8 @@ A: Total number of possible toss strings from alphabet {H,T} are 2^n. Number of 
 For binary strings H and T are replaced by 1 and 0 and previous probability corresponds to a randomly chosen binary string to be of odd parity.
 
 ---------------------------------------------------------------------------------------------------------
-2,3,4 June 2020 - Union of Probabilities, Bayes Rule, Venn Diagrams, Pairwise and Mutual independence
+846. (THEORY) 2,3,4 June 2020 - Union of Probabilities, Bayes Rule, Venn Diagrams, Pairwise and Mutual independence - related to all sections on Majority Voting and Correlated Majority, Statistical dependence
+of voters
 ---------------------------------------------------------------------------------------------------------
 Q: Three outcomes of an experiment are w1,w2 and w3 such that w1 is twice as likely as w2 which is twice
 likely as w3. What are the probabilities of w1,w2 and w3  (UPSC Civil Services - IAS(Main) - 2003)
@@ -491,7 +492,8 @@ if the outcomes of experiment are mutually independent, P(w1 /\ w2 /\ w3) = P(w1
 
 References:
 -----------
-1.Probability and Statistics with Reliability,Queueing and Computer Science Applications - [Kishor Shridharbhai Trivedi] - Chapter 1 - Page 33 - Problem 4 - General Multiplication Rule (GMR)
+846.1.Probability and Statistics with Reliability,Queueing and Computer Science Applications - [Kishor Shridharbhai Trivedi] - Chapter 1 - Page 33 - Problem 4 - General Multiplication Rule (GMR)
+846.2.Correlated Majority Voting - https://en.wikipedia.org/wiki/Condorcet%27s_jury_theorem#Correlated_votes - "...Condorcet's theorem assumes that the votes are statistically independent. But real votes are not independent: voters are often influenced by other voters, causing a peer pressure effect...In a jury comprising an odd number of jurors {\displaystyle n} n, let {\displaystyle p} p be the probability of a juror voting for the correct alternative and {\displaystyle c} c be the (second-order) correlation coefficient between any two correct votes. If all higher-order correlation coefficients in the Bahadur representation[6] of the joint probability distribution of votes equal to zero, and {\displaystyle (p,c)\in {\mathcal {B}}_{n}} {\displaystyle (p,c)\in {\mathcal {B}}_{n}} is an admissible pair, then: The probability of the jury collectively reaching the correct decision (Condorcet probability) under simple majority is given by: {\displaystyle P(n,p,c)=I_{p}\left({\frac {n+1}{2}},{\frac {n+1}{2}}\right)+0.5c(n-1)(0.5-p){\frac {\partial I_{p}({\frac {n+1}{2}},{\frac {n+1}{2}})}{\partial p}},} {\displaystyle P(n,p,c)=I_{p}\left({\frac {n+1}{2}},{\frac {n+1}{2}}\right)+0.5c(n-1)(0.5-p){\frac {\partial I_{p}({\frac {n+1}{2}},{\frac {n+1}{2}})}{\partial p}},} where {\displaystyle I_{p}} I_p is the regularized incomplete beta function...."
 
 -----------------------------------------------------------------------------------------------------
 830. (THEORY and FEATURE) Set Partition Analytics, Voting Analytics, Ramsey 2-coloring - m men and n women are to be seated in a row so that no two women sit together. If m > n, show that the number of ways in which they can be seated is m! (m+1)! / (m-n+1)! - (Question from IIT-JEE 1983) - related to all sections of NeuronRain Theory Drafts on Set Partitions, Theoretical Electronic Voting Machines, Ramsey coloring of sequences, Complementary Sets, Avoidance Patterns in Primes - 18 June 2020, 19 June 2020
@@ -517,3 +519,42 @@ A2 and A3 are equivalent:
 	Sum_over_k[{m,k}*kPn] for all k > n = {n,1}*Sum_over_k[{m,k}*(n+1)Pk] for all k = n,n+1
 	
 Computer Science Theory Applications of such an avoidance are numerous - biased binary strings, patterns in primes, 2-colored sequences, bipartisan voting patterns are some of them (by replacing men-women by 0-1 or Red-Blue colors).
+
+----------------------------------------------------------------------------------------------------------
+845. (THEORY) Finding average number of comparisons per element in a Binary Search Tree - based on question 2 of ETS GRE Major Field Test model - Computer Science Subject GRE - https://www.ets.org/Media/Tests/MFT/pdf/mft_samp_questions_compsci.pdf - DFS traversal of a Binary Search Tree - 21,22 July 2020 - related to 751,768
+----------------------------------------------------------------------------------------------------------
+Following is an example of a complete binary search tree which stores a sorted array of integers in adjacency list:
+		8 - 4,12
+		4 - 2,6
+		12 - 10,14
+		2 - 1,3
+		6 - 5,7 
+		10 - 9,11
+		14 - 13,15
+
+Inorder traversal of the BST produces the sorted list 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15. Problem is to find the average number of comparisons required to find an element. Generic expression for average number of comparisons could be derived as:
+
+	Number of comparisons per root-to-leaf traversal * Number of root-to-leaf traversals
+	-------------------------------------------------------------------------------------
+			Total number of elements in Binary search tree
+		
+
+Average root-to-leaf depth of the search tree = d
+Number of comparisons per root-to-leaf traversal = 1 + 2 + 3 + ... + d = d(d+1)/2 by Gauss Formula
+Number of root-to-leaf traversals = 2^(d-1)
+Total number of elements in Binary search tree = 2^d - 1
+=> Average number of comparisons per element of the Binary Search Tree = d(d+1) * 2^(d-1) / [2*(2^d -1)]		
+For previous example d=4 (including root) => Average comparisons = 4*5 * 8 / [2*15] = 80/15 = 5.33 while Worst case number of comparisons is O(logN) ~ 4k which is counterintuitive because worst case complexity is exceeded by average case complexity (unless k > 1). 
+
+Previous is an approximate estimate which does not subtract overlapping traversals - Every root-to-leaf DFS traversal left-to-right marks the nodes "visited" for which comparisons have been already computed. Comparisons for visited nodes must be excluded from total comparisons. In previous example following is the DFS traversal which marks the visited nodes and number of comparisons per root-to-leaf traversal in parentheses:
+	8-4-2-1 (1+2+3+4=10) - 4 nodes
+	8-4-2 (visited), 3 (4) - 1 node
+	8-4 (visited), 6-5 (3+4=7) - 2 nodes
+	8-4-6 (visited), 7 (4) - 1 node
+	8 (visited), 12-10-9 (2+3+4=9) - 3 nodes
+	8-12-10 (visited), 11 (4) - 1 node
+	8-12 (visited), 14-13 (3+4=7) - 2 nodes
+	8-12-14 (visited), 15 (4) - 1 node 
+
+Thus there are 49 total unique comparisons for 15 nodes ignoring the visited nodes and thus average comparisons = 49/15 ~ 3.2666... 
+=> worst case complexity 4k is more than average case complexity 3.2666... for k >= 1.
