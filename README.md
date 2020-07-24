@@ -87,3 +87,8 @@ Course notes in GRAFIT are non-linearly written than bottom-up or top-down textb
 (*) Concepts/topics are vertices of a universal graph of concepts/topics. 
 (*) By random sampling and exposition of concept vertices, related neighbouring concepts are also touched.
 (*) Eventually high percentage of Topics in the Graph are traversed after lot of monte carlo sampling.
+
+-------------------------------
+Moodle Website for GRAFIT
+-------------------------------
+GRAFIT course materials (in .zip) are available from Moodle GRAFIT website - https://moodle.org/pluginfile.php/4765687/user/private/Grafit-master.zip?forcedownload=1

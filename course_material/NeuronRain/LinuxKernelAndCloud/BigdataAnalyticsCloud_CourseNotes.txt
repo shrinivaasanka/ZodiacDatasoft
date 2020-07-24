@@ -274,23 +274,27 @@ References:
 1.Sage OrderedSetPartition - http://doc.sagemath.org/html/en/reference/combinat/sage/combinat/set_partition_ordered.html
 
 ----------------------------------------------------------------------------------------------------------------------------------
-754. (THEORY and FEATURE) 18 December 2019, 19 December 2019 - Intrinsic Performance Ratings and Sports Analytics, Streaming Histogram analytics, Partition distance measures, Random graph streams - this section is an extended draft on respective topics in NeuronRain AstroInfer design -  https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
+754. (THEORY and FEATURE) 18 December 2019, 19 December 2019, 22 July 2020, 23 July 2020 - Intrinsic Performance Ratings and Sports Analytics, Streaming Histogram analytics, Partition distance measures, Random graph streams, Logic and Game theory - this section is an extended draft on respective topics in NeuronRain AstroInfer design -  https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
 ----------------------------------------------------------------------------------------------------------------------------------
 Non-perceptive intrinsic performance rankings (IPR) have been mentioned as one of the multiple classes of measuring intrinsic fitness/merit as part of People Analytics in https://neuronrain-documentation.readthedocs.io/en/latest/ without voting. IPRs are widely used to rank Chess players (e.g Elo ratings). As an alternative bigdata usecase, stream of cricket match statistics is analyzed for intrinsic merit (Example hawkeye statistics - wagon wheel, trajectories, pitch maps - in https://www.bcci.tv/events/15305/india-v-west-indies-2019/match/15309/1st-odi?tab=overview#hawkeye). NeuronRain Set Partition and Histogram analytics implementations elicit patterns from stream of histogram set partitions by multitude of distance measures - earth mover distance, partition rank, correlation among others:
-	(*) Batting and Bowling figures per match for 11 players can be plotted as a histogram of player versus runs/wickets. 
+	(*) Batting, Fielding and Bowling figures per match for 11+11=22 players can be plotted as a histogram of player versus runs/wickets. 
 	(*) Streaming Set partition analytics is a special case of Histogram analytics - stream of histograms can have varied total sum of parts while stream of set partitions have oscillating parts but constant total sum of parts.
-	(*) Stream of match statistics histograms (which always have constant 11 parts) as time series has the imprint of team performance over the period of time.
-	(*) Partition Rank which is defined as maximum part - number of parts is an indicator of skewness in the team performance (maximum runs/wickets scored by a player - 11)
+	(*) Stream of match statistics histograms (which always have constant 11 parts per team) as time series has the imprint of team performance over the period of time.
+	(*) Partition Rank which is defined as maximum part - number of parts is an indicator of skewness in the team performance (maximum runs/wickets scored by a player - 11 per team)
 	(*) Durfee square which is the side of largest square inscribed in Ferrer diagram of the match statistics histogram measures if the performance is equitable - larger the square, more players performed nearly equally.
 	(*) Time series of Earth mover distance between consecutive match statistics histograms in the stream sheds light on seasonal trend in team performance.
 	(*) Patterns in Wagon wheel graphics of shots played per player measures strengths of each player - stream of wagon wheels can be mapped to a histogram of shots and aforementioned metrics apply.  
 	(*) Clustering of Bowling trajectories/pitch maps extract stereotypes.
 
-Mining soccer patterns is complex because of random trajectories of the ball which draws a random directed graph on field whose vertices are 2-colored (bichromatic for vertices belonging to two opponent teams). Consecutive match statistics create a stream of 2-colored random graphs and frequent subgraph patterns in this stream of random trajectory graphs show patterns across matches. 
+Most games have been analyzed for their computational complexity - E.g Go, Chess are either in PSPACE or EXPTIME depending on rules. Cricket on the other hand could be theoretically formulated as two True Quantified Boolean Formulae Satisfiability problems in PSPACE - TQBF1 and TQBF2 - forall and existential quantifiers in each formula symbolize team1 and team2 per innings (adversary-defender game). Batting and Bowling Roles (respectively governed by existential and forall quantifiers) for 22 player statistics variables are interchanged in each innings. Maximum satisfied formula decides the winner and game is undecidable if drawn/tied.
+
+Mining soccer patterns is complex because of random trajectories of the ball which draws a random directed graph on field - trajectory is a brownian motion random walk - whose vertices are 2-colored (bichromatic for vertices belonging to two opponent teams). Consecutive match statistics create a stream of 2-colored random graphs and frequent subgraph patterns in this stream of random trajectory graphs show patterns across matches. 
 
 Reference:
 ---------
 1.Real Plus Minus of NBA - http://www.espn.com/nba/statistics/rpm - Player Efficiency Ratings in Basketball 
+2.Go, PSPACE, Combinatorial Game Theory - https://en.wikipedia.org/wiki/Go_and_mathematics
+3.Computational Complexity of Games and Puzzles - https://www.ics.uci.edu/~eppstein/cgt/hard.html 
 
 ---------------------------------------------------------------------------------------------------------
 753. (THEORY and FEATURE) Social Network Analytics, People Analytics, Preferential Attachment, Urban Sprawls and Intrinsic Merit Rankings - 20 February 2020,26 February 2020,29 April 2020,17 May 2020,18 May 2020,28 May 2020 - this section is an extended draft on urban planning analytics, GIS analytics among other topics in NeuronRain AstroInfer Design - https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt - related to 762,821
