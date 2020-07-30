@@ -192,3 +192,25 @@ Unmarshalling object: exampleobject1
 Shelve serializer: [('array1', [1, 2, 3]), ('exampleobject1', <__main__.Example object at 0xb746188c>)]
 field1: field1
 field2: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+-------------------------------------------------------------------------------------------------------
+30 July 2020 - Pointers, C-types, Copy-On-Write, Mutables, Immutables in Python 3.7.5
+-------------------------------------------------------------------------------------------------------
+Python compiles to bytecodes which are executed on Python Virtual Machine. Basic datatype objects are
+immutable while iterables are mutable in python. Code example Pointers.py defines a function to
+simulate pointers on Python by importing ctypes C wrapper library and instantiating pointers
+to some string and integer objects by c_wchar_p() and c_void_p(). Illegal access Exception while assigning to immutable string literal is handled and pointer to string is created by writing a copy (Copy-On-Write) of original string which is different from C pointers. Similarly pointer copy to an integer data is assigned to while leaving the original unchanged. An alternative to C-type string creation by create_string_buffer() is demonstrated.
+
+Logs from code/logs/Pointers.log.30July2020 :
+Immutable - sentence1: This is a sentence
+Exception: 'str' object does not support item assignment
+Pointer to sentence1 string: c_wchar_p(3075052112)
+Changed pointer copy of sentence1: This is different sentence
+sentence2 - RAM contents after create_string_buffer(): b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+Pointer to integer1: c_void_p(200)
+immutable - integer1: 100
+Changed pointer copy of integer1: 200
+
+References:
+----------
+1. Python 3.8.5 documentation - https://docs.python.org/3/library/ctypes.html
