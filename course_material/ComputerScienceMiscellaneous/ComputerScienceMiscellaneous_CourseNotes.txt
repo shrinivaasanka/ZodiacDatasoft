@@ -227,7 +227,7 @@ Assuming array representation of a binary tree, each node of the array of size 2
 ------------------------------------------------------------------------------------------------------------------
 27 November 2017
 ------------------------------------------------------------------------------------------------------------------
-How can a hashmap be inverted i.e keys and values are interchanged?
+847. (THEORY) One way functions - How can a hashmap be inverted i.e keys and values are interchanged? - related to all sections on Hardness Amplification, Locality Sensitive Hashing, Separate Chaining, One-way functions and Parallel algorithms
 ------------------------------------------------------------------------------------------------------------------
 If the hashmap is perfect hash function, there are programming language supports e.g bidirectional dictionaries - bidict in Python, Ruby Hash#invert - http://ruby-doc.org/core-1.9.3/Hash.html#method-i-invert. If the hashmap is not perfect and has collisions each key is mapped to multiple values. Inverting this amounts to unwinding each of the collision buckets as keys and map them to the erstwhile key as value. Bruteforce algorithm is O(N) time where N is total number of values in the map. An alternative version of this problem is : Given a value v in the map find the key k which maps to v. Theoretically, this problem is parallel to Proving existence of One Way Function which is defined as Probability[f(finverse(y))==y] < epsilon for a function f and its inverse. For a hashmap H, this is equivalently stated as Probability[H(Hinverse(v))=v] where Hinverse is hashmap inverted. Difference is Function has unique range value per domain key while a hashmap has multiple values. Sublinear parallel algorithm to invert a hashmap which is not perfect could be as below:
 	for each key k in hashmap H1 accessed in parallel
@@ -441,7 +441,9 @@ A2: (*) List is represented as variable expression array which is lazy evaluated
 This is not a sequential renumbering because global increment of x is reflected at once across all elements of variable array. 
 
 ----------------------------------------------------------------------------------------------------------
-29 May 2020 - Probability of Odd number of Heads in Coin Toss
+849. (THEORY and FEATURE) 29 May 2020 - Probability of Odd number of Heads in Coin Toss - related to
+all sections on Majority Voting, Efficient Population count, Voting Analytics of NeuronRain Theory
+Drafts
 ----------------------------------------------------------------------------------------------------------
 Q: A coin is tossed n times. What is the chance that the Head will present itself odd number of times (IIT-JEE 1970)
 
@@ -451,7 +453,7 @@ A: Total number of possible toss strings from alphabet {H,T} are 2^n. Number of 
 	= (n,1) + (n,3) + (n,5) + ... = 2^(n-1)
 => Probability of odd number of heads = 2^(n-1) / 2^n = 0.5
 
-For binary strings H and T are replaced by 1 and 0 and previous probability corresponds to a randomly chosen binary string to be of odd parity.
+For binary strings H and T are replaced by 1 and 0 and previous probability corresponds to a randomly chosen binary string to be of odd parity. Bipartisan (2-colored) voting patterns are random binary strings.
 
 ---------------------------------------------------------------------------------------------------------
 846. (THEORY) 2,3,4 June 2020 - Union of Probabilities, Bayes Rule, Venn Diagrams, Pairwise and Mutual independence - related to all sections on Majority Voting and Correlated Majority, Statistical dependence
