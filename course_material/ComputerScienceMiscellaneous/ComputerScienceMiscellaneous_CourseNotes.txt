@@ -378,8 +378,7 @@ How can a Binary Search Tree be verified? - 12 March 2018
 An obvious solution is to do an inorder traversal of BST and verify the list of traversed nodes is sorted ascending or descending. This is O(n) for number of nodes in tree n. Array representation of BST can be directly scanned for sortedness.
 
 -------------------------------------------------------------------------------------------------------
-How would you avert collision of two trains speeding along on same track in opposing directions? 
-- Critical Sections and Synchronization - 3 November 2018
+850. (THEORY and FEATURE) How would you avert collision of two trains speeding along on same track in opposing directions?  - Critical Sections and Synchronization - 3 November 2018, 9 August 2020 - related to all sections on Program Analysis, Software Analytics, Software Transactional Memory, Lockfree datastructures, VIRGO Bakery Algorithm implementation, VIRGO Read-Copy-Update of NeuronRain Theory Drafts
 -------------------------------------------------------------------------------------------------------
 (*) This puzzle is based on P and V Binary Semaphores - Mutexes (Dijkstra):
 	Process1(Train1)			Process2(Train2)
@@ -405,7 +404,8 @@ How would you avert collision of two trains speeding along on same track in oppo
 		return true
 	}
 
-(*) Multiprocessor Hardwares support memory fencing instructions, bus locking etc., for serializing instructions issued before fence and to allow maximum of one thread of execution to load and store. 
+(*) Multiprocessor Hardwares support memory fencing instructions, bus locking etc., for serializing instructions issued before fence and to allow maximum of one thread of execution to load and store.
+(*) VIRGO32 and VIRGO64 linux kernels of NeuronRain implement various userspace and kernelspace synchronization primitives - Software Transactional Memory Lockfree Userspace C++ usecase, Read-Copy-Update userspace C++ usecase and Bakery algorithm locking synchronization kernel driver which can be module imported (in two variants - 1 or 2 for loops - parametrized) 
 
 ------------------------------------------
 Some assumptions for solving this puzzle:
@@ -425,9 +425,11 @@ Problem is to cross two tracks by overlap. Railway tracks are undirected cyclic 
 
 References:
 -----------
-1. Compare and Swap can simulate Lock-free synchronization and mutexes - [Maurice Herlihy] and P and V Semaphores - https://en.wikipedia.org/wiki/Compare-and-swap and https://en.wikipedia.org/wiki/Semaphore_(programming)
-2. UNIX Internals: New Frontiers - [Uresh Vahalia - EMC] - Multiprocessor Synchronization Issues - Pages 193,200,201 - Semaphores, Convoys, Necessity of Atomic test_and_set instruction in multiprocessors. Convoys are formed in Semaphores when a queued process in Scheduler waiting on a lock is prevented from being runnable because another process holds the lock.
-3. UNIX - [Maurice J.Bach - AT&T] - Page 396 - Monitors as Synchronization Primitives in Multiprocessor UNIX - Monitors differ from Semaphores by modularizing scope of critical section to subroutine and serializing access by processes.
+850.1. Compare and Swap can simulate Lock-free synchronization and mutexes - [Maurice Herlihy] and P and V Semaphores - https://en.wikipedia.org/wiki/Compare-and-swap and https://en.wikipedia.org/wiki/Semaphore_(programming)
+850.2. UNIX Internals: New Frontiers - [Uresh Vahalia - EMC] - Multiprocessor Synchronization Issues - Pages 193,200,201 - Semaphores, Convoys, Necessity of Atomic test_and_set instruction in multiprocessors. Convoys are formed in Semaphores when a queued process in Scheduler waiting on a lock is prevented from being runnable because another process holds the lock.
+850.3. UNIX - [Maurice J.Bach - AT&T] - Page 396 - Monitors as Synchronization Primitives in Multiprocessor UNIX - Monitors differ from Semaphores by modularizing scope of critical section to subroutine and serializing access by processes.
+850.4. Operating Systems - [Milan Milenkovic - IBM Corporation] - pages 110-112 - Section 3.4.4 - Compare and Swap instruction in IBM 370 series - Global is copied to Oldreg local registers of interleaving concurrent processes P1,P2,...Pn. Each process computes the local copy of new value of Global in Newreg registers. Condition Oldreg == Global is checked in each process which guarantees Global has not been tampered with by other processes and condition codes are set. Only one process goes beyond this sanity check if condition is satisfied and updates the Global with Newreg local copy. All other processes fail the Global == Oldreg test because Global is updated by only one of the process by its Newreg, and all other local copies of processes are out of sync which branch to loop again to read new value of Global. Similarities to Train collision example earlier have to be noted - Both the trains have to simulate a local copy of the critical section information of the track which, for example, could be Global Positioning System (GPS) location of begin-end of critical section. 
+850.5. Operating Systems - [Silberchatz-Galvin-Gagne] - pages 197-200 - Section 7.3 - TestAndSet and Swap instructions (no comparison) - Synchronization Hardware
 
 -------------------------------------------------------------------------------------------------------
 1 May 2020 - Insertion in numbered lists

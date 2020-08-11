@@ -68,7 +68,7 @@ In above example, read_book() is a virtual function in superclass Book which can
 how dynamic polymorphism works and read_book() of Book<T> is invoked from derived class EBook<T>. Type information is printed by typeid keyword of C++. This example is built using G++ with C++14 standard compiler option.
 
 --------------------------------------------------------------------
-17 July 2017
+858. (THEORY and FEATURE) 17 July 2017,9 August 2020 - Self-Aware Software, Quines - related to all sections on Formal Languages, Program Analysis, Software Analytics 
 --------------------------------------------------------------------
 Question: How can a program print its source itself as output ? [Quine - self-aware code]
 
@@ -251,21 +251,15 @@ from <algorithm>. This is C++ equivalent of map() in python which invokes a func
 container. Unordered map has std::pair<> elements accessed by .first and .second members.
 
 ------------------------------------------------------------------------------------------------------------
-24 September 2018 - Fowler-Noll-Vo Hashing, Custom Hash Functions in unordered_map, Nested Template Classes
+855. (THEORY and FEATURE) 24 September 2018,9 August 2020 - Fowler-Noll-Vo Hashing, Custom Hash Functions in unordered_map, Nested Template Classes - related to all sections on Locality Sensitive Hashing, Separate Chaining Bucketization
 ------------------------------------------------------------------------------------------------------------
-FNV or Fowler-Noll-Vo Hashing is a non-cryptographic hash algorithm which has high dispersion and minimizes
-collisions in same bucket. It iterates through literals in text and multiplies their unicode values by a
-prime and XORs with an offset. This has avalanche effect - hash is very sensitive to small change in input. 
-An example FNV implementation based on Boost C++ example has been added to course material at code/fnv.cpp.
-This defines a namespace class and nested fnv templatized struct through which prime number and offsets can
-be passed as arguments. FNV hashing is widely used in search engines, text processing, MS Visual Studio,
-memcache etc., 
+FNV or Fowler-Noll-Vo Hashing is a non-cryptographic hash algorithm which has high dispersion and minimizes collisions in same bucket. It iterates through literals in text and multiplies their unicode values by a prime and XORs with an offset. This has avalanche effect - hash is very sensitive to small change in input.  An example FNV implementation based on Boost C++ example has been added to course material at code/fnv.cpp.  This defines a namespace class and nested fnv templatized struct through which prime number and offsets can be passed as arguments. FNV hashing is widely used in search engines, text processing, MS Visual Studio, memcache etc., 
 
 References:
 ----------
-1.Boost FNV example - https://www.boost.org/doc/libs/1_68_0/libs/unordered/examples/fnv1.hpp
-2.Fowler-Noll-Vo - FNV - Hashing: http://www.isthe.com/chongo/tech/comp/fnv/
-3.Go Lang FNV package - https://golang.org/pkg/hash/fnv/
+855.1.Boost FNV example - https://www.boost.org/doc/libs/1_68_0/libs/unordered/examples/fnv1.hpp
+855.2.Fowler-Noll-Vo - FNV - Hashing: http://www.isthe.com/chongo/tech/comp/fnv/
+855.3.Go Lang FNV package - https://golang.org/pkg/hash/fnv/
 
 -----------------------------------------------------------------------------------------------------------
 5 October 2018 - C++ Move-Assign Threads, Unordered Map Rehash and Concurrent Access
@@ -280,11 +274,10 @@ rehash() functions alternately for odd and even values. This is a contrived exam
 accesses to a container in C++. Logs for this example are in code/logs/threads.log.5October2018.
 
 ----------------------------------------------------------------------------------------------------------
-28 October 2018 - Three Distances Theorem and Fibonacci Hashing
+854. (ThEORY and FEATURE) 28 October 2018,9 August 2020 - Three Distances Theorem and Fibonacci Hashing - related to all sections on Locality Sensitive Hashing, Separate Chaining Bucketization
 ----------------------------------------------------------------------------------------------------------
 Three Distances Theorem - Proof of Steinhaus Conjecture:
-If Phi=(sqrt(5)-1)/2, and sequences of points {Phi}, {2*Phi}, {3*Phi}, ... are plotted in [0...1] y-interval,and 
-successive line segments are inserted in [0...1] y-interval from (k, {k*Phi}) to (n, {k*Phi}) the line segments are of sets of 3 lengths.[{k*Phi} is the fraction obtained subtracting the integer floor(k*Phi) from k*Phi]
+If Phi=(sqrt(5)-1)/2, and sequences of points {Phi}, {2*Phi}, {3*Phi}, ... are plotted in [0...1] y-interval,and successive line segments are inserted in [0...1] y-interval from (k, {k*Phi}) to (n, {k*Phi}) the line segments are of sets of 3 lengths.[{k*Phi} is the fraction obtained subtracting the integer floor(k*Phi) from k*Phi]
 
 An example C++ code which implements this as a hash function to an unordered_map has been described in code/threedistances.cpp.
 
@@ -299,7 +292,7 @@ Following are the size of each line segment sets grepped from log:
 
 References:
 -----------
-1.The Art of Computer Programming - Volume 3 - Sorting and Searching - Page 518 - [Don Knuth] - Proof of Steinhaus Conjecture - Theorem S - [Vera Turan Sos]
+854.1.The Art of Computer Programming - Volume 3 - Sorting and Searching - Page 518 - [Don Knuth] - Proof of Steinhaus Conjecture - Theorem S - [Vera Turan Sos]
 
 -----------------------------------------------------------------------------------------------------------
 1 November 2018, 2 November 2018, 3 November 2018 - Polymorphism, RTTI, Pure Virtual Functions, Friend classes, Scope Resolution operator, protected and private members, Initializers in Constructors, const correctness
@@ -354,34 +347,28 @@ References:
 2.C Puzzles - Pointer Stew - [Alan Feuer]
 
 -----------------------------------------------------------------------------------------------------------
-26 December 2018 - Bridge and Iterator Design Patterns 
+856. (THEORY and FEATURE) 26 December 2018 - Bridge and Iterator Design Patterns - related to all sections on Software Analytics, Program Analysis, Survival Index Timeout and Scheduler of NeuronRain Theory Drafts
 -----------------------------------------------------------------------------------------------------------
-Bridge is a design pattern mentioned in Gang-of-Four catalog of C++ Design Patterns. Bridge separates
-implementations and the interfaces by defining implementation itself as an abstract data type. Iterators
-are the patterns to enumerate iterable containers - arrays, hashmaps, linkedlists etc.,C++ code example bridgeiteratordesignpatterns.cpp which 
-demonstrates how timeout pattern described in https://github.com/shrinivaasanka/Grafit/blob/master/course_material/NeuronRain/AdvancedComputerScienceAndMachineLearning/AdvancedComputerScienceAndMachineLearning.txt fits as an amalgamation of Bridge and Iterator Design Patterns, has been committed in C++/code. Timeout is a dictionary of timeout values to lists of objects to timeout. Timeout as a pattern has universal occurrence across whole gamut of software engineering. Code example defines
-following classes - Timeout and TCPTimeout are interfaces and TimeoutImp and TCPTimeoutImp are implementations
-which are bridged by a pointer reference Timeout holds to TimeoutImp. This Decoupling is by passing any derivative TimeoutImp object in TCPTimeout constructor which in turns assigns to timeoutimp reference in Timeout. timeout() overridden virtual member function in TCPTimeout invokes imptimeout() unaware of implementation TimeoutImp :
+Bridge is a design pattern mentioned in Gang-of-Four catalog of C++ Design Patterns. Bridge separates implementations and the interfaces by defining implementation itself as an abstract data type. Iterators are the patterns to enumerate iterable containers - arrays, hashmaps, linkedlists etc.,C++ code example bridgeiteratordesignpatterns.cpp which demonstrates how timeout pattern described in https://github.com/shrinivaasanka/Grafit/blob/master/course_material/NeuronRain/AdvancedComputerScienceAndMachineLearning/AdvancedComputerScienceAndMachineLearning.txt fits as an amalgamation of Bridge and Iterator Design Patterns, has been committed in C++/code. Timeout is a dictionary of timeout values to lists of objects to timeout. Timeout as a pattern has universal occurrence across whole gamut of software engineering. Code example defines following classes - Timeout and TCPTimeout are interfaces and TimeoutImp and TCPTimeoutImp are implementations which are bridged by a pointer reference Timeout holds to TimeoutImp. This Decoupling is by passing any derivative TimeoutImp object in TCPTimeout constructor which in turns assigns to timeoutimp reference in Timeout. timeout() overridden virtual member function in TCPTimeout invokes imptimeout() unaware of implementation TimeoutImp :
 
 	Timeout -------------------- implemented-by ----------------- TimeoutImp (derived by TCPTimeoutImp)
 (derived by TCPTimeout)
 
 References:
 -----------
-1.Design Patterns - Elements of Reusable Object Oriented Software - [1995] - [Erich Gamma - Richard Helm - Ralph Johnson - John Vlissides] - Bridge and Iterator Patterns - Page 160 - Shared Strings Class - [Coplien] and [Stroustrup] -	
+856.1.Design Patterns - Elements of Reusable Object Oriented Software - [1995] - [Erich Gamma - Richard Helm - Ralph Johnson - John Vlissides] - Bridge and Iterator Patterns - Page 160 - Shared Strings Class - [Coplien] and [Stroustrup] 
 
-														|																									
 ------------------------------------------------------------------------------------------------------
-12 February 2019 - Software Transactional Memory 
+851. (THEORY and FEATURE) 12 February 2019, 9 August 2020 - Software Transactional Memory - related to Program Analysis, Software Analytics, Software Transactional Memory, Lockfree datastructures, Bakery Algorithm, Read-copy-update sections of NeuronRain Theory Drafts
 ------------------------------------------------------------------------------------------------------
 Software Transactional Memory is supported by C++ by synchronized blocks of compound statements and transaction_safe directive in function declaration. Software Transaction Memory is the intrinsic facility for transactional rollback or commit of set of statements similar to RDBMS - either all are executed or none. An example transactional memory code has been committed to code/softwaretransactionalmemory.cpp. It declares two functions - function1() executing a synchronized block and function2() declared transaction_safe which is a tighter restriction preventing unsafe code. Compiler error flagged for unsafe function calls have been added in code comments. Curious statement in the code is:
 		t=std::thread([]{for(int n=0; n < 10;n++) function1(n);});
-which is a lambda expression doing null capture by [] operator and just invoking the function function1() within lambda expression loop block. Auto iterator variable t is assigned to the thread object. Logs in logs/softwaretransactionalmemory.log.12February2019 show serialized execution of 10 threads instantiated.
+which is a lambda expression doing null capture by [] operator and just invoking the function function1() within lambda expression loop block. Auto iterator variable t is assigned to the thread object. Logs in logs/softwaretransactionalmemory.log.12February2019 show serialized execution of 10 threads instantiated. VIRGO32 and VIRGO64 kernels implement a Bakery algorithm locking primitive as kernel driver while in userspace VIRGO system calls could be wrapped by C++ transaction memory primitives.
 
 References:
 -----------
-1.C++ Lambda Expressions - https://en.cppreference.com/w/cpp/language/lambda
-2.C++ Software Transactional Memory - https://en.cppreference.com/w/cpp/language/transactional_memory
+851.1.C++ Lambda Expressions - https://en.cppreference.com/w/cpp/language/lambda
+851.2.C++ Software Transactional Memory - https://en.cppreference.com/w/cpp/language/transactional_memory
 
 -------------------------------------------------------------------------------------------------------
 15 February 2019 - Lambda Functions and Capture, Functional Programming - std::function
@@ -390,12 +377,12 @@ C++ supports lambda functional programming constructs similar to other languages
 An example C++ code which dynamically creates lambda functions and returns them is shown in code/lambdafunctions.cpp. It defines a struct and member function dynamicfunctions() which populates an unordered_map of string-to-int by parameters defined by () operator. It also captures this object from its present scope by [] operator which is internally accessed by on-the-fly lambda function block for the hashmap member. Capturing is intended for data communication between lambda function block and external scope. Member function dynamicfunctions() is returned as std::function object function1 returning int and taking (string,int) as arguments. Returned dynamic function object function1 is invoked like any other function by passing (string,int) arguments twice. Resultant hashmap is printed by auto iterator. Logs for this are committed to logs/lambdafunctions.log.15February2019.
 
 -------------------------------------------------------------------------------------------------------
-23 February 2019 - Concurrency, Promise and Future Asynchronous I/O
+852. (THEORY and FEATURE) 23 February 2019,9 August 2020 - Concurrency, Promise and Future Asynchronous I/O - related to Program Analysis, Software Analytics, Software Transactional Memory, Lockfree datastructures, Bakery Algorithm, Read-copy-update, Drone Autonomous Delivery sections of NeuronRain Theory Drafts
 -------------------------------------------------------------------------------------------------------
-C++ facilitates asynchronous communication between concurrent threads by Promise and Future. Promise is instantiated by std::promise template and passed on as arguments to threads similar to shared_ptr which are shared mutables within thread functions. Future associated to Promise is acquired at a later time point asynchronously and value set by threads is readable. Code example at code/promisefuture.cpp describes two fictitious train threads having access to Promise and sets the nanoseconds time duration between present and an epoch as its value. std::chrono high resolution clock is invoked for time duration in nanoseconds. Future value for this Promise is later read by get() on Future object. Logs are shown in logs/promisefuture.log.23February2019
+C++ facilitates asynchronous communication between concurrent threads by Promise and Future. Promise is instantiated by std::promise template and passed on as arguments to threads similar to shared_ptr which are shared mutables within thread functions. Future associated to Promise is acquired at a later time point asynchronously and value set by threads is readable. Code example at code/promisefuture.cpp describes two fictitious train threads having access to Promise and sets the nanoseconds time duration between present and an epoch as its value. std::chrono high resolution clock is invoked for time duration in nanoseconds. Future value for this Promise is later read by get() on Future object. Logs are shown in logs/promisefuture.log.23February2019. C++ SDK asynchronous I/O code for Drone telemetry could be augmented by Promise and Future code blocks.  
 
 ------------------------------------------------------------------------------------------------------
-6 February 2020 - Read-Copy-Update mentioned in VIRGO Design Document has been implemented in userspace
+853. (THEORY and FEATURE) 6 February 2020, 9 August 2020 - Read-Copy-Update mentioned in VIRGO Design Document of NeuronRain Theory Drafts has been implemented in userspace - related to Program Analysis, Software Analytics, Software Transactional Memory, Lockfree datastructures, Bakery Algorithm, Read-copy-update sections of NeuronRain Theory Drafts
 ------------------------------------------------------------------------------------------------------
 Read-Copy-Update (RCU) has been mentioned as a feature in VIRGO32 and VIRGO64 design documents. Read-Copy-Update which is an efficient synchronization primitive implemented in most OS kernels works quite similar to local CPU caches of global RAM memory:
 	(*) READ - Read the variable 
@@ -432,10 +419,10 @@ Logs in code/logs/readcopyupdate.log.6February2020 demonstrate a concurrent read
 
 References:
 ----------
-1.Read-Copy-Update - https://en.wikipedia.org/wiki/Read-copy-update 
+853.1.Read-Copy-Update - https://en.wikipedia.org/wiki/Read-copy-update 
 
 ----------------------------------------------------------------------------------------------------
-28 April 2020 - Name filter - C++ STL containers and algorithms - copy,copy_if,shared_ptr,tokenizer
+857. (THEORY and FEATURE) 28 April 2020 - Name filter - C++ STL containers and algorithms - copy,copy_if,shared_ptr,tokenizer - related to all sections on People Analytics, Named Entity Recognition, Name filters (learning proper nouns in a text)
 ----------------------------------------------------------------------------------------------------
 C++ Standard Templates Library implements algorithms for manipulating containers - for copying,filtering
 and erasure. A contrived example C++ name filter class has been defined in namefilter.cpp which accepts a textfile and parses it to filter the words having a substring name pattern. An example list of names from linkedin profile of author is namefiltered for a certain prefix. Lines are tokenized by stringstream iterator and copied to a vector by copy(). Name filter is done twice - for non-zero length of strings in lambda function capture of copy_if() and in auto iterator loop by find() of the pattern. Shared pointers are C++ STL facility for refcounted pointers. Wordcount of the strings containing pattern is incremented via a shared_ptr. Arbitrary filtering implementation can be plugged-in to lambda function capture block of copy_if() - Most names are of persons,organizations,locations and namefiltering or proper noun extraction has multiple solutions:
