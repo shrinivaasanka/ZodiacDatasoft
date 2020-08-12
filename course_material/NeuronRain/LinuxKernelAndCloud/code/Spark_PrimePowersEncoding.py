@@ -8,18 +8,18 @@
 #Personal website(research): https://sites.google.com/site/kuja27/
 #-----------------------------------------------------------------------------------------------------------
 
-#from pyspark.sql import SparkSession
-#from pyspark.sql import DataFrameStatFunctions as dfsfunc
+from pyspark.sql import SparkSession
+from pyspark.sql import DataFrameStatFunctions as dfsfunc
 import sys
 import math
 import subprocess
-#from complement import toint
+from complement import toint
 import json
 
 if __name__=="__main__":
-	#subprocess.call(["/home/ksrinivasan/spark-2.4.3-bin-hadoop2.7/bin/spark-submit",
-	#                 "DiscreteHyperbolicFactorizationUpperbound_TileSearch_Optimized.py", sys.argv[1], sys.argv[2], "False"], shell=False)
-	#subprocess.call(["mv","./DiscreteHyperbolicFactorizationUpperbound_TileSearch_Optimized.factors","testlogs/Spark_PrimePowersEncoding.factors"], shell=False) 
+	subprocess.call(["/home/ksrinivasan/spark-2.4.3-bin-hadoop2.7/bin/spark-submit",
+	                 "DiscreteHyperbolicFactorizationUpperbound_TileSearch_Optimized.py", sys.argv[1], sys.argv[2], "False"], shell=False)
+	subprocess.call(["mv","./DiscreteHyperbolicFactorizationUpperbound_TileSearch_Optimized.factors","testlogs/Spark_PrimePowersEncoding.factors"], shell=False) 
 	factorsfile = open("testlogs/Spark_PrimePowersEncoding.factors")
 	factors = json.load(factorsfile)
 	for k,v in factors.items():
