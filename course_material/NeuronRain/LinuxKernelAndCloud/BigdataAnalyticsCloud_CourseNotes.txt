@@ -483,3 +483,23 @@ References:
 ----------
 848.1 Prime Omega Functions - Little Omega and Big Omega - https://en.wikipedia.org/wiki/Prime_omega_function - Little Omega in terms of partition function
 848.2 Prime Big Omega - http://oeis.org/wiki/Omega(n),_number_of_prime_factors_of_n_(with_multiplicity)
+
+-------------------------------------------------------------------------------------------------------
+859. (THEORY and FEATURE) Numeric Compression by Unique Integer Factorization - updated - Spark 
+NC-PRAM-BSP 2063 bits integer factorization - Euclidean Semiprimes - 11 August 2020
+-------------------------------------------------------------------------------------------------------
+Spark_PrimePowersEncoding.py has been updated to parse the JSON factors file written by DiscreteHyperbolicFactorizationUpperbound_TileSearch_Optimized.py after renaming ./DiscreteHyperbolicFactorizationUpperbound_TileSearch_Optimized.factors to Spark_PrimePowersEncoding.factors in subprocess.call("mv"). Factors are parsed from JSON and their bits length are printed. Small semiprime integer 6541 of 9 bits has been factorized and the length of factors 211 and 31 are printed (code/testlogs/Spark_PrimePowersEncoding.log2.11August2020). Euclid's algorithm has been applied to create semiprime integer 6541 - by multiplying consecutive primes and incrementing by 1:
+	(2*3*5 + 1) * (2*3*5*7 + 1) = 31 * 211 = 6541
+
+In previous example sum of lengths of prime factors (12.675295499) is slightly exceeded by length of integer (12.67529549909406):
+Length of integer -  6541  - factorized (bits): 12.67529549909406
+=======================================
+Length of factor -  1  (bits): 0.0
+Length of factor -  211  (bits): 7.721099188707186
+Length of factor -  6541  (bits): 12.67529549909406
+Length of factor -  31  (bits): 4.954196310386876
+
+Similarly huge semiprimes could be found and the encoding is independent of radix (Numeric compression is valid for any log N to base M M-ary representation for M >= 2 because prime factors and their exponents can be encoded in base M - compression ratio remains same). 
+
+Huge 2063 bits integer (arbitrary) - 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999392838238928938298992838298398298392898392893892893892898829389283989223982983989999999999999999999999999999999999999298828388823822323232323299999459999 - has been factorized (largest integer factorized thus far in NeuronRain) finding compression scheme for which is time consuming because of huge multiplicity, complexity of isolating prime factors and finding their exponents - excerpts from  code/testlogs/Spark_PrimePowersEncoding.log.2063bits.11August2020 print two factors in 14 seconds:
+('Factors are: (', 29, ',', 34482758620689655172413793103448275862068965517241379310344827586206896551724137931034482758620689655172413793103448275862068965517241379310344827586206896551724137931034482758620689655172413793103448275862068965517241379310344827586206896551724137931034482758620689655172413793103448275862068965517241379310344827586206896551724137931034482758620689655172413793103448275862068965517241379310344827586206896551724137931034482758620689655172413793103448275862068965517220442697894101320654925458565458565272358375651479099755132047906344455999413241034482758620689655172413793103448275837890634097373183559735286206877931, ') (at ', 'Thu, 02 Jul 2020 08:19:01 GMT', ')')
