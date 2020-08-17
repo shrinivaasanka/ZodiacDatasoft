@@ -214,3 +214,12 @@ Changed pointer copy of integer1: 200
 References:
 ----------
 1. Python 3.8.5 documentation - https://docs.python.org/3/library/ctypes.html
+
+----------------------------------------------------------------------------------------------------------
+862. (THEORY and FEATURE) NeuronRainApps - NeuronRain Usecases - MAVSDK Python Async I/O Drone Simulator - related to 637,713,722 and all sections on Drone Autonomous Delivery, Drone Electronic Voting Machines, Large Scale Visuals/Urban Sprawl/GIS Analytics, VIRGO PXRC Flight Controller Kernel Driver - 18 August 2020
+----------------------------------------------------------------------------------------------------------
+1. This commit implements Drone_MAVSDK_Client.py and Drone_MAVSDK_Server.py asynchronous Drone I/O by importing MAVSDK (Micro Air Vehicle SDK) Python library which contains an inferface for drone telemetry - mavsdk_server. Earlier NeuronRainApps usecase implementations for Autonomous Online Shopping Delivery (and Conceptual Set Partition Drone Electronic Voting Machines) depend on Dronecode Python SDK which might alternatively import MAVSDK.
+2. Asynchronous I/O Chatbot Python class example has been augmented to import mavsdk and defines a new asynchronous function drone_async_io() which takes a Drone System object, Drone port, Drone action as arguments and accordingly async-invokes (await) MAVSDK internal functions for those actions.
+3. Because of absence of a licensed Drone, this is a conceptual-only usecase implementation of a Drone simulator and "No System" exceptions are thrown which are handled and printed. Standalone product-specific Simulators (e.g jMAVSIM, Gazebo and AirSim for PX4 - https://dev.px4.io/v1.9.0/en/simulation/jmavsim.html, ROS-Simulator - https://dev.px4.io/v1.9.0/en/simulation/ros_interface.html) could be used for development testing.  
+4. Drone action clauses for "info","takeoff","arm","camera","goto_location" have been implemented in drone_async_io() which respectively print flight information, control takeoff, arm the AV, control camera video streaming, and pass on Longitude-Latitude-Altitude-Yaw GPS destination data for autopilot of the AV.
+5. drone_async_io() is an async member of DroneMAVSDKClient class. Drone object is instantiated by System() and drone_async_io() initializes connect() to mavsdk_server Drone server port.

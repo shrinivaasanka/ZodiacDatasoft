@@ -1,0 +1,16 @@
+connection_made(): message sent: 
+Waiting for mavsdk_server to be ready...
+Connected to mavsdk_server!
+Exception: INFORMATION_NOT_RECEIVED_YET: 'Information Not Received Yet'; origin: get_flight_information(); params: ()
+Waiting for mavsdk_server to be ready...
+Connected to mavsdk_server!
+Exception: NO_SYSTEM: 'No System'; origin: takeoff(); params: ()
+Waiting for mavsdk_server to be ready...
+Connected to mavsdk_server!
+Exception: NO_SYSTEM: 'No System'; origin: arm(); params: ()
+Waiting for mavsdk_server to be ready...
+Connected to mavsdk_server!
+Exception: ERROR: 'Error'; origin: start_video_streaming(); params: ()
+Waiting for mavsdk_server to be ready...
+Connected to mavsdk_server!
+Exception: NO_SYSTEM: 'No System'; origin: goto_location(); params: (78.0, 7.0, 100.0, 0.0)
