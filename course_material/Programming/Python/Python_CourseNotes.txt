@@ -237,4 +237,13 @@ electronic voting machines.
 5. jMAVSIM flight simulation logs for a multirotor aerial verhicle is at code/logs/PX4_Drone_JMAVSIM_Flight_Simulation.log.26August2020 which shows the jMAVSIM server side logs for GPS, arm, vertical takeoff, navigation and vertical landing. Camera streaming is failed with Error "DENIED".
 6. drone_async_io() might be significantly augmented and imported across every Drone dependent analytics code in NeuronRain which can be developed and tested on a 3D Virtual Reality simulation without a real drone.
 7. Efficient Drone Autonomous Delivery is an NP-complete Travelling Salesman-Hamiltonian Cycle problem which traverses lowest cost circuit connecting set of delivery points on a transporation network graph.
+8. Drone FOSS Code Repositories and References:
+	8.1 MAVSDK Python - https://github.com/mavlink/MAVSDK-Python
+	8.2 PX4 Drone Autopilot Firmware - https://github.com/PX4/Firmware 
+	8.3 PX4 Estimation and Control - https://github.com/PX4/ecl
+	8.4 PX4 JMAVSIM - https://github.com/PX4/jMAVSim
+	8.5 Auterion MAVSDK Java - Android Client - QGroundControl - https://auterion.com/getting-started-with-mavsdk-java/
+	8.6 PX4-ROS-Gazebo simulator - Graphic Illustration - MAVROS - https://dev.px4.io/v1.9.0/en/simulation/ros_interface.html
+	8.7 PX4: A node-based multithreaded open source robotics framework for deeply embedded platforms
+ - "...Our system architecture is centered around a publish-subscribe object request broker on top of a POSIX application programming interface. This allows to reuse common Unix knowledge and experience, including a bash-like shell. We demonstrate with a vertical takeoff and landing (VTOL) use case that the system modularity is well suited for novel and experimental vehicle platforms. We also show how the system architecture allows a direct interface to ROS and ..." - https://ieeexplore.ieee.org/document/7140074
 9. jMAVSIM replay logs have been committed to code/logs/jMAVSIM_replay_logs/ 
