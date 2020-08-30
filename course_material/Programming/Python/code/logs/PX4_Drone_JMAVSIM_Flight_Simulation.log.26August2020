@@ -1,0 +1,47 @@
+Init MAVLink
+INFO  [commander] LED: open /dev/led0 failed (22)
+INFO  [init] Mixer: etc/mixers/quad_w.main.mix on /dev/pwm_output0
+INFO  [mavlink] mode: Normal, data rate: 4000000 B/s on udp port 18570 remote port 14550
+INFO  [mavlink] mode: Onboard, data rate: 4000000 B/s on udp port 14580 remote port 14540
+INFO  [mavlink] mode: Onboard, data rate: 4000 B/s on udp port 14280 remote port 14030
+INFO  [logger] logger started (mode=all)
+INFO  [logger] Start file log (type: full)
+INFO  [logger] [logger] ./log/2020-08-30/11_10_18.ulg
+INFO  [logger] Opened full log file: ./log/2020-08-30/11_10_18.ulg
+INFO  [mavlink] MAVLink only on localhost (set param MAV_BROADCAST = 1 to enable network)
+INFO  [px4] Startup script returned successfully
+pxh> INFO  [ecl/EKF] 2560000: EKF aligned, (baro hgt, IMU buf: 18, OBS buf: 14)
+INFO  [ecl/EKF] 2560000: reset position to last known position
+INFO  [ecl/EKF] 2560000: reset velocity to zero
+INFO  [ecl/EKF] 9880000: GPS checks passed
+INFO  [ecl/EKF] 14420000: reset position to GPS
+INFO  [ecl/EKF] 14420000: reset velocity to GPS
+INFO  [ecl/EKF] 14420000: starting GPS fusion
+INFO  [commander] Armed by external command
+WARN  [commander] Failsafe enabled: No manual control stick input
+INFO  [commander] Failsafe mode activated
+WARN  [commander] Takeoff denied! Please disarm and retry
+WARN  [commander] Connection to ground station lost
+INFO  [commander] Disarmed by auto preflight disarming
+INFO  [commander] Failsafe mode deactivated
+INFO  [logger] closed logfile, bytes written: 1337522
+INFO  [commander] Data link regained
+INFO  [commander] Armed by external command
+INFO  [logger] Start file log (type: full)
+INFO  [logger] [logger] ./log/2020-08-30/11_10_55.ulg
+INFO  [logger] Opened full log file: ./log/2020-08-30/11_10_55.ulg
+INFO  [navigator] Using minimum takeoff altitude: 2.50 m
+INFO  [commander] Takeoff detected
+WARN  [commander] Connection to ground station lost
+WARN  [commander] Failsafe enabled: No manual control stick input
+INFO  [commander] Failsafe mode activated
+INFO  [navigator] RTL HOME activated
+INFO  [navigator] RTL: landing at home position.
+INFO  [navigator] RTL: climb to 499 m (10 m above destination)
+INFO  [commander] Failsafe mode deactivated
+INFO  [navigator] RTL: return at 499 m (10 m above destination)
+INFO  [navigator] RTL: land at destination
+INFO  [commander] Landing detected
+INFO  [commander] Disarmed by landing
+INFO  [logger] closed logfile, bytes written: 1700866
+

@@ -1,0 +1,55 @@
+$python3.7 Drone_MAVSDK_Client.py 
+connection_made(): message sent: DroneMAVSDKClient
+Waiting for mavsdk_server to be ready...
+Connection lost
+Connected to mavsdk_server!
+drone_async_io(): Connected to MAVSDK server
+state: ConnectionState: [uuid: 5283920058631409231, is_connected: True]
+Drone discovered with UUID: 5283920058631409231 5283920058631409231
+Global position estimate ok
+Traceback (most recent call last):
+  File "Drone_MAVSDK_Client.py", line 108, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.7/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 579, in run_until_complete
+    return future.result()
+  File "Drone_MAVSDK_Client.py", line 99, in main
+    await dronemavsdkclient.drone_async_io(drone, 14540, command="all")
+  File "Drone_MAVSDK_Client.py", line 52, in drone_async_io
+    await drone.camera.start_video_streaming()
+  File "/usr/local/lib/python3.7/dist-packages/mavsdk/camera.py", line 1668, in start_video_streaming
+    raise CameraError(result, "start_video_streaming()")
+mavsdk.camera.CameraError: DENIED: 'Denied'; origin: start_video_streaming(); params: ()
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 63, in apport_excepthook
+    from apport.fileutils import likely_packaged, get_recent_crashes
+  File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+    from apport.report import Report
+  File "/usr/lib/python3/dist-packages/apport/report.py", line 30, in <module>
+    import apport.fileutils
+  File "/usr/lib/python3/dist-packages/apport/fileutils.py", line 23, in <module>
+    from apport.packaging_impl import impl as packaging
+  File "/usr/lib/python3/dist-packages/apport/packaging_impl.py", line 24, in <module>
+    import apt
+  File "/usr/lib/python3/dist-packages/apt/__init__.py", line 23, in <module>
+    import apt_pkg
+ModuleNotFoundError: No module named 'apt_pkg'
+
+Original exception was:
+Traceback (most recent call last):
+  File "Drone_MAVSDK_Client.py", line 108, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.7/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.7/asyncio/base_events.py", line 579, in run_until_complete
+    return future.result()
+  File "Drone_MAVSDK_Client.py", line 99, in main
+    await dronemavsdkclient.drone_async_io(drone, 14540, command="all")
+  File "Drone_MAVSDK_Client.py", line 52, in drone_async_io
+    await drone.camera.start_video_streaming()
+  File "/usr/local/lib/python3.7/dist-packages/mavsdk/camera.py", line 1668, in start_video_streaming
+    raise CameraError(result, "start_video_streaming()")
+mavsdk.camera.CameraError: DENIED: 'Denied'; origin: start_video_streaming(); params: ()
+
