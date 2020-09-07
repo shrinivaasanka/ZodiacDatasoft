@@ -247,3 +247,13 @@ electronic voting machines.
 	8.7 PX4: A node-based multithreaded open source robotics framework for deeply embedded platforms
  - "...Our system architecture is centered around a publish-subscribe object request broker on top of a POSIX application programming interface. This allows to reuse common Unix knowledge and experience, including a bash-like shell. We demonstrate with a vertical takeoff and landing (VTOL) use case that the system modularity is well suited for novel and experimental vehicle platforms. We also show how the system architecture allows a direct interface to ROS and ..." - https://ieeexplore.ieee.org/document/7140074
 9. jMAVSIM replay logs have been committed to code/logs/jMAVSIM_replay_logs/ 
+
+-------------------------------------------------------------------------------------------------------
+5 September 2020,7 September 2020 - Python Decorators, Static Type Checking, Type Hints, Mypy and IDE typecheckers, Final constant type hint, final decorator in Python 3.8
+-------------------------------------------------------------------------------------------------------
+Python traditionally implements Duck typing or Dynamic typing and types of objects could be checked
+at runtime by type() and isinstance(). Decorators in Python are features which could be used to instrument another function and return a wrapped new function having additional code. Lack of support for static
+type checking and constant definitions in Python have been answered in Python 3.8 which implements series
+of PEPs for final decorator for final methods which cannot be overridden in derived classes and Final
+type hint which aids Typecheckers (mypy, PyCharm IDE) to statically analyze code and flag type errors. 
+Code example Decorators.py defines two classes - Base and Derived - which import various typecheck artefacts from typing module. Class BaseDecorated defines a constant var1 by type hint Final and a method cannotoverride() by @final decorator which can be type-enforced by linters in mypy (http://mypy-lang.org/) and PyCharm. Both base and derived classes define member functions to which argument type hints and return type hints are annotated by ":" and "->" operators. Most importantly member function funcdecorator() defines an inner function wrapper() which takes a function argument and instruments additional code around it and returns a new decorated function by typing.cast() typecasting. Declaration of T defines a Callable type variable (TypeVar) of arbitrary number of arguments specified by Any. Logs code/logs/Decorators.log.5September2020 capture the decorator callstack.
