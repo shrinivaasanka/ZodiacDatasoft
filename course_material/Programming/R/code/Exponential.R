@@ -1,0 +1,27 @@
+exponential <- function(filename)
+{
+  print(filename)
+  layout(matrix(1:3,3,1))
+  coronavirus2019dataset <- read.table(filename, header=TRUE)
+  print(coronavirus2019dataset)
+  Days <- length(coronavirus2019dataset[[1]]):1
+  Deaths <- coronavirus2019dataset[[2]]
+  print("Exponential fit:")
+  print("==================")
+  print("LM:")
+  expdata <- data.frame(Days,Deaths)
+  print(expdata)
+  coronavirus2019exponential <- lm(log2(Deaths) ~ Days + 1, data = expdata)
+  print(summary(coronavirus2019exponential))
+  print("=================================")
+  c(coronavirus2019exponential)
+}
+print("===================================")
+print("Exponential Fit of CoronaVirus 2019 dataset:")
+print("===================================")
+covid19expfit <- exponential("./Exponential.dat")
+print(covid19expfit)
+print("===================================")
+print("Summary:")
+print("===================================")
+print(summary(covid19expfit))

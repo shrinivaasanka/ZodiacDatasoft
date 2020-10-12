@@ -78,3 +78,19 @@ based on Susceptible-Infected-Recovered (SIR) data gathered from few giant geogr
 	[1] 149975.7
 7. Section 830 has a derivation for number of possible arrangements or 2-colorings of people subject to avoidance criteria. Number of possible arrangements of people (uniquely identified by integers) bijectively equal number of possible complementary equations or complement diophantines defined on the integer sequences (Complementary Equations, Functional equations, Beatty sequences, Taichi - partition of Integer sequences - https://cs.uwaterloo.ca/journals/JIS/VOL10/Kimberling/kimberling26.pdf). In the context of diffusion in social network, 2-coloring reduces to Infected-Uninfected. An example combinatorial avoidance: Infected and Uninfected couldn't be juxtaposed.
 8. Section 762 defines least square model for variables in business and econometric datasets - By replacing the variables of COVID19 analyzer, similar models could be learnt for those datasets as well.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+870. (THEORY and FEATURE) People Analytics - Social Network Analysis - CoronaVirus2019 Analyzer - Exponential Fit in R - related to 744,831
+and all sections on Chaos, Cybercrime analyzers, Game theoretic Cybersecurity, Pseudorandomness, Random walks on Cellular Automata and Expander Graphs - 11 October 2020, 12 October 2020
+--------------------------------------------------------------------------------------------------------------------------------------------
+1. CoronaVirus2019 dataset has been thus far fit to non-exponential probability distributions and Chaotic non-linear models.
+2. Chaotic models suffer from theoretical limitations of computational undecidability thereby prohibiting accurately learnt models.
+3. This commit implements exponential fit of CoronaVirus2019 dataset till 11 October 2020, by lm() applying logarithmic version of:
+	Fatalities = A*exp(B*days)
+which is log2(Fatalities) = logA + B*days (R linear model is used for learning non-linear exponential model)
+4. Logs code/testlogs/Exponential.log.12October2020 print the exponential fit model.
+5. Previous exponential model is the solution for differential equation d(Fatalities)/Fatalities = B*d(days) which is similar to DEs in
+Erdos-Renyi Susceptible-Infected-Recovered random graph epidemic model.
+6. Differential equation in (5) implies rate of change of fatalities depends on instantaneous fatalities (Geometric progression or evolving m-ary tree).
+7. From coefficients in logs, COVID19 dataset is fit to A=11.27683950 and B=0.04250611
+
