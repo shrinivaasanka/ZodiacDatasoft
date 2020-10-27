@@ -274,3 +274,24 @@ where f(n) is the fscore map, g(n) is the cost of traversing to node n (gscore m
 References:
 ----------
 866.1 Finding Closest Pair of Points - O(NlogN) divide and conquer algorithm better than naive O(N*N) bruteforce for obstacle avoidance - Section 35.4 - Chapter 35: Computational Geometry - Algorithms - [Cormen-Leiserson-Rivest-Stein] - Page 908 - "... System for controlling air or sea traffic might need to know which are the two closest vehicles in order to detect potential collisions ..." - quite relevant for Drone swarms
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+871. (THEORY and FEATURE) Generating all possible permuted strings of an alphabet - related to 843 and all sections on Social networks, Bipartite and General Graph Maximum Matching, Symmetric Group, Permanent, Boolean majority, Ramsey coloring - Number of Perfect (Mis)Matchings - 28 October 2020
+--------------------------------------------------------------------------------------------------------------------------------------------
+1.Related to a question in IIT-JEE: Find sum of integers > 10000 having only 0,2,4,6,8 as digits without repetition (implies < 99999 because
+more digits would repeat).
+2.This commit implements Permutations.py utility which generates all possible permutations of a list of integers and creates permuted integers from them. Generating permutations is required in section 843 for perfect (mis)matches. 
+3.In the function genpermutations() random permutation is obtained from numpy.random.permutation() and its numeric equivalent is hashed to a dictionary iteratively till all permutations are generated (which is N!).
+4.Finding sum of the permuted integers is tricky and makes use of the fact that every digit in the list of permutation is independently and identically distributed - For example, there are 120 (5!) integer permutations of 0,2,4,6,8 and each of [0,2,4,6,8] occurs 120/5 = 24 times per digit in the permutations. 
+5.Thus per digit sum is 24*8 + 24*6 + 24*4 + 24*2 + 24*0 = 480 and following schematic depicts carry forward:
+	53+ 53+ 52+ 48+ 
+	|  |  |  |  |
+	....(480 for each digit)
+	|  |  |  |  |
+	-------------
+       533 3  2  8  0
+and sum of the permuted integers is 5333280.
+6.Permutations.py demonstrates this fact and prints:
+('summation:', 5333280)
+('permutations:', defaultdict(<type 'int'>, {46082: 56, 24068: 97, 20486: 24, 86024: 36, 82604: 75, 60428: 15, 62480: 52, 4628: 81, 24086: 70, 86042: 65, 64028: 40, 24608: 85, 80426: 43, 8246: 107, 26804: 95, 84026: 35, 60482: 55, 8264: 41, 4682: 78, 80462: 28, 64082: 80, 42068: 9, 24860: 91, 2648: 110, 84062: 39, 62048: 99, 42086: 21, 24680: 100, 68204: 77, 42608: 71, 6248: 116, 84602: 86, 2684: 108, 82046: 82, 46208: 51, 48260: 44, 84620: 7, 68240: 57, 20648: 79, 82460: 58, 4268: 61, 40628: 8, 42680: 2, 6842: 62, 86204: 83, 4286: 68, 46280: 109, 20684: 102, 82640: 30, 46802: 69, 26840: 113, 4826: 120, 86240: 6, 64208: 31, 46820: 76, 24806: 14, 8426: 63, 84206: 13, 80624: 3, 28406: 18, 4862: 98, 80642: 72, 8462: 96, 64280: 32, 62084: 48, 6428: 49, 2846: 89, 64802: 92, 84260: 27, 26408: 22, 28460: 26, 2864: 12, 68402: 104, 64820: 114, 42806: 17, 68420: 54, 6284: 90, 40268: 53, 6482: 34, 62804: 115, 60248: 105, 40286: 84, 82064: 93, 42860: 64, 20846: 106, 26480: 4, 80246: 10, 62840: 47, 40826: 29, 60284: 20, 40682: 118, 20864: 67, 86402: 37, 80264: 60, 28046: 88, 86420: 101, 60824: 119, 48026: 94, 40862: 112, 28064: 74, 2468: 42, 60842: 19, 8624: 45, 2486: 103, 68024: 5, 28604: 66, 48062: 33, 26048: 25, 8642: 23, 62408: 59, 68042: 11, 46028: 16, 48206: 117, 48602: 50, 28640: 46, 26084: 38, 82406: 1, 48620: 87, 6824: 73, 20468: 111}))
+('numbers:', 120)
