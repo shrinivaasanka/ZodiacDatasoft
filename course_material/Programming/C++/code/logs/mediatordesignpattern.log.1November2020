@@ -1,0 +1,4 @@
+Mediator::operation(): opcode = 1
+Mediator::operation(): opcode = 2
+Mediator::operation(): opcode = 3
+Mediator::operation(): opcode = 4
