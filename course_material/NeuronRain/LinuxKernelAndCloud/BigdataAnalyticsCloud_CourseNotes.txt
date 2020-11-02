@@ -46,7 +46,7 @@ References:
 3.Apache Config Directives - ApacheCon - http://events17.linuxfoundation.org/sites/events/files/slides/ConfigurationDirectiveAPI.pdf
 
 ------------------------------------------------------------------------------------------------------------
-752. (THEORY and FEATURE) 2 January 2019, 9 January 2019, 8 January 2020, 22 January 2020, 23 January 2020, 29 January 2020, 31 January 2020, 2 February 2020,4 May 2020,12 May 2020,15 May 2020, 2,3,4,7 July 2020,28 October 2020 - Searching, Indexing, Computational Geometric point location queries, Factorization in Randomized NC - Binary Search Nuances, B-Trees, Sharding - related to 227,666,730 and all sections of People Analytics,Social Network Analysis,Majority Voting,Syllable vectorspace text analytics and Computational Geometric Planar Point Location Factorization in NeuronRain Theory Drafts 
+752. (THEORY and FEATURE) 2 January 2019, 9 January 2019, 8 January 2020, 22 January 2020, 23 January 2020, 29 January 2020, 31 January 2020, 2 February 2020,4 May 2020,12 May 2020,15 May 2020, 2,3,4,7 July 2020,28 October 2020,3 November 2020 - Searching, Indexing, Computational Geometric point location queries, Factorization in Randomized NC - Binary Search Nuances, B-Trees, Sharding - related to 227,666,730 and all sections of People Analytics,Social Network Analysis,Majority Voting,Syllable vectorspace text analytics and Computational Geometric Planar Point Location Factorization in NeuronRain Theory Drafts 
 ------------------------------------------------------------------------------------------------------------
 Traditional Binary Search still remains the standard for sifting huge datasets and has undergone significant
 refinements. Usual Binary Search is centred around midpoint computation and branching:
@@ -169,6 +169,23 @@ Previous kind of alphabet-syllable word embedding of text in a space of A^m clus
 NeuronRain AstroInfer has a polynomial encoding implementation of texts which curve fits a text to a polynomial in R^2 [points on polynomial are ordered pairs (alphabet_location,alphabet_unicode)] and PRP error correcting polynomial implementations. Multiple encoded polynomials of texts can be embedded on a 2-D plane and planar point location could be underneath rank() and select() queries on strings. Similarly, People analytics involve intrinsic merit vectors of people e.g [academic credentials, work experience,...] for people clustering. 
 
 Finding closest pair of points in a set of points on a vectorspace has quite a few practical applications in sea and air traffic control and vehicle collision avoidance. Replacing the vehicle points by textual strings on a vectorspace (mentioned earlier) is helpful in finding closest pair of strings within a set of strings. Subquadratic closest pair of points detection is a geometric search problem and distance similarities amongst string datapoints could be ranked (by iteratively removing every closest point to a pivot point and recursively recomputing closest pair algorithm). Subquadratic string distance algorithms are important from complexity theoretic standpoint - Edit distance is a standard measure for string similarity (number of additions and deletions of alphabets necessary to morph one string to another) and subquadratic algorithm for edit distance might nullify SETH. If edit distance is expressible in terms of computational geometric algorithm for closest pair of string points, edit distance could be computed in subquadratic time.
+
+Prerequisite for finding Closest pair of string vehicle datapoints by computational geometric divide and conquer earlier is: Number of strings (N) must equal Length of each string(n) (to attain O(nlogn) edit distance subquadratic bound). 
+
+Example:
+-------
+	string1 - abcde - embedded as point [a,b,c,d,e]
+	string2 - fghij - embedded as point [f,g,h,i,j]
+	string3 - klmno - embedded as point [k,l,m,n,o] 
+	string4 - pqrst - embedded as point [p,q,r,s,t] 
+	string5 - uvwxy - embedded as point [u,v,w,x,y] 
+
+Each alphabet is encoded as scalar from 1 to 26 and string vectors are embedded on 26^n vectorspace (similarly for ascii or unicode alphanumeric strings, vectorspace is 256^n or 512^n):
+	string1 - [a,b,c,d,e] - [1,2,3,4,5]
+	string2 - [f,g,h,i,j] - [6,7,8,9,10]
+	string3 - [k,l,m,n,o] - [11,12,13,14,15]
+
+Edit distance between string1 and string2 = 5. Euclidean distance between string1 and string2 = sqrt(5^2+5^2+5^2+5^2+5^2) = 5*sqrt(5). In general, euclidean_distance >= function_of(edit_distance) 
 
 References:
 -----------
