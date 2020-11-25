@@ -1,0 +1,22 @@
+rotated array element[0]:4
+rotated array element[1]:5
+rotated array element[2]:6
+rotated array element[3]:7
+rotated array element[4]:8
+rotated array element[5]:1
+rotated array element[6]:2
+rotated array element[7]:3
+moved array element[0]:4
+moved array element[1]:5
+moved array element[2]:6
+moved array element[3]:7
+moved array element[4]:8
+moved array element[5]:-1080936472
+moved array element[6]:-1080936468
+moved array element[7]:-1080936464
+moved array2 element[0]:string4
+moved array2 element[1]:string5
+moved array2 element[2]:string6
+moved array2 element[3]:string7
+moved array2 element[4]:string8
+Segmentation fault (core dumped)

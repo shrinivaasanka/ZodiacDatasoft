@@ -437,3 +437,24 @@ Mediator Design Pattern encapsulates the set of colleague objects and a director
 References:
 -----------
 1..Design Patterns - Elements of Reusable Object Oriented Software - [1995] - [Erich Gamma - Richard Helm - Ralph Johnson - John Vlissides] - Mediator Behavioural Pattern - Page 273 
+
+--------------------------------------------------------------------------------------------------------
+25 November 2020 - Reference wrappers, Arrays of references, Array move, C++ Array Objects, Reference
+to C++ Array object, Array Rotation
+--------------------------------------------------------------------------------------------------------
+Code example arraymove.cpp demonstrates the following on C++ bounded array objects:
+	(*) Define a primitive integer array 
+	(*) Perform memmove() on elements of integer array
+	(*) Instantiate a vector from integer array (copies array to a vector)
+	(*) Rotate the vector data and print them (would not affect source array)
+	(*) Define & alias operator to std::string type as reference_wrapper<string> object - from <functional> library
+	(*) Define array object of reference_wrapper<string> objects
+	(*) Invoke a function and pass bounded array object of reference_wrapper<string> objects by reference to function - (&array)[length]
+	(*) Perform memmove() on elements of array object of reference_wrapper<string> objects
+	(*) auto iterate the memmove()-ed integer array object and reference_wrapper<string> array objects
+
+References:
+----------
+1.Clockwise-Spiral rule for C type inference - http://c-faq.com/decl/spiral.anderson.html
+2.C++ Reference wrapper - https://en.cppreference.com/w/cpp/utility/functional/reference_wrapper
+3.C++ Rotate - https://en.cppreference.com/w/cpp/algorithm/rotate
