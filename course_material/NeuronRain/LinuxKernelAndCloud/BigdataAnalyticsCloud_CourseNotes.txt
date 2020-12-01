@@ -46,7 +46,7 @@ References:
 3.Apache Config Directives - ApacheCon - http://events17.linuxfoundation.org/sites/events/files/slides/ConfigurationDirectiveAPI.pdf
 
 ------------------------------------------------------------------------------------------------------------
-752. (THEORY and FEATURE) 2 January 2019, 9 January 2019, 8 January 2020, 22 January 2020, 23 January 2020, 29 January 2020, 31 January 2020, 2 February 2020,4 May 2020,12 May 2020,15 May 2020, 2,3,4,7 July 2020,28 October 2020,3 November 2020 - Searching, Indexing, Computational Geometric point location queries, Factorization in Randomized NC - Binary Search Nuances, B-Trees, Sharding - related to 227,666,730 and all sections of People Analytics,Social Network Analysis,Majority Voting,Syllable vectorspace text analytics and Computational Geometric Planar Point Location Factorization in NeuronRain Theory Drafts 
+752. (THEORY and FEATURE) 2 January 2019, 9 January 2019, 8 January 2020, 22 January 2020, 23 January 2020, 29 January 2020, 31 January 2020, 2 February 2020,4 May 2020,12 May 2020,15 May 2020, 2,3,4,7 July 2020,28 October 2020,3 November 2020,2 December 2020 - Searching, Indexing, Computational Geometric point location queries, Factorization in Randomized NC - Binary Search Nuances, B-Trees, Sharding - related to 227,666,730,864,1123 and all sections of People Analytics,Social Network Analysis,Majority Voting,Syllable vectorspace text analytics and Computational Geometric Planar Point Location Factorization in NeuronRain Theory Drafts 
 ------------------------------------------------------------------------------------------------------------
 Traditional Binary Search still remains the standard for sifting huge datasets and has undergone significant
 refinements. Usual Binary Search is centred around midpoint computation and branching:
@@ -186,6 +186,13 @@ Each alphabet is encoded as scalar from 1 to 26 and string vectors are embedded 
 	string3 - [k,l,m,n,o] - [11,12,13,14,15]
 
 Edit distance between string1 and string2 = 5. Euclidean distance between string1 and string2 = sqrt(5^2+5^2+5^2+5^2+5^2) = 5*sqrt(5). In general, euclidean_distance >= function_of(edit_distance) 
+
+Earth mover distance and Word mover distance are current state-of-the-art similarity measures for BigData sets. Recently Earth Mover Distance has been approximated in linear time (Relaxed Word Mover Distance - [Kusner] - http://proceedings.mlr.press/v37/kusnerb15.pdf) though exact computation is quadratic or cubic depending on algorithm. If Edit distance is expressible in terms of Earth mover distance, edit distance can be approximated in linear time which is subquadratic (closer to proving SETH is false) and if exact edit distance could be derived from this approximation in subquadratic time SETH is false. Following is an example reduction from Earth mover distance to Edit distance by tokenizing each string to 1-alphabet arrays or buckets creating a 2D array or histogram per string:
+
+	abcde - [[a],[b],[c],[d],[e]]
+	fghijk - [[f],[g],[h],[i],[j],[k]]
+
+Earth mover distance or Relaxed Word Mover distance between 2 string histograms earlier is exactly equal to edit distance (work necessary in adding, updating or deleting 1-alphabet buckets for transforming one string to another). NeuronRain AsFer implements Earth Mover Distance similarity measure between two 2D syllabified string tensors.
 
 References:
 -----------
