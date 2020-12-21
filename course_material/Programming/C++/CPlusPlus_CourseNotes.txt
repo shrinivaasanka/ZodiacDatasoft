@@ -458,3 +458,23 @@ References:
 1.Clockwise-Spiral rule for C type inference - http://c-faq.com/decl/spiral.anderson.html
 2.C++ Reference wrapper - https://en.cppreference.com/w/cpp/utility/functional/reference_wrapper
 3.C++ Rotate - https://en.cppreference.com/w/cpp/algorithm/rotate
+
+-------------------------------------------------------------------------------------------------------
+22 December 2020 - Russian Peasant Multiplication in Linear Time by BitShift operator 
+-------------------------------------------------------------------------------------------------------
+Code example russianpeasant.cpp implements the Russian Peasant Multiplication Algorithm for 2 integers
+which is in Linear time (Theta(n)). It takes two integers as commandline arguments and casts them to
+type "unsigned long long" by strtoull(). Linear complexity product is obtained by Carry-Save adder, Parity
+and Majority Functions. Russian Peasant Algorithm works by:
+	(*) Bit shifting right operand a and Bit shifting left operand b by 1 till one of the operands
+reaches single bit
+	(*) Add all rows for Left shifted values of b for which corresponding right shifted rows
+of a are odd to get the product a*b.
+
+Logs logs/russianpeasant.log.22December2020 show few example products by Russian Peasant algorithm.
+Conventional multiplication is quadratic time - O(n^2)
+
+References:
+----------
+1. Algorithms - [Cormen-Leiserson-Rivest-Stein] - Chapter 29 - Arithmetic Circuits - Section 29.4.2
+Clocked Circuits - Faster Russian Peasant Multiplication Circuit in Linear Time - http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap29.htm

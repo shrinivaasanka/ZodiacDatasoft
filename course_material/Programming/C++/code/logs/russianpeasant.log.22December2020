@@ -1,0 +1,107 @@
+# ./russianpeasant 200 200
+tempa:200
+tempb:200
+tempa:100
+tempb:400
+tempa:50
+tempb:800
+tempa:25
+tempb:1600
+tempa:12
+tempb:3200
+tempa:6
+tempb:6400
+tempa:3
+tempb:12800
+tempa:1
+tempb:25600
+Product of 200 and 200:40000
+
+# ./russianpeasant 111 12009
+tempa:111
+tempb:12009
+tempa:55
+tempb:24018
+tempa:27
+tempb:48036
+tempa:13
+tempb:96072
+tempa:6
+tempb:192144
+tempa:3
+tempb:384288
+tempa:1
+tempb:768576
+Product of 111 and 12009:1332999
+
+# ./russianpeasant 2120910 212121
+tempa:2120910
+tempb:212121
+tempa:1060455
+tempb:424242
+tempa:530227
+tempb:848484
+tempa:265113
+tempb:1696968
+tempa:132556
+tempb:3393936
+tempa:66278
+tempb:6787872
+tempa:33139
+tempb:13575744
+tempa:16569
+tempb:27151488
+tempa:8284
+tempb:54302976
+tempa:4142
+tempb:108605952
+tempa:2071
+tempb:217211904
+tempa:1035
+tempb:434423808
+tempa:517
+tempb:868847616
+tempa:258
+tempb:1737695232
+tempa:129
+tempb:3475390464
+tempa:64
+tempb:6950780928
+tempa:32
+tempb:13901561856
+tempa:16
+tempb:27803123712
+tempa:8
+tempb:55606247424
+tempa:4
+tempb:111212494848
+tempa:2
+tempb:222424989696
+tempa:1
+tempb:444849979392
+Product of 2120910 and 212121:449889550110
+
+# ./russianpeasant 21 21
+tempa:21
+tempb:21
+tempa:10
+tempb:42
+tempa:5
+tempb:84
+tempa:2
+tempb:168
+tempa:1
+tempb:336
+Product of 21 and 21:441
+
+# ./russianpeasant 11 1111111111111111111
+tempa:11
+tempb:1111111111111111111
+tempa:5
+tempb:2222222222222222222
+tempa:2
+tempb:4444444444444444444
+tempa:1
+tempb:8888888888888888888
+Product of 11 and 1111111111111111111:12222222222222222221
+
