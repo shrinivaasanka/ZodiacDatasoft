@@ -585,7 +585,7 @@ Career Transition of a profile could be plotted as points on polynomials and sim
 where p(ti) and q(ti) are the values (e.g remuneration) of polynomials at time ti. Usual algebraic notations of orthonormal basis apply and p,q are orthogonal if <p,q> is 0 (Gram-Schmidt Orthogonalization). For two profiles making  extremely different career choices <p,q> reaches its infimum - Example:
 	p(0) = 0, p(1) = 100000, p(2) = 0, p(3) = 100000
 	q(0) = 100000, q(1) = 0, q(2) = 100000, q(3) = 0
-	<p,q> = 0 (Orthogonal) implying profiles p and q made diamatrically opposite career choices during similar time points.
+	<p,q> = 0 (Orthogonal) implying profiles p and q made diametrically opposite career choices during similar time points.
 
 References:
 ----------
@@ -594,3 +594,4 @@ References:
 1129.3 MEASURING FAME QUANTITATIVELY. V. WHO'S THE MOST FAMOUS OF THEM ALL? (PART 2) - [Schulman] - dBHa unit of Fame -  https://www.improbable.com/wp-content/uploads/2016/08/MEASURING-FAME-part2-2016-09.pdf
 1129.4 Learning Linear Threshold Functions in the presence of Classification Noise - [Bylander] - https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.31.481&rep=rep1&type=pdf
 1129.5 Polynomial time algorithm for learning noisy linear threshold functions - [Blum-Frieze-Kannan-Vempala] - https://www.math.cmu.edu/~af1p/Texfiles/learn.pdf
+1129.6 Measuring Fame - [Schulman] - https://www.improbable.com/2009/02/28/measuring-fame-quantitatively-iv-whos-the-most-famous-of-them-all/
