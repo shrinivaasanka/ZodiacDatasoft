@@ -545,3 +545,52 @@ Following are few examples of Sublogarithmic space Numeric Compression by Unique
 *) 1024 = 2^10 in binary has 10 bits. But by encoding 2^10 in unique prime factor basis - set of ordered pairs of the form (prime_factor,exponent) - as (2,10) which requires 2 + 4 = 6 bits only.
 *) 60466196 = 2^10*3^10 = 6^10 is 26 bits integer while unique prime factor encoding (2,10)(3,10) requires only 2 + 4 + 2 + 4 = 12 bits (space for ordered pair parenthesization is an additional kloglogN which has been neglected). If each parenthesis is of 3 bits for "(","," and ")" delimiters, total space increases to 12 + 3 + 3 = 18 bits in unique factor scheme but still less than 26.
 *) CPU instruction set microcodes might have to compute exponentiation and products of prime exponents which increases per instruction time in spite of compressed space.
+
+-------------------------------------------------------------------------------------------------------
+1129. (THEORY and FEATURE) People Analytics - Feasibility of Automated Talent Recruitment - Fame Versus
+Merit - Some Examples - related to 365,420,443,572,613,632,753,1128 and all sections on People Analytics, Fame, Intrinsic Merit, Majority Voting, Sybils, Social Network Analytics, Interview LTF/PTF, BKS Conjecture, Learning LTFs - 28 December 2020
+--------------------------------------------------------------------------------------------------------
+From literature cited in the references (1129.1) on Fame versus Merit, there is an empirical and statistical evidence of Fame being exponentially related to Merit:
+ 	" ... Fame, F, grows exponentially with achievement, F(A) = exp(β × A),..."
+and achievement is equivalent to intrinsic merit (e.g acdemic publications). Fame is modelled as memepool which evolves over time (Diffusion of Opinion in Social Networks) according to differential equation d(Fame)/dt = v(Achievement). Resemblance of this DE to Recursive Mistake Correction Tree model of Experiential Learning is uncanny.
+
+Section 1128 defines and implements a weighted state machine model of career transition - every human is non-deterministic indefinite state machine defined by choices made (Legendary "Road not taken"). Following example usecases motivate the necessity for automated objective recruitment of talent vis-a-vis subjective majority voting based choice of cadidates in People Analytics (Assumption: Each voter/interviewer uses an Interview LTF which is both subjective and objective multiple choice questionnaire of n questions denoted by q(i) and weighted by w(i) - q1*w1 + q2*w2 + ... + qn*wn):
+
+Example 1:
+----------
+If intrinsic merit of a candidate is m and there are k voters deciding the candidature (perceived merit
+or Fame), for each vote being denoted by v(i):
+	m < v(1) < v(2) < ... < v(k)
+from assumption - "Intrinsic Merit Lowerbounds Fame in the absence of Sybils" - derived from statistical evidence of exponential separation between the two. v(1) is the least upperbound Fame for Merit m implying every voter overrates candidate (Interview LTF succeeds for candidate). 
+
+Example 2:
+---------
+If intrinsic merit upperbounds Fame:
+	v(1) < v(2) < ... < v(k) < m
+implying every voter underrates candidate (Interview LTF fails for candidate)
+
+Example 3:
+---------
+If intrinsic merit is an average (weighted mean) of Fame:
+	v1 < v2 < ... < vx < m < vy < ... < vk
+implying some voters underrate while others overrate candidate. This is the most prevalent scenario in
+real world setting (Interview LTF neither fails nor succeeds for candidate)
+
+Of these, Example usecase1 is supported by statistical evidence. Example1 and Example2 are consensual but yet inaccurate. Previous scenarios demonstrate error probability of real world manual Interview processes which are a mixture of Majority Voting and LTF, thus semi-intrinsic. Replacing manual interviews by objective LTF which is dynamically machine learnt from People profile datasets (e.g Career Transition Automaton, Source Lines of Code for IT domain) minimizes errors and is more absolute. From Computational Learning Theory, LTFs can be learnt in polynomial time in the presence of classification noise.
+
+Career Polynomials - Inner Product Spaces - Example 4:
+-----------------------------------------------------
+Career Transition of a profile could be plotted as points on polynomials and similarity of two profiles p and q could be ascertained by inner product spaces of interpolated career polynomials defined as:
+	<p, q> = p(t0)q(t0) + p(t1)q(t1) + · · · + p(tn)q(tn)
+where p(ti) and q(ti) are the values (e.g remuneration) of polynomials at time ti. Usual algebraic notations of orthonormal basis apply and p,q are orthogonal if <p,q> is 0 (Gram-Schmidt Orthogonalization). For two profiles making  extremely different career choices <p,q> reaches its infimum - Example:
+	p(0) = 0, p(1) = 100000, p(2) = 0, p(3) = 100000
+	q(0) = 100000, q(1) = 0, q(2) = 100000, q(3) = 0
+	<p,q> = 0 (Orthogonal) implying profiles p and q made diamatrically opposite career choices during similar time points.
+
+References:
+----------
+1129.1 Theory of Aces: Fame by chance or merit? - [Simkin-Roychowdhury] - https://arxiv.org/pdf/cond-mat/0310049.pdf - Equation 2
+1129.2 Measuring Celebrity - [Lamport] - Microsoft Research - https://lamport.azurewebsites.net/pubs/celebrity.pdf - "... A preliminary conclusion would be that, in science, fame is based only on publications, but celebrity also depends on TV appearances ..."
+1129.3 MEASURING FAME QUANTITATIVELY. V. WHO'S THE MOST FAMOUS OF THEM ALL? (PART 2) - [Schulman] - dBHa unit of Fame -  https://www.improbable.com/wp-content/uploads/2016/08/MEASURING-FAME-part2-2016-09.pdf
+1129.4 Learning Linear Threshold Functions in the presence of Classification Noise - [Bylander] - https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.31.481&rep=rep1&type=pdf
+1129.5 Polynomial time algorithm for learning noisy linear threshold functions - [Blum-Frieze-Kannan-Vempala] - https://www.math.cmu.edu/~af1p/Texfiles/learn.pdf
