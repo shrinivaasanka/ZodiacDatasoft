@@ -15,9 +15,9 @@ from Transformers_PerceptronAndGradient import LinearPerceptronGradient
 class Transformers(object):
     def __init__(self,wordembedding,queries,keys,values,expected,dimension):
         self.embedding = np.array(wordembedding)
-        self.query_weights = np.array(queries)
-        self.key_weights = np.array(keys)
-        self.value_weights = np.array(values)
+        self.query_weights = np.matmul(self.embedding,np.array(queries))
+        self.key_weights = np.matmul(self.embedding,np.array(keys))
+        self.value_weights = np.matmul(self.embedding,np.array(values))
         self.keyvector_dim = dimension
         self.expected = np.array(expected)
         self.attention = []
