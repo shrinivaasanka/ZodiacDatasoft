@@ -12,13 +12,14 @@ from pyspark.sql import SparkSession
 from pyspark.mllib.feature import Word2Vec
 from pyspark.sql.types import StringType
 import pprint
+from Transformers import Transformers
 
 # reference: https://spark.apache.org/docs/latest/api/python/pyspark.ml.html?highlight=word2vec
 
 
 def tokenize(row):
     words = row.value.split(" ")
-    words = [[w.encode("utf-8")] for w in words if w != '']
+    words = [[w] for w in words if w != '']
     print(("tokenize() - words:", words))
     return words
 
@@ -35,34 +36,74 @@ def bibliometric_word2vec(bibliography, pattern):
     words1 = lines1.map(tokenize).reduce(concat)
     print(("words1:", words1))
     word2vec = Word2Vec()
-    word2vec.setVectorSize(5)
+    word2vec.setVectorSize(3)
     word2vec.setSeed(42)
     words1rdd = spsess.sparkContext.parallelize(words1)
     print(("words1rdd:", words1rdd.collect()))
     words1df = spsess.createDataFrame(words1rdd, StringType())
-    # words1df.show()
+    words1df.show()
     words1df.printSchema()
     model1 = word2vec.fit(words1rdd)
     vectors1 = model1.getVectors()
     print("=================")
     print(("Concept Cloud:"))
     print("=================")
-    for concept,vector in vectors1.iteritems():
+    print("vectors1:",vectors1)
+    word2vecembeddings_vec=[]
+    for concept,vector in vectors1.items():
         print("concept [",concept,"] is embedded at ",vector)
+        word2vecembeddings_vec.append(vector)
     try:
         synonyms1 = model1.findSynonyms(pattern, 5)
         for w, cosdist in synonyms1:
             print(("synonym1:", w, " - cosine distance:", cosdist))
     except:
         print(("pattern [", pattern, "] not in word2vec vocabulary"))
-
+    return word2vecembeddings_vec
 
 if __name__ == "__main__":
-    bibliometric_word2vec("Spark_Word2Vec_SemanticScholar.txt","merit")
-    bibliometric_word2vec("Spark_Word2Vec_GoogleScholar.txt","merit")
-    bibliometric_word2vec("Spark_Word2Vec_DBLP.txt","merit")
-    bibliometric_word2vec("Spark_Word2Vec_MicrosoftAcademic.txt","merit")
-    bibliometric_word2vec("Spark_Word2Vec_Bibliography.txt","merit")
-    bibliometric_word2vec("Spark_Word2Vec_PublicationFullText.txt", "majority")
-    bibliometric_word2vec("Spark_Word2Vec_PatentExample1.txt", "transaction")
-    bibliometric_word2vec("Spark_Word2Vec_PatentExample2.txt", "transaction")
+    word2vecembeddings=bibliometric_word2vec("Spark_Word2Vec_SemanticScholar.txt","merit")
+    if len(word2vecembeddings) >= 3:
+        print("word2vecembeddings:",word2vecembeddings[:3])
+        tf=Transformers(word2vecembeddings[:3],[[0.41,0.42,0.43],[0.41,0.3,0.45],[0.43,0.4,0.5]],[[0.4,0.55,0.76],[0.1,0.83,0.5],[0.3,0.4,0.25]],[[0.7,0.8,0.9],[0.1,0.8,0.5],[0.3,0.2,0.9]],[0.1,0.3,0.5],3)
+        tf.transformers_attention_sequence_model(0.1,0.8)
+    word2vecembeddings=bibliometric_word2vec("Spark_Word2Vec_GoogleScholar.txt","merit")
+    if len(word2vecembeddings) >= 3:
+        print("word2vecembeddings:",word2vecembeddings[:3])
+        tf=Transformers(word2vecembeddings[:3],[[0.41,0.42,0.43],[0.41,0.3,0.45],[0.43,0.4,0.5]],[[0.4,0.55,0.76],[0.1,0.83,0.5],[0.3,0.4,0.25]],[[0.7,0.8,0.9],[0.1,0.8,0.5],[0.3,0.2,0.9]],[0.1,0.3,0.5],3)
+        tf.transformers_attention_sequence_model(0.1,0.8)
+    word2vecembeddings=bibliometric_word2vec("Spark_Word2Vec_DBLP.txt","merit")
+    if len(word2vecembeddings) >= 3:
+        print("word2vecembeddings:",word2vecembeddings[:3])
+        tf=Transformers(word2vecembeddings[:3],[[0.41,0.42,0.43],[0.41,0.3,0.45],[0.43,0.4,0.5]],[[0.4,0.55,0.76],[0.1,0.83,0.5],[0.3,0.4,0.25]],[[0.7,0.8,0.9],[0.1,0.8,0.5],[0.3,0.2,0.9]],[0.1,0.3,0.5],3)
+        tf.transformers_attention_sequence_model(0.1,0.8)
+    word2vecembeddings=bibliometric_word2vec("Spark_Word2Vec_MicrosoftAcademic.txt","merit")
+    if len(word2vecembeddings) >= 3:
+        print("word2vecembeddings:",word2vecembeddings[:3])
+        tf=Transformers(word2vecembeddings[:3],[[0.41,0.42,0.43],[0.41,0.3,0.45],[0.43,0.4,0.5]],[[0.4,0.55,0.76],[0.1,0.83,0.5],[0.3,0.4,0.25]],[[0.7,0.8,0.9],[0.1,0.8,0.5],[0.3,0.2,0.9]],[0.1,0.3,0.5],3)
+        tf.transformers_attention_sequence_model(0.1,0.8)
+    word2vecembeddings=bibliometric_word2vec("Spark_Word2Vec_Bibliography.txt","merit")
+    if len(word2vecembeddings) >= 3:
+        print("word2vecembeddings:",word2vecembeddings[:3])
+        tf=Transformers(word2vecembeddings[:3],[[0.41,0.42,0.43],[0.41,0.3,0.45],[0.43,0.4,0.5]],[[0.4,0.55,0.76],[0.1,0.83,0.5],[0.3,0.4,0.25]],[[0.7,0.8,0.9],[0.1,0.8,0.5],[0.3,0.2,0.9]],[0.1,0.3,0.5],3)
+        tf.transformers_attention_sequence_model(0.1,0.8)
+    word2vecembeddings=bibliometric_word2vec("Spark_Word2Vec_PublicationFullText.txt", "majority")
+    if len(word2vecembeddings) >= 3:
+        print("word2vecembeddings:",word2vecembeddings[:3])
+        tf=Transformers(word2vecembeddings[:3],[[0.41,0.42,0.43],[0.41,0.3,0.45],[0.43,0.4,0.5]],[[0.4,0.55,0.76],[0.1,0.83,0.5],[0.3,0.4,0.25]],[[0.7,0.8,0.9],[0.1,0.8,0.5],[0.3,0.2,0.9]],[0.1,0.3,0.5],3)
+        tf.transformers_attention_sequence_model(0.1,0.8)
+    word2vecembeddings=bibliometric_word2vec("Spark_Word2Vec_PatentExample1.txt", "transaction")
+    if len(word2vecembeddings) >= 3:
+        print("word2vecembeddings:",word2vecembeddings[:3])
+        tf=Transformers(word2vecembeddings[:3],[[0.41,0.42,0.43],[0.41,0.3,0.45],[0.43,0.4,0.5]],[[0.4,0.55,0.76],[0.1,0.83,0.5],[0.3,0.4,0.25]],[[0.7,0.8,0.9],[0.1,0.8,0.5],[0.3,0.2,0.9]],[0.1,0.3,0.5],3)
+        tf.transformers_attention_sequence_model(0.1,0.8)
+    word2vecembeddings=bibliometric_word2vec("Spark_Word2Vec_PatentExample2.txt", "transaction")
+    if len(word2vecembeddings) >= 3:
+        print("word2vecembeddings:",word2vecembeddings[:3])
+        tf=Transformers(word2vecembeddings[:3],[[0.41,0.42,0.43],[0.41,0.3,0.45],[0.43,0.4,0.5]],[[0.4,0.55,0.76],[0.1,0.83,0.5],[0.3,0.4,0.25]],[[0.7,0.8,0.9],[0.1,0.8,0.5],[0.3,0.2,0.9]],[0.1,0.3,0.5],3)
+        tf.transformers_attention_sequence_model(0.1,0.8)
+    word2vecembeddings=bibliometric_word2vec("Spark_Word2Vec_NASAADSHarvard.txt", "transaction")
+    if len(word2vecembeddings) >= 3:
+        print("word2vecembeddings:",word2vecembeddings[:3])
+        tf=Transformers(word2vecembeddings[:3],[[0.41,0.42,0.43],[0.41,0.3,0.45],[0.43,0.4,0.5]],[[0.4,0.55,0.76],[0.1,0.83,0.5],[0.3,0.4,0.25]],[[0.7,0.8,0.9],[0.1,0.8,0.5],[0.3,0.2,0.9]],[0.1,0.3,0.5],3)
+        tf.transformers_attention_sequence_model(0.1,0.8)

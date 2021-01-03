@@ -468,7 +468,8 @@ References:
 
 ----------------------------------------------------------------------------------------------------------
 839. (THEORY and FEATURE) Bibliometrics - Patents as ProofNets and Search - Novelty detection and Originality merit measure, Latent Semantic Analysis, Low Rank Approximation - 6,7,8 July 2020 - related to 829
-----------------------------------------------------------------------------------------------------------Patents are uniquely granted to individuals and corporations who have invented an original concept which could be underneath any STEM artifact. Patent Search is a time consuming process and could take years to validate a patent application and involves human effort to find Concept similarity (Novelty detection,Prior art). Novelty detection and Originality are thus synonymous - Latent Semantic Analysis by SVD (X = U(Eigen)Z^T) and low rank approximation (choose creamy layer of UEZ^T) of term-document matrix of patents mines concept words related to each other. Alternatively, First order logic ProofNet format of patent applications written in natural languages could be an apt model to quantify conceptual distance and patent search. Patent database is a massive open online dataset (MOOD) and Concept similarity search could be automated by a ProofNet distance computations amongst pairs of patent GoIs on a cloud thus replacing humans. This commit computes a Concept Cloud wordle of set of example team software patents author was involved as former staff (Sun Microsystems-Oracle)
+----------------------------------------------------------------------------------------------------------
+Patents are uniquely granted to individuals and corporations who have invented an original concept which could be underneath any STEM artifact. Patent Search is a time consuming process and could take years to validate a patent application and involves human effort to find Concept similarity (Novelty detection,Prior art). Novelty detection and Originality are thus synonymous - Latent Semantic Analysis by SVD (X = U(Eigen)Z^T) and low rank approximation (choose creamy layer of UEZ^T) of term-document matrix of patents mines concept words related to each other. Alternatively, First order logic ProofNet format of patent applications written in natural languages could be an apt model to quantify conceptual distance and patent search. Patent database is a massive open online dataset (MOOD) and Concept similarity search could be automated by a ProofNet distance computations amongst pairs of patent GoIs on a cloud thus replacing humans. This commit computes a Concept Cloud wordle of set of example team software patents author was involved as former staff (Sun Microsystems-Oracle)
 
 References:
 -----------
@@ -596,3 +597,24 @@ References:
 1129.4 Learning Linear Threshold Functions in the presence of Classification Noise - [Bylander] - https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.31.481&rep=rep1&type=pdf
 1129.5 Polynomial time algorithm for learning noisy linear threshold functions - [Blum-Frieze-Kannan-Vempala] - https://www.math.cmu.edu/~af1p/Texfiles/learn.pdf
 1129.6 Measuring Fame - [Schulman] - https://www.improbable.com/2009/02/28/measuring-fame-quantitatively-iv-whos-the-most-famous-of-them-all/
+
+------------------------------------------------------------------------------------------------------------------------------------------
+1131.(THEORY and FEATURE) Bibliometrics - Merit of Academic Publications - Transformers Attention Model implementation - related to 839
+and all sections on Bibliometrics, Novelty Detection, People Analytics and Embedding in Vector Spaces - 3,4,5 January 2021
+------------------------------------------------------------------------------------------------------------------------------------------
+1.Transformer attention models are recent deep learning advances in NLP replacing Recurrent NNs and LSTMs and are widely used in machine translation and text analytics. BERT and GPT based text writing systems have massive pretrained transformers underneath.
+2.Transformer attention model learns Query weights (Q), Key weights (K), Value weights (V) for embedding xi for word i defined by:
+	Qi = xi * qi
+	Ki = xi * ki
+	Vi = xi * vi
+	Attention(Q,K,V) = softmax(Q * K^T/sqrt(d^k))*V, d^k = dimension of Keys vector
+	a(i,j) = attention of word i to word j = qi * kj
+	softmax(xi) = e^xi/Sigma(e^xj) which normalizes sum to 1
+3.Weights are learnt by Gradient Descent Perceptron code for which has been implemented in Transformers_PerceptronAndGradient.py (invoked by Transformers.py) which is based on PerceptronAndGradient.py in NeuronRain AstroInfer but replicated for Transformer specific enhancements.
+4.This commit implements transformer model in Transformers.py and Transformers_PerceptronAndGradient.py which are invoked from Spark_Word2vec.py for learning previous attention weights for word2vec embeddings of academic publications. More attention to a word indicates the importance and Novelty associated with it which is particularly necessary in analyzing patent prior art.
+5.Transformers object is initialized as:
+	    def __init__(self,wordembedding,queries,keys,values,expected,dimension)
+which are input training gradient descent args for bibliometrics word2vec embedding, prior weights for queries-keys-values, expected attention and dimension of keys vector.
+6.Logs testlogs/Spark_Word2Vec.log.5January2021 for Spark 3.0.1 + Python 3.7.5 execution depict the attention weights learnt by Gradient Descent. 
+ 
+
