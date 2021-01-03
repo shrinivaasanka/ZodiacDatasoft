@@ -616,5 +616,8 @@ and all sections on Bibliometrics, Novelty Detection, People Analytics and Embed
 	    def __init__(self,wordembedding,queries,keys,values,expected,dimension)
 which are input training gradient descent args for bibliometrics word2vec embedding, prior weights for queries-keys-values, expected attention and dimension of keys vector.
 6.Logs testlogs/Spark_Word2Vec.log.5January2021 for Spark 3.0.1 + Python 3.7.5 execution depict the attention weights learnt by Gradient Descent. 
- 
+
+References:
+-----------
+1131.1 Transformers - https://en.wikipedia.org/wiki/Transformer_(machine_learning_model) 
 
