@@ -599,8 +599,8 @@ References:
 1129.6 Measuring Fame - [Schulman] - https://www.improbable.com/2009/02/28/measuring-fame-quantitatively-iv-whos-the-most-famous-of-them-all/
 
 ------------------------------------------------------------------------------------------------------------------------------------------
-1131.(THEORY and FEATURE) Bibliometrics - Merit of Academic Publications - Transformers Attention Model implementation - related to 839
-and all sections on Bibliometrics, Novelty Detection, People Analytics and Embedding in Vector Spaces - 3,4,5 January 2021
+1131.(THEORY and FEATURE) Bibliometrics - Merit of Academic Publications - Transformers Attention Model implementation - related to 702,707
+,839 and all sections on Named Entity Recognition, Bibliometrics, Novelty Detection, People Analytics and Embedding in Vector Spaces - 3,4,5,21 January 2021
 ------------------------------------------------------------------------------------------------------------------------------------------
 1.Transformer attention models are recent deep learning advances in NLP replacing Recurrent NNs and LSTMs and are widely used in machine translation and text analytics. BERT and GPT based text writing systems have massive pretrained transformers underneath.
 2.Transformer attention model learns Query weights (Q), Key weights (K), Value weights (V) for embedding xi for word i defined by:
@@ -615,7 +615,8 @@ and all sections on Bibliometrics, Novelty Detection, People Analytics and Embed
 5.Transformers object is initialized as:
 	    def __init__(self,wordembedding,queries,keys,values,expected,dimension)
 which are input training gradient descent args for bibliometrics word2vec embedding, prior weights for queries-keys-values, expected attention and dimension of keys vector.
-6.Logs testlogs/Spark_Word2Vec.log.5January2021 for Spark 3.0.1 + Python 3.7.5 execution depict the attention weights learnt by Gradient Descent. 
+6.Logs testlogs/Spark_Word2Vec.log.5January2021 for Spark 3.0.1 + Python 3.7.5 execution depict the attention weights learnt by Gradient Descent.
+7.Named Entity Recognition PoS Conditional Random Field implementation in NeuronRain has non-statistical alternative which resembles a transformer sequence model pipeline. 
 
 References:
 -----------
