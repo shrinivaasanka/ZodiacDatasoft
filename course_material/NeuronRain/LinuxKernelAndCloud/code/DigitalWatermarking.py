@@ -11,7 +11,27 @@
 import cv2 
 import numpy as np
 
-def watermark(videofile, watermark, maxframes):
+def watermark_image(imagefile, watermark):
+	img = cv2.imread(imagefile,-1)
+	img = cv2.cvtColor(img,cv2.COLOR_BGR2BGRA)
+	namewatermark = cv2.imread(watermark,-1)
+	namewatermark = cv2.cvtColor(namewatermark,cv2.COLOR_BGR2BGRA)
+	imgheight,imgwidth,imgc = img.shape
+	nwmheight,nwmwidth,nwmc = namewatermark.shape
+	overlay = np.zeros((imgheight,imgwidth,4), dtype='uint8')	
+	for p in range(0,nwmheight):
+		for q in range(0,nwmwidth):
+			if namewatermark[p,q][3] != 0:
+				heightoffset = imgheight - nwmheight - 100
+				widthoffset = imgwidth - nwmwidth - 100
+				#print(heightoffset+p,",",widthoffset+q)
+				overlay[heightoffset + p, widthoffset + q] = namewatermark[p,q]
+	cv2.addWeighted(overlay, 0.05, img, 0.95, 0, img) 
+	img = cv2.cvtColor(img,cv2.COLOR_BGRA2BGR)
+	cv2.imwrite(imagefile+"_Watermarked.jpg",img)
+	
+
+def watermark_video(videofile, watermark, maxframes):
 	namewatermark = cv2.imread(watermark,-1)
 	namewatermark = cv2.cvtColor(namewatermark,cv2.COLOR_BGR2BGRA)
 	vid = cv2.VideoCapture(videofile)
@@ -29,10 +49,14 @@ def watermark(videofile, watermark, maxframes):
 					widthoffset = framewidth - nwmwidth - 100
 					#print(heightoffset+p,",",widthoffset+q)
 					overlay[heightoffset + p, widthoffset + q] = namewatermark[p,q]
-		cv2.addWeighted(overlay, 0.15, frame, 0.85, 0, frame) 
+		cv2.addWeighted(overlay, 0.05, frame, 0.95, 0, frame) 
 		frame = cv2.cvtColor(frame,cv2.COLOR_BGRA2BGR)
 		cv2.imwrite(videofile+"_Frame%d.jpg" % (cnt),frame)
 		cnt += 1
 
 if __name__=="__main__":
-	watermark("testlogs/Krishna_iResearch_NeuronRain_Repositories-2020-07-10_13.17.20.mp4","testlogs/DigitalWatermarking_Name.jpg",2)
+	watermark_video("testlogs/Krishna_iResearch_NeuronRain_Repositories-2020-07-10_13.17.20.mp4","testlogs/DigitalWatermarking_Name.jpg",2)
+	watermark_image("testlogs/DWMExample1.jpg","testlogs/DigitalWatermarking_PSGTech.jpg")
+	watermark_image("testlogs/DWMExample2.jpg","testlogs/DigitalWatermarking_PSGTech.jpg")
+	watermark_image("testlogs/DWMExample1.jpg","testlogs/DigitalWatermarking_PSGTech.png")
+	watermark_image("testlogs/DWMExample2.jpg","testlogs/DigitalWatermarking_PSGTech.png")

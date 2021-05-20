@@ -664,3 +664,13 @@ References:
 -----------
 1140.1 Teapot Shards - https://www.youtube.com/watch?v=sFhhQRxWTIM
 1140.2 Teapot Shards and Quantum supremacy - https://www.scottaaronson.com/blog/?p=5460 - "...I do, however, have one substantive disagreement. At one point, Borcherds argues that sampling-based quantum supremacy itself fails his teapot test. For consider the computational problem of predicting how many pieces a teapot will break into if it’s dropped on the ground. Clearly, he says, the teapot itself will outperform any simulation running on any existing classical computer at that task, and will therefore achieve “teapot supremacy.”..."
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+1141. (THEORY and FEATURE) Digital Watermarking - refactored - Image and Video functions - related to 841 and all sections on Merit of
+Large Scale Visuals, Antitamper/Antispoof/Cybercrime analytics, Image Segmentation and Classification, ThoughtNet - 18 May 2021
+-----------------------------------------------------------------------------------------------------------------------------------------
+DigitalWatermarking.py implementation has been refactored to define 2 separate watermarking functions for Videos and Images which thus far
+had definition only for Video files (watermark_video and watermark_image). Few example group photo image files (Copyright: 95CSE PSG Tech, 
+Coimbatore) of author (.jpg and .png) have been watermarked by Python 3.7.5 + OpenCV2 overlay(). Digital watermarking overlay is a primitive
+image classifier - overlay of similar segmented images results on high number of superimposed image segments (or) facegraphs of similar 
+segmented images are more isomorphic and high number face vertices of overlayed images get superimposed exactly. Vertices of Facegraphs of the overlayed segmented images are stacked creating a multiplanar graph (in which every vertex is a stack) which is a visual version of ThoughtNet if thoughts are visualized. 
