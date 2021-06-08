@@ -46,7 +46,7 @@ References:
 3.Apache Config Directives - ApacheCon - http://events17.linuxfoundation.org/sites/events/files/slides/ConfigurationDirectiveAPI.pdf
 
 ------------------------------------------------------------------------------------------------------------
-752. (THEORY and FEATURE) 2 January 2019, 9 January 2019, 8 January 2020, 22 January 2020, 23 January 2020, 29 January 2020, 31 January 2020, 2 February 2020,4 May 2020,12 May 2020,15 May 2020, 2,3,4,7 July 2020,28 October 2020,3 November 2020,2 December 2020,5 December 2020,1 January 2021,29 January 2021,1 February 2021,5 March 2021,1 May 2021 - Searching, Indexing, Computational Geometric point location queries, Factorization in Randomized NC - Binary Search Nuances, B-Trees, Sharding - related to 227,666,730,762,828,831,864,870,1123 and all sections of People Analytics,Histogram Analytics,Social Network Analysis,Majority Voting,Syllable vectorspace text analytics,Graphical Event Models and Causal Event Models (GEM and CEM)  and Computational Geometric Planar Point Location Factorization in NeuronRain Theory Drafts 
+752. (THEORY and FEATURE) 2 January 2019, 9 January 2019, 8 January 2020, 22 January 2020, 23 January 2020, 29 January 2020, 31 January 2020, 2 February 2020,4 May 2020,12 May 2020,15 May 2020, 2,3,4,7 July 2020,28 October 2020,3 November 2020,2 December 2020,5 December 2020,1 January 2021,29 January 2021,1 February 2021,5 March 2021,1 May 2021,8 June 2021 - Searching, Indexing, Computational Geometric point location queries, Factorization in Randomized NC - Binary Search Nuances, B-Trees, Sharding - related to 227,666,730,762,828,831,864,870,1123 and all sections of People Analytics,Histogram Analytics,Social Network Analysis,Majority Voting,Syllable vectorspace text analytics,Space filling,Cellular automata,Graphical Event Models and Causal Event Models (GEM and CEM)  and Computational Geometric Planar Point Location Factorization in NeuronRain Theory Drafts 
 ------------------------------------------------------------------------------------------------------------
 Traditional Binary Search still remains the standard for sifting huge datasets and has undergone significant
 refinements. Usual Binary Search is centred around midpoint computation and branching:
@@ -85,6 +85,8 @@ Edges are denoted by ----- which connect each parenthesized subset vertex for a 
 Planar Point Location in Computational Geometry is the most fundamental generalization of conventional one dimensional list search to arbitrary dimensions. Computational Geometric Factorization algorithm implemented in NeuronRain AstroInfer is a two dimensional parallel geometric search which locates , in polylogarithmic time, factor points with in rectangular faces of planar straight line graph (PSLG) formed by rasterizing (pixel polygon approximation of an algebraic curve on a grid) hyperbolic arc bow on Parallel RAMs - this search involves two phases:
 	(*) Locating a rectangle in PSLG polygon subdivision containing factor point in polylogarithmic time by some Parallel RAM Planar Point Location algorithm - PSLG has ~(3N+1) vertices and ~4N edges and each polygonal face is a pixel array rectangle of dimensions 1 * N/[x(x-1)]
 	(*) Binary search the rectangle containing factor point - every rectangle in PSLG of rasterized hyperbolic arc is an arithmetic progression of pixels (ordinate products)
+
+Hardness of Factorization has bearing on susceptibility of cryptographically secure Majority Voting to manipulation and its credibility.
 
 ---------------------------------------------------------------------------------
 An example hyperbolic arc rasterization - schematic - pixel array polygonal faces 
@@ -147,6 +149,17 @@ By pandemic cellular automaton model, spread of memes in Social networks can be 
 on grid there is an edge
 	(*) Clustering traits of previous CAGraph determine diffusion of a concept in community - strongly connected components of high value vertices are the most influenced giants.
 
+References:
+-----------
+1.The Art of Computer Programming - Volume 3 - [Donald Knuth] - Sorting and Searching - 6.2.2
+2.Beautiful Code - Finding Things - [Tim Bray - Sun Microsystems]
+3.Google AI Blog - [Joshua Bloch] - https://ai.googleblog.com/2006/06/extra-extra-read-all-about-it-nearly.html
+4.Topological Sorting - Fast Parallel Algorithms - [SA Cook] - https://www.sciencedirect.com/science/article/pii/S0019995885800413 - If set of integers are randomly assigned as labels of a random graph, topological sorting of vertices by some ordering can be done efficiently in NC^2 and a following binary search can find the element in additional logarithmic time. But the topologically sorted vertex list may not be sorted by total ordering always.Dekel-Nassimi-Sahni algorithm works by Repeated Matrix Multiplication logarithmically many times and sorting by longest paths.
+5.Planar Separator Theorem for Graphs - [Richard J. Lipton and Robert Endre Tarjan] - https://epubs.siam.org/doi/abs/10.1137/0209046 - PSLG from rasterized hyperbolic arc xy=N can be partitioned to almost equal subgraphs by removing O(sqrt(3N+1)) vertices - quite useful in parallelizing and fair load balancing the rasterized polygon faces amongst PRAMs for point location queries
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+1144. (THEORY and FEATURE) Computational Geometric point location queries, Factorization in Randomized NC, SETH, String complexity and distance measures, Causal and Graphical Event Models, Space filling and Cellular automata - related to 752 and all sections of People Analytics,Histogram Analytics,Social Network Analysis,Majority Voting,Syllable vectorspace text analytics,Graphical Event Models and Causal Event Models (GEM and CEM)  and Computational Geometric Planar Point Location Factorization in NeuronRain Theory Drafts - 8 June 2021
+-------------------------------------------------------------------------------------------------------------------------------------------
 Causal Event Models and Graphical Event Models (CEM and GEM) could be useful for Novel SARS CoronaVirus 2 2019 timeseries analysis. NeuronRain COVID19 analyzer is Python and R based. NeuronRain implements an EventNet GEM based on Recursive Lambda Function Growth Textgraph algorithm. CEM and GEM Integrated Crisis Early Warning System for COVID19 could hypothetically mine news and research articles on COVID19 by Recursive Lambda Function Growth EventNet GEM and grow textgraph from articles which unravels hidden cause-effects of actors and events(on how the keywords in the article are connected) - a random walk on the textgraph implies causality. NeuronRain Cellular Automaton Space Filling ER-SIR graph (CAGraph) has average degree (which depends also on population density) of multiples of 8:
 	Per day Spread = 8 * w1 * I(nfected) - 1 * w2 * R(ecovered) - 1 * w3 * S(usceptible) + 1 * w4 * recovery_time ... + constant
 COVID19 ER-SIR graph empirical data show R-number of 406 for 30 days (average degree > 400 - https://www.hindustantimes.com/india-news/1-covid-patient-can-infect-406-if-physical-distancing-measures-are-not-followed-101619441843605.html) which makes it a potential expander graph. Random walk on COVID19 CAGraph (ER-SIR random graph) simulates transmission. Infection CAGraph is incidentally a Dynamic Graphical Event Model (GEM) because actors (S,I and R) and causations (infections) are dynamically created and removed - a timeseries of ordered pairs (actor_infected,time) if viewed as one dimensional stream of data wherein some ordered pair in stream is caused (infected) by some ordered pair in the past. 
@@ -218,7 +231,7 @@ For 2 strings of equal lengths n(i) and n(d) are zero => n(s) = approximate edit
 
 Machine Learning solution for deriving exact edit distance from LC-ACT approximate edit distance:
 -------------------------------------------------------------------------------------------------
-Create a training dataset of strings and compute exact edit distances and LC-ACT approximate edit distances for every pair of strings and find the average deviation between exact and approximate edit distanes.This learnt deviation could be applied as heuristic correction for exact edit distance to LC-ACT approximate edit distances between 2 arbitrary strings.
+Create a training dataset of strings and compute exact edit distances and LC-ACT approximate edit distances for every pair of strings and find the average deviation between exact and approximate edit distances.This learnt deviation could be applied as heuristic correction for exact edit distance to LC-ACT approximate edit distances between 2 arbitrary strings.
 
 
 References:
@@ -517,6 +530,8 @@ Cybercrimes are a scourge on society causing immense economic damage. Distinguis
 
 Predominant attacks which render RSA dysfunctional are Radio-Frequency Van Eck Phreaking (capturing RF signals from monitors),Keystroke loggers (Trojan/Malware capturing keystroke signals), SQL and JavaScript XSS Injection attacks which execute malicious code in client side et al. Some example past cybercrime incidents of author's credentials (compromise of linkedin id by password reset, spoofs of yahoo webmail and past institutional affiliation ids) and their traffic pattern (headers) have been committed to code/testlogs/Cybercrime_examples/
 
+Recursive Lambda Function Growth textgraph algorithm implemented in NeuronRain could be a spam filter - growing a textgraph of an email text and classifying the text by genre of top percentile core number word vertices is a mail segregation mechanism.
+
 References:
 -----------
 840.1 Van Eck Phreaking of Electronic Voting Machines - https://yro.slashdot.org/story/09/11/22/027229/brazilian-breaks-secrecy-of-brazils-e-voting-machines-with-van-eck-phreaking 
@@ -672,5 +687,16 @@ Large Scale Visuals, Antitamper/Antispoof/Cybercrime analytics, Image Segmentati
 DigitalWatermarking.py implementation has been refactored to define 2 separate watermarking functions for Videos and Images which thus far
 had definition only for Video files (watermark_video and watermark_image). Few example group photo image files (Copyright: 95CSE PSG Tech, 
 Coimbatore) of author (.jpg and .png) have been watermarked by Python 3.7.5 + OpenCV2 overlay(). Digital watermarking overlay is a primitive
-image classifier - overlay of similar segmented images results on high number of superimposed image segments (or) facegraphs of similar 
-segmented images are more isomorphic and high number face vertices of overlayed images get superimposed exactly. Vertices of Facegraphs of the overlayed segmented images are stacked creating a multiplanar graph (in which every vertex is a stack) which is a visual version of ThoughtNet if thoughts are visualized. 
+image classifier - overlay of similar segmented images causes high number of superimposed image segments (or) facegraphs of similar 
+segmented images are more isomorphic and high number face vertices of overlayed images get superimposed exactly. Vertices of Facegraphs of the overlayed segmented images are stacked creating a multiplanar graph (in which every vertex is a stack) which is a visual version of ThoughtNet if thoughts are visualized.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+1145. (THEORY and FEATURE) Causal and Graphical Event Models, Collatz Conjecture, Economic Datasets, Complementary Functions and Sequences,
+Ramsey 2-Coloring, Pseudorandomness, Quantitative Finance, Chaos - related to 1144 and all sections on Economic Merit, Complement functions-sequences, 2-coloring and Event Timeseries analysis - 8 June 2021
+-----------------------------------------------------------------------------------------------------------------------------------------
+Collatz conjecture states:
+	x(n+1) = x(n)/2 if x(n) is even and 3x(n) + 1 if x(n) is odd and {x(n)} sequence always ends in 1.
+
+Collatz map is a chaotic fractal which exhibits pseudorandomness and generalized Collatz conjecture (g(n) = a(i)*n+b(i), n=i mod P for rational a(i) and b(i) and g(n) is integer) is undecidable. NeuronRain implements a Chaotic PRG based on conventional actuarial and fractal logistic maps (Verhulste-Pearl-Reed and Mandelbrot). Collatz conjecture could be useful for modelling Economic Event Timeseries as Graphical Event Model E.g stock price quote tickers alternately demonstrate ebb and tide which are explained by Chaotic Mandelbrot sets (Multifractals - https://www.scientificamerican.com/article/multifractals-explain-wall-street/). Collatz sequence is complementarily 2-colored by odd and even integers determined by rule earlier. Collatz conjecture for economic datasets (quarterly GDP data of Boom-Recession, Demand driven-Supply driven) is a plausible usage for Graphical Event Models by following hypothetical rephrasal:
+	x(n+1) = Boom/2 (Recession), if x(n) = Boom and 3*Recession + 1 (Boom) if x(n) = Recession
+Stock prices are influenced by global cues and sectorwise stocks fall or rise according to ripple effect of global events making stream of stock quotes an event timeseries for Graphical Event Model. Boom is tentatively defined as > 7% GDP growth QoQ while Recession is defined as < 2% GDP growth over two consecutive quarters. Thus GEM and CEM are heavily related to Chaos and Non-linear dynamics.
