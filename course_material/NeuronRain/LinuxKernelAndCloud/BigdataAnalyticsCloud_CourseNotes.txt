@@ -692,11 +692,25 @@ segmented images are more isomorphic and high number face vertices of overlayed 
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 1145. (THEORY and FEATURE) Causal and Graphical Event Models, Collatz Conjecture, Economic Datasets, Complementary Functions and Sequences,
-Ramsey 2-Coloring, Pseudorandomness, Quantitative Finance, Chaos - related to 1144 and all sections on Economic Merit, Complement functions-sequences, 2-coloring and Event Timeseries analysis - 8 June 2021
+Ramsey 2-Coloring, Pseudorandomness, Quantitative Finance, Chaos, Multifractals, Discrete Fourier Transform - related to 1144 and all sections on Economic Merit, Complement functions-sequences, 2-coloring and Event Timeseries analysis - 8 June 2021,19 June 2021
 -----------------------------------------------------------------------------------------------------------------------------------------
 Collatz conjecture states:
 	x(n+1) = x(n)/2 if x(n) is even and 3x(n) + 1 if x(n) is odd and {x(n)} sequence always ends in 1.
 
 Collatz map is a chaotic fractal which exhibits pseudorandomness and generalized Collatz conjecture (g(n) = a(i)*n+b(i), n=i mod P for rational a(i) and b(i) and g(n) is integer) is undecidable. NeuronRain implements a Chaotic PRG based on conventional actuarial and fractal logistic maps (Verhulste-Pearl-Reed and Mandelbrot). Collatz conjecture could be useful for modelling Economic Event Timeseries as Graphical Event Model E.g stock price quote tickers alternately demonstrate ebb and tide which are explained by Chaotic Mandelbrot sets (Multifractals - https://www.scientificamerican.com/article/multifractals-explain-wall-street/). Collatz sequence is complementarily 2-colored by odd and even integers determined by rule earlier. Collatz conjecture for economic datasets (quarterly GDP data of Boom-Recession, Demand driven-Supply driven) is a plausible usage for Graphical Event Models by following hypothetical rephrasal:
-	x(n+1) = Boom/2 (Recession), if x(n) = Boom and 3*Recession + 1 (Boom) if x(n) = Recession
-Stock prices are influenced by global cues and sectorwise stocks fall or rise according to ripple effect of global events making stream of stock quotes an event timeseries for Graphical Event Model. Boom is tentatively defined as > 7% GDP growth QoQ while Recession is defined as < 2% GDP growth over two consecutive quarters. Thus GEM and CEM are heavily related to Chaos and Non-linear dynamics.
+	x(n+1) = Boom/2 (Recession), if x(n) = Boom (simulates penalty for supply glut after boom)
+	and 
+	3*Recession + 1 (Boom) if x(n) = Recession (simulates incentive for demand growth after recession)
+Stock prices are influenced by global cues and sectorwise stocks fall or rise according to ripple effect of global events making stream of stock quotes an event timeseries for Graphical Event Model. Boom is tentatively defined as > 7% GDP growth QoQ while Recession is defined as < 2% GDP growth over two consecutive quarters. Thus GEM and CEM are heavily related to Chaos and Non-linear dynamics. Basic dictum of market event causality cycle goes by: Boom causes supply glut, supply glut causes low demand and recession, and low supply caused by recession spurs demand which is thus a cyclical CEM and GEM. Multifractal model of stock markets defines stream of multiple local exponents for logistic instead of one exponent. Discrete Fourier Transform of stream of stock quotes could reveal hidden periodicities - For stream q0,q1,q2,...qN:
+        X(k) = Sum_n=0_to_N-1(x(n) * e^(2*pi*n*k/N)), k=0,1,2,...,N-1
+X(k) are the Fourier spectrum frequencies.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+1147. (THEORY and FEATURE) ThoughtNet Hypergraph - Difficulty in unique determination of a hyperedge - 24 June 2021 - related to all sections
+on ThoughtNet Hypergraph Evocation, Evocation WordNet, Contextual Multiarmed Bandit model of ThoughtNet, Reinforcement Learning and Word Sense Disambiguation, Cognitive Psychology
+--------------------------------------------------------------------------------------------------------------------------------------------
+NeuronRain postulates and implements a Contextual Multiarmed Bandit model of thought evocation named "ThoughtNet" which is a hypergraph of thoughts and every vertex of multiplanar ThoughtNet is a stack. Reinforcement Learning based Contextual Bandit retrieves thought of maximum reward for each evocative. For example, three stack hypervertices c1,c2,c3 of ThoughtNet could be evocatives or modal classes and each hypervertex stack is populated by thoughts t1,t2,t3,...,tn. Hypergraph nature of ThoughtNet allows a thought hyperedge to connect multiple hypervertices of ThoughtNet. Evocation problem is to uniquely determine a hyperedge on utterances of evocatives c1,c2 and c3. As opposed to contextual multi armed bandit solution which ranks thoughts evoked by numeric rewards and chooses the maximum, unique thought could be retrieved non-numerically if intersection of sets of hypervertices has size 1. Any intersection of size > 1 would neccessitate disambiguation - Example:
+	c1 - {t1,t3,t7}
+	c2 - {t1,t2,t5,t6}
+	c3 - {t1,t3,t4,t5}
+For previous ThoughtNet hypergraph of three hypervertices c1,c2,c3 and hyperedges t1,t2,t3,t4,t5,t6,t7, evocatives c1,c2,c3 uniquely determine {t1} by intersection while evocatives c1,c3 retrieve thoughts {t1,t3} which have to be ranked. Datastructure used for intersection (e.g type of hashing) is crucial.
