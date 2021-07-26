@@ -1,0 +1,3 @@
+hypervertices intersection of  ['water', 'air'] : {'flood caused by storms wrought havoc'}
+hypervertices intersection of  ['water', 'agriculture'] : {'cost effective sea water desalination would benefit agriculture', 'water scarcity hits crops'}
+hypervertices intersection of  ['water', 'air', 'agriculture'] : set()

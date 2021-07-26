@@ -320,3 +320,11 @@ hypervertices intersection of  ['water', 'air', 'agriculture'] : set()
 References:
 ----------
 1149.1 Modality Effect in Psychology - https://en.wikipedia.org/wiki/Modality_effect - "...Modality can refer to a number of characteristics of the presented study material. However, this term is usually used to describe the improved recall of the final items of a list when that list is presented verbally in comparison with a visual representation. The effect is seen in free recall (recall of list items in any given order), serial recall (recall of list items in the order of study), short-term sentence recall (recall specific words from sentences with similar meanings) and paired associate recall (recall of a pair from presentation of one of its members)...." - ThoughtNet evocation by multiarmed bandit could be likened to a serial recall while evocation by intersection could be a free recall.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+1153. (THEORY and FEATURE) ThoughtNet Evocation of Thought Hyperedges by Set Intersection of Hypervertices - related to 620,1147,1149 and all sections of ThoughtNet Hypergraph Evocation, Contextual Multiarmed Bandits, Reinforcement Learning, Word Sense Disambiguation, Balls-Bins
+Problem - NeuronRain implementation of set intersection by hashing - 26 July 2021 
+---------------------------------------------------------------------------------------------------------------------------------------------
+1153.1 HypergraphIntersections.py has been refactored to define a native implementation of set intersection by Python 3.8 collections defaultdict() in function neuronrain_setintersection()
+1153.2 Elements of set1 are populated in an instance of defaultdict() and elements of set2 are lookedup in defaultdict of set1 and returned as intersection of set1 and set2 if present in defaultdict of set1.
+1153.3 Boolean flag for choice between python intersection implementation and NeuronRain intersection implementation has been introduced.
