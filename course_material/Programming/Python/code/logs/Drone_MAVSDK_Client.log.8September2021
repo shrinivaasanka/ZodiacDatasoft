@@ -1,0 +1,36 @@
+Python/code# python3.7 Drone_MAVSDK_Client.py 
+connection_made(): message sent: DroneMAVSDKClient
+Waiting for mavsdk_server to be ready...
+Connection lost
+Connected to mavsdk_server!
+drone_async_io(): Connected to MAVSDK server
+state: ConnectionState: [uuid: 5283920058631409231, is_connected: True]
+Drone discovered with UUID: 5283920058631409231 5283920058631409231
+Global position estimate ok
+flight information: FlightInfo: [time_boot_ms: 615936, flight_uid: 79]
+flight id: Identification: [hardware_uid: 000000000000000000000000000000000000]
+speed: 1.0030363576030157
+version: Version: [flight_sw_major: 1, flight_sw_minor: 11, flight_sw_patch: 0, flight_sw_vendor_major: 0, flight_sw_vendor_minor: 0, flight_sw_vendor_patch: 0, os_sw_major: 5, os_sw_minor: 1, os_sw_patch: 4, flight_sw_git_hash: 9feea0e2f, os_sw_git_hash: 000000000000000]
+Waiting for mavsdk_server to be ready...
+Connected to mavsdk_server!
+drone_async_io(): Connected to MAVSDK server
+state: ConnectionState: [uuid: 5283920058631409231, is_connected: True]
+Drone discovered with UUID: 5283920058631409231 5283920058631409231
+Global position estimate ok
+Waiting for mavsdk_server to be ready...
+Connected to mavsdk_server!
+drone_async_io(): Connected to MAVSDK server
+state: ConnectionState: [uuid: 5283920058631409231, is_connected: True]
+Drone discovered with UUID: 5283920058631409231 5283920058631409231
+Global position estimate ok
+Waiting for mavsdk_server to be ready...
+Connected to mavsdk_server!
+drone_async_io(): Connected to MAVSDK server
+state: ConnectionState: [uuid: 5283920058631409231, is_connected: True]
+Drone discovered with UUID: 5283920058631409231 5283920058631409231
+Global position estimate ok
+location: {'place_id': 282312637, 'licence': 'Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright', 'osm_type': 'way', 'osm_id': 5678278, 'boundingbox': ['40.675172484848', '40.675272484848', '-73.991693333333', '-73.991593333333'], 'lat': '40.67522248484848', 'lon': '-73.99164333333333', 'display_name': '175, 5th Street, Gotham Greens, Brooklyn, Kings County, New York, 11215, United States', 'class': 'place', 'type': 'house', 'importance': 0.31100000000000005}
+('publicuniqueidhex:', 'd731e10ba2af8ce068d849249cd1425fa46bd10b')
+('Voting_Machine_dict:', defaultdict(<class 'list'>, {'CandidateA': ['$5$rounds=535000$DmWkcJfKSyRPO6Qt$JPhz9A7RwJ8hzHDVsNBRfxRwuurxk9WmliqVvb6.Pc5']}))
+('sortedEVM:', [('CandidateA', ['$5$rounds=535000$DmWkcJfKSyRPO6Qt$JPhz9A7RwJ8hzHDVsNBRfxRwuurxk9WmliqVvb6.Pc5'])])
+

@@ -12,13 +12,18 @@
 import asyncio
 import sys
 from mavsdk import System
-
+from geopy.geocoders import Nominatim
+from Streaming_SetPartitionAnalytics import electronic_voting_machine
+from collections import defaultdict
+import random
 
 class DroneMAVSDKClient(asyncio.Protocol):
     def __init__(self, message, on_con_lost, clientloop):
         self.message = message
         self.on_con_lost = on_con_lost
         self.clientloop = clientloop
+        self.geolocator = Nominatim(user_agent="DroneEVM")
+        self.voting_machine_dict = defaultdict(list)
 
     def connection_made(self, transport):
         self.transport = transport
@@ -33,7 +38,7 @@ class DroneMAVSDKClient(asyncio.Protocol):
     def connection_lost(self, cl):
         print("Connection lost")
 
-    async def drone_async_io(self, drone, mavsdkserverport, command):
+    async def drone_async_io(self, drone, mavsdkserverport, command, address=None, candidates=None, idcontexts=None):
         await drone.connect(system_address="udp://:"+str(mavsdkserverport))
         print("drone_async_io(): Connected to MAVSDK server")
         async for state in drone.core.connection_state():
@@ -72,12 +77,25 @@ class DroneMAVSDKClient(asyncio.Protocol):
                 print("Exception:", ex)
         if command == "goto_location":
             try:
-                await drone.action.goto_location(78.0, 7.0, 100.0, 0.0)
+                location = self.geolocator.geocode(address)
+                print("location:",location.raw)
+                await drone.action.goto_location(float(location.raw["lat"]), 1.0, float(location.raw["lon"]), 1.0)
+                await drone.action.land()
             except Exception as ex:
                 print("Exception:", ex)
         if command == "camera":
             try:
                 await drone.camera.start_video_streaming()
+            except Exception as ex:
+                print("Exception:", ex)
+        if command == "drone_EVM":
+            try:
+                location = self.geolocator.geocode(address)
+                print("location:",location.raw)
+                await drone.action.goto_location(float(location.raw["lat"]), 1.0, float(location.raw["lon"]), 1.0)
+                #await drone.action.land()
+                electronic_voting_machine(self.voting_machine_dict, idcontexts[0],
+                                  candidates[int(random.random()*100) % len(candidates)], Streaming_Analytics_Bertrand=True)
             except Exception as ex:
                 print("Exception:", ex)
 
@@ -96,13 +114,16 @@ async def main():
     dronemavsdkclient = DroneMAVSDKClient("DroneMAVSDKClient", on_con_lost, clientloop)
     transport, protocol = await clientloop.create_connection(lambda: dronemavsdkclient, 'localhost', 20000)
     drone = System()
-    await dronemavsdkclient.drone_async_io(drone, 14540, command="all")
-    #await dronemavsdkclient.drone_async_io(drone, 14540, command="info")
-    #await dronemavsdkclient.drone_async_io(drone, 14540, command="arm")
-    #await dronemavsdkclient.drone_async_io(drone, 14540, command="takeoff")
+    #await dronemavsdkclient.drone_async_io(drone, 14540, command="all")
+    await dronemavsdkclient.drone_async_io(drone, 14540, command="info")
+    await dronemavsdkclient.drone_async_io(drone, 14540, command="arm")
+    await dronemavsdkclient.drone_async_io(drone, 14540, command="takeoff")
     #await dronemavsdkclient.drone_async_io(drone, 14540, command="camera")
-    #await dronemavsdkclient.drone_async_io(drone, 14540, command="goto_location")
-    # await on_con_lost
+    #await dronemavsdkclient.drone_async_io(drone, 14540, command="goto_location", address="175 5th Street NYC")
+    candidates = ["NOTA", "CandidateA", "CandidateB"]
+    idcontexts = ["/home/ksrinivasan/Krishna_iResearch_OpenSource_wc1/GitHub/asfer-github-code/python-src/testlogs/Streaming_SetPartitionAnalytics_EVM/PublicUniqueEVM_ID1.txt"]
+    await dronemavsdkclient.drone_async_io(drone, 14540, command="drone_EVM", address="175 5th Street NYC", candidates=candidates, idcontexts=idcontexts)
+    #await on_con_lost
 
 if __name__ == "__main__":
     asyncio.run(main())

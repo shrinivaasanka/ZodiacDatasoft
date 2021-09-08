@@ -328,3 +328,19 @@ Problem - NeuronRain implementation of set intersection by hashing - 26 July 202
 1153.1 HypergraphIntersections.py has been refactored to define a native implementation of set intersection by Python 3.8 collections defaultdict() in function neuronrain_setintersection()
 1153.2 Elements of set1 are populated in an instance of defaultdict() and elements of set2 are lookedup in defaultdict of set1 and returned as intersection of set1 and set2 if present in defaultdict of set1.
 1153.3 Boolean flag for choice between python intersection implementation and NeuronRain intersection implementation has been introduced.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+1163. (THEORY and FEATURE) Drone Electronic Voting Machine - Set Partition Analytics electronic_voting_machine() invocation - PX4 SITL
+JMAVSIM simulation - Geocoding integration for address to longitude-latitude translation - related to all sections on Majority Voting,
+Drone Electronic Voting Machines, Set Partition Analytics - 8 September 2021
+---------------------------------------------------------------------------------------------------------------------------------------------
+1163.1 Drone_MAVSDK_Client.py has been updated to import electronic_voting_machine() set partition EVM implementation from Streaming_SetPartitionAnalytics.py and geopy Geocoding service for address to longitude-latitude lookup - geopy Geocoding service looksup the Nominatim Geocoding from OpenStreetMap 
+1163.2 drone_async_io() has been changed to accept additional arguments for address of the voter, id proof context and list of candidates as array.
+1163.3 New command "drone_EVM" has been introduced which geocodes the voter address and navigates to voter longitude and latitude by goto_location() followed by invocation of electronic_voting_machine() which takes voter id proof context and candidates list as arguments and simulates a random vote for some candidate at the voter address.
+1163.4 PX4 JMAVSIM drone simulation (VTOL and navigation) has been captured as video logs/DroneEVM_PX4_JMAVSIM_Flight_Simulation_8September2021.mp4 (uploaded at https://kuja27.blogspot.com/2021/09/drone-electronic-voting-machine-px4.html)
+1163.5 PX4 SITL JMAVSIM, MAVSDK Client and Server simulation logs are at:
+	logs/DroneEVM_PX4_JMAVSIM_Flight_Simulation.log.8September2021
+	logs/Drone_MAVSDK_Client.log.8September2021
+	logs/Drone_MAVSDK_Server.log.8September2021
+	logs/jMAVSIM_replay_logs/2021-09-07/
+1163.6 Command "goto_location" has been updated similarly for address to longitude-latitude translation. Simulation earlier is limited in scope because realworld franchise exercise would have two unpredictable asynchronous halves: (*) landing at voter address (*) taking off after voting. Presently electronic_voting_machine() has been invoked synchronously without async def and await event driven program pairing which would necessitate a rewrite or asynchronous counterpart of Streaming_SetPartitionAnalytics subclassing asyncio.Protocol (or Python events Model-View-Controller GUI pattern).
