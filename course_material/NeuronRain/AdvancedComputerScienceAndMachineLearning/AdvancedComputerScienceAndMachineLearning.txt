@@ -465,7 +465,7 @@ E.g 2. for excluding X={3,6}, lookup of the table results in S={3,7,5,6} which h
 This algorithm is subset oblivious and is a slight improvement over brute-force multiplication of set or set difference because of cached subset products and is sublinear mostly. Previous examples required only 2 divisions whereas brute-force would need 3 multiplications assuming lookups are O(1). Cacheing has benefits in large arrays (when number of elements to be excluded are almost O(N)) for reducing number of multiplications.
 
 -------------------------------------------------------------------------------------------------------------
-751. (THEORY and FEATURE) Hashing Dynamic Sets - 24 May 2018, 31 October 2018, 11 March 2019, 8 October 2019, 6 November 2019, 18 February 2020, 1 May 2020, 5 May 2020, 2,3,4 June 2020, 30 July 2020,1 January 2021 - related to all sections on Set partitions, Computational geometry, Program analysis/Software analytics/Scheduler Analytics among other topics in NeuronRain Theory Drafts 
+751. (THEORY and FEATURE) OS Scheduling and Hashing Dynamic Sets - 24 May 2018, 31 October 2018, 11 March 2019, 8 October 2019, 6 November 2019, 18 February 2020, 1 May 2020, 5 May 2020, 2,3,4 June 2020, 30 July 2020,1 January 2021,21 September 2021 - related to all sections on Set partitions, Computational geometry, Program analysis/Software analytics/Scheduler Analytics among other topics in NeuronRain Theory Drafts 
 -------------------------------------------------------------------------------------------------------------
 Q: How can sets of elements which are dynamically modified at runtime be hashed by tabulation? E.g set of 
 clockticks remaining per process in an OS scheduler for 15 processes is [23,45,12,44,55,14] at time t=1. This
@@ -533,6 +533,8 @@ Previous adaptation of Survival Index based Transaction Timeout Management (ment
 	BB(N) = maximum number of 1s written by a Halting Turing Machine of N states on tape
 But BB(N) requires prior knowledge of number of states of Turing Machine for a process executable. Brainfuck is a Turing-complete programming language for designing Turing Machines and host of tools are available to translate a high level programming language (C,C++) source code of a process executable to Brainfuck (.bf) format. If the translated Brainfuck code for a high level language source of process executable has N states its worst case runtime is upperbounded by BB(N) which is a relaxation of master theorem upperbound.
 
+States of a process can be broadly classified as CPU intensive and IO intensive bursts. By CPU-IO burst histogram for any OS kernel, previous BusyBeaver number of a process executable is a summation of durations in (number of 1s written) CPU burst states and IO burst states - high duration CPU burst states are rare and viceversa.
+
 Survival Index Timeout as Earliest Deadline First (EDF) OS Scheduler:
 --------------------------------------------------------------
 Linux Kernel has Earliest Deadline First Scheduler which requires user to specify Worst Case Execution Time (WCET) of a process and deadline (runtime << deadline) explicitly by chrt in commandline or programmatically by sched_setattr(). EDF scheduler prioritizes low deadline processes/threads first, causing long deadline processes to wait longer. Commentaries in References below mention an example constraint to be satisfied: 
@@ -592,6 +594,7 @@ arising in clustering - https://csiflabs.cs.ucdavis.edu/~gusfield/cpartition.pdf
 36. C to Brainfuck compiler - C2BF - https://github.com/arthaud/c2bf
 37. FBP - High level language to Brainfuck compiler - https://esolangs.org/wiki/FBP
 38. (Vide reference 7) Bucketization - Incorrectly assigning class labels to objects - [Ethem Alpaydin] - Introduction to Machine Learning - https://www.cmpe.boun.edu.tr/~ethem/i2ml/ - 3.3 Losses and Risks - Page 51 - "... Let us define action ai as the decision to assign the input to class Ci and Lik as the loss incurred for taking action ai when the input actually belongs to Ck. Then the expected risk for taking action ai is R(ai) = Sigma(Lik * P(Ck)) ..." 
+39. CPU burst histogram - https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6_CPU_Scheduling.html - low CPU bursts are more frequent and high CPU bursts are rare (interleaved by IO bursts) on the average for a process
 
 -----------------------------------------------------------------------------------------------------------
 762. (THEORY and FEATURE) Markov Chains Random Walks on a Random Graph and Television Viewership, Merit of Large Scale Visuals, Media Analytics, Business Intelligence, Timeseries, Computational Geometry, Intrinsic Merit and Originality/Creative Genius, Graphical Event Models and EventNet - 4 June 2018,3 July 2018,7 March 2019,7 May 2020, 2,3,4 June 2020, 25 January 2021, 8 April 2021,14 April 2021 - this section is an extended draft on respective topics in NeuronRain AstroInfer design -  https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
