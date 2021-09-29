@@ -1,0 +1,7 @@
+Python/code# python3.7 Drone_MAVSDK_Server.py 
+('127.0.0.1', 53570) : DroneMAVSDKClient
+('127.0.0.1', 53610) : DroneMAVSDKClient
+('127.0.0.1', 53682) : DroneMAVSDKClient
+('127.0.0.1', 53782) : DroneMAVSDKClient
+('127.0.0.1', 53876) : DroneMAVSDKClient
+

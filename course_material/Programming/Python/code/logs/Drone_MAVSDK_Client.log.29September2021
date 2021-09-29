@@ -1,0 +1,35 @@
+Python/code# python3.7 Drone_MAVSDK_Client.py 
+connection_made(): message sent: DroneMAVSDKClient
+Waiting for mavsdk_server to be ready...
+Connection lost
+Connected to mavsdk_server!
+drone_async_io(): Connected to MAVSDK server
+state: ConnectionState: [uuid: 5283920058631409231, is_connected: True]
+Drone discovered with UUID: 5283920058631409231 5283920058631409231
+Global position estimate ok
+flight information: FlightInfo: [time_boot_ms: 2375964, flight_uid: 87]
+flight id: Identification: [hardware_uid: 000000000000000000000000000000000000]
+speed: 0.920501195333431
+version: Version: [flight_sw_major: 1, flight_sw_minor: 11, flight_sw_patch: 0, flight_sw_vendor_major: 0, flight_sw_vendor_minor: 0, flight_sw_vendor_patch: 0, os_sw_major: 5, os_sw_minor: 1, os_sw_patch: 4, flight_sw_git_hash: 9feea0e2f, os_sw_git_hash: 000000000000000]
+Waiting for mavsdk_server to be ready...
+Connected to mavsdk_server!
+drone_async_io(): Connected to MAVSDK server
+state: ConnectionState: [uuid: 5283920058631409231, is_connected: True]
+Drone discovered with UUID: 5283920058631409231 5283920058631409231
+Global position estimate ok
+Waiting for mavsdk_server to be ready...
+Connected to mavsdk_server!
+drone_async_io(): Connected to MAVSDK server
+state: ConnectionState: [uuid: 5283920058631409231, is_connected: True]
+Drone discovered with UUID: 5283920058631409231 5283920058631409231
+Global position estimate ok
+Waiting for mavsdk_server to be ready...
+Connected to mavsdk_server!
+drone_async_io(): Connected to MAVSDK server
+state: ConnectionState: [uuid: 5283920058631409231, is_connected: True]
+Drone discovered with UUID: 5283920058631409231 5283920058631409231
+Global position estimate ok
+('publicuniqueidhex:', 'd731e10ba2af8ce068d849249cd1425fa46bd10b')
+('Voting_Machine_dict:', defaultdict(<class 'list'>, {'CandidateA': ['$5$rounds=535000$ZSEgm2gVKnj7qyhT$7715GNx1UbAgP7OOXD2K3XqwK6.chV/EXwnQpl1KbYB']}))
+('sortedEVM:', [('CandidateA', ['$5$rounds=535000$ZSEgm2gVKnj7qyhT$7715GNx1UbAgP7OOXD2K3XqwK6.chV/EXwnQpl1KbYB'])])
+

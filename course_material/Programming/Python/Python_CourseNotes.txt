@@ -344,3 +344,19 @@ Drone Electronic Voting Machines, Set Partition Analytics - 8 September 2021
 	logs/Drone_MAVSDK_Server.log.8September2021
 	logs/jMAVSIM_replay_logs/2021-09-07/
 1163.6 Command "goto_location" has been updated similarly for address to longitude-latitude translation. Simulation earlier is limited in scope because realworld franchise exercise would have two unpredictable asynchronous halves: (*) landing at voter address (*) taking off after voting. Presently electronic_voting_machine() has been invoked synchronously without async def and await event driven program pairing which would necessitate a rewrite or asynchronous counterpart of Streaming_SetPartitionAnalytics subclassing asyncio.Protocol (or Python events Model-View-Controller GUI pattern).
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+1164. (THEORY and FEATURE) Drone Electronic Voting Machine - Set Partition Analytics electronic_voting_machine_asynchronous() wrapper
+definition and invocation - PX4 SITL JMAVSIM simulation - Fictitious address - related to all sections on Majority Voting, Async IO,
+Drone Electronic Voting Machines, Set Partition Analytics - 29 September 2021
+---------------------------------------------------------------------------------------------------------------------------------------------
+1164.1 Drone_MAVSDK_Client.py has been updated to navigate to a fictitious address by introducing an imaginary address "fictitious" for
+PX4 simulation because of rate limiting errors in REST calls to OpenStreetMap Nominatim Geocoding address-to-longlat lookup.
+1164.2 New asynchronous function electronic_voting_machine_asynchronous() has been async def-ed which is the async wrapper over electronic_voting_machine() synchronous function in Streaming_SetPartitionAnalytics.py 
+1164.3 This new asynchronous Drone EVM function wrapper electronic_voting_machine_asynchronous() is await-ed within "drone_EVM" command of drone_async_io()
+1164.4 Drone_MAVSDK_Client.py has been PEP8 formatted by autopep8.
+1164.5 PX4 jMAVSIM simulation console SITL, drone Client and Server logs for this commit are at:
+	code/logs/DroneEVM_PX4_JMAVSIM_Flight_Simulation.log.29September2021
+	code/logs/Drone_MAVSDK_Client.log.29September2021
+	code/logs/Drone_MAVSDK_Server.log.29September2021
+1164.6 MP4 video for jMAVSIM PX4 drone VTOL and navigation is similar to earlier simulations and has not been committed.

@@ -17,6 +17,7 @@ from Streaming_SetPartitionAnalytics import electronic_voting_machine
 from collections import defaultdict
 import random
 
+
 class DroneMAVSDKClient(asyncio.Protocol):
     def __init__(self, message, on_con_lost, clientloop):
         self.message = message
@@ -42,9 +43,9 @@ class DroneMAVSDKClient(asyncio.Protocol):
         await drone.connect(system_address="udp://:"+str(mavsdkserverport))
         print("drone_async_io(): Connected to MAVSDK server")
         async for state in drone.core.connection_state():
-            print("state:",state)
+            print("state:", state)
             if state.is_connected:
-                print(f"Drone discovered with UUID: {state.uuid}",state.uuid)
+                print(f"Drone discovered with UUID: {state.uuid}", state.uuid)
                 break
         async for health in drone.telemetry.health():
             if health.is_global_position_ok:
@@ -78,7 +79,7 @@ class DroneMAVSDKClient(asyncio.Protocol):
         if command == "goto_location":
             try:
                 location = self.geolocator.geocode(address)
-                print("location:",location.raw)
+                print("location:", location.raw)
                 await drone.action.goto_location(float(location.raw["lat"]), 1.0, float(location.raw["lon"]), 1.0)
                 await drone.action.land()
             except Exception as ex:
@@ -90,14 +91,21 @@ class DroneMAVSDKClient(asyncio.Protocol):
                 print("Exception:", ex)
         if command == "drone_EVM":
             try:
-                location = self.geolocator.geocode(address)
-                print("location:",location.raw)
-                await drone.action.goto_location(float(location.raw["lat"]), 1.0, float(location.raw["lon"]), 1.0)
-                #await drone.action.land()
-                electronic_voting_machine(self.voting_machine_dict, idcontexts[0],
-                                  candidates[int(random.random()*100) % len(candidates)], Streaming_Analytics_Bertrand=True)
+                if address != "fictitious":
+                    location = self.geolocator.geocode(address)
+                    print("location:", location.raw)
+                    await drone.action.goto_location(float(location.raw["lat"]), 1.0, float(location.raw["lon"]), 1.0)
+                else:
+                    await drone.action.goto_location(78.0, 1.0, 70.0, 1.0)
+                # await drone.action.land()
+                await electronic_voting_machine_asynchronous(self.voting_machine_dict, idcontexts[0], candidates[int(random.random()*100) % len(candidates)], Streaming_Analytics_Bertrand=True)
             except Exception as ex:
                 print("Exception:", ex)
+
+
+async def electronic_voting_machine_asynchronous(voting_machine_dict, idcontexts, candidates, Streaming_Analytics_Bertrand=True):
+    electronic_voting_machine(
+        voting_machine_dict, idcontexts, candidates, Streaming_Analytics_Bertrand=True)
 
 
 async def loop_print():
@@ -111,19 +119,20 @@ async def loop_print():
 async def main():
     clientloop = asyncio.get_running_loop()
     on_con_lost = clientloop.create_future()
-    dronemavsdkclient = DroneMAVSDKClient("DroneMAVSDKClient", on_con_lost, clientloop)
+    dronemavsdkclient = DroneMAVSDKClient(
+        "DroneMAVSDKClient", on_con_lost, clientloop)
     transport, protocol = await clientloop.create_connection(lambda: dronemavsdkclient, 'localhost', 20000)
     drone = System()
-    #await dronemavsdkclient.drone_async_io(drone, 14540, command="all")
+    # await dronemavsdkclient.drone_async_io(drone, 14540, command="all")
     await dronemavsdkclient.drone_async_io(drone, 14540, command="info")
     await dronemavsdkclient.drone_async_io(drone, 14540, command="arm")
     await dronemavsdkclient.drone_async_io(drone, 14540, command="takeoff")
-    #await dronemavsdkclient.drone_async_io(drone, 14540, command="camera")
-    #await dronemavsdkclient.drone_async_io(drone, 14540, command="goto_location", address="175 5th Street NYC")
+    # await dronemavsdkclient.drone_async_io(drone, 14540, command="camera")
+    # await dronemavsdkclient.drone_async_io(drone, 14540, command="goto_location", address="175 5th Street NYC")
     candidates = ["NOTA", "CandidateA", "CandidateB"]
     idcontexts = ["/home/ksrinivasan/Krishna_iResearch_OpenSource_wc1/GitHub/asfer-github-code/python-src/testlogs/Streaming_SetPartitionAnalytics_EVM/PublicUniqueEVM_ID1.txt"]
-    await dronemavsdkclient.drone_async_io(drone, 14540, command="drone_EVM", address="175 5th Street NYC", candidates=candidates, idcontexts=idcontexts)
-    #await on_con_lost
+    await dronemavsdkclient.drone_async_io(drone, 14540, command="drone_EVM", address="fictitious", candidates=candidates, idcontexts=idcontexts)
+    # await on_con_lost
 
 if __name__ == "__main__":
     asyncio.run(main())
