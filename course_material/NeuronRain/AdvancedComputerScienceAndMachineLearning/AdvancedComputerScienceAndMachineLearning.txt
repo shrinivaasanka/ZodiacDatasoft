@@ -645,7 +645,7 @@ References:
 763.5 Markov Models of Text - [Shannon] - http://cm.bell-labs.com/cm/ms/what/shannonday/shannon1948.pdf
 
 ---------------------------------------------------------------------------------------------------------
-Difference between two trees (delta) - 7 August 2018
+1208. (THEORY and FEATURE) Software Analytics - Difference between two trees (delta) - 7 August 2018
 ---------------------------------------------------------------------------------------------------------
 Two graphs are similar if they are isomorphic (i.e there is a bijection between 2 graphs by vertex renumbering).
 Finding difference between two graphs or trees is therefore Graph Non-Isomorphism problem (GNI). Tree difference
@@ -654,7 +654,7 @@ is a frequent requirement in source code version control systems and file sync-i
 changed subtrees while unchanged tree is shared between versions. 
 
 -------------------------------------------------------------------------------------------------------
-Stable Matchings for Dynamic Population - 7 September 2018
+1207. (THEORY) Stable Matchings for Dynamic Population - 7 September 2018
 -------------------------------------------------------------------------------------------------------
 [This is mentioned more like an open puzzle/question than answering it]
 Stable Marriage Theorem implies there exists an algorithm for finding bipartite matchings between two
