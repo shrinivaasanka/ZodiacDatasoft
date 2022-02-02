@@ -269,14 +269,10 @@ References:
 842.2. Rabin-Karp String Fingerprinting by Random polynomials - [Michael O.Rabin] - http://www.xmailserver.org/rabin.pdf
 842.3. Myriad Virtues of Wavelet Trees - Pruned Wavelet Tree of Compressed Strings - [Paolo Ferragina, Raffaele Giancarlo, Giovanni Manzini] - http://www.ittc.ku.edu/~jsv/Papers/FGM09.wavelettrees.pdf
 
----------------------------------------------------------------------------------
-How would you move Mount Fuji? - 11 February 2018
----------------------------------------------------------------------------------
-This problem has parallels in moving a huge block of solid which can only be accessed in LIFO. Comparing
- with moving block of memory which can be randomly accessed, this problem is non-trivial. Moving mount
-which is a 3D solid trivially involves cutting it into equal sized cubes and reconstructing the mount in
-another location by moving the cubes. This is LIFO operation requiring an intermediate stack. Following
-mountain is moved by an intermediate stack:
+---------------------------------------------------------------------------------------------------------------------------------------------
+1209. (THEORY) Computational Geometry - Analytics of Massive Spatial Ordered LIFO Datastructures - How would you move Mount Fuji? - 11 February 2018 - related to all sections on Computational Geometry,Point Location,Computer Graphics (Face and Handwriting Recognition,Mesh Deformation),Computational Geometric Factorization
+---------------------------------------------------------------------------------------------------------------------------------------------
+This problem has parallels in moving a huge block of solid which can only be accessed in LIFO. Comparing with moving block of memory which can be randomly accessed, this problem is non-trivial. Moving mount which is a 3D solid trivially involves cutting it into equal sized cubes and reconstructing the mount in another location by moving the cubes. This is LIFO operation requiring an intermediate stack. Following mountain is moved by an intermediate stack:
 	1 2        6	    2
 	3 4  ---   4  ---   4
 	5 6        2        6
@@ -284,11 +280,12 @@ mountain is moved by an intermediate stack:
 		   5  ---   1 2
 		   3	    3 4
 		   1	    5 6
-Previous move is O(Volume_of_mount). Towers of Hanoi (Towers of Brahma in Kashi Vishwanath temple) problem is akin to this and requires exponential number of moves. For 64 disks of Towers of Brahma, this requires 2^64 - 1 moves which is legendary lifetime of universe (1 second per move translates to 585 billion years). Non-trivial requirement in this problem is no disk should be on smaller disk. Moving mount Fuji of height h sliced as horizontal disks instead of cubes is exactly Tower of Hanoi problem of time O(2^h-1).
+Previous move is O(Volume_of_mount). Towers of Hanoi (Towers of Brahma in Kashi Vishwanath temple) problem is akin to this and requires exponential number of moves. For 64 disks of Towers of Brahma, this requires 2^64 - 1 moves which is legendary lifetime of universe (1 second per move translates to 585 billion years). Non-trivial requirement in this problem is no disk should be on smaller disk. Moving mount Fuji of height h sliced as horizontal disks instead of cubes is exactly Tower of Hanoi problem of time O(2^h-1). Most massive datasets in Computational Geometry and Computer Graphics are 3-dimensional quadrilateral meshes of object shapes or stored in k-d tree (Bentley) binary space partitioning datastructures and might have often to be displaced in storage preserving sorted LIFO structure (a k-d tree in massive backend) which emulates Towers of Hanoi algorithm where each level of k-d tree is a disk of decreasing radius from leaf to root. GIS Applications involve point location queries which could be answered in polylogarithmic time by PRAM-MapReduce-BulkSynchronousParallel construction of k-d trees. Integer Factorization by Computational Geometric Planar Point location queries on rasterized hyperbolic arc could be answered by 2-dimensional k-d trees constructed in polylogarithmic time.
 
 Reference:
 ---------
-Towers of Brahma - https://en.wikipedia.org/wiki/Tower_of_Hanoi
+1209.1 Towers of Brahma - https://en.wikipedia.org/wiki/Tower_of_Hanoi
+1209.2 Parallel Algorithms for Constructing Range and Nearest-Neighbor Searching Data Structures - k-d trees constructed in parallel by MPC and MapReduce - PODS 2016 - [Pankaj K. Agarwal, Kyle Fox, Kamesh Munagala, Abhinandan Nath] - https://users.cs.duke.edu/~abhinath/publications/kd_tree.pdf - "... We present the first provably efficient algorithms to compute, store, and query data structures for range queries and approximate nearest neighbor queries in a popular parallel computing abstraction that captures the salient features of MapReduce and other massively parallel communication (MPC) models. In particular, we describe algorithms for kd-trees, range trees, and BBD-trees that only require O(1) rounds of communication ..."
 
 ----------------------------------------------------------------------------------------------------------
 843. (THEORY) Social networks, Bipartite and General Graph Maximum Matching, Permanent, Boolean majority,
@@ -359,9 +356,9 @@ References:
 843.3 Mulmuley-Vazirani-Vazirani Theorem and Perfect matchings - Theorem 5.5 and Theorem 5.6 (Isolation Lemma) - https://courses.cs.washington.edu/courses/cse521/16sp/521-lecture-5.pdf
 843.4 Number of Perfect matchings in Bipartite graph = Permanent of Incidence matrix - Section 2 - https://lbgi.fr/~sereni/Lectures/GC_Spring09/gc09_4.pdf
 
------------------------------------------------------------------------------------------------------------------------
-Creating Biased Coin from Fair Coin - 27 February 2018
------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+1210. (THEORY and FEATURE) CNF 3SAT Least Squares Approximate Solver - Epsilon Bias Generator for randomly chosen clauses of CNFSAT - Least Squares solution of 3SAT Random matrices of the form AX=B - Creating Biased Coin from Fair Coin - 27 February 2018 - related to all sections on P Versus NP, Hardness Amplification, CNF 3SAT approximate solver
+--------------------------------------------------------------------------------------------------------------------------------------------
 Q: Fair coin of Head and Tail has probability of 1/2 for either turning up. How can an unfair coin be created from fair coin?
 
 A: 1) One possible solution is to have set of fair coins and tossing them all simultaneously. Return 1 if a regular expression occurs in the streak else 0. This would be unfair because percentage of regex matches outnumber percentage of regex mismatches and probability of unfairness follows. For example, from a set of 3 fair coins tossed simultaneously (0 for Head and 1 for Tail):
@@ -408,7 +405,7 @@ References:
 https://kuja27.blogspot.in/2018/04/grafit-course-material-chomsky.html
 
 ----------------------------------------------------------------------------------------------------------------
-750. (THEORY and FEATURE) Money-Changing Problem and minimum partition - 6 May 2018, 9 May 2018, 18 February 2020 - this section is an extended theory draft on set partitions, optimal denomination and coin problems among other topics in NeuronRain AstroInfer Design - https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
+750. (THEORY and FEATURE) Money-Changing Problem and minimum partition - 6 May 2018, 9 May 2018, 18 February 2020 - this section is an extended theory draft on set partitions, Neuro academic-use perfect forward fictitious cryptocurrency in NeuronRain, optimal denomination and coin problems among other topics in NeuronRain AstroInfer Design - https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
 ----------------------------------------------------------------------------------------------------------------
 Q: How can all integers be generated as sum of elements of a minimum sized set (or) What are the least number
 of denominations for a currency to sum up to all possible values of money?
@@ -531,7 +528,7 @@ Caveat:
 -------
 Previous adaptation of Survival Index based Transaction Timeout Management (mentioned in the references) to OS Scheduler assumes prior knowledge of execution times of processes which is undecidable in exact sense by Halting Problem. Only an approximate estimate of execution time of a process can be derived by Analysis of control statements in the program (e.g Sum of execution times of control statements in longest path in the control flow graph of the program is the upperbound). Most of the static code analysis tools for worst case execution time (WCET) do not depend on input size and concentrate only on realtime operating systems and WCET for non-realtime OS implementations therefore can be dynamically derived from theoretical worst case execution time of algorithm underlying executable by reckoning input size e.g Master Theorem T(n) = aT(n/b) + f(n) for divide-and-conquer estimates worst case upperbound running time of algorithm underlying a process executable based on toplevel recursion function f(n) and constants a and b for every inner level of recursion - sorting executable is O(NlogN) and by choice of constant a, approximate worst case execution time of process executable is aNlogN. Constants have to be found by trial-and-error and mostly are architecture dependent. There are few trivial exceptions to what Master Theorem can estimate and there is no necessity of CFG longest path estimation. Busy Beaver Function is an alternative formulation which quantifies the maximum number of steps of a halting Turing Machine of N states defined as:
 	BB(N) = maximum number of 1s written by a Halting Turing Machine of N states on tape
-But BB(N) requires prior knowledge of number of states of Turing Machine for a process executable. Brainfuck is a Turing-complete programming language for designing Turing Machines and host of tools are available to translate a high level programming language (C,C++) source code of a process executable to Brainfuck (.bf) format. If the translated Brainfuck code for a high level language source of process executable has N states its worst case runtime is upperbounded by BB(N) which is a relaxation of master theorem upperbound.
+But BB(N) requires prior knowledge of number of states of Turing Machine for a process executable. Brainfuck is a Turing-complete programming language for designing Turing Machines and host of tools are available to translate a high level programming language (C,C++) source code of a process executable to Brainfuck (.bf) format. If the translated Brainfuck code for a high level language source of process executable has N states its worst case runtime is upperbounded by BB(N) which is a relaxation of master theorem upperbound. Infact BB(N) is the best Turing-computability replacement doing away with master theorem, CFG longest path estimations et al for Worst Case Execution Time bound of an executable as zero-knowledge of underlying algorithm is required which follows from translation of high level language source code (C/C++/Python) to Brainfuct format of Turing machine state transitions oblivious to user.
 
 States of a process can be broadly classified as CPU intensive and IO intensive bursts. By CPU-IO burst histogram for any OS kernel, previous BusyBeaver number of a process executable is a summation of durations in (number of 1s written) CPU burst states and IO burst states - high duration CPU burst states are rare and viceversa.
 
@@ -644,29 +641,26 @@ References:
 763.4 Markov Models of Text Analysis - https://www.cs.princeton.edu/courses/archive/spring05/cos126/assignments/markov.html - an example news article and its Markov text of order 7 (each state is a string of 7 alphabets which depend on previous states)
 763.5 Markov Models of Text - [Shannon] - http://cm.bell-labs.com/cm/ms/what/shannonday/shannon1948.pdf
 
----------------------------------------------------------------------------------------------------------
-1208. (THEORY and FEATURE) Software Analytics - Difference between two trees (delta) - 7 August 2018
----------------------------------------------------------------------------------------------------------
-Two graphs are similar if they are isomorphic (i.e there is a bijection between 2 graphs by vertex renumbering).
-Finding difference between two graphs or trees is therefore Graph Non-Isomorphism problem (GNI). Tree difference
-is a frequent requirement in source code version control systems and file sync-ing software which transmit delta
-(what changed) between source and destination. For example, SVN delta editor in https://subversion.apache.org/docs/api/1.9/svn__delta_8h_source.html overlays the new revision delta on existing tree by replicating only the
-changed subtrees while unchanged tree is shared between versions. 
+---------------------------------------------------------------------------------------------------------------------------------------------
+1208. (THEORY and FEATURE) Software Analytics and Merit of Large Scale Visuals - Rooted Tree Isomorphism and Graph Non-Isomorphism of Source code versioning systems - AHU Algorithm - Difference between two trees (delta) - Isomorphism of k-d trees for object recognition - 7 August 2018 - related to all sections on Computational Geometry, Computer Graphics - Face recognition,Handwriting recognition, Mesh Deformation Isomorphisms-Approximate Topological Matching
+---------------------------------------------------------------------------------------------------------------------------------------------
+Two graphs are similar if they are isomorphic (i.e there is a bijection between 2 graphs by vertex renumbering).  Finding difference between two graphs or trees is therefore Graph Non-Isomorphism problem (GNI). Tree difference is a frequent requirement in source code version control systems and file sync-ing software which transmit delta (what changed) between source and destination. For example, SVN delta editor in https://subversion.apache.org/docs/api/1.9/svn__delta_8h_source.html overlays the new revision delta on existing tree by replicating only the changed subtrees while unchanged tree is shared between versions. Finding if two rooted trees are isomorphic (Rooted Tree Isomorphism Problem) readily applies to repository source code trees which are always rooted. Aho-Hopcroft-Ullman (AHU) algorithm finds if two rooted trees are isomorphic in O(|V|) - linear in number of vertices and works by assigning Knuth tuples to each node,an encoding of the descendants within a parenthesised string. Comparing two source code repository trees is essential while performing synchronization, to quantify code similarity among others. An algorithm for isomorphism of 2 rooted k-d trees or Gromov-Hausdorff distances between 2 k-d trees, thereby could recognize similarity between 2 3-dimensional visuals and objects thereof stored as 3-dimensional k-d trees.
 
--------------------------------------------------------------------------------------------------------
-1207. (THEORY) Stable Matchings for Dynamic Population - 7 September 2018
--------------------------------------------------------------------------------------------------------
+References:
+----------
+1208.1 Tree isomorphism - https://logic.pdmi.ras.ru/~smal/files/smal_jass08_slides.pdf
+1208.2 K-d tree - https://en.wikipedia.org/wiki/K-d_tree
+1208.3 Gromov-Hausdorff Distance between Trees on metric spaces - [Abhinandan Nath] - https://users.cs.duke.edu/~abhinath/dissertation.pdf - "...The Gromov-Hausdorff distance (or GH distance for brevity) [92] is one of the most natural distance measures between metric spaces, and has been used, for example, for matching deformable shapes [119, 48], and for analyzing hierarchical clustering trees [55]. ... Despite much effort, the problem of computing, either exactly or approximately, GH distance has remained elusive. The problem is not known to be NP-hard, and computing the GH distance, even approximately, for graphic metrics is at least as hard as the graph isomorphism problem ..."
+
+--------------------------------------------------------------------------------------------------------------------------------------
+1207. (THEORY) People Analytics - Dynamic Bipartite Social Network Graphs - Stable Matchings for Dynamic Population - 7 September 2018 - related to all sections on People Analytics,Social Network Analysis,Bipartite matching,Reciprocal Recommender Systems for Matrimonial services,Gale-Shapley Stable Marriage Problem,Hall's Marriage Theorem
+--------------------------------------------------------------------------------------------------------------------------------------
 [This is mentioned more like an open puzzle/question than answering it]
-Stable Marriage Theorem implies there exists an algorithm for finding bipartite matchings between two
-sets (bipartite graph) when vertices in both sets have ranking preferences of choosing a match in other set.
-Gale-Shapley algorithm finds such an optimal matching between two sets based on preferences in quadratic time.
-This algorithm is for static bipartite sets/graphs. Would the same hold for dynamic bipartite graphs in which
-either set grows/diminishes over time? A real world example: Population is a bipartite graph of either genders
-and stable marriage theorem implies there is always an optimal match between vertices of two genders. This graph grows in time and size of both sets (gender populations) remain equal approximately despite births/deaths (which is a natural mystery implying order emerging from an apparent random process).
+Stable Marriage Theorem implies there exists an algorithm for finding bipartite matchings between two sets (bipartite graph) when vertices in both sets have ranking preferences of choosing a match in other set.  Gale-Shapley algorithm finds such an optimal matching between two sets based on preferences in quadratic time.  This algorithm is for static bipartite sets/graphs. Would the same hold for dynamic bipartite graphs in which either set grows/diminishes over time? A real world example: Population is a bipartite graph of either genders and stable marriage theorem implies there is always an optimal match between vertices of two genders. This graph grows in time and size of both sets (gender populations) remain equal approximately despite births/deaths (which is a natural mystery implying order emerging from an apparent random process).
 
 References:
 -----------
-1. Gale-Shapley Algorithm - Stable Marriage Problem - https://en.wikipedia.org/wiki/Stable_marriage_problem
+1207.1. Gale-Shapley Algorithm - Stable Marriage Problem - https://en.wikipedia.org/wiki/Stable_marriage_problem
 
 ---------------------------------------------------------------------------------------------------------
 764. (THEORY and FEATURE) Gordian Knot and One Way Functions - 15 October 2018, 19 October 2018 - this section is an extended draft on respective topics in NeuronRain AstroInfer design -  https://github.com/shrinivaasanka/asfer-github-code/blob/master/asfer-docs/AstroInferDesign.txt
