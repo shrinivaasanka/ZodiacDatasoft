@@ -367,6 +367,7 @@ Reference:
 1.Real Plus Minus of NBA - http://www.espn.com/nba/statistics/rpm - Player Efficiency Ratings in Basketball 
 2.Go, PSPACE, Combinatorial Game Theory - https://en.wikipedia.org/wiki/Go_and_mathematics
 3.Computational Complexity of Games and Puzzles - https://www.ics.uci.edu/~eppstein/cgt/hard.html 
+4.Why Tennis Is Still Not Ready to Play Moneyball - Sabermetric equivalent of Baseball in Tennis - https://hdsr.mitpress.mit.edu/pub/uy0zl4i1/release/3
 
 ---------------------------------------------------------------------------------------------------------
 753. (THEORY and FEATURE) Social Network Analytics, People Analytics, Preferential Attachment, Urban Sprawls, Graph Edit Distance and Intrinsic Merit Rankings - 20 February 2020,26 February 2020,29 April 2020,17 May 2020,18 May 2020,28 May 2020,15 August 2020,24 December 2020 - related to 762, 821, 1128 and all sections on urban planning analytics, GIS analytics among other topics in NeuronRain Theory Drafts
