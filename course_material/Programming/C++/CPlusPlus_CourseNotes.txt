@@ -459,9 +459,10 @@ References:
 2.C++ Reference wrapper - https://en.cppreference.com/w/cpp/utility/functional/reference_wrapper
 3.C++ Rotate - https://en.cppreference.com/w/cpp/algorithm/rotate
 
--------------------------------------------------------------------------------------------------------
-22 December 2020 - Russian Peasant Multiplication in Linear Time by BitShift operator 
--------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
+1222. (THEORY and FEATURE) 22 December 2020 - Russian Peasant Multiplication in Linear Time by BitShift operator - related to
+1221 and all sections on Integer Factorization, Succinct Datastrucures, Numeric Compression, Arithmetic Circuits
+----------------------------------------------------------------------------------------------------------------------------------------
 Code example russianpeasant.cpp implements the Russian Peasant Multiplication Algorithm for 2 integers
 which is in Linear time (Theta(n)). It takes two integers as commandline arguments and casts them to
 type "unsigned long long" by strtoull(). Linear complexity product is obtained by Carry-Save adder, Parity
@@ -472,9 +473,10 @@ reaches single bit
 of a are odd to get the product a*b.
 
 Logs logs/russianpeasant.log.22December2020 show few example products by Russian Peasant algorithm.
-Conventional multiplication is quadratic time - O(n^2)
+Conventional multiplication is quadratic time - O(n^2). Russian Peasant Algorithm dating back to 1800 BC used in Egypt and other Fast linear time multiplication circuits invert efficient circuits for factorization (non-uniform NC-PRAM-BSP Computational Geometric algorithm implemented in NeuronRain) and viceversa. Reverse engineering the steps of Russian Peasants algorithm bottom-up could be another direction of research for efficient factorization but non-trivial - for example:
+	(*) Double the column left and Halve the column right from bottom to top 
+	(*) and guess the least significant bits for odd left column rows
 
 References:
 ----------
-1. Algorithms - [Cormen-Leiserson-Rivest-Stein] - Chapter 29 - Arithmetic Circuits - Section 29.4.2
-Clocked Circuits - Faster Russian Peasant Multiplication Circuit in Linear Time - http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap29.htm
+1. Algorithms - [Cormen-Leiserson-Rivest-Stein] - Chapter 29 - Arithmetic Circuits - Section 29.4.2 - Clocked Circuits - Faster Russian Peasant Multiplication Circuit in Linear Time - http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap29.htm
