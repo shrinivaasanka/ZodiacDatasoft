@@ -98,3 +98,43 @@ Erdos-Renyi Susceptible-Infected-Recovered random graph epidemic model.
 6. Differential equation in (5) implies rate of change of fatalities depends on instantaneous fatalities (Geometric progression or evolving m-ary tree).
 7. From coefficients in logs, COVID19 dataset is fit to A=11.27683950 and B=0.04250611
 
+---------------------------------------------------------------------------------------------------------------------------------------------
+1231. (THEORY and FEATURE) People Analytics - Social Network Analysis - CoronaVirus2019 analyzer - Recomputed Spearman, Kendall Tau, Pearson Correlation coefficients of COVID19 dataset and Verhulste-Pearl-Reed Logistic in R - related to 487,572,770 and all sections on People Analytics, Urban Sprawl Analytics, Social Network Analysis, ERSIR-SIS model of pandemic/cybercrimes/opinions, Cellular Automaton Graph model of Social Networks - 30 March 2022 
+---------------------------------------------------------------------------------------------------------------------------------------------
+1231.1 COVID19 dataset has been updated to latest daily deathtoll data from https://www.worldometers.info/coronavirus/coronavirus-death-toll/ and Lambda of theoretical chaotic dataset in VerhulstePearlReedLogistic.R has been revised to 1.079487535509905.
+1231.2 Spearman, Kendall and Pearson correlation coefficients between updated COVID19 dataset (daily data for the past 2.25 years) and chaotic dataset (of lambda 1.079487535509905) have been recomputed.
+1231.3 Following are the summary of tau,rho and product-moment correlation coefficients for Kendall,Spearman and Pearson between Chaotic data and actual COVID19 pandemic data (full logs at code/testlogs/VerhulstPearlReedLogistic.log.30March2022): 
+------------------------------------------------------------ 
+        Kendall's rank correlation tau
+
+data:  coronavirus2019scaled and rev(vprlogistic)
+z = 42.254, p-value < 2.2e-16
+alternative hypothesis: true tau is greater than 0
+sample estimates:
+tau
+  1
+
+
+        Spearman's rank correlation rho
+
+data:  coronavirus2019scaled and rev(vprlogistic)
+S = 0, p-value < 2.2e-16
+alternative hypothesis: true rho is greater than 0
+sample estimates:
+rho
+  1
+
+
+        Pearson's product-moment correlation
+
+data:  coronavirus2019scaled and rev(vprlogistic)
+t = 65.863, df = 795, p-value < 2.2e-16
+alternative hypothesis: true correlation is greater than 0
+95 percent confidence interval:
+ 0.9097611 1.0000000
+sample estimates:
+      cor
+0.9193034
+------------------------------------------------------------
+1231.4 Earlier correlations shed some light on trend of the pandemic and how it has evolved over 2+ years - First and foremost, lamda of Verhulste-Pearl-Reed Logistic has come down from 4.829487535509905 2 years ago, to 1.079487535509905 and 2 of 3 correlation coefficients are 100% (and the third correlation coefficient is 92%) for lowest p-value at 10^-16 which is a drastic drop of 3.75, implying the pandemic has reversed from being chaotic to predictable (after almost 5 peak waves). Few other values of lambda (plus and minus) were tried and highest correlation (for atleast 2 of 3 coefficients) of 100% happens at 1.079487535509905.
+1231.5 R plots for VPR logistic, May logistic have been redrawn - code/VerhulstPearlReedLogistic_Rplots.pdf. 
