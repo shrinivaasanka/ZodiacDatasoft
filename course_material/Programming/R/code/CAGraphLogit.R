@@ -18,6 +18,54 @@ cagraphprojections <- function(coeffglm,infected,recovered,deaths,recoverytime)
   print(perdiem)
 }
 
+cagraphemrprojections <- function(coeffglm,totalpopulation,infected,recovered,unvaccinated=0.622,seropositivity=0.676,mortalityrate=0.012,emrmodel=1)
+{
+  print("1:")
+  print(coeffglm[1])
+  if(emrmodel == 1)
+  {
+    #coronavirus2019emr <- mortalityrate*(coeffglm[1]*totalpopulation - coeffglm[1]*(1 - seropositivity)*totalpopulation - recovered)
+    coronavirus2019emr <- coeffglm[1] + (seropositivity * totalpopulation * mortalityrate - recovered * mortalityrate)
+  }
+  else
+  {
+    coronavirus2019emr <-  totalpopulation * unvaccinated * seropositivity * mortalityrate
+  }
+  print("Excess Mortalities:")
+  print(coronavirus2019emr)
+}
+
+cagraphexcessmortalityratemodel <- function(filename,emrmodel=1)
+{
+  print("CAGraph Excess Mortality Rate Poisson Regression Model:")
+  print("========================================================")
+  print("GLM:")
+  print(filename)
+  layout(matrix(1:3,3,1))
+  coronavirus2019dataset <- read.table(filename, header=TRUE)
+  print(coronavirus2019dataset)
+  infected <- coronavirus2019dataset$Infected
+  deaths <- coronavirus2019dataset$Deaths
+  recovered <- coronavirus2019dataset$Recovered
+  perdiem <- coronavirus2019dataset$Perdiem
+  recoverytime <- coronavirus2019dataset$RecoveryTime
+  totalpopulation <- coronavirus2019dataset$TotalPopulation
+  seropositivity <- coronavirus2019dataset$SeroPositivity
+  unvaccinated <- coronavirus2019dataset$Unvaccinated
+  mortalityrate <- coronavirus2019dataset$MortalityRate
+  if(emrmodel==1)
+  {
+    coronavirus2019emr <- glm(deaths ~ seropositivity * mortalityrate * totalpopulation - mortalityrate * recovered, family = poisson())
+  }
+  else
+  {
+    coronavirus2019emr <- glm(deaths ~ totalpopulation * unvaccinated * seropositivity * mortalityrate, family = poisson())
+  }  
+  print("COVID19 Excess Mortality Rate Model:")
+  print(coronavirus2019emr)
+  c(coronavirus2019emr)
+}
+
 cagraphlogit <- function(filename,weights=c())
 {
   print(filename)
@@ -72,3 +120,19 @@ print("Global - Per day Projections from learnt model:")
 print("===================================")
 coeffglm <- coef(covid19logit[1])
 cagraphprojections(coeffglm,9100000,4900000,474000,15)
+print("=============== MODEL 1 ===============")
+cagraphemr <- cagraphexcessmortalityratemodel("./CAGraphLogit.dat",emrmodel=1)
+print("=============================================================")
+print("COVID19 Excess Mortality Rate")
+print("=============================================================")
+print(cagraphemr)
+coeffglm <- coef(cagraphemr)
+cagraphemrprojections(coeffglm,1370000000,48959225,45000000,emrmodel=1)
+print("=============== MODEL 2 ===============")
+cagraphemr <- cagraphexcessmortalityratemodel("./CAGraphLogit.dat",emrmodel=2)
+print("=============================================================")
+print("COVID19 Excess Mortality Rate")
+print("=============================================================")
+print(cagraphemr)
+coeffglm <- coef(cagraphemr)
+cagraphemrprojections(coeffglm,1370000000,48959225,45000000,emrmodel=2)

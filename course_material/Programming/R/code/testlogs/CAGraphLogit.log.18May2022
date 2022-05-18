@@ -1,0 +1,1364 @@
+[1] "==================================="
+[1] "CAGraph Logit - R learnt weights - Iterative Weighted Least Squares (IWLS):"
+[1] "==================================="
+[1] "./CAGraphLogit.dat"
+   Infected  Deaths Recovered Perdiem RecoveryTime TotalPopulation
+1 489592258 6157201 450000000    1000           11           1e+10
+2   2263749  120688    931076   30000           11           1e+10
+3    983359   47869    520360   10000           12           1e+10
+4    569063    7841    324406    7972           20           1e+10
+5    381485   12605    205183   15000           14           1e+10
+6    244388    7461    131190    1000           15           1e+10
+7    238159   34514    180544    2000           15           1e+10
+  SeroPositivity Unvaccinated MortalityRate
+1          0.676        0.622         0.012
+2          0.676        0.700         0.012
+3          0.676        0.750         0.012
+4          0.676        0.800         0.012
+5          0.676        0.850         0.012
+6          0.676        0.900         0.012
+7          0.676        0.950         0.012
+[1] "CAGraph Logit:"
+[1] "=================="
+[1] "GLM:"
+
+Call:
+glm(formula = Perdiem ~ Infected + Deaths + Recovered + RecoveryTime, 
+    family = poisson())
+
+Deviance Residuals: 
+      1        2        3        4        5        6        7  
+ -0.021   -1.556   -2.094    9.061   53.395  -94.162   12.667  
+
+Coefficients:
+               Estimate Std. Error z value Pr(>|z|)    
+(Intercept)   1.087e+01  4.475e-02  242.85   <2e-16 ***
+Infected      5.117e-06  6.497e-08   78.75   <2e-16 ***
+Deaths       -4.944e-05  8.139e-07  -60.74   <2e-16 ***
+Recovered    -4.896e-06  5.975e-08  -81.93   <2e-16 ***
+RecoveryTime -1.462e-01  2.894e-03  -50.51   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 64742  on 6  degrees of freedom
+Residual deviance: 11967  on 2  degrees of freedom
+AIC: 12049
+
+Number of Fisher Scoring iterations: 5
+
+[1] "================================="
+[1] "LM:"
+
+Call:
+lm(formula = Perdiem ~ Infected + Deaths + Recovered + RecoveryTime)
+
+Residuals:
+         1          2          3          4          5          6          7 
+    0.3276   459.9149 -2777.8771    78.0639  6882.9810 -5483.3760   839.9658 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)
+(Intercept)   1.122e+04  2.316e+04   0.484    0.676
+Infected      3.027e-02  1.854e-02   1.633    0.244
+Deaths       -1.330e-01  2.448e-01  -0.543    0.641
+Recovered    -3.113e-02  1.722e-02  -1.808    0.212
+RecoveryTime -4.707e+02  1.398e+03  -0.337    0.768
+
+Residual standard error: 6561 on 2 degrees of freedom
+Multiple R-squared:  0.8683,	Adjusted R-squared:  0.605 
+F-statistic: 3.298 on 4 and 2 DF,  p-value: 0.246
+
+[1] "================================="
+[1] "==================================="
+[1] "Summary:"
+[1] "==================================="
+$coefficients
+  (Intercept)      Infected        Deaths     Recovered  RecoveryTime 
+ 1.086757e+01  5.116810e-06 -4.944022e-05 -4.895753e-06 -1.461509e-01 
+
+$residuals
+            1             2             3             4             5 
+-0.0006541171 -0.0089288626 -0.0206525945  0.1087430494  0.6001294508 
+            6             7 
+-0.8655936221  0.3461700273 
+
+$fitted.values
+        1         2         3         4         5         6         7 
+ 1000.655 30270.279 10210.881  7190.124  9374.242  7440.123  1485.696 
+
+$effects
+ (Intercept)     Infected       Deaths    Recovered RecoveryTime              
+ -2474.06085    -81.97374    166.38786    -64.52933    -50.50763    -77.72940 
+             
+    56.37980 
+
+$R
+             (Intercept)    Infected    Deaths   Recovered RecoveryTime
+(Intercept)    -258.7895 -2234703839 -40900438 -1890695273  -3382.82674
+Infected          0.0000 15330779162 191376076 14109326522    -73.82774
+Deaths            0.0000           0  10329952  -120901805   -582.94252
+Recovered         0.0000           0         0    20944737   -260.08013
+RecoveryTime      0.0000           0         0           0    345.58563
+
+$rank
+[1] 5
+
+$qr
+$qr
+   (Intercept)      Infected        Deaths     Recovered  RecoveryTime
+1 -258.7894912 -2.234704e+09 -4.090044e+07 -1.890695e+09 -3.382827e+03
+2    0.6722976  1.533078e+10  1.913761e+08  1.410933e+10 -7.382774e+01
+3    0.3904676  3.957263e-01  1.032995e+07 -1.209018e+08 -5.829425e+02
+4    0.3276586  3.343629e-01  5.464730e-01  2.094474e+07 -2.600801e+02
+5    0.3741291  3.829689e-01  5.578889e-01  1.610702e-01  3.455856e+02
+6    0.3333062  3.419528e-01  5.260106e-01  1.038262e-01  8.216049e-02
+7    0.1489424  1.528219e-01  1.338272e-01 -6.737094e-01 -9.195934e-01
+
+$rank
+[1] 5
+
+$qraux
+[1] 1.122235 1.666821 1.309080 1.713717 1.384184
+
+$pivot
+[1] 1 2 3 4 5
+
+$tol
+[1] 1e-11
+
+attr(,"class")
+[1] "qr"
+
+$family
+
+Family: poisson 
+Link function: log 
+
+
+$linear.predictors
+        1         2         3         4         5         6         7 
+ 6.908410 10.317922  9.231209  8.880464  9.145721  8.914643  7.303639 
+
+$deviance
+[1] 11966.84
+
+$aic
+[1] 12049.24
+
+$null.deviance
+[1] 64741.98
+
+$iter
+[1] 5
+
+$weights
+        1         2         3         4         5         6         7 
+ 1000.655 30270.279 10210.881  7190.124  9374.242  7440.123  1485.696 
+
+$prior.weights
+1 2 3 4 5 6 7 
+1 1 1 1 1 1 1 
+
+$df.residual
+[1] 2
+
+$df.null
+[1] 6
+
+$y
+    1     2     3     4     5     6     7 
+ 1000 30000 10000  7972 15000  1000  2000 
+
+$converged
+[1] TRUE
+
+$boundary
+[1] FALSE
+
+$model
+  Perdiem  Infected  Deaths Recovered RecoveryTime
+1    1000 489592258 6157201 450000000           11
+2   30000   2263749  120688    931076           11
+3   10000    983359   47869    520360           12
+4    7972    569063    7841    324406           20
+5   15000    381485   12605    205183           14
+6    1000    244388    7461    131190           15
+7    2000    238159   34514    180544           15
+
+$call
+glm(formula = Perdiem ~ Infected + Deaths + Recovered + RecoveryTime, 
+    family = poisson())
+
+$formula
+Perdiem ~ Infected + Deaths + Recovered + RecoveryTime
+<environment: 0x55d1e9c673a0>
+
+$terms
+Perdiem ~ Infected + Deaths + Recovered + RecoveryTime
+attr(,"variables")
+list(Perdiem, Infected, Deaths, Recovered, RecoveryTime)
+attr(,"factors")
+             Infected Deaths Recovered RecoveryTime
+Perdiem             0      0         0            0
+Infected            1      0         0            0
+Deaths              0      1         0            0
+Recovered           0      0         1            0
+RecoveryTime        0      0         0            1
+attr(,"term.labels")
+[1] "Infected"     "Deaths"       "Recovered"    "RecoveryTime"
+attr(,"order")
+[1] 1 1 1 1
+attr(,"intercept")
+[1] 1
+attr(,"response")
+[1] 1
+attr(,".Environment")
+<environment: 0x55d1e9c673a0>
+attr(,"predvars")
+list(Perdiem, Infected, Deaths, Recovered, RecoveryTime)
+attr(,"dataClasses")
+     Perdiem     Infected       Deaths    Recovered RecoveryTime 
+   "numeric"    "numeric"    "numeric"    "numeric"    "numeric" 
+
+$data
+<environment: 0x55d1e9c673a0>
+
+$offset
+NULL
+
+$control
+$control$epsilon
+[1] 1e-08
+
+$control$maxit
+[1] 25
+
+$control$trace
+[1] FALSE
+
+
+$method
+[1] "glm.fit"
+
+$contrasts
+NULL
+
+$xlevels
+named list()
+
+$coefficients
+  (Intercept)      Infected        Deaths     Recovered  RecoveryTime 
+ 1.122155e+04  3.027404e-02 -1.330141e-01 -3.112886e-02 -4.707051e+02 
+
+$residuals
+            1             2             3             4             5 
+    0.3275526   459.9148865 -2777.8771055    78.0638860  6882.9809906 
+            6             7 
+-5483.3759685   839.9657584 
+
+$effects
+ (Intercept)     Infected       Deaths    Recovered RecoveryTime              
+  -25313.037    -9171.468    18510.944   -11664.971    -2208.601    -4860.750 
+             
+    7902.892 
+
+$rank
+[1] 5
+
+$fitted.values
+         1          2          3          4          5          6          7 
+  999.6724 29540.0851 12777.8771  7893.9361  8117.0190  6483.3760  1160.0342 
+
+$assign
+[1] 0 1 2 3 4
+
+$qr
+$qr
+  (Intercept)      Infected        Deaths     Recovered RecoveryTime
+1  -2.6457513 -1.868174e+08 -2.414505e+06 -1.709506e+08 -37.04051835
+2   0.3779645  4.525555e+08  5.665130e+06  4.162648e+08  -3.25625858
+3   0.3779645  4.077960e-01  7.691224e+04 -8.459876e+05  -5.11303855
+4   0.3779645  4.087115e-01  6.038509e-01  3.915544e+05  -1.11251915
+5   0.3779645  4.091259e-01  5.116248e-01  8.494380e-02   4.69211232
+6   0.3779645  4.094289e-01  5.563712e-01  5.402893e-02   0.09791319
+7   0.3779645  4.094426e-01  2.036270e-01 -8.956454e-01  -0.94657901
+attr(,"assign")
+[1] 0 1 2 3 4
+
+$qraux
+[1] 1.377964 1.404967 1.150304 1.433226 1.307248
+
+$pivot
+[1] 1 2 3 4 5
+
+$tol
+[1] 1e-07
+
+$rank
+[1] 5
+
+attr(,"class")
+[1] "qr"
+
+$df.residual
+[1] 2
+
+$xlevels
+named list()
+
+$call
+lm(formula = Perdiem ~ Infected + Deaths + Recovered + RecoveryTime)
+
+$terms
+Perdiem ~ Infected + Deaths + Recovered + RecoveryTime
+attr(,"variables")
+list(Perdiem, Infected, Deaths, Recovered, RecoveryTime)
+attr(,"factors")
+             Infected Deaths Recovered RecoveryTime
+Perdiem             0      0         0            0
+Infected            1      0         0            0
+Deaths              0      1         0            0
+Recovered           0      0         1            0
+RecoveryTime        0      0         0            1
+attr(,"term.labels")
+[1] "Infected"     "Deaths"       "Recovered"    "RecoveryTime"
+attr(,"order")
+[1] 1 1 1 1
+attr(,"intercept")
+[1] 1
+attr(,"response")
+[1] 1
+attr(,".Environment")
+<environment: 0x55d1e9c673a0>
+attr(,"predvars")
+list(Perdiem, Infected, Deaths, Recovered, RecoveryTime)
+attr(,"dataClasses")
+     Perdiem     Infected       Deaths    Recovered RecoveryTime 
+   "numeric"    "numeric"    "numeric"    "numeric"    "numeric" 
+
+$model
+  Perdiem  Infected  Deaths Recovered RecoveryTime
+1    1000 489592258 6157201 450000000           11
+2   30000   2263749  120688    931076           11
+3   10000    983359   47869    520360           12
+4    7972    569063    7841    324406           20
+5   15000    381485   12605    205183           14
+6    1000    244388    7461    131190           15
+7    2000    238159   34514    180544           15
+
+[1] "==================================="
+[1] "Global - Per day Projections from learnt model:"
+[1] "==================================="
+[1] "1:"
+(Intercept) 
+   10.86757 
+[1] "2:"
+   Infected 
+5.11681e-06 
+[1] "3:"
+       Deaths 
+-4.944022e-05 
+[1] "4"
+    Recovered 
+-4.895753e-06 
+[1] "5"
+RecoveryTime 
+  -0.1461509 
+[1] "Per day spread(abs):"
+[1] 135255.9
+[1] "Per day spread:"
+[1] 171441.2
+[1] "=============== MODEL 1 ==============="
+[1] "CAGraph Excess Mortality Rate Poisson Regression Model:"
+[1] "========================================================"
+[1] "GLM:"
+[1] "./CAGraphLogit.dat"
+   Infected  Deaths Recovered Perdiem RecoveryTime TotalPopulation
+1 489592258 6157201 450000000    1000           11           1e+10
+2   2263749  120688    931076   30000           11           1e+10
+3    983359   47869    520360   10000           12           1e+10
+4    569063    7841    324406    7972           20           1e+10
+5    381485   12605    205183   15000           14           1e+10
+6    244388    7461    131190    1000           15           1e+10
+7    238159   34514    180544    2000           15           1e+10
+  SeroPositivity Unvaccinated MortalityRate
+1          0.676        0.622         0.012
+2          0.676        0.700         0.012
+3          0.676        0.750         0.012
+4          0.676        0.800         0.012
+5          0.676        0.850         0.012
+6          0.676        0.900         0.012
+7          0.676        0.950         0.012
+[1] "COVID19 Excess Mortality Rate Model:"
+
+Call:  glm(formula = deaths ~ seropositivity * mortalityrate * totalpopulation - 
+    mortalityrate * recovered, family = poisson())
+
+Coefficients:
+                                 (Intercept)  
+                                       13.72  
+                              seropositivity  
+                                          NA  
+                             totalpopulation  
+                                          NA  
+                seropositivity:mortalityrate  
+                                          NA  
+              seropositivity:totalpopulation  
+                                          NA  
+               mortalityrate:totalpopulation  
+                                          NA  
+seropositivity:mortalityrate:totalpopulation  
+                                          NA  
+
+Degrees of Freedom: 6 Total (i.e. Null);  6 Residual
+Null Deviance:	    22260000 
+Residual Deviance: 22260000 	AIC: 22260000
+[1] "============================================================="
+[1] "COVID19 Excess Mortality Rate"
+[1] "============================================================="
+$coefficients
+                                 (Intercept) 
+                                    13.72405 
+                              seropositivity 
+                                          NA 
+                             totalpopulation 
+                                          NA 
+                seropositivity:mortalityrate 
+                                          NA 
+              seropositivity:totalpopulation 
+                                          NA 
+               mortalityrate:totalpopulation 
+                                          NA 
+seropositivity:mortalityrate:totalpopulation 
+                                          NA 
+
+$residuals
+         1          2          3          4          5          6          7 
+ 5.7469003 -0.8677532 -0.9475464 -0.9914080 -0.9861878 -0.9918244 -0.9621805 
+
+$fitted.values
+     1      2      3      4      5      6      7 
+912597 912597 912597 912597 912597 912597 912597 
+
+$effects
+(Intercept)                                                             
+ -34687.335   -2334.829   -2411.055   -2452.956   -2447.969   -2453.354 
+            
+  -2425.035 
+
+$R
+                                             (Intercept) seropositivity
+(Intercept)                                    -2527.485       -1708.58
+seropositivity                                     0.000           0.00
+totalpopulation                                    0.000           0.00
+seropositivity:mortalityrate                       0.000           0.00
+seropositivity:totalpopulation                     0.000           0.00
+mortalityrate:totalpopulation                      0.000           0.00
+seropositivity:mortalityrate:totalpopulation       0.000           0.00
+                                             totalpopulation
+(Intercept)                                    -2.527485e+13
+seropositivity                                  0.000000e+00
+totalpopulation                                 0.000000e+00
+seropositivity:mortalityrate                    0.000000e+00
+seropositivity:totalpopulation                  0.000000e+00
+mortalityrate:totalpopulation                   0.000000e+00
+seropositivity:mortalityrate:totalpopulation    0.000000e+00
+                                             seropositivity:mortalityrate
+(Intercept)                                                 -2.050296e+01
+seropositivity                                               8.881784e-16
+totalpopulation                                              8.881784e-16
+seropositivity:mortalityrate                                -1.776357e-15
+seropositivity:totalpopulation                               0.000000e+00
+mortalityrate:totalpopulation                                0.000000e+00
+seropositivity:mortalityrate:totalpopulation                 0.000000e+00
+                                             seropositivity:totalpopulation
+(Intercept)                                                   -1.708580e+13
+seropositivity                                                 9.765625e-04
+totalpopulation                                                9.765625e-04
+seropositivity:mortalityrate                                  -1.953125e-03
+seropositivity:totalpopulation                                 0.000000e+00
+mortalityrate:totalpopulation                                  0.000000e+00
+seropositivity:mortalityrate:totalpopulation                   0.000000e+00
+                                             mortalityrate:totalpopulation
+(Intercept)                                                  -303298243611
+seropositivity                                                           0
+totalpopulation                                                          0
+seropositivity:mortalityrate                                             0
+seropositivity:totalpopulation                                           0
+mortalityrate:totalpopulation                                            0
+seropositivity:mortalityrate:totalpopulation                             0
+                                             seropositivity:mortalityrate:totalpopulation
+(Intercept)                                                                 -205029612681
+seropositivity                                                                          0
+totalpopulation                                                                         0
+seropositivity:mortalityrate                                                            0
+seropositivity:totalpopulation                                                          0
+mortalityrate:totalpopulation                                                           0
+seropositivity:mortalityrate:totalpopulation                                            0
+
+$rank
+[1] 1
+
+$qr
+$qr
+    (Intercept) seropositivity totalpopulation seropositivity:mortalityrate
+1 -2527.4853634       -1708.58   -2.527485e+13                -2.050296e+01
+2     0.3779645           0.00    0.000000e+00                 8.881784e-16
+3     0.3779645           0.00    0.000000e+00                 8.881784e-16
+4     0.3779645           0.00    0.000000e+00                -1.776357e-15
+5     0.3779645           0.00    0.000000e+00                 5.000000e-01
+6     0.3779645           0.00    0.000000e+00                 5.000000e-01
+7     0.3779645           0.00    0.000000e+00                 5.000000e-01
+  seropositivity:totalpopulation mortalityrate:totalpopulation
+1                  -1.708580e+13                 -303298243611
+2                   9.765625e-04                             0
+3                   9.765625e-04                             0
+4                  -1.953125e-03                             0
+5                   0.000000e+00                             0
+6                   0.000000e+00                             0
+7                   0.000000e+00                             0
+  seropositivity:mortalityrate:totalpopulation
+1                                -205029612681
+2                                            0
+3                                            0
+4                                            0
+5                                            0
+6                                            0
+7                                            0
+
+$rank
+[1] 1
+
+$qraux
+[1] 1.377964473 0.000000000 0.000000000 1.500000000 0.001381068 0.000000000
+[7] 0.000000000
+
+$pivot
+[1] 1 2 3 4 5 6 7
+
+$tol
+[1] 1e-11
+
+attr(,"class")
+[1] "qr"
+
+$family
+
+Family: poisson 
+Link function: log 
+
+
+$linear.predictors
+       1        2        3        4        5        6        7 
+13.72405 13.72405 13.72405 13.72405 13.72405 13.72405 13.72405 
+
+$deviance
+[1] 22258336
+
+$aic
+[1] 22258427
+
+$null.deviance
+[1] 22258336
+
+$iter
+[1] 7
+
+$weights
+       1        2        3        4        5        6        7 
+912597.5 912597.5 912597.5 912597.5 912597.5 912597.5 912597.5 
+
+$prior.weights
+1 2 3 4 5 6 7 
+1 1 1 1 1 1 1 
+
+$df.residual
+[1] 6
+
+$df.null
+[1] 6
+
+$y
+      1       2       3       4       5       6       7 
+6157201  120688   47869    7841   12605    7461   34514 
+
+$converged
+[1] TRUE
+
+$boundary
+[1] FALSE
+
+$model
+   deaths seropositivity mortalityrate totalpopulation recovered
+1 6157201          0.676         0.012           1e+10 450000000
+2  120688          0.676         0.012           1e+10    931076
+3   47869          0.676         0.012           1e+10    520360
+4    7841          0.676         0.012           1e+10    324406
+5   12605          0.676         0.012           1e+10    205183
+6    7461          0.676         0.012           1e+10    131190
+7   34514          0.676         0.012           1e+10    180544
+
+$call
+glm(formula = deaths ~ seropositivity * mortalityrate * totalpopulation - 
+    mortalityrate * recovered, family = poisson())
+
+$formula
+deaths ~ seropositivity * mortalityrate * totalpopulation - mortalityrate * 
+    recovered
+<environment: 0x55d1e928d3a0>
+
+$terms
+deaths ~ seropositivity * mortalityrate * totalpopulation - mortalityrate * 
+    recovered
+attr(,"variables")
+list(deaths, seropositivity, mortalityrate, totalpopulation, 
+    recovered)
+attr(,"factors")
+                seropositivity totalpopulation seropositivity:mortalityrate
+deaths                       0               0                            0
+seropositivity               1               0                            2
+mortalityrate                0               0                            1
+totalpopulation              0               1                            0
+recovered                    0               0                            0
+                seropositivity:totalpopulation mortalityrate:totalpopulation
+deaths                                       0                             0
+seropositivity                               1                             0
+mortalityrate                                0                             1
+totalpopulation                              1                             1
+recovered                                    0                             0
+                seropositivity:mortalityrate:totalpopulation
+deaths                                                     0
+seropositivity                                             1
+mortalityrate                                              1
+totalpopulation                                            1
+recovered                                                  0
+attr(,"term.labels")
+[1] "seropositivity"                              
+[2] "totalpopulation"                             
+[3] "seropositivity:mortalityrate"                
+[4] "seropositivity:totalpopulation"              
+[5] "mortalityrate:totalpopulation"               
+[6] "seropositivity:mortalityrate:totalpopulation"
+attr(,"order")
+[1] 1 1 2 2 2 3
+attr(,"intercept")
+[1] 1
+attr(,"response")
+[1] 1
+attr(,".Environment")
+<environment: 0x55d1e928d3a0>
+attr(,"predvars")
+list(deaths, seropositivity, mortalityrate, totalpopulation, 
+    recovered)
+attr(,"dataClasses")
+         deaths  seropositivity   mortalityrate totalpopulation       recovered 
+      "numeric"       "numeric"       "numeric"       "numeric"       "numeric" 
+
+$data
+<environment: 0x55d1e928d3a0>
+
+$offset
+NULL
+
+$control
+$control$epsilon
+[1] 1e-08
+
+$control$maxit
+[1] 25
+
+$control$trace
+[1] FALSE
+
+
+$method
+[1] "glm.fit"
+
+$contrasts
+NULL
+
+$xlevels
+named list()
+
+[1] "1:"
+(Intercept) 
+   13.72405 
+[1] "Excess Mortalities:"
+(Intercept) 
+   10573454 
+[1] "=============== MODEL 2 ==============="
+[1] "CAGraph Excess Mortality Rate Poisson Regression Model:"
+[1] "========================================================"
+[1] "GLM:"
+[1] "./CAGraphLogit.dat"
+   Infected  Deaths Recovered Perdiem RecoveryTime TotalPopulation
+1 489592258 6157201 450000000    1000           11           1e+10
+2   2263749  120688    931076   30000           11           1e+10
+3    983359   47869    520360   10000           12           1e+10
+4    569063    7841    324406    7972           20           1e+10
+5    381485   12605    205183   15000           14           1e+10
+6    244388    7461    131190    1000           15           1e+10
+7    238159   34514    180544    2000           15           1e+10
+  SeroPositivity Unvaccinated MortalityRate
+1          0.676        0.622         0.012
+2          0.676        0.700         0.012
+3          0.676        0.750         0.012
+4          0.676        0.800         0.012
+5          0.676        0.850         0.012
+6          0.676        0.900         0.012
+7          0.676        0.950         0.012
+[1] "COVID19 Excess Mortality Rate Model:"
+
+Call:  glm(formula = deaths ~ totalpopulation * unvaccinated * seropositivity * 
+    mortalityrate, family = poisson())
+
+Coefficients:
+                                              (Intercept)  
+                                                    38.92  
+                                          totalpopulation  
+                                                       NA  
+                                             unvaccinated  
+                                                   -37.48  
+                                           seropositivity  
+                                                       NA  
+                                            mortalityrate  
+                                                       NA  
+                             totalpopulation:unvaccinated  
+                                                       NA  
+                           totalpopulation:seropositivity  
+                                                       NA  
+                              unvaccinated:seropositivity  
+                                                       NA  
+                            totalpopulation:mortalityrate  
+                                                       NA  
+                               unvaccinated:mortalityrate  
+                                                       NA  
+                             seropositivity:mortalityrate  
+                                                       NA  
+              totalpopulation:unvaccinated:seropositivity  
+                                                       NA  
+               totalpopulation:unvaccinated:mortalityrate  
+                                                       NA  
+             totalpopulation:seropositivity:mortalityrate  
+                                                       NA  
+                unvaccinated:seropositivity:mortalityrate  
+                                                       NA  
+totalpopulation:unvaccinated:seropositivity:mortalityrate  
+                                                       NA  
+
+Degrees of Freedom: 6 Total (i.e. Null);  5 Residual
+Null Deviance:	    22260000 
+Residual Deviance: 672300 	AIC: 672400
+[1] "============================================================="
+[1] "COVID19 Excess Mortality Rate"
+[1] "============================================================="
+$coefficients
+                                              (Intercept) 
+                                                 38.92109 
+                                          totalpopulation 
+                                                       NA 
+                                             unvaccinated 
+                                                -37.48021 
+                                           seropositivity 
+                                                       NA 
+                                            mortalityrate 
+                                                       NA 
+                             totalpopulation:unvaccinated 
+                                                       NA 
+                           totalpopulation:seropositivity 
+                                                       NA 
+                              unvaccinated:seropositivity 
+                                                       NA 
+                            totalpopulation:mortalityrate 
+                                                       NA 
+                               unvaccinated:mortalityrate 
+                                                       NA 
+                             seropositivity:mortalityrate 
+                                                       NA 
+              totalpopulation:unvaccinated:seropositivity 
+                                                       NA 
+               totalpopulation:unvaccinated:mortalityrate 
+                                                       NA 
+             totalpopulation:seropositivity:mortalityrate 
+                                                       NA 
+                unvaccinated:seropositivity:mortalityrate 
+                                                       NA 
+totalpopulation:unvaccinated:seropositivity:mortalityrate 
+                                                       NA 
+
+$residuals
+            1             2             3             4             5 
+   0.02504075   -0.62617975   -0.03411486    0.03065894    9.79341222 
+            6             7 
+  40.61839686 1253.16880742 
+
+$fitted.values
+           1            2            3            4            5            6 
+6.006787e+06 3.228504e+05 4.955972e+04 7.607754e+03 1.167842e+03 1.792717e+02 
+           7 
+2.751942e+01 
+
+$effects
+ (Intercept) unvaccinated                                                     
+-38957.64936   2026.19631     94.17232     58.87940    363.05143    557.39941 
+             
+  6578.99445 
+
+$R
+                                                          (Intercept)
+(Intercept)                                                 -2527.492
+unvaccinated                                                    0.000
+totalpopulation                                                 0.000
+seropositivity                                                  0.000
+mortalityrate                                                   0.000
+totalpopulation:unvaccinated                                    0.000
+totalpopulation:seropositivity                                  0.000
+unvaccinated:seropositivity                                     0.000
+totalpopulation:mortalityrate                                   0.000
+unvaccinated:mortalityrate                                      0.000
+seropositivity:mortalityrate                                    0.000
+totalpopulation:unvaccinated:seropositivity                     0.000
+totalpopulation:unvaccinated:mortalityrate                      0.000
+totalpopulation:seropositivity:mortalityrate                    0.000
+unvaccinated:seropositivity:mortalityrate                       0.000
+totalpopulation:unvaccinated:seropositivity:mortalityrate       0.000
+                                                          unvaccinated
+(Intercept)                                                -1585.23916
+unvaccinated                                                 -54.06043
+totalpopulation                                                0.00000
+seropositivity                                                 0.00000
+mortalityrate                                                  0.00000
+totalpopulation:unvaccinated                                   0.00000
+totalpopulation:seropositivity                                 0.00000
+unvaccinated:seropositivity                                    0.00000
+totalpopulation:mortalityrate                                  0.00000
+unvaccinated:mortalityrate                                     0.00000
+seropositivity:mortalityrate                                   0.00000
+totalpopulation:unvaccinated:seropositivity                    0.00000
+totalpopulation:unvaccinated:mortalityrate                     0.00000
+totalpopulation:seropositivity:mortalityrate                   0.00000
+unvaccinated:seropositivity:mortalityrate                      0.00000
+totalpopulation:unvaccinated:seropositivity:mortalityrate      0.00000
+                                                          totalpopulation
+(Intercept)                                                 -2.527492e+13
+unvaccinated                                                -8.170262e-04
+totalpopulation                                              5.521116e-04
+seropositivity                                               0.000000e+00
+mortalityrate                                                0.000000e+00
+totalpopulation:unvaccinated                                 0.000000e+00
+totalpopulation:seropositivity                               0.000000e+00
+unvaccinated:seropositivity                                  0.000000e+00
+totalpopulation:mortalityrate                                0.000000e+00
+unvaccinated:mortalityrate                                   0.000000e+00
+seropositivity:mortalityrate                                 0.000000e+00
+totalpopulation:unvaccinated:seropositivity                  0.000000e+00
+totalpopulation:unvaccinated:mortalityrate                   0.000000e+00
+totalpopulation:seropositivity:mortalityrate                 0.000000e+00
+unvaccinated:seropositivity:mortalityrate                    0.000000e+00
+totalpopulation:unvaccinated:seropositivity:mortalityrate    0.000000e+00
+                                                          seropositivity
+(Intercept)                                                -1.708585e+03
+unvaccinated                                               -1.669799e-14
+totalpopulation                                            -2.313291e-14
+seropositivity                                              6.672576e-15
+mortalityrate                                               0.000000e+00
+totalpopulation:unvaccinated                                0.000000e+00
+totalpopulation:seropositivity                              0.000000e+00
+unvaccinated:seropositivity                                 0.000000e+00
+totalpopulation:mortalityrate                               0.000000e+00
+unvaccinated:mortalityrate                                  0.000000e+00
+seropositivity:mortalityrate                                0.000000e+00
+totalpopulation:unvaccinated:seropositivity                 0.000000e+00
+totalpopulation:unvaccinated:mortalityrate                  0.000000e+00
+totalpopulation:seropositivity:mortalityrate                0.000000e+00
+unvaccinated:seropositivity:mortalityrate                   0.000000e+00
+totalpopulation:unvaccinated:seropositivity:mortalityrate   0.000000e+00
+                                                          mortalityrate
+(Intercept)                                               -3.032990e+01
+unvaccinated                                              -2.292719e-16
+totalpopulation                                           -3.392813e-16
+seropositivity                                             1.415988e-16
+mortalityrate                                             -9.740426e-17
+totalpopulation:unvaccinated                               0.000000e+00
+totalpopulation:seropositivity                             0.000000e+00
+unvaccinated:seropositivity                                0.000000e+00
+totalpopulation:mortalityrate                              0.000000e+00
+unvaccinated:mortalityrate                                 0.000000e+00
+seropositivity:mortalityrate                               0.000000e+00
+totalpopulation:unvaccinated:seropositivity                0.000000e+00
+totalpopulation:unvaccinated:mortalityrate                 0.000000e+00
+totalpopulation:seropositivity:mortalityrate               0.000000e+00
+unvaccinated:seropositivity:mortalityrate                  0.000000e+00
+totalpopulation:unvaccinated:seropositivity:mortalityrate  0.000000e+00
+                                                          totalpopulation:unvaccinated
+(Intercept)                                                              -1.585239e+13
+unvaccinated                                                             -5.406043e+11
+totalpopulation                                                           3.001169e-04
+seropositivity                                                            2.326089e-04
+mortalityrate                                                            -1.537207e-04
+totalpopulation:unvaccinated                                             -4.115346e-05
+totalpopulation:seropositivity                                            0.000000e+00
+unvaccinated:seropositivity                                               0.000000e+00
+totalpopulation:mortalityrate                                             0.000000e+00
+unvaccinated:mortalityrate                                                0.000000e+00
+seropositivity:mortalityrate                                              0.000000e+00
+totalpopulation:unvaccinated:seropositivity                               0.000000e+00
+totalpopulation:unvaccinated:mortalityrate                                0.000000e+00
+totalpopulation:seropositivity:mortalityrate                              0.000000e+00
+unvaccinated:seropositivity:mortalityrate                                 0.000000e+00
+totalpopulation:unvaccinated:seropositivity:mortalityrate                 0.000000e+00
+                                                          totalpopulation:seropositivity
+(Intercept)                                                                -1.708585e+13
+unvaccinated                                                                4.348122e-06
+totalpopulation                                                             3.060766e-06
+seropositivity                                                              2.149235e-05
+mortalityrate                                                               1.034788e-05
+totalpopulation:unvaccinated                                               -1.800714e-05
+totalpopulation:seropositivity                                             -3.129092e-06
+unvaccinated:seropositivity                                                 0.000000e+00
+totalpopulation:mortalityrate                                               0.000000e+00
+unvaccinated:mortalityrate                                                  0.000000e+00
+seropositivity:mortalityrate                                                0.000000e+00
+totalpopulation:unvaccinated:seropositivity                                 0.000000e+00
+totalpopulation:unvaccinated:mortalityrate                                  0.000000e+00
+totalpopulation:seropositivity:mortalityrate                                0.000000e+00
+unvaccinated:seropositivity:mortalityrate                                   0.000000e+00
+totalpopulation:unvaccinated:seropositivity:mortalityrate                   0.000000e+00
+                                                          unvaccinated:seropositivity
+(Intercept)                                                             -1.071622e+03
+unvaccinated                                                            -3.654485e+01
+totalpopulation                                                          1.139283e-14
+seropositivity                                                           9.067722e-15
+mortalityrate                                                           -4.724676e-15
+totalpopulation:unvaccinated                                            -2.300258e-15
+totalpopulation:seropositivity                                          -6.528545e-16
+unvaccinated:seropositivity                                              1.000000e+00
+totalpopulation:mortalityrate                                            0.000000e+00
+unvaccinated:mortalityrate                                               0.000000e+00
+seropositivity:mortalityrate                                             0.000000e+00
+totalpopulation:unvaccinated:seropositivity                              0.000000e+00
+totalpopulation:unvaccinated:mortalityrate                               0.000000e+00
+totalpopulation:seropositivity:mortalityrate                             0.000000e+00
+unvaccinated:seropositivity:mortalityrate                                0.000000e+00
+totalpopulation:unvaccinated:seropositivity:mortalityrate                0.000000e+00
+                                                          totalpopulation:mortalityrate
+(Intercept)                                                               -3.032990e+11
+unvaccinated                                                               2.284870e-05
+totalpopulation                                                           -7.253617e-06
+seropositivity                                                            -2.505134e-06
+mortalityrate                                                              2.626778e-06
+totalpopulation:unvaccinated                                               3.520175e-07
+totalpopulation:seropositivity                                             1.575856e-07
+unvaccinated:seropositivity                                                0.000000e+00
+totalpopulation:mortalityrate                                              1.000000e+00
+unvaccinated:mortalityrate                                                 0.000000e+00
+seropositivity:mortalityrate                                               0.000000e+00
+totalpopulation:unvaccinated:seropositivity                                0.000000e+00
+totalpopulation:unvaccinated:mortalityrate                                 0.000000e+00
+totalpopulation:seropositivity:mortalityrate                               0.000000e+00
+unvaccinated:seropositivity:mortalityrate                                  0.000000e+00
+totalpopulation:unvaccinated:seropositivity:mortalityrate                  0.000000e+00
+                                                          unvaccinated:mortalityrate
+(Intercept)                                                            -1.902287e+01
+unvaccinated                                                           -6.487252e-01
+totalpopulation                                                         6.121201e-16
+seropositivity                                                          2.108770e-16
+mortalityrate                                                          -6.076187e-17
+totalpopulation:unvaccinated                                           -4.742162e-17
+totalpopulation:seropositivity                                         -1.430209e-17
+unvaccinated:seropositivity                                             0.000000e+00
+totalpopulation:mortalityrate                                           0.000000e+00
+unvaccinated:mortalityrate                                              1.000000e+00
+seropositivity:mortalityrate                                            0.000000e+00
+totalpopulation:unvaccinated:seropositivity                             0.000000e+00
+totalpopulation:unvaccinated:mortalityrate                              0.000000e+00
+totalpopulation:seropositivity:mortalityrate                            0.000000e+00
+unvaccinated:seropositivity:mortalityrate                               0.000000e+00
+totalpopulation:unvaccinated:seropositivity:mortalityrate               0.000000e+00
+                                                          seropositivity:mortalityrate
+(Intercept)                                                              -2.050302e+01
+unvaccinated                                                             -2.697620e-16
+totalpopulation                                                          -3.684201e-16
+seropositivity                                                            5.793932e-17
+mortalityrate                                                            -2.221877e-17
+totalpopulation:unvaccinated                                              2.250975e-17
+totalpopulation:seropositivity                                            1.105440e-18
+unvaccinated:seropositivity                                               0.000000e+00
+totalpopulation:mortalityrate                                             0.000000e+00
+unvaccinated:mortalityrate                                                0.000000e+00
+seropositivity:mortalityrate                                              1.000000e+00
+totalpopulation:unvaccinated:seropositivity                               0.000000e+00
+totalpopulation:unvaccinated:mortalityrate                                0.000000e+00
+totalpopulation:seropositivity:mortalityrate                              0.000000e+00
+unvaccinated:seropositivity:mortalityrate                                 0.000000e+00
+totalpopulation:unvaccinated:seropositivity:mortalityrate                 0.000000e+00
+                                                          totalpopulation:unvaccinated:seropositivity
+(Intercept)                                                                             -1.071622e+13
+unvaccinated                                                                            -3.654485e+11
+totalpopulation                                                                          7.791871e-05
+seropositivity                                                                           3.258409e-05
+mortalityrate                                                                           -1.259357e-05
+totalpopulation:unvaccinated                                                            -1.383704e-05
+totalpopulation:seropositivity                                                           5.414431e-06
+unvaccinated:seropositivity                                                              0.000000e+00
+totalpopulation:mortalityrate                                                            0.000000e+00
+unvaccinated:mortalityrate                                                               0.000000e+00
+seropositivity:mortalityrate                                                             0.000000e+00
+totalpopulation:unvaccinated:seropositivity                                              1.000000e+00
+totalpopulation:unvaccinated:mortalityrate                                               0.000000e+00
+totalpopulation:seropositivity:mortalityrate                                             0.000000e+00
+unvaccinated:seropositivity:mortalityrate                                                0.000000e+00
+totalpopulation:unvaccinated:seropositivity:mortalityrate                                0.000000e+00
+                                                          totalpopulation:unvaccinated:mortalityrate
+(Intercept)                                                                            -1.902287e+11
+unvaccinated                                                                           -6.487252e+09
+totalpopulation                                                                         2.201740e-07
+seropositivity                                                                          5.384842e-07
+mortalityrate                                                                          -2.483764e-07
+totalpopulation:unvaccinated                                                           -5.847356e-08
+totalpopulation:seropositivity                                                          9.721673e-08
+unvaccinated:seropositivity                                                             0.000000e+00
+totalpopulation:mortalityrate                                                           0.000000e+00
+unvaccinated:mortalityrate                                                              0.000000e+00
+seropositivity:mortalityrate                                                            0.000000e+00
+totalpopulation:unvaccinated:seropositivity                                             0.000000e+00
+totalpopulation:unvaccinated:mortalityrate                                              1.000000e+00
+totalpopulation:seropositivity:mortalityrate                                            0.000000e+00
+unvaccinated:seropositivity:mortalityrate                                               0.000000e+00
+totalpopulation:unvaccinated:seropositivity:mortalityrate                               0.000000e+00
+                                                          totalpopulation:seropositivity:mortalityrate
+(Intercept)                                                                              -2.050302e+11
+unvaccinated                                                                              6.793941e-08
+totalpopulation                                                                           4.782447e-08
+seropositivity                                                                            3.358180e-07
+mortalityrate                                                                             1.616856e-07
+totalpopulation:unvaccinated                                                             -2.813616e-07
+totalpopulation:seropositivity                                                           -4.889206e-08
+unvaccinated:seropositivity                                                               0.000000e+00
+totalpopulation:mortalityrate                                                             0.000000e+00
+unvaccinated:mortalityrate                                                                0.000000e+00
+seropositivity:mortalityrate                                                              0.000000e+00
+totalpopulation:unvaccinated:seropositivity                                               0.000000e+00
+totalpopulation:unvaccinated:mortalityrate                                                0.000000e+00
+totalpopulation:seropositivity:mortalityrate                                              1.000000e+00
+unvaccinated:seropositivity:mortalityrate                                                 0.000000e+00
+totalpopulation:unvaccinated:seropositivity:mortalityrate                                 0.000000e+00
+                                                          unvaccinated:seropositivity:mortalityrate
+(Intercept)                                                                           -1.285946e+01
+unvaccinated                                                                          -4.385382e-01
+totalpopulation                                                                        1.281301e-16
+seropositivity                                                                        -1.954489e-17
+mortalityrate                                                                          6.632731e-17
+totalpopulation:unvaccinated                                                          -2.456577e-17
+totalpopulation:seropositivity                                                        -1.231293e-19
+unvaccinated:seropositivity                                                            0.000000e+00
+totalpopulation:mortalityrate                                                          0.000000e+00
+unvaccinated:mortalityrate                                                             0.000000e+00
+seropositivity:mortalityrate                                                           0.000000e+00
+totalpopulation:unvaccinated:seropositivity                                            0.000000e+00
+totalpopulation:unvaccinated:mortalityrate                                             0.000000e+00
+totalpopulation:seropositivity:mortalityrate                                           0.000000e+00
+unvaccinated:seropositivity:mortalityrate                                              1.000000e+00
+totalpopulation:unvaccinated:seropositivity:mortalityrate                              0.000000e+00
+                                                          totalpopulation:unvaccinated:seropositivity:mortalityrate
+(Intercept)                                                                                           -1.285946e+11
+unvaccinated                                                                                          -4.385382e+09
+totalpopulation                                                                                       -1.284598e-06
+seropositivity                                                                                         4.333854e-07
+mortalityrate                                                                                         -5.141500e-07
+totalpopulation:unvaccinated                                                                           8.502393e-08
+totalpopulation:seropositivity                                                                         1.599586e-07
+unvaccinated:seropositivity                                                                            0.000000e+00
+totalpopulation:mortalityrate                                                                          0.000000e+00
+unvaccinated:mortalityrate                                                                             0.000000e+00
+seropositivity:mortalityrate                                                                           0.000000e+00
+totalpopulation:unvaccinated:seropositivity                                                            0.000000e+00
+totalpopulation:unvaccinated:mortalityrate                                                             0.000000e+00
+totalpopulation:seropositivity:mortalityrate                                                           0.000000e+00
+unvaccinated:seropositivity:mortalityrate                                                              0.000000e+00
+totalpopulation:unvaccinated:seropositivity:mortalityrate                                              1.000000e+00
+
+$rank
+[1] 2
+
+$qr
+$qr
+    (Intercept)  unvaccinated totalpopulation seropositivity mortalityrate
+1 -2.527492e+03 -1.585239e+03   -2.527492e+13  -1.708585e+03 -3.032990e+01
+2  2.248183e-01 -5.406043e+01   -8.170262e-04  -1.669799e-14 -2.292719e-16
+3  8.808638e-02  5.162744e-01    5.521116e-04  -2.313291e-14 -3.392813e-16
+4  3.451326e-02  2.829623e-01    2.918342e-01   6.672576e-15  1.415988e-16
+5  1.352269e-02  1.424793e-01    1.477264e-01   7.335431e-01 -9.740426e-17
+6  5.298346e-03  6.821072e-02    1.236469e-01   5.426976e-01  5.891977e-01
+7  2.075953e-03  3.157860e-02    4.342458e-02   1.346849e-01  7.852410e-02
+  totalpopulation:unvaccinated totalpopulation:seropositivity
+1                -1.585239e+13                  -1.708585e+13
+2                -5.406043e+11                   4.348122e-06
+3                 3.001169e-04                   3.060766e-06
+4                 2.326089e-04                   2.149235e-05
+5                -1.537207e-04                   1.034788e-05
+6                -4.115346e-05                  -1.800714e-05
+7                 3.513241e-01                  -3.129092e-06
+  unvaccinated:seropositivity totalpopulation:mortalityrate
+1               -1.071622e+03                 -3.032990e+11
+2               -3.654485e+01                  2.284870e-05
+3                1.139283e-14                 -7.253617e-06
+4                9.067722e-15                 -2.505134e-06
+5               -4.724676e-15                  2.626778e-06
+6               -2.300258e-15                  3.520175e-07
+7               -6.528545e-16                  1.575856e-07
+  unvaccinated:mortalityrate seropositivity:mortalityrate
+1              -1.902287e+01                -2.050302e+01
+2              -6.487252e-01                -2.697620e-16
+3               6.121201e-16                -3.684201e-16
+4               2.108770e-16                 5.793932e-17
+5              -6.076187e-17                -2.221877e-17
+6              -4.742162e-17                 2.250975e-17
+7              -1.430209e-17                 1.105440e-18
+  totalpopulation:unvaccinated:seropositivity
+1                               -1.071622e+13
+2                               -3.654485e+11
+3                                7.791871e-05
+4                                3.258409e-05
+5                               -1.259357e-05
+6                               -1.383704e-05
+7                                5.414431e-06
+  totalpopulation:unvaccinated:mortalityrate
+1                              -1.902287e+11
+2                              -6.487252e+09
+3                               2.201740e-07
+4                               5.384842e-07
+5                              -2.483764e-07
+6                              -5.847356e-08
+7                               9.721673e-08
+  totalpopulation:seropositivity:mortalityrate
+1                                -2.050302e+11
+2                                 6.793941e-08
+3                                 4.782447e-08
+4                                 3.358180e-07
+5                                 1.616856e-07
+6                                -2.813616e-07
+7                                -4.889206e-08
+  unvaccinated:seropositivity:mortalityrate
+1                             -1.285946e+01
+2                             -4.385382e-01
+3                              1.281301e-16
+4                             -1.954489e-17
+5                              6.632731e-17
+6                             -2.456577e-17
+7                             -1.231293e-19
+  totalpopulation:unvaccinated:seropositivity:mortalityrate
+1                                             -1.285946e+11
+2                                             -4.385382e+09
+3                                             -1.284598e-06
+4                                              4.333854e-07
+5                                             -5.141500e-07
+6                                              8.502393e-08
+7                                              1.599586e-07
+
+$rank
+[1] 2
+
+$qraux
+ [1] 1.969686e+00 1.792113e+00 1.935861e+00 1.386334e+00 1.804164e+00
+ [6] 1.936254e+00 3.129092e-06 6.528545e-16 1.575856e-07 1.430209e-17
+[11] 1.105440e-18 5.414431e-06 9.721673e-08 4.889206e-08 1.231293e-19
+[16] 1.599586e-07
+
+$pivot
+ [1]  1  3  2  4  5  6  7  8  9 10 11 12 13 14 15 16
+
+$tol
+[1] 1e-11
+
+attr(,"class")
+[1] "qr"
+
+$family
+
+Family: poisson 
+Link function: log 
+
+
+$linear.predictors
+        1         2         3         4         5         6         7 
+15.608400 12.684944 10.810934  8.936923  7.062913  5.188902  3.314892 
+
+$deviance
+[1] 672277.4
+
+$aic
+[1] 672370.2
+
+$null.deviance
+[1] 22258336
+
+$iter
+[1] 6
+
+$weights
+           1            2            3            4            5            6 
+6.006783e+06 3.228812e+05 4.956751e+04 7.609418e+03 1.168169e+03 1.793330e+02 
+           7 
+2.753053e+01 
+
+$prior.weights
+1 2 3 4 5 6 7 
+1 1 1 1 1 1 1 
+
+$df.residual
+[1] 5
+
+$df.null
+[1] 6
+
+$y
+      1       2       3       4       5       6       7 
+6157201  120688   47869    7841   12605    7461   34514 
+
+$converged
+[1] TRUE
+
+$boundary
+[1] FALSE
+
+$model
+   deaths totalpopulation unvaccinated seropositivity mortalityrate
+1 6157201           1e+10        0.622          0.676         0.012
+2  120688           1e+10        0.700          0.676         0.012
+3   47869           1e+10        0.750          0.676         0.012
+4    7841           1e+10        0.800          0.676         0.012
+5   12605           1e+10        0.850          0.676         0.012
+6    7461           1e+10        0.900          0.676         0.012
+7   34514           1e+10        0.950          0.676         0.012
+
+$call
+glm(formula = deaths ~ totalpopulation * unvaccinated * seropositivity * 
+    mortalityrate, family = poisson())
+
+$formula
+deaths ~ totalpopulation * unvaccinated * seropositivity * mortalityrate
+<environment: 0x55d1e9235980>
+
+$terms
+deaths ~ totalpopulation * unvaccinated * seropositivity * mortalityrate
+attr(,"variables")
+list(deaths, totalpopulation, unvaccinated, seropositivity, mortalityrate)
+attr(,"factors")
+                totalpopulation unvaccinated seropositivity mortalityrate
+deaths                        0            0              0             0
+totalpopulation               1            0              0             0
+unvaccinated                  0            1              0             0
+seropositivity                0            0              1             0
+mortalityrate                 0            0              0             1
+                totalpopulation:unvaccinated totalpopulation:seropositivity
+deaths                                     0                              0
+totalpopulation                            1                              1
+unvaccinated                               1                              0
+seropositivity                             0                              1
+mortalityrate                              0                              0
+                unvaccinated:seropositivity totalpopulation:mortalityrate
+deaths                                    0                             0
+totalpopulation                           0                             1
+unvaccinated                              1                             0
+seropositivity                            1                             0
+mortalityrate                             0                             1
+                unvaccinated:mortalityrate seropositivity:mortalityrate
+deaths                                   0                            0
+totalpopulation                          0                            0
+unvaccinated                             1                            0
+seropositivity                           0                            1
+mortalityrate                            1                            1
+                totalpopulation:unvaccinated:seropositivity
+deaths                                                    0
+totalpopulation                                           1
+unvaccinated                                              1
+seropositivity                                            1
+mortalityrate                                             0
+                totalpopulation:unvaccinated:mortalityrate
+deaths                                                   0
+totalpopulation                                          1
+unvaccinated                                             1
+seropositivity                                           0
+mortalityrate                                            1
+                totalpopulation:seropositivity:mortalityrate
+deaths                                                     0
+totalpopulation                                            1
+unvaccinated                                               0
+seropositivity                                             1
+mortalityrate                                              1
+                unvaccinated:seropositivity:mortalityrate
+deaths                                                  0
+totalpopulation                                         0
+unvaccinated                                            1
+seropositivity                                          1
+mortalityrate                                           1
+                totalpopulation:unvaccinated:seropositivity:mortalityrate
+deaths                                                                  0
+totalpopulation                                                         1
+unvaccinated                                                            1
+seropositivity                                                          1
+mortalityrate                                                           1
+attr(,"term.labels")
+ [1] "totalpopulation"                                          
+ [2] "unvaccinated"                                             
+ [3] "seropositivity"                                           
+ [4] "mortalityrate"                                            
+ [5] "totalpopulation:unvaccinated"                             
+ [6] "totalpopulation:seropositivity"                           
+ [7] "unvaccinated:seropositivity"                              
+ [8] "totalpopulation:mortalityrate"                            
+ [9] "unvaccinated:mortalityrate"                               
+[10] "seropositivity:mortalityrate"                             
+[11] "totalpopulation:unvaccinated:seropositivity"              
+[12] "totalpopulation:unvaccinated:mortalityrate"               
+[13] "totalpopulation:seropositivity:mortalityrate"             
+[14] "unvaccinated:seropositivity:mortalityrate"                
+[15] "totalpopulation:unvaccinated:seropositivity:mortalityrate"
+attr(,"order")
+ [1] 1 1 1 1 2 2 2 2 2 2 3 3 3 3 4
+attr(,"intercept")
+[1] 1
+attr(,"response")
+[1] 1
+attr(,".Environment")
+<environment: 0x55d1e9235980>
+attr(,"predvars")
+list(deaths, totalpopulation, unvaccinated, seropositivity, mortalityrate)
+attr(,"dataClasses")
+         deaths totalpopulation    unvaccinated  seropositivity   mortalityrate 
+      "numeric"       "numeric"       "numeric"       "numeric"       "numeric" 
+
+$data
+<environment: 0x55d1e9235980>
+
+$offset
+NULL
+
+$control
+$control$epsilon
+[1] 1e-08
+
+$control$maxit
+[1] 25
+
+$control$trace
+[1] FALSE
+
+
+$method
+[1] "glm.fit"
+
+$contrasts
+NULL
+
+$xlevels
+named list()
+
+[1] "1:"
+(Intercept) 
+   38.92109 
+[1] "Excess Mortalities:"
+[1] 6912560

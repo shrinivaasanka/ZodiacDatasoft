@@ -152,3 +152,43 @@ References:
 1235.4 Lancet COVID19 estimates - paper - https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)02796-3/fulltext - Bayesian spline ensemble expected deathtoll model implemented in Python 3.7.7, Stata and R
 1235.5 Lancet COVID19 estimates - PDF - Figure 1 on excess and official deathtolls,Table of countrywise actual and official deathtolls - https://www.thelancet.com/action/showPdf?pii=S0140-6736%2821%2902796-3
 1235.6 WHO COVID19 excess mortality model - https://www.nytimes.com/2022/04/16/health/global-covid-deaths-who-india.html, https://www.who.int/news-room/questions-and-answers/item/global-excess-deaths-associated-with-the-COVID-19-pandemic
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+1241. (THEORY and FEATURE) People Analytics - Social Network Analysis - CoronaVirus2019 analyzer - Excess Mortality Model implementation -
+related to 487,572,770,831,1150,1231,1235 and all sections on People Analytics, Urban Sprawl Analytics, Social Network Analysis, ERSIR-SIS model of pandemic/cybercrimes/opinions, Cellular Automaton Graph model of Social Networks - 18 May 2022
+---------------------------------------------------------------------------------------------------------------------------------------------
+1241.1 CAGraphLogit.R has been updated to define two new R functions cagraphexcessmortalityratemodel() and cagraphemrprojections() to implement excess COVID19 mortality estimation for Cellular Automaton Grid S-I-R model described in 1150. 
+1241.2 Following two regressions have been computed in Poisson distribution family and later used to extrapolate excess COVID19 mortalities:
+  if(emrmodel==1)
+  {
+    coronavirus2019emr <- glm(deaths ~ seropositivity * mortalityrate * totalpopulation - mortalityrate * recovered, family = poisson())
+  }
+  else
+  {
+    coronavirus2019emr <- glm(deaths ~ totalpopulation * unvaccinated * seropositivity * mortalityrate, family = poisson())
+  } 
+1241.3 CAGraphLogit.dat has been extended for additional fields - TotalPopulation, SeroPositivity, Unvaccinated, MortalityRate (populated approximately due to lack of data for intermediary dates) and earlier 2 models are learnt by glm() fit.
+1241.4 Following are excess deathtoll estimates predicted from 2 models for India data available from Worldometer (till 31 March 2022):
+	MODEL 1:
+	-------
+	[1] "Excess Mortalities:"
+	(Intercept)
+   	10573454
+
+	MODEL 2:
+	-------
+	[1] "Excess Mortalities:"
+	[1] 6912560
+1241.5 Earlier two models are two different interpretations of projected deathtolls. MODEL 2 has been already explained in 1150 while the MODEL 1 is based on following reasoning. MODEL 2 is more in line with other excess death estimator models and straightforward to compute (Terminology for Susceptible is different from usual SIR convention - "Susceptible" has been used to connote "possible mortality"):
+	Pr(Uninfected) + Pr(Infected) = 1
+	Pr(Infected) = Pr(Susceptible) + Pr(Recovered)
+	=> Pr(Uninfected) + Pr(Susceptible) + Pr(Recovered) = 1
+	Seropositivity = Pr(Infected)
+	Pr(Uninfected) = 1 - Pr(Infected)
+	Pr(Uninfected) = 1 - Seropositivity
+	Pr(Susceptible) = 1 - Pr(Uninfected) - Pr(Recovered)
+	=> Pr(Susceptible) = Seropositivity - Pr(Recovered)
+	=> Pr(Deaths) = Pr(Susceptible) * MortalityRate ('Deaths' are certain 'Susceptibilities') 
+	=> Pr(Deaths) = Seropositivity  * MortalityRate - Pr(Recovered) * MortalityRate
+	After multiplying probabilities by Total population:
+	=> Estimated Deaths = Totalpopulation * Seropositivity * MortalityRate - Recovered * MortalityRate
