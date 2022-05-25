@@ -1,0 +1,49 @@
+==========Remove (doesn't work) ===========
+dictionary before remove: defaultdict(<class 'list'>, {0: [[100, 200], array([[[ 1,  2]],
+
+       [[11, 12]]], dtype=int32), array([[[4, 5]]], dtype=int32), array([[[7, 8]]], dtype=int32), array([[[10, 11]]], dtype=int32), array([[[13, 14]]], dtype=int32)]})
+ndarr1==dictionary[0][0]: [[[False False]]
+
+ [[False False]]]
+ndarr1==dictionary[0][1]: [[[ True  True]]
+
+ [[ True  True]]]
+ndarr1==dictionary[0][2]: [[[False False]]
+
+ [[False False]]]
+ndarr1==dictionary[0][3]: [[[False False]]
+
+ [[False False]]]
+ndarr1==dictionary[0][4]: [[[False False]]
+
+ [[False False]]]
+ndarr1==dictionary[0][5]: [[[False False]]
+
+ [[False False]]]
+exception: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+dictionary after remove: defaultdict(<class 'list'>, {0: [[100, 200], array([[[ 1,  2]],
+
+       [[11, 12]]], dtype=int32), array([[[4, 5]]], dtype=int32), array([[[7, 8]]], dtype=int32), array([[[10, 11]]], dtype=int32), array([[[13, 14]]], dtype=int32)]})
+==========Simulated Remove by excluded copy (works) ===========
+dictionary before remove: defaultdict(<class 'list'>, {0: [[100, 200], array([[[ 1,  2]],
+
+       [[11, 12]]], dtype=int32), array([[[4, 5]]], dtype=int32), array([[[7, 8]]], dtype=int32), array([[[10, 11]]], dtype=int32), array([[[13, 14]]], dtype=int32)]})
+ndarr1==dictionary[0][0]: [[[False False]]
+
+ [[False False]]]
+ndarr1==dictionary[0][1]: [[[ True  True]]
+
+ [[ True  True]]]
+ndarr1==dictionary[0][2]: [[[False False]]
+
+ [[False False]]]
+ndarr1==dictionary[0][3]: [[[False False]]
+
+ [[False False]]]
+ndarr1==dictionary[0][4]: [[[False False]]
+
+ [[False False]]]
+ndarr1==dictionary[0][5]: [[[False False]]
+
+ [[False False]]]
+dictionary after remove: defaultdict(<class 'list'>, {0: [[100, 200], array([[[4, 5]]], dtype=int32), array([[[7, 8]]], dtype=int32), array([[[10, 11]]], dtype=int32), array([[[13, 14]]], dtype=int32)]})
