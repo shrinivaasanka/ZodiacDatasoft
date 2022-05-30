@@ -286,6 +286,7 @@ Reference:
 ---------
 1209.1 Towers of Brahma - https://en.wikipedia.org/wiki/Tower_of_Hanoi
 1209.2 Parallel Algorithms for Constructing Range and Nearest-Neighbor Searching Data Structures - k-d trees constructed in parallel by MPC and MapReduce - PODS 2016 - [Pankaj K. Agarwal, Kyle Fox, Kamesh Munagala, Abhinandan Nath] - https://users.cs.duke.edu/~abhinath/publications/kd_tree.pdf - "... We present the first provably efficient algorithms to compute, store, and query data structures for range queries and approximate nearest neighbor queries in a popular parallel computing abstraction that captures the salient features of MapReduce and other massively parallel communication (MPC) models. In particular, we describe algorithms for kd-trees, range trees, and BBD-trees that only require O(1) rounds of communication ..."
+1209.3 Is there a relation between Ubiquitous Catalan numbers and Towers of Hanoi - an open problem - A Surreptitious Sequence: Catalan numbers - https://www.maa.org/meetings/calendar-events/a-surreptitious-sequence-the-catalan-numbers
 
 ----------------------------------------------------------------------------------------------------------
 843. (THEORY) Social networks, Bipartite and General Graph Maximum Matching, Permanent, Boolean majority,
