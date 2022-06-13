@@ -545,6 +545,51 @@ Timeout as Graph Partition (Dynamic Process id(s) tree partition):
 ---------------------------------------------------------------
 Previous Survival Index based OS process dynamic set partition can be theorized by a Dynamic Graph Partition too - each process has a dependency to some other process by parent/child fork() relationship as graph edge and processes as vertices. At any instant, survival index graph partition captures both the buckets of the processes set partition for timeout values and dependencies among buckets. 
 
+Processes in OS Kernel at any instant are nodes of a tree and earlier Survival Index WCET OS Scheduler partitions this processes tree into bins of a Chained dynamic hash table (one survival index timeout value per bin of process id(s)). An isomorphism could be defined between OS processes tree and Survival Index WCET Dynamic Hashmap Scheduler histogram making a less studied theoretical connection between trees and histograms - as the processes tree evolves over time by fork(), respective Survival Index WCET Scheduler Dynamic Chained Hashtable histogram bins animate dynamically having 1-to-1 bijection to processes tree at that point in time. Earlier isomorphism colors all process nodes of a tree belonging to same survival index timeout bucket by same color - in other words OS process tree is n-colored at any time point for n survival index timeout values of the Scheduler Histogram thus creating a tree partition. Earth mover distance between two Survival Index chained hashmap histograms at 2 consecutive time points indirectly is also the distance between OS processes trees at those 2 consecutive time points (or) Earth Mover Distance and Tree Edit Distance are bijective a step closer to proving a bijection between Earth Mover Distance and more generic Graph Edit Distance. 
+
+Following is an example scheduler runqueue captured by SAR(Search and Rescue) utility:
+-------------------------------------------------------------------------------------
+	01:13:05 PM IST   runq-sz  plist-sz   ldavg-1   ldavg-5  ldavg-15   blocked
+	01:13:06 PM IST         2       847      2.17      1.58      1.03         1
+	01:13:07 PM IST         1       846      2.17      1.58      1.03         0
+	01:13:08 PM IST         3       846      2.17      1.58      1.03         0
+	01:13:09 PM IST         1       846      2.17      1.58      1.03         0
+	01:13:10 PM IST         0       846      2.17      1.58      1.03         1
+	01:13:11 PM IST         1       845      2.07      1.58      1.03         0
+	01:13:12 PM IST         1       845      2.07      1.58      1.03         0
+	01:13:13 PM IST         0       846      2.07      1.58      1.03         0
+	01:13:14 PM IST         1       846      2.07      1.58      1.03         0
+	01:13:15 PM IST         1       845      2.07      1.58      1.03         0
+	Average:            1       846      2.12      1.58      1.03         0
+
+Following is an excerpt of instantaneous linux process tree drawn by pstree:
+---------------------------------------------------------------------------- 
+systemd─┬─NetworkManager───2*[{NetworkManager}]
+        ├─accounts-daemon───2*[{accounts-daemon}]
+        ├─acpid
+        ├─avahi-daemon───avahi-daemon
+        ├─bluetoothd
+        ├─colord───2*[{colord}]
+        ├─cron
+        ├─cups-browsed───2*[{cups-browsed}]
+        ├─cupsd
+        ├─dbus-daemon
+        ├─fwupd───4*[{fwupd}]
+        ├─gdm3─┬─gdm-session-wor─┬─gdm-x-session─┬─Xorg───9*[{Xorg}]
+        │      │                 │               ├─gnome-session-b─┬─ssh-agent
+        │      │                 │               │                 └─2*[{gnome-session-b}]
+        │      │                 │               └─2*[{gdm-x-session}]
+        │      │                 └─2*[{gdm-session-wor}]
+        │      └─2*[{gdm3}]
+        ├─gnome-keyring-d───3*[{gnome-keyring-d}]
+        ├─ibus-daemon─┬─ibus-dconf───3*[{ibus-dconf}]
+        │             ├─ibus-engine-sim───2*[{ibus-engine-sim}]
+        │             ├─ibus-extension-───10*[{ibus-extension-}]
+        │             ├─ibus-ui-gtk3───10*[{ibus-ui-gtk3}]
+        │             └─2*[{ibus-daemon}]
+	...
+
+
 ----------------------------------------------------------------------------------------------------------
 Process id dynamic set/graph partition and rectilinear partition - a computational geometric perspective:
 ----------------------------------------------------------------------------------------------------------
@@ -552,7 +597,7 @@ Aforementioned Survival Index Worst case execution time partition of process id(
 
 References:
 ----------
-1.Previous algorithm is a generalization of Survival Index Based Transaction Timeout Management mentioned in patent disclosure https://sites.google.com/site/kuja27/SurvivalIndexBasedTxnTimeoutManager.pdf (Patent Pending - Copyright - Sun Microsystems/Oracle) - Specific to Java Hashmap (CustomizedHashMap) and Open Addressing - related to erstwhile iPlanet Application Server (iAS - now GlassFish appserver - https://github.com/javaee/glassfish/tree/master/appserver) patents - https://patents.google.com/?inventor=Srinivasan+Kannan&assignee=Sun+Microsystems%2c+Inc.
+1.Previous algorithm is a substantial theoretical refinement of Proprietary Survival Index Based Transaction Timeout Management implementation design mentioned in patent disclosure (2002) - https://github.com/shrinivaasanka/Krishna_iResearch_DoxygenDocs/blob/master/kuja27_website_mirrored/site/kuja27/SurvivalIndexBasedTxnTimeoutManager.pdf (Patent Pending - Copyright - Sun Microsystems (now Oracle)) - Specific to Java Hashmap (CustomizedHashMap) and Open Addressing - part of erstwhile iPlanet Application Server (iAS - now Eclipse GlassFish and Oracle GlassFish appservers - https://github.com/javaee/glassfish/tree/master/appserver, https://www.oracle.com/middleware/technologies/glassfish-downloads.html, https://projects.eclipse.org/projects/ee4j.glassfish) patents - https://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&r=0&f=S&l=50&d=PTXT&Query=%22kannan+srinivasan%22+AND+%22sun+microsystems%22 
 2.Continuous Parameter Markov Chains - Probability and Statistics,Reliability,Queueing and Computer Science - [Kishore Shridharbhai Trivedi, Duke University] - Birth and Death Processes - Response Time of RoundRobin Scheduling - Little's Formula - [Chapter 8] and Network of Queues - Open Queueing Networks - [Chapter 9] - Program state transition markov chain
 3.Program Analysis - Analysis of Control Statements - expected and variance of execution times and laplace transforms - Appendix E - Probability and Statistics, Queueing, Reliability and Computer Science - [Kishore Shridharbhai Trivedi, Duke University]
 4.Introduction to Algorithms - [Cormen,Leiserson,Rivest,Stein] - Chapter 12 - Hashing by Chaining - http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap12.htm - Static Hashing - all runtime analyses for searching in static hashtables still apply to hashing dynamic sets - Note: Hashing Dynamic Sets is different from Dynamic Hashing which facilitates fast insertion/deletion of elements and not dynamism of element itself. Also previous adaptation of hash chaining for timeout and schedulers assumes the hash function for any process is defined as:
