@@ -560,5 +560,37 @@ Previous is an approximate estimate which does not subtract overlapping traversa
 	8-12 (visited), 14-13 (3+4=7) - 2 nodes
 	8-12-14 (visited), 15 (4) - 1 node 
 
+
+
 Thus there are 49 total unique comparisons for 15 nodes ignoring the visited nodes and thus average comparisons = 49/15 ~ 3.2666... 
 => worst case complexity 4k is more than average case complexity 3.2666... for k >= 1.
+
+---------------------------------------------------------------------------------------------------------------------------------
+(PUZZLE) Elementary Number Theoretic Zero Knowledge Proofs - 16 June 2022 - Predict the integer
+---------------------------------------------------------------------------------------------------------------------------------
+Q: (BE)^2 = MPB for different integers B,E,M,P. Which is the correct value of M amongst 4,1,3,6?? (UPSC Civil Services - Mental ability)
+A: All 4 possibilities can be tried and proved by contradiction:
+	1) M=4:
+	------
+		BEBE = MPB
+		BEE = MP
+		BEE = 4P
+		=> E=2 and B=P (or) B=4 and M=4 (contradiction, B=M or B=P, no two integers can be equal)
+	2) M=1:
+	------
+		BEE = 1*P
+		=> BEBE = M(BEE)B (no contradiction, B,E,P can be different)
+	3) M=3:
+	-------
+		BEE = 3P
+		=> EE cannot equal 3 
+		=> EE = P and B = 3 (contradiction, B=M, no two integers can be equal)
+	4) M=6:
+	-------
+		BEE = 6P
+		=> BEE = 2*3*P
+		=> P has to be either 2 or 3
+		=> BEE = 2*3*3 or BEE = 2*3*2	
+		=> B=2 and E=3 and P=3 (or) B=3 and E=2 and P=2 (contradiction, E=P, no two integers can be equal)
+
+All choices except M=1 are contradictory forcing M=1. 
