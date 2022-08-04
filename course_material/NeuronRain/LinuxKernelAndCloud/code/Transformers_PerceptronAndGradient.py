@@ -25,11 +25,11 @@ import rpy2.robjects as robj
 # the L2 norm of the perceptron is differentiated wrt x1,x2,...,xn and deltaw is computed
 
 
-def LinearPerceptronGradient(outputs, weights, rho, bias, variables):
+def LinearPerceptronGradient(outputs, weights, rho, bias, variables, iterations=10):
     converged = False
     sum = 0.0
     iteration = 0
-    while not converged and iteration < 1000:
+    while not converged and iteration < iterations:
         deltaw = []
         term = bias
         varnum = 0
@@ -45,7 +45,8 @@ def LinearPerceptronGradient(outputs, weights, rho, bias, variables):
         # Following iteration is generic for arbitrary number of variables
         # generalizing previous example for 2 variables
         # ------------------------------------------------------------------------------
-        for cnt1 in range(len(variables[0])):
+        #for cnt1 in range(len(variables[0])):
+        for cnt1 in range(len(variables[0])-1):
             for cnt2 in range(len(variables)-1):
                 term += weights[cnt2]*variables[cnt2][cnt1]
             term = term - outputs[cnt1]
@@ -53,7 +54,8 @@ def LinearPerceptronGradient(outputs, weights, rho, bias, variables):
             sum = sum + term
             varnum += 1
             deltaw.append(sum * 2)
-        for cnt in range(len(variables[0])):
+        #for cnt in range(len(variables[0])):
+        for cnt in range(len(variables[0])-1):
             if compute_perceptron(weights, variables, outputs) == 1:
                 print("LinearPerceptronGradient() weight update iteration: Descending")
                 weights[cnt] = weights[cnt] - rho * deltaw[cnt]
@@ -63,7 +65,8 @@ def LinearPerceptronGradient(outputs, weights, rho, bias, variables):
             print("LinearPerceptronGradient() weight update iteration: weights[", cnt, "] = ", weights[cnt])
             print("LinearPerceptronGradient() weight update iteration: deltaw = ", deltaw)
 
-        for cnt in range(len(weights)):
+        #for cnt in range(len(weights)):
+        for cnt in range(len(weights)-1):
             if deltaw[cnt]*-1.0 < 0.0000001:
                 converged = True
             else:
