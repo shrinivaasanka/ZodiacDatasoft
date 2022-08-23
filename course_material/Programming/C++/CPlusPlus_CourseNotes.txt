@@ -480,3 +480,14 @@ Conventional multiplication is quadratic time - O(n^2). Russian Peasant Algorith
 References:
 ----------
 1. Algorithms - [Cormen-Leiserson-Rivest-Stein] - Chapter 29 - Arithmetic Circuits - Section 29.4.2 - Clocked Circuits - Faster Russian Peasant Multiplication Circuit in Linear Time - http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap29.htm
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+1293. (THEORY and FEATURE) NeuronRainApps - Obstacle Free Lattice Walks - Usecase implementation of Autonomous Driving ADAS algorithm in
+Section 864 - item 59 - related to 1253 and all sections on Async IO, Drone Electronic Voting Machines, GIS and Urban Sprawl Analytics, Merit of Large Scale Visuals, Drone Obstacle Avoidance, Computational Geometry, ADAS-Obstacle avoidance, Autonomous Vehicles, Unmanned Aerial Vehicle Navigation-Autonomous Drone Delivery-Passenger Drones, Wiring Problem
+-------------------------------------------------------------------------------------------------------------------------------------------
+1293.1 A primitive C++ template class usecase implementation latticewalks.cpp has been added to repository which computes all possible walks within a grid lattice or grid graph from bottom row to top row allowing obstacles - supplements ADAS Lattice walks algorithm in Section 864 - item 59 of NeuronRain conceptual graph - https://neuronrain-documentation.readthedocs.io/en/latest/.
+1293.2 Lattice walks are computed by two functions findlatticewalks() and findlatticewalks2() which respectively consider lattice walks as Vector of Vectors and Vector of Point<int> template class. Lattice is binary Vector of Vectors wherein obstacles are marked as 1. 
+
+References:
+----------
+1293.3 Efficient all path score computations on grid graphs (Lattices) - "...given a grid graph, to compute the maximum weights of paths between every pair of a vertex on the first row of the graph and a vertex on the last row of the graph. ..." - https://www.sciencedirect.com/science/article/pii/S0304397513005215
