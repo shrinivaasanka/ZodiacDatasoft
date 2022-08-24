@@ -491,3 +491,15 @@ Section 864 - item 59 - related to 1253 and all sections on Async IO, Drone Elec
 References:
 ----------
 1293.3 Efficient all path score computations on grid graphs (Lattices) - "...given a grid graph, to compute the maximum weights of paths between every pair of a vertex on the first row of the graph and a vertex on the last row of the graph. ..." - https://www.sciencedirect.com/science/article/pii/S0304397513005215
+
+--------------------------------------------------------------------------------------------------------------------------------
+1294. (THEORY and FEATURE) NeuronRainApps - Obstacle Free Lattice Walks - Usecase implementation of Autonomous Driving ADAS algorithm in Section 864 - item 59 - All Pairs Paths in Grid Lattice - related to 1253 and all sections on Async IO, Drone Electronic Voting Machines, GIS and Urban Sprawl Analytics, Merit of Large Scale Visuals, Drone Obstacle Avoidance, Computational Geometry, ADAS-Obstacle avoidance, Autonomous Vehicles, Unmanned Aerial Vehicle Navigation-Autonomous Drone Delivery-Passenger Drones, Wiring Problem
+-------------------------------------------------------------------------------------------------------------------------------
+1294.1 latticewalks.cpp has been changed to print paths between all pairs of vertices by iterating through walk counts computed in 1293 (logs/latticewalks.log.24August2022).
+1294.2 findlatticewalks2() has been updated to iteratively decrement walks datastructure, extract (x,y) coordinate from walks and populate all pairs paths (set of all multiple 90 degree turn walks between any pair of vertices in grid graph).
+1294.3 Outermost while loop in findlatticewalks2() stops when walks matrix contains only -1 or 0 entries.
+1294.4 Most autonomous driving solutions employ deep learning and neural networks while finding Obstacle Free Lattice Walks in ADAS is pure theory. Earlier usecase implementation of 2D Lattice Grid with obstacles could be suitably changed to a 3D LiDAR Point Cloud Data (a 3D Lattice Grid) after a preprocessing to identify obstacle points on 3D Lattice. 
+
+References:
+----------
+1294.5 Autonomous Driving by LiDAR Perception Point Cloud Library - https://towardsdatascience.com/an-algorithmic-implementation-of-an-autonomous-driving-lidar-perception-stack-with-pcl-4d5928bcebc7 - Latency concerns - "... The scan rate may vary from 10 to 25 scans per second in real-life cases which leads to the maximal latency of any processing stage ranging from 100 ms to 40 ms. If for any possible incoming point cloud any of the stages, for example, clusterization, lags over 100 ms (for 10 scans per second rate), either a frame drop will happen, or the total latency of the pipeline will start to grow arbitrarily ..."

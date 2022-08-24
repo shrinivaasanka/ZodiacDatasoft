@@ -27,7 +27,7 @@ class Point
 class Lattice
 {
 	private:
-		vector<Point<int>> walks;
+		vector<Point<int>> paths;
 	public:
 		int latticewalkwithobstacles(vector<vector<int>>& lattice,int countwalks)
 		{
@@ -36,7 +36,7 @@ class Lattice
 			cout<<"Grid with obstacles"<<endl;
 			if(countwalks)
 			{
-				vector<vector<int>> walks(rows, vector(columns,-1));
+				vector<vector<int>> walks(rows, vector<int>(columns,-1));
 				findlatticewalks(0,0,rows,columns,lattice,walks);
 				for (vector<vector<int>>::iterator it1=lattice.begin(); it1 != lattice.end(); it1++)
 				{
@@ -58,7 +58,9 @@ class Lattice
 			}
 			else
 			{
-				findlatticewalks2(0,0,rows,columns,lattice);
+				vector<vector<int>> walks(rows, vector<int>(columns,-1));
+				findlatticewalks(0,0,rows,columns,lattice,walks);
+				findlatticewalks2(0,0,rows,columns,lattice,walks);
 				for (vector<vector<int>>::iterator it1=lattice.begin(); it1 != lattice.end(); it1++)
 				{
 					for(vector<int>::iterator it2=it1->begin(); it2 != it1->end(); it2++)
@@ -66,11 +68,6 @@ class Lattice
 						cout<<*it2<<",";
 					}
 					cout<<endl;
-				}
-				cout<<"Obstacle Free Lattice walks"<<endl;
-				for (vector<Point<int>>::iterator it1=walks.begin(); it1 != walks.end(); it1++)
-				{
-					cout<<"("<<it1->x<<","<<it1->y<<")";
 				}
 			}
 		}
@@ -93,8 +90,9 @@ class Lattice
 			return walks[bottomx][bottomy];
 		}
 		
-		int findlatticewalks2(int bottomx, int bottomy, int topx, int topy, vector<vector<int>>& lattice)
+		int findlatticewalks2(int bottomx, int bottomy, int topx, int topy, vector<vector<int>>& lattice, vector<vector<int>> walks)
 		{
+			/*
 			if (bottomx == topx || bottomy == topy)
 			{	
 				Point<int> p;
@@ -117,6 +115,48 @@ class Lattice
 			}
 			findlatticewalks2(bottomx+1,bottomy,topx,topy,lattice);
 			findlatticewalks2(bottomx,bottomy+1,topx,topy,lattice);
+			*/
+			cout<<"Obstacle Free Lattice walks"<<endl;
+			while(true)
+			{
+				bool allnegative=true;
+				for (vector<vector<int>>::iterator it1=walks.begin(); it1 != walks.end(); it1++)
+				{
+					for(vector<int>::iterator it2=it1->begin(); it2 != it1->end(); it2++)
+					{
+						if (*it2 > 0)
+							allnegative=false;
+					}
+				}
+				if(allnegative == true)
+					break;
+				int row=0;
+				paths.clear();
+				for (vector<vector<int>>::iterator it1=walks.begin(); it1 != walks.end(); it1++)
+				{
+					int column=0;
+					for(vector<int>::iterator it2=it1->begin(); it2 != it1->end(); it2++)
+					{
+						cout<<*it2<<",";
+						if(*it2 > 0)
+						{
+							Point<int> p;
+							p.x = row;
+							p.y = column;
+							paths.push_back(p);
+							(*it2)--;
+						}
+						column++;
+					}
+					cout<<endl;
+					row++;
+				}
+				for (vector<Point<int>>::iterator it3=paths.begin(); it3 != paths.end(); it3++)
+				{
+					cout<<"============================================"<<endl;
+					cout<<"("<<it3->x<<","<<it3->y<<")"<<endl;
+				}
+			}
 		}
 };
 
