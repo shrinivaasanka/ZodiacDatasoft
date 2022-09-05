@@ -368,3 +368,14 @@ Mixed datatypes within python lists are problematic while performing index() or 
 	The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
 This fact has been demonstrated in code/MixedPythonArrays.py (Python 3.8) by 2 types of removes on a heterogeneous array of a defaultdict(list) containing python list objects and Numeric Python NDArray objects - (*) by direct remove() which fails with earlier ambiguity exception and (*) simulated remove which iterates through array elements, does equality test for truth value of matching element to remove and excludes the element while copying to a temporary array. Temporary array (having excluded an element) replaces earlier array. Simulated remove earlier (commented) can be condensed to one line list comprehension. Previous simulated remove has been implemented in NeuronRain AstroInfer image analytics code - asfer-github-code/python-src/image_pattern_mining/ImageNet/ImageGraph_Keras_Theano.py - def contours_kmeans_clustering(imagefile,segment,number_of_clusters=3,maxiterations=3) - while handling remove of an element from mixed Python arrays containing contour ndarray int32 datatypes and python list objects. Two removes are shown in code/logs/MixedPythonArrays.log.25May2022 for a mixed array element of a defaultdict - initial element of the list is a normal python list while rest are ndarrays and exception is encountered while removing array([[[ 1,  2]], [[11, 12]]], dtype=int32): 
 	defaultdict(<class 'list'>, {0: [[100, 200], array([[[ 1,  2]], [[11, 12]]], dtype=int32), array([[[4, 5]]], dtype=int32), array([[[7, 8]]], dtype=int32), array([[[10, 11]]], dtype=int32), array([[[13, 14]]], dtype=int32)]})
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+Python 3.10.x - Memory View and Buffer for different datatypes - 6 September 2022
+-----------------------------------------------------------------------------------------------------------------------------------------
+Code snippet Python/MemoryView.py demonstrates the memoryview() built-in function of Python 3.10.x and how it wraps the C memory view of
+Python objects through bytearray() buffer protocol. It also explains the usages of string binary encode(), bit_length(), to_bytes() and Big Endian-Little Endian storages.
+
+References:
+-----------
+1. Python memoryview() documentation - https://docs.python.org/3/library/stdtypes.html#memoryview
+
