@@ -1,0 +1,150 @@
+process_stream(): process_queue =  deque([(7510, 33)])
+clockticks(): elapsedclockticks =  1
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {})
+process_stream(): process_queue =  deque([(7510, 33), (3404, 32)])
+clockticks(): elapsedclockticks =  2
+survival_index_scheduler(): defaultdict(<class 'list'>, {33: [7510]})
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {32: [7510]})
+process_stream(): process_queue =  deque([(3404, 32), (7607, 45)])
+clockticks(): elapsedclockticks =  3
+survival_index_scheduler(): defaultdict(<class 'list'>, {32: [7510, 3404]})
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {31: [7510, 3404]})
+process_stream(): process_queue =  deque([(7607, 45), (1156, 32)])
+clockticks(): elapsedclockticks =  4
+survival_index_scheduler(): defaultdict(<class 'list'>, {31: [7510, 3404], 45: [7607]})
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {30: [7510, 3404], 44: [7607]})
+process_stream(): process_queue =  deque([(1156, 32), (7130, 45)])
+clockticks(): elapsedclockticks =  5
+survival_index_scheduler(): defaultdict(<class 'list'>, {30: [7510, 3404], 44: [7607], 32: [1156]})
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {29: [7510, 3404], 43: [7607], 31: [1156]})
+process_stream(): process_queue =  deque([(7130, 45), (3782, 41)])
+clockticks(): elapsedclockticks =  6
+survival_index_scheduler(): defaultdict(<class 'list'>, {29: [7510, 3404], 43: [7607], 31: [1156], 45: [7130]})
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {28: [7510, 3404], 42: [7607], 30: [1156], 44: [7130]})
+process_stream(): process_queue =  deque([(3782, 41), (9354, 30)])
+clockticks(): elapsedclockticks =  7
+survival_index_scheduler(): defaultdict(<class 'list'>, {28: [7510, 3404], 42: [7607], 30: [1156], 44: [7130], 41: [3782]})
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {27: [7510, 3404], 41: [7607], 29: [1156], 43: [7130], 40: [3782]})
+process_stream(): process_queue =  deque([(9354, 30), (2642, 30)])
+clockticks(): elapsedclockticks =  8
+survival_index_scheduler(): defaultdict(<class 'list'>, {27: [7510, 3404], 41: [7607], 29: [1156], 43: [7130], 40: [3782], 30: [9354]})
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {26: [7510, 3404], 40: [7607], 28: [1156], 42: [7130], 39: [3782], 29: [9354]})
+process_stream(): process_queue =  deque([(2642, 30), (170, 42)])
+clockticks(): elapsedclockticks =  9
+survival_index_scheduler(): defaultdict(<class 'list'>, {26: [7510, 3404], 40: [7607], 28: [1156], 42: [7130], 39: [3782], 29: [9354], 30: [2642]})
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {25: [7510, 3404], 39: [7607], 27: [1156], 41: [7130], 38: [3782], 28: [9354], 29: [2642]})
+process_stream(): process_queue =  deque([(170, 42), (9210, 50)])
+clockticks(): elapsedclockticks =  10
+survival_index_scheduler(): defaultdict(<class 'list'>, {25: [7510, 3404], 39: [7607], 27: [1156], 41: [7130], 38: [3782], 28: [9354], 29: [2642], 42: [170]})
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {24: [7510, 3404], 38: [7607], 26: [1156], 40: [7130], 37: [3782], 27: [9354], 28: [2642], 41: [170]})
+clockticks(): elapsedclockticks =  11
+survival_index_scheduler(): defaultdict(<class 'list'>, {24: [7510, 3404], 38: [7607], 26: [1156], 40: [7130], 37: [3782], 27: [9354], 28: [2642], 41: [170], 50: [9210]})
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {23: [7510, 3404], 37: [7607], 25: [1156], 39: [7130], 36: [3782], 26: [9354], 27: [2642], 40: [170], 49: [9210]})
+clockticks(): elapsedclockticks =  12
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {22: [7510, 3404], 36: [7607], 24: [1156], 38: [7130], 35: [3782], 25: [9354], 26: [2642], 39: [170], 48: [9210]})
+clockticks(): elapsedclockticks =  13
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {21: [7510, 3404], 35: [7607], 23: [1156], 37: [7130], 34: [3782], 24: [9354], 25: [2642], 38: [170], 47: [9210]})
+clockticks(): elapsedclockticks =  14
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {20: [7510, 3404], 34: [7607], 22: [1156], 36: [7130], 33: [3782], 23: [9354], 24: [2642], 37: [170], 46: [9210]})
+clockticks(): elapsedclockticks =  15
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {19: [7510, 3404], 33: [7607], 21: [1156], 35: [7130], 32: [3782], 22: [9354], 23: [2642], 36: [170], 45: [9210]})
+clockticks(): elapsedclockticks =  16
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {18: [7510, 3404], 32: [7607], 20: [1156], 34: [7130], 31: [3782], 21: [9354], 22: [2642], 35: [170], 44: [9210]})
+clockticks(): elapsedclockticks =  17
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {17: [7510, 3404], 31: [7607], 19: [1156], 33: [7130], 30: [3782], 20: [9354], 21: [2642], 34: [170], 43: [9210]})
+clockticks(): elapsedclockticks =  18
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {16: [7510, 3404], 30: [7607], 18: [1156], 32: [7130], 29: [3782], 19: [9354], 20: [2642], 33: [170], 42: [9210]})
+clockticks(): elapsedclockticks =  19
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {15: [7510, 3404], 29: [7607], 17: [1156], 31: [7130], 28: [3782], 18: [9354], 19: [2642], 32: [170], 41: [9210]})
+clockticks(): elapsedclockticks =  20
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {14: [7510, 3404], 28: [7607], 16: [1156], 30: [7130], 27: [3782], 17: [9354], 18: [2642], 31: [170], 40: [9210]})
+clockticks(): elapsedclockticks =  21
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {13: [7510, 3404], 27: [7607], 15: [1156], 29: [7130], 26: [3782], 16: [9354], 17: [2642], 30: [170], 39: [9210]})
+clockticks(): elapsedclockticks =  22
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {12: [7510, 3404], 26: [7607], 14: [1156], 28: [7130], 25: [3782], 15: [9354], 16: [2642], 29: [170], 38: [9210]})
+clockticks(): elapsedclockticks =  23
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {11: [7510, 3404], 25: [7607], 13: [1156], 27: [7130], 24: [3782], 14: [9354], 15: [2642], 28: [170], 37: [9210]})
+clockticks(): elapsedclockticks =  24
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {10: [7510, 3404], 24: [7607], 12: [1156], 26: [7130], 23: [3782], 13: [9354], 14: [2642], 27: [170], 36: [9210]})
+clockticks(): elapsedclockticks =  25
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {9: [7510, 3404], 23: [7607], 11: [1156], 25: [7130], 22: [3782], 12: [9354], 13: [2642], 26: [170], 35: [9210]})
+clockticks(): elapsedclockticks =  26
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {8: [7510, 3404], 22: [7607], 10: [1156], 24: [7130], 21: [3782], 11: [9354], 12: [2642], 25: [170], 34: [9210]})
+clockticks(): elapsedclockticks =  27
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {7: [7510, 3404], 21: [7607], 9: [1156], 23: [7130], 20: [3782], 10: [9354], 11: [2642], 24: [170], 33: [9210]})
+IndexError
+clockticks(): elapsedclockticks =  28
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {6: [7510, 3404], 20: [7607], 8: [1156], 22: [7130], 19: [3782], 9: [9354], 10: [2642], 23: [170], 32: [9210]})
+IndexError
+clockticks(): elapsedclockticks =  29
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {5: [7510, 3404], 19: [7607], 7: [1156], 21: [7130], 18: [3782], 8: [9354], 9: [2642], 22: [170], 31: [9210]})
+clockticks(): elapsedclockticks =  30
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4: [7510, 3404], 18: [7607], 6: [1156], 20: [7130], 17: [3782], 7: [9354], 8: [2642], 21: [170], 30: [9210]})
+IndexError
+clockticks(): elapsedclockticks =  31
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {3: [7510, 3404], 17: [7607], 5: [1156], 19: [7130], 16: [3782], 6: [9354], 7: [2642], 20: [170], 29: [9210]})
+clockticks(): elapsedclockticks =  32
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {2: [7510, 3404], 16: [7607], 4: [1156], 18: [7130], 15: [3782], 5: [9354], 6: [2642], 19: [170], 28: [9210]})
+clockticks(): elapsedclockticks =  33
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {1: [7510, 3404], 15: [7607], 3: [1156], 17: [7130], 14: [3782], 4: [9354], 5: [2642], 18: [170], 27: [9210]})
+IndexError
+clockticks(): elapsedclockticks =  34
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {0: [7510, 3404], 14: [7607], 2: [1156], 16: [7130], 13: [3782], 3: [9354], 4: [2642], 17: [170], 26: [9210]})
+IndexError
+clockticks(): elapsedclockticks =  35
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {-1: [7510, 3404], 13: [7607], 1: [1156], 15: [7130], 12: [3782], 2: [9354], 3: [2642], 16: [170], 25: [9210]})
+IndexError
+clockticks(): elapsedclockticks =  36
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {-2: [7510, 3404], 12: [7607], 0: [1156], 14: [7130], 11: [3782], 1: [9354], 2: [2642], 15: [170], 24: [9210]})
+IndexError
+clockticks(): elapsedclockticks =  37
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {-3: [7510, 3404], 11: [7607], -1: [1156], 13: [7130], 10: [3782], 0: [9354], 1: [2642], 14: [170], 23: [9210]})
+clockticks(): elapsedclockticks =  38
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {-4: [7510, 3404], 10: [7607], -2: [1156], 12: [7130], 9: [3782], -1: [9354], 0: [2642], 13: [170], 22: [9210]})
+clockticks(): elapsedclockticks =  39
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {-5: [7510, 3404], 9: [7607], -3: [1156], 11: [7130], 8: [3782], -2: [9354], -1: [2642], 12: [170], 21: [9210]})
+clockticks(): elapsedclockticks =  40
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {-6: [7510, 3404], 8: [7607], -4: [1156], 10: [7130], 7: [3782], -3: [9354], -2: [2642], 11: [170], 20: [9210]})
+clockticks(): elapsedclockticks =  41
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {-7: [7510, 3404], 7: [7607], -5: [1156], 9: [7130], 6: [3782], -4: [9354], -3: [2642], 10: [170], 19: [9210]})
+clockticks(): elapsedclockticks =  42
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {-8: [7510, 3404], 6: [7607], -6: [1156], 8: [7130], 5: [3782], -5: [9354], -4: [2642], 9: [170], 18: [9210]})
+clockticks(): elapsedclockticks =  43
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {-9: [7510, 3404], 5: [7607], -7: [1156], 7: [7130], 4: [3782], -6: [9354], -5: [2642], 8: [170], 17: [9210]})
+clockticks(): elapsedclockticks =  44
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {-10: [7510, 3404], 4: [7607], -8: [1156], 6: [7130], 3: [3782], -7: [9354], -6: [2642], 7: [170], 16: [9210]})
+clockticks(): elapsedclockticks =  45
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {-11: [7510, 3404], 3: [7607], -9: [1156], 5: [7130], 2: [3782], -8: [9354], -7: [2642], 6: [170], 15: [9210]})
+clockticks(): elapsedclockticks =  46
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {-12: [7510, 3404], 2: [7607], -10: [1156], 4: [7130], 1: [3782], -9: [9354], -8: [2642], 5: [170], 14: [9210]})
+clockticks(): elapsedclockticks =  47
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {-13: [7510, 3404], 1: [7607], -11: [1156], 3: [7130], 0: [3782], -10: [9354], -9: [2642], 4: [170], 13: [9210]})
