@@ -1,0 +1,469 @@
+clockticks(): elapsedclockticks =  1
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {})
+process_stream(): process_queue =  deque([])
+clockticks(): elapsedclockticks =  2
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {})
+IndexError
+process_stream(): process_queue =  deque([])
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {})
+IndexError
+clockticks(): elapsedclockticks =  3
+process_stream(): process_queue =  deque([])
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {})
+clockticks(): elapsedclockticks =  4
+IndexError
+process_stream(): process_queue =  deque([])
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {})
+IndexError
+clockticks(): elapsedclockticks =  5
+process_stream(): process_queue =  deque([])
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {})
+IndexError
+clockticks(): elapsedclockticks =  6
+process_stream(): process_queue =  deque([])
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {})
+IndexError
+clockticks(): elapsedclockticks =  7
+process_stream(): process_queue =  deque([])
+clockticks(): elapsedclockticks =  8
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {})
+IndexError
+CompletedProcess(args=['chrt', '-p', '3246'], returncode=0, stdout=b"pid 3246's current scheduling policy: SCHED_DEADLINE\npid 3246's current scheduling priority: 0\npid 3246's current runtime/deadline/period parameters: 1000000/5000000/5000000\n", stderr=b'')
+deadlinestringtoks: [' 1000000', '5000000', '5000000']
+process_stream(): process_queue =  deque([('3246', 5000000)])
+clockticks(): elapsedclockticks =  9
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {})
+survival_index_scheduler(): defaultdict(<class 'list'>, {5000000: ['3246']})
+CompletedProcess(args=['chrt', '-p', '3244'], returncode=0, stdout=b"pid 3244's current scheduling policy: SCHED_DEADLINE\npid 3244's current scheduling priority: 0\npid 3244's current runtime/deadline/period parameters: 1000000/5000000/5000000\n", stderr=b'')
+deadlinestringtoks: [' 1000000', '5000000', '5000000']
+process_stream(): process_queue =  deque([('3244', 5000000)])
+clockticks(): elapsedclockticks =  10
+survival_index_scheduler(): defaultdict(<class 'list'>, {5000000: ['3246', '3244']})
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999999: ['3246', '3244']})
+CompletedProcess(args=['chrt', '-p', '3242'], returncode=0, stdout=b"pid 3242's current scheduling policy: SCHED_DEADLINE\npid 3242's current scheduling priority: 0\npid 3242's current runtime/deadline/period parameters: 1000000/5000000/5000000\n", stderr=b'')
+deadlinestringtoks: [' 1000000', '5000000', '5000000']
+process_stream(): process_queue =  deque([('3242', 5000000)])
+clockticks(): elapsedclockticks =  11
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999998: ['3246', '3244']})
+survival_index_scheduler(): defaultdict(<class 'list'>, {4999998: ['3246', '3244'], 5000000: ['3242']})
+CompletedProcess(args=['chrt', '-p', '3240'], returncode=0, stdout=b"pid 3240's current scheduling policy: SCHED_DEADLINE\npid 3240's current scheduling priority: 0\npid 3240's current runtime/deadline/period parameters: 1000000/5000000/5000000\n", stderr=b'')
+deadlinestringtoks: [' 1000000', '5000000', '5000000']
+process_stream(): process_queue =  deque([('3240', 5000000)])
+clockticks(): elapsedclockticks =  12
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999997: ['3246', '3244'], 4999999: ['3242']})
+survival_index_scheduler(): defaultdict(<class 'list'>, {4999997: ['3246', '3244'], 4999999: ['3242'], 5000000: ['3240']})
+clockticks(): elapsedclockticks =  13
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999996: ['3246', '3244'], 4999998: ['3242'], 4999999: ['3240']})
+IndexError
+CompletedProcess(args=['chrt', '-p', '3238'], returncode=0, stdout=b"pid 3238's current scheduling policy: SCHED_DEADLINE\npid 3238's current scheduling priority: 0\npid 3238's current runtime/deadline/period parameters: 1000000/5000000/5000000\n", stderr=b'')
+deadlinestringtoks: [' 1000000', '5000000', '5000000']
+process_stream(): process_queue =  deque([('3238', 5000000)])
+clockticks(): elapsedclockticks =  14
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999995: ['3246', '3244'], 4999997: ['3242'], 4999998: ['3240']})
+survival_index_scheduler(): defaultdict(<class 'list'>, {4999995: ['3246', '3244'], 4999997: ['3242'], 4999998: ['3240'], 5000000: ['3238']})
+CompletedProcess(args=['chrt', '-p', '3236'], returncode=0, stdout=b"pid 3236's current scheduling policy: SCHED_DEADLINE\npid 3236's current scheduling priority: 0\npid 3236's current runtime/deadline/period parameters: 1000000/5000000/5000000\n", stderr=b'')
+deadlinestringtoks: [' 1000000', '5000000', '5000000']
+process_stream(): process_queue =  deque([('3236', 5000000)])
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999994: ['3246', '3244'], 4999996: ['3242'], 4999997: ['3240'], 4999999: ['3238']})
+clockticks(): elapsedclockticks =  15
+survival_index_scheduler(): defaultdict(<class 'list'>, {4999994: ['3246', '3244'], 4999996: ['3242'], 4999997: ['3240'], 4999999: ['3238'], 5000000: ['3236']})
+CompletedProcess(args=['chrt', '-p', '3234'], returncode=0, stdout=b"pid 3234's current scheduling policy: SCHED_DEADLINE\npid 3234's current scheduling priority: 0\npid 3234's current runtime/deadline/period parameters: 1000000/5000000/5000000\n", stderr=b'')
+deadlinestringtoks: [' 1000000', '5000000', '5000000']
+process_stream(): process_queue =  deque([('3234', 5000000)])
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999993: ['3246', '3244'], 4999995: ['3242'], 4999996: ['3240'], 4999998: ['3238'], 4999999: ['3236']})
+clockticks(): elapsedclockticks =  16
+survival_index_scheduler(): defaultdict(<class 'list'>, {4999993: ['3246', '3244'], 4999995: ['3242'], 4999996: ['3240'], 4999998: ['3238'], 4999999: ['3236'], 5000000: ['3234']})
+CompletedProcess(args=['chrt', '-p', '3232'], returncode=0, stdout=b"pid 3232's current scheduling policy: SCHED_DEADLINE\npid 3232's current scheduling priority: 0\npid 3232's current runtime/deadline/period parameters: 1000000/5000000/5000000\n", stderr=b'')
+deadlinestringtoks: [' 1000000', '5000000', '5000000']
+process_stream(): process_queue =  deque([('3232', 5000000)])
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999992: ['3246', '3244'], 4999994: ['3242'], 4999995: ['3240'], 4999997: ['3238'], 4999998: ['3236'], 4999999: ['3234']})
+clockticks(): elapsedclockticks =  17
+survival_index_scheduler(): defaultdict(<class 'list'>, {4999992: ['3246', '3244'], 4999994: ['3242'], 4999995: ['3240'], 4999997: ['3238'], 4999998: ['3236'], 4999999: ['3234'], 5000000: ['3232']})
+CompletedProcess(args=['chrt', '-p', '3230'], returncode=0, stdout=b"pid 3230's current scheduling policy: SCHED_DEADLINE\npid 3230's current scheduling priority: 0\npid 3230's current runtime/deadline/period parameters: 1000000/5000000/5000000\n", stderr=b'')
+deadlinestringtoks: [' 1000000', '5000000', '5000000']
+process_stream(): process_queue =  deque([('3230', 5000000)])
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999991: ['3246', '3244'], 4999993: ['3242'], 4999994: ['3240'], 4999996: ['3238'], 4999997: ['3236'], 4999998: ['3234'], 4999999: ['3232']})
+clockticks(): elapsedclockticks =  18
+survival_index_scheduler(): defaultdict(<class 'list'>, {4999991: ['3246', '3244'], 4999993: ['3242'], 4999994: ['3240'], 4999996: ['3238'], 4999997: ['3236'], 4999998: ['3234'], 4999999: ['3232'], 5000000: ['3230']})
+CompletedProcess(args=['chrt', '-p', '3228'], returncode=0, stdout=b"pid 3228's current scheduling policy: SCHED_DEADLINE\npid 3228's current scheduling priority: 0\npid 3228's current runtime/deadline/period parameters: 1000000/5000000/5000000\n", stderr=b'')
+deadlinestringtoks: [' 1000000', '5000000', '5000000']
+process_stream(): process_queue =  deque([('3228', 5000000)])
+clockticks(): elapsedclockticks =  19
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999990: ['3246', '3244'], 4999992: ['3242'], 4999993: ['3240'], 4999995: ['3238'], 4999996: ['3236'], 4999997: ['3234'], 4999998: ['3232'], 4999999: ['3230']})
+survival_index_scheduler(): defaultdict(<class 'list'>, {4999990: ['3246', '3244'], 4999992: ['3242'], 4999993: ['3240'], 4999995: ['3238'], 4999996: ['3236'], 4999997: ['3234'], 4999998: ['3232'], 4999999: ['3230'], 5000000: ['3228']})
+CompletedProcess(args=['chrt', '-p', '3226'], returncode=0, stdout=b"pid 3226's current scheduling policy: SCHED_DEADLINE\npid 3226's current scheduling priority: 0\npid 3226's current runtime/deadline/period parameters: 1000000/5000000/5000000\n", stderr=b'')
+deadlinestringtoks: [' 1000000', '5000000', '5000000']
+process_stream(): process_queue =  deque([('3226', 5000000)])
+clockticks(): elapsedclockticks =  20
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999989: ['3246', '3244'], 4999991: ['3242'], 4999992: ['3240'], 4999994: ['3238'], 4999995: ['3236'], 4999996: ['3234'], 4999997: ['3232'], 4999998: ['3230'], 4999999: ['3228']})
+survival_index_scheduler(): defaultdict(<class 'list'>, {4999989: ['3246', '3244'], 4999991: ['3242'], 4999992: ['3240'], 4999994: ['3238'], 4999995: ['3236'], 4999996: ['3234'], 4999997: ['3232'], 4999998: ['3230'], 4999999: ['3228'], 5000000: ['3226']})
+CompletedProcess(args=['chrt', '-p', '3224'], returncode=0, stdout=b"pid 3224's current scheduling policy: SCHED_DEADLINE\npid 3224's current scheduling priority: 0\npid 3224's current runtime/deadline/period parameters: 1000000/5000000/5000000\n", stderr=b'')
+deadlinestringtoks: [' 1000000', '5000000', '5000000']
+process_stream(): process_queue =  deque([('3224', 5000000)])
+clockticks(): elapsedclockticks =  21
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999988: ['3246', '3244'], 4999990: ['3242'], 4999991: ['3240'], 4999993: ['3238'], 4999994: ['3236'], 4999995: ['3234'], 4999996: ['3232'], 4999997: ['3230'], 4999998: ['3228'], 4999999: ['3226']})
+survival_index_scheduler(): defaultdict(<class 'list'>, {4999988: ['3246', '3244'], 4999990: ['3242'], 4999991: ['3240'], 4999993: ['3238'], 4999994: ['3236'], 4999995: ['3234'], 4999996: ['3232'], 4999997: ['3230'], 4999998: ['3228'], 4999999: ['3226'], 5000000: ['3224']})
+CompletedProcess(args=['chrt', '-p', '3222'], returncode=0, stdout=b"pid 3222's current scheduling policy: SCHED_DEADLINE\npid 3222's current scheduling priority: 0\npid 3222's current runtime/deadline/period parameters: 1000000/5000000/5000000\n", stderr=b'')
+deadlinestringtoks: [' 1000000', '5000000', '5000000']
+process_stream(): process_queue =  deque([('3222', 5000000)])
+clockticks(): elapsedclockticks =  22
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999987: ['3246', '3244'], 4999989: ['3242'], 4999990: ['3240'], 4999992: ['3238'], 4999993: ['3236'], 4999994: ['3234'], 4999995: ['3232'], 4999996: ['3230'], 4999997: ['3228'], 4999998: ['3226'], 4999999: ['3224']})
+survival_index_scheduler(): defaultdict(<class 'list'>, {4999987: ['3246', '3244'], 4999989: ['3242'], 4999990: ['3240'], 4999992: ['3238'], 4999993: ['3236'], 4999994: ['3234'], 4999995: ['3232'], 4999996: ['3230'], 4999997: ['3228'], 4999998: ['3226'], 4999999: ['3224'], 5000000: ['3222']})
+CompletedProcess(args=['chrt', '-p', '3220'], returncode=0, stdout=b"pid 3220's current scheduling policy: SCHED_DEADLINE\npid 3220's current scheduling priority: 0\npid 3220's current runtime/deadline/period parameters: 1000000/5000000/5000000\n", stderr=b'')
+deadlinestringtoks: [' 1000000', '5000000', '5000000']
+process_stream(): process_queue =  deque([('3220', 5000000)])
+clockticks(): elapsedclockticks =  23
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999986: ['3246', '3244'], 4999988: ['3242'], 4999989: ['3240'], 4999991: ['3238'], 4999992: ['3236'], 4999993: ['3234'], 4999994: ['3232'], 4999995: ['3230'], 4999996: ['3228'], 4999997: ['3226'], 4999998: ['3224'], 4999999: ['3222']})
+survival_index_scheduler(): defaultdict(<class 'list'>, {4999986: ['3246', '3244'], 4999988: ['3242'], 4999989: ['3240'], 4999991: ['3238'], 4999992: ['3236'], 4999993: ['3234'], 4999994: ['3232'], 4999995: ['3230'], 4999996: ['3228'], 4999997: ['3226'], 4999998: ['3224'], 4999999: ['3222'], 5000000: ['3220']})
+CompletedProcess(args=['chrt', '-p', '3218'], returncode=0, stdout=b"pid 3218's current scheduling policy: SCHED_DEADLINE\npid 3218's current scheduling priority: 0\npid 3218's current runtime/deadline/period parameters: 1000000/5000000/5000000\n", stderr=b'')
+deadlinestringtoks: [' 1000000', '5000000', '5000000']
+process_stream(): process_queue =  deque([('3218', 5000000)])
+clockticks(): elapsedclockticks =  24
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999985: ['3246', '3244'], 4999987: ['3242'], 4999988: ['3240'], 4999990: ['3238'], 4999991: ['3236'], 4999992: ['3234'], 4999993: ['3232'], 4999994: ['3230'], 4999995: ['3228'], 4999996: ['3226'], 4999997: ['3224'], 4999998: ['3222'], 4999999: ['3220']})
+survival_index_scheduler(): defaultdict(<class 'list'>, {4999985: ['3246', '3244'], 4999987: ['3242'], 4999988: ['3240'], 4999990: ['3238'], 4999991: ['3236'], 4999992: ['3234'], 4999993: ['3232'], 4999994: ['3230'], 4999995: ['3228'], 4999996: ['3226'], 4999997: ['3224'], 4999998: ['3222'], 4999999: ['3220'], 5000000: ['3218']})
+CompletedProcess(args=['chrt', '-p', '3216'], returncode=0, stdout=b"pid 3216's current scheduling policy: SCHED_DEADLINE\npid 3216's current scheduling priority: 0\npid 3216's current runtime/deadline/period parameters: 1000000/5000000/5000000\n", stderr=b'')
+deadlinestringtoks: [' 1000000', '5000000', '5000000']
+process_stream(): process_queue =  deque([('3216', 5000000)])
+clockticks(): elapsedclockticks =  25
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999984: ['3246', '3244'], 4999986: ['3242'], 4999987: ['3240'], 4999989: ['3238'], 4999990: ['3236'], 4999991: ['3234'], 4999992: ['3232'], 4999993: ['3230'], 4999994: ['3228'], 4999995: ['3226'], 4999996: ['3224'], 4999997: ['3222'], 4999998: ['3220'], 4999999: ['3218']})
+survival_index_scheduler(): defaultdict(<class 'list'>, {4999984: ['3246', '3244'], 4999986: ['3242'], 4999987: ['3240'], 4999989: ['3238'], 4999990: ['3236'], 4999991: ['3234'], 4999992: ['3232'], 4999993: ['3230'], 4999994: ['3228'], 4999995: ['3226'], 4999996: ['3224'], 4999997: ['3222'], 4999998: ['3220'], 4999999: ['3218'], 5000000: ['3216']})
+CompletedProcess(args=['chrt', '-p', '3214'], returncode=0, stdout=b"pid 3214's current scheduling policy: SCHED_DEADLINE\npid 3214's current scheduling priority: 0\npid 3214's current runtime/deadline/period parameters: 1000000/5000000/5000000\n", stderr=b'')
+deadlinestringtoks: [' 1000000', '5000000', '5000000']
+process_stream(): process_queue =  deque([('3214', 5000000)])
+clockticks(): elapsedclockticks =  26
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999983: ['3246', '3244'], 4999985: ['3242'], 4999986: ['3240'], 4999988: ['3238'], 4999989: ['3236'], 4999990: ['3234'], 4999991: ['3232'], 4999992: ['3230'], 4999993: ['3228'], 4999994: ['3226'], 4999995: ['3224'], 4999996: ['3222'], 4999997: ['3220'], 4999998: ['3218'], 4999999: ['3216']})
+survival_index_scheduler(): defaultdict(<class 'list'>, {4999983: ['3246', '3244'], 4999985: ['3242'], 4999986: ['3240'], 4999988: ['3238'], 4999989: ['3236'], 4999990: ['3234'], 4999991: ['3232'], 4999992: ['3230'], 4999993: ['3228'], 4999994: ['3226'], 4999995: ['3224'], 4999996: ['3222'], 4999997: ['3220'], 4999998: ['3218'], 4999999: ['3216'], 5000000: ['3214']})
+CompletedProcess(args=['chrt', '-p', '3212'], returncode=0, stdout=b"pid 3212's current scheduling policy: SCHED_DEADLINE\npid 3212's current scheduling priority: 0\npid 3212's current runtime/deadline/period parameters: 1000000/5000000/5000000\n", stderr=b'')
+deadlinestringtoks: [' 1000000', '5000000', '5000000']
+process_stream(): process_queue =  deque([('3212', 5000000)])
+clockticks(): elapsedclockticks =  27
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999982: ['3246', '3244'], 4999984: ['3242'], 4999985: ['3240'], 4999987: ['3238'], 4999988: ['3236'], 4999989: ['3234'], 4999990: ['3232'], 4999991: ['3230'], 4999992: ['3228'], 4999993: ['3226'], 4999994: ['3224'], 4999995: ['3222'], 4999996: ['3220'], 4999997: ['3218'], 4999998: ['3216'], 4999999: ['3214']})
+survival_index_scheduler(): defaultdict(<class 'list'>, {4999982: ['3246', '3244'], 4999984: ['3242'], 4999985: ['3240'], 4999987: ['3238'], 4999988: ['3236'], 4999989: ['3234'], 4999990: ['3232'], 4999991: ['3230'], 4999992: ['3228'], 4999993: ['3226'], 4999994: ['3224'], 4999995: ['3222'], 4999996: ['3220'], 4999997: ['3218'], 4999998: ['3216'], 4999999: ['3214'], 5000000: ['3212']})
+CompletedProcess(args=['chrt', '-p', '3210'], returncode=0, stdout=b"pid 3210's current scheduling policy: SCHED_DEADLINE\npid 3210's current scheduling priority: 0\npid 3210's current runtime/deadline/period parameters: 1000000/5000000/5000000\n", stderr=b'')
+deadlinestringtoks: [' 1000000', '5000000', '5000000']
+process_stream(): process_queue =  deque([('3210', 5000000)])
+clockticks(): elapsedclockticks =  28
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999981: ['3246', '3244'], 4999983: ['3242'], 4999984: ['3240'], 4999986: ['3238'], 4999987: ['3236'], 4999988: ['3234'], 4999989: ['3232'], 4999990: ['3230'], 4999991: ['3228'], 4999992: ['3226'], 4999993: ['3224'], 4999994: ['3222'], 4999995: ['3220'], 4999996: ['3218'], 4999997: ['3216'], 4999998: ['3214'], 4999999: ['3212']})
+process_stream(): process_queue =  deque([('3210', 5000000)])
+survival_index_scheduler(): defaultdict(<class 'list'>, {4999981: ['3246', '3244'], 4999983: ['3242'], 4999984: ['3240'], 4999986: ['3238'], 4999987: ['3236'], 4999988: ['3234'], 4999989: ['3232'], 4999990: ['3230'], 4999991: ['3228'], 4999992: ['3226'], 4999993: ['3224'], 4999994: ['3222'], 4999995: ['3220'], 4999996: ['3218'], 4999997: ['3216'], 4999998: ['3214'], 4999999: ['3212'], 5000000: ['3210']})
+clockticks(): elapsedclockticks =  29
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999980: ['3246', '3244'], 4999982: ['3242'], 4999983: ['3240'], 4999985: ['3238'], 4999986: ['3236'], 4999987: ['3234'], 4999988: ['3232'], 4999989: ['3230'], 4999990: ['3228'], 4999991: ['3226'], 4999992: ['3224'], 4999993: ['3222'], 4999994: ['3220'], 4999995: ['3218'], 4999996: ['3216'], 4999997: ['3214'], 4999998: ['3212'], 4999999: ['3210']})
+process_stream(): process_queue =  deque([])
+IndexError
+clockticks(): elapsedclockticks =  30
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999979: ['3246', '3244'], 4999981: ['3242'], 4999982: ['3240'], 4999984: ['3238'], 4999985: ['3236'], 4999986: ['3234'], 4999987: ['3232'], 4999988: ['3230'], 4999989: ['3228'], 4999990: ['3226'], 4999991: ['3224'], 4999992: ['3222'], 4999993: ['3220'], 4999994: ['3218'], 4999995: ['3216'], 4999996: ['3214'], 4999997: ['3212'], 4999998: ['3210']})
+IndexError
+process_stream(): process_queue =  deque([])
+clockticks(): elapsedclockticks =  31
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999978: ['3246', '3244'], 4999980: ['3242'], 4999981: ['3240'], 4999983: ['3238'], 4999984: ['3236'], 4999985: ['3234'], 4999986: ['3232'], 4999987: ['3230'], 4999988: ['3228'], 4999989: ['3226'], 4999990: ['3224'], 4999991: ['3222'], 4999992: ['3220'], 4999993: ['3218'], 4999994: ['3216'], 4999995: ['3214'], 4999996: ['3212'], 4999997: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  32
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999977: ['3246', '3244'], 4999979: ['3242'], 4999980: ['3240'], 4999982: ['3238'], 4999983: ['3236'], 4999984: ['3234'], 4999985: ['3232'], 4999986: ['3230'], 4999987: ['3228'], 4999988: ['3226'], 4999989: ['3224'], 4999990: ['3222'], 4999991: ['3220'], 4999992: ['3218'], 4999993: ['3216'], 4999994: ['3214'], 4999995: ['3212'], 4999996: ['3210']})
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999976: ['3246', '3244'], 4999978: ['3242'], 4999979: ['3240'], 4999981: ['3238'], 4999982: ['3236'], 4999983: ['3234'], 4999984: ['3232'], 4999985: ['3230'], 4999986: ['3228'], 4999987: ['3226'], 4999988: ['3224'], 4999989: ['3222'], 4999990: ['3220'], 4999991: ['3218'], 4999992: ['3216'], 4999993: ['3214'], 4999994: ['3212'], 4999995: ['3210']})
+clockticks(): elapsedclockticks =  33
+IndexError
+clockticks(): elapsedclockticks =  34
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999975: ['3246', '3244'], 4999977: ['3242'], 4999978: ['3240'], 4999980: ['3238'], 4999981: ['3236'], 4999982: ['3234'], 4999983: ['3232'], 4999984: ['3230'], 4999985: ['3228'], 4999986: ['3226'], 4999987: ['3224'], 4999988: ['3222'], 4999989: ['3220'], 4999990: ['3218'], 4999991: ['3216'], 4999992: ['3214'], 4999993: ['3212'], 4999994: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  35
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999974: ['3246', '3244'], 4999976: ['3242'], 4999977: ['3240'], 4999979: ['3238'], 4999980: ['3236'], 4999981: ['3234'], 4999982: ['3232'], 4999983: ['3230'], 4999984: ['3228'], 4999985: ['3226'], 4999986: ['3224'], 4999987: ['3222'], 4999988: ['3220'], 4999989: ['3218'], 4999990: ['3216'], 4999991: ['3214'], 4999992: ['3212'], 4999993: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  36
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999973: ['3246', '3244'], 4999975: ['3242'], 4999976: ['3240'], 4999978: ['3238'], 4999979: ['3236'], 4999980: ['3234'], 4999981: ['3232'], 4999982: ['3230'], 4999983: ['3228'], 4999984: ['3226'], 4999985: ['3224'], 4999986: ['3222'], 4999987: ['3220'], 4999988: ['3218'], 4999989: ['3216'], 4999990: ['3214'], 4999991: ['3212'], 4999992: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  37
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999972: ['3246', '3244'], 4999974: ['3242'], 4999975: ['3240'], 4999977: ['3238'], 4999978: ['3236'], 4999979: ['3234'], 4999980: ['3232'], 4999981: ['3230'], 4999982: ['3228'], 4999983: ['3226'], 4999984: ['3224'], 4999985: ['3222'], 4999986: ['3220'], 4999987: ['3218'], 4999988: ['3216'], 4999989: ['3214'], 4999990: ['3212'], 4999991: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  38
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999971: ['3246', '3244'], 4999973: ['3242'], 4999974: ['3240'], 4999976: ['3238'], 4999977: ['3236'], 4999978: ['3234'], 4999979: ['3232'], 4999980: ['3230'], 4999981: ['3228'], 4999982: ['3226'], 4999983: ['3224'], 4999984: ['3222'], 4999985: ['3220'], 4999986: ['3218'], 4999987: ['3216'], 4999988: ['3214'], 4999989: ['3212'], 4999990: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  39
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999970: ['3246', '3244'], 4999972: ['3242'], 4999973: ['3240'], 4999975: ['3238'], 4999976: ['3236'], 4999977: ['3234'], 4999978: ['3232'], 4999979: ['3230'], 4999980: ['3228'], 4999981: ['3226'], 4999982: ['3224'], 4999983: ['3222'], 4999984: ['3220'], 4999985: ['3218'], 4999986: ['3216'], 4999987: ['3214'], 4999988: ['3212'], 4999989: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  40
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999969: ['3246', '3244'], 4999971: ['3242'], 4999972: ['3240'], 4999974: ['3238'], 4999975: ['3236'], 4999976: ['3234'], 4999977: ['3232'], 4999978: ['3230'], 4999979: ['3228'], 4999980: ['3226'], 4999981: ['3224'], 4999982: ['3222'], 4999983: ['3220'], 4999984: ['3218'], 4999985: ['3216'], 4999986: ['3214'], 4999987: ['3212'], 4999988: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  41
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999968: ['3246', '3244'], 4999970: ['3242'], 4999971: ['3240'], 4999973: ['3238'], 4999974: ['3236'], 4999975: ['3234'], 4999976: ['3232'], 4999977: ['3230'], 4999978: ['3228'], 4999979: ['3226'], 4999980: ['3224'], 4999981: ['3222'], 4999982: ['3220'], 4999983: ['3218'], 4999984: ['3216'], 4999985: ['3214'], 4999986: ['3212'], 4999987: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  42
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999967: ['3246', '3244'], 4999969: ['3242'], 4999970: ['3240'], 4999972: ['3238'], 4999973: ['3236'], 4999974: ['3234'], 4999975: ['3232'], 4999976: ['3230'], 4999977: ['3228'], 4999978: ['3226'], 4999979: ['3224'], 4999980: ['3222'], 4999981: ['3220'], 4999982: ['3218'], 4999983: ['3216'], 4999984: ['3214'], 4999985: ['3212'], 4999986: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  43
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999966: ['3246', '3244'], 4999968: ['3242'], 4999969: ['3240'], 4999971: ['3238'], 4999972: ['3236'], 4999973: ['3234'], 4999974: ['3232'], 4999975: ['3230'], 4999976: ['3228'], 4999977: ['3226'], 4999978: ['3224'], 4999979: ['3222'], 4999980: ['3220'], 4999981: ['3218'], 4999982: ['3216'], 4999983: ['3214'], 4999984: ['3212'], 4999985: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  44
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999965: ['3246', '3244'], 4999967: ['3242'], 4999968: ['3240'], 4999970: ['3238'], 4999971: ['3236'], 4999972: ['3234'], 4999973: ['3232'], 4999974: ['3230'], 4999975: ['3228'], 4999976: ['3226'], 4999977: ['3224'], 4999978: ['3222'], 4999979: ['3220'], 4999980: ['3218'], 4999981: ['3216'], 4999982: ['3214'], 4999983: ['3212'], 4999984: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  45
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999964: ['3246', '3244'], 4999966: ['3242'], 4999967: ['3240'], 4999969: ['3238'], 4999970: ['3236'], 4999971: ['3234'], 4999972: ['3232'], 4999973: ['3230'], 4999974: ['3228'], 4999975: ['3226'], 4999976: ['3224'], 4999977: ['3222'], 4999978: ['3220'], 4999979: ['3218'], 4999980: ['3216'], 4999981: ['3214'], 4999982: ['3212'], 4999983: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  46
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999963: ['3246', '3244'], 4999965: ['3242'], 4999966: ['3240'], 4999968: ['3238'], 4999969: ['3236'], 4999970: ['3234'], 4999971: ['3232'], 4999972: ['3230'], 4999973: ['3228'], 4999974: ['3226'], 4999975: ['3224'], 4999976: ['3222'], 4999977: ['3220'], 4999978: ['3218'], 4999979: ['3216'], 4999980: ['3214'], 4999981: ['3212'], 4999982: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  47
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999962: ['3246', '3244'], 4999964: ['3242'], 4999965: ['3240'], 4999967: ['3238'], 4999968: ['3236'], 4999969: ['3234'], 4999970: ['3232'], 4999971: ['3230'], 4999972: ['3228'], 4999973: ['3226'], 4999974: ['3224'], 4999975: ['3222'], 4999976: ['3220'], 4999977: ['3218'], 4999978: ['3216'], 4999979: ['3214'], 4999980: ['3212'], 4999981: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  48
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999961: ['3246', '3244'], 4999963: ['3242'], 4999964: ['3240'], 4999966: ['3238'], 4999967: ['3236'], 4999968: ['3234'], 4999969: ['3232'], 4999970: ['3230'], 4999971: ['3228'], 4999972: ['3226'], 4999973: ['3224'], 4999974: ['3222'], 4999975: ['3220'], 4999976: ['3218'], 4999977: ['3216'], 4999978: ['3214'], 4999979: ['3212'], 4999980: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  49
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999960: ['3246', '3244'], 4999962: ['3242'], 4999963: ['3240'], 4999965: ['3238'], 4999966: ['3236'], 4999967: ['3234'], 4999968: ['3232'], 4999969: ['3230'], 4999970: ['3228'], 4999971: ['3226'], 4999972: ['3224'], 4999973: ['3222'], 4999974: ['3220'], 4999975: ['3218'], 4999976: ['3216'], 4999977: ['3214'], 4999978: ['3212'], 4999979: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  50
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999959: ['3246', '3244'], 4999961: ['3242'], 4999962: ['3240'], 4999964: ['3238'], 4999965: ['3236'], 4999966: ['3234'], 4999967: ['3232'], 4999968: ['3230'], 4999969: ['3228'], 4999970: ['3226'], 4999971: ['3224'], 4999972: ['3222'], 4999973: ['3220'], 4999974: ['3218'], 4999975: ['3216'], 4999976: ['3214'], 4999977: ['3212'], 4999978: ['3210']})
+clockticks(): elapsedclockticks =  51
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999958: ['3246', '3244'], 4999960: ['3242'], 4999961: ['3240'], 4999963: ['3238'], 4999964: ['3236'], 4999965: ['3234'], 4999966: ['3232'], 4999967: ['3230'], 4999968: ['3228'], 4999969: ['3226'], 4999970: ['3224'], 4999971: ['3222'], 4999972: ['3220'], 4999973: ['3218'], 4999974: ['3216'], 4999975: ['3214'], 4999976: ['3212'], 4999977: ['3210']})
+IndexError
+IndexError
+clockticks(): elapsedclockticks =  52
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999957: ['3246', '3244'], 4999959: ['3242'], 4999960: ['3240'], 4999962: ['3238'], 4999963: ['3236'], 4999964: ['3234'], 4999965: ['3232'], 4999966: ['3230'], 4999967: ['3228'], 4999968: ['3226'], 4999969: ['3224'], 4999970: ['3222'], 4999971: ['3220'], 4999972: ['3218'], 4999973: ['3216'], 4999974: ['3214'], 4999975: ['3212'], 4999976: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  53
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999956: ['3246', '3244'], 4999958: ['3242'], 4999959: ['3240'], 4999961: ['3238'], 4999962: ['3236'], 4999963: ['3234'], 4999964: ['3232'], 4999965: ['3230'], 4999966: ['3228'], 4999967: ['3226'], 4999968: ['3224'], 4999969: ['3222'], 4999970: ['3220'], 4999971: ['3218'], 4999972: ['3216'], 4999973: ['3214'], 4999974: ['3212'], 4999975: ['3210']})
+clockticks(): elapsedclockticks =  54
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999955: ['3246', '3244'], 4999957: ['3242'], 4999958: ['3240'], 4999960: ['3238'], 4999961: ['3236'], 4999962: ['3234'], 4999963: ['3232'], 4999964: ['3230'], 4999965: ['3228'], 4999966: ['3226'], 4999967: ['3224'], 4999968: ['3222'], 4999969: ['3220'], 4999970: ['3218'], 4999971: ['3216'], 4999972: ['3214'], 4999973: ['3212'], 4999974: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  55
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999954: ['3246', '3244'], 4999956: ['3242'], 4999957: ['3240'], 4999959: ['3238'], 4999960: ['3236'], 4999961: ['3234'], 4999962: ['3232'], 4999963: ['3230'], 4999964: ['3228'], 4999965: ['3226'], 4999966: ['3224'], 4999967: ['3222'], 4999968: ['3220'], 4999969: ['3218'], 4999970: ['3216'], 4999971: ['3214'], 4999972: ['3212'], 4999973: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  56
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999953: ['3246', '3244'], 4999955: ['3242'], 4999956: ['3240'], 4999958: ['3238'], 4999959: ['3236'], 4999960: ['3234'], 4999961: ['3232'], 4999962: ['3230'], 4999963: ['3228'], 4999964: ['3226'], 4999965: ['3224'], 4999966: ['3222'], 4999967: ['3220'], 4999968: ['3218'], 4999969: ['3216'], 4999970: ['3214'], 4999971: ['3212'], 4999972: ['3210']})
+clockticks(): elapsedclockticks =  57
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999952: ['3246', '3244'], 4999954: ['3242'], 4999955: ['3240'], 4999957: ['3238'], 4999958: ['3236'], 4999959: ['3234'], 4999960: ['3232'], 4999961: ['3230'], 4999962: ['3228'], 4999963: ['3226'], 4999964: ['3224'], 4999965: ['3222'], 4999966: ['3220'], 4999967: ['3218'], 4999968: ['3216'], 4999969: ['3214'], 4999970: ['3212'], 4999971: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  58
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999951: ['3246', '3244'], 4999953: ['3242'], 4999954: ['3240'], 4999956: ['3238'], 4999957: ['3236'], 4999958: ['3234'], 4999959: ['3232'], 4999960: ['3230'], 4999961: ['3228'], 4999962: ['3226'], 4999963: ['3224'], 4999964: ['3222'], 4999965: ['3220'], 4999966: ['3218'], 4999967: ['3216'], 4999968: ['3214'], 4999969: ['3212'], 4999970: ['3210']})
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999950: ['3246', '3244'], 4999952: ['3242'], 4999953: ['3240'], 4999955: ['3238'], 4999956: ['3236'], 4999957: ['3234'], 4999958: ['3232'], 4999959: ['3230'], 4999960: ['3228'], 4999961: ['3226'], 4999962: ['3224'], 4999963: ['3222'], 4999964: ['3220'], 4999965: ['3218'], 4999966: ['3216'], 4999967: ['3214'], 4999968: ['3212'], 4999969: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  59
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999949: ['3246', '3244'], 4999951: ['3242'], 4999952: ['3240'], 4999954: ['3238'], 4999955: ['3236'], 4999956: ['3234'], 4999957: ['3232'], 4999958: ['3230'], 4999959: ['3228'], 4999960: ['3226'], 4999961: ['3224'], 4999962: ['3222'], 4999963: ['3220'], 4999964: ['3218'], 4999965: ['3216'], 4999966: ['3214'], 4999967: ['3212'], 4999968: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  60
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999948: ['3246', '3244'], 4999950: ['3242'], 4999951: ['3240'], 4999953: ['3238'], 4999954: ['3236'], 4999955: ['3234'], 4999956: ['3232'], 4999957: ['3230'], 4999958: ['3228'], 4999959: ['3226'], 4999960: ['3224'], 4999961: ['3222'], 4999962: ['3220'], 4999963: ['3218'], 4999964: ['3216'], 4999965: ['3214'], 4999966: ['3212'], 4999967: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  61
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999947: ['3246', '3244'], 4999949: ['3242'], 4999950: ['3240'], 4999952: ['3238'], 4999953: ['3236'], 4999954: ['3234'], 4999955: ['3232'], 4999956: ['3230'], 4999957: ['3228'], 4999958: ['3226'], 4999959: ['3224'], 4999960: ['3222'], 4999961: ['3220'], 4999962: ['3218'], 4999963: ['3216'], 4999964: ['3214'], 4999965: ['3212'], 4999966: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  62
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999946: ['3246', '3244'], 4999948: ['3242'], 4999949: ['3240'], 4999951: ['3238'], 4999952: ['3236'], 4999953: ['3234'], 4999954: ['3232'], 4999955: ['3230'], 4999956: ['3228'], 4999957: ['3226'], 4999958: ['3224'], 4999959: ['3222'], 4999960: ['3220'], 4999961: ['3218'], 4999962: ['3216'], 4999963: ['3214'], 4999964: ['3212'], 4999965: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  63
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999945: ['3246', '3244'], 4999947: ['3242'], 4999948: ['3240'], 4999950: ['3238'], 4999951: ['3236'], 4999952: ['3234'], 4999953: ['3232'], 4999954: ['3230'], 4999955: ['3228'], 4999956: ['3226'], 4999957: ['3224'], 4999958: ['3222'], 4999959: ['3220'], 4999960: ['3218'], 4999961: ['3216'], 4999962: ['3214'], 4999963: ['3212'], 4999964: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  64
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999944: ['3246', '3244'], 4999946: ['3242'], 4999947: ['3240'], 4999949: ['3238'], 4999950: ['3236'], 4999951: ['3234'], 4999952: ['3232'], 4999953: ['3230'], 4999954: ['3228'], 4999955: ['3226'], 4999956: ['3224'], 4999957: ['3222'], 4999958: ['3220'], 4999959: ['3218'], 4999960: ['3216'], 4999961: ['3214'], 4999962: ['3212'], 4999963: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  65
+clockticks(): elapsedclockticks =  66
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999943: ['3246', '3244'], 4999945: ['3242'], 4999946: ['3240'], 4999948: ['3238'], 4999949: ['3236'], 4999950: ['3234'], 4999951: ['3232'], 4999952: ['3230'], 4999953: ['3228'], 4999954: ['3226'], 4999955: ['3224'], 4999956: ['3222'], 4999957: ['3220'], 4999958: ['3218'], 4999959: ['3216'], 4999960: ['3214'], 4999961: ['3212'], 4999962: ['3210']})
+clockticks(): elapsedclockticks =  67
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999942: ['3246', '3244'], 4999944: ['3242'], 4999945: ['3240'], 4999947: ['3238'], 4999948: ['3236'], 4999949: ['3234'], 4999950: ['3232'], 4999951: ['3230'], 4999952: ['3228'], 4999953: ['3226'], 4999954: ['3224'], 4999955: ['3222'], 4999956: ['3220'], 4999957: ['3218'], 4999958: ['3216'], 4999959: ['3214'], 4999960: ['3212'], 4999961: ['3210']})
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999941: ['3246', '3244'], 4999943: ['3242'], 4999944: ['3240'], 4999946: ['3238'], 4999947: ['3236'], 4999948: ['3234'], 4999949: ['3232'], 4999950: ['3230'], 4999951: ['3228'], 4999952: ['3226'], 4999953: ['3224'], 4999954: ['3222'], 4999955: ['3220'], 4999956: ['3218'], 4999957: ['3216'], 4999958: ['3214'], 4999959: ['3212'], 4999960: ['3210']})
+clockticks(): elapsedclockticks =  68
+IndexError
+clockticks(): elapsedclockticks =  69
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999940: ['3246', '3244'], 4999942: ['3242'], 4999943: ['3240'], 4999945: ['3238'], 4999946: ['3236'], 4999947: ['3234'], 4999948: ['3232'], 4999949: ['3230'], 4999950: ['3228'], 4999951: ['3226'], 4999952: ['3224'], 4999953: ['3222'], 4999954: ['3220'], 4999955: ['3218'], 4999956: ['3216'], 4999957: ['3214'], 4999958: ['3212'], 4999959: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  70
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999939: ['3246', '3244'], 4999941: ['3242'], 4999942: ['3240'], 4999944: ['3238'], 4999945: ['3236'], 4999946: ['3234'], 4999947: ['3232'], 4999948: ['3230'], 4999949: ['3228'], 4999950: ['3226'], 4999951: ['3224'], 4999952: ['3222'], 4999953: ['3220'], 4999954: ['3218'], 4999955: ['3216'], 4999956: ['3214'], 4999957: ['3212'], 4999958: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  71
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999938: ['3246', '3244'], 4999940: ['3242'], 4999941: ['3240'], 4999943: ['3238'], 4999944: ['3236'], 4999945: ['3234'], 4999946: ['3232'], 4999947: ['3230'], 4999948: ['3228'], 4999949: ['3226'], 4999950: ['3224'], 4999951: ['3222'], 4999952: ['3220'], 4999953: ['3218'], 4999954: ['3216'], 4999955: ['3214'], 4999956: ['3212'], 4999957: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  72
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999937: ['3246', '3244'], 4999939: ['3242'], 4999940: ['3240'], 4999942: ['3238'], 4999943: ['3236'], 4999944: ['3234'], 4999945: ['3232'], 4999946: ['3230'], 4999947: ['3228'], 4999948: ['3226'], 4999949: ['3224'], 4999950: ['3222'], 4999951: ['3220'], 4999952: ['3218'], 4999953: ['3216'], 4999954: ['3214'], 4999955: ['3212'], 4999956: ['3210']})
+IndexError
+IndexError
+clockticks(): elapsedclockticks =  73
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999936: ['3246', '3244'], 4999938: ['3242'], 4999939: ['3240'], 4999941: ['3238'], 4999942: ['3236'], 4999943: ['3234'], 4999944: ['3232'], 4999945: ['3230'], 4999946: ['3228'], 4999947: ['3226'], 4999948: ['3224'], 4999949: ['3222'], 4999950: ['3220'], 4999951: ['3218'], 4999952: ['3216'], 4999953: ['3214'], 4999954: ['3212'], 4999955: ['3210']})
+clockticks(): elapsedclockticks =  74
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999935: ['3246', '3244'], 4999937: ['3242'], 4999938: ['3240'], 4999940: ['3238'], 4999941: ['3236'], 4999942: ['3234'], 4999943: ['3232'], 4999944: ['3230'], 4999945: ['3228'], 4999946: ['3226'], 4999947: ['3224'], 4999948: ['3222'], 4999949: ['3220'], 4999950: ['3218'], 4999951: ['3216'], 4999952: ['3214'], 4999953: ['3212'], 4999954: ['3210']})
+IndexError
+countdown_keys(): dynamic_hashmap_dict =             defaultdict(<class 'list'>, {4999934: ['3246', '3244'], 4999936: ['3242'], 4999937: ['3240'], 4999939: ['3238'], 4999940: ['3236'], 4999941: ['3234'], 4999942: ['3232'], 4999943: ['3230'], 4999944: ['3228'], 4999945: ['3226'], 4999946: ['3224'], 4999947: ['3222'], 4999948: ['3220'], 4999949: ['3218'], 4999950: ['3216'], 4999951: ['3214'], 4999952: ['3212'], 4999953: ['3210']})
+clockticks(): elapsedclockticks =  76
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999933: ['3246', '3244'], 4999935: ['3242'], 4999936: ['3240'], 4999938: ['3238'], 4999939: ['3236'], 4999940: ['3234'], 4999941: ['3232'], 4999942: ['3230'], 4999943: ['3228'], 4999944: ['3226'], 4999945: ['3224'], 4999946: ['3222'], 4999947: ['3220'], 4999948: ['3218'], 4999949: ['3216'], 4999950: ['3214'], 4999951: ['3212'], 4999952: ['3210']})
+clockticks(): elapsedclockticks =  77
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999932: ['3246', '3244'], 4999934: ['3242'], 4999935: ['3240'], 4999937: ['3238'], 4999938: ['3236'], 4999939: ['3234'], 4999940: ['3232'], 4999941: ['3230'], 4999942: ['3228'], 4999943: ['3226'], 4999944: ['3224'], 4999945: ['3222'], 4999946: ['3220'], 4999947: ['3218'], 4999948: ['3216'], 4999949: ['3214'], 4999950: ['3212'], 4999951: ['3210']})
+clockticks(): elapsedclockticks =  78
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999931: ['3246', '3244'], 4999933: ['3242'], 4999934: ['3240'], 4999936: ['3238'], 4999937: ['3236'], 4999938: ['3234'], 4999939: ['3232'], 4999940: ['3230'], 4999941: ['3228'], 4999942: ['3226'], 4999943: ['3224'], 4999944: ['3222'], 4999945: ['3220'], 4999946: ['3218'], 4999947: ['3216'], 4999948: ['3214'], 4999949: ['3212'], 4999950: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  79
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999930: ['3246', '3244'], 4999932: ['3242'], 4999933: ['3240'], 4999935: ['3238'], 4999936: ['3236'], 4999937: ['3234'], 4999938: ['3232'], 4999939: ['3230'], 4999940: ['3228'], 4999941: ['3226'], 4999942: ['3224'], 4999943: ['3222'], 4999944: ['3220'], 4999945: ['3218'], 4999946: ['3216'], 4999947: ['3214'], 4999948: ['3212'], 4999949: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  80
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999929: ['3246', '3244'], 4999931: ['3242'], 4999932: ['3240'], 4999934: ['3238'], 4999935: ['3236'], 4999936: ['3234'], 4999937: ['3232'], 4999938: ['3230'], 4999939: ['3228'], 4999940: ['3226'], 4999941: ['3224'], 4999942: ['3222'], 4999943: ['3220'], 4999944: ['3218'], 4999945: ['3216'], 4999946: ['3214'], 4999947: ['3212'], 4999948: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  81
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999928: ['3246', '3244'], 4999930: ['3242'], 4999931: ['3240'], 4999933: ['3238'], 4999934: ['3236'], 4999935: ['3234'], 4999936: ['3232'], 4999937: ['3230'], 4999938: ['3228'], 4999939: ['3226'], 4999940: ['3224'], 4999941: ['3222'], 4999942: ['3220'], 4999943: ['3218'], 4999944: ['3216'], 4999945: ['3214'], 4999946: ['3212'], 4999947: ['3210']})
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999927: ['3246', '3244'], 4999929: ['3242'], 4999930: ['3240'], 4999932: ['3238'], 4999933: ['3236'], 4999934: ['3234'], 4999935: ['3232'], 4999936: ['3230'], 4999937: ['3228'], 4999938: ['3226'], 4999939: ['3224'], 4999940: ['3222'], 4999941: ['3220'], 4999942: ['3218'], 4999943: ['3216'], 4999944: ['3214'], 4999945: ['3212'], 4999946: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  82
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999926: ['3246', '3244'], 4999928: ['3242'], 4999929: ['3240'], 4999931: ['3238'], 4999932: ['3236'], 4999933: ['3234'], 4999934: ['3232'], 4999935: ['3230'], 4999936: ['3228'], 4999937: ['3226'], 4999938: ['3224'], 4999939: ['3222'], 4999940: ['3220'], 4999941: ['3218'], 4999942: ['3216'], 4999943: ['3214'], 4999944: ['3212'], 4999945: ['3210']})
+clockticks(): elapsedclockticks =  83
+IndexError
+clockticks(): elapsedclockticks =  84
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999925: ['3246', '3244'], 4999927: ['3242'], 4999928: ['3240'], 4999930: ['3238'], 4999931: ['3236'], 4999932: ['3234'], 4999933: ['3232'], 4999934: ['3230'], 4999935: ['3228'], 4999936: ['3226'], 4999937: ['3224'], 4999938: ['3222'], 4999939: ['3220'], 4999940: ['3218'], 4999941: ['3216'], 4999942: ['3214'], 4999943: ['3212'], 4999944: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  85
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999924: ['3246', '3244'], 4999926: ['3242'], 4999927: ['3240'], 4999929: ['3238'], 4999930: ['3236'], 4999931: ['3234'], 4999932: ['3232'], 4999933: ['3230'], 4999934: ['3228'], 4999935: ['3226'], 4999936: ['3224'], 4999937: ['3222'], 4999938: ['3220'], 4999939: ['3218'], 4999940: ['3216'], 4999941: ['3214'], 4999942: ['3212'], 4999943: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  86
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999923: ['3246', '3244'], 4999925: ['3242'], 4999926: ['3240'], 4999928: ['3238'], 4999929: ['3236'], 4999930: ['3234'], 4999931: ['3232'], 4999932: ['3230'], 4999933: ['3228'], 4999934: ['3226'], 4999935: ['3224'], 4999936: ['3222'], 4999937: ['3220'], 4999938: ['3218'], 4999939: ['3216'], 4999940: ['3214'], 4999941: ['3212'], 4999942: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  87
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999922: ['3246', '3244'], 4999924: ['3242'], 4999925: ['3240'], 4999927: ['3238'], 4999928: ['3236'], 4999929: ['3234'], 4999930: ['3232'], 4999931: ['3230'], 4999932: ['3228'], 4999933: ['3226'], 4999934: ['3224'], 4999935: ['3222'], 4999936: ['3220'], 4999937: ['3218'], 4999938: ['3216'], 4999939: ['3214'], 4999940: ['3212'], 4999941: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  88
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999921: ['3246', '3244'], 4999923: ['3242'], 4999924: ['3240'], 4999926: ['3238'], 4999927: ['3236'], 4999928: ['3234'], 4999929: ['3232'], 4999930: ['3230'], 4999931: ['3228'], 4999932: ['3226'], 4999933: ['3224'], 4999934: ['3222'], 4999935: ['3220'], 4999936: ['3218'], 4999937: ['3216'], 4999938: ['3214'], 4999939: ['3212'], 4999940: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  89
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999920: ['3246', '3244'], 4999922: ['3242'], 4999923: ['3240'], 4999925: ['3238'], 4999926: ['3236'], 4999927: ['3234'], 4999928: ['3232'], 4999929: ['3230'], 4999930: ['3228'], 4999931: ['3226'], 4999932: ['3224'], 4999933: ['3222'], 4999934: ['3220'], 4999935: ['3218'], 4999936: ['3216'], 4999937: ['3214'], 4999938: ['3212'], 4999939: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  90
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999919: ['3246', '3244'], 4999921: ['3242'], 4999922: ['3240'], 4999924: ['3238'], 4999925: ['3236'], 4999926: ['3234'], 4999927: ['3232'], 4999928: ['3230'], 4999929: ['3228'], 4999930: ['3226'], 4999931: ['3224'], 4999932: ['3222'], 4999933: ['3220'], 4999934: ['3218'], 4999935: ['3216'], 4999936: ['3214'], 4999937: ['3212'], 4999938: ['3210']})
+IndexError
+IndexError
+clockticks(): elapsedclockticks =  91
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999918: ['3246', '3244'], 4999920: ['3242'], 4999921: ['3240'], 4999923: ['3238'], 4999924: ['3236'], 4999925: ['3234'], 4999926: ['3232'], 4999927: ['3230'], 4999928: ['3228'], 4999929: ['3226'], 4999930: ['3224'], 4999931: ['3222'], 4999932: ['3220'], 4999933: ['3218'], 4999934: ['3216'], 4999935: ['3214'], 4999936: ['3212'], 4999937: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  92
+countdown_keys(): dynamic_hashmap_dict =                                                   defaultdict(<class 'list'>, {4999917: ['3246', '3244'], 4999919: ['3242'], 4999920: ['3240'], 4999922: ['3238'], 4999923: ['3236'], 4999924: ['3234'], 4999925: ['3232'], 4999926: ['3230'], 4999927: ['3228'], 4999928: ['3226'], 4999929: ['3224'], 4999930: ['3222'], 4999931: ['3220'], 4999932: ['3218'], 4999933: ['3216'], 4999934: ['3214'], 4999935: ['3212'], 4999936: ['3210']})
+clockticks(): elapsedclockticks =  93
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999916: ['3246', '3244'], 4999918: ['3242'], 4999919: ['3240'], 4999921: ['3238'], 4999922: ['3236'], 4999923: ['3234'], 4999924: ['3232'], 4999925: ['3230'], 4999926: ['3228'], 4999927: ['3226'], 4999928: ['3224'], 4999929: ['3222'], 4999930: ['3220'], 4999931: ['3218'], 4999932: ['3216'], 4999933: ['3214'], 4999934: ['3212'], 4999935: ['3210']})
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999915: ['3246', '3244'], 4999917: ['3242'], 4999918: ['3240'], 4999920: ['3238'], 4999921: ['3236'], 4999922: ['3234'], 4999923: ['3232'], 4999924: ['3230'], 4999925: ['3228'], 4999926: ['3226'], 4999927: ['3224'], 4999928: ['3222'], 4999929: ['3220'], 4999930: ['3218'], 4999931: ['3216'], 4999932: ['3214'], 4999933: ['3212'], 4999934: ['3210']})
+clockticks(): elapsedclockticks =  94
+IndexError
+clockticks(): elapsedclockticks =  95
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999914: ['3246', '3244'], 4999916: ['3242'], 4999917: ['3240'], 4999919: ['3238'], 4999920: ['3236'], 4999921: ['3234'], 4999922: ['3232'], 4999923: ['3230'], 4999924: ['3228'], 4999925: ['3226'], 4999926: ['3224'], 4999927: ['3222'], 4999928: ['3220'], 4999929: ['3218'], 4999930: ['3216'], 4999931: ['3214'], 4999932: ['3212'], 4999933: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  96
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999913: ['3246', '3244'], 4999915: ['3242'], 4999916: ['3240'], 4999918: ['3238'], 4999919: ['3236'], 4999920: ['3234'], 4999921: ['3232'], 4999922: ['3230'], 4999923: ['3228'], 4999924: ['3226'], 4999925: ['3224'], 4999926: ['3222'], 4999927: ['3220'], 4999928: ['3218'], 4999929: ['3216'], 4999930: ['3214'], 4999931: ['3212'], 4999932: ['3210']})
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999912: ['3246', '3244'], 4999914: ['3242'], 4999915: ['3240'], 4999917: ['3238'], 4999918: ['3236'], 4999919: ['3234'], 4999920: ['3232'], 4999921: ['3230'], 4999922: ['3228'], 4999923: ['3226'], 4999924: ['3224'], 4999925: ['3222'], 4999926: ['3220'], 4999927: ['3218'], 4999928: ['3216'], 4999929: ['3214'], 4999930: ['3212'], 4999931: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  97
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999911: ['3246', '3244'], 4999913: ['3242'], 4999914: ['3240'], 4999916: ['3238'], 4999917: ['3236'], 4999918: ['3234'], 4999919: ['3232'], 4999920: ['3230'], 4999921: ['3228'], 4999922: ['3226'], 4999923: ['3224'], 4999924: ['3222'], 4999925: ['3220'], 4999926: ['3218'], 4999927: ['3216'], 4999928: ['3214'], 4999929: ['3212'], 4999930: ['3210']})
+clockticks(): elapsedclockticks =  98
+IndexError
+clockticks(): elapsedclockticks =  99
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999910: ['3246', '3244'], 4999912: ['3242'], 4999913: ['3240'], 4999915: ['3238'], 4999916: ['3236'], 4999917: ['3234'], 4999918: ['3232'], 4999919: ['3230'], 4999920: ['3228'], 4999921: ['3226'], 4999922: ['3224'], 4999923: ['3222'], 4999924: ['3220'], 4999925: ['3218'], 4999926: ['3216'], 4999927: ['3214'], 4999928: ['3212'], 4999929: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  100
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999909: ['3246', '3244'], 4999911: ['3242'], 4999912: ['3240'], 4999914: ['3238'], 4999915: ['3236'], 4999916: ['3234'], 4999917: ['3232'], 4999918: ['3230'], 4999919: ['3228'], 4999920: ['3226'], 4999921: ['3224'], 4999922: ['3222'], 4999923: ['3220'], 4999924: ['3218'], 4999925: ['3216'], 4999926: ['3214'], 4999927: ['3212'], 4999928: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  101
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999908: ['3246', '3244'], 4999910: ['3242'], 4999911: ['3240'], 4999913: ['3238'], 4999914: ['3236'], 4999915: ['3234'], 4999916: ['3232'], 4999917: ['3230'], 4999918: ['3228'], 4999919: ['3226'], 4999920: ['3224'], 4999921: ['3222'], 4999922: ['3220'], 4999923: ['3218'], 4999924: ['3216'], 4999925: ['3214'], 4999926: ['3212'], 4999927: ['3210']})
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999907: ['3246', '3244'], 4999909: ['3242'], 4999910: ['3240'], 4999912: ['3238'], 4999913: ['3236'], 4999914: ['3234'], 4999915: ['3232'], 4999916: ['3230'], 4999917: ['3228'], 4999918: ['3226'], 4999919: ['3224'], 4999920: ['3222'], 4999921: ['3220'], 4999922: ['3218'], 4999923: ['3216'], 4999924: ['3214'], 4999925: ['3212'], 4999926: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  102
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999906: ['3246', '3244'], 4999908: ['3242'], 4999909: ['3240'], 4999911: ['3238'], 4999912: ['3236'], 4999913: ['3234'], 4999914: ['3232'], 4999915: ['3230'], 4999916: ['3228'], 4999917: ['3226'], 4999918: ['3224'], 4999919: ['3222'], 4999920: ['3220'], 4999921: ['3218'], 4999922: ['3216'], 4999923: ['3214'], 4999924: ['3212'], 4999925: ['3210']})
+clockticks(): elapsedclockticks =  103
+IndexError
+clockticks(): elapsedclockticks =  104
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999905: ['3246', '3244'], 4999907: ['3242'], 4999908: ['3240'], 4999910: ['3238'], 4999911: ['3236'], 4999912: ['3234'], 4999913: ['3232'], 4999914: ['3230'], 4999915: ['3228'], 4999916: ['3226'], 4999917: ['3224'], 4999918: ['3222'], 4999919: ['3220'], 4999920: ['3218'], 4999921: ['3216'], 4999922: ['3214'], 4999923: ['3212'], 4999924: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  105
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999904: ['3246', '3244'], 4999906: ['3242'], 4999907: ['3240'], 4999909: ['3238'], 4999910: ['3236'], 4999911: ['3234'], 4999912: ['3232'], 4999913: ['3230'], 4999914: ['3228'], 4999915: ['3226'], 4999916: ['3224'], 4999917: ['3222'], 4999918: ['3220'], 4999919: ['3218'], 4999920: ['3216'], 4999921: ['3214'], 4999922: ['3212'], 4999923: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  106
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999903: ['3246', '3244'], 4999905: ['3242'], 4999906: ['3240'], 4999908: ['3238'], 4999909: ['3236'], 4999910: ['3234'], 4999911: ['3232'], 4999912: ['3230'], 4999913: ['3228'], 4999914: ['3226'], 4999915: ['3224'], 4999916: ['3222'], 4999917: ['3220'], 4999918: ['3218'], 4999919: ['3216'], 4999920: ['3214'], 4999921: ['3212'], 4999922: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  107
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999902: ['3246', '3244'], 4999904: ['3242'], 4999905: ['3240'], 4999907: ['3238'], 4999908: ['3236'], 4999909: ['3234'], 4999910: ['3232'], 4999911: ['3230'], 4999912: ['3228'], 4999913: ['3226'], 4999914: ['3224'], 4999915: ['3222'], 4999916: ['3220'], 4999917: ['3218'], 4999918: ['3216'], 4999919: ['3214'], 4999920: ['3212'], 4999921: ['3210']})
+IndexError
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999901: ['3246', '3244'], 4999903: ['3242'], 4999904: ['3240'], 4999906: ['3238'], 4999907: ['3236'], 4999908: ['3234'], 4999909: ['3232'], 4999910: ['3230'], 4999911: ['3228'], 4999912: ['3226'], 4999913: ['3224'], 4999914: ['3222'], 4999915: ['3220'], 4999916: ['3218'], 4999917: ['3216'], 4999918: ['3214'], 4999919: ['3212'], 4999920: ['3210']})
+clockticks(): elapsedclockticks =  108
+clockticks(): elapsedclockticks =  109
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999900: ['3246', '3244'], 4999902: ['3242'], 4999903: ['3240'], 4999905: ['3238'], 4999906: ['3236'], 4999907: ['3234'], 4999908: ['3232'], 4999909: ['3230'], 4999910: ['3228'], 4999911: ['3226'], 4999912: ['3224'], 4999913: ['3222'], 4999914: ['3220'], 4999915: ['3218'], 4999916: ['3216'], 4999917: ['3214'], 4999918: ['3212'], 4999919: ['3210']})
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999899: ['3246', '3244'], 4999901: ['3242'], 4999902: ['3240'], 4999904: ['3238'], 4999905: ['3236'], 4999906: ['3234'], 4999907: ['3232'], 4999908: ['3230'], 4999909: ['3228'], 4999910: ['3226'], 4999911: ['3224'], 4999912: ['3222'], 4999913: ['3220'], 4999914: ['3218'], 4999915: ['3216'], 4999916: ['3214'], 4999917: ['3212'], 4999918: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  110
+clockticks(): elapsedclockticks =  111
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999898: ['3246', '3244'], 4999900: ['3242'], 4999901: ['3240'], 4999903: ['3238'], 4999904: ['3236'], 4999905: ['3234'], 4999906: ['3232'], 4999907: ['3230'], 4999908: ['3228'], 4999909: ['3226'], 4999910: ['3224'], 4999911: ['3222'], 4999912: ['3220'], 4999913: ['3218'], 4999914: ['3216'], 4999915: ['3214'], 4999916: ['3212'], 4999917: ['3210']})
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999897: ['3246', '3244'], 4999899: ['3242'], 4999900: ['3240'], 4999902: ['3238'], 4999903: ['3236'], 4999904: ['3234'], 4999905: ['3232'], 4999906: ['3230'], 4999907: ['3228'], 4999908: ['3226'], 4999909: ['3224'], 4999910: ['3222'], 4999911: ['3220'], 4999912: ['3218'], 4999913: ['3216'], 4999914: ['3214'], 4999915: ['3212'], 4999916: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  112
+clockticks(): elapsedclockticks =  113
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999896: ['3246', '3244'], 4999898: ['3242'], 4999899: ['3240'], 4999901: ['3238'], 4999902: ['3236'], 4999903: ['3234'], 4999904: ['3232'], 4999905: ['3230'], 4999906: ['3228'], 4999907: ['3226'], 4999908: ['3224'], 4999909: ['3222'], 4999910: ['3220'], 4999911: ['3218'], 4999912: ['3216'], 4999913: ['3214'], 4999914: ['3212'], 4999915: ['3210']})
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999895: ['3246', '3244'], 4999897: ['3242'], 4999898: ['3240'], 4999900: ['3238'], 4999901: ['3236'], 4999902: ['3234'], 4999903: ['3232'], 4999904: ['3230'], 4999905: ['3228'], 4999906: ['3226'], 4999907: ['3224'], 4999908: ['3222'], 4999909: ['3220'], 4999910: ['3218'], 4999911: ['3216'], 4999912: ['3214'], 4999913: ['3212'], 4999914: ['3210']})
+clockticks(): elapsedclockticks =  114
+IndexError
+IndexError
+clockticks(): elapsedclockticks =  115
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999894: ['3246', '3244'], 4999896: ['3242'], 4999897: ['3240'], 4999899: ['3238'], 4999900: ['3236'], 4999901: ['3234'], 4999902: ['3232'], 4999903: ['3230'], 4999904: ['3228'], 4999905: ['3226'], 4999906: ['3224'], 4999907: ['3222'], 4999908: ['3220'], 4999909: ['3218'], 4999910: ['3216'], 4999911: ['3214'], 4999912: ['3212'], 4999913: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  116
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999893: ['3246', '3244'], 4999895: ['3242'], 4999896: ['3240'], 4999898: ['3238'], 4999899: ['3236'], 4999900: ['3234'], 4999901: ['3232'], 4999902: ['3230'], 4999903: ['3228'], 4999904: ['3226'], 4999905: ['3224'], 4999906: ['3222'], 4999907: ['3220'], 4999908: ['3218'], 4999909: ['3216'], 4999910: ['3214'], 4999911: ['3212'], 4999912: ['3210']})
+clockticks(): elapsedclockticks =  117
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999892: ['3246', '3244'], 4999894: ['3242'], 4999895: ['3240'], 4999897: ['3238'], 4999898: ['3236'], 4999899: ['3234'], 4999900: ['3232'], 4999901: ['3230'], 4999902: ['3228'], 4999903: ['3226'], 4999904: ['3224'], 4999905: ['3222'], 4999906: ['3220'], 4999907: ['3218'], 4999908: ['3216'], 4999909: ['3214'], 4999910: ['3212'], 4999911: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  118
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999891: ['3246', '3244'], 4999893: ['3242'], 4999894: ['3240'], 4999896: ['3238'], 4999897: ['3236'], 4999898: ['3234'], 4999899: ['3232'], 4999900: ['3230'], 4999901: ['3228'], 4999902: ['3226'], 4999903: ['3224'], 4999904: ['3222'], 4999905: ['3220'], 4999906: ['3218'], 4999907: ['3216'], 4999908: ['3214'], 4999909: ['3212'], 4999910: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  119
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999890: ['3246', '3244'], 4999892: ['3242'], 4999893: ['3240'], 4999895: ['3238'], 4999896: ['3236'], 4999897: ['3234'], 4999898: ['3232'], 4999899: ['3230'], 4999900: ['3228'], 4999901: ['3226'], 4999902: ['3224'], 4999903: ['3222'], 4999904: ['3220'], 4999905: ['3218'], 4999906: ['3216'], 4999907: ['3214'], 4999908: ['3212'], 4999909: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  120
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999889: ['3246', '3244'], 4999891: ['3242'], 4999892: ['3240'], 4999894: ['3238'], 4999895: ['3236'], 4999896: ['3234'], 4999897: ['3232'], 4999898: ['3230'], 4999899: ['3228'], 4999900: ['3226'], 4999901: ['3224'], 4999902: ['3222'], 4999903: ['3220'], 4999904: ['3218'], 4999905: ['3216'], 4999906: ['3214'], 4999907: ['3212'], 4999908: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  121
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999888: ['3246', '3244'], 4999890: ['3242'], 4999891: ['3240'], 4999893: ['3238'], 4999894: ['3236'], 4999895: ['3234'], 4999896: ['3232'], 4999897: ['3230'], 4999898: ['3228'], 4999899: ['3226'], 4999900: ['3224'], 4999901: ['3222'], 4999902: ['3220'], 4999903: ['3218'], 4999904: ['3216'], 4999905: ['3214'], 4999906: ['3212'], 4999907: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  122
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999887: ['3246', '3244'], 4999889: ['3242'], 4999890: ['3240'], 4999892: ['3238'], 4999893: ['3236'], 4999894: ['3234'], 4999895: ['3232'], 4999896: ['3230'], 4999897: ['3228'], 4999898: ['3226'], 4999899: ['3224'], 4999900: ['3222'], 4999901: ['3220'], 4999902: ['3218'], 4999903: ['3216'], 4999904: ['3214'], 4999905: ['3212'], 4999906: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  123
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999886: ['3246', '3244'], 4999888: ['3242'], 4999889: ['3240'], 4999891: ['3238'], 4999892: ['3236'], 4999893: ['3234'], 4999894: ['3232'], 4999895: ['3230'], 4999896: ['3228'], 4999897: ['3226'], 4999898: ['3224'], 4999899: ['3222'], 4999900: ['3220'], 4999901: ['3218'], 4999902: ['3216'], 4999903: ['3214'], 4999904: ['3212'], 4999905: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  124
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999885: ['3246', '3244'], 4999887: ['3242'], 4999888: ['3240'], 4999890: ['3238'], 4999891: ['3236'], 4999892: ['3234'], 4999893: ['3232'], 4999894: ['3230'], 4999895: ['3228'], 4999896: ['3226'], 4999897: ['3224'], 4999898: ['3222'], 4999899: ['3220'], 4999900: ['3218'], 4999901: ['3216'], 4999902: ['3214'], 4999903: ['3212'], 4999904: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  125
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999884: ['3246', '3244'], 4999886: ['3242'], 4999887: ['3240'], 4999889: ['3238'], 4999890: ['3236'], 4999891: ['3234'], 4999892: ['3232'], 4999893: ['3230'], 4999894: ['3228'], 4999895: ['3226'], 4999896: ['3224'], 4999897: ['3222'], 4999898: ['3220'], 4999899: ['3218'], 4999900: ['3216'], 4999901: ['3214'], 4999902: ['3212'], 4999903: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  126
+countdown_keys(): dynamic_hashmap_dict =  t =  defauldefaultdict(<class 'list'>, {4999883: ['3246', '3244'], 4999885: ['3242'], 4999886: ['3240'], 4999888: ['3238'], 4999889: ['3236'], 4999890: ['3234'], 4999891: ['3232'], 4999892: ['3230'], 4999893: ['3228'], 4999894: ['3226'], 4999895: ['3224'], 4999896: ['3222'], 4999897: ['3220'], 4999898: ['3218'], 4999899: ['3216'], 4999900: ['3214'], 4999901: ['3212'], 4999902: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  127
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999882: ['3246', '3244'], 4999884: ['3242'], 4999885: ['3240'], 4999887: ['3238'], 4999888: ['3236'], 4999889: ['3234'], 4999890: ['3232'], 4999891: ['3230'], 4999892: ['3228'], 4999893: ['3226'], 4999894: ['3224'], 4999895: ['3222'], 4999896: ['3220'], 4999897: ['3218'], 4999898: ['3216'], 4999899: ['3214'], 4999900: ['3212'], 4999901: ['3210']})
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999881: ['3246', '3244'], 4999883: ['3242'], 4999884: ['3240'], 4999886: ['3238'], 4999887: ['3236'], 4999888: ['3234'], 4999889: ['3232'], 4999890: ['3230'], 4999891: ['3228'], 4999892: ['3226'], 4999893: ['3224'], 4999894: ['3222'], 4999895: ['3220'], 4999896: ['3218'], 4999897: ['3216'], 4999898: ['3214'], 4999899: ['3212'], 4999900: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  128
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999880: ['3246', '3244'], 4999882: ['3242'], 4999883: ['3240'], 4999885: ['3238'], 4999886: ['3236'], 4999887: ['3234'], 4999888: ['3232'], 4999889: ['3230'], 4999890: ['3228'], 4999891: ['3226'], 4999892: ['3224'], 4999893: ['3222'], 4999894: ['3220'], 4999895: ['3218'], 4999896: ['3216'], 4999897: ['3214'], 4999898: ['3212'], 4999899: ['3210']})
+clockticks(): elapsedclockticks =  129
+IndexError
+clockticks(): elapsedclockticks =  130
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999879: ['3246', '3244'], 4999881: ['3242'], 4999882: ['3240'], 4999884: ['3238'], 4999885: ['3236'], 4999886: ['3234'], 4999887: ['3232'], 4999888: ['3230'], 4999889: ['3228'], 4999890: ['3226'], 4999891: ['3224'], 4999892: ['3222'], 4999893: ['3220'], 4999894: ['3218'], 4999895: ['3216'], 4999896: ['3214'], 4999897: ['3212'], 4999898: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  131
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999878: ['3246', '3244'], 4999880: ['3242'], 4999881: ['3240'], 4999883: ['3238'], 4999884: ['3236'], 4999885: ['3234'], 4999886: ['3232'], 4999887: ['3230'], 4999888: ['3228'], 4999889: ['3226'], 4999890: ['3224'], 4999891: ['3222'], 4999892: ['3220'], 4999893: ['3218'], 4999894: ['3216'], 4999895: ['3214'], 4999896: ['3212'], 4999897: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  132
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999877: ['3246', '3244'], 4999879: ['3242'], 4999880: ['3240'], 4999882: ['3238'], 4999883: ['3236'], 4999884: ['3234'], 4999885: ['3232'], 4999886: ['3230'], 4999887: ['3228'], 4999888: ['3226'], 4999889: ['3224'], 4999890: ['3222'], 4999891: ['3220'], 4999892: ['3218'], 4999893: ['3216'], 4999894: ['3214'], 4999895: ['3212'], 4999896: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  133
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999876: ['3246', '3244'], 4999878: ['3242'], 4999879: ['3240'], 4999881: ['3238'], 4999882: ['3236'], 4999883: ['3234'], 4999884: ['3232'], 4999885: ['3230'], 4999886: ['3228'], 4999887: ['3226'], 4999888: ['3224'], 4999889: ['3222'], 4999890: ['3220'], 4999891: ['3218'], 4999892: ['3216'], 4999893: ['3214'], 4999894: ['3212'], 4999895: ['3210']})
+IndexError
+IndexError
+clockticks(): elapsedclockticks =  134
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999875: ['3246', '3244'], 4999877: ['3242'], 4999878: ['3240'], 4999880: ['3238'], 4999881: ['3236'], 4999882: ['3234'], 4999883: ['3232'], 4999884: ['3230'], 4999885: ['3228'], 4999886: ['3226'], 4999887: ['3224'], 4999888: ['3222'], 4999889: ['3220'], 4999890: ['3218'], 4999891: ['3216'], 4999892: ['3214'], 4999893: ['3212'], 4999894: ['3210']})
+clockticks(): elapsedclockticks =  135
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999874: ['3246', '3244'], 4999876: ['3242'], 4999877: ['3240'], 4999879: ['3238'], 4999880: ['3236'], 4999881: ['3234'], 4999882: ['3232'], 4999883: ['3230'], 4999884: ['3228'], 4999885: ['3226'], 4999886: ['3224'], 4999887: ['3222'], 4999888: ['3220'], 4999889: ['3218'], 4999890: ['3216'], 4999891: ['3214'], 4999892: ['3212'], 4999893: ['3210']})
+IndexError
+countdown_keys(): dynamic_hashmap_dict =  defaultdict(<class 'list'>, {4999873: ['3246', '3244'], 4999875: ['3242'], 4999876: ['3240'], 4999878: ['3238'], 4999879: ['3236'], 4999880: ['3234'], 4999881: ['3232'], 4999882: ['3230'], 4999883: ['3228'], 4999884: ['3226'], 4999885: ['3224'], 4999886: ['3222'], 4999887: ['3220'], 4999888: ['3218'], 4999889: ['3216'], 4999890: ['3214'], 4999891: ['3212'], 4999892: ['3210']})
+IndexError
+clockticks(): elapsedclockticks =  136
