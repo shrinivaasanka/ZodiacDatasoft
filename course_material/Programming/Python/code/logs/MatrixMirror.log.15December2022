@@ -1,0 +1,15 @@
+Strings: ['abcde', 'fghij', 'klmno', 'pqrst', 'uvwxy']
+Mirrored string: edcba
+Mirrored string: jihgf
+Mirrored string: onmlk
+Mirrored string: tsrqp
+Mirrored string: yxwvu
+Strings: ['#############', '#---------###', '##--#####--##', '##--#####--##', '##--#####--##', '##--#####--##', '#---------###', '#############']
+Mirrored string: #############
+Mirrored string: ###---------#
+Mirrored string: ##--#####--##
+Mirrored string: ##--#####--##
+Mirrored string: ##--#####--##
+Mirrored string: ##--#####--##
+Mirrored string: ###---------#
+Mirrored string: #############

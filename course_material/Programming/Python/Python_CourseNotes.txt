@@ -419,3 +419,35 @@ References:
 1357.10 Python 3.11 performance enhancements - EuroPython 2022 - How we are making Python 3.11 faster - presented by Mark Shannon - https://www.youtube.com/watch?v=xKk7IXm0XO0
 1357.11 Python 3.11 performance enhancements - https://medium.com/aiguys/how-python-3-11-is-becoming-faster-b2455c1bc555
 
+-----------------------------------------------------------------------------------------------------------------------------
+1370. (THEORY and FEATURE) String Analytics and Large Scale Visuals Analytics - Python 3.11 Matrix mirror utility primitive - 
+based on O(1) NumPy fliplr() memory view implementation - 15 December 2022 - related to all sections on Text analytics,String analytics and Large Scale Visuals Analytics 
+-----------------------------------------------------------------------------------------------------------------------------
+1370.1 Conventional string reverse() primitive is O(N) for N=length of the string which has to traverse entire string.
+1370.2 NumPy fliplr() mirrors or flips a matrix left-to-right along x-axis in O(1) time by an efficient memory view optimization (from documentation - https://numpy.org/doc/stable/reference/generated/numpy.fliplr.html - "... Returns
+fndarray - A view of m with the columns reversed. Since a view is returned, this operation is O(1) ..." ). 
+1370.3 Multipurpose utility function matrix_mirror() has been defined in MatrixMirror.py which takes a list of M strings of length N each,instantiates a matrix of strings of size M*N from alphabets of string literals and reverses set of strings or mirrors the 2-D matrix of string alphabets left-to-right by NumPy fliplr().
+1370.4 Since a matrix of strings is reversed in an O(1) memory view fliplr() optimization, amortized complexity of per string reverse() should be theoretically sublinear or O(N^(epslion)) and for matrix_mirror() could be O(M*N^(epsilon)), 0 < epsilon < 1. Same set of m strings of length n each would have required O(MN) time to mirror by conventional reverse().
+1370.5 Earlier matrix mirror primitive has profound impact on large visuals which need to be mirrored. An example bitmap of stylized letter "D":
+		#############
+                #---------###
+                ##--#####--##
+                ##--#####--##
+                ##--#####--##
+                ##--#####--##
+                #---------###
+                #############
+is mirrored by matrix_mirror() and captured in logs/MatrixMirror.log.15December2022 :
+	Mirrored string: #############
+	Mirrored string: ###---------#
+	Mirrored string: ##--#####--##
+	Mirrored string: ##--#####--##
+	Mirrored string: ##--#####--##
+	Mirrored string: ##--#####--##
+	Mirrored string: ###---------#
+	Mirrored string: #############
+ 
+
+References:
+----------
+1370.6 NumPy flip() - https://numpy.org/doc/stable/reference/generated/numpy.flip.html
