@@ -458,7 +458,7 @@ References:
 1371.1 English language text strings are 2-colored sequences of consonants and vowels and on an average every third symbol of an english word is a vowel.
 1371.2 This commit introduces a notion of "String Factorization" in code/StringFactorization.py by means of which a natural language string is factorized into product (multiplication is replaced by concatenation) of 2 vectors of consonants and vowels.
 1371.3 Function string_factorization() in code/StringFactorization.py (*) takes a natural language string as argument (*) hyphenates the string to syllables by PyHyphen hyphenator (*) parses consonants and vowels of the syllables into two vectors - or factorizes a string into consonant and vowel substring vectors. 
-1371.4 An example word "concatenation" is hyphenated and factorized into consonants and vectors as:
+1371.4 An example word "concatenation" is hyphenated and factorized into consonants and vowels vectors as:
 	syllables: ['con', 'cate', 'na', 'tion']
 	Hyphenated word: c-nc-t-n-t--n
 	Consonant vector: ['c', 'nc', 't', 'n', 't', '', 'n']
@@ -474,3 +474,6 @@ References:
 1371.8 Reinforcement Learning AlphaTensor Matrix Multiplication - https://www.deepmind.com/blog/discovering-novel-algorithms-with-alphatensor - two 4*5 and 5*5 matrices can be multiplied in 76 row-colum products while Strassen multiplication requires 80 and naive algorithm requires 100 multiplications - Consequently, Consonant-Vowel String factorization of N strings of length 10 (5 consonants and 5 vowels) would need only 76 concatenations (multiplications) to decompress or reconstruct the original string by AlphaTensor as against 100 concatenations (multiplications) in naive setting, an unusual speedup. 
 1371.9 AlphaTensor Matrix Multiplication - https://www.nature.com/articles/s41586-022-05172-4
 1371.10 Lower-Upper Factorization or LU Decomposition of a matrix - https://en.wikipedia.org/wiki/LU_decomposition
+1371.11 Sandhi Rules in Sanskrit - Sandhi engine example - https://sanskrit.inria.fr/cgi-bin/SKT/sktsandhier.cgi?lex=SH&l=yoga&r=ishvara&t=VH&k=external - String Factorization implementation above is an algorithmic derivative of Sandhi rules of sanskrit for compound words applied to English texts. Sandhi rules are matrices of vowels-vowels, consonants-consonants and consonants-vowels. 
+1371.12 Tamil Sandhi rules - http://learn.tamilnlp.com/grammar/tamilgrammar4.html
+1371.13 Sanskrit Sandhi Matrix - https://ubcsanskrit.ca/lesson3/sandhicharts.html
