@@ -621,5 +621,5 @@ Encoded word is FEAST (Option b)
 (PUZZLE) Clock hands - 20 December 2022 (UPSC Civil Services - Mental ability)
 ------------------------------------------------------------------------------------------------------------------------
 Q: Number of times minute hand overtakes hour hand of a clock in a day is: (a) 24 (b) 23 (c) 22 (d) 21
-A: Minute hand completes 24 revolutions in 1 day while Hour hand completes 1 revolution in a day. Least common multiple of
-24 and 1 is 24 which is the number of times minute and hour hands unite - twice a day at 12:00, 1:05, 2:10. 3:15, 4:20, 5:25, 6:30, 7:35, 8:40, 9:45, 10:50, 11:55 hours - and overtake a second later. (Option a)
+A: Minute hand completes 24 revolutions in 1 day while Hour hand completes 2 revolution in a day. Least common multiple of
+24 and 2 is 24 ((*) 2|24,2 (*) 1|12,1 or 12*2*1=24) which is the number of times minute and hour hands unite - twice a day at 12:00, 1:05, 2:10. 3:15, 4:20, 5:25, 6:30, 7:35, 8:40, 9:45, 10:50, 11:55 hours - and overtake a second later. (Option a)
