@@ -594,3 +594,32 @@ A: All 4 possibilities can be tried and proved by contradiction:
 		=> B=2 and E=3 and P=3 (or) B=3 and E=2 and P=2 (contradiction, E=P, no two integers can be equal)
 
 All choices except M=1 are contradictory forcing M=1. 
+
+--------------------------------------------------------------------------------------------------------------------------
+(PUZZLE) Find the sequence - 20 December 2022 (UPSC Civil Services - Mental ability)
+--------------------------------------------------------------------------------------------------------------------------
+Q: Letters A,B,C,D,E,F,G,H and I are assigned integers 1 to 9 but not in order. 3 is assigned to I. Difference between E and
+I is 5. Difference between B and E is 2. What is the number assigned to B?  Choices: (a) 3 (b) 7 (c) 8 (d) 6
+A: I=3, E-I = 5 or I-E = 5. B-E = 2 or E-B = 2.
+=> If E-3 = 5, E=8. If 3-E = 5, E=-2(discarded) => E=8
+=> If B-E = 2, B-8 = 2 or B=10 (discarded). If E-B=2, 8-B=2 or B=6. Number assigned to B is 6 (Option d). 
+
+--------------------------------------------------------------------------------------------------------------------------
+(PUZZLE) Decrypt code - 20 December 2022 (UPSC Civil Services - Mental ability)
+-------------------------------------------------------------------------------------------------------------------------
+Q:In a certain code language TRIANGLE is coded as RSGBLHJF. What word is encoded as DFYTR?  Choices: (a) BEAST (b) FEAST (c) BOAST (d) COAST
+A:Odd numbered letters are coded as (x-2)th letter and even numbered letters are coded as (x+1)th letter:-
+	T 	R 	I 	A 	N 	G 	L 	E
+	
+	R	S 	G	B	L	H	J	F (e.g T-2 = R and G+1=H)
+
+	F	E	A	S	T	
+=>	D	F	Y	T	R
+Encoded word is FEAST (Option b)
+
+------------------------------------------------------------------------------------------------------------------------
+(PUZZLE) Clock hands - 20 December 2022 (UPSC Civil Services - Mental ability)
+------------------------------------------------------------------------------------------------------------------------
+Q: Number of times minute hand overtakes hour hand of a clock in a day is: (a) 24 (b) 23 (c) 22 (d) 21
+A: Minute hand completes 24 revolutions in 1 day while Hour hand completes 1 revolution in a day. Least common multiple of
+24 and 1 is 24 which is the number of times minute and hour hands unite - twice a day at 12:00, 1:05, 2:10. 3:15, 4:20, 5:25, 6:30, 7:35, 8:40, 9:45, 10:50, 11:55 hours - and overtake a second later. (Option a)
