@@ -671,3 +671,9 @@ as probability of success (selecting blue ball) is 5/12 (1-p = 1-7/12 = 5/12) an
 	logn - (n-1)*0.23408 = 0.3802 
 But the question is about minimum number of trials for 100% blue ball selection after nth trials - For hoodwinked selection best case scenario is all first 7 trials end up as Red or Green and Blue could be selected at 8th trial (Option d).
 
+---------------------------------------------------------------------------------------------------------------
+(PUZZLE) Coin toss - independent trials - 29 December 2022 (UPSC Civil Services - Mathematics)
+---------------------------------------------------------------------------------------------------------------
+Q: In a coin toss, first five tosses turn out to be Heads. What is the probability that sixth toss is a Head
+Choices: (a) 0.16 (b) 0.25 (c) 0.5 (d) 0.75
+A: Each of the toss is an independent trial and does not depend on earlier tosses. Every toss has P(Head) = 0.5 and sixth toss therefore has 50% probability of Head.
