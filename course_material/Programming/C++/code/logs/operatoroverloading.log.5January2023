@@ -1,0 +1,4 @@
+String(): s=string1
+String(): s=string2
+operator<=>():ret < 0
+operator+=(): s=string1string2
