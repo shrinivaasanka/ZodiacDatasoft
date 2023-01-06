@@ -677,3 +677,21 @@ But the question is about minimum number of trials for 100% blue ball selection 
 Q: In a coin toss, first five tosses turn out to be Heads. What is the probability that sixth toss is a Head
 Choices: (a) 0.16 (b) 0.25 (c) 0.5 (d) 0.75
 A: Each of the toss is an independent trial and does not depend on earlier tosses. Every toss has P(Head) = 0.5 and sixth toss therefore has 50% probability of Head.
+
+---------------------------------------------------------------------------------------------------------------
+(PUZZLE) Eight friends A,B,C,D,E,F,G,H are sitting in a round table.A is sitting between G and C and opposite to F.
+E is between C and H and second to the right of A and second to the left of F. D is sitting second to the left of G.
+Which of the following is not correct:
+(a) H is sitting opposite to G
+(b) B is sitting second to the right of F
+(c) B is sitting between D and F
+(d) F is sitting between D and H
+(UPSC Civil Services - Mental ability)
+---------------------------------------------------------------------------------------------------------------
+A: Arrangement of 8 persons on roundtable for constraints in question is:
+		A - G - B 
+		|   |   |
+		C ----- D
+		|   |   |
+		E - H - F
+and incorrect choice is (c).
