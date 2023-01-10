@@ -686,7 +686,7 @@ Which of the following is not correct:
 (b) B is sitting second to the right of F
 (c) B is sitting between D and F
 (d) F is sitting between D and H
-(UPSC Civil Services - Mental ability)
+(UPSC Civil Services - Mental ability) - 6 January 2023
 ---------------------------------------------------------------------------------------------------------------
 A: Arrangement of 8 persons on roundtable for constraints in question is:
 		A - G - B 
@@ -695,3 +695,24 @@ A: Arrangement of 8 persons on roundtable for constraints in question is:
 		|   |   |
 		E - H - F
 and incorrect choice is (c).
+
+----------------------------------------------------------------------------------------------------------------------
+(PUZZLE) 27 identical cubes are arranged in a block of bigger cube. How many cubes are surrounded by other cubes in
+all sides - 10 January 2023 - UPSC Civil Services - Mental ability
+----------------------------------------------------------------------------------------------------------------------
+Options: (a) 8 (b) 3 (c) 1 (d) 9 
+A: Option (c). Bigger cube is made of 9 + 9 + 9 cubes (up,middle,down) and middle set is partitioned around central cube as
+3 + 2 + central + 3
+
+-----------------------------------------------------------------------------------------------------------------------
+(PUZZLE) If 4-3 = 12, 24 + 3 = 8, 15 * 9 = 6, 7 / 8 = 15, what is the value of 100 - 10 * 1000 / 1000 + 100 * 10 
+- UPSC Civil Services - Mental ability - 10 January 2023
+-----------------------------------------------------------------------------------------------------------------------
+Options: (a) 0 (b) 1200 (c) 100 (d) 990
+A: Meanings of operators have been changed in all 4 identities:
+	4-3 = 4*3 = 12
+	24+3 = 24/3 = 8
+	15*9 = 15-9 = 6
+	7/8 = 7+8 = 15
+substituting in 100 - 10 * 1000 / 1000 + 100 * 10:
+	100 * 10 - 1000 + 1000 / 100 - 10 = 1000 - 1000 + 10 - 10 = 0 (option (a))
