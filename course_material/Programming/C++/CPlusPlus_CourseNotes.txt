@@ -510,3 +510,16 @@ References:
 -----------------------------------------------------------------------------------------------------------------------------
 Code fragment code/operatoroverloading.cpp demonstrates three way comparison operator and strong_ordering type returned by it which takes ternary values : (a > b) , (a=b) or (a < b). Two operators <=> (3-way comparison) and += (concatenation) are overloaded (captured in code/logs/operatoroverloading.log.5January2023) and 2 strings are 3-way compared and concatenated by overloaded operator members. Code is compiled in g++-11 C++ 2020 standard as: 
 	g++-11 --std=c++2a operatoroverloading.cpp -o operatoroverloading
+
+-----------------------------------------------------------------------------------------------------------------------------
+12 January 2023 - C++ 2020 Coroutines and Roundrobin loadbalancing - co_await 
+-----------------------------------------------------------------------------------------------------------------------------
+Code fragment code/coroutines.cpp demonstrates how C++ 2020 coroutines operate by defining two peer routines coroutine1() and
+coroutine2() which increment a common counter till it reaches 1000, mutually alternating executions among themselves by co_await statement simulating a roundrobin loadbalancing OS scheduler. Boilerplate for simple coroutine comprises struct task with a nested struct promise_type and await_ready(),await_suspend(),await_resume() member functions within struct task. Alternated execution of 2 co-routines is captured in code/logs/coroutines.log.12January2023. Coroutines have to be compiled with -fcoroutines flag in g++-11 as: 
+	g++-11 -fcoroutines -o coroutines coroutines.cpp 
+	./coroutines 2>&1 > logs/coroutines.log.12January2023
+
+References:
+----------
+1.C++ 2020 Coroutines - https://en.cppreference.com/w/cpp/language/coroutines
+2.C++ 2020 Coroutines tutorial - https://www.scs.stanford.edu/~dm/blog/c++-coroutines.html
