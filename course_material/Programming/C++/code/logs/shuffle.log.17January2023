@@ -1,0 +1,297 @@
+------- Shuffle 0--------
+string length:7
+random integer between 0 and 7
+random index:1
+swap() C and D
+string length:7
+random integer between 1 and 7
+random index:3
+swap() C and F
+string length:7
+random integer between 2 and 7
+random index:5
+swap() E and A
+string length:7
+random integer between 3 and 7
+random index:4
+swap() C and G
+string length:7
+random integer between 4 and 7
+random index:5
+swap() C and E
+string length:7
+random integer between 5 and 7
+random index:5
+swap() C and C
+string length:7
+Fisher-Yates-Knuth shuffled string:DFAGECB
+------- Shuffle 1--------
+string length:7
+random integer between 0 and 7
+random index:6
+swap() C and B
+string length:7
+random integer between 1 and 7
+random index:2
+swap() D and E
+string length:7
+random integer between 2 and 7
+random index:4
+swap() D and G
+string length:7
+random integer between 3 and 7
+random index:6
+swap() F and C
+string length:7
+random integer between 4 and 7
+random index:5
+swap() D and A
+string length:7
+random integer between 5 and 7
+random index:5
+swap() D and D
+string length:7
+Fisher-Yates-Knuth shuffled string:BEGCADF
+------- Shuffle 2--------
+string length:7
+random integer between 0 and 7
+random index:6
+swap() C and B
+string length:7
+random integer between 1 and 7
+random index:6
+swap() D and C
+string length:7
+random integer between 2 and 7
+random index:6
+swap() E and D
+string length:7
+random integer between 3 and 7
+random index:5
+swap() F and A
+string length:7
+random integer between 4 and 7
+random index:6
+swap() G and E
+string length:7
+random integer between 5 and 7
+random index:6
+swap() F and G
+string length:7
+Fisher-Yates-Knuth shuffled string:BCDAEGF
+------- Shuffle 3--------
+string length:7
+random integer between 0 and 7
+random index:2
+swap() C and E
+string length:7
+random integer between 1 and 7
+random index:6
+swap() D and B
+string length:7
+random integer between 2 and 7
+random index:4
+swap() C and G
+string length:7
+random integer between 3 and 7
+random index:6
+swap() F and D
+string length:7
+random integer between 4 and 7
+random index:6
+swap() C and F
+string length:7
+random integer between 5 and 7
+random index:6
+swap() A and C
+string length:7
+Fisher-Yates-Knuth shuffled string:EBGDFCA
+------- Shuffle 4--------
+string length:7
+random integer between 0 and 7
+random index:6
+swap() C and B
+string length:7
+random integer between 1 and 7
+random index:1
+swap() D and D
+string length:7
+random integer between 2 and 7
+random index:2
+swap() E and E
+string length:7
+random integer between 3 and 7
+random index:3
+swap() F and F
+string length:7
+random integer between 4 and 7
+random index:6
+swap() G and C
+string length:7
+random integer between 5 and 7
+random index:6
+swap() A and G
+string length:7
+Fisher-Yates-Knuth shuffled string:BDEFCGA
+------- Shuffle 5--------
+string length:7
+random integer between 0 and 7
+random index:3
+swap() C and F
+string length:7
+random integer between 1 and 7
+random index:5
+swap() D and A
+string length:7
+random integer between 2 and 7
+random index:4
+swap() E and G
+string length:7
+random integer between 3 and 7
+random index:3
+swap() C and C
+string length:7
+random integer between 4 and 7
+random index:6
+swap() E and B
+string length:7
+random integer between 5 and 7
+random index:6
+swap() D and E
+string length:7
+Fisher-Yates-Knuth shuffled string:FAGCBED
+------- Shuffle 6--------
+string length:7
+random integer between 0 and 7
+random index:5
+swap() C and A
+string length:7
+random integer between 1 and 7
+random index:5
+swap() D and C
+string length:7
+random integer between 2 and 7
+random index:5
+swap() E and D
+string length:7
+random integer between 3 and 7
+random index:6
+swap() F and B
+string length:7
+random integer between 4 and 7
+random index:5
+swap() G and E
+string length:7
+random integer between 5 and 7
+random index:5
+swap() G and G
+string length:7
+Fisher-Yates-Knuth shuffled string:ACDBEGF
+------- Shuffle 7--------
+string length:7
+random integer between 0 and 7
+random index:5
+swap() C and A
+string length:7
+random integer between 1 and 7
+random index:1
+swap() D and D
+string length:7
+random integer between 2 and 7
+random index:4
+swap() E and G
+string length:7
+random integer between 3 and 7
+random index:6
+swap() F and B
+string length:7
+random integer between 4 and 7
+random index:5
+swap() E and C
+string length:7
+random integer between 5 and 7
+random index:5
+swap() E and E
+string length:7
+Fisher-Yates-Knuth shuffled string:ADGBCEF
+------- Shuffle 8--------
+string length:7
+random integer between 0 and 7
+random index:4
+swap() C and G
+string length:7
+random integer between 1 and 7
+random index:2
+swap() D and E
+string length:7
+random integer between 2 and 7
+random index:4
+swap() D and C
+string length:7
+random integer between 3 and 7
+random index:6
+swap() F and B
+string length:7
+random integer between 4 and 7
+random index:4
+swap() D and D
+string length:7
+random integer between 5 and 7
+random index:5
+swap() A and A
+string length:7
+Fisher-Yates-Knuth shuffled string:GECBDAF
+------- Shuffle 9--------
+string length:7
+random integer between 0 and 7
+random index:1
+swap() C and D
+string length:7
+random integer between 1 and 7
+random index:2
+swap() C and E
+string length:7
+random integer between 2 and 7
+random index:6
+swap() C and B
+string length:7
+random integer between 3 and 7
+random index:4
+swap() F and G
+string length:7
+random integer between 4 and 7
+random index:5
+swap() F and A
+string length:7
+random integer between 5 and 7
+random index:5
+swap() F and F
+string length:7
+Fisher-Yates-Knuth shuffled string:DEBGAFC
+------- Shuffle 10--------
+string length:7
+random integer between 0 and 7
+random index:2
+swap() C and E
+string length:7
+random integer between 1 and 7
+random index:5
+swap() D and A
+string length:7
+random integer between 2 and 7
+random index:4
+swap() C and G
+string length:7
+random integer between 3 and 7
+random index:3
+swap() F and F
+string length:7
+random integer between 4 and 7
+random index:4
+swap() C and C
+string length:7
+random integer between 5 and 7
+random index:6
+swap() D and B
+string length:7
+Fisher-Yates-Knuth shuffled string:EAGFCBD
