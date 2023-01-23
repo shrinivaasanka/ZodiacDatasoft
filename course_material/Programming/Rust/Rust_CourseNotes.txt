@@ -1,0 +1,31 @@
+/*
+##############################################################################################################################################
+#<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+###############################################################################################################################################
+#Course Authored By:
+#-----------------------------------------------------------------------------------------------------------
+#K.Srinivasan
+#NeuronRain Documentation and Licensing: http://neuronrain-documentation.readthedocs.io/en/latest/
+#Personal website(research): https://sites.google.com/site/kuja27/
+#-----------------------------------------------------------------------------------------------------------
+##############################################################################################################################################
+*/
+
+This is a non-linearly organized, code puzzles oriented, continually updated set of course notes on Rust language which is increasingly suggested for both lowlevel and highlevel programming focussing on scalability,GC-free-memory safety,performance. While Go language is devoted to concurrency and webservices, Rust is hailed as replacement for legacy C and C++ languages. 
+----------------------------------------------------------------------------------------------------------------
+23 January 2023 - Rasterization or rectification of hyperbolic arc and Factor point location in Rust 
+----------------------------------------------------------------------------------------------------------------
+New Rust package rasterization/ containing code fragment rasterization/src/main.rs has been added to NeuronRain Grafit course material which primitively implements sequential rasterization of Hyperbolic arc bow and sequential factor point location at present implemented on Spark-Python in NeuronRain AsFer and is the prerequisite for Computational Geometric Factorization Parallel Planar Point Location NC-PRAM-BSP algorithm. Rust which is admired for its low latency rivalling C and C++ is highly parallelizable through Rayon library - https://docs.rs/rayon/latest/rayon/ - Sequential rasterization could be parallelizable by Rayon parallel iterators thereby further optimizing the execution time of NeuronRain AsFer Spark-Python Factorization implementation which at times is hindered and slowed down by bloated Py4J-Java-Python marshalling, thus effectively marking a gradual transition of NeuronRain codebases requiring high concurrency and scalability to performant Rust. Rust is free from Garbage collection oeverhead and compiles to low level machine instructions. Rust rasterization package rasterization/src/main.rs implements iterative version of binary search as an alternative to recursive binary search in NeuronRain AsFer Factorization - $ASFER/python-src/DiscreteHyperbolicFactorizationUpperbound_TileSearch_Optimized.py. This code fragment requires cargo installation and is only a naive implementation at present and could evolve to a mainstream factorization code. 
+ 
+References:
+-----------
+1.Rust book - https://doc.rust-lang.org/stable/book/ch04-01-what-is-ownership.html
+2.Rust for Systems Programming - https://msrc-blog.microsoft.com/2019/07/22/why-rust-for-safe-systems-programming/ - " ... Rust, just like C and C++, also gives the programmer fine-grained control on when and how much memory is allocated allowing the programmer to have a very good idea of exactly how the program will perform every time it is run. What this means for performance in terms of raw speed, control, and predictability, is that Rust, C, and C++ can be thought of in similar terms...."
+3.Rust - Most loved language - https://insights.stackoverflow.com/survey/2018/#technology-_-most-loved-dreaded-and-wanted-languages
+4.Is Rust C++-fast - https://arxiv.org/abs/2209.09127 
+5.How Microsoft is adopting Rust - https://medium.com/@tinocaer/how-microsoft-is-adopting-rust-e0f8816566ba
+6.Parallelizability of Rust - https://kornel.ski/rust-c-speed
+7.Rust for network programming - https://codilime.com/blog/rust-vs-c-safety-and-performance-in-low-level-network-programming/
+8.Rayon Parallel Iterators - https://docs.rs/rayon/latest/rayon/iter/index.html
+9.Sequential binary search - https://spin.atomicobject.com/2022/07/06/learning-rust-binary-search/
+10.Rust versus C benchmarks - Number field sieve and N-Body computations are faster in Rust - https://programming-language-benchmarks.vercel.app/c-vs-rust
