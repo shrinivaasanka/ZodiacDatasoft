@@ -15,11 +15,11 @@ This is a non-linearly organized, code puzzles oriented, continually updated set
 ------------------------------------------------------------------------------------------------------------------------------
 24 January 2023 - Multiple return values within a Go function, Goroutines and Gochannels for synchronization
 ------------------------------------------------------------------------------------------------------------------------------
-Code fragment multiplereturns.go defines 2 functions implementing XOR swap algorithm - https://en.wikipedia.org/wiki/XOR_swap_algorithm - each returing 2 values (departure from conventional wisdom) for swapping contents on 2 variables without necessity of third variable by three bitwise XORs:
+Code fragment multiplereturns.go defines 2 functions implementing XOR swap algorithm - https://en.wikipedia.org/wiki/XOR_swap_algorithm - each returning 2 values (departure from conventional wisdom) for swapping contents on 2 variables without necessity of third variable by three bitwise XORs:
 	x1 = x1 XOR x2
 	x2 = x1 XOR x2
 	x1 = x1 XOR x2
-Function xor_swap() is invoked as normal Go function while xor_swap_goroutine() is a goroutine (a separate thread is created for function) and return values are sent by Channel IPC or ITC synchronization primitives and received by caller - Logs logs/multiplereturns.log.24January2023 capture the execution of function and goroutine versions in quick succession swap variable values in x1 and x2 and again restoring the original values in x1 and x2. XOR swap is best suited for following string reversal optimization as usual reverse() is of runtime equal to length of the string and involves use of a stack (N pushes and N pops):
+Function xor_swap() is invoked as normal Go function while xor_swap_goroutine() is a goroutine (a separate thread is created for function) and return values are sent by Channel IPC or ITC synchronization primitives and received by caller - Logs logs/multiplereturns.log.24January2023 capture the execution of function and goroutine versions in quick succession swapping variable values in x1 and x2 and again restoring the original values in x1 and x2. XOR swap is best suited for following string reversal optimization as usual reverse() is of runtime equal to length of the string and involves use of a stack (N pushes and N pops):
 	N = length of string S (even number)
 	for i=1 to N/2 
 	{
