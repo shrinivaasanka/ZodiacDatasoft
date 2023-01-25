@@ -13,7 +13,7 @@
 
 This is a non-linearly organized, code puzzles oriented, continually updated set of course notes on Go language dedicated to concurrency-safe rapid webservices application development. 
 ------------------------------------------------------------------------------------------------------------------------------
-24 January 2023 - Multiple return values within a Go function, Goroutines and Gochannels for synchronization
+1382. (THEORY and FEATURE) String Analytics - String reversals by XOR swap algorithm - Multiple return values within a Go function, Goroutines and Gochannels for synchronization - related to 1380 and all sections on String analytics
 ------------------------------------------------------------------------------------------------------------------------------
 Code fragment multiplereturns.go defines 2 functions implementing XOR swap algorithm - https://en.wikipedia.org/wiki/XOR_swap_algorithm - each returning 2 values (departure from conventional wisdom) for swapping contents on 2 variables without necessity of third variable by three bitwise XORs:
 	x1 = x1 XOR x2
