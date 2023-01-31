@@ -34,7 +34,7 @@ References:
 ------------------------------------------------------------------------------------------------------------------------------
 1383. (THEORY and FEATURE) String Analytics - String reversals by XOR swap algorithm - definition of separate Go function for reversing a string by XOR swap - related to 1380,1382 and all sections on String analytics, Large Scale Visuals Analytics, String mirroring (topological reverse of string) - Python 3.11 Matrix mirror utility primitive - based on O(1) NumPy fliplr() memory view implementation - 31 January 2023
 ----------------------------------------------------------------------------------------------------------------------------- 
-1383.1 course_material/Programming/Go/multiplereturns.go has been updated to implement string_reverse() funtion internally invoking XOR swap for length/2 steps to reverse a string 
+1383.1 course_material/Programming/Go/multiplereturns.go has been updated to implement string_reverse() function internally invoking XOR swap for length/2 steps to reverse a string 
 1383.2 Function string_reverse() also demonstrates Go slices by make() to create byte sequence iterable. Input string is iterated in for loop and XOR swapped in N/2 steps and assigned to string slice.
 1383.3 Go follows unicode convention of code point or rune to identify every character of a string iterable by special form of for loop.
 1383.4 This implementation complements NumPy fliplr matrix mirroring primitive for topologically mirroring a string (more than just reversal - it is a mirror image) 
@@ -44,3 +44,4 @@ References
 ----------
 1383.5 Go strings,bytes and runes - https://go.dev/blog/strings 
 1383.6 Go slices - https://go.dev/blog/slices-intro
+1383.7 Improvements to XOR swap - http://graphics.stanford.edu/~seander/bithacks.html#SwappingValuesXOR - "... On January 20, 2005, Iain A. Fleming pointed out that the macro above doesn't work when you swap with the same memory location, such as SWAP(a[i], a[j]) with i == j. So if that may occur, consider defining the macro as (((a) == (b)) || (((a) ^= (b)), ((b) ^= (a)), ((a) ^= (b)))). On July 14, 2009, Hallvard Furuseth suggested that on some machines, (((a) ^ (b)) && ((b) ^= (a) ^= (b), (a) ^= (b))) might be faster, since the (a) ^ (b) expression is reused. ..."
