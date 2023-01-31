@@ -1,0 +1,28 @@
+x : 1 - y : 2 
+---------xor_swap()------------
+before XOR - x : 1 - y : 2 
+after XOR - x : 2 - y : 1 
+after xor_swap() === x : 2 - y : 1 
+---------xor_swap_goroutine()------------
+before XOR - x : 2 - y : 1 
+after XOR - x : 1 - y : 2 
+after xor_swap_goroutine() === x : 1 - y : 2 
+string_reverse():before XOR - x : 73 - y : 67 
+string_reverse():after XOR - x : 67 - y : 73 
+string_reverse():before XOR - x : 74 - y : 6e 
+string_reverse():after XOR - x : 6e - y : 74 
+string_reverse():before XOR - x : 72 - y : 69 
+string_reverse():after XOR - x : 69 - y : 72 
+string_reverse(): string 0 = 73
+string_reverse(): string 1 = 74
+string_reverse(): string 2 = 72
+string_reverse(): string 3 = 69
+string_reverse(): string 4 = 6e
+string_reverse(): string 5 = 67
+string_reverse(): reversed string 0 = 67
+string_reverse(): reversed string 1 = 6e
+string_reverse(): reversed string 2 = 69
+string_reverse(): reversed string 3 = 72
+string_reverse(): reversed string 4 = 74
+string_reverse(): reversed string 5 = 73
+string_reverse() of string = gnirts
