@@ -1,0 +1,255 @@
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 9999999 parallel
+rasterize_hyperbolic arc(): rasterization by Rayon parallel iterator
+tile segment 1: from 9999999 to 4999999
+tile segment 4999999: from 2 to 1
+binary seach of rasterized hyperbolic arc bow tilesegment xy = 9999999: 1,4999999,2,4999999
+Midpoint = 1
+Factor candidate point : 4999999
+factorcandiate < num_fact
+Midpoint = 2
+Factor candidate point : 9999998
+binary seach of rasterized hyperbolic arc bow tilesegment xy = 9999999: 4999999,1,9999999,1
+Midpoint = 7499999
+Factor candidate point : 7499999
+Factor point located : 9999999@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999999 parallel
+rasterize_hyperbolic arc(): rasterization by Rayon parallel iterator
+tile segment 1: from 99999999 to 49999999
+binary seach of rasterized hyperbolic arc bow tilesegment xy = 99999999: 49999999,1,99999999,1
+Midpoint = 74999999
+Factor candidate point : 74999999
+Factor point located : 99999999 1
+factorcandiate < num_fact
+tile segment 2: from 49999999 to 33333333
+binary seach of rasterized hyperbolic arc bow tilesegment xy = 99999999: 33333333,2,49999999,2
+Midpoint = 41666666
+Factor candidate point : 83333332
+factorcandiate < num_fact
+tile segment 3: from 33333333 to 24999999
+binary seach of rasterized hyperbolic arc bow tilesegment xy = 99999999: 24999999,3,33333333,3
+Midpoint = 29166666
+Factor candidate point : 87499998
+Factor point located : 33333333 3
+factorcandiate < num_fact
+tile segment 4: from 24999999 to 19999999
+binary seach of rasterized hyperbolic arc bow tilesegment xy = 99999999: 19999999,4,24999999,4
+Midpoint = 22499999
+tile segment 49999999: from 2 to 1
+binary seach of rasterized hyperbolic arc bow tilesegment xy = 99999999: 1,49999999,2,49999999
+Midpoint = 1
+Factor candidate point : 49999999
+factorcandiate < num_fact
+Midpoint = 2
+Factor candidate point : 99999998
+Factor candidate point : 89999996
+factorcandiate < num_fact
+tile segment 5: from 19999999 to 16666666
+binary seach of rasterized hyperbolic arc bow tilesegment xy = 99999999: 16666666,5,19999999,5
+Midpoint = 18333332
+Factor candidate point : 91666660
+factorcandiate < num_fact
+tile segment 6: from 16666666 to 14285714
+binary seach of rasterized hyperbolic arc bow tilesegment xy = 99999999: 14285714,6,16666666,6
+Midpoint = 15476190
+Factor candidate point : 92857140
+factorcandiate < num_fact
+tile segment 25000000: from 3 to 3
+binary seach of rasterized hyperbolic arc bow tilesegment xy = 99999999: 3,@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999999 parallel |grep located
+Factor point located : 99999999 1
+Factor point located : 33333333 3
+Factor point located : 11111111 9
+Factor point located : 9090909 11
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999998 parallel |grep located
+Factor point located : 99999998 1
+Factor point located : 49999999 2
+Factor point located : 14285714 7
+Factor point located : 7142857 14
+Factor point located : 4347826 23
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999997 parallel |grep located
+Factor point located : 99999997 1
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999996 parallel |grep located
+Factor point located : 99999996 1
+Factor point located : 49999998 2
+Factor point located : 33333332 3
+Factor point located : 24999999 4
+Factor point located : 2 49999998
+Factor point located : 
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999995 parallel |grep located
+Factor point located : 99999995 1
+Factor point located : 19999999 5
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999994 parallel |grep located
+Factor point located : 99999994 1
+Factor point located : 2 49999997
+Factor point located : 49999997 2
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999993 parallel |grep located
+Factor point located : 99999993 1
+Factor point located : 33333331 3
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999992 parallel |grep located
+Factor point located : 99999992 1
+Factor point located : 49999996 2
+Factor point located : 24999998 4
+Factor point located : 12499999 8
+Factor point located : 2 49999996
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999991 parallel |grep located
+Factor point located : 99999991 1
+Factor point located : 14285713 7
+Factor point located : 7692307 13
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999990 parallel |grep located
+Factor point located : 99999990 1
+Factor point located : 49999995 2
+Factor point located : 33333330 3
+Factor point located : 19999998 5
+Factor point located : 16666665 6
+Factor point located : 2 49999995
+Factor point located : 11111110 9
+Factor point located : 9999999 10
+Factor point located : 6666666 15
+Factor point located : 5555555 18
+Factor point located : 3333333 30
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999989 parallel |grep located
+Factor point located : 99999989 1
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999988 parallel |grep located
+Factor point located : 99999988 1
+Factor point located : 49999994 2
+Factor point located : 24999997 4
+Factor point located : 9090908 11
+Factor point located : 2 49999994
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999987 parallel |grep located
+Factor point located : 99999987 1
+Factor point located : 33333329 3
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999986 parallel |grep located
+Factor point located : 2 49999993
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999985 parallel |grep located
+Factor point located : 99999985 1
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999985 serial |grep located
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999985 parallel |grep located
+Factor point located : 99999985 1
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999982 parallel |grep located
+Factor point located : 99999982 1
+Factor point located : 49999991 2
+Factor point located : 2 49999991
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999981 parallel |grep located
+Factor point located : 99999981 1
+Factor point located : 33333327 3
+Factor point located : 11111109 9
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999980 parallel |grep located
+Factor point located : 4 24999995
+Factor point located : 99999980 1
+Factor point located : 49999990 2
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999979 parallel |grep located
+Factor point located : 99999979 1
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999978 parallel |grep located
+Factor point located : 99999978 1
+Factor point located : 49999989 2
+Factor point located : 33333326 3
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999977 parallel |grep located
+Factor point located : 99999977 1
+Factor point located : 
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999976 parallel |grep located
+Factor point located : 99999976 1
+Factor point located : 49999988 2
+Factor point located : 2 49999988
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999975 parallel |grep located
+Factor point located : 99999975 1
+Factor point located : 33333325 3
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999974 parallel |grep located
+Factor point located : 2 49999987
+Factor point located : 99999974 1
+Factor point located : 49999987 2
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999973 parallel |grep located
+Factor point located : 99999973 1
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999972 parallel |grep located
+Factor point located : 99999972 1
+Factor point located : 4 24999993
+Factor point located : 49999986 2
+Factor point located : 2 49999986
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999971 parallel |grep located
+Factor point located : 99999971 1
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99999970 parallel |grep located
+Factor point located : 99999970 1
+Factor point located : 49999985 2
+Factor point located : 19999994 5
+Factor point located : 14285710 7
+Factor point located : 9999997 10
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999 parallel |grep located
+Factor point located : 999 1
+Factor point located : 333 3
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 99 parallel |grep located
+Factor point located : 99 1
+Factor point located : 33 3
+Factor point located : 11 9
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 98 parallel |grep located
+Factor point located : 98 1
+Factor point located : 49 2
+Factor point located : 2 49
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 97 parallel |grep located
+Factor point located : 97 1
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 96 parallel |grep located
+Factor point located : 96 1
+Factor point located : 2 48
+Factor point located : 48 2
+Factor point located : 4 24
+Factor point located : 32 3
+Factor point located : 24 4
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 95 parallel |grep located
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 95 serial |grep located
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 94 serial |grep located
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 93 serial |grep located
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 92 serial |grep located
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 92 parallel |grep located
+Factor point located : 92 1
+Factor point located : 46 2
+Factor point located : 23 4
+Factor point located : 2 46
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 91 parallel |grep located
+Factor point located : 91 1
+Factor point located : 13 7
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 90 parallel |grep located
+Factor point located : 90 1
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 89 parallel |grep located
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 88 parallel |grep located
+Factor point located : 2 44
+Factor point located : 88 1
+Factor point located : 44 2
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 87 parallel |grep located
+Factor point located : 87 1
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 86 parallel |grep located
+Factor point located : 86 1
+Factor point located : 43 2
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 85 parallel |grep located
+Factor point located : 85 1
+Factor point located : 17 5
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 84 parallel |grep located
+Factor point located : 84 1
+Factor point located : 42 2
+Factor point located : 28 3
+Factor point located : 21 4
+Factor point located : 14 6
+Factor point located : 12 7
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 83 parallel |grep located
+Factor point located : 83 1
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 82 parallel |grep located
+Factor point located : 82 1
+Factor point located : 2 41
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 81 parallel |grep located
+Factor point located : 81 1
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 80 parallel |grep located
+Factor point located : 80 1
+Factor point located : 40 2
+Factor point located : 20 4
+Factor point located : 2 40
+Factor point located : 16 5
+Factor point located : 4 20
+Factor point located : 8 10
+Factor point located : 10 8
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 79 parallel |grep located
+Factor point located : 79 1
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 78 parallel |grep located
+Factor point located : 78 1
+Factor point located : 39 2
+Factor point located : 26 3
+Factor point located : 2 39
+Factor point located : 13 6
+@:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 77 parallel |grep located
+Factor point located : 77 1
+Factor point located : 11 7
+

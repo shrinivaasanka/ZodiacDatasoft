@@ -1,20 +1,40 @@
+use std::env;
 fn main() {
-    let number_to_factorize=1000; 
-    rasterize_hyperbolic_arc(number_to_factorize);
+    let args: Vec<String>=env::args().collect();
+    let number_to_factorize: i32=args[1].parse().unwrap(); 
+    let rasterization: String=args[2].clone();
+    rasterize_hyperbolic_arc(number_to_factorize,rasterization);
 }
 
-fn rasterize_hyperbolic_arc(num_fact: i64)
+use rayon::prelude::*;
+use foreach::*;
+fn rasterize_hyperbolic_arc(num_fact: i32,rasterization: String)
 {
-    for y in 1..num_fact-1
+    let mut y1 = 1..num_fact-1;
+    let mut y2 = 1..num_fact-1;
+    if rasterization=="sequential"
     {
-        let xtile_start = num_fact/y;
-        let xtile_end = num_fact/(y+1);
-        println!("tile segment {y}: from {xtile_start} to {xtile_end}");
-        binary_search(num_fact,xtile_end,y,xtile_start,y);
+        println!("rasterize_hyperbolic arc(): rasterization by sequential iterator");
+        y1.foreach(|item,iter| {
+            let mut xtile_start = num_fact/item;
+            let mut xtile_end = num_fact/(item+1);
+            println!("tile segment {item}: from {xtile_start} to {xtile_end}");
+            binary_search(num_fact,xtile_end,item,xtile_start,item);
+        });
+    }
+    if rasterization=="parallel"
+    {
+        println!("rasterize_hyperbolic arc(): rasterization by Rayon parallel iterator");
+        y2.into_par_iter().for_each(|paritem| {
+            let mut xtile_start = num_fact/paritem;
+            let mut xtile_end = num_fact/(paritem+1);
+            println!("tile segment {paritem}: from {xtile_start} to {xtile_end}");
+            binary_search(num_fact,xtile_end,paritem,xtile_start,paritem);
+        });
     }
 }
 
-fn binary_search(num_fact:i64,xl:i64,yl:i64,xr:i64,yr:i64)
+fn binary_search(num_fact:i32,xl:i32,yl:i32,xr:i32,yr:i32)
 {
     println!("binary seach of rasterized hyperbolic arc bow tilesegment xy = {num_fact}: {xl},{yl},{xr},{yr}");
     let mut xl_clone = xl.clone();

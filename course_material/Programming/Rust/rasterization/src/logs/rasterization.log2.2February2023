@@ -1,0 +1,357 @@
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999999 |grep located
+Factor point located : 999999999 1
+Factor point located : 333333333 3
+Factor point located : 111111111 9
+Factor point located : 37037037 27
+Factor point located : 27027027 37
+Factor point located : 12345679 81
+Factor point located : 9009009 111
+Factor point located : 3003003 333
+Factor point located : 1001001 999
+Factor point located : 333667 2997
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 9999999999 |grep located
+thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: ParseIntError { kind: PosOverflow }', src/main.rs:4:50
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999998 |grep located
+Factor point located : 999999998 1
+Factor point located : 499999999 2
+Factor point located : 1447178 691
+Factor point located : 723589 1382
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999997 |grep located
+Factor point located : 999999997 1
+Factor point located : 14084507 71
+Factor point located : 444247 2251
+Factor point located : 159821 6257
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999996 |grep located
+Factor point located : 999999996 1
+Factor point located : 499999998 2
+Factor point located : 333333332 3
+Factor point located : 249999999 4
+Factor point located : 166666666 6
+Factor point located : 83333333 12
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999995 |grep located
+Factor point located : 999999995 1
+Factor point located : 199999999 5
+Factor point located : 11235955 89
+Factor point located : 2247191 445
+Factor point located : 691085 1447
+Factor point located : 643915 1553
+Factor point located : 138217 7235
+Factor point located : 128783 7765
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999994 |grep located
+Factor point located : 999999994 1
+Factor point located : 499999997 2
+Factor point located : 142857142 7
+Factor point located : 71428571 14
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999993 |grep located
+Factor point located : 999999993 1
+Factor point located : 333333331 3
+Factor point located : 58823529 17
+Factor point located : 19607843 51
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999992 |grep located
+Factor point located : 999999992 1
+Factor point located : 499999996 2
+Factor point located : 249999998 4
+Factor point located : 124999999 8
+Factor point located : 2004008 499
+Factor point located : 1002004 998
+Factor point located : 501002 1996
+Factor point located : 250501 3992
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999991 |grep located
+Factor point located : 999999991 1
+Factor point located : 14925373 67
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999990 |grep located
+Factor point located : 999999990 1
+Factor point located : 499999995 2
+Factor point located : 333333330 3
+Factor point located : 199999998 5
+Factor point located : 166666665 6
+Factor point located : 111111110 9
+Factor point located : 99999999 10
+Factor point located : 90909090 11
+Factor point located : 66666666 15
+Factor point located : 55555555 18
+Factor point located : 45454545 22
+Factor point located : 33333333 30
+Factor point located : 30303030 33
+Factor point located : 22222222 45
+Factor point located : 18181818 55
+Factor point located : 15151515 66
+Factor point located : 13698630 73
+Factor point located : 11111111 90
+Factor point located : 10101010 99
+Factor point located : 9900990 101
+Factor point located : 9090909 110
+Factor point located : 7299270 137
+Factor point located : 6849315 146
+Factor point located : 6060606 165
+Factor point located : 5050505 198
+Factor point located : 4950495 202
+Factor point located : 4566210 219
+Factor point located : 3649635 274
+Factor point located : 3300330 303
+Factor point located : 3030303 330
+Factor point located : 2739726 365
+Factor point located : 2433090 411
+Factor point located : 2283105 438
+Factor point located : 2020202 495
+Factor point located : 1980198 505
+Factor point located : 1650165 606
+Factor point located : 1522070 657
+Factor point located : 1459854 685
+Factor point located : 1369863 730
+Factor point located : 1245330 803
+Factor point located : 1216545 822
+Factor point located : 1100110 909
+Factor point located : 1010101 990
+Factor point located : 990099 1010
+Factor point located : 913242 1095
+Factor point located : 900090 1111
+Factor point located : 811030 1233
+Factor point located : 761035 1314
+Factor point located : 729927 1370
+Factor point located : 663570 1507
+Factor point located : 660066 1515
+Factor point located : 622665 1606
+Factor point located : 550055 1818
+Factor point located : 486618 2055
+Factor point located : 456621 2190
+Factor point located : 450045 2222
+Factor point located : 415110 2409
+Factor point located : 405515 2466
+Factor point located : 331785 3014
+Factor point located : 330033 3030
+Factor point located : 304414 3285
+Factor point located : 300030 3333
+Factor point located : 249066 4015
+Factor point located : 243309 4110
+Factor point located : 221190 4521
+Factor point located : 220022 4545
+Factor point located : 207555 4818
+Factor point located : 180018 5555
+Factor point located : 162206 6165
+Factor point located : 152207 6570
+Factor point located : 150015 6666
+Factor point located : 138370 7227
+Factor point located : 135630 7373
+Factor point located : 132714 7535
+Factor point located : 124533 8030
+Factor point located : 110595 9042
+Factor point located : 110011 9090
+Factor point located : 100010 9999
+Factor point located : 99990 10001
+Factor point located : 90009 11110
+Factor point located : 83022 12045
+Factor point located : 81103 12330
+Factor point located : 73730 13563
+Factor point located : 72270 13837
+Factor point located : 69185 14454
+Factor point located : 67815 14746
+Factor point located : 66357 15070
+Factor point located : 60006 16665
+Factor point located : 50005 19998
+Factor point located : 49995 20002
+Factor point located : 45210 22119
+Factor point located : 44238 22605
+Factor point located : 41511 24090
+Factor point located : 36865 27126
+Factor point located : 36135 27674
+Factor point located : 33330 30003
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999989 |grep located
+Factor point located : 999999989 1
+Factor point located : 231107 4327
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999988 |grep located
+Factor point located : 999999988 1
+Factor point located : 499999994 2
+Factor point located : 249999997 4
+Factor point located : 76923076 13
+Factor point located : 38461538 26
+Factor point located : 19230769 52
+Factor point located : 3021148 331
+Factor point located : 1510574 662
+Factor point located : 755287 1324
+Factor point located : 232396 4303
+Factor point located : 116198 8606
+Factor point located : 58099 17212
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999987 |grep located
+Factor point located : 999999987 1
+Factor point located : 333333329 3
+Factor point located : 142857141 7
+Factor point located : 47619047 21
+Factor point located : 20408163 49
+Factor point located : 6802721 147
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999986 |grep located
+Factor point located : 999999986 1
+Factor point located : 499999993 2
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999985 |grep located
+Factor point located : 999999985 1
+Factor point located : 199999997 5
+Factor point located : 1345895 743
+Factor point located : 269179 3715
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999984 |grep located
+Factor point located : 999999984 1
+Factor point located : 499999992 2
+Factor point located : 333333328 3
+Factor point located : 249999996 4
+Factor point located : 166666664 6
+Factor point located : 124999998 8
+Factor point located : 83333332 12
+Factor point located : 62499999 16
+Factor point located : 41666666 24
+Factor point located : 32258064 31
+Factor point located : 20833333 48
+Factor point located : 16129032 62
+Factor point located : 10752688 93
+Factor point located : 8064516 124
+Factor point located : 5376344 186
+Factor point located : 4032258 248
+Factor point located : 2688172 372
+Factor point located : 2016129 496
+Factor point located : 1344086 744
+Factor point located : 672043 1488
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999983 |grep located
+Factor point located : 999999983 1
+Factor point located : 2967359 337
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999982 |grep located
+Factor point located : 999999982 1
+Factor point located : 499999991 2
+Factor point located : 52631578 19
+Factor point located : 34482758 29
+Factor point located : 26315789 38
+Factor point located : 17241379 58
+Factor point located : 5235602 191
+Factor point located : 2617801 382
+Factor point located : 1814882 551
+Factor point located : 907441 1102
+Factor point located : 275558 3629
+Factor point located : 210482 4751
+Factor point located : 180538 5539
+Factor point located : 137779 7258
+Factor point located : 105241 9502
+Factor point located : 90269 11078
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999981 |grep located
+Factor point located : 999999981 1
+Factor point located : 333333327 3
+Factor point located : 111111109 9
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999980 |grep located
+Factor point located : 999999980 1
+Factor point located : 499999990 2
+Factor point located : 249999995 4
+Factor point located : 199999996 5
+Factor point located : 142857140 7
+Factor point located : 99999998 10
+Factor point located : 71428570 14
+Factor point located : 49999999 20
+Factor point located : 43478260 23
+Factor point located : 35714285 28
+Factor point located : 28571428 35
+Factor point located : 21739130 46
+Factor point located : 14285714 70
+Factor point located : 10869565 92
+Factor point located : 8695652 115
+Factor point located : 7142857 140
+Factor point located : 6211180 161
+Factor point located : 4347826 230
+Factor point located : 3105590 322
+Factor point located : 2173913 460
+Factor point located : 1552795 644
+Factor point located : 1242236 805
+Factor point located : 621118 1610
+Factor point located : 310559 3220
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999979 |grep located
+Factor point located : 999999979 1
+Factor point located : 90909089 11
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999978 |grep located
+Factor point located : 999999978 1
+Factor point located : 499999989 2
+Factor point located : 333333326 3
+Factor point located : 166666663 6
+Factor point located : 2610966 383
+Factor point located : 1305483 766
+Factor point located : 870322 1149
+Factor point located : 435161 2298
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999977 |grep located
+Factor point located : 999999977 1
+Factor point located : 336587 2971
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999976 |grep located
+Factor point located : 999999976 1
+Factor point located : 499999988 2
+Factor point located : 249999994 4
+Factor point located : 124999997 8
+Factor point located : 58823528 17
+Factor point located : 29411764 34
+Factor point located : 14705882 68
+Factor point located : 7352941 136
+Factor point located : 1270648 787
+Factor point located : 635324 1574
+Factor point located : 317662 3148
+Factor point located : 158831 6296
+Factor point located : 107032 9343
+Factor point located : 74744 13379
+Factor point located : 53516 18686
+Factor point located : 37372 26758
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999975 |grep located
+Factor point located : 999999975 1
+Factor point located : 333333325 3
+Factor point located : 199999995 5
+Factor point located : 76923075 13
+Factor point located : 66666665 15
+Factor point located : 39999999 25
+Factor point located : 25641025 39
+Factor point located : 15384615 65
+Factor point located : 13333333 75
+Factor point located : 5128205 195
+Factor point located : 3076923 325
+Factor point located : 1025641 975
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999974 |grep located
+Factor point located : 999999974 1
+Factor point located : 499999987 2
+Factor point located : 5076142 197
+Factor point located : 3215434 311
+Factor point located : 2538071 394
+Factor point located : 1607717 622
+Factor point located : 122534 8161
+Factor point located : 61267 16322
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999973 |grep located
+Factor point located : 999999973 1
+Factor point located : 142857139 7
+Factor point located : 1003009 997
+Factor point located : 143287 6979
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999972 |grep located
+Factor point located : 999999972 1
+Factor point located : 499999986 2
+Factor point located : 333333324 3
+Factor point located : 249999993 4
+Factor point located : 166666662 6
+Factor point located : 111111108 9
+Factor point located : 83333331 12
+Factor point located : 55555554 18
+Factor point located : 37037036 27
+Factor point located : 27777777 36
+Factor point located : 18867924 53
+Factor point located : 18518518 54
+Factor point located : 9433962 106
+Factor point located : 9259259 108
+Factor point located : 6289308 159
+Factor point located : 4716981 212
+Factor point located : 3144654 318
+Factor point located : 2096436 477
+Factor point located : 1572327 636
+Factor point located : 1048218 954
+Factor point located : 698812 1431
+Factor point located : 524109 1908
+Factor point located : 349406 2862
+Factor point located : 174703 5724
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999971 |grep located
+Factor point located : 999999971 1
+Factor point located : 5181347 193
+g:/media/ksrinivasan/Krishna_iResearch/Krishna_iResearch_Opensource_wc3/GitHub/Grafit/course_material/Programming/Rust/rasterization/target/debug# ./rasterization 999999970 |grep located
+Factor point located : 999999970 1
+Factor point located : 499999985 2
+Factor point located : 199999994 5
+Factor point located : 99999997 10
+Factor point located : 771010 1297
+Factor point located : 385505 2594
+Factor point located : 154202 6485
+Factor point located : 77101 12970
+

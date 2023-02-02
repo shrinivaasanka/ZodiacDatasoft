@@ -31,3 +31,26 @@ References:
 10.Rust versus C benchmarks - Number field sieve and N-Body computations are faster in Rust - https://programming-language-benchmarks.vercel.app/c-vs-rust
 11.Linux Kernel Device Drivers in Rust - https://security.googleblog.com/2021/04/rust-in-linux-kernel.html
 12.Linux Kernel Device Drivers in Rust - https://project.linuxfoundation.org/hubfs/Webinars/Webinar_Slides/LF-Writing-Linux-Kernel-Modules-in-Rust.pdf
+
+----------------------------------------------------------------------------------------------------------------
+1384. (THEORY and FEATURE) Computational Geometric Factorization - Rayon Parallel iterator Rasterization or rectification of hyperbolic arc and Factor point location in Rust- Sequential and Parallel versions - related to 1383 and all sections on Integer Factorization,Computational Geometry,Set Partitions-to-Tile Cover reduction by Lagranges Four Square Theorem and ILP,Primality Testing,RSA Semiprimes,Almost-Square Bounding Boxes in Large Scale Visual Recognition,Pell's Equation,Brahmagupta's Chakravala,Approximate Factoring by Newton-Raphson Rayshooting queries,Algebraic Geometry of Computational Geometric Factorization,Quantum computation and Derandomization of BQP Factorization by Condorcet Jury Theorem Majority-BQPVoterSAT boolean composition - 2 February 2023 
+----------------------------------------------------------------------------------------------------------------
+1384.1 course_material/Programming/Rust/rasterization/Cargo.toml has been updated to add dependencies for Rayon parallel iterator and foreach closures from crates.io.
+1384.2 course_material/Programming/Rust/rasterization/src/main.rs has been changed to import std::env for parsing commandline arguments by env::args(): number to be factorized and type of rasterization (sequential or parallel) are two arguments - ./rasterization <number> <type_of_rasterization> 
+1384.3 Imports for Rayon and foreach have been declared for parallel rasterization.Arguments to Function rasterize_hyperbolic_arc(num_fact: i32,rasterization: String) have been changed to choose between sequential and parallel rasterization.
+1384.4 Clause for sequential rasterization invokes foreach closure (from foreach Crate) on std::ops::Range struct for sequential iteration over hyperbolic arc bow and binary search of segments.
+1384.5 Clause for parallel rasterization invokes for_each() from rayon::iter::ParallelIterator trait for parallelly iterating through hyperbolic arc bow segments and perform iterative binary search on them. 
+1384.6 This is a preliminary implementation of Computational Geometric Factorization in Rust which is an alternative or optimized supplement to Python-Spark-Py4J cloud factorization implementation to take advantage of Rust's lightning-fast Rayon parallel iterators.
+1384.7 Some initial benchmarks (sequential and parallel) in logs suggest, as an amazement, Rust sequential iterator rasterization is faster than Spark-Python Parallelize() parallel rasterization on quadcore by many orders of magnitude (Example:30 bits integer factorized in minutes in Spark-Python, is factorized in fraction of second in Rust even for sequential iterator which is 100X reduction in runtime, a slowdown possibly caused in PySpark due to heavy booting time of executor instances). Presently Rayon parallel iterators are limited only to i32 32-bit integers which is a roadblock for scaling to huge integers unless big integers are supported by Rayon. Other issue about Rayon is its confinement to number of cores or hyperthreads of CPUs based on work stealing - Rayon is not for cloud computing but HPC supercomputers of thousands of CPUs could benefit from Rayon (In complexxity theoretic terms, Rayon is not MapReduce DMRC but true NC software).
+1384.8 Following are some benchmarked integers (consecutive 30 integers and miscellaneous - all 32 bits):
+	Sequential rasterization - rasterization/src/logs/rasterization.log.2February2023
+	Sequential rasterization - rasterization/src/logs/rasterization.log2.2February2023
+	Parallel rasterization - rasterization/src/logs/rasterization.log3.2February2023
+
+References:
+----------
+1384.9 Fearless Concurrency (Ownership-Borrowing memory safety) and Rayon Parallel Iterators - https://developers.redhat.com/blog/2021/04/30/how-rust-makes-rayons-data-parallelism-magical#
+1384.10 Crate foreach - https://docs.rs/foreach/latest/foreach/
+1384.11 Rayon Parallel Iterator trait - https://docs.rs/rayon/latest/rayon/iter/trait.ParallelIterator.html
+1384.12 Rust std::ops::Range - https://doc.rust-lang.org/std/ops/struct.Range.html
+1384.13 Rayon FAQ - https://github.com/rayon-rs/rayon/blob/master/FAQ.md
