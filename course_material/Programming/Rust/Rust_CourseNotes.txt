@@ -54,3 +54,19 @@ References:
 1384.11 Rayon Parallel Iterator trait - https://docs.rs/rayon/latest/rayon/iter/trait.ParallelIterator.html
 1384.12 Rust std::ops::Range - https://doc.rust-lang.org/std/ops/struct.Range.html
 1384.13 Rayon FAQ - https://github.com/rayon-rs/rayon/blob/master/FAQ.md
+
+----------------------------------------------------------------------------------------------------------------
+1385. (THEORY and FEATURE) Computational Geometric Factorization - High Performance Computing implementation for Supercomputers - Rayon Parallel iterator Rasterization or rectification of hyperbolic arc and Factor point location in Rust- Sequential and Parallel versions - multiple consecutive integers - performance benchmarks - related to 1383,1384 and all sections on Integer Factorization,Computational Geometry,Set Partitions-to-Tile Cover reduction by Lagranges Four Square Theorem and ILP,Primality Testing,RSA Semiprimes,Almost-Square Bounding Boxes in Large Scale Visual Recognition,Pell's Equation,Brahmagupta's Chakravala,Approximate Factoring by Newton-Raphson Rayshooting queries,Algebraic Geometry of Computational Geometric Factorization,Quantum computation and Derandomization of BQP Factorization by Condorcet Jury Theorem Majority-BQPVoterSAT boolean composition - 7 February 2023 
+----------------------------------------------------------------------------------------------------------------
+1385.1 Updated course_material/Programming/Rust/rasterization/src/main.rs to import std::time for performance benchmarks.
+1385.2 Function main() has been changed to pass on additional commandline parameter for range of consecutive multiple integers to be factorized - multiple integer factorization has been made default as single integer factorization is a special case of range 1.
+1385.3 New function factorize_multipleintegers(num_fact:i32,range:i32,rasterization:String) has been defined to loop through the range of integers to be factorized and invoke rasterize_hyperbolic_arc() which has been decorated by SystemTime::now timer functions before and after calls and duration between two now() values is the factorization time per integer.
+1385.4 Function rasterize_hyperbolic_arc() has been made inline and instrumented with SystemTime::now() profiling for Sequential and Parallel rasterization binary searches.
+1385.5 Function binary_search() has been made inline and returns a vector of factors. Factors found during binary search are pushed to the vector.
+1385.6 Two ranges of consecutive integers 10000000 to 10000098 and 100000000 to 100000048 have been factorized by sequential and parallel rasterization. Nick's class Computational Geometric Factorization algorithm depends on parallel rasterization. Following are the 4 logs for 2 sets of ranges - 2 each for sequential and parallel rasterization: 
+	rasterization.parallel.multipleintegers.log.7February2023
+	rasterization.parallel.multipleintegers2.log.7February2023
+	rasterization.sequential.multipleintegers.log.7February2023
+	rasterization.sequential.multipleintegers2.log.7February2023
+1385.7 Integer 10000098 was factorized (all factor points were located) in 735.27 milliseconds by Rayon parallel rasterization and in 1.407 seconds by sequential rasterization. 27 bits Integer 100000048 was factorized (all factor points were located) in 8.1418 seconds by Rayon parallel rasterization and 13.39 seconds by sequential rasterization.
+1385.8 In comparison, Spark Python DMRC MapReduce implementation was still locating factor points after 754035367579 nanoseconds (754.03 seconds) and interrupted or Rust HPC implementation is approximately 1000 times faster than Spark-Python cloud implementation - PySpark logs for factorizing 100000048 have been captured in rasterization.PySpark.7February2023. 

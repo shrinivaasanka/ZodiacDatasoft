@@ -1,0 +1,2293 @@
+Factorization of 10000000 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704065,
+    tv_nsec: 22706106,
+} 
+Factor point located : 10000000 1
+Factor point located : 2 5000000
+Factor point located : 5000000 2
+Factor point located : 4 2500000
+Factor point located : 2500000 4
+Factor point located : 2000000 5
+Factor point located : 1250000 8
+Factor point located : 1000000 10
+Factor point located : 625000 16
+Factor point located : 500000 20
+Factor point located : 400000 25
+Factor point located : 312500 32
+Factor point located : 250000 40
+Factor point located : 200000 50
+Factor point located : 156250 64
+Factor point located : 125000 80
+Factor point located : 100000 100
+Factor point located : 80000 125
+Factor point located : 78125 128
+Factor point located : 62500 160
+Factor point located : 50000 200
+Factor point located : 40000 250
+Factor point located : 31250 320
+Factor point located : 25000 400
+Factor point located : 20000 500
+Factor point located : 16000 625
+Factor point located : 15625 640
+Factor point located : 12500 800
+Factor point located : 10000 1000
+Factor point located : 8000 1250
+Factor point located : 6250 1600
+Factor point located : 5000 2000
+Factor point located : 4000 2500
+Factor point located : 3200 3125
+Factor point located : 3125 3200
+Factor point located : 2500 4000
+Factor point located : 2000 5000
+Factor point located : 1600 6250
+Factor point located : 1250 8000
+Factor point located : 1000 10000
+Factor point located : 800 12500
+Factor point located : 640 15625
+Factor point located : 625 16000
+Factor point located : 500 20000
+Factor point located : 400 25000
+Factor point located : 320 31250
+Factor point located : 250 40000
+Factor point located : 200 50000
+Factor point located : 160 62500
+Factor point located : 128 78125
+Factor point located : 125 80000
+Factor point located : 100 100000
+Factor point located : 80 125000
+Factor point located : 64 156250
+Factor point located : 50 200000
+Factor point located : 40 250000
+Factor point located : 32 312500
+Factor point located : 25 400000
+Factor point located : 20 500000
+Factor point located : 16 625000
+Factor point located : 10 1000000
+Factor point located : 8 1250000
+Factor point located : 5 2000000
+Parallel Rasterization phase of factoring 10000000 was completed in (nanoseconds): 594.688439ms 
+Factorization of 10000000 was completed in (nanoseconds): 597.691823ms 
+Factorization of 10000001 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704065,
+    tv_nsec: 622699602,
+} 
+Factor point located : 10000001 1
+Factor point located : 909091 11
+Factor point located : 11 909091
+Parallel Rasterization phase of factoring 10000001 was completed in (nanoseconds): 548.230423ms 
+Factorization of 10000001 was completed in (nanoseconds): 549.166537ms 
+Factorization of 10000002 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704066,
+    tv_nsec: 172009383,
+} 
+Factor point located : 10000002 1
+Factor point located : 5000001 2
+Factor point located : 3333334 3
+Factor point located : 1666667 6
+Factor point located : 212766 47
+Factor point located : 106383 94
+Factor point located : 70922 141
+Factor point located : 35461 282
+Factor point located : 282 35461
+Factor point located : 2 5000001
+Factor point located : 141 70922
+Factor point located : 94 106383
+Factor point located : 47 212766
+Factor point located : 3 3333334
+Factor point located : 6 1666667
+Parallel Rasterization phase of factoring 10000002 was completed in (nanoseconds): 553.076703ms 
+Factorization of 10000002 was completed in (nanoseconds): 554.02314ms 
+Factorization of 10000003 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704066,
+    tv_nsec: 726231365,
+} 
+Factor point located : 10000003 1
+Factor point located : 769231 13
+Factor point located : 13 769231
+Parallel Rasterization phase of factoring 10000003 was completed in (nanoseconds): 549.11172ms 
+Factorization of 10000003 was completed in (nanoseconds): 549.966638ms 
+Factorization of 10000004 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704067,
+    tv_nsec: 276330992,
+} 
+Factor point located : 10000004 1
+Factor point located : 5000002 2
+Factor point located : 2500001 4
+Factor point located : 1428572 7
+Factor point located : 714286 14
+Factor point located : 526316 19
+Factor point located : 357143 28
+Factor point located : 263158 38
+Factor point located : 4 2500001
+Factor point located : 2 5000002
+Factor point located : 131579 76
+Factor point located : 75188 133
+Factor point located : 37594 266
+Factor point located : 18797 532
+Factor point located : 532 18797
+Factor point located : 266 37594
+Factor point located : 133 75188
+Factor point located : 76 131579
+Factor point located : 38 263158
+Factor point located : 28 357143
+Factor point located : 19 526316
+Factor point located : 14 714286
+Factor point located : 7 1428572
+Parallel Rasterization phase of factoring 10000004 was completed in (nanoseconds): 559.503045ms 
+Factorization of 10000004 was completed in (nanoseconds): 560.537265ms 
+Factorization of 10000005 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704067,
+    tv_nsec: 837094497,
+} 
+Factor point located : 10000005 1
+Factor point located : 3333335 3
+Factor point located : 2000001 5
+Factor point located : 666667 15
+Factor point located : 15 666667
+Factor point located : 3 3333335
+Factor point located : 5 2000001
+Parallel Rasterization phase of factoring 10000005 was completed in (nanoseconds): 559.241314ms 
+Factorization of 10000005 was completed in (nanoseconds): 560.074952ms 
+Factorization of 10000006 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704068,
+    tv_nsec: 397307165,
+} 
+Factor point located : 10000006 1
+Factor point located : 5000003 2
+Factor point located : 2 5000003
+Factor point located : 120482 83
+Factor point located : 93458 107
+Factor point located : 60241 166
+Factor point located : 46729 214
+Factor point located : 17762 563
+Factor point located : 8881 1126
+Factor point located : 1126 8881
+Factor point located : 563 17762
+Factor point located : 214 46729
+Factor point located : 166 60241
+Factor point located : 107 93458
+Factor point located : 83 120482
+Parallel Rasterization phase of factoring 10000006 was completed in (nanoseconds): 576.936649ms 
+Factorization of 10000006 was completed in (nanoseconds): 577.713211ms 
+Factorization of 10000007 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704068,
+    tv_nsec: 975168348,
+} 
+Factor point located : 10000007 1
+Factor point located : 10627 941
+Factor point located : 941 10627
+Parallel Rasterization phase of factoring 10000007 was completed in (nanoseconds): 563.509258ms 
+Factorization of 10000007 was completed in (nanoseconds): 564.379993ms 
+Factorization of 10000008 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704069,
+    tv_nsec: 539674883,
+} 
+Factor point located : 10000008 1
+Factor point located : 5000004 2
+Factor point located : 3333336 3
+Factor point located : 2500002 4
+Factor point located : 4 2500002
+Factor point located : 2 5000004
+Factor point located : 1666668 6
+Factor point located : 1250001 8
+Factor point located : 1111112 9
+Factor point located : 833334 12
+Factor point located : 555556 18
+Factor point located : 416667 24
+Factor point located : 277778 36
+Factor point located : 138889 72
+Factor point located : 72 138889
+Factor point located : 36 277778
+Factor point located : 24 416667
+Factor point located : 18 555556
+Factor point located : 12 833334
+Factor point located : 3 3333336
+Factor point located : 9 1111112
+Factor point located : 8 1250001
+Factor point located : 6 1666668
+Parallel Rasterization phase of factoring 10000008 was completed in (nanoseconds): 557.842203ms 
+Factorization of 10000008 was completed in (nanoseconds): 558.687921ms 
+Factorization of 10000009 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704070,
+    tv_nsec: 98497450,
+} 
+Factor point located : 10000009 1
+Factor point located : 434783 23
+Factor point located : 23 434783
+Parallel Rasterization phase of factoring 10000009 was completed in (nanoseconds): 718.548104ms 
+Factorization of 10000009 was completed in (nanoseconds): 719.683734ms 
+Factorization of 10000010 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704070,
+    tv_nsec: 818402057,
+} 
+Factor point located : 10000010 1
+Factor point located : 2 5000005
+Factor point located : 5000005 2
+Factor point located : 2000002 5
+Factor point located : 1000001 10
+Factor point located : 99010 101
+Factor point located : 49505 202
+Factor point located : 19802 505
+Factor point located : 9901 1010
+Factor point located : 1010 9901
+Factor point located : 505 19802
+Factor point located : 202 49505
+Factor point located : 101 99010
+Factor point located : 10 1000001
+Factor point located : 5 2000002
+Parallel Rasterization phase of factoring 10000010 was completed in (nanoseconds): 644.523957ms 
+Factorization of 10000010 was completed in (nanoseconds): 648.556328ms 
+Factorization of 10000011 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704071,
+    tv_nsec: 467093976,
+} 
+Factor point located : 10000011 1
+Factor point located : 3333337 3
+Factor point located : 1428573 7
+Factor point located : 476191 21
+Factor point located : 322581 31
+Factor point located : 107527 93
+Factor point located : 46083 217
+Factor point located : 15361 651
+Factor point located : 651 15361
+Factor point located : 217 46083
+Factor point located : 93 107527
+Factor point located : 31 322581
+Factor point located : 21 476191
+Factor point located : 3 3333337
+Factor point located : 7 1428573
+Parallel Rasterization phase of factoring 10000011 was completed in (nanoseconds): 575.915508ms 
+Factorization of 10000011 was completed in (nanoseconds): 576.74917ms 
+Factorization of 10000012 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704072,
+    tv_nsec: 43976424,
+} 
+Factor point located : 10000012 1
+Factor point located : 5000006 2
+Factor point located : 2500003 4
+Factor point located : 909092 11
+Factor point located : 588236 17
+Factor point located : 454546 22
+Factor point located : 344828 29
+Factor point located : 294118 34
+Factor point located : 227273 44
+Factor point located : 172414 58
+Factor point located : 147059 68
+Factor point located : 2 5000006
+Factor point located : 4 2500003
+Factor point located : 86207 116
+Factor point located : 53476 187
+Factor point located : 31348 319
+Factor point located : 26738 374
+Factor point located : 21692 461
+Factor point located : 20284 493
+Factor point located : 15674 638
+Factor point located : 13369 748
+Factor point located : 10846 922
+Factor point located : 10142 986
+Factor point located : 7837 1276
+Factor point located : 5423 1844
+Factor point located : 5071 1972
+Factor point located : 1972 5071
+Factor point located : 1844 5423
+Factor point located : 1276 7837
+Factor point located : 986 10142
+Factor point located : 922 10846
+Factor point located : 748 13369
+Factor point located : 638 15674
+Factor point located : 493 20284
+Factor point located : 461 21692
+Factor point located : 374 26738
+Factor point located : 319 31348
+Factor point located : 187 53476
+Factor point located : 116 86207
+Factor point located : 68 147059
+Factor point located : 58 172414
+Factor point located : 44 227273
+Factor point located : 34 294118
+Factor point located : 29 344828
+Factor point located : 22 454546
+Factor point located : 17 588236
+Factor point located : 11 909092
+Parallel Rasterization phase of factoring 10000012 was completed in (nanoseconds): 549.381652ms 
+Factorization of 10000012 was completed in (nanoseconds): 550.219248ms 
+Factorization of 10000013 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704072,
+    tv_nsec: 594374366,
+} 
+Factor point located : 10000013 1
+Factor point located : 23753 421
+Factor point located : 421 23753
+Parallel Rasterization phase of factoring 10000013 was completed in (nanoseconds): 566.00365ms 
+Factorization of 10000013 was completed in (nanoseconds): 567.986224ms 
+Factorization of 10000014 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704073,
+    tv_nsec: 162807989,
+} 
+Factor point located : 10000014 1
+Factor point located : 5000007 2
+Factor point located : 3333338 3
+Factor point located : 1666669 6
+Factor point located : 2 5000007
+Factor point located : 55866 179
+Factor point located : 27933 358
+Factor point located : 18622 537
+Factor point located : 9311 1074
+Factor point located : 1074 9311
+Factor point located : 537 18622
+Factor point located : 358 27933
+Factor point located : 179 55866
+Factor point located : 6 1666669
+Factor point located : 3 3333338
+Parallel Rasterization phase of factoring 10000014 was completed in (nanoseconds): 911.743825ms 
+Factorization of 10000014 was completed in (nanoseconds): 913.462911ms 
+Factorization of 10000015 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704074,
+    tv_nsec: 76423246,
+} 
+Factor point located : 10000015 1
+Factor point located : 2000003 5
+Factor point located : 5 2000003
+Parallel Rasterization phase of factoring 10000015 was completed in (nanoseconds): 589.784273ms 
+Factorization of 10000015 was completed in (nanoseconds): 590.58001ms 
+Factorization of 10000016 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704074,
+    tv_nsec: 667123180,
+} 
+Factor point located : 10000016 1
+Factor point located : 5000008 2
+Factor point located : 2500004 4
+Factor point located : 1250002 8
+Factor point located : 769232 13
+Factor point located : 625001 16
+Factor point located : 384616 26
+Factor point located : 192308 52
+Factor point located : 96154 104
+Factor point located : 76336 131
+Factor point located : 48077 208
+Factor point located : 38168 262
+Factor point located : 27248 367
+Factor point located : 19084 524
+Factor point located : 13624 734
+Factor point located : 9542 1048
+Factor point located : 6812 1468
+Factor point located : 5872 1703
+Factor point located : 4771 2096
+Factor point located : 3406 2936
+Factor point located : 2936 3406
+Factor point located : 2096 4771
+Factor point located : 1703 5872
+Factor point located : 1468 6812
+Factor point located : 1048 9542
+Factor point located : 2 5000008
+Factor point located : 734 13624
+Factor point located : 524 19084
+Factor point located : 367 27248
+Factor point located : 262 38168
+Factor point located : 208 48077
+Factor point located : 131 76336
+Factor point located : 104 96154
+Factor point located : 52 192308
+Factor point located : 26 384616
+Factor point located : 16 625001
+Factor point located : 13 769232
+Factor point located : 4 2500004
+Factor point located : 8 1250002
+Parallel Rasterization phase of factoring 10000016 was completed in (nanoseconds): 642.660263ms 
+Factorization of 10000016 was completed in (nanoseconds): 643.505472ms 
+Factorization of 10000017 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704075,
+    tv_nsec: 310754950,
+} 
+Factor point located : 10000017 1
+Factor point located : 3333339 3
+Factor point located : 1111113 9
+Factor point located : 370371 27
+Factor point located : 123457 81
+Factor point located : 81 123457
+Factor point located : 27 370371
+Factor point located : 3 3333339
+Factor point located : 9 1111113
+Parallel Rasterization phase of factoring 10000017 was completed in (nanoseconds): 775.437046ms 
+Factorization of 10000017 was completed in (nanoseconds): 776.283783ms 
+Factorization of 10000018 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704076,
+    tv_nsec: 87191413,
+} 
+Factor point located : 10000018 1
+Factor point located : 5000009 2
+Factor point located : 1428574 7
+Factor point located : 714287 14
+Factor point located : 204082 49
+Factor point located : 149254 67
+Factor point located : 102041 98
+Factor point located : 74627 134
+Factor point located : 21322 469
+Factor point located : 10661 938
+Factor point located : 6566 1523
+Factor point located : 3283 3046
+Factor point located : 3046 3283
+Factor point located : 1523 6566
+Factor point located : 938 10661
+Factor point located : 2 5000009
+Factor point located : 469 21322
+Factor point located : 134 74627
+Factor point located : 98 102041
+Factor point located : 67 149254
+Factor point located : 49 204082
+Factor point located : 14 714287
+Factor point located : 7 1428574
+Parallel Rasterization phase of factoring 10000018 was completed in (nanoseconds): 733.609762ms 
+Factorization of 10000018 was completed in (nanoseconds): 734.985752ms 
+Factorization of 10000019 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704076,
+    tv_nsec: 822605573,
+} 
+Factor point located : 10000019 1
+Parallel Rasterization phase of factoring 10000019 was completed in (nanoseconds): 749.559342ms 
+Factorization of 10000019 was completed in (nanoseconds): 750.756524ms 
+Factorization of 10000020 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704077,
+    tv_nsec: 573573395,
+} 
+Factor point located : 10000020 1
+Factor point located : 5000010 2
+Factor point located : 3333340 3
+Factor point located : 2500005 4
+Factor point located : 2000004 5
+Factor point located : 1666670 6
+Factor point located : 1000002 10
+Factor point located : 833335 12
+Factor point located : 666668 15
+Factor point located : 500001 20
+Factor point located : 333334 30
+Factor point located : 4 2500005
+Factor point located : 2 5000010
+Factor point located : 166667 60
+Factor point located : 60 166667
+Factor point located : 30 333334
+Factor point located : 3 3333340
+Factor point located : 20 500001
+Factor point located : 15 666668
+Factor point located : 12 833335
+Factor point located : 10 1000002
+Factor point located : 6 1666670
+Factor point located : 5 2000004
+Parallel Rasterization phase of factoring 10000020 was completed in (nanoseconds): 752.72782ms 
+Factorization of 10000020 was completed in (nanoseconds): 753.510167ms 
+Factorization of 10000021 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704078,
+    tv_nsec: 327206369,
+} 
+Factor point located : 10000021 1
+Factor point located : 103093 97
+Factor point located : 97 103093
+Parallel Rasterization phase of factoring 10000021 was completed in (nanoseconds): 758.307125ms 
+Factorization of 10000021 was completed in (nanoseconds): 759.780952ms 
+Factorization of 10000022 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704079,
+    tv_nsec: 87128390,
+} 
+Factor point located : 10000022 1
+Factor point located : 5000011 2
+Factor point located : 2 5000011
+Parallel Rasterization phase of factoring 10000022 was completed in (nanoseconds): 575.825074ms 
+Factorization of 10000022 was completed in (nanoseconds): 578.316914ms 
+Factorization of 10000023 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704079,
+    tv_nsec: 665717738,
+} 
+Factor point located : 10000023 1
+Factor point located : 3333341 3
+Factor point located : 909093 11
+Factor point located : 526317 19
+Factor point located : 303031 33
+Factor point located : 243903 41
+Factor point located : 175439 57
+Factor point located : 81301 123
+Factor point located : 47847 209
+Factor point located : 25707 389
+Factor point located : 22173 451
+Factor point located : 15949 627
+Factor point located : 12837 779
+Factor point located : 8569 1167
+Factor point located : 7391 1353
+Factor point located : 4279 2337
+Factor point located : 2337 4279
+Factor point located : 1353 7391
+Factor point located : 1167 8569
+Factor point located : 779 12837
+Factor point located : 627 15949
+Factor point located : 451 22173
+Factor point located : 389 25707
+Factor point located : 209 47847
+Factor point located : 123 81301
+Factor point located : 57 175439
+Factor point located : 41 243903
+Factor point located : 33 303031
+Factor point located : 19 526317
+Factor point located : 3 3333341
+Factor point located : 11 909093
+Parallel Rasterization phase of factoring 10000023 was completed in (nanoseconds): 557.399683ms 
+Factorization of 10000023 was completed in (nanoseconds): 558.367115ms 
+Factorization of 10000024 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704080,
+    tv_nsec: 224260780,
+} 
+Factor point located : 10000024 1
+Factor point located : 8 1250003
+Factor point located : 4 2500006
+Factor point located : 2 5000012
+Factor point located : 5000012 2
+Factor point located : 2500006 4
+Factor point located : 1250003 8
+Parallel Rasterization phase of factoring 10000024 was completed in (nanoseconds): 646.981017ms 
+Factorization of 10000024 was completed in (nanoseconds): 647.751657ms 
+Factorization of 10000025 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704080,
+    tv_nsec: 872179426,
+} 
+Factor point located : 10000025 1
+Factor point located : 2000005 5
+Factor point located : 1428575 7
+Factor point located : 400001 25
+Factor point located : 285715 35
+Factor point located : 57143 175
+Factor point located : 175 57143
+Factor point located : 35 285715
+Factor point located : 25 400001
+Factor point located : 7 1428575
+Factor point located : 5 2000005
+Parallel Rasterization phase of factoring 10000025 was completed in (nanoseconds): 764.825335ms 
+Factorization of 10000025 was completed in (nanoseconds): 765.82382ms 
+Factorization of 10000026 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704081,
+    tv_nsec: 638142371,
+} 
+Factor point located : 10000026 1
+Factor point located : 5000013 2
+Factor point located : 2 5000013
+Factor point located : 3333342 3
+Factor point located : 1666671 6
+Factor point located : 1111114 9
+Factor point located : 555557 18
+Factor point located : 18 555557
+Factor point located : 3 3333342
+Factor point located : 9 1111114
+Factor point located : 6 1666671
+Parallel Rasterization phase of factoring 10000026 was completed in (nanoseconds): 907.380282ms 
+Factorization of 10000026 was completed in (nanoseconds): 908.303524ms 
+Factorization of 10000027 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704082,
+    tv_nsec: 546608380,
+} 
+Factor point located : 10000027 1
+Factor point located : 270271 37
+Factor point located : 37 270271
+Parallel Rasterization phase of factoring 10000027 was completed in (nanoseconds): 864.193814ms 
+Factorization of 10000027 was completed in (nanoseconds): 865.112826ms 
+Factorization of 10000028 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704083,
+    tv_nsec: 411900562,
+} 
+Factor point located : 10000028 1
+Factor point located : 5000014 2
+Factor point located : 2500007 4
+Factor point located : 4 2500007
+Factor point located : 2 5000014
+Factor point located : 169492 59
+Factor point located : 84746 118
+Factor point located : 42373 236
+Factor point located : 236 42373
+Factor point located : 118 84746
+Factor point located : 59 169492
+Parallel Rasterization phase of factoring 10000028 was completed in (nanoseconds): 550.506989ms 
+Factorization of 10000028 was completed in (nanoseconds): 551.329724ms 
+Factorization of 10000029 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704083,
+    tv_nsec: 963403432,
+} 
+Factor point located : 10000029 1
+Factor point located : 3333343 3
+Factor point located : 769233 13
+Factor point located : 588237 17
+Factor point located : 256411 39
+Factor point located : 196079 51
+Factor point located : 45249 221
+Factor point located : 15083 663
+Factor point located : 663 15083
+Factor point located : 221 45249
+Factor point located : 51 196079
+Factor point located : 39 256411
+Factor point located : 17 588237
+Factor point located : 13 769233
+Factor point located : 3 3333343
+Parallel Rasterization phase of factoring 10000029 was completed in (nanoseconds): 587.489091ms 
+Factorization of 10000029 was completed in (nanoseconds): 588.248858ms 
+Factorization of 10000030 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704084,
+    tv_nsec: 551886599,
+} 
+Factor point located : 10000030 1
+Factor point located : 2 5000015
+Factor point located : 5000015 2
+Factor point located : 2000006 5
+Factor point located : 1000003 10
+Factor point located : 10 1000003
+Factor point located : 5 2000006
+Parallel Rasterization phase of factoring 10000030 was completed in (nanoseconds): 558.879341ms 
+Factorization of 10000030 was completed in (nanoseconds): 559.639859ms 
+Factorization of 10000031 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704085,
+    tv_nsec: 111684648,
+} 
+Factor point located : 10000031 1
+Factor point located : 44053 227
+Factor point located : 227 44053
+Parallel Rasterization phase of factoring 10000031 was completed in (nanoseconds): 603.731604ms 
+Factorization of 10000031 was completed in (nanoseconds): 604.654698ms 
+Factorization of 10000032 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704085,
+    tv_nsec: 716481454,
+} 
+Factor point located : 10000032 1
+Factor point located : 2 5000016
+Factor point located : 5000016 2
+Factor point located : 3333344 3
+Factor point located : 2500008 4
+Factor point located : 1666672 6
+Factor point located : 1428576 7
+Factor point located : 1250004 8
+Factor point located : 833336 12
+Factor point located : 714288 14
+Factor point located : 625002 16
+Factor point located : 476192 21
+Factor point located : 434784 23
+Factor point located : 416668 24
+Factor point located : 357144 28
+Factor point located : 312501 32
+Factor point located : 238096 42
+Factor point located : 217392 46
+Factor point located : 208334 48
+Factor point located : 178572 56
+Factor point located : 144928 69
+Factor point located : 119048 84
+Factor point located : 108696 92
+Factor point located : 104167 96
+Factor point located : 89286 112
+Factor point located : 72464 138
+Factor point located : 4 2500008
+Factor point located : 8 1250004
+Factor point located : 62112 161
+Factor point located : 59524 168
+Factor point located : 54348 184
+Factor point located : 44643 224
+Factor point located : 36232 276
+Factor point located : 31056 322
+Factor point located : 29762 336
+Factor point located : 27174 368
+Factor point located : 20704 483
+Factor point located : 18116 552
+Factor point located : 15528 644
+Factor point located : 15456 647
+Factor point located : 14881 672
+Factor point located : 13587 736
+Factor point located : 10352 966
+Factor point located : 9058 1104
+Factor point located : 7764 1288
+Factor point located : 7728 1294
+Factor point located : 5176 1932
+Factor point located : 5152 1941
+Factor point located : 4529 2208
+Factor point located : 3882 2576
+Factor point located : 3864 2588
+Factor point located : 2588 3864
+Factor point located : 2576 3882
+Factor point located : 2208 4529
+Factor point located : 1941 5152
+Factor point located : 1932 5176
+Factor point located : 1294 7728
+Factor point located : 1288 7764
+Factor point located : 1104 9058
+Factor point located : 966 10352
+Factor point located : 736 13587
+Factor point located : 672 14881
+Factor point located : 647 15456
+Factor point located : 644 15528
+Factor point located : 552 18116
+Factor point located : 483 20704
+Factor point located : 368 27174
+Factor point located : 336 29762
+Factor point located : 322 31056
+Factor point located : 276 36232
+Factor point located : 224 44643
+Factor point located : 7 1428576
+Factor point located : 184 54348
+Factor point located : 168 59524
+Factor point located : 161 62112
+Factor point located : 138 72464
+Factor point located : 112 89286
+Factor point located : 96 104167
+Factor point located : 92 108696
+Factor point located : 84 119048
+Factor point located : 69 144928
+Factor point located : 56 178572
+Factor point located : 48 208334
+Factor point located : 46 217392
+Factor point located : 42 238096
+Factor point located : 6 1666672
+Factor point located : 32 312501
+Factor point located : 28 357144
+Factor point located : 24 416668
+Factor point located : 23 434784
+Factor point located : 21 476192
+Factor point located : 16 625002
+Factor point located : 14 714288
+Factor point located : 3 3333344
+Factor point located : 12 833336
+Parallel Rasterization phase of factoring 10000032 was completed in (nanoseconds): 643.731345ms 
+Factorization of 10000032 was completed in (nanoseconds): 644.481945ms 
+Factorization of 10000033 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704086,
+    tv_nsec: 361105683,
+} 
+Factor point located : 10000033 1
+Factor point located : 25189 397
+Factor point located : 397 25189
+Parallel Rasterization phase of factoring 10000033 was completed in (nanoseconds): 557.437185ms 
+Factorization of 10000033 was completed in (nanoseconds): 558.291014ms 
+Factorization of 10000034 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704086,
+    tv_nsec: 919568751,
+} 
+Factor point located : 10000034 1
+Factor point located : 5000017 2
+Factor point located : 909094 11
+Factor point located : 454547 22
+Factor point located : 2 5000017
+Factor point located : 22 454547
+Factor point located : 11 909094
+Parallel Rasterization phase of factoring 10000034 was completed in (nanoseconds): 705.173327ms 
+Factorization of 10000034 was completed in (nanoseconds): 706.161501ms 
+Factorization of 10000035 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704087,
+    tv_nsec: 625949285,
+} 
+Factor point located : 10000035 1
+Factor point located : 3333345 3
+Factor point located : 2000007 5
+Factor point located : 1111115 9
+Factor point located : 666669 15
+Factor point located : 222223 45
+Factor point located : 163935 61
+Factor point located : 54645 183
+Factor point located : 32787 305
+Factor point located : 18215 549
+Factor point located : 10929 915
+Factor point located : 3643 2745
+Factor point located : 2745 3643
+Factor point located : 915 10929
+Factor point located : 549 18215
+Factor point located : 305 32787
+Factor point located : 183 54645
+Factor point located : 61 163935
+Factor point located : 45 222223
+Factor point located : 15 666669
+Factor point located : 9 1111115
+Factor point located : 3 3333345
+Factor point located : 5 2000007
+Parallel Rasterization phase of factoring 10000035 was completed in (nanoseconds): 806.421741ms 
+Factorization of 10000035 was completed in (nanoseconds): 807.364712ms 
+Factorization of 10000036 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704088,
+    tv_nsec: 433521964,
+} 
+Factor point located : 10000036 1
+Factor point located : 5000018 2
+Factor point located : 2500009 4
+Factor point located : 4 2500009
+Factor point located : 2 5000018
+Parallel Rasterization phase of factoring 10000036 was completed in (nanoseconds): 728.864709ms 
+Factorization of 10000036 was completed in (nanoseconds): 729.678713ms 
+Factorization of 10000037 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704089,
+    tv_nsec: 163356404,
+} 
+Factor point located : 10000037 1
+Factor point located : 232559 43
+Factor point located : 31949 313
+Factor point located : 13459 743
+Factor point located : 743 13459
+Factor point located : 313 31949
+Factor point located : 43 232559
+Parallel Rasterization phase of factoring 10000037 was completed in (nanoseconds): 636.125779ms 
+Factorization of 10000037 was completed in (nanoseconds): 637.055672ms 
+Factorization of 10000038 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704089,
+    tv_nsec: 800550481,
+} 
+Factor point located : 10000038 1
+Factor point located : 5000019 2
+Factor point located : 3333346 3
+Factor point located : 1666673 6
+Factor point located : 2 5000019
+Factor point located : 11274 887
+Factor point located : 5637 1774
+Factor point located : 5322 1879
+Factor point located : 3758 2661
+Factor point located : 2661 3758
+Factor point located : 1879 5322
+Factor point located : 1774 5637
+Factor point located : 887 11274
+Factor point located : 6 1666673
+Factor point located : 3 3333346
+Parallel Rasterization phase of factoring 10000038 was completed in (nanoseconds): 692.322516ms 
+Factorization of 10000038 was completed in (nanoseconds): 693.518239ms 
+Factorization of 10000039 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704090,
+    tv_nsec: 494296678,
+} 
+Factor point located : 10000039 1
+Factor point located : 1428577 7
+Factor point located : 16639 601
+Factor point located : 4207 2377
+Factor point located : 2377 4207
+Factor point located : 601 16639
+Factor point located : 7 1428577
+Parallel Rasterization phase of factoring 10000039 was completed in (nanoseconds): 755.720097ms 
+Factorization of 10000039 was completed in (nanoseconds): 756.642512ms 
+Factorization of 10000040 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704091,
+    tv_nsec: 251092970,
+} 
+Factor point located : 10000040 1
+Factor point located : 5000020 2
+Factor point located : 2500010 4
+Factor point located : 2000008 5
+Factor point located : 1250005 8
+Factor point located : 1000004 10
+Factor point located : 500002 20
+Factor point located : 4 2500010
+Factor point located : 2 5000020
+Factor point located : 250001 40
+Factor point located : 188680 53
+Factor point located : 112360 89
+Factor point located : 94340 106
+Factor point located : 56180 178
+Factor point located : 47170 212
+Factor point located : 37736 265
+Factor point located : 28090 356
+Factor point located : 23585 424
+Factor point located : 22472 445
+Factor point located : 18868 530
+Factor point located : 14045 712
+Factor point located : 11236 890
+Factor point located : 9434 1060
+Factor point located : 5618 1780
+Factor point located : 4717 2120
+Factor point located : 3560 2809
+Factor point located : 2809 3560
+Factor point located : 2120 4717
+Factor point located : 1780 5618
+Factor point located : 1060 9434
+Factor point located : 890 11236
+Factor point located : 712 14045
+Factor point located : 530 18868
+Factor point located : 445 22472
+Factor point located : 424 23585
+Factor point located : 356 28090
+Factor point located : 265 37736
+Factor point located : 212 47170
+Factor point located : 178 56180
+Factor point located : 106 94340
+Factor point located : 89 112360
+Factor point located : 53 188680
+Factor point located : 40 250001
+Factor point located : 20 500002
+Factor point located : 10 1000004
+Factor point located : 8 1250005
+Factor point located : 5 2000008
+Parallel Rasterization phase of factoring 10000040 was completed in (nanoseconds): 583.742028ms 
+Factorization of 10000040 was completed in (nanoseconds): 585.14145ms 
+Factorization of 10000041 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704091,
+    tv_nsec: 836398387,
+} 
+Factor point located : 10000041 1
+Factor point located : 3333347 3
+Factor point located : 344829 29
+Factor point located : 114943 87
+Factor point located : 72993 137
+Factor point located : 24331 411
+Factor point located : 11919 839
+Factor point located : 3973 2517
+Factor point located : 2517 3973
+Factor point located : 839 11919
+Factor point located : 411 24331
+Factor point located : 137 72993
+Factor point located : 87 114943
+Factor point located : 29 344829
+Factor point located : 3 3333347
+Parallel Rasterization phase of factoring 10000041 was completed in (nanoseconds): 568.946423ms 
+Factorization of 10000041 was completed in (nanoseconds): 570.243108ms 
+Factorization of 10000042 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704092,
+    tv_nsec: 406833994,
+} 
+Factor point located : 10000042 1
+Factor point located : 2 5000021
+Factor point located : 5000021 2
+Factor point located : 769234 13
+Factor point located : 526318 19
+Factor point located : 384617 26
+Factor point located : 322582 31
+Factor point located : 263159 38
+Factor point located : 161291 62
+Factor point located : 40486 247
+Factor point located : 24814 403
+Factor point located : 20243 494
+Factor point located : 16978 589
+Factor point located : 15314 653
+Factor point located : 12407 806
+Factor point located : 8489 1178
+Factor point located : 7657 1306
+Factor point located : 1306 7657
+Factor point located : 1178 8489
+Factor point located : 806 12407
+Factor point located : 653 15314
+Factor point located : 589 16978
+Factor point located : 494 20243
+Factor point located : 403 24814
+Factor point located : 247 40486
+Factor point located : 62 161291
+Factor point located : 38 263159
+Factor point located : 31 322582
+Factor point located : 26 384617
+Factor point located : 19 526318
+Factor point located : 13 769234
+Parallel Rasterization phase of factoring 10000042 was completed in (nanoseconds): 566.714501ms 
+Factorization of 10000042 was completed in (nanoseconds): 567.482188ms 
+Factorization of 10000043 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704092,
+    tv_nsec: 974437760,
+} 
+Factor point located : 10000043 1
+Factor point located : 4787 2089
+Factor point located : 2089 4787
+Parallel Rasterization phase of factoring 10000043 was completed in (nanoseconds): 557.243742ms 
+Factorization of 10000043 was completed in (nanoseconds): 557.958862ms 
+Factorization of 10000044 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704093,
+    tv_nsec: 532522468,
+} 
+Factor point located : 10000044 1
+Factor point located : 5000022 2
+Factor point located : 3333348 3
+Factor point located : 2500011 4
+Factor point located : 1666674 6
+Factor point located : 1111116 9
+Factor point located : 833337 12
+Factor point located : 555558 18
+Factor point located : 370372 27
+Factor point located : 277779 36
+Factor point located : 185186 54
+Factor point located : 92593 108
+Factor point located : 2 5000022
+Factor point located : 108 92593
+Factor point located : 54 185186
+Factor point located : 36 277779
+Factor point located : 27 370372
+Factor point located : 18 555558
+Factor point located : 12 833337
+Factor point located : 9 1111116
+Factor point located : 4 2500011
+Factor point located : 6 1666674
+Factor point located : 3 3333348
+Parallel Rasterization phase of factoring 10000044 was completed in (nanoseconds): 558.803247ms 
+Factorization of 10000044 was completed in (nanoseconds): 559.567475ms 
+Factorization of 10000045 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704094,
+    tv_nsec: 92286765,
+} 
+Factor point located : 10000045 1
+Factor point located : 2000009 5
+Factor point located : 909095 11
+Factor point located : 181819 55
+Factor point located : 82645 121
+Factor point located : 16529 605
+Factor point located : 605 16529
+Factor point located : 121 82645
+Factor point located : 55 181819
+Factor point located : 5 2000009
+Factor point located : 11 909095
+Parallel Rasterization phase of factoring 10000045 was completed in (nanoseconds): 554.256314ms 
+Factorization of 10000045 was completed in (nanoseconds): 555.017181ms 
+Factorization of 10000046 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704094,
+    tv_nsec: 647487258,
+} 
+Factor point located : 10000046 1
+Factor point located : 5000023 2
+Factor point located : 1428578 7
+Factor point located : 714289 14
+Factor point located : 588238 17
+Factor point located : 2 5000023
+Factor point located : 294119 34
+Factor point located : 84034 119
+Factor point located : 42017 238
+Factor point located : 238 42017
+Factor point located : 119 84034
+Factor point located : 7 1428578
+Factor point located : 34 294119
+Factor point located : 17 588238
+Factor point located : 14 714289
+Parallel Rasterization phase of factoring 10000046 was completed in (nanoseconds): 560.928959ms 
+Factorization of 10000046 was completed in (nanoseconds): 561.791251ms 
+Factorization of 10000047 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704095,
+    tv_nsec: 209424385,
+} 
+Factor point located : 10000047 1
+Factor point located : 3333349 3
+Factor point located : 10977 911
+Factor point located : 3659 2733
+Factor point located : 2733 3659
+Factor point located : 911 10977
+Factor point located : 3 3333349
+Parallel Rasterization phase of factoring 10000047 was completed in (nanoseconds): 556.462524ms 
+Factorization of 10000047 was completed in (nanoseconds): 557.336433ms 
+Factorization of 10000048 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704095,
+    tv_nsec: 766953574,
+} 
+Factor point located : 10000048 1
+Factor point located : 5000024 2
+Factor point located : 2500012 4
+Factor point located : 1250006 8
+Factor point located : 625003 16
+Factor point located : 2 5000024
+Factor point located : 4 2500012
+Factor point located : 88496 113
+Factor point located : 44248 226
+Factor point located : 22124 452
+Factor point located : 11062 904
+Factor point located : 5531 1808
+Factor point located : 1808 5531
+Factor point located : 904 11062
+Factor point located : 452 22124
+Factor point located : 226 44248
+Factor point located : 113 88496
+Factor point located : 16 625003
+Factor point located : 8 1250006
+Parallel Rasterization phase of factoring 10000048 was completed in (nanoseconds): 554.754884ms 
+Factorization of 10000048 was completed in (nanoseconds): 555.700249ms 
+Factorization of 10000049 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704096,
+    tv_nsec: 322813215,
+} 
+Factor point located : 10000049 1
+Factor point located : 212767 47
+Factor point located : 38023 263
+Factor point located : 12361 809
+Factor point located : 809 12361
+Factor point located : 263 38023
+Factor point located : 47 212767
+Parallel Rasterization phase of factoring 10000049 was completed in (nanoseconds): 559.410621ms 
+Factorization of 10000049 was completed in (nanoseconds): 560.399256ms 
+Factorization of 10000050 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704096,
+    tv_nsec: 883342851,
+} 
+Factor point located : 10000050 1
+Factor point located : 5000025 2
+Factor point located : 3333350 3
+Factor point located : 2000010 5
+Factor point located : 1666675 6
+Factor point located : 1000005 10
+Factor point located : 666670 15
+Factor point located : 400002 25
+Factor point located : 333335 30
+Factor point located : 2 5000025
+Factor point located : 200001 50
+Factor point located : 133334 75
+Factor point located : 66667 150
+Factor point located : 61350 163
+Factor point located : 30675 326
+Factor point located : 24450 409
+Factor point located : 20450 489
+Factor point located : 12270 815
+Factor point located : 12225 818
+Factor point located : 10225 978
+Factor point located : 8150 1227
+Factor point located : 6135 1630
+Factor point located : 4890 2045
+Factor point located : 4090 2445
+Factor point located : 4075 2454
+Factor point located : 2454 4075
+Factor point located : 2445 4090
+Factor point located : 2045 4890
+Factor point located : 1630 6135
+Factor point located : 1227 8150
+Factor point located : 978 10225
+Factor point located : 818 12225
+Factor point located : 815 12270
+Factor point located : 489 20450
+Factor point located : 409 24450
+Factor point located : 326 30675
+Factor point located : 163 61350
+Factor point located : 150 66667
+Factor point located : 75 133334
+Factor point located : 50 200001
+Factor point located : 30 333335
+Factor point located : 25 400002
+Factor point located : 6 1666675
+Factor point located : 15 666670
+Factor point located : 5 2000010
+Factor point located : 3 3333350
+Factor point located : 10 1000005
+Parallel Rasterization phase of factoring 10000050 was completed in (nanoseconds): 554.631954ms 
+Factorization of 10000050 was completed in (nanoseconds): 555.465096ms 
+Factorization of 10000051 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704097,
+    tv_nsec: 438965250,
+} 
+Factor point located : 10000051 1
+Factor point located : 136987 73
+Factor point located : 73 136987
+Parallel Rasterization phase of factoring 10000051 was completed in (nanoseconds): 592.001023ms 
+Factorization of 10000051 was completed in (nanoseconds): 592.872096ms 
+Factorization of 10000052 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704098,
+    tv_nsec: 32011233,
+} 
+Factor point located : 10000052 1
+Factor point located : 5000026 2
+Factor point located : 2500013 4
+Factor point located : 4 2500013
+Factor point located : 2 5000026
+Factor point located : 7148 1399
+Factor point located : 5596 1787
+Factor point located : 3574 2798
+Factor point located : 2798 3574
+Factor point located : 1787 5596
+Factor point located : 1399 7148
+Parallel Rasterization phase of factoring 10000052 was completed in (nanoseconds): 656.76548ms 
+Factorization of 10000052 was completed in (nanoseconds): 657.674987ms 
+Factorization of 10000053 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704098,
+    tv_nsec: 689818300,
+} 
+Factor point located : 10000053 1
+Factor point located : 3333351 3
+Factor point located : 1428579 7
+Factor point located : 1111117 9
+Factor point located : 476193 21
+Factor point located : 158731 63
+Factor point located : 7 1428579
+Factor point located : 63 158731
+Factor point located : 21 476193
+Factor point located : 3 3333351
+Factor point located : 9 1111117
+Parallel Rasterization phase of factoring 10000053 was completed in (nanoseconds): 648.944832ms 
+Factorization of 10000053 was completed in (nanoseconds): 649.778099ms 
+Factorization of 10000054 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704099,
+    tv_nsec: 339742714,
+} 
+Factor point located : 10000054 1
+Factor point located : 2 5000027
+Factor point located : 5000027 2
+Factor point located : 41494 241
+Factor point located : 20747 482
+Factor point located : 482 20747
+Factor point located : 241 41494
+Parallel Rasterization phase of factoring 10000054 was completed in (nanoseconds): 656.781848ms 
+Factorization of 10000054 was completed in (nanoseconds): 657.731259ms 
+Factorization of 10000055 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704099,
+    tv_nsec: 997781854,
+} 
+Factor point located : 10000055 1
+Factor point located : 2000011 5
+Factor point located : 769235 13
+Factor point located : 434785 23
+Factor point located : 153847 65
+Factor point located : 86957 115
+Factor point located : 33445 299
+Factor point located : 6689 1495
+Factor point located : 1495 6689
+Factor point located : 299 33445
+Factor point located : 115 86957
+Factor point located : 65 153847
+Factor point located : 23 434785
+Factor point located : 13 769235
+Factor point located : 5 2000011
+Parallel Rasterization phase of factoring 10000055 was completed in (nanoseconds): 588.579735ms 
+Factorization of 10000055 was completed in (nanoseconds): 592.209452ms 
+Factorization of 10000056 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704100,
+    tv_nsec: 590128190,
+} 
+Factor point located : 10000056 1
+Factor point located : 5000028 2
+Factor point located : 3333352 3
+Factor point located : 2500014 4
+Factor point located : 1666676 6
+Factor point located : 1250007 8
+Factor point located : 909096 11
+Factor point located : 833338 12
+Factor point located : 454548 22
+Factor point located : 416669 24
+Factor point located : 303032 33
+Factor point located : 227274 44
+Factor point located : 151516 66
+Factor point located : 2 5000028
+Factor point located : 4 2500014
+Factor point located : 113637 88
+Factor point located : 75758 132
+Factor point located : 37879 264
+Factor point located : 264 37879
+Factor point located : 132 75758
+Factor point located : 88 113637
+Factor point located : 66 151516
+Factor point located : 44 227274
+Factor point located : 33 303032
+Factor point located : 24 416669
+Factor point located : 22 454548
+Factor point located : 3 3333352
+Factor point located : 12 833338
+Factor point located : 11 909096
+Factor point located : 8 1250007
+Factor point located : 6 1666676
+Parallel Rasterization phase of factoring 10000056 was completed in (nanoseconds): 693.17183ms 
+Factorization of 10000056 was completed in (nanoseconds): 694.120259ms 
+Factorization of 10000057 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704101,
+    tv_nsec: 284396239,
+} 
+Factor point located : 10000057 1
+Factor point located : 126583 79
+Factor point located : 79 126583
+Parallel Rasterization phase of factoring 10000057 was completed in (nanoseconds): 621.787572ms 
+Factorization of 10000057 was completed in (nanoseconds): 622.798607ms 
+Factorization of 10000058 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704101,
+    tv_nsec: 907335024,
+} 
+Factor point located : 10000058 1
+Factor point located : 5000029 2
+Factor point located : 20534 487
+Factor point located : 10267 974
+Factor point located : 2 5000029
+Factor point located : 974 10267
+Factor point located : 487 20534
+Parallel Rasterization phase of factoring 10000058 was completed in (nanoseconds): 651.336174ms 
+Factorization of 10000058 was completed in (nanoseconds): 652.178761ms 
+Factorization of 10000059 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704102,
+    tv_nsec: 559654980,
+} 
+Factor point located : 10000059 1
+Factor point located : 3333353 3
+Factor point located : 10173 983
+Factor point located : 3391 2949
+Factor point located : 2949 3391
+Factor point located : 983 10173
+Factor point located : 3 3333353
+Parallel Rasterization phase of factoring 10000059 was completed in (nanoseconds): 803.449807ms 
+Factorization of 10000059 was completed in (nanoseconds): 804.269535ms 
+Factorization of 10000060 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704103,
+    tv_nsec: 364051498,
+} 
+Factor point located : 10000060 1
+Factor point located : 5000030 2
+Factor point located : 2500015 4
+Factor point located : 2000012 5
+Factor point located : 1428580 7
+Factor point located : 1000006 10
+Factor point located : 714290 14
+Factor point located : 500003 20
+Factor point located : 357145 28
+Factor point located : 285716 35
+Factor point located : 4 2500015
+Factor point located : 2 5000030
+Factor point located : 142858 70
+Factor point located : 71429 140
+Factor point located : 140 71429
+Factor point located : 70 142858
+Factor point located : 35 285716
+Factor point located : 28 357145
+Factor point located : 20 500003
+Factor point located : 14 714290
+Factor point located : 10 1000006
+Factor point located : 7 1428580
+Factor point located : 5 2000012
+Parallel Rasterization phase of factoring 10000060 was completed in (nanoseconds): 711.320586ms 
+Factorization of 10000060 was completed in (nanoseconds): 712.122023ms 
+Factorization of 10000061 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704104,
+    tv_nsec: 76306896,
+} 
+Factor point located : 10000061 1
+Factor point located : 526319 19
+Factor point located : 27701 361
+Factor point located : 361 27701
+Factor point located : 19 526319
+Parallel Rasterization phase of factoring 10000061 was completed in (nanoseconds): 642.838568ms 
+Factorization of 10000061 was completed in (nanoseconds): 644.103276ms 
+Factorization of 10000062 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704104,
+    tv_nsec: 720881155,
+} 
+Factor point located : 10000062 1
+Factor point located : 5000031 2
+Factor point located : 3333354 3
+Factor point located : 1666677 6
+Factor point located : 1111118 9
+Factor point located : 555559 18
+Factor point located : 23202 431
+Factor point located : 11601 862
+Factor point located : 7758 1289
+Factor point located : 7734 1293
+Factor point located : 3879 2578
+Factor point located : 3867 2586
+Factor point located : 2586 3867
+Factor point located : 2578 3879
+Factor point located : 1293 7734
+Factor point located : 1289 7758
+Factor point located : 862 11601
+Factor point located : 2 5000031
+Factor point located : 431 23202
+Factor point located : 18 555559
+Factor point located : 9 1111118
+Factor point located : 6 1666677
+Factor point located : 3 3333354
+Parallel Rasterization phase of factoring 10000062 was completed in (nanoseconds): 591.638203ms 
+Factorization of 10000062 was completed in (nanoseconds): 592.49623ms 
+Factorization of 10000063 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704105,
+    tv_nsec: 313511766,
+} 
+Factor point located : 10000063 1
+Factor point located : 588239 17
+Factor point located : 17 588239
+Parallel Rasterization phase of factoring 10000063 was completed in (nanoseconds): 667.43545ms 
+Factorization of 10000063 was completed in (nanoseconds): 668.32214ms 
+Factorization of 10000064 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704105,
+    tv_nsec: 982009717,
+} 
+Factor point located : 10000064 1
+Factor point located : 5000032 2
+Factor point located : 2500016 4
+Factor point located : 1250008 8
+Factor point located : 625004 16
+Factor point located : 312502 32
+Factor point located : 270272 37
+Factor point located : 243904 41
+Factor point located : 4 2500016
+Factor point located : 2 5000032
+Factor point located : 156251 64
+Factor point located : 135136 74
+Factor point located : 121952 82
+Factor point located : 97088 103
+Factor point located : 67568 148
+Factor point located : 60976 164
+Factor point located : 48544 206
+Factor point located : 33784 296
+Factor point located : 30488 328
+Factor point located : 24272 412
+Factor point located : 16892 592
+Factor point located : 15244 656
+Factor point located : 12136 824
+Factor point located : 8446 1184
+Factor point located : 7622 1312
+Factor point located : 6592 1517
+Factor point located : 6068 1648
+Factor point located : 4223 2368
+Factor point located : 3811 2624
+Factor point located : 3296 3034
+Factor point located : 3034 3296
+Factor point located : 2624 3811
+Factor point located : 2368 4223
+Factor point located : 1648 6068
+Factor point located : 1517 6592
+Factor point located : 1312 7622
+Factor point located : 1184 8446
+Factor point located : 824 12136
+Factor point located : 656 15244
+Factor point located : 592 16892
+Factor point located : 412 24272
+Factor point located : 328 30488
+Factor point located : 296 33784
+Factor point located : 206 48544
+Factor point located : 164 60976
+Factor point located : 148 67568
+Factor point located : 103 97088
+Factor point located : 82 121952
+Factor point located : 74 135136
+Factor point located : 64 156251
+Factor point located : 41 243904
+Factor point located : 37 270272
+Factor point located : 32 312502
+Factor point located : 16 625004
+Factor point located : 8 1250008
+Parallel Rasterization phase of factoring 10000064 was completed in (nanoseconds): 757.798253ms 
+Factorization of 10000064 was completed in (nanoseconds): 758.729472ms 
+Factorization of 10000065 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704106,
+    tv_nsec: 741406653,
+} 
+Factor point located : 10000065 1
+Factor point located : 3333355 3
+Factor point located : 2000013 5
+Factor point located : 666671 15
+Factor point located : 15 666671
+Factor point located : 3 3333355
+Factor point located : 5 2000013
+Parallel Rasterization phase of factoring 10000065 was completed in (nanoseconds): 673.397095ms 
+Factorization of 10000065 was completed in (nanoseconds): 674.542817ms 
+Factorization of 10000066 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704107,
+    tv_nsec: 416092155,
+} 
+Factor point located : 10000066 1
+Factor point located : 5000033 2
+Factor point located : 2 5000033
+Factor point located : 140846 71
+Factor point located : 70423 142
+Factor point located : 142 70423
+Factor point located : 71 140846
+Parallel Rasterization phase of factoring 10000066 was completed in (nanoseconds): 668.042845ms 
+Factorization of 10000066 was completed in (nanoseconds): 668.788224ms 
+Factorization of 10000067 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704108,
+    tv_nsec: 84998891,
+} 
+Factor point located : 10000067 1
+Factor point located : 1428581 7
+Factor point located : 909097 11
+Factor point located : 204083 49
+Factor point located : 129871 77
+Factor point located : 18553 539
+Factor point located : 539 18553
+Factor point located : 77 129871
+Factor point located : 49 204083
+Factor point located : 11 909097
+Factor point located : 7 1428581
+Parallel Rasterization phase of factoring 10000067 was completed in (nanoseconds): 677.398254ms 
+Factorization of 10000067 was completed in (nanoseconds): 678.2678ms 
+Factorization of 10000068 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704108,
+    tv_nsec: 763412843,
+} 
+Factor point located : 10000068 1
+Factor point located : 5000034 2
+Factor point located : 3333356 3
+Factor point located : 2500017 4
+Factor point located : 1666678 6
+Factor point located : 833339 12
+Factor point located : 769236 13
+Factor point located : 384618 26
+Factor point located : 256412 39
+Factor point located : 192309 52
+Factor point located : 128206 78
+Factor point located : 64103 156
+Factor point located : 59172 169
+Factor point located : 29586 338
+Factor point located : 19724 507
+Factor point located : 14793 676
+Factor point located : 9862 1014
+Factor point located : 4931 2028
+Factor point located : 2028 4931
+Factor point located : 1014 9862
+Factor point located : 676 14793
+Factor point located : 4 2500017
+Factor point located : 2 5000034
+Factor point located : 507 19724
+Factor point located : 338 29586
+Factor point located : 169 59172
+Factor point located : 156 64103
+Factor point located : 78 128206
+Factor point located : 52 192309
+Factor point located : 6 1666678
+Factor point located : 39 256412
+Factor point located : 26 384618
+Factor point located : 13 769236
+Factor point located : 3 3333356
+Factor point located : 12 833339
+Parallel Rasterization phase of factoring 10000068 was completed in (nanoseconds): 688.798862ms 
+Factorization of 10000068 was completed in (nanoseconds): 689.652095ms 
+Factorization of 10000069 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704109,
+    tv_nsec: 453385764,
+} 
+Factor point located : 10000069 1
+Factor point located : 55249 181
+Factor point located : 181 55249
+Parallel Rasterization phase of factoring 10000069 was completed in (nanoseconds): 725.9815ms 
+Factorization of 10000069 was completed in (nanoseconds): 727.005952ms 
+Factorization of 10000070 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704110,
+    tv_nsec: 180507856,
+} 
+Factor point located : 10000070 1
+Factor point located : 5000035 2
+Factor point located : 2000014 5
+Factor point located : 1000007 10
+Factor point located : 344830 29
+Factor point located : 172415 58
+Factor point located : 68966 145
+Factor point located : 34483 290
+Factor point located : 2 5000035
+Factor point located : 290 34483
+Factor point located : 145 68966
+Factor point located : 58 172415
+Factor point located : 29 344830
+Factor point located : 10 1000007
+Factor point located : 5 2000014
+Parallel Rasterization phase of factoring 10000070 was completed in (nanoseconds): 618.358339ms 
+Factorization of 10000070 was completed in (nanoseconds): 620.119085ms 
+Factorization of 10000071 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704110,
+    tv_nsec: 801358196,
+} 
+Factor point located : 10000071 1
+Factor point located : 3333357 3
+Factor point located : 1111119 9
+Factor point located : 370373 27
+Factor point located : 27 370373
+Factor point located : 3 3333357
+Factor point located : 9 1111119
+Parallel Rasterization phase of factoring 10000071 was completed in (nanoseconds): 652.388706ms 
+Factorization of 10000071 was completed in (nanoseconds): 656.119491ms 
+Factorization of 10000072 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704111,
+    tv_nsec: 458908733,
+} 
+Factor point located : 10000072 1
+Factor point located : 5000036 2
+Factor point located : 2500018 4
+Factor point located : 1250009 8
+Factor point located : 2 5000036
+Factor point located : 4 2500018
+Factor point located : 8 1250009
+Parallel Rasterization phase of factoring 10000072 was completed in (nanoseconds): 684.012705ms 
+Factorization of 10000072 was completed in (nanoseconds): 684.891592ms 
+Factorization of 10000073 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704112,
+    tv_nsec: 143927276,
+} 
+Factor point located : 10000073 1
+Factor point located : 322583 31
+Factor point located : 31 322583
+Parallel Rasterization phase of factoring 10000073 was completed in (nanoseconds): 557.049647ms 
+Factorization of 10000073 was completed in (nanoseconds): 557.907568ms 
+Factorization of 10000074 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704112,
+    tv_nsec: 702031805,
+} 
+Factor point located : 10000074 1
+Factor point located : 5000037 2
+Factor point located : 3333358 3
+Factor point located : 1666679 6
+Factor point located : 1428582 7
+Factor point located : 714291 14
+Factor point located : 476194 21
+Factor point located : 238097 42
+Factor point located : 21882 457
+Factor point located : 19194 521
+Factor point located : 10941 914
+Factor point located : 9597 1042
+Factor point located : 7294 1371
+Factor point located : 6398 1563
+Factor point located : 3647 2742
+Factor point located : 3199 3126
+Factor point located : 3126 3199
+Factor point located : 2742 3647
+Factor point located : 1563 6398
+Factor point located : 1371 7294
+Factor point located : 1042 9597
+Factor point located : 914 10941
+Factor point located : 2 5000037
+Factor point located : 521 19194
+Factor point located : 457 21882
+Factor point located : 42 238097
+Factor point located : 21 476194
+Factor point located : 14 714291
+Factor point located : 7 1428582
+Factor point located : 6 1666679
+Factor point located : 3 3333358
+Parallel Rasterization phase of factoring 10000074 was completed in (nanoseconds): 586.897897ms 
+Factorization of 10000074 was completed in (nanoseconds): 587.704642ms 
+Factorization of 10000075 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704113,
+    tv_nsec: 289927626,
+} 
+Factor point located : 10000075 1
+Factor point located : 2000015 5
+Factor point located : 400003 25
+Factor point located : 37175 269
+Factor point located : 7435 1345
+Factor point located : 6725 1487
+Factor point located : 1487 6725
+Factor point located : 1345 7435
+Factor point located : 269 37175
+Factor point located : 25 400003
+Factor point located : 5 2000015
+Parallel Rasterization phase of factoring 10000075 was completed in (nanoseconds): 620.893321ms 
+Factorization of 10000075 was completed in (nanoseconds): 621.74197ms 
+Factorization of 10000076 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704113,
+    tv_nsec: 911807732,
+} 
+Factor point located : 10000076 1
+Factor point located : 5000038 2
+Factor point located : 2500019 4
+Factor point located : 2 5000038
+Factor point located : 4 2500019
+Factor point located : 13004 769
+Factor point located : 6502 1538
+Factor point located : 3251 3076
+Factor point located : 3076 3251
+Factor point located : 1538 6502
+Factor point located : 769 13004
+Parallel Rasterization phase of factoring 10000076 was completed in (nanoseconds): 729.525655ms 
+Factorization of 10000076 was completed in (nanoseconds): 730.793194ms 
+Factorization of 10000077 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704114,
+    tv_nsec: 643377636,
+} 
+Factor point located : 10000077 1
+Factor point located : 3333359 3
+Factor point located : 71943 139
+Factor point located : 23981 417
+Factor point located : 417 23981
+Factor point located : 139 71943
+Factor point located : 3 3333359
+Parallel Rasterization phase of factoring 10000077 was completed in (nanoseconds): 751.78553ms 
+Factorization of 10000077 was completed in (nanoseconds): 752.828936ms 
+Factorization of 10000078 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704115,
+    tv_nsec: 396336819,
+} 
+Factor point located : 10000078 1
+Factor point located : 2 5000039
+Factor point located : 5000039 2
+Factor point located : 909098 11
+Factor point located : 454549 22
+Factor point located : 434786 23
+Factor point located : 217393 46
+Factor point located : 39526 253
+Factor point located : 19763 506
+Factor point located : 506 19763
+Factor point located : 253 39526
+Factor point located : 46 217393
+Factor point located : 23 434786
+Factor point located : 22 454549
+Factor point located : 11 909098
+Parallel Rasterization phase of factoring 10000078 was completed in (nanoseconds): 718.381324ms 
+Factorization of 10000078 was completed in (nanoseconds): 721.008223ms 
+Factorization of 10000079 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704116,
+    tv_nsec: 117478246,
+} 
+Factor point located : 10000079 1
+Parallel Rasterization phase of factoring 10000079 was completed in (nanoseconds): 646.713035ms 
+Factorization of 10000079 was completed in (nanoseconds): 647.683572ms 
+Factorization of 10000080 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704116,
+    tv_nsec: 765387549,
+} 
+Factor point located : 10000080 1
+Factor point located : 5000040 2
+Factor point located : 2 5000040
+Factor point located : 3333360 3
+Factor point located : 2500020 4
+Factor point located : 2000016 5
+Factor point located : 1666680 6
+Factor point located : 1250010 8
+Factor point located : 1111120 9
+Factor point located : 1000008 10
+Factor point located : 833340 12
+Factor point located : 666672 15
+Factor point located : 625005 16
+Factor point located : 588240 17
+Factor point located : 555560 18
+Factor point located : 526320 19
+Factor point located : 500004 20
+Factor point located : 416670 24
+Factor point located : 333336 30
+Factor point located : 294120 34
+Factor point located : 277780 36
+Factor point located : 263160 38
+Factor point located : 250002 40
+Factor point located : 232560 43
+Factor point located : 222224 45
+Factor point located : 208335 48
+Factor point located : 196080 51
+Factor point located : 175440 57
+Factor point located : 166668 60
+Factor point located : 147060 68
+Factor point located : 138890 72
+Factor point located : 131580 76
+Factor point located : 125001 80
+Factor point located : 117648 85
+Factor point located : 116280 86
+Factor point located : 111112 90
+Factor point located : 105264 95
+Factor point located : 98040 102
+Factor point located : 87720 114
+Factor point located : 83334 120
+Factor point located : 77520 129
+Factor point located : 73530 136
+Factor point located : 69445 144
+Factor point located : 65790 152
+Factor point located : 65360 153
+Factor point located : 58824 170
+Factor point located : 58480 171
+Factor point located : 58140 172
+Factor point located : 55556 180
+Factor point located : 52632 190
+Factor point located : 49020 204
+Factor point located : 46512 215
+Factor point located : 43860 228
+Factor point located : 41667 240
+Factor point located : 39216 255
+Factor point located : 38760 258
+Factor point located : 36765 272
+Factor point located : 35088 285
+Factor point located : 32895 304
+Factor point located : 32680 306
+Factor point located : 30960 323
+Factor point located : 29412 340
+Factor point located : 29240 342
+Factor point located : 29070 344
+Factor point located : 27778 360
+Factor point located : 26316 380
+Factor point located : 25840 387
+Factor point located : 24510 408
+Factor point located : 23256 430
+Factor point located : 21930 456
+Factor point located : 19608 510
+Factor point located : 19380 516
+Factor point located : 17544 570
+Factor point located : 16340 612
+Factor point located : 15504 645
+Factor point located : 15480 646
+Factor point located : 14706 680
+Factor point located : 14620 684
+Factor point located : 14535 688
+Factor point located : 13889 720
+Factor point located : 13680 731
+Factor point located : 13158 760
+Factor point located : 13072 765
+Factor point located : 12920 774
+Factor point located : 12255 816
+Factor point located : 12240 817
+Factor point located : 11696 855
+Factor point located : 11628 860
+Factor point located : 10965 912
+Factor point located : 10320 969
+Factor point located : 9804 1020
+Factor point located : 9690 1032
+Factor point located : 8772 1140
+Factor point located : 8170 1224
+Factor point located : 7752 1290
+Factor point located : 7740 1292
+Factor point located : 7353 1360
+Factor point located : 7310 1368
+Factor point located : 6840 1462
+Factor point located : 6579 1520
+Factor point located : 6536 1530
+Factor point located : 6460 1548
+Factor point located : 6192 1615
+Factor point located : 6120 1634
+Factor point located : 5848 1710
+Factor point located : 5814 1720
+Factor point located : 5168 1935
+Factor point located : 5160 1938
+Factor point located : 4902 2040
+Factor point located : 4845 2064
+Factor point located : 4560 2193
+Factor point located : 4386 2280
+Factor point located : 4085 2448
+Factor point located : 4080 2451
+Factor point located : 3876 2580
+Factor point located : 3870 2584
+Factor point located : 3655 2736
+Factor point located : 3440 2907
+Factor point located : 3420 2924
+Factor point located : 3268 3060
+Factor point located : 3230 3096
+Factor point located : 3096 3230
+Factor point located : 3060 3268
+Factor point located : 2924 3420
+Factor point located : 2907 3440
+Factor point located : 2736 3655
+Factor point located : 2584 3870
+Factor point located : 2580 3876
+Factor point located : 2451 4080
+Factor point located : 2448 4085
+Factor point located : 2280 4386
+Factor point located : 2193 4560
+Factor point located : 2064 4845
+Factor point located : 2040 4902
+Factor point located : 1938 5160
+Factor point located : 1935 5168
+Factor point located : 1720 5814
+Factor point located : 1710 5848
+Factor point located : 1634 6120
+Factor point located : 1615 6192
+Factor point located : 1548 6460
+Factor point located : 1530 6536
+Factor point located : 1520 6579
+Factor point located : 1462 6840
+Factor point located : 1368 7310
+Factor point located : 1360 7353
+Factor point located : 1292 7740
+Factor point located : 1290 7752
+Factor point located : 1224 8170
+Factor point located : 1140 8772
+Factor point located : 1032 9690
+Factor point located : 1020 9804
+Factor point located : 969 10320
+Factor point located : 912 10965
+Factor point located : 860 11628
+Factor point located : 855 11696
+Factor point located : 817 12240
+Factor point located : 816 12255
+Factor point located : 774 12920
+Factor point located : 765 13072
+Factor point located : 760 13158
+Factor point located : 731 13680
+Factor point located : 720 13889
+Factor point located : 688 14535
+Factor point located : 684 14620
+Factor point located : 680 14706
+Factor point located : 646 15480
+Factor point located : 645 15504
+Factor point located : 612 16340
+Factor point located : 570 17544
+Factor point located : 516 19380
+Factor point located : 510 19608
+Factor point located : 456 21930
+Factor point located : 430 23256
+Factor point located : 408 24510
+Factor point located : 387 25840
+Factor point located : 380 26316
+Factor point located : 360 27778
+Factor point located : 344 29070
+Factor point located : 342 29240
+Factor point located : 340 29412
+Factor point located : 323 30960
+Factor point located : 306 32680
+Factor point located : 304 32895
+Factor point located : 285 35088
+Factor point located : 272 36765
+Factor point located : 258 38760
+Factor point located : 255 39216
+Factor point located : 240 41667
+Factor point located : 228 43860
+Factor point located : 215 46512
+Factor point located : 204 49020
+Factor point located : 190 52632
+Factor point located : 180 55556
+Factor point located : 172 58140
+Factor point located : 171 58480
+Factor point located : 170 58824
+Factor point located : 153 65360
+Factor point located : 152 65790
+Factor point located : 144 69445
+Factor point located : 136 73530
+Factor point located : 129 77520
+Factor point located : 120 83334
+Factor point located : 114 87720
+Factor point located : 102 98040
+Factor point located : 95 105264
+Factor point located : 90 111112
+Factor point located : 86 116280
+Factor point located : 85 117648
+Factor point located : 80 125001
+Factor point located : 76 131580
+Factor point located : 72 138890
+Factor point located : 68 147060
+Factor point located : 60 166668
+Factor point located : 57 175440
+Factor point located : 51 196080
+Factor point located : 48 208335
+Factor point located : 45 222224
+Factor point located : 43 232560
+Factor point located : 40 250002
+Factor point located : 38 263160
+Factor point located : 36 277780
+Factor point located : 34 294120
+Factor point located : 30 333336
+Factor point located : 24 416670
+Factor point located : 20 500004
+Factor point located : 4 2500020
+Factor point located : 19 526320
+Factor point located : 18 555560
+Factor point located : 17 588240
+Factor point located : 16 625005
+Factor point located : 15 666672
+Factor point located : 12 833340
+Factor point located : 10 1000008
+Factor point located : 3 3333360
+Factor point located : 9 1111120
+Factor point located : 8 1250010
+Factor point located : 6 1666680
+Factor point located : 5 2000016
+Parallel Rasterization phase of factoring 10000080 was completed in (nanoseconds): 855.570436ms 
+Factorization of 10000080 was completed in (nanoseconds): 856.352003ms 
+Factorization of 10000081 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704117,
+    tv_nsec: 621926950,
+} 
+Factor point located : 10000081 1
+Factor point located : 1428583 7
+Factor point located : 769237 13
+Factor point located : 109891 91
+Factor point located : 91 109891
+Factor point located : 7 1428583
+Factor point located : 13 769237
+Parallel Rasterization phase of factoring 10000081 was completed in (nanoseconds): 641.50597ms 
+Factorization of 10000081 was completed in (nanoseconds): 642.399317ms 
+Factorization of 10000082 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704118,
+    tv_nsec: 265551067,
+} 
+Factor point located : 10000082 1
+Factor point located : 5000041 2
+Factor point located : 31546 317
+Factor point located : 15773 634
+Factor point located : 2 5000041
+Factor point located : 634 15773
+Factor point located : 317 31546
+Parallel Rasterization phase of factoring 10000082 was completed in (nanoseconds): 663.290922ms 
+Factorization of 10000082 was completed in (nanoseconds): 664.82977ms 
+Factorization of 10000083 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704118,
+    tv_nsec: 930625062,
+} 
+Factor point located : 10000083 1
+Factor point located : 3333361 3
+Factor point located : 20877 479
+Factor point located : 6959 1437
+Factor point located : 1437 6959
+Factor point located : 479 20877
+Factor point located : 3 3333361
+Parallel Rasterization phase of factoring 10000083 was completed in (nanoseconds): 817.422425ms 
+Factorization of 10000083 was completed in (nanoseconds): 826.145681ms 
+Factorization of 10000084 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704119,
+    tv_nsec: 763579629,
+} 
+Factor point located : 10000084 1
+Factor point located : 5000042 2
+Factor point located : 2500021 4
+Factor point located : 2 5000042
+Factor point located : 4 2500021
+Factor point located : 12092 827
+Factor point located : 6046 1654
+Factor point located : 3308 3023
+Factor point located : 3023 3308
+Factor point located : 1654 6046
+Factor point located : 827 12092
+Parallel Rasterization phase of factoring 10000084 was completed in (nanoseconds): 778.536072ms 
+Factorization of 10000084 was completed in (nanoseconds): 779.984145ms 
+Factorization of 10000085 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704120,
+    tv_nsec: 543855764,
+} 
+Factor point located : 10000085 1
+Factor point located : 2000017 5
+Factor point located : 149255 67
+Factor point located : 29851 335
+Factor point located : 335 29851
+Factor point located : 67 149255
+Factor point located : 5 2000017
+Parallel Rasterization phase of factoring 10000085 was completed in (nanoseconds): 733.533394ms 
+Factorization of 10000085 was completed in (nanoseconds): 734.39392ms 
+Factorization of 10000086 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704121,
+    tv_nsec: 278571546,
+} 
+Factor point located : 10000086 1
+Factor point located : 5000043 2
+Factor point located : 3333362 3
+Factor point located : 1666681 6
+Factor point located : 2 5000043
+Factor point located : 7746 1291
+Factor point located : 3873 2582
+Factor point located : 2582 3873
+Factor point located : 1291 7746
+Factor point located : 3 3333362
+Factor point located : 6 1666681
+Parallel Rasterization phase of factoring 10000086 was completed in (nanoseconds): 577.009708ms 
+Factorization of 10000086 was completed in (nanoseconds): 577.935758ms 
+Factorization of 10000087 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704121,
+    tv_nsec: 856675110,
+} 
+Factor point located : 10000087 1
+Factor point located : 169493 59
+Factor point located : 59 169493
+Parallel Rasterization phase of factoring 10000087 was completed in (nanoseconds): 666.064711ms 
+Factorization of 10000087 was completed in (nanoseconds): 667.008494ms 
+Factorization of 10000088 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704122,
+    tv_nsec: 523859130,
+} 
+Factor point located : 10000088 1
+Factor point located : 5000044 2
+Factor point located : 2500022 4
+Factor point located : 1428584 7
+Factor point located : 1250011 8
+Factor point located : 714292 14
+Factor point located : 357146 28
+Factor point located : 2 5000044
+Factor point located : 4 2500022
+Factor point located : 8 1250011
+Factor point located : 178573 56
+Factor point located : 35336 283
+Factor point located : 17668 566
+Factor point located : 15848 631
+Factor point located : 8834 1132
+Factor point located : 7924 1262
+Factor point located : 5048 1981
+Factor point located : 4417 2264
+Factor point located : 3962 2524
+Factor point located : 2524 3962
+Factor point located : 2264 4417
+Factor point located : 1981 5048
+Factor point located : 1262 7924
+Factor point located : 1132 8834
+Factor point located : 631 15848
+Factor point located : 566 17668
+Factor point located : 283 35336
+Factor point located : 7 1428584
+Factor point located : 56 178573
+Factor point located : 28 357146
+Factor point located : 14 714292
+Parallel Rasterization phase of factoring 10000088 was completed in (nanoseconds): 662.796993ms 
+Factorization of 10000088 was completed in (nanoseconds): 663.465091ms 
+Factorization of 10000089 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704123,
+    tv_nsec: 187556794,
+} 
+Factor point located : 10000089 1
+Factor point located : 3333363 3
+Factor point located : 1111121 9
+Factor point located : 909099 11
+Factor point located : 303033 33
+Factor point located : 120483 83
+Factor point located : 101011 99
+Factor point located : 40161 249
+Factor point located : 13387 747
+Factor point located : 10953 913
+Factor point located : 8217 1217
+Factor point located : 3651 2739
+Factor point located : 2739 3651
+Factor point located : 1217 8217
+Factor point located : 913 10953
+Factor point located : 747 13387
+Factor point located : 249 40161
+Factor point located : 99 101011
+Factor point located : 83 120483
+Factor point located : 33 303033
+Factor point located : 3 3333363
+Factor point located : 11 909099
+Factor point located : 9 1111121
+Parallel Rasterization phase of factoring 10000089 was completed in (nanoseconds): 672.687577ms 
+Factorization of 10000089 was completed in (nanoseconds): 676.381997ms 
+Factorization of 10000090 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704123,
+    tv_nsec: 864273480,
+} 
+Factor point located : 10000090 1
+Factor point located : 5000045 2
+Factor point located : 2000018 5
+Factor point located : 1000009 10
+Factor point located : 34130 293
+Factor point located : 17065 586
+Factor point located : 6826 1465
+Factor point located : 3413 2930
+Factor point located : 2930 3413
+Factor point located : 1465 6826
+Factor point located : 586 17065
+Factor point located : 2 5000045
+Factor point located : 293 34130
+Factor point located : 5 2000018
+Factor point located : 10 1000009
+Parallel Rasterization phase of factoring 10000090 was completed in (nanoseconds): 726.136915ms 
+Factorization of 10000090 was completed in (nanoseconds): 727.427677ms 
+Factorization of 10000091 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704124,
+    tv_nsec: 592045092,
+} 
+Factor point located : 10000091 1
+Factor point located : 39841 251
+Factor point located : 251 39841
+Parallel Rasterization phase of factoring 10000091 was completed in (nanoseconds): 608.567265ms 
+Factorization of 10000091 was completed in (nanoseconds): 609.500878ms 
+Factorization of 10000092 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704125,
+    tv_nsec: 201726120,
+} 
+Factor point located : 10000092 1
+Factor point located : 5000046 2
+Factor point located : 3333364 3
+Factor point located : 2500023 4
+Factor point located : 1666682 6
+Factor point located : 833341 12
+Factor point located : 2 5000046
+Factor point located : 4 2500023
+Factor point located : 57804 173
+Factor point located : 28902 346
+Factor point located : 19268 519
+Factor point located : 14451 692
+Factor point located : 9634 1038
+Factor point located : 4817 2076
+Factor point located : 2076 4817
+Factor point located : 1038 9634
+Factor point located : 692 14451
+Factor point located : 519 19268
+Factor point located : 346 28902
+Factor point located : 173 57804
+Factor point located : 6 1666682
+Factor point located : 3 3333364
+Factor point located : 12 833341
+Parallel Rasterization phase of factoring 10000092 was completed in (nanoseconds): 573.909969ms 
+Factorization of 10000092 was completed in (nanoseconds): 574.82281ms 
+Factorization of 10000093 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704125,
+    tv_nsec: 776708043,
+} 
+Factor point located : 10000093 1
+Factor point located : 188681 53
+Factor point located : 53 188681
+Parallel Rasterization phase of factoring 10000093 was completed in (nanoseconds): 579.441662ms 
+Factorization of 10000093 was completed in (nanoseconds): 580.249759ms 
+Factorization of 10000094 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704126,
+    tv_nsec: 357133516,
+} 
+Factor point located : 10000094 1
+Factor point located : 5000047 2
+Factor point located : 769238 13
+Factor point located : 384619 26
+Factor point located : 2 5000047
+Factor point located : 26 384619
+Factor point located : 13 769238
+Parallel Rasterization phase of factoring 10000094 was completed in (nanoseconds): 636.430028ms 
+Factorization of 10000094 was completed in (nanoseconds): 637.291379ms 
+Factorization of 10000095 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704126,
+    tv_nsec: 994623342,
+} 
+Factor point located : 10000095 1
+Factor point located : 3333365 3
+Factor point located : 2000019 5
+Factor point located : 1428585 7
+Factor point located : 666673 15
+Factor point located : 476195 21
+Factor point located : 285717 35
+Factor point located : 95239 105
+Factor point located : 105 95239
+Factor point located : 35 285717
+Factor point located : 21 476195
+Factor point located : 15 666673
+Factor point located : 7 1428585
+Factor point located : 5 2000019
+Factor point located : 3 3333365
+Parallel Rasterization phase of factoring 10000095 was completed in (nanoseconds): 758.739821ms 
+Factorization of 10000095 was completed in (nanoseconds): 759.927053ms 
+Factorization of 10000096 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704127,
+    tv_nsec: 754758069,
+} 
+Factor point located : 2 5000048
+Factor point located : 4 2500024
+Factor point located : 10000096 1
+Factor point located : 5000048 2
+Factor point located : 2500024 4
+Factor point located : 1250012 8
+Factor point located : 625006 16
+Factor point located : 312503 32
+Factor point located : 212768 47
+Factor point located : 163936 61
+Factor point located : 106384 94
+Factor point located : 91744 109
+Factor point located : 81968 122
+Factor point located : 53192 188
+Factor point located : 45872 218
+Factor point located : 40984 244
+Factor point located : 26596 376
+Factor point located : 22936 436
+Factor point located : 20492 488
+Factor point located : 13298 752
+Factor point located : 11468 872
+Factor point located : 10246 976
+Factor point located : 6649 1504
+Factor point located : 5734 1744
+Factor point located : 5123 1952
+Factor point located : 3488 2867
+Factor point located : 2867 3488
+Factor point located : 1952 5123
+Factor point located : 1744 5734
+Factor point located : 1504 6649
+Factor point located : 976 10246
+Factor point located : 872 11468
+Factor point located : 752 13298
+Factor point located : 488 20492
+Factor point located : 436 22936
+Factor point located : 376 26596
+Factor point located : 244 40984
+Factor point located : 218 45872
+Factor point located : 188 53192
+Factor point located : 122 81968
+Factor point located : 109 91744
+Factor point located : 94 106384
+Factor point located : 61 163936
+Factor point located : 47 212768
+Factor point located : 32 312503
+Factor point located : 16 625006
+Factor point located : 8 1250012
+Parallel Rasterization phase of factoring 10000096 was completed in (nanoseconds): 728.658978ms 
+Factorization of 10000096 was completed in (nanoseconds): 729.447121ms 
+Factorization of 10000097 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704128,
+    tv_nsec: 484374390,
+} 
+Factor point located : 10000097 1
+Factor point located : 588241 17
+Factor point located : 17 588241
+Parallel Rasterization phase of factoring 10000097 was completed in (nanoseconds): 600.650991ms 
+Factorization of 10000097 was completed in (nanoseconds): 601.617494ms 
+Factorization of 10000098 began in (nanoseconds): SystemTime {
+    tv_sec: 1675704129,
+    tv_nsec: 86132497,
+} 
+Factor point located : 10000098 1
+Factor point located : 5000049 2
+Factor point located : 3333366 3
+Factor point located : 1666683 6
+Factor point located : 1111122 9
+Factor point located : 555561 18
+Factor point located : 370374 27
+Factor point located : 185187 54
+Factor point located : 123458 81
+Factor point located : 61729 162
+Factor point located : 2 5000049
+Factor point located : 162 61729
+Factor point located : 81 123458
+Factor point located : 54 185187
+Factor point located : 27 370374
+Factor point located : 18 555561
+Factor point located : 3 3333366
+Factor point located : 9 1111122
+Factor point located : 6 1666683
+Parallel Rasterization phase of factoring 10000098 was completed in (nanoseconds): 734.208371ms 
+Factorization of 10000098 was completed in (nanoseconds): 735.277582ms 
