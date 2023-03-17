@@ -1,0 +1,13 @@
+arraytuple: ([1, 1, 1, 0, 0, 0, 1, 1], [1, 1, 1, 0, 0, 0, 1, 1], [1, 1, 1, 0, 0, 0, 1, 1])
+arraytuple: ([0, 1, 0, 0, 1, 0, 1, 0], [0, 1, 1, 1, 1, 0, 1, 0], [0, 1, 0, 1, 1, 0, 1, 0])
+arraytuple: ([1, 1, 0, 0, 1, 1, 1, 0], [1, 1, 0, 1, 1, 1, 1, 0], [1, 1, 0, 1, 1, 1, 1, 0])
+arraytuple: ([1, 1, 1, 0, 1, 1, 1, 0], [1, 1, 1, 1, 1, 0, 1, 0], [1, 1, 0, 1, 1, 0, 1, 0])
+arraytuple: ([1, 1, 1, 0, 1, 1, 1, 1], [1, 1, 1, 0, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1, 1, 1])
+arraytuple: ([1, 1, 1, 0, 1, 1, 1, 0], [1, 1, 1, 0, 0, 0, 1, 0], [1, 1, 1, 0, 0, 1, 1, 0])
+arraytuple: ([1, 1, 1, 0, 1, 1, 1, 1], [1, 1, 1, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1])
+arraytuple: ([1, 1, 1, 0, 1, 1, 1, 0], [1, 1, 1, 0, 1, 1, 1, 0], [1, 1, 1, 0, 1, 1, 1, 0])
+intersection: [array([0, 1]), array([0, 1]), array([0, 1]), array([0, 1]), array([0, 1]), array([0, 1]), array([1]), array([0, 1])]
+intersecting indices: [(array([0, 1]), array([3, 0]), array([3, 0])), (array([0, 1]), array([3, 0]), array([3, 0])), (array([0, 1]), array([3, 0]), array([3, 0])), (array([0, 1]), array([3, 0]), array([3, 0])), (array([0, 1]), array([3, 0]), array([3, 0])), (array([0, 1]), array([3, 0]), array([3, 0])), (array([0, 1]), array([3, 0]), array([3, 0])), (array([0, 1]), array([3, 0]), array([3, 0])), (array([0, 1]), array([3, 0]), array([3, 0])), (array([0, 1]), array([3, 0]), array([3, 0])), (array([0, 1]), array([3, 0]), array([3, 0])), (array([0, 1]), array([3, 0]), array([3, 0])), (array([0, 1]), array([3, 0]), array([3, 0])), (array([0, 1]), array([3, 0]), array([3, 0])), (array([0, 1]), array([3, 0]), array([3, 0])), (array([0, 1]), array([3, 0]), array([3, 0]))]
+arraytuple: (['f', 'i', 'r', 's', 't', 'n', 'a', 'm', 'e'], ['l', 'a', 's', 't', 'n', 'a', 'm', 'e'], ['s', 'u', 'r', 'n', 'a', 'm', 'e'], ['m', 'i', 'd', 'd', 'l', 'e', 'n', 'a', 'm', 'e'])
+intersection: [array(['a', 'e', 'm', 'n'], dtype='<U1')]
+intersecting indices: [(array(['a', 'e', 'm', 'n', 's', 't'], dtype='<U1'), array([6, 8, 7, 5, 3, 4]), array([1, 7, 6, 4, 2, 3])), (array(['a', 'e', 'm', 'n', 's'], dtype='<U1'), array([1, 7, 6, 4, 2]), array([4, 6, 5, 3, 0])), (array(['a', 'e', 'm', 'n'], dtype='<U1'), array([4, 6, 5, 3]), array([7, 5, 0, 6]))]
