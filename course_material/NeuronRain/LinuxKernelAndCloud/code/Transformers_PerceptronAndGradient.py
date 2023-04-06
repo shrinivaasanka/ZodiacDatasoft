@@ -77,15 +77,17 @@ def LinearPerceptronGradient(outputs, weights, rho, bias, variables, iterations=
     return weights
 
 
-def compute_perceptron(weights, variables, outputs):
+def compute_perceptron(weights, variables, outputs, threshold=0.5):
     print("weights:",weights)
     print("variables:",variables)
     print("outputs:",outputs)
     for o in range(len(outputs)):
-        sum = 0
+        total = 0
         for w in range(len(weights)):
-            sum = sum + weights[w]*variables[w][o]
-        if (outputs[o] - sum) > 10:
+            total = total + weights[w]*variables[w][o]
+        print("total:",total)
+        print("abs(outputs[o] - total):",abs(outputs[o] - total))
+        if abs(outputs[o] - total) > threshold:
             return 1
     return 0
 
