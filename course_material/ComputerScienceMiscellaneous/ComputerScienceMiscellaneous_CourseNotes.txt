@@ -311,6 +311,11 @@ This problem is all the more serious in People Analytics where a person has to b
 
 Name Syllable based Unique Person Search (by scraping PIPL.com data) is described and PIPL.com python API search of similar persons is implemented in NeuronRain AstroInfer commit https://gitlab.com/shrinivaasanka/asfer-github-code/commit/d855882c3e8c2f97f6709c6f4a03728f95377ca1 (and in GitHub and SourceForge AstroInfer repositories). Contextual Name Parsing to parse First and Last Names from Full Name based on ID context has been implemented in NeuronRain AstroInfer commit https://gitlab.com/shrinivaasanka/asfer-github-code/commit/3ae9054a1311176c87304ed85e3835510657fc8b (and in GitHub and SourceForge AstroInfer repositories)
 
+References:
+----------
+834.1 IETF UUID RFC - Collision resistance and Unguessability - https://www.ietf.org/id/draft-ietf-uuidrev-rfc4122bis-02.html
+834.2 UUIDs and Cryptographically Secure Pseudorandom number generators - https://inst.eecs.berkeley.edu/~cs161/fa18/lectures/lec06_crypto_integrity.pdf 
+
 --------------------------------------------------------------------------------------------------------------------------------
 835. (THEORY and FEATURE) Unsorted Search - Kernel lifting and Computational Geometric search - 19 January 2018 - How would you find needle in haystack? - related to all sections on Computational Geometric Hyperplanar Point Location, Locality Sensitive Hashing and Shell Turing Machines
 --------------------------------------------------------------------------------------------------------------------------------
@@ -725,11 +730,10 @@ Answer1 (based on alternating pattern):
          (1) 52 * 45 = 30 (2 composites multiplied)
    	 (2) 73 * 21 = 23 (prime and a composite multiplied) - last digit of 73 and first digit of 21 form 23
    	 (3) 84 * 52 = 42 (2 composites multiplied)
-   	 (4) 62 * 43 = 24 (prime and a composite multiplied) - last digit of 62 and first digit of 42 form 24 (option (a))
+   	 (4) 62 * 43 = 24 (prime and a composite multiplied) - last digit of 62 and first digit of 43 form 24 (option (a))
 Answer2 (based on arithmetic): 
 	 (1) 5*2 + 4*5 = 30
          (2) 7*3 + 2*1 = 23
          (3) 8*4 + 5*2 = 42
          (4) 6*2 + 4*3 = 24 (option (a)) 
 
-    
