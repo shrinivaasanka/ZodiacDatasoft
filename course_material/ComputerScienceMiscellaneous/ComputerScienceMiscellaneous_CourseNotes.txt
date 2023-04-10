@@ -716,3 +716,20 @@ A: Meanings of operators have been changed in all 4 identities:
 	7/8 = 7+8 = 15
 substituting in 100 - 10 * 1000 / 1000 + 100 * 10:
 	100 * 10 - 1000 + 1000 / 100 - 10 = 1000 - 1000 + 10 - 10 = 0 (option (a))
+
+------------------------------------------------------------------------------------------------------------------------
+(PUZZLE) If 52 * 45 = 30, 73 * 21 = 23, 84 * 52 = 42, then 62 * 43 = ? - UPSC Civil Services - Mental ability - 10 April 2023
+------------------------------------------------------------------------------------------------------------------------
+Options: (a) 24 (b) 20 (c) 30 (d) 32
+Answer1 (based on alternating pattern): 
+         (1) 52 * 45 = 30 (2 composites multiplied)
+   	 (2) 73 * 21 = 23 (prime and a composite multiplied) - last digit of 73 and first digit of 21 form 23
+   	 (3) 84 * 52 = 42 (2 composites multiplied)
+   	 (4) 62 * 43 = 24 (prime and a composite multiplied) - last digit of 62 and first digit of 42 form 24 (option (a))
+Answer2 (based on arithmetic): 
+	 (1) 5*2 + 4*5 = 30
+         (2) 7*3 + 2*1 = 23
+         (3) 8*4 + 5*2 = 42
+         (4) 6*2 + 4*3 = 24 (option (a)) 
+
+    
