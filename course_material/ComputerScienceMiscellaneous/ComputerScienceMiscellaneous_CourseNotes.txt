@@ -737,3 +737,11 @@ Answer2 (based on arithmetic):
          (3) 8*4 + 5*2 = 42
          (4) 6*2 + 4*3 = 24 (option (a)) 
 
+-------------------------------------------------------------------------------------------------------------------------
+(PUZZLE) The series of letters given under follow a definite order - Predict the next letter in the series - 20 April 2023
+		P Q U R Q R V S R S W T S T
+(UPSC Civil Services - Mental ability)
+-------------------------------------------------------------------------------------------------------------------------
+Options: (a) Q (b) U (c) W (d) X
+Series P Q U R Q R V S R S W T S T has the nested pattern (Q(not present in series) P Q) U (R Q R) V (S R S) W (T S T)
+Next element in the series is Option (d) X (next element in outer series U V W .....) 
