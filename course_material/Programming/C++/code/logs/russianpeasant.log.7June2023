@@ -1,0 +1,31 @@
+RUSSIAN PEASANT MULTIPLICATION
+===================================
+tempa (factor1 / 2^0):13773311 ------ tempb (factor2 * 2^0):14136751
+tempa (factor1 / 2^1):6886655 ------ tempb (factor2 * 2^1):28273502
+tempa (factor1 / 2^2):3443327 ------ tempb (factor2 * 2^2):56547004
+tempa (factor1 / 2^3):1721663 ------ tempb (factor2 * 2^3):113094008
+tempa (factor1 / 2^4):860831 ------ tempb (factor2 * 2^4):226188016
+tempa (factor1 / 2^5):430415 ------ tempb (factor2 * 2^5):452376032
+tempa (factor1 / 2^6):215207 ------ tempb (factor2 * 2^6):904752064
+tempa (factor1 / 2^7):107603 ------ tempb (factor2 * 2^7):1809504128
+tempa (factor1 / 2^8):53801 ------ tempb (factor2 * 2^8):3619008256
+tempa (factor1 / 2^9):26900 ------ tempb (factor2 * 2^9):7238016512
+tempa (factor1 / 2^10):13450 ------ tempb (factor2 * 2^10):14476033024
+tempa (factor1 / 2^11):6725 ------ tempb (factor2 * 2^11):28952066048
+tempa (factor1 / 2^12):3362 ------ tempb (factor2 * 2^12):57904132096
+tempa (factor1 / 2^13):1681 ------ tempb (factor2 * 2^13):115808264192
+tempa (factor1 / 2^14):840 ------ tempb (factor2 * 2^14):231616528384
+tempa (factor1 / 2^15):420 ------ tempb (factor2 * 2^15):463233056768
+tempa (factor1 / 2^16):210 ------ tempb (factor2 * 2^16):926466113536
+tempa (factor1 / 2^17):105 ------ tempb (factor2 * 2^17):1852932227072
+tempa (factor1 / 2^18):52 ------ tempb (factor2 * 2^18):3705864454144
+tempa (factor1 / 2^19):26 ------ tempb (factor2 * 2^19):7411728908288
+tempa (factor1 / 2^20):13 ------ tempb (factor2 * 2^20):14823457816576
+tempa (factor1 / 2^21):6 ------ tempb (factor2 * 2^21):29646915633152
+tempa (factor1 / 2^22):3 ------ tempb (factor2 * 2^22):59293831266304
+tempa (factor1 / 2^23):1 ------ tempb (factor2 * 2^23):118587662532608
+Factor1 size(in bits):23.7154
+Factor2 size(in bits):23.7529
+Approximate lower bound estimate 1 for last row,right column - 2^(46.4683):97354934026280
+Approximate lower bound estimate 2 for last row,right column - 2^(46.4683):97354934026280
+Product of 13773311 and 14136751:194709868052561

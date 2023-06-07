@@ -1,0 +1,27 @@
+RUSSIAN PEASANT MULTIPLICATION
+===================================
+tempa (factor1 / 2^0):1000000 ------ tempb (factor2 * 2^0):100000
+tempa (factor1 / 2^1):500000 ------ tempb (factor2 * 2^1):200000
+tempa (factor1 / 2^2):250000 ------ tempb (factor2 * 2^2):400000
+tempa (factor1 / 2^3):125000 ------ tempb (factor2 * 2^3):800000
+tempa (factor1 / 2^4):62500 ------ tempb (factor2 * 2^4):1600000
+tempa (factor1 / 2^5):31250 ------ tempb (factor2 * 2^5):3200000
+tempa (factor1 / 2^6):15625 ------ tempb (factor2 * 2^6):6400000
+tempa (factor1 / 2^7):7812 ------ tempb (factor2 * 2^7):12800000
+tempa (factor1 / 2^8):3906 ------ tempb (factor2 * 2^8):25600000
+tempa (factor1 / 2^9):1953 ------ tempb (factor2 * 2^9):51200000
+tempa (factor1 / 2^10):976 ------ tempb (factor2 * 2^10):102400000
+tempa (factor1 / 2^11):488 ------ tempb (factor2 * 2^11):204800000
+tempa (factor1 / 2^12):244 ------ tempb (factor2 * 2^12):409600000
+tempa (factor1 / 2^13):122 ------ tempb (factor2 * 2^13):819200000
+tempa (factor1 / 2^14):61 ------ tempb (factor2 * 2^14):1638400000
+tempa (factor1 / 2^15):30 ------ tempb (factor2 * 2^15):3276800000
+tempa (factor1 / 2^16):15 ------ tempb (factor2 * 2^16):6553600000
+tempa (factor1 / 2^17):7 ------ tempb (factor2 * 2^17):13107200000
+tempa (factor1 / 2^18):3 ------ tempb (factor2 * 2^18):26214400000
+tempa (factor1 / 2^19):1 ------ tempb (factor2 * 2^19):52428800000
+Factor1 size(in bits):19.9316
+Factor2 size(in bits):16.6096
+Approximate lower bound estimate 1 for last row,right column - 2^(35.5712):51050606285
+Approximate lower bound estimate 2 for last row,right column - 2^(35.5712):51050606285
+Product of 1000000 and 100000:100000000000
