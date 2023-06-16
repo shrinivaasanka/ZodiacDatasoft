@@ -586,3 +586,8 @@ References:
 	Approximate lower bound estimate 1 for last row,right column - 2^(35.5712):51050606285
 	Approximate lower bound estimate 2 for last row,right column - 2^(35.5712):51050606285
 	Product of 1000000 and 100000:100000000000
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Binary Product of 2 integers by C++ STL Bitset and relation between parity of factors and parity of product - 16 June 2023
+--------------------------------------------------------------------------------------------------------------------------------------------
+C++ code example productparity.cpp implements a function to declare 2 integers and print both the factors and the product of them as binary strings by bitset. Binary strings of the factors and products are printed to logs/productparity.log.16June2023. This code example has a boolean complexity theoretical aside to it: If parity(x) denotes number of 1s of factor x and parity(y) denotes number of 1s of factor y, is parity(x*y) = function_of(parity(x),parity(y)) (or) in other words what are the closure properties of parity of an integer in terms of its factors.
