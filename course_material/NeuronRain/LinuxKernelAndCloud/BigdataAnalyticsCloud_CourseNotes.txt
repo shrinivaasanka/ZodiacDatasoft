@@ -362,6 +362,28 @@ Most games have been analyzed for their computational complexity - E.g Go, Chess
 
 Mining soccer patterns is complex because of random trajectories of the ball which draws a random directed graph on field - trajectory is a brownian motion random walk - whose vertices are 2-colored (bichromatic for vertices belonging to two opponent teams). Consecutive match statistics create a stream of 2-colored random graphs and frequent subgraph patterns in this stream of random trajectory graphs show patterns across matches. 
 
+Theoretical variant of Parallel or semi-sequential cricket is postulated as below:
+---------------------------------------------------------------------------------
+	for n number of pairs (x,y) of balls (120 or 300 each per team)
+	{
+		/* Roles interchange for every 2 balls */
+		ball x - team1 bats and team2 bowls /* counterpart of move by player1 in Chess */
+		team1_runs++ or loss of wicket
+		ball y - team2 bats and team1 bowls /* counterpart of countermove by player2 in Chess */
+		team2_runs++ or loss of wicket
+	}
+	if team1_runs > team2_runs
+		team1 wins
+	if team1_runs < team2_runs
+		team2 wins	
+	else
+		match is tied
+
+Earlier variant tries to parallelize sequential cricket to some extent and 22 players are equivalent of Chess black-white pawns. N*N Chess has been shown to be PSPACE-complete by a reduction from Generalized Geography - https://core.ac.uk/download/pdf/81113423.pdf - and previous semi-sequential version of cricket fits Generalized Geography(GG) and by reduction to GG parallel variant of cricket is a QBFSAT problem and PSPACE-complete. In earlier semi-sequential cricket variant player from both the teams alternate their roles for every ball simulating the directed graph traversal of GG by 2 players - https://en.wikipedia.org/wiki/Generalized_geography. Each vertex of GG directed graph is the ball played by team1 or team2 players marked by the runs scored or loss of wicket for that ball. For example, following is a 3 ball cricket alternating between team1 and team2 (each having 2 players) and won by team1 adapted to GG directed graph (each vertex is marked as <ball number>:<batting team> and runs scored are in brackets):
+	ball1:team1 (1) ------ ball2:team2 (2) ------ ball3:team1 (6) ----- ball4:team2 (Out-0) ----- ball5:team1 (1) ---- ball6:team2(1)
+	team1 score: 8
+	team2 score: 3
+
 Reference:
 ---------
 1.Real Plus Minus of NBA - http://www.espn.com/nba/statistics/rpm - Player Efficiency Ratings in Basketball 
