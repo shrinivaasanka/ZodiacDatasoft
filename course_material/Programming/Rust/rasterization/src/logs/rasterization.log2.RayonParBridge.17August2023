@@ -1,0 +1,83 @@
+Factorization of 999999999 began in (nanoseconds): SystemTime {
+    tv_sec: 1692271496,
+    tv_nsec: 295561524,
+} 
+Size of integer to be factorized (in bits): 29
+Factor point located : 999999999 , 1 at SystemTime {
+    tv_sec: 1692271496,
+    tv_nsec: 298280459,
+} nanoseconds
+Factor point located : 333333333 , 3 at SystemTime {
+    tv_sec: 1692271496,
+    tv_nsec: 298430606,
+} nanoseconds
+Factor point located : 111111111 , 9 at SystemTime {
+    tv_sec: 1692271496,
+    tv_nsec: 298504217,
+} nanoseconds
+Factor point located : 37037037 , 27 at SystemTime {
+    tv_sec: 1692271496,
+    tv_nsec: 298581387,
+} nanoseconds
+Factor point located : 27027027 , 37 at SystemTime {
+    tv_sec: 1692271496,
+    tv_nsec: 298656396,
+} nanoseconds
+Factor point located : 12345679 , 81 at SystemTime {
+    tv_sec: 1692271496,
+    tv_nsec: 298776039,
+} nanoseconds
+Factor point located : 9009009 , 111 at SystemTime {
+    tv_sec: 1692271496,
+    tv_nsec: 298859409,
+} nanoseconds
+Factor point located : 3003003 , 333 at SystemTime {
+    tv_sec: 1692271496,
+    tv_nsec: 298993092,
+} nanoseconds
+Factor point located : 1001001 , 999 at SystemTime {
+    tv_sec: 1692271496,
+    tv_nsec: 299254310,
+} nanoseconds
+Factor point located : 333667 , 2997 at SystemTime {
+    tv_sec: 1692271496,
+    tv_nsec: 299934154,
+} nanoseconds
+Factor point located : 2997 , 333667 at SystemTime {
+    tv_sec: 1692271496,
+    tv_nsec: 349157620,
+} nanoseconds
+Factor point located : 999 , 1001001 at SystemTime {
+    tv_sec: 1692271496,
+    tv_nsec: 441009176,
+} nanoseconds
+Factor point located : 333 , 3003003 at SystemTime {
+    tv_sec: 1692271496,
+    tv_nsec: 705130127,
+} nanoseconds
+Factor point located : 111 , 9009009 at SystemTime {
+    tv_sec: 1692271497,
+    tv_nsec: 466325243,
+} nanoseconds
+Factor point located : 81 , 12345679 at SystemTime {
+    tv_sec: 1692271497,
+    tv_nsec: 891328295,
+} nanoseconds
+Factor point located : 37 , 27027027 at SystemTime {
+    tv_sec: 1692271499,
+    tv_nsec: 996368305,
+} nanoseconds
+Factor point located : 27 , 37037037 at SystemTime {
+    tv_sec: 1692271501,
+    tv_nsec: 181308121,
+} nanoseconds
+Factor point located : 3 , 333333333 at SystemTime {
+    tv_sec: 1692271507,
+    tv_nsec: 52107812,
+} nanoseconds
+Factor point located : 9 , 111111111 at SystemTime {
+    tv_sec: 1692271510,
+    tv_nsec: 929878156,
+} nanoseconds
+Parallel Rasterization phase of factoring 999999999 was completed in (nanoseconds): 32.007101705s 
+Factorization of 999999999 was completed in (nanoseconds): 32.007543985s 
