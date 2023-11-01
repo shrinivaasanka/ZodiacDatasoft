@@ -783,3 +783,22 @@ Eulerian circuits - graphs of even degree vertices and edges belonging to single
 References:
 ----------
 1151.1 Graph Theory - [Douglas B. West]
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+1457. (THEORY and FEATURE) Digital Watermarking of Large Scale Visuals in OpenCV - refactoring for multiple images overlay and Image Quality Analysis(IQA) related to 581,840,841 and all sections on Merit of Large Scale Visuals, Large Scale Visual Recognition Analytics, Handwriting Recognition and Fraud analytics,GIS Urban sprawl analytics - 1 November 2023 
+--------------------------------------------------------------------------------------------------------------------------------------------
+1457.1 course_material/NeuronRain/LinuxKernelAndCloud/code/DigitalWatermarking.py has been updated to import image-quality and PIL python packages for image quality analysis(IQA).
+1457.2 New function def image_quality_analysis(imagefile,model_path,range_path) has been defined which reads an image file in OpenCV2 and PIL and computes variance of Laplacian (Divergence of Gradient) and BRISQUE image quality measures of the image from OpenCV2 and image-quality respectively. BRISQUE functions from https://github.com/opencv/opencv_contrib/tree/master/modules/quality have been commented as alternatives which requires opencv-contrib to be built as part of OpenCV2. IQA algorithms for image quality are precisely meant for what "merit" or qualitative assessment of a visual implies. On similar lines, merit of an audio requires an AQA (audio quality analysis). 
+1457.3 Function def watermark_image(imagefile=None, watermark=None, fileIO=False, img=None, alpha=0.2) has been rewritten to include new arguments img,alpha and fileIO to facilitate computation of multiple image overlays. Earlier implementation was restricted to watermarking of one image by the other by addWeighted() overlay which has been extended to multiple image overlay in this update. This rewrite chooses between an imagefile name or image ndarray passed to compute overlays and returns the overlay image ndarray. Returned overlay image ndarray can be watermarked iteratively with multiple images in succession.
+1457.4 Hardcoded blending parameter alpha has been made a function argument. BGRA to BGR downscaling has been commented to retain alpha channel as addWeighted() requires 4 in third axis. 
+1457.5 Two Lunar eclipse imagery dt.29 October 2023 from https://en.wikipedia.org/wiki/October_2023_lunar_eclipse shot from Bandung (Indonesia) and Kumbakonam (India) are IQA analysed for Laplacian blur and BRISQUE measure. BRISQUE requires download of yml files from https://github.com/opencv/opencv_contrib/tree/master/modules/quality/samples : 
+    image_quality_analysis("testlogs/29Oct2023_LunarEclipse_Bandung_Wikipedia.jpg","testlogs/brisque_model_live.yml","testlogs/brisque_range_live.yml")
+    image_quality_analysis("testlogs/29Oct2023_LunarEclipse_Kumbakonam_Wikipedia.jpg","testlogs/brisque_model_live.yml","testlogs/brisque_range_live.yml")
+1457.6 Four multimodal transport GIS images from https://cumta.tn.gov.in/ (Chennai Unified Metropolitan Transport Authority) have been overlaid in 3 consecutive calls to watermark_image() to create a multimodal overlay image testlogs/CMA_CUMTA_Overlay_Maps/metro_network_Watermarked.jpg. Most tools based on OpenStreetMap (OSMnx etc.,) focus mainly on road transport and overlaying the road transport with other modes of suburban transport gives a better estimate of multimodal density: 
+    overlayimg = watermark_image(
+        imagefile="testlogs/CMA_CUMTA_Overlay_Maps/metro_network.jpg", watermark="testlogs/CMA_CUMTA_Overlay_Maps/mtc_network.jpg")
+    overlayimg = watermark_image(
+        watermark="testlogs/CMA_CUMTA_Overlay_Maps/rail_network.jpg", fileIO=False, img=overlayimg)
+    overlayimg = watermark_image(
+        watermark="testlogs/CMA_CUMTA_Overlay_Maps/road_network.jpg", fileIO=False, img=overlayimg)
+    cv2.imwrite("testlogs/CMA_CUMTA_Overlay_Maps/metro_network_Watermarked.jpg", overlayimg)
