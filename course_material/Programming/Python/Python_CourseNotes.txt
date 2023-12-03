@@ -490,3 +490,16 @@ References:
 ----------
 1403.5 Survey of Set Intersection algorithms for ordered datasets - http://www.cs.toronto.edu/~tl/papers/fiats.pdf - Baeza-Yates and Adaptive set intersection algorithms
 1403.6 Disjoint-Set Union datastructure for sets - http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap22.htm - sets are often represented by union of disjoint sets which has profound applications including finding connected components of a graph. Intersection of two sets represented as disjoint set union could be defined as recurrence: Find subsetwise intersection of disjoint set union of the two sets and unite them. 
+
+-----------------------------------------------------------------------------------------------------------------------------
+1461. (THEORY and FEATURE) Fitting data to a distribution - SciPy Stats fit() distributions - 4 December 2023 - a multipurpose
+utility implementation in Python3.11 for all bigdata sets of NeuronRain 
+-----------------------------------------------------------------------------------------------------------------------------
+1461.1 Utility Python 3.11 script code/FitDist.py has been added to NeuronRain Grafit repositories to fit an arbitrary numeric dataset into predefined probability distributions in scipy.stats by function scipy.stats.fit()
+1461.2 Function fit_distribution() enumerates the members of scipy.stats by inspect.getmembers() and checks if the members are instances of rv_discrete or rv_continuous base class and invokes scipy.stats.fit() on the member function and the fit is plotted by matplotlib.pyplot - distribution functions are subclassed from rv_discrete and rv_continuous.      
+1461.3 Example fits and their parameters of a data array for few distributions is at code/logs/FitDist.log.4December2023
+
+References:
+-----------
+1461.4 SciPy Stats fit() - https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.fit.html
+1461.5 Python 3.11 inspect - https://docs.python.org/3/library/inspect.html
