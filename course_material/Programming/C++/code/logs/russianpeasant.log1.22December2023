@@ -1,0 +1,39 @@
+RUSSIAN PEASANT MULTIPLICATION
+===================================
+tempa (factor1 / 2^0):26721 ------ tempb (factor2 * 2^0):26222 ============= ODD Left Column ===================
+tempa (factor1 / 2^1):13360 ------ tempb (factor2 * 2^1):52444
+tempa (factor1 / 2^2):6680 ------ tempb (factor2 * 2^2):104888
+tempa (factor1 / 2^3):3340 ------ tempb (factor2 * 2^3):209776
+tempa (factor1 / 2^4):1670 ------ tempb (factor2 * 2^4):419552
+tempa (factor1 / 2^5):835 ------ tempb (factor2 * 2^5):839104 ============= ODD Left Column ===================
+tempa (factor1 / 2^6):417 ------ tempb (factor2 * 2^6):1678208 ============= ODD Left Column ===================
+tempa (factor1 / 2^7):208 ------ tempb (factor2 * 2^7):3356416
+tempa (factor1 / 2^8):104 ------ tempb (factor2 * 2^8):6712832
+tempa (factor1 / 2^9):52 ------ tempb (factor2 * 2^9):13425664
+tempa (factor1 / 2^10):26 ------ tempb (factor2 * 2^10):26851328
+tempa (factor1 / 2^11):13 ------ tempb (factor2 * 2^11):53702656 ============= ODD Left Column ===================
+tempa (factor1 / 2^12):6 ------ tempb (factor2 * 2^12):107405312
+tempa (factor1 / 2^13):3 ------ tempb (factor2 * 2^13):214810624 ============= ODD Left Column ===================
+tempa (factor1 / 2^14):1 ------ tempb (factor2 * 2^14):429621248 ============= ODD Left Column ===================
+Length of Russian peasant tableau:14
+Factor1 size(in bits):14.7057
+Factor2 size(in bits):14.6785
+ab.count():19
+Approximate Parity of left column (factor1) till penultimate row = ab.count()/2 :9
+Leftshift(ab.count() - approximate_parity):5
+computeLSB(): lsb = 0
+computeLSB(): lsb = 1
+computeLSB(): lsb = 3
+computeLSB(): lsb = 7
+computeLSB(): lsb = 15
+computeLSB(): lsb = 31
+computeLSB(): lsb = 63
+computeLSB(): lsb = 127
+computeLSB(): lsb = 255
+leftshiftedlsb:16352
+Least significant byte:16352
+Lowerbound epsilon:1
+Approximate lower bound estimate 1 for last row,right column - 2^(28.3842):350339030
+Approximate lower bound estimate 2 for last row,right column - 2^(28.3842):350339030
+Approximate estimate 3 for last row,right column :700661710
+Product Factor1 * Factor2 of 26721 and 26222:700678062

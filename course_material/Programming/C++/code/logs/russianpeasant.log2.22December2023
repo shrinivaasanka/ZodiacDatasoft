@@ -1,0 +1,36 @@
+RUSSIAN PEASANT MULTIPLICATION
+===================================
+tempa (factor1 / 2^0):16721 ------ tempb (factor2 * 2^0):16922 ============= ODD Left Column ===================
+tempa (factor1 / 2^1):8360 ------ tempb (factor2 * 2^1):33844
+tempa (factor1 / 2^2):4180 ------ tempb (factor2 * 2^2):67688
+tempa (factor1 / 2^3):2090 ------ tempb (factor2 * 2^3):135376
+tempa (factor1 / 2^4):1045 ------ tempb (factor2 * 2^4):270752 ============= ODD Left Column ===================
+tempa (factor1 / 2^5):522 ------ tempb (factor2 * 2^5):541504
+tempa (factor1 / 2^6):261 ------ tempb (factor2 * 2^6):1083008 ============= ODD Left Column ===================
+tempa (factor1 / 2^7):130 ------ tempb (factor2 * 2^7):2166016
+tempa (factor1 / 2^8):65 ------ tempb (factor2 * 2^8):4332032 ============= ODD Left Column ===================
+tempa (factor1 / 2^9):32 ------ tempb (factor2 * 2^9):8664064
+tempa (factor1 / 2^10):16 ------ tempb (factor2 * 2^10):17328128
+tempa (factor1 / 2^11):8 ------ tempb (factor2 * 2^11):34656256
+tempa (factor1 / 2^12):4 ------ tempb (factor2 * 2^12):69312512
+tempa (factor1 / 2^13):2 ------ tempb (factor2 * 2^13):138625024
+tempa (factor1 / 2^14):1 ------ tempb (factor2 * 2^14):277250048 ============= ODD Left Column ===================
+Length of Russian peasant tableau:14
+Factor1 size(in bits):14.0294
+Factor2 size(in bits):14.0466
+ab.count():13
+Approximate Parity of left column (factor1) till penultimate row = ab.count()/2 :6
+Leftshift(ab.count() - approximate_parity):8
+computeLSB(): lsb = 0
+computeLSB(): lsb = 1
+computeLSB(): lsb = 3
+computeLSB(): lsb = 7
+computeLSB(): lsb = 15
+computeLSB(): lsb = 31
+leftshiftedlsb:16128
+Least significant byte:16128
+Lowerbound epsilon:1
+Approximate lower bound estimate 1 for last row,right column - 2^(27.076):141476381
+Approximate lower bound estimate 2 for last row,right column - 2^(27.076):141476381
+Approximate estimate 3 for last row,right column :282936634
+Product Factor1 * Factor2 of 16721 and 16922:282952762

@@ -1,0 +1,40 @@
+RUSSIAN PEASANT MULTIPLICATION
+===================================
+tempa (factor1 / 2^0):66721 ------ tempb (factor2 * 2^0):67222 ============= ODD Left Column ===================
+tempa (factor1 / 2^1):33360 ------ tempb (factor2 * 2^1):134444
+tempa (factor1 / 2^2):16680 ------ tempb (factor2 * 2^2):268888
+tempa (factor1 / 2^3):8340 ------ tempb (factor2 * 2^3):537776
+tempa (factor1 / 2^4):4170 ------ tempb (factor2 * 2^4):1075552
+tempa (factor1 / 2^5):2085 ------ tempb (factor2 * 2^5):2151104 ============= ODD Left Column ===================
+tempa (factor1 / 2^6):1042 ------ tempb (factor2 * 2^6):4302208
+tempa (factor1 / 2^7):521 ------ tempb (factor2 * 2^7):8604416 ============= ODD Left Column ===================
+tempa (factor1 / 2^8):260 ------ tempb (factor2 * 2^8):17208832
+tempa (factor1 / 2^9):130 ------ tempb (factor2 * 2^9):34417664
+tempa (factor1 / 2^10):65 ------ tempb (factor2 * 2^10):68835328 ============= ODD Left Column ===================
+tempa (factor1 / 2^11):32 ------ tempb (factor2 * 2^11):137670656
+tempa (factor1 / 2^12):16 ------ tempb (factor2 * 2^12):275341312
+tempa (factor1 / 2^13):8 ------ tempb (factor2 * 2^13):550682624
+tempa (factor1 / 2^14):4 ------ tempb (factor2 * 2^14):1101365248
+tempa (factor1 / 2^15):2 ------ tempb (factor2 * 2^15):2202730496
+tempa (factor1 / 2^16):1 ------ tempb (factor2 * 2^16):4405460992 ============= ODD Left Column ===================
+Length of Russian peasant tableau:16
+Factor1 size(in bits):16.0259
+Factor2 size(in bits):16.0366
+ab.count():17
+Approximate Parity of left column (factor1) till penultimate row = ab.count()/2 :8
+Leftshift(ab.count() - approximate_parity):8
+computeLSB(): lsb = 0
+computeLSB(): lsb = 1
+computeLSB(): lsb = 3
+computeLSB(): lsb = 7
+computeLSB(): lsb = 15
+computeLSB(): lsb = 31
+computeLSB(): lsb = 63
+computeLSB(): lsb = 127
+leftshiftedlsb:65280
+Least significant byte:65280
+Lowerbound epsilon:1
+Approximate lower bound estimate 1 for last row,right column - 2^(31.0625):2242559531
+Approximate lower bound estimate 2 for last row,right column - 2^(31.0625):2242559531
+Approximate estimate 3 for last row,right column :4485053782
+Product Factor1 * Factor2 of 66721 and 67222:4485119062

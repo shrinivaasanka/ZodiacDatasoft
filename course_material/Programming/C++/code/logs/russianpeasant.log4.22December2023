@@ -1,0 +1,40 @@
+RUSSIAN PEASANT MULTIPLICATION
+===================================
+tempa (factor1 / 2^0):87721 ------ tempb (factor2 * 2^0):88222 ============= ODD Left Column ===================
+tempa (factor1 / 2^1):43860 ------ tempb (factor2 * 2^1):176444
+tempa (factor1 / 2^2):21930 ------ tempb (factor2 * 2^2):352888
+tempa (factor1 / 2^3):10965 ------ tempb (factor2 * 2^3):705776 ============= ODD Left Column ===================
+tempa (factor1 / 2^4):5482 ------ tempb (factor2 * 2^4):1411552
+tempa (factor1 / 2^5):2741 ------ tempb (factor2 * 2^5):2823104 ============= ODD Left Column ===================
+tempa (factor1 / 2^6):1370 ------ tempb (factor2 * 2^6):5646208
+tempa (factor1 / 2^7):685 ------ tempb (factor2 * 2^7):11292416 ============= ODD Left Column ===================
+tempa (factor1 / 2^8):342 ------ tempb (factor2 * 2^8):22584832
+tempa (factor1 / 2^9):171 ------ tempb (factor2 * 2^9):45169664 ============= ODD Left Column ===================
+tempa (factor1 / 2^10):85 ------ tempb (factor2 * 2^10):90339328 ============= ODD Left Column ===================
+tempa (factor1 / 2^11):42 ------ tempb (factor2 * 2^11):180678656
+tempa (factor1 / 2^12):21 ------ tempb (factor2 * 2^12):361357312 ============= ODD Left Column ===================
+tempa (factor1 / 2^13):10 ------ tempb (factor2 * 2^13):722714624
+tempa (factor1 / 2^14):5 ------ tempb (factor2 * 2^14):1445429248 ============= ODD Left Column ===================
+tempa (factor1 / 2^15):2 ------ tempb (factor2 * 2^15):2890858496
+tempa (factor1 / 2^16):1 ------ tempb (factor2 * 2^16):5781716992 ============= ODD Left Column ===================
+Length of Russian peasant tableau:16
+Factor1 size(in bits):16.4206
+Factor2 size(in bits):16.4289
+ab.count():16
+Approximate Parity of left column (factor1) till penultimate row = ab.count()/2 :8
+Leftshift(ab.count() - approximate_parity):8
+computeLSB(): lsb = 0
+computeLSB(): lsb = 1
+computeLSB(): lsb = 3
+computeLSB(): lsb = 7
+computeLSB(): lsb = 15
+computeLSB(): lsb = 31
+computeLSB(): lsb = 63
+computeLSB(): lsb = 127
+leftshiftedlsb:65280
+Least significant byte:65280
+Lowerbound epsilon:1
+Approximate lower bound estimate 1 for last row,right column - 2^(31.8495):3869461031
+Approximate lower bound estimate 2 for last row,right column - 2^(31.8495):3869461031
+Approximate estimate 3 for last row,right column :7738856782
+Product Factor1 * Factor2 of 87721 and 88222:7738922062

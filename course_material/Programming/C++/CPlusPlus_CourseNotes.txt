@@ -598,3 +598,54 @@ C++ code example productparity.cpp implements a function to declare 2 integers a
 1466.1 course_material/Programming/C++/code/productparity.cpp has been updated to introduce 2 nested for loops for iterating through the range of commandline arguments x and y and compute parity of the products for entire range of 1...x and 1...y. 
 1466.2 Parities of the products are plotted as ferrer diagram (code/logs/productparity.log.15December2023). Boolean complexity theoretic problem of relation between parity(x*y) and [parity(x) and parity(y)] is partially answered by lemmas 8.9,8.10 and 8.11 - https://courses.cs.washington.edu/courses/cse532/08sp/lect08.pdf - "Theorem 8.8 Parity ∈ NC1 , and Integer-Addition ∈ AC0....Theorem 8.9 Iterated-Addition of n n-bit integers ∈ NC1.... By taking an n-bit input x, producing x' = xn0lxn−10l · · · 0lx1 where l > log2 n and multiplying this by y' = 10l10l · · · 0l1 and taking the middle bit of x' · y' we derive the following: Lemma 8.11 Parity ≤NC0 Multiplication ...." - in other words, parity of an integer of the form described above is the middle bit of product of its factors. 
 1466.3 Multiplication of 2 n-bit integers can be written as Wallace tree reduction of x + y + z = u + v recursively by expressing carry bit as logic formula : ".... The sum i-th bit of the sum si = xi ⊕ yi ⊕ ci where ci is the carry bit. The i-th carry bit ci is 1 iff it is generated in some column j to the right of column i, and is propagated in every column between j and i. That is, ci = ∨j<i[(xj ∧ yj ) ∧ ∧j<k<i(xk ∨ yk)] which yields a polynomial-size constant depth unbounded fan-in circuit ...."
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+1467. (THEORY and FEATURE) Russian Peasant Multiplication in Linear Time by BitShift operator - Approximate parity based estimate 3 of last row of the tableau for an alternative non-trivial reversal of multiplication (or factoring) - related to 668,1221,1222,1429,1465,1466 and all sections on Integer Factorization, Succinct Datastrucures, Numeric Compression, Arithmetic Circuits, Computational Geometric Factorization - Average case Sequential Optimization, Stirling Approximation of Gamma Function, Relation between parity of an integer and its factors - 22 December 2023
+-------------------------------------------------------------------------------------------------------------------------------------------
+1467.1 course_material/Programming/C++/code/russianpeasant.cpp has been updated to implement a third approximate estimate of (last row,right column) integer which could be instrumental in reversing the top-down multiplication tableau into a down-top factorization tableau.
+1467.2 BitSet is included and math.h has been extern-ed. Debug cout(s) have been increased. Approximate parity of left factor (factor1) is inferred heuristically as half of parity of the product integer (factor1 * factor2) based on C++ BitSet count() value of the product. This is exactly where productparity.cpp implemented in 1465 and 1466 fits theoretically - deducing parity of each of the factors factor1 and factor2 from parity of the integer product factor1 * factor2 would have been an exact estimate. 
+1467.3 Approximate parity value earlier is the estimate of number of 1s in factor1 which are left shifted by (parity of the product - approximate parity) bit positions to get a maximum value least significant byte that must be subtracted from product deriving almost the value at (last row,right column) of the tableau.  
+1467.4 New function computeLSB() implements algorithm for creating the least significant byte from approximate parity and leftshift earlier.
+1467.5 Five multiplication examples in:
+ 	logs/russianpeasant.log1.22December2023
+	logs/russianpeasant.log2.22December2023
+	logs/russianpeasant.log3.22December2023
+	logs/russianpeasant.log4.22December2023
+	logs/russianpeasant.log5.22December2023
+demonstrate third approximation - excerpts hereunder - while naive estimates of 1 and 2 are less tight lowerbounds throughout, estimate 3 is quite close for 16721*16922 and 66721*66722 (which are almost-square semiprimes):
+RUSSIAN PEASANT MULTIPLICATION
+===================================
+tempa (factor1 / 2^14):1 ------ tempb (factor2 * 2^14):429621248 ============= ODD Left Column ===================
+Approximate lower bound estimate 1 for last row,right column - 2^(28.3842):350339030
+Approximate lower bound estimate 2 for last row,right column - 2^(28.3842):350339030
+Approximate estimate 3 for last row,right column :700661710
+Product Factor1 * Factor2 of 26721 and 26222:700678062
+RUSSIAN PEASANT MULTIPLICATION
+===================================
+tempa (factor1 / 2^14):1 ------ tempb (factor2 * 2^14):277250048 ============= ODD Left Column ===================
+Approximate lower bound estimate 1 for last row,right column - 2^(27.076):141476381
+Approximate lower bound estimate 2 for last row,right column - 2^(27.076):141476381
+Approximate estimate 3 for last row,right column :282936634 (Tight estimate of 277250048 by approximate parity) 
+Product Factor1 * Factor2 of 16721 and 16922:282952762
+RUSSIAN PEASANT MULTIPLICATION
+===================================
+tempa (factor1 / 2^15):1 ------ tempb (factor2 * 2^15):1537540096 ============= ODD Left Column ===================
+Approximate lower bound estimate 1 for last row,right column - 2^(30.0298):1096121380
+Approximate lower bound estimate 2 for last row,right column - 2^(30.0298):1096121380
+Approximate estimate 3 for last row,right column :2192210250
+Product Factor1 * Factor2 of 46721 and 46922:2192242762
+RUSSIAN PEASANT MULTIPLICATION
+===================================
+tempa (factor1 / 2^16):1 ------ tempb (factor2 * 2^16):5781716992 ============= ODD Left Column ===================
+Approximate lower bound estimate 1 for last row,right column - 2^(31.8495):3869461031
+Approximate lower bound estimate 2 for last row,right column - 2^(31.8495):3869461031
+Approximate estimate 3 for last row,right column :7738856782
+Product Factor1 * Factor2 of 87721 and 88222:7738922062
+RUSSIAN PEASANT MULTIPLICATION
+===================================
+tempa (factor1 / 2^16):1 ------ tempb (factor2 * 2^16):4405460992 ============= ODD Left Column ===================
+Approximate lower bound estimate 1 for last row,right column - 2^(31.0625):2242559531
+Approximate lower bound estimate 2 for last row,right column - 2^(31.0625):2242559531
+Approximate estimate 3 for last row,right column :4485053782 (Tight estimate of 4405460992 by approximate parity)
+Product Factor1 * Factor2 of 66721 and 67222:4485119062 
+1467.6 More sophisticated algorithm for inferring parities of factors from parity of their product (e.g by inverting the wallace tree reduction logical formulas for iterated addition) could solve the above problem of reversing the Russian peasant multiplication exactly and thus imply sequential polynomial time factorization algorithm. 
