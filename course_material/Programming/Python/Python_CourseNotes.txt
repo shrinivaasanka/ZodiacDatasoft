@@ -509,7 +509,7 @@ References:
 ------------------------------------------------------------------------------------------------------------------------------
 1477.1 course_material/Programming/Python/code/SurvivalIndexScheduler.py has been refactored to integrate linux kernel workqueue system trace information into Survival Index dynamic hashmap.
 1477.2 Two subprocess.run() invocations write kernel workqueue into flat file ./workqueue_trace which is parsed to populate 2 dictionaries mapping CPU_ID ---- WORKQUEUE (cpuwqdict) and PROCESS_ID ---- CPU_ID (pid2cpudict). 
-1477.3 The main datastructure dynamic_hashmap_dict has been changed to include cpu_id as SURVIVAL_INDEX ---- (PROCESS_ID, CPU_ID) and written to ./virgo_kernel_analytics.conf instead of /etc/virgo_kernel_analytics.conf - CPU_ID is obtained by looking up the cpu_id for a SurvivalIndexScheduler.log1.30January2024process_id in pid2cpudict. 
+1477.3 The main datastructure dynamic_hashmap_dict has been changed to include cpu_id as SURVIVAL_INDEX ---- (PROCESS_ID, CPU_ID) and written to ./virgo_kernel_analytics.conf instead of /etc/virgo_kernel_analytics.conf - CPU_ID is obtained by looking up the cpu_id for a process_id in pid2cpudict. 
 1477.4 An example execution is logged to logs/SurvivalIndexScheduler.log1.30January2024.xz (compressed) and logs/SurvivalIndexScheduler.log2.30January2024
 1477.5 This implementation is only a prototype concept userspace OS scheduler which could assist the kernelspace scheduler and might be changed significantly as necessary. Due to synchronization lag between threads and context switch issues which are unpredictable, execution has to be prolonged to get the desired behaviour to coordinate all the datastructures populated by multiple threads and sometimes the CPU information could be blank because kernel systrace (which is obtained by loop in a thread) returns none.
 1477.6 If the scheduling policy is not DLN (SCHED_DEADLINE where deadline is the survival index timeout), deadline defaults to sys.maxsize. 
@@ -541,3 +541,4 @@ References:
 9223372036854775385 ---- [('6007', '')]
 9223372036854775561 ---- [('6008', '')]
 9223372036854775807 ---- [('6009', '[002]')]
+
