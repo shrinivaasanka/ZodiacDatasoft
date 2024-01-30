@@ -22,6 +22,8 @@ import os
 import json
 
 dynamic_hashmap_dict=defaultdict(list)
+cpuwqdict=defaultdict(list)
+pid2cpudict=defaultdict(str)
 process_queue=deque()
 elapsedclockticks=0
 
@@ -49,40 +51,94 @@ def countdown_keys():
 def survival_index_scheduler():
 #async def survival_index_scheduler():
     global elapsedclockticks
+    global dynamic_hashmap_dict
+    global cpuwqdict
+    global pid2cpudict
+    cpuid=-1
     while True:
-        kernelanalyticsf=open("/etc/virgo_kernel_analytics.conf","a")
-        time.sleep(1)
+        subprocess.run(["echo","workqueue:workqueue_queue_work",">","/sys/kernel/tracing/set_event"],capture_output=True)
+        subprocess.run(["cp","/sys/kernel/tracing/trace","./workqueue_trace"],capture_output=True)
+        wqtrace=open("./workqueue_trace")
+        for task in wqtrace:
+          tasktoks=task.split(" ") 
+          tasktoks=list(filter(lambda x: x != '',tasktoks))
+          print("tasktoks:",tasktoks)
+          if tasktoks[0].strip() != "#":
+              for tok in tasktoks:
+                  if tok.startswith("[0") and tok.endswith("]"):
+                      cpuid=tok
+              print("cpuid:",cpuid)
+              if tasktoks[0] not in cpuwqdict[cpuid]:
+                  cpuwqdict[cpuid].append(tasktoks[0])
+          pidtoks=tasktoks[0].split("-")
+          print("pidtoks:",pidtoks)
+          if len(pidtoks) > 1:
+             pid2cpudict[pidtoks[1]]=cpuid
+          else:
+             pid2cpudict[tasktoks[0]]=cpuid
+          print("pid2cpudict=",pid2cpudict)
+        print("CPU ----------  workqueue")
+        for k,v in cpuwqdict.items():
+             print(k,"-----------",v)
+        print("PID ------------ CPU",pid2cpudict)
+        #time.sleep(1)
         #await asyncio.sleep(1)
         try:
             process=process_queue.popleft()
         except IndexError:
-            print("IndexError")
+            #print("IndexError")
             continue
-        dynamic_hashmap_dict[process[1]].append(process[0])
-        print("survival_index_scheduler():",dynamic_hashmap_dict)
+        dynamic_hashmap_dict[process[1]].append((process[0],pid2cpudict[process[0]]))
+        print("survival_index_scheduler(): dynamic_hashmap_dict = ",dynamic_hashmap_dict)
+        print("survival_index_scheduler(): pid2cpudict = ",pid2cpudict)
+        kernelanalyticsf=open("./virgo_kernel_analytics.conf","a")
         for k,v in dynamic_hashmap_dict.items():
             kernelanalyticsf.write(str(k) + " ---- " + str(v) + "\n")
         kernelanalyticsf.write(" --------------------------------------------- ")
         kernelanalyticsf.write("\n")
         kernelanalyticsf.close()
 
-def process_stream():
+#def process_stream():
 #async def process_stream():
-    processes=subprocess.run(["ps","-eafo","pid,cls"],capture_output=True)
-    pidsched=processes.stdout.decode("utf-8").strip().split("\n")
-    for p in pidsched[1:]:
-        ptoks=p.split()
-        process_id=ptoks[0]
-        sched_policy=ptoks[1]
-        if sched_policy=="DLN":
-            schedparams=subprocess.run(["chrt","-p",process_id],capture_output=True)
-            print(schedparams)
-            schedparamstoks=schedparams.stdout.decode("utf-8").strip().split("\n")
-            deadlinestring=schedparamstoks[2].split(":")
-            deadlinestringtoks=deadlinestring[1].split("/")
-            print("deadlinestringtoks:",deadlinestringtoks)
-            deadline=deadlinestringtoks[1]
-            process_queue.append((process_id,int(deadline)))
+#    processes=subprocess.run(["ps","-eafo","pid,cls"],capture_output=True)
+#    pidsched=processes.stdout.decode("utf-8").strip().split("\n")
+#    for p in pidsched[1:]:
+#        ptoks=p.split()
+#        process_id=ptoks[0]
+#        sched_policy=ptoks[1]
+#        if sched_policy=="DLN":
+#            schedparams=subprocess.run(["chrt","-p",process_id],capture_output=True)
+#            print(schedparams)
+#            schedparamstoks=schedparams.stdout.decode("utf-8").strip().split("\n")
+#            deadlinestring=schedparamstoks[2].split(":")
+#            deadlinestringtoks=deadlinestring[1].split("/")
+#            print("deadlinestringtoks:",deadlinestringtoks)
+#            deadline=deadlinestringtoks[1]
+#            process_queue.append((process_id,int(deadline)))
+#        print("process_stream(): process_queue = ", process_queue)
+#        time.sleep(1)
+#        #await asyncio.sleep(1)
+
+def process_stream():
+    global cpuwqdict
+    while True:
+        processes=subprocess.run(["ps","-eafo","pid,cls"],capture_output=True)
+        pidsched=processes.stdout.decode("utf-8").strip().split("\n")
+        for p in pidsched[1:]:
+          ptoks=p.split()
+          process_id=ptoks[0]
+          sched_policy=ptoks[1]
+          if sched_policy=="DLN":
+              schedparams=subprocess.run(["chrt","-p",process_id],capture_output=True)
+              print(schedparams)
+              schedparamstoks=schedparams.stdout.decode("utf-8").strip().split("\n")
+              deadlinestring=schedparamstoks[2].split(":")
+              deadlinestringtoks=deadlinestring[1].split("/")
+              print("deadlinestringtoks:",deadlinestringtoks)
+              deadline=deadlinestringtoks[1]
+              process_queue.append((process_id,int(deadline)))
+          else:
+              process_queue.append((process_id,sys.maxsize))
         print("process_stream(): process_queue = ", process_queue)
         time.sleep(1)
         #await asyncio.sleep(1)
@@ -97,7 +153,7 @@ def spawn_processes(no_of_processes):
 
 if __name__=="__main__":
     sys.setswitchinterval(1.0)
-    spawn_processes(20)
+    spawn_processes(5)
     thread1 = Thread(target=process_stream)
     thread2 = Thread(target=clockticks)
     thread3 = Thread(target=survival_index_scheduler)
