@@ -1,0 +1,6 @@
+arrays: [1, 2, 3, 4, 5]  and  [3, 2, 1, 5, 4]  are unequal
+arrays: [1, 2, 3, 4, 5]  and  [1, 2, 3, 4, 5]  are equal after sorting
+arrays: [1, 2, 3, 4, 5]  and  [1, 2, 3, 4, 5]  are equal
+arrays: [1, 2, 3, 4, 5]  and  [1, 2, 3, 4, 5]  are equal after sorting
+arrays: ['a', 'b', 'c', 'd', 'e']  and  ['b', 'c', 'd', 'a', 'e']  are unequal
+arrays: ['a', 'b', 'c', 'd', 'e']  and  ['a', 'b', 'c', 'd', 'e']  are equal after sorting
