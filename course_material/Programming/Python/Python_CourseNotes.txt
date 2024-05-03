@@ -552,3 +552,8 @@ arrays: [1, 2, 3, 4, 5]  and  [1, 2, 3, 4, 5]  are equal
 arrays: [1, 2, 3, 4, 5]  and  [1, 2, 3, 4, 5]  are equal after sorting
 arrays: ['a', 'b', 'c', 'd', 'e']  and  ['b', 'c', 'd', 'a', 'e']  are unequal
 arrays: ['a', 'b', 'c', 'd', 'e']  and  ['a', 'b', 'c', 'd', 'e']  are equal after sorting
+
+------------------------------------------------------------------------------------------------------------------------------
+Updating a container within loop - Python 3.12 code example - 3 May 2024
+------------------------------------------------------------------------------------------------------------------------------
+Code example code/DynamicLoopUpdate.py implements a function update_container_within_loop() which updates either a list or 2-dimensional dictionary within a loop. Updating a list is deletion of element in loop while for 2D dictionary every array value is multiplied by 2 which is equivalent to concatenating the array by a copy of itself (x*2 = x + x) similar to NumPy array broadcast. Logs code/logs/DynamicLoopUpdate.log.3May2024 walkthrough the container updates.
