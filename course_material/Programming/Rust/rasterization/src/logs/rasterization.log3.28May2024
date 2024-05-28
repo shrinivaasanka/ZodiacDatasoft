@@ -1,0 +1,8228 @@
+Factorization of 10000 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 513152581,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10000 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 515758057,
+} nanoseconds
+4.Factors of 10000 are [
+    10000,
+    1,
+] 
+Factor point located : 5000 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 516041422,
+} nanoseconds
+4.Factors of 10000 are [
+    5000,
+    2,
+] 
+Factor point located : 2500 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 516247876,
+} nanoseconds
+4.Factors of 10000 are [
+    2500,
+    4,
+] 
+Factor point located : 2000 , 5 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 516452070,
+} nanoseconds
+4.Factors of 10000 are [
+    2000,
+    5,
+] 
+Factor point located : 1250 , 8 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 516657680,
+} nanoseconds
+4.Factors of 10000 are [
+    1250,
+    8,
+] 
+Factor point located : 1000 , 10 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 516861064,
+} nanoseconds
+4.Factors of 10000 are [
+    1000,
+    10,
+] 
+Factor point located : 625 , 16 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 517066901,
+} nanoseconds
+4.Factors of 10000 are [
+    625,
+    16,
+] 
+Factor point located : 500 , 20 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 517271924,
+} nanoseconds
+4.Factors of 10000 are [
+    500,
+    20,
+] 
+Factor point located : 400 , 25 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 517478378,
+} nanoseconds
+4.Factors of 10000 are [
+    400,
+    25,
+] 
+Factor point located : 250 , 40 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 517687644,
+} nanoseconds
+4.Factors of 10000 are [
+    250,
+    40,
+] 
+Factor point located : 200 , 50 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 517894592,
+} nanoseconds
+4.Factors of 10000 are [
+    200,
+    50,
+] 
+Factor point located : 125 , 80 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 518109027,
+} nanoseconds
+4.Factors of 10000 are [
+    125,
+    80,
+] 
+Factor point located : 100 , 100 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 518318575,
+} nanoseconds
+4.Factors of 10000 are [
+    100,
+    100,
+] 
+Factor point located : 80 , 125 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 518530053,
+} nanoseconds
+4.Factors of 10000 are [
+    80,
+    125,
+] 
+Factor point located : 4 , 2500 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 517331074,
+} nanoseconds
+4.Factors of 10000 are [
+    4,
+    2500,
+] 
+Factor point located : 8 , 1250 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 517440262,
+} nanoseconds
+4.Factors of 10000 are [
+    8,
+    1250,
+] 
+Factor point located : 2 , 5000 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 515771658,
+} nanoseconds
+4.Factors of 10000 are [
+    2,
+    5000,
+] 
+Factor point located : 50 , 200 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 519851188,
+} nanoseconds
+4.Factors of 10000 are [
+    50,
+    200,
+] 
+Factor point located : 40 , 250 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 520088597,
+} nanoseconds
+4.Factors of 10000 are [
+    40,
+    250,
+] 
+Factor point located : 16 , 625 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 519890764,
+} nanoseconds
+4.Factors of 10000 are [
+    16,
+    625,
+] 
+Factor point located : 25 , 400 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 520600815,
+} nanoseconds
+4.Factors of 10000 are [
+    25,
+    400,
+] 
+Factor point located : 5 , 2000 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 520492648,
+} nanoseconds
+4.Factors of 10000 are [
+    5,
+    2000,
+] 
+Factor point located : 10 , 1000 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 520885549,
+} nanoseconds
+4.Factors of 10000 are [
+    10,
+    1000,
+] 
+Factor point located : 20 , 500 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 520852819,
+} nanoseconds
+4.Factors of 10000 are [
+    20,
+    500,
+] 
+Parallel Rasterization phase of factoring 10000 was completed in (nanoseconds): 8.513068ms 
+Factorization of 10000 was completed in (nanoseconds): 8.827406ms 
+Factorization of 10001 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 522004364,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10001 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 522164859,
+} nanoseconds
+4.Factors of 10001 are [
+    10001,
+    1,
+] 
+Factor point located : 137 , 73 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 522345065,
+} nanoseconds
+4.Factors of 10001 are [
+    137,
+    73,
+] 
+Factor point located : 73 , 137 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 522503788,
+} nanoseconds
+4.Factors of 10001 are [
+    73,
+    137,
+] 
+Parallel Rasterization phase of factoring 10001 was completed in (nanoseconds): 1.280139ms 
+Factorization of 10001 was completed in (nanoseconds): 1.417453ms 
+Factorization of 10002 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 523442570,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10002 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 523582172,
+} nanoseconds
+4.Factors of 10002 are [
+    10002,
+    1,
+] 
+Factor point located : 5001 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 523734160,
+} nanoseconds
+4.Factors of 10002 are [
+    5001,
+    2,
+] 
+Factor point located : 3334 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 523880945,
+} nanoseconds
+4.Factors of 10002 are [
+    3334,
+    3,
+] 
+Factor point located : 1667 , 6 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 524027273,
+} nanoseconds
+4.Factors of 10002 are [
+    1667,
+    6,
+] 
+Factor point located : 2 , 5001 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 523591749,
+} nanoseconds
+4.Factors of 10002 are [
+    2,
+    5001,
+] 
+Factor point located : 3 , 3334 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 523850724,
+} nanoseconds
+4.Factors of 10002 are [
+    3,
+    3334,
+] 
+Factor point located : 6 , 1667 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 524680094,
+} nanoseconds
+4.Factors of 10002 are [
+    6,
+    1667,
+] 
+Parallel Rasterization phase of factoring 10002 was completed in (nanoseconds): 1.645019ms 
+Factorization of 10002 was completed in (nanoseconds): 1.756595ms 
+Factorization of 10003 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 525219552,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10003 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 525344830,
+} nanoseconds
+4.Factors of 10003 are [
+    10003,
+    1,
+] 
+Factor point located : 1429 , 7 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 525493634,
+} nanoseconds
+4.Factors of 10003 are [
+    1429,
+    7,
+] 
+Factor point located : 7 , 1429 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 525430186,
+} nanoseconds
+4.Factors of 10003 are [
+    7,
+    1429,
+] 
+Parallel Rasterization phase of factoring 10003 was completed in (nanoseconds): 2.509554ms 
+Factorization of 10003 was completed in (nanoseconds): 2.710535ms 
+Factorization of 10004 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 527953411,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10004 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 528117583,
+} nanoseconds
+4.Factors of 10004 are [
+    10004,
+    1,
+] 
+Factor point located : 5002 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 528276420,
+} nanoseconds
+4.Factors of 10004 are [
+    5002,
+    2,
+] 
+Factor point located : 2501 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 528390862,
+} nanoseconds
+4.Factors of 10004 are [
+    2501,
+    4,
+] 
+Factor point located : 244 , 41 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 528519368,
+} nanoseconds
+4.Factors of 10004 are [
+    244,
+    41,
+] 
+Factor point located : 164 , 61 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 528645871,
+} nanoseconds
+4.Factors of 10004 are [
+    164,
+    61,
+] 
+Factor point located : 122 , 82 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 528778405,
+} nanoseconds
+4.Factors of 10004 are [
+    122,
+    82,
+] 
+Factor point located : 82 , 122 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 528928752,
+} nanoseconds
+4.Factors of 10004 are [
+    82,
+    122,
+] 
+Factor point located : 61 , 164 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 529160084,
+} nanoseconds
+4.Factors of 10004 are [
+    61,
+    164,
+] 
+Factor point located : 41 , 244 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 529307052,
+} nanoseconds
+4.Factors of 10004 are [
+    41,
+    244,
+] 
+Factor point located : 4 , 2501 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 528132702,
+} nanoseconds
+4.Factors of 10004 are [
+    4,
+    2501,
+] 
+Factor point located : 2 , 5002 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 528129780,
+} nanoseconds
+4.Factors of 10004 are [
+    2,
+    5002,
+] 
+Parallel Rasterization phase of factoring 10004 was completed in (nanoseconds): 3.029518ms 
+Factorization of 10004 was completed in (nanoseconds): 3.130068ms 
+Factorization of 10005 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 531108019,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10005 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 531213456,
+} nanoseconds
+4.Factors of 10005 are [
+    10005,
+    1,
+] 
+Factor point located : 3335 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 531326570,
+} nanoseconds
+4.Factors of 10005 are [
+    3335,
+    3,
+] 
+Factor point located : 2001 , 5 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 531432913,
+} nanoseconds
+4.Factors of 10005 are [
+    2001,
+    5,
+] 
+Factor point located : 667 , 15 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 531586174,
+} nanoseconds
+4.Factors of 10005 are [
+    667,
+    15,
+] 
+Factor point located : 435 , 23 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 533937918,
+} nanoseconds
+4.Factors of 10005 are [
+    435,
+    23,
+] 
+Factor point located : 345 , 29 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 534094016,
+} nanoseconds
+4.Factors of 10005 are [
+    345,
+    29,
+] 
+Factor point located : 145 , 69 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 534219651,
+} nanoseconds
+4.Factors of 10005 are [
+    145,
+    69,
+] 
+Factor point located : 115 , 87 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 534330676,
+} nanoseconds
+4.Factors of 10005 are [
+    115,
+    87,
+] 
+Factor point located : 87 , 115 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 534450982,
+} nanoseconds
+4.Factors of 10005 are [
+    87,
+    115,
+] 
+Factor point located : 69 , 145 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 534572377,
+} nanoseconds
+4.Factors of 10005 are [
+    69,
+    145,
+] 
+Factor point located : 29 , 345 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 534734904,
+} nanoseconds
+4.Factors of 10005 are [
+    29,
+    345,
+] 
+Factor point located : 23 , 435 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 534861707,
+} nanoseconds
+4.Factors of 10005 are [
+    23,
+    435,
+] 
+Factor point located : 3 , 3335 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 534869898,
+} nanoseconds
+4.Factors of 10005 are [
+    3,
+    3335,
+] 
+Factor point located : 15 , 667 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 535184577,
+} nanoseconds
+4.Factors of 10005 are [
+    15,
+    667,
+] 
+Factor point located : 5 , 2001 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 531982424,
+} nanoseconds
+4.Factors of 10005 are [
+    5,
+    2001,
+] 
+Parallel Rasterization phase of factoring 10005 was completed in (nanoseconds): 4.702902ms 
+Factorization of 10005 was completed in (nanoseconds): 4.788228ms 
+Factorization of 10006 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 535913747,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10006 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 536015333,
+} nanoseconds
+4.Factors of 10006 are [
+    10006,
+    1,
+] 
+Factor point located : 5003 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 536135900,
+} nanoseconds
+4.Factors of 10006 are [
+    5003,
+    2,
+] 
+Factor point located : 2 , 5003 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 536022404,
+} nanoseconds
+4.Factors of 10006 are [
+    2,
+    5003,
+] 
+Parallel Rasterization phase of factoring 10006 was completed in (nanoseconds): 1.258703ms 
+Factorization of 10006 was completed in (nanoseconds): 1.340771ms 
+Factorization of 10007 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 537266937,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10007 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 537336638,
+} nanoseconds
+4.Factors of 10007 are [
+    10007,
+    1,
+] 
+Parallel Rasterization phase of factoring 10007 was completed in (nanoseconds): 781.783µs 
+Factorization of 10007 was completed in (nanoseconds): 837.81µs 
+Factorization of 10008 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 538116536,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10008 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 538185575,
+} nanoseconds
+4.Factors of 10008 are [
+    10008,
+    1,
+] 
+Factor point located : 5004 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 538276680,
+} nanoseconds
+4.Factors of 10008 are [
+    5004,
+    2,
+] 
+Factor point located : 3336 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 538361611,
+} nanoseconds
+4.Factors of 10008 are [
+    3336,
+    3,
+] 
+Factor point located : 2502 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 538447248,
+} nanoseconds
+4.Factors of 10008 are [
+    2502,
+    4,
+] 
+Factor point located : 1668 , 6 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 538532601,
+} nanoseconds
+4.Factors of 10008 are [
+    1668,
+    6,
+] 
+Factor point located : 1251 , 8 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 538618131,
+} nanoseconds
+4.Factors of 10008 are [
+    1251,
+    8,
+] 
+Factor point located : 1112 , 9 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 538703511,
+} nanoseconds
+4.Factors of 10008 are [
+    1112,
+    9,
+] 
+Factor point located : 834 , 12 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 538788963,
+} nanoseconds
+4.Factors of 10008 are [
+    834,
+    12,
+] 
+Factor point located : 556 , 18 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 538875092,
+} nanoseconds
+4.Factors of 10008 are [
+    556,
+    18,
+] 
+Factor point located : 417 , 24 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 538961388,
+} nanoseconds
+4.Factors of 10008 are [
+    417,
+    24,
+] 
+Factor point located : 278 , 36 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 539048363,
+} nanoseconds
+4.Factors of 10008 are [
+    278,
+    36,
+] 
+Factor point located : 139 , 72 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 539140042,
+} nanoseconds
+4.Factors of 10008 are [
+    139,
+    72,
+] 
+Factor point located : 8 , 1251 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 538202731,
+} nanoseconds
+4.Factors of 10008 are [
+    8,
+    1251,
+] 
+Factor point located : 4 , 2502 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 538195365,
+} nanoseconds
+4.Factors of 10008 are [
+    4,
+    2502,
+] 
+Factor point located : 2 , 5004 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 538193822,
+} nanoseconds
+4.Factors of 10008 are [
+    2,
+    5004,
+] 
+Factor point located : 72 , 139 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 539541293,
+} nanoseconds
+4.Factors of 10008 are [
+    72,
+    139,
+] 
+Factor point located : 3 , 3336 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 539587457,
+} nanoseconds
+4.Factors of 10008 are [
+    3,
+    3336,
+] 
+Factor point located : 36 , 278 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 539772947,
+} nanoseconds
+4.Factors of 10008 are [
+    36,
+    278,
+] 
+Factor point located : 6 , 1668 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 539823985,
+} nanoseconds
+4.Factors of 10008 are [
+    6,
+    1668,
+] 
+Factor point located : 24 , 417 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 539993453,
+} nanoseconds
+4.Factors of 10008 are [
+    24,
+    417,
+] 
+Factor point located : 18 , 556 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 540101186,
+} nanoseconds
+4.Factors of 10008 are [
+    18,
+    556,
+] 
+Factor point located : 12 , 834 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 540248180,
+} nanoseconds
+4.Factors of 10008 are [
+    12,
+    834,
+] 
+Factor point located : 9 , 1112 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 540369091,
+} nanoseconds
+4.Factors of 10008 are [
+    9,
+    1112,
+] 
+Parallel Rasterization phase of factoring 10008 was completed in (nanoseconds): 2.406034ms 
+Factorization of 10008 was completed in (nanoseconds): 2.462813ms 
+Factorization of 10009 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 540596167,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10009 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 540670999,
+} nanoseconds
+4.Factors of 10009 are [
+    10009,
+    1,
+] 
+Parallel Rasterization phase of factoring 10009 was completed in (nanoseconds): 786.983µs 
+Factorization of 10009 was completed in (nanoseconds): 847.194µs 
+Factorization of 10010 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 541455959,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10010 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 541531494,
+} nanoseconds
+4.Factors of 10010 are [
+    10010,
+    1,
+] 
+Factor point located : 5005 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 541627970,
+} nanoseconds
+4.Factors of 10010 are [
+    5005,
+    2,
+] 
+Factor point located : 2002 , 5 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 541724879,
+} nanoseconds
+4.Factors of 10010 are [
+    2002,
+    5,
+] 
+Factor point located : 1430 , 7 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 541817571,
+} nanoseconds
+4.Factors of 10010 are [
+    1430,
+    7,
+] 
+Factor point located : 1001 , 10 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 541909830,
+} nanoseconds
+4.Factors of 10010 are [
+    1001,
+    10,
+] 
+Factor point located : 910 , 11 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 542002068,
+} nanoseconds
+4.Factors of 10010 are [
+    910,
+    11,
+] 
+Factor point located : 770 , 13 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 542094056,
+} nanoseconds
+4.Factors of 10010 are [
+    770,
+    13,
+] 
+Factor point located : 715 , 14 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 542185462,
+} nanoseconds
+4.Factors of 10010 are [
+    715,
+    14,
+] 
+Factor point located : 455 , 22 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 542278402,
+} nanoseconds
+4.Factors of 10010 are [
+    455,
+    22,
+] 
+Factor point located : 385 , 26 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 542371000,
+} nanoseconds
+4.Factors of 10010 are [
+    385,
+    26,
+] 
+Factor point located : 286 , 35 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 542464529,
+} nanoseconds
+4.Factors of 10010 are [
+    286,
+    35,
+] 
+Factor point located : 182 , 55 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 542560584,
+} nanoseconds
+4.Factors of 10010 are [
+    182,
+    55,
+] 
+Factor point located : 154 , 65 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 542654987,
+} nanoseconds
+4.Factors of 10010 are [
+    154,
+    65,
+] 
+Factor point located : 143 , 70 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 542747645,
+} nanoseconds
+4.Factors of 10010 are [
+    143,
+    70,
+] 
+Factor point located : 130 , 77 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 542841041,
+} nanoseconds
+4.Factors of 10010 are [
+    130,
+    77,
+] 
+Factor point located : 110 , 91 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 542935856,
+} nanoseconds
+4.Factors of 10010 are [
+    110,
+    91,
+] 
+Factor point located : 91 , 110 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 543031566,
+} nanoseconds
+4.Factors of 10010 are [
+    91,
+    110,
+] 
+Factor point located : 77 , 130 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 543128108,
+} nanoseconds
+4.Factors of 10010 are [
+    77,
+    130,
+] 
+Factor point located : 70 , 143 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 543222632,
+} nanoseconds
+4.Factors of 10010 are [
+    70,
+    143,
+] 
+Factor point located : 65 , 154 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 543315929,
+} nanoseconds
+4.Factors of 10010 are [
+    65,
+    154,
+] 
+Factor point located : 55 , 182 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 543427369,
+} nanoseconds
+4.Factors of 10010 are [
+    55,
+    182,
+] 
+Factor point located : 7 , 1430 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 541584023,
+} nanoseconds
+4.Factors of 10010 are [
+    7,
+    1430,
+] 
+Factor point located : 35 , 286 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 543556604,
+} nanoseconds
+4.Factors of 10010 are [
+    35,
+    286,
+] 
+Factor point located : 2 , 5005 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 541541309,
+} nanoseconds
+4.Factors of 10010 are [
+    2,
+    5005,
+] 
+Factor point located : 5 , 2002 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 543785079,
+} nanoseconds
+4.Factors of 10010 are [
+    5,
+    2002,
+] 
+Factor point located : 14 , 715 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 543989855,
+} nanoseconds
+4.Factors of 10010 are [
+    14,
+    715,
+] 
+Factor point located : 13 , 770 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 544100077,
+} nanoseconds
+4.Factors of 10010 are [
+    13,
+    770,
+] 
+Factor point located : 26 , 385 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 544219501,
+} nanoseconds
+4.Factors of 10010 are [
+    26,
+    385,
+] 
+Factor point located : 10 , 1001 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 544241931,
+} nanoseconds
+4.Factors of 10010 are [
+    10,
+    1001,
+] 
+Factor point located : 22 , 455 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 544324931,
+} nanoseconds
+4.Factors of 10010 are [
+    22,
+    455,
+] 
+Factor point located : 11 , 910 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 544237166,
+} nanoseconds
+4.Factors of 10010 are [
+    11,
+    910,
+] 
+Parallel Rasterization phase of factoring 10010 was completed in (nanoseconds): 3.395476ms 
+Factorization of 10010 was completed in (nanoseconds): 3.455425ms 
+Factorization of 10011 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 544924463,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10011 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 544999781,
+} nanoseconds
+4.Factors of 10011 are [
+    10011,
+    1,
+] 
+Factor point located : 3337 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 545089469,
+} nanoseconds
+4.Factors of 10011 are [
+    3337,
+    3,
+] 
+Factor point located : 3 , 3337 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 545182510,
+} nanoseconds
+4.Factors of 10011 are [
+    3,
+    3337,
+] 
+Factor point located : 213 , 47 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 545291865,
+} nanoseconds
+4.Factors of 10011 are [
+    213,
+    47,
+] 
+Factor point located : 141 , 71 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 545384713,
+} nanoseconds
+4.Factors of 10011 are [
+    141,
+    71,
+] 
+Factor point located : 71 , 141 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 545484472,
+} nanoseconds
+4.Factors of 10011 are [
+    71,
+    141,
+] 
+Factor point located : 47 , 213 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 545583281,
+} nanoseconds
+4.Factors of 10011 are [
+    47,
+    213,
+] 
+Parallel Rasterization phase of factoring 10011 was completed in (nanoseconds): 989.405µs 
+Factorization of 10011 was completed in (nanoseconds): 1.050595ms 
+Factorization of 10012 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 545988090,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10012 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 546060646,
+} nanoseconds
+4.Factors of 10012 are [
+    10012,
+    1,
+] 
+Factor point located : 5006 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 546156513,
+} nanoseconds
+4.Factors of 10012 are [
+    5006,
+    2,
+] 
+Factor point located : 2503 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 546249401,
+} nanoseconds
+4.Factors of 10012 are [
+    2503,
+    4,
+] 
+Factor point located : 4 , 2503 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 546070676,
+} nanoseconds
+4.Factors of 10012 are [
+    4,
+    2503,
+] 
+Factor point located : 2 , 5006 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 546066450,
+} nanoseconds
+4.Factors of 10012 are [
+    2,
+    5006,
+] 
+Parallel Rasterization phase of factoring 10012 was completed in (nanoseconds): 1.1079ms 
+Factorization of 10012 was completed in (nanoseconds): 1.167302ms 
+Factorization of 10013 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 547168279,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10013 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 547243825,
+} nanoseconds
+4.Factors of 10013 are [
+    10013,
+    1,
+] 
+Factor point located : 589 , 17 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 547343943,
+} nanoseconds
+4.Factors of 10013 are [
+    589,
+    17,
+] 
+Factor point located : 527 , 19 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 547436671,
+} nanoseconds
+4.Factors of 10013 are [
+    527,
+    19,
+] 
+Factor point located : 323 , 31 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 547556412,
+} nanoseconds
+4.Factors of 10013 are [
+    323,
+    31,
+] 
+Factor point located : 31 , 323 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 547718937,
+} nanoseconds
+4.Factors of 10013 are [
+    31,
+    323,
+] 
+Factor point located : 19 , 527 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 547838412,
+} nanoseconds
+4.Factors of 10013 are [
+    19,
+    527,
+] 
+Factor point located : 17 , 589 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 547940579,
+} nanoseconds
+4.Factors of 10013 are [
+    17,
+    589,
+] 
+Parallel Rasterization phase of factoring 10013 was completed in (nanoseconds): 1.099905ms 
+Factorization of 10013 was completed in (nanoseconds): 1.160693ms 
+Factorization of 10014 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 548341621,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10014 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 548416773,
+} nanoseconds
+4.Factors of 10014 are [
+    10014,
+    1,
+] 
+Factor point located : 5007 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 548512524,
+} nanoseconds
+4.Factors of 10014 are [
+    5007,
+    2,
+] 
+Factor point located : 3338 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 548605388,
+} nanoseconds
+4.Factors of 10014 are [
+    3338,
+    3,
+] 
+Factor point located : 1669 , 6 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 548697847,
+} nanoseconds
+4.Factors of 10014 are [
+    1669,
+    6,
+] 
+Factor point located : 2 , 5007 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 548422976,
+} nanoseconds
+4.Factors of 10014 are [
+    2,
+    5007,
+] 
+Factor point located : 3 , 3338 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 548587702,
+} nanoseconds
+4.Factors of 10014 are [
+    3,
+    3338,
+] 
+Factor point located : 6 , 1669 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 549191667,
+} nanoseconds
+4.Factors of 10014 are [
+    6,
+    1669,
+] 
+Parallel Rasterization phase of factoring 10014 was completed in (nanoseconds): 1.366194ms 
+Factorization of 10014 was completed in (nanoseconds): 1.427534ms 
+Factorization of 10015 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 549781953,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10015 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 549861971,
+} nanoseconds
+4.Factors of 10015 are [
+    10015,
+    1,
+] 
+Factor point located : 2003 , 5 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 549953116,
+} nanoseconds
+4.Factors of 10015 are [
+    2003,
+    5,
+] 
+Factor point located : 5 , 2003 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 550450669,
+} nanoseconds
+4.Factors of 10015 are [
+    5,
+    2003,
+] 
+Parallel Rasterization phase of factoring 10015 was completed in (nanoseconds): 875.509µs 
+Factorization of 10015 was completed in (nanoseconds): 937.383µs 
+Factorization of 10016 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 550733748,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10016 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 550845790,
+} nanoseconds
+4.Factors of 10016 are [
+    10016,
+    1,
+] 
+Factor point located : 5008 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 550952207,
+} nanoseconds
+4.Factors of 10016 are [
+    5008,
+    2,
+] 
+Factor point located : 2504 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 551053701,
+} nanoseconds
+4.Factors of 10016 are [
+    2504,
+    4,
+] 
+Factor point located : 1252 , 8 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 551156266,
+} nanoseconds
+4.Factors of 10016 are [
+    1252,
+    8,
+] 
+Factor point located : 626 , 16 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 551259136,
+} nanoseconds
+4.Factors of 10016 are [
+    626,
+    16,
+] 
+Factor point located : 313 , 32 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 551364629,
+} nanoseconds
+4.Factors of 10016 are [
+    313,
+    32,
+] 
+Factor point located : 8 , 1252 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 550865244,
+} nanoseconds
+4.Factors of 10016 are [
+    8,
+    1252,
+] 
+Factor point located : 4 , 2504 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 550860461,
+} nanoseconds
+4.Factors of 10016 are [
+    4,
+    2504,
+] 
+Factor point located : 2 , 5008 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 550857074,
+} nanoseconds
+4.Factors of 10016 are [
+    2,
+    5008,
+] 
+Factor point located : 32 , 313 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 551888789,
+} nanoseconds
+4.Factors of 10016 are [
+    32,
+    313,
+] 
+Factor point located : 16 , 626 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 552033705,
+} nanoseconds
+4.Factors of 10016 are [
+    16,
+    626,
+] 
+Parallel Rasterization phase of factoring 10016 was completed in (nanoseconds): 1.975553ms 
+Factorization of 10016 was completed in (nanoseconds): 2.039873ms 
+Factorization of 10017 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 552788547,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10017 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 552863299,
+} nanoseconds
+4.Factors of 10017 are [
+    10017,
+    1,
+] 
+Factor point located : 3339 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 552959636,
+} nanoseconds
+4.Factors of 10017 are [
+    3339,
+    3,
+] 
+Factor point located : 1431 , 7 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 553052632,
+} nanoseconds
+4.Factors of 10017 are [
+    1431,
+    7,
+] 
+Factor point located : 1113 , 9 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 553145305,
+} nanoseconds
+4.Factors of 10017 are [
+    1113,
+    9,
+] 
+Factor point located : 477 , 21 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 553240092,
+} nanoseconds
+4.Factors of 10017 are [
+    477,
+    21,
+] 
+Factor point located : 371 , 27 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 553333967,
+} nanoseconds
+4.Factors of 10017 are [
+    371,
+    27,
+] 
+Factor point located : 189 , 53 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 553431849,
+} nanoseconds
+4.Factors of 10017 are [
+    189,
+    53,
+] 
+Factor point located : 159 , 63 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 553526056,
+} nanoseconds
+4.Factors of 10017 are [
+    159,
+    63,
+] 
+Factor point located : 63 , 159 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 553642636,
+} nanoseconds
+4.Factors of 10017 are [
+    63,
+    159,
+] 
+Factor point located : 53 , 189 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 553740520,
+} nanoseconds
+4.Factors of 10017 are [
+    53,
+    189,
+] 
+Factor point located : 7 , 1431 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 553672503,
+} nanoseconds
+4.Factors of 10017 are [
+    7,
+    1431,
+] 
+Factor point located : 3 , 3339 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 553804427,
+} nanoseconds
+4.Factors of 10017 are [
+    3,
+    3339,
+] 
+Factor point located : 27 , 371 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 554089644,
+} nanoseconds
+4.Factors of 10017 are [
+    27,
+    371,
+] 
+Factor point located : 21 , 477 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 554196108,
+} nanoseconds
+4.Factors of 10017 are [
+    21,
+    477,
+] 
+Factor point located : 9 , 1113 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 554313369,
+} nanoseconds
+4.Factors of 10017 are [
+    9,
+    1113,
+] 
+Parallel Rasterization phase of factoring 10017 was completed in (nanoseconds): 1.779136ms 
+Factorization of 10017 was completed in (nanoseconds): 1.84748ms 
+Factorization of 10018 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 554650339,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10018 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 554734505,
+} nanoseconds
+4.Factors of 10018 are [
+    10018,
+    1,
+] 
+Factor point located : 5009 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 554839612,
+} nanoseconds
+4.Factors of 10018 are [
+    5009,
+    2,
+] 
+Factor point located : 2 , 5009 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 554742917,
+} nanoseconds
+4.Factors of 10018 are [
+    2,
+    5009,
+] 
+Parallel Rasterization phase of factoring 10018 was completed in (nanoseconds): 1.014697ms 
+Factorization of 10018 was completed in (nanoseconds): 1.082144ms 
+Factorization of 10019 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 555745140,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10019 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 555820269,
+} nanoseconds
+4.Factors of 10019 are [
+    10019,
+    1,
+] 
+Factor point located : 233 , 43 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 555920295,
+} nanoseconds
+4.Factors of 10019 are [
+    233,
+    43,
+] 
+Factor point located : 43 , 233 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 556052250,
+} nanoseconds
+4.Factors of 10019 are [
+    43,
+    233,
+] 
+Parallel Rasterization phase of factoring 10019 was completed in (nanoseconds): 915.438µs 
+Factorization of 10019 was completed in (nanoseconds): 976.448µs 
+Factorization of 10020 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 556734529,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10020 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 556810575,
+} nanoseconds
+4.Factors of 10020 are [
+    10020,
+    1,
+] 
+Factor point located : 5010 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 556906182,
+} nanoseconds
+4.Factors of 10020 are [
+    5010,
+    2,
+] 
+Factor point located : 3340 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 556998747,
+} nanoseconds
+4.Factors of 10020 are [
+    3340,
+    3,
+] 
+Factor point located : 2505 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 557091608,
+} nanoseconds
+4.Factors of 10020 are [
+    2505,
+    4,
+] 
+Factor point located : 2004 , 5 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 557184390,
+} nanoseconds
+4.Factors of 10020 are [
+    2004,
+    5,
+] 
+Factor point located : 1670 , 6 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 557276820,
+} nanoseconds
+4.Factors of 10020 are [
+    1670,
+    6,
+] 
+Factor point located : 1002 , 10 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 557370115,
+} nanoseconds
+4.Factors of 10020 are [
+    1002,
+    10,
+] 
+Factor point located : 835 , 12 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 557463684,
+} nanoseconds
+4.Factors of 10020 are [
+    835,
+    12,
+] 
+Factor point located : 668 , 15 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 557556071,
+} nanoseconds
+4.Factors of 10020 are [
+    668,
+    15,
+] 
+Factor point located : 501 , 20 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 557649569,
+} nanoseconds
+4.Factors of 10020 are [
+    501,
+    20,
+] 
+Factor point located : 334 , 30 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 557743856,
+} nanoseconds
+4.Factors of 10020 are [
+    334,
+    30,
+] 
+Factor point located : 167 , 60 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 557842552,
+} nanoseconds
+4.Factors of 10020 are [
+    167,
+    60,
+] 
+Factor point located : 2 , 5010 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 556817123,
+} nanoseconds
+4.Factors of 10020 are [
+    2,
+    5010,
+] 
+Factor point located : 60 , 167 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 558084542,
+} nanoseconds
+4.Factors of 10020 are [
+    60,
+    167,
+] 
+Factor point located : 6 , 1670 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 558000492,
+} nanoseconds
+4.Factors of 10020 are [
+    6,
+    1670,
+] 
+Factor point located : 4 , 2505 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 556822648,
+} nanoseconds
+4.Factors of 10020 are [
+    4,
+    2505,
+] 
+Factor point located : 5 , 2004 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 558360238,
+} nanoseconds
+4.Factors of 10020 are [
+    5,
+    2004,
+] 
+Factor point located : 30 , 334 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 558530407,
+} nanoseconds
+4.Factors of 10020 are [
+    30,
+    334,
+] 
+Factor point located : 3 , 3340 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 558568907,
+} nanoseconds
+4.Factors of 10020 are [
+    3,
+    3340,
+] 
+Factor point located : 15 , 668 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 558653255,
+} nanoseconds
+4.Factors of 10020 are [
+    15,
+    668,
+] 
+Factor point located : 10 , 1002 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 558845634,
+} nanoseconds
+4.Factors of 10020 are [
+    10,
+    1002,
+] 
+Factor point located : 12 , 835 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 558918454,
+} nanoseconds
+4.Factors of 10020 are [
+    12,
+    835,
+] 
+Factor point located : 20 , 501 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 559102379,
+} nanoseconds
+4.Factors of 10020 are [
+    20,
+    501,
+] 
+Parallel Rasterization phase of factoring 10020 was completed in (nanoseconds): 2.479782ms 
+Factorization of 10020 was completed in (nanoseconds): 2.539723ms 
+Factorization of 10021 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 559287261,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10021 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 559362083,
+} nanoseconds
+4.Factors of 10021 are [
+    10021,
+    1,
+] 
+Factor point located : 911 , 11 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 559459262,
+} nanoseconds
+4.Factors of 10021 are [
+    911,
+    11,
+] 
+Factor point located : 11 , 911 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 559759738,
+} nanoseconds
+4.Factors of 10021 are [
+    11,
+    911,
+] 
+Parallel Rasterization phase of factoring 10021 was completed in (nanoseconds): 972.442µs 
+Factorization of 10021 was completed in (nanoseconds): 1.032349ms 
+Factorization of 10022 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 560332425,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10022 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 560408173,
+} nanoseconds
+4.Factors of 10022 are [
+    10022,
+    1,
+] 
+Factor point located : 5011 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 560504276,
+} nanoseconds
+4.Factors of 10022 are [
+    5011,
+    2,
+] 
+Factor point located : 2 , 5011 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 560416015,
+} nanoseconds
+4.Factors of 10022 are [
+    2,
+    5011,
+] 
+Parallel Rasterization phase of factoring 10022 was completed in (nanoseconds): 1.052979ms 
+Factorization of 10022 was completed in (nanoseconds): 1.115409ms 
+Factorization of 10023 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 561462047,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10023 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 561543816,
+} nanoseconds
+4.Factors of 10023 are [
+    10023,
+    1,
+] 
+Factor point located : 3341 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 561642634,
+} nanoseconds
+4.Factors of 10023 are [
+    3341,
+    3,
+] 
+Factor point located : 771 , 13 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 561746247,
+} nanoseconds
+4.Factors of 10023 are [
+    771,
+    13,
+] 
+Factor point located : 257 , 39 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 561856432,
+} nanoseconds
+4.Factors of 10023 are [
+    257,
+    39,
+] 
+Factor point located : 3 , 3341 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 561729479,
+} nanoseconds
+4.Factors of 10023 are [
+    3,
+    3341,
+] 
+Factor point located : 39 , 257 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 562113521,
+} nanoseconds
+4.Factors of 10023 are [
+    39,
+    257,
+] 
+Factor point located : 13 , 771 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 562261551,
+} nanoseconds
+4.Factors of 10023 are [
+    13,
+    771,
+] 
+Parallel Rasterization phase of factoring 10023 was completed in (nanoseconds): 1.160368ms 
+Factorization of 10023 was completed in (nanoseconds): 1.225987ms 
+Factorization of 10024 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 562701487,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10024 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 562780643,
+} nanoseconds
+4.Factors of 10024 are [
+    10024,
+    1,
+] 
+Factor point located : 5012 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 562877797,
+} nanoseconds
+4.Factors of 10024 are [
+    5012,
+    2,
+] 
+Factor point located : 2506 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 562970576,
+} nanoseconds
+4.Factors of 10024 are [
+    2506,
+    4,
+] 
+Factor point located : 1432 , 7 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 563063607,
+} nanoseconds
+4.Factors of 10024 are [
+    1432,
+    7,
+] 
+Factor point located : 1253 , 8 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 563155583,
+} nanoseconds
+4.Factors of 10024 are [
+    1253,
+    8,
+] 
+Factor point located : 716 , 14 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 563248416,
+} nanoseconds
+4.Factors of 10024 are [
+    716,
+    14,
+] 
+Factor point located : 358 , 28 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 563344397,
+} nanoseconds
+4.Factors of 10024 are [
+    358,
+    28,
+] 
+Factor point located : 179 , 56 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 563442386,
+} nanoseconds
+4.Factors of 10024 are [
+    179,
+    56,
+] 
+Factor point located : 4 , 2506 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 562792103,
+} nanoseconds
+4.Factors of 10024 are [
+    4,
+    2506,
+] 
+Factor point located : 2 , 5012 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 562786176,
+} nanoseconds
+4.Factors of 10024 are [
+    2,
+    5012,
+] 
+Factor point located : 56 , 179 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 563796469,
+} nanoseconds
+4.Factors of 10024 are [
+    56,
+    179,
+] 
+Factor point located : 8 , 1253 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 563642462,
+} nanoseconds
+4.Factors of 10024 are [
+    8,
+    1253,
+] 
+Factor point located : 14 , 716 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 564022834,
+} nanoseconds
+4.Factors of 10024 are [
+    14,
+    716,
+] 
+Factor point located : 7 , 1432 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 564049816,
+} nanoseconds
+4.Factors of 10024 are [
+    7,
+    1432,
+] 
+Factor point located : 28 , 358 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 564025676,
+} nanoseconds
+4.Factors of 10024 are [
+    28,
+    358,
+] 
+Parallel Rasterization phase of factoring 10024 was completed in (nanoseconds): 1.917943ms 
+Factorization of 10024 was completed in (nanoseconds): 1.978373ms 
+Factorization of 10025 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 564693036,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10025 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 564769215,
+} nanoseconds
+4.Factors of 10025 are [
+    10025,
+    1,
+] 
+Factor point located : 2005 , 5 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 564866804,
+} nanoseconds
+4.Factors of 10025 are [
+    2005,
+    5,
+] 
+Factor point located : 401 , 25 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 564963504,
+} nanoseconds
+4.Factors of 10025 are [
+    401,
+    25,
+] 
+Factor point located : 25 , 401 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 565126134,
+} nanoseconds
+4.Factors of 10025 are [
+    25,
+    401,
+] 
+Factor point located : 5 , 2005 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 565382445,
+} nanoseconds
+4.Factors of 10025 are [
+    5,
+    2005,
+] 
+Parallel Rasterization phase of factoring 10025 was completed in (nanoseconds): 1.005942ms 
+Factorization of 10025 was completed in (nanoseconds): 1.06759ms 
+Factorization of 10026 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 565775084,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10026 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 565855973,
+} nanoseconds
+4.Factors of 10026 are [
+    10026,
+    1,
+] 
+Factor point located : 5013 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 565961166,
+} nanoseconds
+4.Factors of 10026 are [
+    5013,
+    2,
+] 
+Factor point located : 3342 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 566063504,
+} nanoseconds
+4.Factors of 10026 are [
+    3342,
+    3,
+] 
+Factor point located : 1671 , 6 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 566164927,
+} nanoseconds
+4.Factors of 10026 are [
+    1671,
+    6,
+] 
+Factor point located : 1114 , 9 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 566267200,
+} nanoseconds
+4.Factors of 10026 are [
+    1114,
+    9,
+] 
+Factor point located : 557 , 18 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 566369490,
+} nanoseconds
+4.Factors of 10026 are [
+    557,
+    18,
+] 
+Factor point located : 2 , 5013 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 565862799,
+} nanoseconds
+4.Factors of 10026 are [
+    2,
+    5013,
+] 
+Factor point located : 3 , 3342 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 566042558,
+} nanoseconds
+4.Factors of 10026 are [
+    3,
+    3342,
+] 
+Factor point located : 18 , 557 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 566804259,
+} nanoseconds
+4.Factors of 10026 are [
+    18,
+    557,
+] 
+Factor point located : 6 , 1671 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 566953349,
+} nanoseconds
+4.Factors of 10026 are [
+    6,
+    1671,
+] 
+Factor point located : 9 , 1114 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 567111953,
+} nanoseconds
+4.Factors of 10026 are [
+    9,
+    1114,
+] 
+Parallel Rasterization phase of factoring 10026 was completed in (nanoseconds): 1.492764ms 
+Factorization of 10026 was completed in (nanoseconds): 1.557336ms 
+Factorization of 10027 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 567345185,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10027 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 567419778,
+} nanoseconds
+4.Factors of 10027 are [
+    10027,
+    1,
+] 
+Factor point located : 271 , 37 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 567535708,
+} nanoseconds
+4.Factors of 10027 are [
+    271,
+    37,
+] 
+Factor point located : 37 , 271 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 567685623,
+} nanoseconds
+4.Factors of 10027 are [
+    37,
+    271,
+] 
+Parallel Rasterization phase of factoring 10027 was completed in (nanoseconds): 876.178µs 
+Factorization of 10027 was completed in (nanoseconds): 936.359µs 
+Factorization of 10028 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 568294415,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10028 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 568369805,
+} nanoseconds
+4.Factors of 10028 are [
+    10028,
+    1,
+] 
+Factor point located : 5014 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 568466977,
+} nanoseconds
+4.Factors of 10028 are [
+    5014,
+    2,
+] 
+Factor point located : 2507 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 568560473,
+} nanoseconds
+4.Factors of 10028 are [
+    2507,
+    4,
+] 
+Factor point located : 436 , 23 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 568656903,
+} nanoseconds
+4.Factors of 10028 are [
+    436,
+    23,
+] 
+Factor point located : 218 , 46 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 568772287,
+} nanoseconds
+4.Factors of 10028 are [
+    218,
+    46,
+] 
+Factor point located : 109 , 92 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 568885464,
+} nanoseconds
+4.Factors of 10028 are [
+    109,
+    92,
+] 
+Factor point located : 92 , 109 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 569008577,
+} nanoseconds
+4.Factors of 10028 are [
+    92,
+    109,
+] 
+Factor point located : 4 , 2507 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 568378906,
+} nanoseconds
+4.Factors of 10028 are [
+    4,
+    2507,
+] 
+Factor point located : 2 , 5014 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 568376738,
+} nanoseconds
+4.Factors of 10028 are [
+    2,
+    5014,
+] 
+Factor point located : 46 , 218 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 569380979,
+} nanoseconds
+4.Factors of 10028 are [
+    46,
+    218,
+] 
+Factor point located : 23 , 436 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 569526766,
+} nanoseconds
+4.Factors of 10028 are [
+    23,
+    436,
+] 
+Parallel Rasterization phase of factoring 10028 was completed in (nanoseconds): 1.828348ms 
+Factorization of 10028 was completed in (nanoseconds): 1.888658ms 
+Factorization of 10029 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 570196181,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10029 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 570271527,
+} nanoseconds
+4.Factors of 10029 are [
+    10029,
+    1,
+] 
+Factor point located : 3343 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 570366764,
+} nanoseconds
+4.Factors of 10029 are [
+    3343,
+    3,
+] 
+Factor point located : 3 , 3343 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 570650261,
+} nanoseconds
+4.Factors of 10029 are [
+    3,
+    3343,
+] 
+Parallel Rasterization phase of factoring 10029 was completed in (nanoseconds): 865.437µs 
+Factorization of 10029 was completed in (nanoseconds): 926.498µs 
+Factorization of 10030 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 571135644,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10030 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 571211182,
+} nanoseconds
+4.Factors of 10030 are [
+    10030,
+    1,
+] 
+Factor point located : 5015 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 571306666,
+} nanoseconds
+4.Factors of 10030 are [
+    5015,
+    2,
+] 
+Factor point located : 2006 , 5 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 571399830,
+} nanoseconds
+4.Factors of 10030 are [
+    2006,
+    5,
+] 
+Factor point located : 1003 , 10 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 571492828,
+} nanoseconds
+4.Factors of 10030 are [
+    1003,
+    10,
+] 
+Factor point located : 590 , 17 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 571600666,
+} nanoseconds
+4.Factors of 10030 are [
+    590,
+    17,
+] 
+Factor point located : 295 , 34 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 571697973,
+} nanoseconds
+4.Factors of 10030 are [
+    295,
+    34,
+] 
+Factor point located : 170 , 59 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 571813099,
+} nanoseconds
+4.Factors of 10030 are [
+    170,
+    59,
+] 
+Factor point located : 118 , 85 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 571920637,
+} nanoseconds
+4.Factors of 10030 are [
+    118,
+    85,
+] 
+Factor point located : 85 , 118 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 572029819,
+} nanoseconds
+4.Factors of 10030 are [
+    85,
+    118,
+] 
+Factor point located : 2 , 5015 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 571218546,
+} nanoseconds
+4.Factors of 10030 are [
+    2,
+    5015,
+] 
+Factor point located : 59 , 170 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 572286375,
+} nanoseconds
+4.Factors of 10030 are [
+    59,
+    170,
+] 
+Factor point located : 34 , 295 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 572413409,
+} nanoseconds
+4.Factors of 10030 are [
+    34,
+    295,
+] 
+Factor point located : 5 , 2006 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 572490491,
+} nanoseconds
+4.Factors of 10030 are [
+    5,
+    2006,
+] 
+Factor point located : 17 , 590 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 572681581,
+} nanoseconds
+4.Factors of 10030 are [
+    17,
+    590,
+] 
+Factor point located : 10 , 1003 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 572765051,
+} nanoseconds
+4.Factors of 10030 are [
+    10,
+    1003,
+] 
+Parallel Rasterization phase of factoring 10030 was completed in (nanoseconds): 1.939277ms 
+Factorization of 10030 was completed in (nanoseconds): 1.999283ms 
+Factorization of 10031 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 573148055,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10031 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 573221450,
+} nanoseconds
+4.Factors of 10031 are [
+    10031,
+    1,
+] 
+Factor point located : 1433 , 7 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 573311926,
+} nanoseconds
+4.Factors of 10031 are [
+    1433,
+    7,
+] 
+Factor point located : 7 , 1433 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 573701968,
+} nanoseconds
+4.Factors of 10031 are [
+    7,
+    1433,
+] 
+Parallel Rasterization phase of factoring 10031 was completed in (nanoseconds): 828.247µs 
+Factorization of 10031 was completed in (nanoseconds): 888.322µs 
+Factorization of 10032 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 574049311,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10032 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 574122945,
+} nanoseconds
+4.Factors of 10032 are [
+    10032,
+    1,
+] 
+Factor point located : 5016 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 574219130,
+} nanoseconds
+4.Factors of 10032 are [
+    5016,
+    2,
+] 
+Factor point located : 3344 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 574311982,
+} nanoseconds
+4.Factors of 10032 are [
+    3344,
+    3,
+] 
+Factor point located : 2508 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 574404916,
+} nanoseconds
+4.Factors of 10032 are [
+    2508,
+    4,
+] 
+Factor point located : 1672 , 6 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 574498350,
+} nanoseconds
+4.Factors of 10032 are [
+    1672,
+    6,
+] 
+Factor point located : 1254 , 8 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 574591209,
+} nanoseconds
+4.Factors of 10032 are [
+    1254,
+    8,
+] 
+Factor point located : 912 , 11 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 574693378,
+} nanoseconds
+4.Factors of 10032 are [
+    912,
+    11,
+] 
+Factor point located : 836 , 12 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 574795665,
+} nanoseconds
+4.Factors of 10032 are [
+    836,
+    12,
+] 
+Factor point located : 627 , 16 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 574898281,
+} nanoseconds
+4.Factors of 10032 are [
+    627,
+    16,
+] 
+Factor point located : 528 , 19 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 575000512,
+} nanoseconds
+4.Factors of 10032 are [
+    528,
+    19,
+] 
+Factor point located : 456 , 22 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 575102991,
+} nanoseconds
+4.Factors of 10032 are [
+    456,
+    22,
+] 
+Factor point located : 418 , 24 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 575204947,
+} nanoseconds
+4.Factors of 10032 are [
+    418,
+    24,
+] 
+Factor point located : 304 , 33 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 575308205,
+} nanoseconds
+4.Factors of 10032 are [
+    304,
+    33,
+] 
+Factor point located : 264 , 38 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 575410648,
+} nanoseconds
+4.Factors of 10032 are [
+    264,
+    38,
+] 
+Factor point located : 228 , 44 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 575533114,
+} nanoseconds
+4.Factors of 10032 are [
+    228,
+    44,
+] 
+Factor point located : 209 , 48 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 575635056,
+} nanoseconds
+4.Factors of 10032 are [
+    209,
+    48,
+] 
+Factor point located : 176 , 57 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 575743811,
+} nanoseconds
+4.Factors of 10032 are [
+    176,
+    57,
+] 
+Factor point located : 152 , 66 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 575837760,
+} nanoseconds
+4.Factors of 10032 are [
+    152,
+    66,
+] 
+Factor point located : 132 , 76 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 575947346,
+} nanoseconds
+4.Factors of 10032 are [
+    132,
+    76,
+] 
+Factor point located : 114 , 88 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 576042918,
+} nanoseconds
+4.Factors of 10032 are [
+    114,
+    88,
+] 
+Factor point located : 88 , 114 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 576140341,
+} nanoseconds
+4.Factors of 10032 are [
+    88,
+    114,
+] 
+Factor point located : 76 , 132 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 576236219,
+} nanoseconds
+4.Factors of 10032 are [
+    76,
+    132,
+] 
+Factor point located : 66 , 152 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 576332136,
+} nanoseconds
+4.Factors of 10032 are [
+    66,
+    152,
+] 
+Factor point located : 57 , 176 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 576428740,
+} nanoseconds
+4.Factors of 10032 are [
+    57,
+    176,
+] 
+Factor point located : 48 , 209 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 576525279,
+} nanoseconds
+4.Factors of 10032 are [
+    48,
+    209,
+] 
+Factor point located : 44 , 228 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 576620551,
+} nanoseconds
+4.Factors of 10032 are [
+    44,
+    228,
+] 
+Factor point located : 38 , 264 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 576718359,
+} nanoseconds
+4.Factors of 10032 are [
+    38,
+    264,
+] 
+Factor point located : 33 , 304 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 576816193,
+} nanoseconds
+4.Factors of 10032 are [
+    33,
+    304,
+] 
+Factor point located : 4 , 2508 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 574698929,
+} nanoseconds
+4.Factors of 10032 are [
+    4,
+    2508,
+] 
+Factor point located : 2 , 5016 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 574128781,
+} nanoseconds
+4.Factors of 10032 are [
+    2,
+    5016,
+] 
+Factor point located : 3 , 3344 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 575167407,
+} nanoseconds
+4.Factors of 10032 are [
+    3,
+    3344,
+] 
+Factor point located : 8 , 1254 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 577164720,
+} nanoseconds
+4.Factors of 10032 are [
+    8,
+    1254,
+] 
+Factor point located : 24 , 418 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 577351094,
+} nanoseconds
+4.Factors of 10032 are [
+    24,
+    418,
+] 
+Factor point located : 6 , 1672 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 577449798,
+} nanoseconds
+4.Factors of 10032 are [
+    6,
+    1672,
+] 
+Factor point located : 22 , 456 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 577451328,
+} nanoseconds
+4.Factors of 10032 are [
+    22,
+    456,
+] 
+Factor point located : 16 , 627 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 577420532,
+} nanoseconds
+4.Factors of 10032 are [
+    16,
+    627,
+] 
+Factor point located : 19 , 528 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 577660082,
+} nanoseconds
+4.Factors of 10032 are [
+    19,
+    528,
+] 
+Factor point located : 12 , 836 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 577919493,
+} nanoseconds
+4.Factors of 10032 are [
+    12,
+    836,
+] 
+Factor point located : 11 , 912 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 577979369,
+} nanoseconds
+4.Factors of 10032 are [
+    11,
+    912,
+] 
+Parallel Rasterization phase of factoring 10032 was completed in (nanoseconds): 4.076618ms 
+Factorization of 10032 was completed in (nanoseconds): 4.135895ms 
+Factorization of 10033 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 578199834,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10033 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 578274442,
+} nanoseconds
+4.Factors of 10033 are [
+    10033,
+    1,
+] 
+Factor point located : 127 , 79 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 578388259,
+} nanoseconds
+4.Factors of 10033 are [
+    127,
+    79,
+] 
+Factor point located : 79 , 127 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 578484368,
+} nanoseconds
+4.Factors of 10033 are [
+    79,
+    127,
+] 
+Parallel Rasterization phase of factoring 10033 was completed in (nanoseconds): 843.158µs 
+Factorization of 10033 was completed in (nanoseconds): 919.117µs 
+Factorization of 10034 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 579132543,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10034 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 579208233,
+} nanoseconds
+4.Factors of 10034 are [
+    10034,
+    1,
+] 
+Factor point located : 5017 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 579303777,
+} nanoseconds
+4.Factors of 10034 are [
+    5017,
+    2,
+] 
+Factor point located : 346 , 29 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 579400976,
+} nanoseconds
+4.Factors of 10034 are [
+    346,
+    29,
+] 
+Factor point located : 173 , 58 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 579506966,
+} nanoseconds
+4.Factors of 10034 are [
+    173,
+    58,
+] 
+Factor point located : 2 , 5017 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 579213292,
+} nanoseconds
+4.Factors of 10034 are [
+    2,
+    5017,
+] 
+Factor point located : 58 , 173 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 579746178,
+} nanoseconds
+4.Factors of 10034 are [
+    58,
+    173,
+] 
+Factor point located : 29 , 346 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 579877235,
+} nanoseconds
+4.Factors of 10034 are [
+    29,
+    346,
+] 
+Parallel Rasterization phase of factoring 10034 was completed in (nanoseconds): 1.248122ms 
+Factorization of 10034 was completed in (nanoseconds): 1.309259ms 
+Factorization of 10035 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 580456145,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10035 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 580542856,
+} nanoseconds
+4.Factors of 10035 are [
+    10035,
+    1,
+] 
+Factor point located : 3345 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 580641192,
+} nanoseconds
+4.Factors of 10035 are [
+    3345,
+    3,
+] 
+Factor point located : 2007 , 5 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 580740275,
+} nanoseconds
+4.Factors of 10035 are [
+    2007,
+    5,
+] 
+Factor point located : 1115 , 9 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 580832866,
+} nanoseconds
+4.Factors of 10035 are [
+    1115,
+    9,
+] 
+Factor point located : 669 , 15 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 580926676,
+} nanoseconds
+4.Factors of 10035 are [
+    669,
+    15,
+] 
+Factor point located : 223 , 45 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 581025365,
+} nanoseconds
+4.Factors of 10035 are [
+    223,
+    45,
+] 
+Factor point located : 3 , 3345 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 580742798,
+} nanoseconds
+4.Factors of 10035 are [
+    3,
+    3345,
+] 
+Factor point located : 45 , 223 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 581272164,
+} nanoseconds
+4.Factors of 10035 are [
+    45,
+    223,
+] 
+Factor point located : 5 , 2007 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 581312615,
+} nanoseconds
+4.Factors of 10035 are [
+    5,
+    2007,
+] 
+Factor point located : 15 , 669 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 581459054,
+} nanoseconds
+Factor point located : 9 , 1115 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 581541468,
+} nanoseconds
+4.Factors of 10035 are [
+    9,
+    1115,
+] 
+4.Factors of 10035 are [
+    15,
+    669,
+] 
+Parallel Rasterization phase of factoring 10035 was completed in (nanoseconds): 1.359652ms 
+Factorization of 10035 was completed in (nanoseconds): 1.423373ms 
+Factorization of 10036 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 581892056,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10036 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 581966023,
+} nanoseconds
+4.Factors of 10036 are [
+    10036,
+    1,
+] 
+Factor point located : 5018 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 582062400,
+} nanoseconds
+4.Factors of 10036 are [
+    5018,
+    2,
+] 
+Factor point located : 2509 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 582154351,
+} nanoseconds
+4.Factors of 10036 are [
+    2509,
+    4,
+] 
+Factor point located : 772 , 13 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 582264646,
+} nanoseconds
+4.Factors of 10036 are [
+    772,
+    13,
+] 
+Factor point located : 386 , 26 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 582359721,
+} nanoseconds
+4.Factors of 10036 are [
+    386,
+    26,
+] 
+Factor point located : 193 , 52 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 582457170,
+} nanoseconds
+4.Factors of 10036 are [
+    193,
+    52,
+] 
+Factor point located : 2 , 5018 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 581972201,
+} nanoseconds
+4.Factors of 10036 are [
+    2,
+    5018,
+] 
+Factor point located : 4 , 2509 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 581974668,
+} nanoseconds
+4.Factors of 10036 are [
+    4,
+    2509,
+] 
+Factor point located : 52 , 193 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 582793839,
+} nanoseconds
+4.Factors of 10036 are [
+    52,
+    193,
+] 
+Factor point located : 26 , 386 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 582922458,
+} nanoseconds
+4.Factors of 10036 are [
+    26,
+    386,
+] 
+Factor point located : 13 , 772 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 583077329,
+} nanoseconds
+4.Factors of 10036 are [
+    13,
+    772,
+] 
+Parallel Rasterization phase of factoring 10036 was completed in (nanoseconds): 1.653599ms 
+Factorization of 10036 was completed in (nanoseconds): 1.715176ms 
+Factorization of 10037 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 583619830,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10037 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 583702641,
+} nanoseconds
+4.Factors of 10037 are [
+    10037,
+    1,
+] 
+Parallel Rasterization phase of factoring 10037 was completed in (nanoseconds): 974.494µs 
+Factorization of 10037 was completed in (nanoseconds): 1.037103ms 
+Factorization of 10038 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 584671060,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10038 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 584756562,
+} nanoseconds
+4.Factors of 10038 are [
+    10038,
+    1,
+] 
+Factor point located : 5019 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 584853577,
+} nanoseconds
+4.Factors of 10038 are [
+    5019,
+    2,
+] 
+Factor point located : 3346 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 584945368,
+} nanoseconds
+4.Factors of 10038 are [
+    3346,
+    3,
+] 
+Factor point located : 1673 , 6 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 585038234,
+} nanoseconds
+4.Factors of 10038 are [
+    1673,
+    6,
+] 
+Factor point located : 1434 , 7 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 585130848,
+} nanoseconds
+4.Factors of 10038 are [
+    1434,
+    7,
+] 
+Factor point located : 717 , 14 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 585223630,
+} nanoseconds
+4.Factors of 10038 are [
+    717,
+    14,
+] 
+Factor point located : 478 , 21 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 585317075,
+} nanoseconds
+4.Factors of 10038 are [
+    478,
+    21,
+] 
+Factor point located : 239 , 42 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 585413569,
+} nanoseconds
+4.Factors of 10038 are [
+    239,
+    42,
+] 
+Factor point located : 7 , 1434 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 584810778,
+} nanoseconds
+4.Factors of 10038 are [
+    7,
+    1434,
+] 
+Factor point located : 3 , 3346 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 584938394,
+} nanoseconds
+Factor point located : 6 , 1673 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 585663386,
+} nanoseconds
+4.Factors of 10038 are [
+    6,
+    1673,
+] 
+4.Factors of 10038 are [
+    3,
+    3346,
+] 
+Factor point located : 2 , 5019 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 584764333,
+} nanoseconds
+4.Factors of 10038 are [
+    2,
+    5019,
+] 
+Factor point located : 42 , 239 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 585979342,
+} nanoseconds
+4.Factors of 10038 are [
+    42,
+    239,
+] 
+Factor point located : 21 , 478 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 586135037,
+} nanoseconds
+4.Factors of 10038 are [
+    21,
+    478,
+] 
+Factor point located : 14 , 717 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 586271182,
+} nanoseconds
+4.Factors of 10038 are [
+    14,
+    717,
+] 
+Parallel Rasterization phase of factoring 10038 was completed in (nanoseconds): 1.904244ms 
+Factorization of 10038 was completed in (nanoseconds): 1.975502ms 
+Factorization of 10039 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 586659393,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10039 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 586736460,
+} nanoseconds
+4.Factors of 10039 are [
+    10039,
+    1,
+] 
+Parallel Rasterization phase of factoring 10039 was completed in (nanoseconds): 863.866µs 
+Factorization of 10039 was completed in (nanoseconds): 925.631µs 
+Factorization of 10040 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 587597707,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10040 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 587673172,
+} nanoseconds
+4.Factors of 10040 are [
+    10040,
+    1,
+] 
+Factor point located : 5020 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 587783830,
+} nanoseconds
+4.Factors of 10040 are [
+    5020,
+    2,
+] 
+Factor point located : 2510 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 587884918,
+} nanoseconds
+4.Factors of 10040 are [
+    2510,
+    4,
+] 
+Factor point located : 2008 , 5 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 587985947,
+} nanoseconds
+4.Factors of 10040 are [
+    2008,
+    5,
+] 
+Factor point located : 1255 , 8 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 588087993,
+} nanoseconds
+4.Factors of 10040 are [
+    1255,
+    8,
+] 
+Factor point located : 1004 , 10 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 588189289,
+} nanoseconds
+4.Factors of 10040 are [
+    1004,
+    10,
+] 
+Factor point located : 502 , 20 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 588292588,
+} nanoseconds
+4.Factors of 10040 are [
+    502,
+    20,
+] 
+Factor point located : 251 , 40 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 588398138,
+} nanoseconds
+4.Factors of 10040 are [
+    251,
+    40,
+] 
+Factor point located : 2 , 5020 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 587680927,
+} nanoseconds
+4.Factors of 10040 are [
+    2,
+    5020,
+] 
+Factor point located : 8 , 1255 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 587687246,
+} nanoseconds
+4.Factors of 10040 are [
+    8,
+    1255,
+] 
+Factor point located : 4 , 2510 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 587683685,
+} nanoseconds
+4.Factors of 10040 are [
+    4,
+    2510,
+] 
+Factor point located : 40 , 251 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 588895586,
+} nanoseconds
+4.Factors of 10040 are [
+    40,
+    251,
+] 
+Factor point located : 20 , 502 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 589036152,
+} nanoseconds
+4.Factors of 10040 are [
+    20,
+    502,
+] 
+Factor point located : 5 , 2008 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 589084576,
+} nanoseconds
+4.Factors of 10040 are [
+    5,
+    2008,
+] 
+Factor point located : 10 , 1004 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 589335323,
+} nanoseconds
+4.Factors of 10040 are [
+    10,
+    1004,
+] 
+Parallel Rasterization phase of factoring 10040 was completed in (nanoseconds): 1.985878ms 
+Factorization of 10040 was completed in (nanoseconds): 2.04512ms 
+Factorization of 10041 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 589655305,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10041 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 589729438,
+} nanoseconds
+4.Factors of 10041 are [
+    10041,
+    1,
+] 
+Factor point located : 3347 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 589824484,
+} nanoseconds
+4.Factors of 10041 are [
+    3347,
+    3,
+] 
+Factor point located : 3 , 3347 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 590098205,
+} nanoseconds
+4.Factors of 10041 are [
+    3,
+    3347,
+] 
+Parallel Rasterization phase of factoring 10041 was completed in (nanoseconds): 951.209µs 
+Factorization of 10041 was completed in (nanoseconds): 1.011025ms 
+Factorization of 10042 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 590679192,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10042 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 590767562,
+} nanoseconds
+4.Factors of 10042 are [
+    10042,
+    1,
+] 
+Factor point located : 5021 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 590873126,
+} nanoseconds
+4.Factors of 10042 are [
+    5021,
+    2,
+] 
+Factor point located : 2 , 5021 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 590774338,
+} nanoseconds
+4.Factors of 10042 are [
+    2,
+    5021,
+] 
+Parallel Rasterization phase of factoring 10042 was completed in (nanoseconds): 1.069643ms 
+Factorization of 10042 was completed in (nanoseconds): 1.142612ms 
+Factorization of 10043 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 591837021,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10043 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 591922404,
+} nanoseconds
+4.Factors of 10043 are [
+    10043,
+    1,
+] 
+Factor point located : 913 , 11 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 592017043,
+} nanoseconds
+4.Factors of 10043 are [
+    913,
+    11,
+] 
+Factor point located : 121 , 83 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 592125108,
+} nanoseconds
+4.Factors of 10043 are [
+    121,
+    83,
+] 
+Factor point located : 83 , 121 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 592224548,
+} nanoseconds
+4.Factors of 10043 are [
+    83,
+    121,
+] 
+Factor point located : 11 , 913 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 592483447,
+} nanoseconds
+4.Factors of 10043 are [
+    11,
+    913,
+] 
+Parallel Rasterization phase of factoring 10043 was completed in (nanoseconds): 1.077194ms 
+Factorization of 10043 was completed in (nanoseconds): 1.145069ms 
+Factorization of 10044 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 592994636,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10044 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 593068565,
+} nanoseconds
+4.Factors of 10044 are [
+    10044,
+    1,
+] 
+Factor point located : 5022 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 593164940,
+} nanoseconds
+4.Factors of 10044 are [
+    5022,
+    2,
+] 
+Factor point located : 3348 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 593257012,
+} nanoseconds
+4.Factors of 10044 are [
+    3348,
+    3,
+] 
+Factor point located : 2511 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 593349514,
+} nanoseconds
+4.Factors of 10044 are [
+    2511,
+    4,
+] 
+Factor point located : 1674 , 6 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 593441841,
+} nanoseconds
+4.Factors of 10044 are [
+    1674,
+    6,
+] 
+Factor point located : 1116 , 9 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 593534834,
+} nanoseconds
+4.Factors of 10044 are [
+    1116,
+    9,
+] 
+Factor point located : 837 , 12 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 593626876,
+} nanoseconds
+4.Factors of 10044 are [
+    837,
+    12,
+] 
+Factor point located : 558 , 18 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 593730344,
+} nanoseconds
+4.Factors of 10044 are [
+    558,
+    18,
+] 
+Factor point located : 372 , 27 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 593832725,
+} nanoseconds
+4.Factors of 10044 are [
+    372,
+    27,
+] 
+Factor point located : 324 , 31 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 593934335,
+} nanoseconds
+4.Factors of 10044 are [
+    324,
+    31,
+] 
+Factor point located : 279 , 36 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 594036829,
+} nanoseconds
+4.Factors of 10044 are [
+    279,
+    36,
+] 
+Factor point located : 186 , 54 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 594141991,
+} nanoseconds
+4.Factors of 10044 are [
+    186,
+    54,
+] 
+Factor point located : 162 , 62 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 594260765,
+} nanoseconds
+4.Factors of 10044 are [
+    162,
+    62,
+] 
+Factor point located : 124 , 81 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 594366362,
+} nanoseconds
+4.Factors of 10044 are [
+    124,
+    81,
+] 
+Factor point located : 108 , 93 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 594469976,
+} nanoseconds
+4.Factors of 10044 are [
+    108,
+    93,
+] 
+Factor point located : 93 , 108 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 594574577,
+} nanoseconds
+4.Factors of 10044 are [
+    93,
+    108,
+] 
+Factor point located : 81 , 124 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 594678908,
+} nanoseconds
+4.Factors of 10044 are [
+    81,
+    124,
+] 
+Factor point located : 62 , 162 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 594792833,
+} nanoseconds
+4.Factors of 10044 are [
+    62,
+    162,
+] 
+Factor point located : 54 , 186 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 594889128,
+} nanoseconds
+4.Factors of 10044 are [
+    54,
+    186,
+] 
+Factor point located : 4 , 2511 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 593074887,
+} nanoseconds
+4.Factors of 10044 are [
+    4,
+    2511,
+] 
+Factor point located : 2 , 5022 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 593071697,
+} nanoseconds
+4.Factors of 10044 are [
+    2,
+    5022,
+] 
+Factor point located : 36 , 279 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 595218880,
+} nanoseconds
+4.Factors of 10044 are [
+    36,
+    279,
+] 
+Factor point located : 6 , 1674 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 595260218,
+} nanoseconds
+4.Factors of 10044 are [
+    6,
+    1674,
+] 
+Factor point located : 31 , 324 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 595327181,
+} nanoseconds
+4.Factors of 10044 are [
+    31,
+    324,
+] 
+Factor point located : 27 , 372 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 595545292,
+} nanoseconds
+4.Factors of 10044 are [
+    27,
+    372,
+] 
+Factor point located : 3 , 3348 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 595258716,
+} nanoseconds
+4.Factors of 10044 are [
+    3,
+    3348,
+] 
+Factor point located : 18 , 558 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 595774624,
+} nanoseconds
+4.Factors of 10044 are [
+    18,
+    558,
+] 
+Factor point located : 12 , 837 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 595914457,
+} nanoseconds
+4.Factors of 10044 are [
+    12,
+    837,
+] 
+Factor point located : 9 , 1116 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 596049237,
+} nanoseconds
+4.Factors of 10044 are [
+    9,
+    1116,
+] 
+Parallel Rasterization phase of factoring 10044 was completed in (nanoseconds): 3.244088ms 
+Factorization of 10044 was completed in (nanoseconds): 3.305085ms 
+Factorization of 10045 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 596312667,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10045 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 596387052,
+} nanoseconds
+4.Factors of 10045 are [
+    10045,
+    1,
+] 
+Factor point located : 2009 , 5 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 596483047,
+} nanoseconds
+4.Factors of 10045 are [
+    2009,
+    5,
+] 
+Factor point located : 1435 , 7 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 596575712,
+} nanoseconds
+4.Factors of 10045 are [
+    1435,
+    7,
+] 
+Factor point located : 287 , 35 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 596673603,
+} nanoseconds
+4.Factors of 10045 are [
+    287,
+    35,
+] 
+Factor point located : 245 , 41 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 596765934,
+} nanoseconds
+4.Factors of 10045 are [
+    245,
+    41,
+] 
+Factor point located : 205 , 49 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 596859709,
+} nanoseconds
+4.Factors of 10045 are [
+    205,
+    49,
+] 
+Factor point located : 49 , 205 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 596989383,
+} nanoseconds
+4.Factors of 10045 are [
+    49,
+    205,
+] 
+Factor point located : 7 , 1435 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 597011398,
+} nanoseconds
+4.Factors of 10045 are [
+    7,
+    1435,
+] 
+Factor point located : 41 , 245 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 597105147,
+} nanoseconds
+4.Factors of 10045 are [
+    41,
+    245,
+] 
+Factor point located : 35 , 287 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 597323029,
+} nanoseconds
+4.Factors of 10045 are [
+    35,
+    287,
+] 
+Factor point located : 5 , 2009 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 597465591,
+} nanoseconds
+4.Factors of 10045 are [
+    5,
+    2009,
+] 
+Parallel Rasterization phase of factoring 10045 was completed in (nanoseconds): 1.469902ms 
+Factorization of 10045 was completed in (nanoseconds): 1.53221ms 
+Factorization of 10046 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 597858900,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10046 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 597941712,
+} nanoseconds
+4.Factors of 10046 are [
+    10046,
+    1,
+] 
+Factor point located : 5023 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 598047107,
+} nanoseconds
+4.Factors of 10046 are [
+    5023,
+    2,
+] 
+Factor point located : 2 , 5023 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 597951689,
+} nanoseconds
+4.Factors of 10046 are [
+    2,
+    5023,
+] 
+Parallel Rasterization phase of factoring 10046 was completed in (nanoseconds): 1.105773ms 
+Factorization of 10046 was completed in (nanoseconds): 1.170977ms 
+Factorization of 10047 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 599042760,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10047 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 599118267,
+} nanoseconds
+4.Factors of 10047 are [
+    10047,
+    1,
+] 
+Factor point located : 3349 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 599208040,
+} nanoseconds
+4.Factors of 10047 are [
+    3349,
+    3,
+] 
+Factor point located : 591 , 17 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 599302230,
+} nanoseconds
+4.Factors of 10047 are [
+    591,
+    17,
+] 
+Factor point located : 197 , 51 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 599403666,
+} nanoseconds
+4.Factors of 10047 are [
+    197,
+    51,
+] 
+Factor point located : 3 , 3349 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 599313309,
+} nanoseconds
+4.Factors of 10047 are [
+    3,
+    3349,
+] 
+Factor point located : 51 , 197 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 599648926,
+} nanoseconds
+4.Factors of 10047 are [
+    51,
+    197,
+] 
+Factor point located : 17 , 591 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 599806860,
+} nanoseconds
+4.Factors of 10047 are [
+    17,
+    591,
+] 
+Parallel Rasterization phase of factoring 10047 was completed in (nanoseconds): 1.164631ms 
+Factorization of 10047 was completed in (nanoseconds): 1.224843ms 
+Factorization of 10048 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 600280362,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10048 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 600356886,
+} nanoseconds
+4.Factors of 10048 are [
+    10048,
+    1,
+] 
+Factor point located : 5024 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 600452353,
+} nanoseconds
+4.Factors of 10048 are [
+    5024,
+    2,
+] 
+Factor point located : 2512 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 600543761,
+} nanoseconds
+4.Factors of 10048 are [
+    2512,
+    4,
+] 
+Factor point located : 1256 , 8 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 600636004,
+} nanoseconds
+4.Factors of 10048 are [
+    1256,
+    8,
+] 
+Factor point located : 628 , 16 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 600739428,
+} nanoseconds
+4.Factors of 10048 are [
+    628,
+    16,
+] 
+Factor point located : 314 , 32 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 600844422,
+} nanoseconds
+4.Factors of 10048 are [
+    314,
+    32,
+] 
+Factor point located : 157 , 64 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 600952121,
+} nanoseconds
+4.Factors of 10048 are [
+    157,
+    64,
+] 
+Factor point located : 4 , 2512 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 600366517,
+} nanoseconds
+4.Factors of 10048 are [
+    4,
+    2512,
+] 
+Factor point located : 2 , 5024 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 600361665,
+} nanoseconds
+4.Factors of 10048 are [
+    2,
+    5024,
+] 
+Factor point located : 64 , 157 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 601325435,
+} nanoseconds
+4.Factors of 10048 are [
+    64,
+    157,
+] 
+Factor point located : 32 , 314 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 601461269,
+} nanoseconds
+4.Factors of 10048 are [
+    32,
+    314,
+] 
+Factor point located : 8 , 1256 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 601553904,
+} nanoseconds
+4.Factors of 10048 are [
+    8,
+    1256,
+] 
+Factor point located : 16 , 628 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 601751415,
+} nanoseconds
+4.Factors of 10048 are [
+    16,
+    628,
+] 
+Parallel Rasterization phase of factoring 10048 was completed in (nanoseconds): 1.663205ms 
+Factorization of 10048 was completed in (nanoseconds): 1.723058ms 
+Factorization of 10049 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 602016390,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10049 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 602092309,
+} nanoseconds
+4.Factors of 10049 are [
+    10049,
+    1,
+] 
+Factor point located : 773 , 13 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 602190765,
+} nanoseconds
+4.Factors of 10049 are [
+    773,
+    13,
+] 
+Factor point located : 13 , 773 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 602444694,
+} nanoseconds
+4.Factors of 10049 are [
+    13,
+    773,
+] 
+Parallel Rasterization phase of factoring 10049 was completed in (nanoseconds): 1.010977ms 
+Factorization of 10049 was completed in (nanoseconds): 1.070879ms 
+Factorization of 10050 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 603099788,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10050 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 603174844,
+} nanoseconds
+4.Factors of 10050 are [
+    10050,
+    1,
+] 
+Factor point located : 5025 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 603270577,
+} nanoseconds
+4.Factors of 10050 are [
+    5025,
+    2,
+] 
+Factor point located : 3350 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 603363279,
+} nanoseconds
+4.Factors of 10050 are [
+    3350,
+    3,
+] 
+Factor point located : 2010 , 5 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 603455834,
+} nanoseconds
+4.Factors of 10050 are [
+    2010,
+    5,
+] 
+Factor point located : 1675 , 6 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 603563255,
+} nanoseconds
+4.Factors of 10050 are [
+    1675,
+    6,
+] 
+Factor point located : 1005 , 10 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 603656432,
+} nanoseconds
+4.Factors of 10050 are [
+    1005,
+    10,
+] 
+Factor point located : 670 , 15 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 603760317,
+} nanoseconds
+4.Factors of 10050 are [
+    670,
+    15,
+] 
+Factor point located : 402 , 25 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 603864302,
+} nanoseconds
+4.Factors of 10050 are [
+    402,
+    25,
+] 
+Factor point located : 335 , 30 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 603966897,
+} nanoseconds
+4.Factors of 10050 are [
+    335,
+    30,
+] 
+Factor point located : 201 , 50 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 604071941,
+} nanoseconds
+4.Factors of 10050 are [
+    201,
+    50,
+] 
+Factor point located : 150 , 67 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 604177653,
+} nanoseconds
+4.Factors of 10050 are [
+    150,
+    67,
+] 
+Factor point located : 134 , 75 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 604281016,
+} nanoseconds
+4.Factors of 10050 are [
+    134,
+    75,
+] 
+Factor point located : 2 , 5025 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 603180526,
+} nanoseconds
+4.Factors of 10050 are [
+    2,
+    5025,
+] 
+Factor point located : 75 , 134 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 604531412,
+} nanoseconds
+4.Factors of 10050 are [
+    75,
+    134,
+] 
+Factor point located : 67 , 150 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 604639082,
+} nanoseconds
+4.Factors of 10050 are [
+    67,
+    150,
+] 
+Factor point located : 3 , 3350 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 603369954,
+} nanoseconds
+4.Factors of 10050 are [
+    3,
+    3350,
+] 
+Factor point located : 15 , 670 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 604792616,
+} nanoseconds
+Factor point located : 10 , 1005 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 604909328,
+} nanoseconds
+4.Factors of 10050 are [
+    10,
+    1005,
+] 
+4.Factors of 10050 are [
+    15,
+    670,
+] 
+Factor point located : 6 , 1675 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 604813846,
+} nanoseconds
+4.Factors of 10050 are [
+    6,
+    1675,
+] 
+Factor point located : 50 , 201 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 604752571,
+} nanoseconds
+4.Factors of 10050 are [
+    50,
+    201,
+] 
+Factor point located : 5 , 2010 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 605235936,
+} nanoseconds
+4.Factors of 10050 are [
+    5,
+    2010,
+] 
+Factor point located : 30 , 335 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 605428607,
+} nanoseconds
+4.Factors of 10050 are [
+    30,
+    335,
+] 
+Factor point located : 25 , 402 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 605530907,
+} nanoseconds
+4.Factors of 10050 are [
+    25,
+    402,
+] 
+Parallel Rasterization phase of factoring 10050 was completed in (nanoseconds): 2.627234ms 
+Factorization of 10050 was completed in (nanoseconds): 2.687787ms 
+Factorization of 10051 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 605800505,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10051 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 605873434,
+} nanoseconds
+4.Factors of 10051 are [
+    10051,
+    1,
+] 
+Factor point located : 529 , 19 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 605966381,
+} nanoseconds
+4.Factors of 10051 are [
+    529,
+    19,
+] 
+Factor point located : 437 , 23 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 606053358,
+} nanoseconds
+4.Factors of 10051 are [
+    437,
+    23,
+] 
+Factor point located : 23 , 437 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 606216591,
+} nanoseconds
+4.Factors of 10051 are [
+    23,
+    437,
+] 
+Factor point located : 19 , 529 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 606317565,
+} nanoseconds
+4.Factors of 10051 are [
+    19,
+    529,
+] 
+Parallel Rasterization phase of factoring 10051 was completed in (nanoseconds): 864.349µs 
+Factorization of 10051 was completed in (nanoseconds): 924.49µs 
+Factorization of 10052 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 606738046,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10052 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 606815168,
+} nanoseconds
+4.Factors of 10052 are [
+    10052,
+    1,
+] 
+Factor point located : 5026 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 606911071,
+} nanoseconds
+4.Factors of 10052 are [
+    5026,
+    2,
+] 
+Factor point located : 2513 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 607002698,
+} nanoseconds
+4.Factors of 10052 are [
+    2513,
+    4,
+] 
+Factor point located : 1436 , 7 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 607095507,
+} nanoseconds
+4.Factors of 10052 are [
+    1436,
+    7,
+] 
+Factor point located : 718 , 14 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 607189367,
+} nanoseconds
+4.Factors of 10052 are [
+    718,
+    14,
+] 
+Factor point located : 359 , 28 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 607284572,
+} nanoseconds
+4.Factors of 10052 are [
+    359,
+    28,
+] 
+Factor point located : 4 , 2513 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 606827857,
+} nanoseconds
+4.Factors of 10052 are [
+    4,
+    2513,
+] 
+Factor point located : 2 , 5026 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 606823654,
+} nanoseconds
+4.Factors of 10052 are [
+    2,
+    5026,
+] 
+Factor point located : 28 , 359 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 607688300,
+} nanoseconds
+4.Factors of 10052 are [
+    28,
+    359,
+] 
+Factor point located : 14 , 718 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 607878323,
+} nanoseconds
+4.Factors of 10052 are [
+    14,
+    718,
+] 
+Factor point located : 7 , 1436 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 607941243,
+} nanoseconds
+4.Factors of 10052 are [
+    7,
+    1436,
+] 
+Parallel Rasterization phase of factoring 10052 was completed in (nanoseconds): 1.60396ms 
+Factorization of 10052 was completed in (nanoseconds): 1.666782ms 
+Factorization of 10053 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 608419001,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10053 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 608505218,
+} nanoseconds
+4.Factors of 10053 are [
+    10053,
+    1,
+] 
+Factor point located : 3351 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 608610249,
+} nanoseconds
+4.Factors of 10053 are [
+    3351,
+    3,
+] 
+Factor point located : 1117 , 9 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 608712952,
+} nanoseconds
+4.Factors of 10053 are [
+    1117,
+    9,
+] 
+Factor point located : 3 , 3351 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 608979909,
+} nanoseconds
+4.Factors of 10053 are [
+    3,
+    3351,
+] 
+Factor point located : 9 , 1117 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 609152101,
+} nanoseconds
+4.Factors of 10053 are [
+    9,
+    1117,
+] 
+Parallel Rasterization phase of factoring 10053 was completed in (nanoseconds): 1.060932ms 
+Factorization of 10053 was completed in (nanoseconds): 1.125232ms 
+Factorization of 10054 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 609557280,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10054 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 609629294,
+} nanoseconds
+4.Factors of 10054 are [
+    10054,
+    1,
+] 
+Factor point located : 5027 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 609725639,
+} nanoseconds
+4.Factors of 10054 are [
+    5027,
+    2,
+] 
+Factor point located : 914 , 11 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 609820751,
+} nanoseconds
+4.Factors of 10054 are [
+    914,
+    11,
+] 
+Factor point located : 457 , 22 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 609914961,
+} nanoseconds
+4.Factors of 10054 are [
+    457,
+    22,
+] 
+Factor point located : 2 , 5027 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 609638409,
+} nanoseconds
+4.Factors of 10054 are [
+    2,
+    5027,
+] 
+Factor point located : 22 , 457 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 610208796,
+} nanoseconds
+4.Factors of 10054 are [
+    22,
+    457,
+] 
+Factor point located : 11 , 914 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 610389796,
+} nanoseconds
+4.Factors of 10054 are [
+    11,
+    914,
+] 
+Parallel Rasterization phase of factoring 10054 was completed in (nanoseconds): 1.383548ms 
+Factorization of 10054 was completed in (nanoseconds): 1.444702ms 
+Factorization of 10055 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 611016141,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10055 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 611099484,
+} nanoseconds
+4.Factors of 10055 are [
+    10055,
+    1,
+] 
+Factor point located : 2011 , 5 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 611199155,
+} nanoseconds
+4.Factors of 10055 are [
+    2011,
+    5,
+] 
+Factor point located : 5 , 2011 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 611705282,
+} nanoseconds
+4.Factors of 10055 are [
+    5,
+    2011,
+] 
+Parallel Rasterization phase of factoring 10055 was completed in (nanoseconds): 936.995µs 
+Factorization of 10055 was completed in (nanoseconds): 1.000696ms 
+Factorization of 10056 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 612045772,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10056 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 612122799,
+} nanoseconds
+4.Factors of 10056 are [
+    10056,
+    1,
+] 
+Factor point located : 5028 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 612219203,
+} nanoseconds
+4.Factors of 10056 are [
+    5028,
+    2,
+] 
+Factor point located : 3352 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 612310743,
+} nanoseconds
+4.Factors of 10056 are [
+    3352,
+    3,
+] 
+Factor point located : 2514 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 612403117,
+} nanoseconds
+4.Factors of 10056 are [
+    2514,
+    4,
+] 
+Factor point located : 1676 , 6 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 612494364,
+} nanoseconds
+4.Factors of 10056 are [
+    1676,
+    6,
+] 
+Factor point located : 1257 , 8 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 612586609,
+} nanoseconds
+4.Factors of 10056 are [
+    1257,
+    8,
+] 
+Factor point located : 838 , 12 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 612679648,
+} nanoseconds
+4.Factors of 10056 are [
+    838,
+    12,
+] 
+Factor point located : 419 , 24 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 612773858,
+} nanoseconds
+4.Factors of 10056 are [
+    419,
+    24,
+] 
+Factor point located : 4 , 2514 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 612135800,
+} nanoseconds
+4.Factors of 10056 are [
+    4,
+    2514,
+] 
+Factor point located : 2 , 5028 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 612132167,
+} nanoseconds
+4.Factors of 10056 are [
+    2,
+    5028,
+] 
+Factor point located : 8 , 1257 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 612991760,
+} nanoseconds
+4.Factors of 10056 are [
+    8,
+    1257,
+] 
+Factor point located : 3 , 3352 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 613125162,
+} nanoseconds
+4.Factors of 10056 are [
+    3,
+    3352,
+] 
+Factor point located : 24 , 419 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 613358144,
+} nanoseconds
+4.Factors of 10056 are [
+    24,
+    419,
+] 
+Factor point located : 6 , 1676 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 613366304,
+} nanoseconds
+4.Factors of 10056 are [
+    6,
+    1676,
+] 
+Factor point located : 12 , 838 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 613686781,
+} nanoseconds
+4.Factors of 10056 are [
+    12,
+    838,
+] 
+Parallel Rasterization phase of factoring 10056 was completed in (nanoseconds): 1.904045ms 
+Factorization of 10056 was completed in (nanoseconds): 1.965386ms 
+Factorization of 10057 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 614024235,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10057 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 614100037,
+} nanoseconds
+4.Factors of 10057 are [
+    10057,
+    1,
+] 
+Factor point located : 113 , 89 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 614216029,
+} nanoseconds
+4.Factors of 10057 are [
+    113,
+    89,
+] 
+Factor point located : 89 , 113 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 614307576,
+} nanoseconds
+4.Factors of 10057 are [
+    89,
+    113,
+] 
+Parallel Rasterization phase of factoring 10057 was completed in (nanoseconds): 899.428µs 
+Factorization of 10057 was completed in (nanoseconds): 962.246µs 
+Factorization of 10058 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 615000838,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10058 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 615085322,
+} nanoseconds
+4.Factors of 10058 are [
+    10058,
+    1,
+] 
+Factor point located : 5029 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 615191968,
+} nanoseconds
+4.Factors of 10058 are [
+    5029,
+    2,
+] 
+Factor point located : 2 , 5029 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 615092633,
+} nanoseconds
+4.Factors of 10058 are [
+    2,
+    5029,
+] 
+Factor point located : 214 , 47 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 615423554,
+} nanoseconds
+4.Factors of 10058 are [
+    214,
+    47,
+] 
+Factor point located : 107 , 94 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 615572315,
+} nanoseconds
+4.Factors of 10058 are [
+    107,
+    94,
+] 
+Factor point located : 94 , 107 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 615673694,
+} nanoseconds
+4.Factors of 10058 are [
+    94,
+    107,
+] 
+Factor point located : 47 , 214 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 615809123,
+} nanoseconds
+4.Factors of 10058 are [
+    47,
+    214,
+] 
+Parallel Rasterization phase of factoring 10058 was completed in (nanoseconds): 1.333706ms 
+Factorization of 10058 was completed in (nanoseconds): 1.398165ms 
+Factorization of 10059 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 616412156,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10059 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 616488889,
+} nanoseconds
+4.Factors of 10059 are [
+    10059,
+    1,
+] 
+Factor point located : 3353 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 616578632,
+} nanoseconds
+4.Factors of 10059 are [
+    3353,
+    3,
+] 
+Factor point located : 1437 , 7 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 616665614,
+} nanoseconds
+4.Factors of 10059 are [
+    1437,
+    7,
+] 
+Factor point located : 479 , 21 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 616768510,
+} nanoseconds
+4.Factors of 10059 are [
+    479,
+    21,
+] 
+Factor point located : 3 , 3353 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 616674441,
+} nanoseconds
+4.Factors of 10059 are [
+    3,
+    3353,
+] 
+Factor point located : 7 , 1437 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 617069387,
+} nanoseconds
+4.Factors of 10059 are [
+    7,
+    1437,
+] 
+Factor point located : 21 , 479 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 617208303,
+} nanoseconds
+4.Factors of 10059 are [
+    21,
+    479,
+] 
+Parallel Rasterization phase of factoring 10059 was completed in (nanoseconds): 1.229106ms 
+Factorization of 10059 was completed in (nanoseconds): 1.290752ms 
+Factorization of 10060 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 617716927,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10060 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 617802492,
+} nanoseconds
+4.Factors of 10060 are [
+    10060,
+    1,
+] 
+Factor point located : 5030 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 617899581,
+} nanoseconds
+4.Factors of 10060 are [
+    5030,
+    2,
+] 
+Factor point located : 2515 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 617991734,
+} nanoseconds
+4.Factors of 10060 are [
+    2515,
+    4,
+] 
+Factor point located : 2012 , 5 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 618084194,
+} nanoseconds
+4.Factors of 10060 are [
+    2012,
+    5,
+] 
+Factor point located : 1006 , 10 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 618176707,
+} nanoseconds
+4.Factors of 10060 are [
+    1006,
+    10,
+] 
+Factor point located : 503 , 20 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 618271398,
+} nanoseconds
+4.Factors of 10060 are [
+    503,
+    20,
+] 
+Factor point located : 2 , 5030 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 617809739,
+} nanoseconds
+4.Factors of 10060 are [
+    2,
+    5030,
+] 
+Factor point located : 4 , 2515 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 617810773,
+} nanoseconds
+4.Factors of 10060 are [
+    4,
+    2515,
+] 
+Factor point located : 5 , 2012 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 618514285,
+} nanoseconds
+4.Factors of 10060 are [
+    5,
+    2012,
+] 
+Factor point located : 20 , 503 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 618777747,
+} nanoseconds
+4.Factors of 10060 are [
+    20,
+    503,
+] 
+Factor point located : 10 , 1006 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 618972755,
+} nanoseconds
+4.Factors of 10060 are [
+    10,
+    1006,
+] 
+Parallel Rasterization phase of factoring 10060 was completed in (nanoseconds): 1.588159ms 
+Factorization of 10060 was completed in (nanoseconds): 1.668698ms 
+Factorization of 10061 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 619399139,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10061 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 619475981,
+} nanoseconds
+4.Factors of 10061 are [
+    10061,
+    1,
+] 
+Parallel Rasterization phase of factoring 10061 was completed in (nanoseconds): 948.086µs 
+Factorization of 10061 was completed in (nanoseconds): 1.013465ms 
+Factorization of 10062 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 620426933,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10062 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 620529599,
+} nanoseconds
+4.Factors of 10062 are [
+    10062,
+    1,
+] 
+Factor point located : 5031 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 620635414,
+} nanoseconds
+4.Factors of 10062 are [
+    5031,
+    2,
+] 
+Factor point located : 3354 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 620738062,
+} nanoseconds
+4.Factors of 10062 are [
+    3354,
+    3,
+] 
+Factor point located : 1677 , 6 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 620846139,
+} nanoseconds
+4.Factors of 10062 are [
+    1677,
+    6,
+] 
+Factor point located : 1118 , 9 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 620938552,
+} nanoseconds
+4.Factors of 10062 are [
+    1118,
+    9,
+] 
+Factor point located : 774 , 13 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 621031673,
+} nanoseconds
+4.Factors of 10062 are [
+    774,
+    13,
+] 
+Factor point located : 559 , 18 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 621125453,
+} nanoseconds
+4.Factors of 10062 are [
+    559,
+    18,
+] 
+Factor point located : 387 , 26 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 621219659,
+} nanoseconds
+4.Factors of 10062 are [
+    387,
+    26,
+] 
+Factor point located : 258 , 39 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 621314253,
+} nanoseconds
+4.Factors of 10062 are [
+    258,
+    39,
+] 
+Factor point located : 234 , 43 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 621407482,
+} nanoseconds
+4.Factors of 10062 are [
+    234,
+    43,
+] 
+Factor point located : 129 , 78 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 621507020,
+} nanoseconds
+4.Factors of 10062 are [
+    129,
+    78,
+] 
+Factor point located : 117 , 86 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 621600937,
+} nanoseconds
+4.Factors of 10062 are [
+    117,
+    86,
+] 
+Factor point located : 86 , 117 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 621699589,
+} nanoseconds
+4.Factors of 10062 are [
+    86,
+    117,
+] 
+Factor point located : 78 , 129 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 621798390,
+} nanoseconds
+4.Factors of 10062 are [
+    78,
+    129,
+] 
+Factor point located : 43 , 234 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 621906897,
+} nanoseconds
+4.Factors of 10062 are [
+    43,
+    234,
+] 
+Factor point located : 39 , 258 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 622003323,
+} nanoseconds
+4.Factors of 10062 are [
+    39,
+    258,
+] 
+Factor point located : 3 , 3354 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 620720083,
+} nanoseconds
+4.Factors of 10062 are [
+    3,
+    3354,
+] 
+Factor point located : 6 , 1677 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 621956742,
+} nanoseconds
+4.Factors of 10062 are [
+    6,
+    1677,
+] 
+Factor point located : 2 , 5031 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 620533678,
+} nanoseconds
+4.Factors of 10062 are [
+    2,
+    5031,
+] 
+Factor point located : 26 , 387 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 622440405,
+} nanoseconds
+4.Factors of 10062 are [
+    26,
+    387,
+] 
+Factor point located : 18 , 559 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 622555914,
+} nanoseconds
+4.Factors of 10062 are [
+    18,
+    559,
+] 
+Factor point located : 13 , 774 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 622689154,
+} nanoseconds
+4.Factors of 10062 are [
+    13,
+    774,
+] 
+Factor point located : 9 , 1118 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 622882126,
+} nanoseconds
+4.Factors of 10062 are [
+    9,
+    1118,
+] 
+Parallel Rasterization phase of factoring 10062 was completed in (nanoseconds): 2.752485ms 
+Factorization of 10062 was completed in (nanoseconds): 2.818693ms 
+Factorization of 10063 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 623258791,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10063 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 623332435,
+} nanoseconds
+4.Factors of 10063 are [
+    10063,
+    1,
+] 
+Factor point located : 347 , 29 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 623428691,
+} nanoseconds
+4.Factors of 10063 are [
+    347,
+    29,
+] 
+Factor point located : 29 , 347 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 623592218,
+} nanoseconds
+4.Factors of 10063 are [
+    29,
+    347,
+] 
+Parallel Rasterization phase of factoring 10063 was completed in (nanoseconds): 868.643µs 
+Factorization of 10063 was completed in (nanoseconds): 930.594µs 
+Factorization of 10064 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 624203704,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10064 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 624285925,
+} nanoseconds
+4.Factors of 10064 are [
+    10064,
+    1,
+] 
+Factor point located : 5032 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 624391925,
+} nanoseconds
+4.Factors of 10064 are [
+    5032,
+    2,
+] 
+Factor point located : 2516 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 624493811,
+} nanoseconds
+4.Factors of 10064 are [
+    2516,
+    4,
+] 
+Factor point located : 1258 , 8 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 624596585,
+} nanoseconds
+4.Factors of 10064 are [
+    1258,
+    8,
+] 
+Factor point located : 629 , 16 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 624699856,
+} nanoseconds
+4.Factors of 10064 are [
+    629,
+    16,
+] 
+Factor point located : 592 , 17 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 624810446,
+} nanoseconds
+4.Factors of 10064 are [
+    592,
+    17,
+] 
+Factor point located : 296 , 34 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 624906742,
+} nanoseconds
+4.Factors of 10064 are [
+    296,
+    34,
+] 
+Factor point located : 272 , 37 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 625000266,
+} nanoseconds
+4.Factors of 10064 are [
+    272,
+    37,
+] 
+Factor point located : 148 , 68 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 625098581,
+} nanoseconds
+4.Factors of 10064 are [
+    148,
+    68,
+] 
+Factor point located : 136 , 74 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 625192354,
+} nanoseconds
+4.Factors of 10064 are [
+    136,
+    74,
+] 
+Factor point located : 4 , 2516 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 624301857,
+} nanoseconds
+4.Factors of 10064 are [
+    4,
+    2516,
+] 
+Factor point located : 2 , 5032 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 624289227,
+} nanoseconds
+4.Factors of 10064 are [
+    2,
+    5032,
+] 
+Factor point located : 8 , 1258 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 625223372,
+} nanoseconds
+4.Factors of 10064 are [
+    8,
+    1258,
+] 
+Factor point located : 74 , 136 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 625616811,
+} nanoseconds
+4.Factors of 10064 are [
+    74,
+    136,
+] 
+Factor point located : 68 , 148 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 625714401,
+} nanoseconds
+4.Factors of 10064 are [
+    68,
+    148,
+] 
+Factor point located : 37 , 272 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 625834550,
+} nanoseconds
+4.Factors of 10064 are [
+    37,
+    272,
+] 
+Factor point located : 34 , 296 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 625930366,
+} nanoseconds
+4.Factors of 10064 are [
+    34,
+    296,
+] 
+Factor point located : 17 , 592 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 626073928,
+} nanoseconds
+4.Factors of 10064 are [
+    17,
+    592,
+] 
+Factor point located : 16 , 629 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 626104693,
+} nanoseconds
+4.Factors of 10064 are [
+    16,
+    629,
+] 
+Parallel Rasterization phase of factoring 10064 was completed in (nanoseconds): 2.235552ms 
+Factorization of 10064 was completed in (nanoseconds): 2.300595ms 
+Factorization of 10065 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 626520561,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10065 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 626599487,
+} nanoseconds
+4.Factors of 10065 are [
+    10065,
+    1,
+] 
+Factor point located : 3355 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 626695122,
+} nanoseconds
+4.Factors of 10065 are [
+    3355,
+    3,
+] 
+Factor point located : 2013 , 5 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 626798004,
+} nanoseconds
+4.Factors of 10065 are [
+    2013,
+    5,
+] 
+Factor point located : 915 , 11 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 626901511,
+} nanoseconds
+4.Factors of 10065 are [
+    915,
+    11,
+] 
+Factor point located : 671 , 15 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 627004116,
+} nanoseconds
+4.Factors of 10065 are [
+    671,
+    15,
+] 
+Factor point located : 305 , 33 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 627109900,
+} nanoseconds
+4.Factors of 10065 are [
+    305,
+    33,
+] 
+Factor point located : 183 , 55 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 627217092,
+} nanoseconds
+4.Factors of 10065 are [
+    183,
+    55,
+] 
+Factor point located : 165 , 61 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 627320438,
+} nanoseconds
+4.Factors of 10065 are [
+    165,
+    61,
+] 
+Factor point located : 3 , 3355 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 627393538,
+} nanoseconds
+4.Factors of 10065 are [
+    3,
+    3355,
+] 
+Factor point located : 61 , 165 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 627597608,
+} nanoseconds
+4.Factors of 10065 are [
+    61,
+    165,
+] 
+Factor point located : 55 , 183 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 627706169,
+} nanoseconds
+4.Factors of 10065 are [
+    55,
+    183,
+] 
+Factor point located : 33 , 305 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 627846150,
+} nanoseconds
+4.Factors of 10065 are [
+    33,
+    305,
+] 
+Factor point located : 15 , 671 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 627854139,
+} nanoseconds
+4.Factors of 10065 are [
+    15,
+    671,
+] 
+Factor point located : 11 , 915 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 628111971,
+} nanoseconds
+4.Factors of 10065 are [
+    11,
+    915,
+] 
+Factor point located : 5 , 2013 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 628165898,
+} nanoseconds
+4.Factors of 10065 are [
+    5,
+    2013,
+] 
+Parallel Rasterization phase of factoring 10065 was completed in (nanoseconds): 1.900305ms 
+Factorization of 10065 was completed in (nanoseconds): 1.961298ms 
+Factorization of 10066 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 628494593,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10066 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 628570142,
+} nanoseconds
+4.Factors of 10066 are [
+    10066,
+    1,
+] 
+Factor point located : 5033 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 628667031,
+} nanoseconds
+4.Factors of 10066 are [
+    5033,
+    2,
+] 
+Factor point located : 1438 , 7 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 628761046,
+} nanoseconds
+4.Factors of 10066 are [
+    1438,
+    7,
+] 
+Factor point located : 719 , 14 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 628855600,
+} nanoseconds
+4.Factors of 10066 are [
+    719,
+    14,
+] 
+Factor point located : 2 , 5033 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 628577160,
+} nanoseconds
+4.Factors of 10066 are [
+    2,
+    5033,
+] 
+Factor point located : 7 , 1438 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 628622483,
+} nanoseconds
+4.Factors of 10066 are [
+    7,
+    1438,
+] 
+Factor point located : 14 , 719 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 629301343,
+} nanoseconds
+4.Factors of 10066 are [
+    14,
+    719,
+] 
+Parallel Rasterization phase of factoring 10066 was completed in (nanoseconds): 1.33487ms 
+Factorization of 10066 was completed in (nanoseconds): 1.394667ms 
+Factorization of 10067 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 629901933,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10067 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 629976711,
+} nanoseconds
+4.Factors of 10067 are [
+    10067,
+    1,
+] 
+Parallel Rasterization phase of factoring 10067 was completed in (nanoseconds): 895.128µs 
+Factorization of 10067 was completed in (nanoseconds): 957.481µs 
+Factorization of 10068 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 630873745,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10068 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 630958478,
+} nanoseconds
+4.Factors of 10068 are [
+    10068,
+    1,
+] 
+Factor point located : 5034 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 631064234,
+} nanoseconds
+4.Factors of 10068 are [
+    5034,
+    2,
+] 
+Factor point located : 3356 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 631166598,
+} nanoseconds
+4.Factors of 10068 are [
+    3356,
+    3,
+] 
+Factor point located : 2517 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 631268071,
+} nanoseconds
+4.Factors of 10068 are [
+    2517,
+    4,
+] 
+Factor point located : 1678 , 6 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 631369164,
+} nanoseconds
+4.Factors of 10068 are [
+    1678,
+    6,
+] 
+Factor point located : 839 , 12 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 631471675,
+} nanoseconds
+4.Factors of 10068 are [
+    839,
+    12,
+] 
+Factor point located : 2 , 5034 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 630966229,
+} nanoseconds
+4.Factors of 10068 are [
+    2,
+    5034,
+] 
+Factor point located : 4 , 2517 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 630969472,
+} nanoseconds
+4.Factors of 10068 are [
+    4,
+    2517,
+] 
+Factor point located : 6 , 1678 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 631070813,
+} nanoseconds
+4.Factors of 10068 are [
+    6,
+    1678,
+] 
+Factor point located : 3 , 3356 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 631999004,
+} nanoseconds
+4.Factors of 10068 are [
+    3,
+    3356,
+] 
+Factor point located : 12 , 839 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 632216602,
+} nanoseconds
+4.Factors of 10068 are [
+    12,
+    839,
+] 
+Parallel Rasterization phase of factoring 10068 was completed in (nanoseconds): 1.68548ms 
+Factorization of 10068 was completed in (nanoseconds): 1.750012ms 
+Factorization of 10069 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 632636635,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10069 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 632713063,
+} nanoseconds
+4.Factors of 10069 are [
+    10069,
+    1,
+] 
+Parallel Rasterization phase of factoring 10069 was completed in (nanoseconds): 881.112µs 
+Factorization of 10069 was completed in (nanoseconds): 941.835µs 
+Factorization of 10070 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 633591326,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10070 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 633669825,
+} nanoseconds
+4.Factors of 10070 are [
+    10070,
+    1,
+] 
+Factor point located : 5035 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 633766273,
+} nanoseconds
+4.Factors of 10070 are [
+    5035,
+    2,
+] 
+Factor point located : 2014 , 5 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 633874863,
+} nanoseconds
+4.Factors of 10070 are [
+    2014,
+    5,
+] 
+Factor point located : 1007 , 10 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 633978838,
+} nanoseconds
+4.Factors of 10070 are [
+    1007,
+    10,
+] 
+Factor point located : 530 , 19 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 634082488,
+} nanoseconds
+4.Factors of 10070 are [
+    530,
+    19,
+] 
+Factor point located : 265 , 38 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 634206655,
+} nanoseconds
+4.Factors of 10070 are [
+    265,
+    38,
+] 
+Factor point located : 190 , 53 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 634312706,
+} nanoseconds
+4.Factors of 10070 are [
+    190,
+    53,
+] 
+Factor point located : 106 , 95 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 634424376,
+} nanoseconds
+4.Factors of 10070 are [
+    106,
+    95,
+] 
+Factor point located : 95 , 106 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 634528564,
+} nanoseconds
+4.Factors of 10070 are [
+    95,
+    106,
+] 
+Factor point located : 53 , 190 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 634647552,
+} nanoseconds
+4.Factors of 10070 are [
+    53,
+    190,
+] 
+Factor point located : 38 , 265 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 634759558,
+} nanoseconds
+4.Factors of 10070 are [
+    38,
+    265,
+] 
+Factor point located : 2 , 5035 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 633675818,
+} nanoseconds
+4.Factors of 10070 are [
+    2,
+    5035,
+] 
+Factor point located : 5 , 2014 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 634729782,
+} nanoseconds
+4.Factors of 10070 are [
+    5,
+    2014,
+] 
+Factor point located : 19 , 530 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 635121544,
+} nanoseconds
+4.Factors of 10070 are [
+    19,
+    530,
+] 
+Factor point located : 10 , 1007 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 635271819,
+} nanoseconds
+4.Factors of 10070 are [
+    10,
+    1007,
+] 
+Parallel Rasterization phase of factoring 10070 was completed in (nanoseconds): 1.93856ms 
+Factorization of 10070 was completed in (nanoseconds): 2.001328ms 
+Factorization of 10071 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 635605664,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10071 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 635680382,
+} nanoseconds
+4.Factors of 10071 are [
+    10071,
+    1,
+] 
+Factor point located : 3357 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 635770979,
+} nanoseconds
+4.Factors of 10071 are [
+    3357,
+    3,
+] 
+Factor point located : 1119 , 9 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 635861245,
+} nanoseconds
+4.Factors of 10071 are [
+    1119,
+    9,
+] 
+Factor point located : 373 , 27 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 635958161,
+} nanoseconds
+4.Factors of 10071 are [
+    373,
+    27,
+] 
+Factor point located : 3 , 3357 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 635849554,
+} nanoseconds
+4.Factors of 10071 are [
+    3,
+    3357,
+] 
+Factor point located : 27 , 373 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 636223625,
+} nanoseconds
+4.Factors of 10071 are [
+    27,
+    373,
+] 
+Factor point located : 9 , 1119 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 636451223,
+} nanoseconds
+4.Factors of 10071 are [
+    9,
+    1119,
+] 
+Parallel Rasterization phase of factoring 10071 was completed in (nanoseconds): 2.112535ms 
+Factorization of 10071 was completed in (nanoseconds): 2.220424ms 
+Factorization of 10072 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 637841036,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10072 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 637940949,
+} nanoseconds
+4.Factors of 10072 are [
+    10072,
+    1,
+] 
+Factor point located : 5036 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 638053015,
+} nanoseconds
+4.Factors of 10072 are [
+    5036,
+    2,
+] 
+Factor point located : 2518 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 638141786,
+} nanoseconds
+4.Factors of 10072 are [
+    2518,
+    4,
+] 
+Factor point located : 1259 , 8 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 638229443,
+} nanoseconds
+4.Factors of 10072 are [
+    1259,
+    8,
+] 
+Factor point located : 2 , 5036 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 637946253,
+} nanoseconds
+4.Factors of 10072 are [
+    2,
+    5036,
+] 
+Factor point located : 4 , 2518 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 637950135,
+} nanoseconds
+4.Factors of 10072 are [
+    4,
+    2518,
+] 
+Factor point located : 8 , 1259 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 638283539,
+} nanoseconds
+4.Factors of 10072 are [
+    8,
+    1259,
+] 
+Parallel Rasterization phase of factoring 10072 was completed in (nanoseconds): 2.041728ms 
+Factorization of 10072 was completed in (nanoseconds): 2.108776ms 
+Factorization of 10073 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 639963184,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10073 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 640039467,
+} nanoseconds
+4.Factors of 10073 are [
+    10073,
+    1,
+] 
+Factor point located : 1439 , 7 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 640138191,
+} nanoseconds
+4.Factors of 10073 are [
+    1439,
+    7,
+] 
+Factor point located : 7 , 1439 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 640285836,
+} nanoseconds
+4.Factors of 10073 are [
+    7,
+    1439,
+] 
+Parallel Rasterization phase of factoring 10073 was completed in (nanoseconds): 988.457µs 
+Factorization of 10073 was completed in (nanoseconds): 1.049736ms 
+Factorization of 10074 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 641026204,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10074 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 641101374,
+} nanoseconds
+4.Factors of 10074 are [
+    10074,
+    1,
+] 
+Factor point located : 5037 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 641198693,
+} nanoseconds
+4.Factors of 10074 are [
+    5037,
+    2,
+] 
+Factor point located : 3358 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 641291880,
+} nanoseconds
+4.Factors of 10074 are [
+    3358,
+    3,
+] 
+Factor point located : 1679 , 6 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 641385544,
+} nanoseconds
+4.Factors of 10074 are [
+    1679,
+    6,
+] 
+Factor point located : 438 , 23 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 641481996,
+} nanoseconds
+4.Factors of 10074 are [
+    438,
+    23,
+] 
+Factor point located : 219 , 46 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 641580163,
+} nanoseconds
+4.Factors of 10074 are [
+    219,
+    46,
+] 
+Factor point located : 146 , 69 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 641677205,
+} nanoseconds
+4.Factors of 10074 are [
+    146,
+    69,
+] 
+Factor point located : 138 , 73 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 641771562,
+} nanoseconds
+4.Factors of 10074 are [
+    138,
+    73,
+] 
+Factor point located : 73 , 138 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 641880930,
+} nanoseconds
+4.Factors of 10074 are [
+    73,
+    138,
+] 
+Factor point located : 69 , 146 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 641975426,
+} nanoseconds
+4.Factors of 10074 are [
+    69,
+    146,
+] 
+Factor point located : 3 , 3358 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 641282124,
+} nanoseconds
+4.Factors of 10074 are [
+    3,
+    3358,
+] 
+Factor point located : 6 , 1679 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 641931460,
+} nanoseconds
+4.Factors of 10074 are [
+    6,
+    1679,
+] 
+Factor point located : 2 , 5037 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 641107536,
+} nanoseconds
+4.Factors of 10074 are [
+    2,
+    5037,
+] 
+Factor point located : 46 , 219 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 642404695,
+} nanoseconds
+4.Factors of 10074 are [
+    46,
+    219,
+] 
+Factor point located : 23 , 438 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 642530670,
+} nanoseconds
+4.Factors of 10074 are [
+    23,
+    438,
+] 
+Parallel Rasterization phase of factoring 10074 was completed in (nanoseconds): 2.00778ms 
+Factorization of 10074 was completed in (nanoseconds): 2.068533ms 
+Factorization of 10075 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 643107382,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10075 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 643182256,
+} nanoseconds
+4.Factors of 10075 are [
+    10075,
+    1,
+] 
+Factor point located : 2015 , 5 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 643306755,
+} nanoseconds
+4.Factors of 10075 are [
+    2015,
+    5,
+] 
+Factor point located : 775 , 13 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 643402909,
+} nanoseconds
+4.Factors of 10075 are [
+    775,
+    13,
+] 
+Factor point located : 403 , 25 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 643510386,
+} nanoseconds
+4.Factors of 10075 are [
+    403,
+    25,
+] 
+Factor point located : 325 , 31 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 643608607,
+} nanoseconds
+4.Factors of 10075 are [
+    325,
+    31,
+] 
+Factor point located : 155 , 65 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 643713389,
+} nanoseconds
+4.Factors of 10075 are [
+    155,
+    65,
+] 
+Factor point located : 65 , 155 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 643836083,
+} nanoseconds
+4.Factors of 10075 are [
+    65,
+    155,
+] 
+Factor point located : 5 , 2015 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 643914811,
+} nanoseconds
+4.Factors of 10075 are [
+    5,
+    2015,
+] 
+Factor point located : 31 , 325 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 644089281,
+} nanoseconds
+4.Factors of 10075 are [
+    31,
+    325,
+] 
+Factor point located : 25 , 403 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 644206478,
+} nanoseconds
+4.Factors of 10075 are [
+    25,
+    403,
+] 
+Factor point located : 13 , 775 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 644351283,
+} nanoseconds
+4.Factors of 10075 are [
+    13,
+    775,
+] 
+Parallel Rasterization phase of factoring 10075 was completed in (nanoseconds): 1.494247ms 
+Factorization of 10075 was completed in (nanoseconds): 1.5563ms 
+Factorization of 10076 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 644678117,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10076 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 644762392,
+} nanoseconds
+4.Factors of 10076 are [
+    10076,
+    1,
+] 
+Factor point located : 5038 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 644874858,
+} nanoseconds
+4.Factors of 10076 are [
+    5038,
+    2,
+] 
+Factor point located : 2519 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 644967738,
+} nanoseconds
+4.Factors of 10076 are [
+    2519,
+    4,
+] 
+Factor point located : 916 , 11 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 645061565,
+} nanoseconds
+4.Factors of 10076 are [
+    916,
+    11,
+] 
+Factor point located : 458 , 22 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 645156945,
+} nanoseconds
+4.Factors of 10076 are [
+    458,
+    22,
+] 
+Factor point located : 229 , 44 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 645254317,
+} nanoseconds
+4.Factors of 10076 are [
+    229,
+    44,
+] 
+Factor point located : 2 , 5038 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 644771872,
+} nanoseconds
+4.Factors of 10076 are [
+    2,
+    5038,
+] 
+Factor point located : 4 , 2519 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 644773991,
+} nanoseconds
+4.Factors of 10076 are [
+    4,
+    2519,
+] 
+Factor point located : 44 , 229 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 645612081,
+} nanoseconds
+4.Factors of 10076 are [
+    44,
+    229,
+] 
+Factor point located : 22 , 458 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 645740972,
+} nanoseconds
+4.Factors of 10076 are [
+    22,
+    458,
+] 
+Factor point located : 11 , 916 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 645887645,
+} nanoseconds
+4.Factors of 10076 are [
+    11,
+    916,
+] 
+Parallel Rasterization phase of factoring 10076 was completed in (nanoseconds): 1.671627ms 
+Factorization of 10076 was completed in (nanoseconds): 1.735902ms 
+Factorization of 10077 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 646426865,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10077 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 646501391,
+} nanoseconds
+4.Factors of 10077 are [
+    10077,
+    1,
+] 
+Factor point located : 3359 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 646616944,
+} nanoseconds
+4.Factors of 10077 are [
+    3359,
+    3,
+] 
+Factor point located : 3 , 3359 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 646902035,
+} nanoseconds
+4.Factors of 10077 are [
+    3,
+    3359,
+] 
+Parallel Rasterization phase of factoring 10077 was completed in (nanoseconds): 963.499µs 
+Factorization of 10077 was completed in (nanoseconds): 1.025406ms 
+Factorization of 10078 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 647466405,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10078 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 647565441,
+} nanoseconds
+4.Factors of 10078 are [
+    10078,
+    1,
+] 
+Factor point located : 5039 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 647671550,
+} nanoseconds
+4.Factors of 10078 are [
+    5039,
+    2,
+] 
+Factor point located : 2 , 5039 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 647572584,
+} nanoseconds
+4.Factors of 10078 are [
+    2,
+    5039,
+] 
+Parallel Rasterization phase of factoring 10078 was completed in (nanoseconds): 920.276µs 
+Factorization of 10078 was completed in (nanoseconds): 1.00236ms 
+Factorization of 10079 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 648481794,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10079 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 648560219,
+} nanoseconds
+4.Factors of 10079 are [
+    10079,
+    1,
+] 
+Parallel Rasterization phase of factoring 10079 was completed in (nanoseconds): 969.465µs 
+Factorization of 10079 was completed in (nanoseconds): 1.032278ms 
+Factorization of 10080 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 649528011,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10080 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 649611132,
+} nanoseconds
+4.Factors of 10080 are [
+    10080,
+    1,
+] 
+Factor point located : 5040 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 649717309,
+} nanoseconds
+4.Factors of 10080 are [
+    5040,
+    2,
+] 
+Factor point located : 3360 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 649819973,
+} nanoseconds
+4.Factors of 10080 are [
+    3360,
+    3,
+] 
+Factor point located : 2520 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 649924659,
+} nanoseconds
+4.Factors of 10080 are [
+    2520,
+    4,
+] 
+Factor point located : 2016 , 5 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 650017856,
+} nanoseconds
+4.Factors of 10080 are [
+    2016,
+    5,
+] 
+Factor point located : 1680 , 6 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 650111785,
+} nanoseconds
+4.Factors of 10080 are [
+    1680,
+    6,
+] 
+Factor point located : 1440 , 7 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 650204870,
+} nanoseconds
+4.Factors of 10080 are [
+    1440,
+    7,
+] 
+Factor point located : 1260 , 8 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 650297746,
+} nanoseconds
+4.Factors of 10080 are [
+    1260,
+    8,
+] 
+Factor point located : 1120 , 9 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 650390406,
+} nanoseconds
+4.Factors of 10080 are [
+    1120,
+    9,
+] 
+Factor point located : 1008 , 10 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 650483722,
+} nanoseconds
+4.Factors of 10080 are [
+    1008,
+    10,
+] 
+Factor point located : 840 , 12 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 650577412,
+} nanoseconds
+4.Factors of 10080 are [
+    840,
+    12,
+] 
+Factor point located : 720 , 14 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 650670864,
+} nanoseconds
+4.Factors of 10080 are [
+    720,
+    14,
+] 
+Factor point located : 672 , 15 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 650764158,
+} nanoseconds
+4.Factors of 10080 are [
+    672,
+    15,
+] 
+Factor point located : 630 , 16 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 650857345,
+} nanoseconds
+4.Factors of 10080 are [
+    630,
+    16,
+] 
+Factor point located : 560 , 18 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 650973663,
+} nanoseconds
+4.Factors of 10080 are [
+    560,
+    18,
+] 
+Factor point located : 504 , 20 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 651067662,
+} nanoseconds
+4.Factors of 10080 are [
+    504,
+    20,
+] 
+Factor point located : 480 , 21 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 651160964,
+} nanoseconds
+4.Factors of 10080 are [
+    480,
+    21,
+] 
+Factor point located : 420 , 24 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 651253876,
+} nanoseconds
+4.Factors of 10080 are [
+    420,
+    24,
+] 
+Factor point located : 360 , 28 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 651346765,
+} nanoseconds
+4.Factors of 10080 are [
+    360,
+    28,
+] 
+Factor point located : 336 , 30 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 651440092,
+} nanoseconds
+4.Factors of 10080 are [
+    336,
+    30,
+] 
+Factor point located : 315 , 32 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 651548820,
+} nanoseconds
+4.Factors of 10080 are [
+    315,
+    32,
+] 
+Factor point located : 288 , 35 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 651642593,
+} nanoseconds
+4.Factors of 10080 are [
+    288,
+    35,
+] 
+Factor point located : 280 , 36 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 651735831,
+} nanoseconds
+4.Factors of 10080 are [
+    280,
+    36,
+] 
+Factor point located : 252 , 40 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 651831596,
+} nanoseconds
+4.Factors of 10080 are [
+    252,
+    40,
+] 
+Factor point located : 240 , 42 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 651926960,
+} nanoseconds
+4.Factors of 10080 are [
+    240,
+    42,
+] 
+Factor point located : 224 , 45 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 652020455,
+} nanoseconds
+4.Factors of 10080 are [
+    224,
+    45,
+] 
+Factor point located : 210 , 48 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 652113964,
+} nanoseconds
+4.Factors of 10080 are [
+    210,
+    48,
+] 
+Factor point located : 180 , 56 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 652208695,
+} nanoseconds
+4.Factors of 10080 are [
+    180,
+    56,
+] 
+Factor point located : 168 , 60 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 652301958,
+} nanoseconds
+4.Factors of 10080 are [
+    168,
+    60,
+] 
+Factor point located : 160 , 63 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 652395031,
+} nanoseconds
+4.Factors of 10080 are [
+    160,
+    63,
+] 
+Factor point located : 144 , 70 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 652488755,
+} nanoseconds
+4.Factors of 10080 are [
+    144,
+    70,
+] 
+Factor point located : 140 , 72 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 652582002,
+} nanoseconds
+4.Factors of 10080 are [
+    140,
+    72,
+] 
+Factor point located : 126 , 80 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 652676309,
+} nanoseconds
+4.Factors of 10080 are [
+    126,
+    80,
+] 
+Factor point located : 120 , 84 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 652770026,
+} nanoseconds
+4.Factors of 10080 are [
+    120,
+    84,
+] 
+Factor point located : 112 , 90 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 652864002,
+} nanoseconds
+4.Factors of 10080 are [
+    112,
+    90,
+] 
+Factor point located : 105 , 96 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 652958491,
+} nanoseconds
+4.Factors of 10080 are [
+    105,
+    96,
+] 
+Factor point located : 96 , 105 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 653053063,
+} nanoseconds
+4.Factors of 10080 are [
+    96,
+    105,
+] 
+Factor point located : 90 , 112 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 653147120,
+} nanoseconds
+4.Factors of 10080 are [
+    90,
+    112,
+] 
+Factor point located : 84 , 120 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 653241822,
+} nanoseconds
+4.Factors of 10080 are [
+    84,
+    120,
+] 
+Factor point located : 80 , 126 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 653335103,
+} nanoseconds
+4.Factors of 10080 are [
+    80,
+    126,
+] 
+Factor point located : 72 , 140 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 653430083,
+} nanoseconds
+4.Factors of 10080 are [
+    72,
+    140,
+] 
+Factor point located : 70 , 144 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 653538826,
+} nanoseconds
+4.Factors of 10080 are [
+    70,
+    144,
+] 
+Factor point located : 63 , 160 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 653634849,
+} nanoseconds
+4.Factors of 10080 are [
+    63,
+    160,
+] 
+Factor point located : 60 , 168 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 653729167,
+} nanoseconds
+4.Factors of 10080 are [
+    60,
+    168,
+] 
+Factor point located : 56 , 180 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 653824262,
+} nanoseconds
+4.Factors of 10080 are [
+    56,
+    180,
+] 
+Factor point located : 48 , 210 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 653922615,
+} nanoseconds
+4.Factors of 10080 are [
+    48,
+    210,
+] 
+Factor point located : 45 , 224 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 654018157,
+} nanoseconds
+4.Factors of 10080 are [
+    45,
+    224,
+] 
+Factor point located : 42 , 240 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 654113697,
+} nanoseconds
+4.Factors of 10080 are [
+    42,
+    240,
+] 
+Factor point located : 40 , 252 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 654208459,
+} nanoseconds
+4.Factors of 10080 are [
+    40,
+    252,
+] 
+Factor point located : 36 , 280 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 654307086,
+} nanoseconds
+4.Factors of 10080 are [
+    36,
+    280,
+] 
+Factor point located : 35 , 288 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 654400462,
+} nanoseconds
+4.Factors of 10080 are [
+    35,
+    288,
+] 
+Factor point located : 32 , 315 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 654500389,
+} nanoseconds
+4.Factors of 10080 are [
+    32,
+    315,
+] 
+Factor point located : 30 , 336 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 654598192,
+} nanoseconds
+4.Factors of 10080 are [
+    30,
+    336,
+] 
+Factor point located : 28 , 360 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 654694418,
+} nanoseconds
+4.Factors of 10080 are [
+    28,
+    360,
+] 
+Factor point located : 4 , 2520 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 649624891,
+} nanoseconds
+4.Factors of 10080 are [
+    4,
+    2520,
+] 
+Factor point located : 8 , 1260 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 650198644,
+} nanoseconds
+4.Factors of 10080 are [
+    8,
+    1260,
+] 
+Factor point located : 2 , 5040 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 649620117,
+} nanoseconds
+4.Factors of 10080 are [
+    2,
+    5040,
+] 
+Factor point located : 7 , 1440 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 655032542,
+} nanoseconds
+4.Factors of 10080 are [
+    7,
+    1440,
+] 
+Factor point located : 24 , 420 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 654797362,
+} nanoseconds
+Factor point located : 6 , 1680 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 655262935,
+} nanoseconds
+4.Factors of 10080 are [
+    6,
+    1680,
+] 
+Factor point located : 3 , 3360 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 655058038,
+} nanoseconds
+4.Factors of 10080 are [
+    3,
+    3360,
+] 
+4.Factors of 10080 are [
+    24,
+    420,
+] 
+Factor point located : 21 , 480 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 655546551,
+} nanoseconds
+4.Factors of 10080 are [
+    21,
+    480,
+] 
+Factor point located : 20 , 504 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 655642143,
+} nanoseconds
+4.Factors of 10080 are [
+    20,
+    504,
+] 
+Factor point located : 5 , 2016 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 655433202,
+} nanoseconds
+4.Factors of 10080 are [
+    5,
+    2016,
+] 
+Factor point located : 18 , 560 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 655745640,
+} nanoseconds
+4.Factors of 10080 are [
+    18,
+    560,
+] 
+Factor point located : 10 , 1008 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 655905388,
+} nanoseconds
+4.Factors of 10080 are [
+    10,
+    1008,
+] 
+Factor point located : 12 , 840 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 655958593,
+} nanoseconds
+4.Factors of 10080 are [
+    12,
+    840,
+] 
+Factor point located : 9 , 1120 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 656094748,
+} nanoseconds
+4.Factors of 10080 are [
+    9,
+    1120,
+] 
+Factor point located : 16 , 630 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 655719614,
+} nanoseconds
+4.Factors of 10080 are [
+    16,
+    630,
+] 
+Factor point located : 15 , 672 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 656324976,
+} nanoseconds
+4.Factors of 10080 are [
+    15,
+    672,
+] 
+Factor point located : 14 , 720 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 656286554,
+} nanoseconds
+4.Factors of 10080 are [
+    14,
+    720,
+] 
+Parallel Rasterization phase of factoring 10080 was completed in (nanoseconds): 7.081229ms 
+Factorization of 10080 was completed in (nanoseconds): 7.1464ms 
+Factorization of 10081 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 656687296,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10081 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 656762231,
+} nanoseconds
+4.Factors of 10081 are [
+    10081,
+    1,
+] 
+Factor point located : 593 , 17 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 656861658,
+} nanoseconds
+4.Factors of 10081 are [
+    593,
+    17,
+] 
+Factor point located : 17 , 593 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 657088088,
+} nanoseconds
+4.Factors of 10081 are [
+    17,
+    593,
+] 
+Parallel Rasterization phase of factoring 10081 was completed in (nanoseconds): 928.925µs 
+Factorization of 10081 was completed in (nanoseconds): 989.109µs 
+Factorization of 10082 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 657689674,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10082 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 657762599,
+} nanoseconds
+4.Factors of 10082 are [
+    10082,
+    1,
+] 
+Factor point located : 5041 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 657871887,
+} nanoseconds
+4.Factors of 10082 are [
+    5041,
+    2,
+] 
+Factor point located : 142 , 71 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 657994436,
+} nanoseconds
+4.Factors of 10082 are [
+    142,
+    71,
+] 
+Factor point located : 71 , 142 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 658114214,
+} nanoseconds
+4.Factors of 10082 are [
+    71,
+    142,
+] 
+Factor point located : 2 , 5041 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 657767514,
+} nanoseconds
+4.Factors of 10082 are [
+    2,
+    5041,
+] 
+Parallel Rasterization phase of factoring 10082 was completed in (nanoseconds): 1.272165ms 
+Factorization of 10082 was completed in (nanoseconds): 1.332406ms 
+Factorization of 10083 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 659035181,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10083 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 659109930,
+} nanoseconds
+4.Factors of 10083 are [
+    10083,
+    1,
+] 
+Factor point located : 3361 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 659200157,
+} nanoseconds
+4.Factors of 10083 are [
+    3361,
+    3,
+] 
+Factor point located : 3 , 3361 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 659289150,
+} nanoseconds
+4.Factors of 10083 are [
+    3,
+    3361,
+] 
+Parallel Rasterization phase of factoring 10083 was completed in (nanoseconds): 874.944µs 
+Factorization of 10083 was completed in (nanoseconds): 939.082µs 
+Factorization of 10084 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 659988217,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10084 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 660069615,
+} nanoseconds
+4.Factors of 10084 are [
+    10084,
+    1,
+] 
+Factor point located : 5042 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 660176421,
+} nanoseconds
+4.Factors of 10084 are [
+    5042,
+    2,
+] 
+Factor point located : 2521 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 660279013,
+} nanoseconds
+4.Factors of 10084 are [
+    2521,
+    4,
+] 
+Factor point located : 4 , 2521 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 660081406,
+} nanoseconds
+4.Factors of 10084 are [
+    4,
+    2521,
+] 
+Factor point located : 2 , 5042 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 660077770,
+} nanoseconds
+4.Factors of 10084 are [
+    2,
+    5042,
+] 
+Parallel Rasterization phase of factoring 10084 was completed in (nanoseconds): 1.176258ms 
+Factorization of 10084 was completed in (nanoseconds): 1.241075ms 
+Factorization of 10085 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 661242331,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10085 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 661318122,
+} nanoseconds
+4.Factors of 10085 are [
+    10085,
+    1,
+] 
+Factor point located : 2017 , 5 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 661414989,
+} nanoseconds
+4.Factors of 10085 are [
+    2017,
+    5,
+] 
+Factor point located : 5 , 2017 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 661613664,
+} nanoseconds
+4.Factors of 10085 are [
+    5,
+    2017,
+] 
+Parallel Rasterization phase of factoring 10085 was completed in (nanoseconds): 1.078065ms 
+Factorization of 10085 was completed in (nanoseconds): 1.137882ms 
+Factorization of 10086 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 662393137,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10086 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 662469016,
+} nanoseconds
+4.Factors of 10086 are [
+    10086,
+    1,
+] 
+Factor point located : 5043 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 662565912,
+} nanoseconds
+4.Factors of 10086 are [
+    5043,
+    2,
+] 
+Factor point located : 3362 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 662659962,
+} nanoseconds
+4.Factors of 10086 are [
+    3362,
+    3,
+] 
+Factor point located : 1681 , 6 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 662753920,
+} nanoseconds
+4.Factors of 10086 are [
+    1681,
+    6,
+] 
+Factor point located : 246 , 41 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 662861094,
+} nanoseconds
+4.Factors of 10086 are [
+    246,
+    41,
+] 
+Factor point located : 2 , 5043 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 662478920,
+} nanoseconds
+4.Factors of 10086 are [
+    2,
+    5043,
+] 
+Factor point located : 123 , 82 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 662973105,
+} nanoseconds
+4.Factors of 10086 are [
+    123,
+    82,
+] 
+Factor point located : 82 , 123 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 663203437,
+} nanoseconds
+4.Factors of 10086 are [
+    82,
+    123,
+] 
+Factor point located : 3 , 3362 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 662647466,
+} nanoseconds
+Factor point located : 6 , 1681 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 663378179,
+} nanoseconds
+4.Factors of 10086 are [
+    6,
+    1681,
+] 
+Factor point located : 41 , 246 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 663513869,
+} nanoseconds
+4.Factors of 10086 are [
+    41,
+    246,
+] 
+4.Factors of 10086 are [
+    3,
+    3362,
+] 
+Parallel Rasterization phase of factoring 10086 was completed in (nanoseconds): 1.656516ms 
+Factorization of 10086 was completed in (nanoseconds): 1.717834ms 
+Factorization of 10087 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 664123903,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10087 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 664199501,
+} nanoseconds
+4.Factors of 10087 are [
+    10087,
+    1,
+] 
+Factor point located : 1441 , 7 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 664290428,
+} nanoseconds
+4.Factors of 10087 are [
+    1441,
+    7,
+] 
+Factor point located : 917 , 11 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 664377895,
+} nanoseconds
+4.Factors of 10087 are [
+    917,
+    11,
+] 
+Factor point located : 131 , 77 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 664487780,
+} nanoseconds
+4.Factors of 10087 are [
+    131,
+    77,
+] 
+Factor point located : 77 , 131 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 664601832,
+} nanoseconds
+4.Factors of 10087 are [
+    77,
+    131,
+] 
+Factor point located : 11 , 917 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 664824844,
+} nanoseconds
+4.Factors of 10087 are [
+    11,
+    917,
+] 
+Factor point located : 7 , 1441 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 664835675,
+} nanoseconds
+4.Factors of 10087 are [
+    7,
+    1441,
+] 
+Parallel Rasterization phase of factoring 10087 was completed in (nanoseconds): 1.119117ms 
+Factorization of 10087 was completed in (nanoseconds): 1.181294ms 
+Factorization of 10088 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 665319396,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10088 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 665401388,
+} nanoseconds
+4.Factors of 10088 are [
+    10088,
+    1,
+] 
+Factor point located : 5044 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 665507567,
+} nanoseconds
+4.Factors of 10088 are [
+    5044,
+    2,
+] 
+Factor point located : 2522 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 665609043,
+} nanoseconds
+4.Factors of 10088 are [
+    2522,
+    4,
+] 
+Factor point located : 1261 , 8 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 665712239,
+} nanoseconds
+4.Factors of 10088 are [
+    1261,
+    8,
+] 
+Factor point located : 776 , 13 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 665821869,
+} nanoseconds
+4.Factors of 10088 are [
+    776,
+    13,
+] 
+Factor point located : 388 , 26 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 665927966,
+} nanoseconds
+4.Factors of 10088 are [
+    388,
+    26,
+] 
+Factor point located : 194 , 52 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 666036683,
+} nanoseconds
+4.Factors of 10088 are [
+    194,
+    52,
+] 
+Factor point located : 4 , 2522 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 665419500,
+} nanoseconds
+4.Factors of 10088 are [
+    4,
+    2522,
+] 
+Factor point located : 2 , 5044 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 665411513,
+} nanoseconds
+4.Factors of 10088 are [
+    2,
+    5044,
+] 
+Factor point located : 8 , 1261 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 665421399,
+} nanoseconds
+4.Factors of 10088 are [
+    8,
+    1261,
+] 
+Factor point located : 104 , 97 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 666512178,
+} nanoseconds
+4.Factors of 10088 are [
+    104,
+    97,
+] 
+Factor point located : 97 , 104 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 666617824,
+} nanoseconds
+4.Factors of 10088 are [
+    97,
+    104,
+] 
+Factor point located : 52 , 194 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 666740202,
+} nanoseconds
+4.Factors of 10088 are [
+    52,
+    194,
+] 
+Factor point located : 26 , 388 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 666882210,
+} nanoseconds
+4.Factors of 10088 are [
+    26,
+    388,
+] 
+Factor point located : 13 , 776 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 667023533,
+} nanoseconds
+4.Factors of 10088 are [
+    13,
+    776,
+] 
+Parallel Rasterization phase of factoring 10088 was completed in (nanoseconds): 2.10322ms 
+Factorization of 10088 was completed in (nanoseconds): 2.169291ms 
+Factorization of 10089 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 667514887,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10089 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 667605041,
+} nanoseconds
+4.Factors of 10089 are [
+    10089,
+    1,
+] 
+Factor point located : 3363 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 667711501,
+} nanoseconds
+4.Factors of 10089 are [
+    3363,
+    3,
+] 
+Factor point located : 1121 , 9 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 667815409,
+} nanoseconds
+4.Factors of 10089 are [
+    1121,
+    9,
+] 
+Factor point located : 531 , 19 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 667920075,
+} nanoseconds
+4.Factors of 10089 are [
+    531,
+    19,
+] 
+Factor point located : 177 , 57 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 668030375,
+} nanoseconds
+4.Factors of 10089 are [
+    177,
+    57,
+] 
+Factor point located : 171 , 59 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 668147938,
+} nanoseconds
+4.Factors of 10089 are [
+    171,
+    59,
+] 
+Factor point located : 3 , 3363 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 668213083,
+} nanoseconds
+4.Factors of 10089 are [
+    3,
+    3363,
+] 
+Factor point located : 59 , 171 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 668422524,
+} nanoseconds
+4.Factors of 10089 are [
+    59,
+    171,
+] 
+Factor point located : 57 , 177 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 668528009,
+} nanoseconds
+4.Factors of 10089 are [
+    57,
+    177,
+] 
+Factor point located : 19 , 531 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 668697020,
+} nanoseconds
+4.Factors of 10089 are [
+    19,
+    531,
+] 
+Factor point located : 9 , 1121 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 668795657,
+} nanoseconds
+4.Factors of 10089 are [
+    9,
+    1121,
+] 
+Parallel Rasterization phase of factoring 10089 was completed in (nanoseconds): 1.622244ms 
+Factorization of 10089 was completed in (nanoseconds): 1.691526ms 
+Factorization of 10090 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 669221153,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10090 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 669305935,
+} nanoseconds
+4.Factors of 10090 are [
+    10090,
+    1,
+] 
+Factor point located : 5045 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 669412293,
+} nanoseconds
+4.Factors of 10090 are [
+    5045,
+    2,
+] 
+Factor point located : 2018 , 5 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 669515452,
+} nanoseconds
+4.Factors of 10090 are [
+    2018,
+    5,
+] 
+Factor point located : 1009 , 10 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 669618814,
+} nanoseconds
+4.Factors of 10090 are [
+    1009,
+    10,
+] 
+Factor point located : 2 , 5045 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 669314284,
+} nanoseconds
+4.Factors of 10090 are [
+    2,
+    5045,
+] 
+Factor point located : 10 , 1009 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 670053738,
+} nanoseconds
+4.Factors of 10090 are [
+    10,
+    1009,
+] 
+Factor point located : 5 , 2018 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 670268079,
+} nanoseconds
+4.Factors of 10090 are [
+    5,
+    2018,
+] 
+Parallel Rasterization phase of factoring 10090 was completed in (nanoseconds): 1.320475ms 
+Factorization of 10090 was completed in (nanoseconds): 1.386756ms 
+Factorization of 10091 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 670622168,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10091 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 670703251,
+} nanoseconds
+4.Factors of 10091 are [
+    10091,
+    1,
+] 
+Parallel Rasterization phase of factoring 10091 was completed in (nanoseconds): 725.916µs 
+Factorization of 10091 was completed in (nanoseconds): 792.207µs 
+Factorization of 10092 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 671428445,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10092 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 671521661,
+} nanoseconds
+4.Factors of 10092 are [
+    10092,
+    1,
+] 
+Factor point located : 5046 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 671631382,
+} nanoseconds
+4.Factors of 10092 are [
+    5046,
+    2,
+] 
+Factor point located : 3364 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 671732980,
+} nanoseconds
+4.Factors of 10092 are [
+    3364,
+    3,
+] 
+Factor point located : 2523 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 671835572,
+} nanoseconds
+4.Factors of 10092 are [
+    2523,
+    4,
+] 
+Factor point located : 1682 , 6 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 671942119,
+} nanoseconds
+4.Factors of 10092 are [
+    1682,
+    6,
+] 
+Factor point located : 841 , 12 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 672045918,
+} nanoseconds
+4.Factors of 10092 are [
+    841,
+    12,
+] 
+Factor point located : 348 , 29 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 672169796,
+} nanoseconds
+4.Factors of 10092 are [
+    348,
+    29,
+] 
+Factor point located : 174 , 58 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 672278241,
+} nanoseconds
+4.Factors of 10092 are [
+    174,
+    58,
+] 
+Factor point located : 116 , 87 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 672388055,
+} nanoseconds
+4.Factors of 10092 are [
+    116,
+    87,
+] 
+Factor point located : 87 , 116 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 672496748,
+} nanoseconds
+4.Factors of 10092 are [
+    87,
+    116,
+] 
+Factor point located : 4 , 2523 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 671536565,
+} nanoseconds
+4.Factors of 10092 are [
+    4,
+    2523,
+] 
+Factor point located : 2 , 5046 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 671530211,
+} nanoseconds
+4.Factors of 10092 are [
+    2,
+    5046,
+] 
+Factor point located : 58 , 174 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 672608000,
+} nanoseconds
+4.Factors of 10092 are [
+    58,
+    174,
+] 
+Factor point located : 3 , 3364 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 672904407,
+} nanoseconds
+4.Factors of 10092 are [
+    3,
+    3364,
+] 
+Factor point located : 6 , 1682 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 672904920,
+} nanoseconds
+4.Factors of 10092 are [
+    6,
+    1682,
+] 
+Factor point located : 29 , 348 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 673224427,
+} nanoseconds
+4.Factors of 10092 are [
+    29,
+    348,
+] 
+Factor point located : 12 , 841 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 673445950,
+} nanoseconds
+4.Factors of 10092 are [
+    12,
+    841,
+] 
+Parallel Rasterization phase of factoring 10092 was completed in (nanoseconds): 2.390169ms 
+Factorization of 10092 was completed in (nanoseconds): 2.455875ms 
+Factorization of 10093 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 673898359,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10093 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 673980906,
+} nanoseconds
+4.Factors of 10093 are [
+    10093,
+    1,
+] 
+Parallel Rasterization phase of factoring 10093 was completed in (nanoseconds): 846.711µs 
+Factorization of 10093 was completed in (nanoseconds): 913.037µs 
+Factorization of 10094 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 674825847,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10094 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 674906065,
+} nanoseconds
+4.Factors of 10094 are [
+    10094,
+    1,
+] 
+Factor point located : 5047 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 675012683,
+} nanoseconds
+4.Factors of 10094 are [
+    5047,
+    2,
+] 
+Factor point located : 1442 , 7 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 675116825,
+} nanoseconds
+4.Factors of 10094 are [
+    1442,
+    7,
+] 
+Factor point located : 721 , 14 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 675220323,
+} nanoseconds
+4.Factors of 10094 are [
+    721,
+    14,
+] 
+Factor point located : 206 , 49 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 675330722,
+} nanoseconds
+4.Factors of 10094 are [
+    206,
+    49,
+] 
+Factor point located : 2 , 5047 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 674916894,
+} nanoseconds
+4.Factors of 10094 are [
+    2,
+    5047,
+] 
+Factor point located : 7 , 1442 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 675588223,
+} nanoseconds
+4.Factors of 10094 are [
+    7,
+    1442,
+] 
+Factor point located : 103 , 98 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 675706822,
+} nanoseconds
+4.Factors of 10094 are [
+    103,
+    98,
+] 
+Factor point located : 98 , 103 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 675805626,
+} nanoseconds
+4.Factors of 10094 are [
+    98,
+    103,
+] 
+Factor point located : 49 , 206 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 675949329,
+} nanoseconds
+4.Factors of 10094 are [
+    49,
+    206,
+] 
+Factor point located : 14 , 721 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 676108138,
+} nanoseconds
+4.Factors of 10094 are [
+    14,
+    721,
+] 
+Parallel Rasterization phase of factoring 10094 was completed in (nanoseconds): 1.592586ms 
+Factorization of 10094 was completed in (nanoseconds): 1.660041ms 
+Factorization of 10095 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 676501622,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10095 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 676591986,
+} nanoseconds
+4.Factors of 10095 are [
+    10095,
+    1,
+] 
+Factor point located : 3365 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 676703551,
+} nanoseconds
+4.Factors of 10095 are [
+    3365,
+    3,
+] 
+Factor point located : 2019 , 5 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 676810046,
+} nanoseconds
+4.Factors of 10095 are [
+    2019,
+    5,
+] 
+Factor point located : 673 , 15 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 676924857,
+} nanoseconds
+4.Factors of 10095 are [
+    673,
+    15,
+] 
+Factor point located : 3 , 3365 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 676814491,
+} nanoseconds
+4.Factors of 10095 are [
+    3,
+    3365,
+] 
+Factor point located : 15 , 673 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 677315650,
+} nanoseconds
+4.Factors of 10095 are [
+    15,
+    673,
+] 
+Factor point located : 5 , 2019 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 677558355,
+} nanoseconds
+4.Factors of 10095 are [
+    5,
+    2019,
+] 
+Parallel Rasterization phase of factoring 10095 was completed in (nanoseconds): 1.323082ms 
+Factorization of 10095 was completed in (nanoseconds): 1.396369ms 
+Factorization of 10096 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 677913684,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10096 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 678010567,
+} nanoseconds
+4.Factors of 10096 are [
+    10096,
+    1,
+] 
+Factor point located : 5048 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 678128494,
+} nanoseconds
+4.Factors of 10096 are [
+    5048,
+    2,
+] 
+Factor point located : 2524 , 4 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 678241929,
+} nanoseconds
+4.Factors of 10096 are [
+    2524,
+    4,
+] 
+Factor point located : 1262 , 8 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 678356616,
+} nanoseconds
+4.Factors of 10096 are [
+    1262,
+    8,
+] 
+Factor point located : 631 , 16 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 678472199,
+} nanoseconds
+4.Factors of 10096 are [
+    631,
+    16,
+] 
+Factor point located : 2 , 5048 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 678021361,
+} nanoseconds
+4.Factors of 10096 are [
+    2,
+    5048,
+] 
+Factor point located : 8 , 1262 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 678027130,
+} nanoseconds
+4.Factors of 10096 are [
+    8,
+    1262,
+] 
+Factor point located : 4 , 2524 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 678025552,
+} nanoseconds
+4.Factors of 10096 are [
+    4,
+    2524,
+] 
+Factor point located : 16 , 631 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 679144982,
+} nanoseconds
+4.Factors of 10096 are [
+    16,
+    631,
+] 
+Parallel Rasterization phase of factoring 10096 was completed in (nanoseconds): 1.972793ms 
+Factorization of 10096 was completed in (nanoseconds): 2.048934ms 
+Factorization of 10097 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 679978830,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10097 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 680071607,
+} nanoseconds
+4.Factors of 10097 are [
+    10097,
+    1,
+] 
+Factor point located : 439 , 23 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 680195209,
+} nanoseconds
+4.Factors of 10097 are [
+    439,
+    23,
+] 
+Factor point located : 23 , 439 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 680386998,
+} nanoseconds
+4.Factors of 10097 are [
+    23,
+    439,
+] 
+Parallel Rasterization phase of factoring 10097 was completed in (nanoseconds): 1.067484ms 
+Factorization of 10097 was completed in (nanoseconds): 1.162205ms 
+Factorization of 10098 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 681157155,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10098 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 681248195,
+} nanoseconds
+4.Factors of 10098 are [
+    10098,
+    1,
+] 
+Factor point located : 5049 , 2 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 681368958,
+} nanoseconds
+4.Factors of 10098 are [
+    5049,
+    2,
+] 
+Factor point located : 3366 , 3 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 681484217,
+} nanoseconds
+4.Factors of 10098 are [
+    3366,
+    3,
+] 
+Factor point located : 1683 , 6 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 681599162,
+} nanoseconds
+4.Factors of 10098 are [
+    1683,
+    6,
+] 
+Factor point located : 1122 , 9 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 681712955,
+} nanoseconds
+4.Factors of 10098 are [
+    1122,
+    9,
+] 
+Factor point located : 918 , 11 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 681826974,
+} nanoseconds
+4.Factors of 10098 are [
+    918,
+    11,
+] 
+Factor point located : 594 , 17 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 681946662,
+} nanoseconds
+4.Factors of 10098 are [
+    594,
+    17,
+] 
+Factor point located : 561 , 18 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 682060689,
+} nanoseconds
+4.Factors of 10098 are [
+    561,
+    18,
+] 
+Factor point located : 459 , 22 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 682175428,
+} nanoseconds
+4.Factors of 10098 are [
+    459,
+    22,
+] 
+Factor point located : 374 , 27 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 682290311,
+} nanoseconds
+4.Factors of 10098 are [
+    374,
+    27,
+] 
+Factor point located : 306 , 33 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 682405958,
+} nanoseconds
+4.Factors of 10098 are [
+    306,
+    33,
+] 
+Factor point located : 297 , 34 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 682520031,
+} nanoseconds
+4.Factors of 10098 are [
+    297,
+    34,
+] 
+Factor point located : 198 , 51 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 682637985,
+} nanoseconds
+4.Factors of 10098 are [
+    198,
+    51,
+] 
+Factor point located : 187 , 54 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 682752007,
+} nanoseconds
+4.Factors of 10098 are [
+    187,
+    54,
+] 
+Factor point located : 153 , 66 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 682869453,
+} nanoseconds
+4.Factors of 10098 are [
+    153,
+    66,
+] 
+Factor point located : 102 , 99 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 682991722,
+} nanoseconds
+4.Factors of 10098 are [
+    102,
+    99,
+] 
+Factor point located : 99 , 102 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 683106134,
+} nanoseconds
+4.Factors of 10098 are [
+    99,
+    102,
+] 
+Factor point located : 2 , 5049 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 681258577,
+} nanoseconds
+4.Factors of 10098 are [
+    2,
+    5049,
+] 
+Factor point located : 66 , 153 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 683367098,
+} nanoseconds
+4.Factors of 10098 are [
+    66,
+    153,
+] 
+Factor point located : 54 , 187 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 683492579,
+} nanoseconds
+4.Factors of 10098 are [
+    54,
+    187,
+] 
+Factor point located : 51 , 198 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 683628620,
+} nanoseconds
+4.Factors of 10098 are [
+    51,
+    198,
+] 
+Factor point located : 34 , 297 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 683761850,
+} nanoseconds
+4.Factors of 10098 are [
+    34,
+    297,
+] 
+Factor point located : 33 , 306 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 683877186,
+} nanoseconds
+4.Factors of 10098 are [
+    33,
+    306,
+] 
+Factor point located : 3 , 3366 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 681487822,
+} nanoseconds
+4.Factors of 10098 are [
+    3,
+    3366,
+] 
+Factor point located : 27 , 374 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 684142034,
+} nanoseconds
+4.Factors of 10098 are [
+    27,
+    374,
+] 
+Factor point located : 22 , 459 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 684280987,
+} nanoseconds
+4.Factors of 10098 are [
+    22,
+    459,
+] 
+Factor point located : 18 , 561 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 684400894,
+} nanoseconds
+4.Factors of 10098 are [
+    18,
+    561,
+] 
+Factor point located : 17 , 594 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 684509643,
+} nanoseconds
+4.Factors of 10098 are [
+    17,
+    594,
+] 
+Factor point located : 6 , 1683 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 683572598,
+} nanoseconds
+4.Factors of 10098 are [
+    6,
+    1683,
+] 
+Factor point located : 9 , 1122 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 684442136,
+} nanoseconds
+4.Factors of 10098 are [
+    9,
+    1122,
+] 
+Factor point located : 11 , 918 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 684304443,
+} nanoseconds
+4.Factors of 10098 are [
+    11,
+    918,
+] 
+Parallel Rasterization phase of factoring 10098 was completed in (nanoseconds): 3.975234ms 
+Factorization of 10098 was completed in (nanoseconds): 4.046317ms 
+Factorization of 10099 began in (nanoseconds): SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 685218084,
+} 
+Size of integer to be factorized (in bits): 13
+Factor point located : 10099 , 1 at SystemTime {
+    tv_sec: 1716892845,
+    tv_nsec: 685301650,
+} nanoseconds
+4.Factors of 10099 are [
+    10099,
+    1,
+] 
+Parallel Rasterization phase of factoring 10099 was completed in (nanoseconds): 806.564µs 
+Factorization of 10099 was completed in (nanoseconds): 873.305µs 

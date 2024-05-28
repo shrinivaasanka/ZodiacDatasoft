@@ -91,3 +91,15 @@ References:
 ----------
 1446.6 Rust Rayon Iterator ParallelBridge - par_bridge() - https://docs.rs/rayon/latest/rayon/iter/trait.ParallelBridge.html - "..... This creates a “bridge” from a sequential iterator to a parallel one, by distributing its items across the Rayon thread pool. This has the advantage of being able to parallelize just about anything, but the resulting ParallelIterator can be less efficient than if you started with par_iter instead. However, it can still be useful for iterators that are difficult to parallelize by other means, like channels or file or network I/O....."
 1446.7 Approximation of Prime omega functions - Big Omega and Little Omega - by Riemann Zeta Function, Dirichlet Series and Hardy-Wright summatory - https://en.wikipedia.org/wiki/Prime_omega_function
+
+----------------------------------------------------------------------------------------------------------------
+1519. (JIRA,THEORY and FEATURE) Computational Geometric Factorization - High Performance Computing implementation for Supercomputers - Rayon Parallel iterator Rasterization or rectification of hyperbolic arc and Factor point location in Rust- Sequential and Parallel versions - multiple consecutive integers - correction to loop range and some consecutive integers benchmarks - related to 1383,1384,1385 and all sections on Integer Factorization,Computational Geometry,Set Partitions-to-Tile Cover reduction by Lagranges Four Square Theorem and ILP,Primality Testing,RSA Semiprimes,Almost-Square Bounding Boxes in Large Scale Visual Recognition,Pell's Equation,Brahmagupta's Chakravala,Approximate Factoring by Newton-Raphson Rayshooting queries,Algebraic Geometry of Computational Geometric Factorization,Quantum computation and Derandomization of BQP Factorization by Condorcet Jury Theorem Majority-BQPVoterSAT boolean composition - 28 May 2024 
+----------------------------------------------------------------------------------------------------------------
+1519.1 course_material/Programming/Rust/rasterization/Cargo.lock has been automatically regenerated after adding bigdecimal::BigDecimal dependecy to Cargo.toml
+1519.2 course_material/Programming/Rust/rasterization/src/main.rs has been updated to correct the loop range 1..range to 0..range as first integer was skipped. 
+1519.3 BigDecimal datatype was tried by replacing i64 datatype throughout (https://docs.rs/bigdecimal/latest/bigdecimal/) to investigate its compatibility with Rust Rayon ParallelIterator and Rayon ParallelIterator.foreach(|item,iter|) doesn't yet support BigDecimal causing a compilation error. 
+1519.4 Few consecutive integer ranges for small and big integers have been factorized and time duration benchmarks are logged to(logs for 59 bits integer - all 9s - are truncated to print first few hundred factors):
+	rasterization/src/logs/rasterization.log.28May2024
+	rasterization/src/logs/rasterization.log2.28May2024
+	rasterization/src/logs/rasterization.log3.28May2024
+1519.5 This update resolves JIRA issue https://krishnairesearch.atlassian.net/browse/NEUR-39 

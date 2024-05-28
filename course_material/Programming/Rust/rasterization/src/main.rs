@@ -25,7 +25,7 @@ fn pariter64bits() {
 fn factorize_multipleintegers(num_fact:i64,range:i64,rasterization:String) {
     let mut i = 0;
     let mut runtimes = Vec::new();
-    for i in 1..range {
+    for i in 0..range {
         let mut systemtimebegin = SystemTime::now();
         let mut number_to_factorize = num_fact+i;
         let mut raster = rasterization.clone();
@@ -49,7 +49,7 @@ fn rasterize_hyperbolic_arc(num_fact: i64,rasterization: String) -> i64
         y1.foreach(|item,iter| {
             let mut xtile_start = num_fact/item;
             let mut xtile_end = num_fact/(item+1);
-            //println!("tile segment {item}: from {xtile_start} to {xtile_end}");
+            println!("tile segment {item}: from {xtile_start} to {xtile_end}");
             binary_search(num_fact,xtile_end,item,xtile_start,item);
         });
         let systemtimeend = SystemTime::now();
@@ -107,6 +107,7 @@ fn binary_search(num_fact:i64,xl:i64,yl:i64,xr:i64,yr:i64) -> Vec<i64>
         if xl_clone==xr_clone
         {
              //std::process::exit(1);
+             //println!("1.Factors of {num_fact} are {:#?} ",factors);
              return factors;
         }
         if factorcandidate==num_fact
@@ -114,6 +115,7 @@ fn binary_search(num_fact:i64,xl:i64,yl:i64,xr:i64,yr:i64) -> Vec<i64>
              let systemtimenow = SystemTime::now();
              println!("Factor point located : {midpoint} , {yl_clone} at {:#?} nanoseconds",systemtimenow);
              factors.push(factorcandidate);
+             println!("2.Factors of {num_fact} are {:#?} ",factors);
         }
         if xl_clone*yl_clone==num_fact
         {
@@ -121,6 +123,7 @@ fn binary_search(num_fact:i64,xl:i64,yl:i64,xr:i64,yr:i64) -> Vec<i64>
              println!("Factor point located : {xl_clone} , {yl_clone} at {:#?} nanoseconds",systemtimenow);
              factors.push(xl_clone);
              factors.push(yl_clone);
+             println!("3.Factors of {num_fact} are {:#?} ",factors);
         }
         if xr_clone*yr_clone==num_fact
         {
@@ -129,6 +132,7 @@ fn binary_search(num_fact:i64,xl:i64,yl:i64,xr:i64,yr:i64) -> Vec<i64>
              println!("Factor point located : {xr_clone} , {yr_clone} at {:#?} nanoseconds",systemtimenow);
              factors.push(xr_clone);
              factors.push(yr_clone);
+             println!("4.Factors of {num_fact} are {:#?} ",factors);
         }
         if factorcandidate > num_fact
         {
@@ -143,5 +147,6 @@ fn binary_search(num_fact:i64,xl:i64,yl:i64,xr:i64,yr:i64) -> Vec<i64>
         //println!("===============================================================");
     }
     stdout().flush().unwrap();
+    //println!("5.Factors of {num_fact} are {:#?} ",factors);
     return factors;
 }
