@@ -1,0 +1,8 @@
+1.Allocating array on stack of size:30
+dynarray1[0]=1
+2.Allocating array on heap of size:30
+dynarray2[0]=1
+3.Allocating std::array of type int and size 30
+dynamic_std_array() fold expression .... 
+dynarray6[0]=0
+number of elements in dynarray6=30
