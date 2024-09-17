@@ -1,0 +1,25 @@
+loop(): *count = 10 
+loop(): *variable = 1000 
+loop2(): count = 9 
+loop2(): *variable = 1001 
+loop(): *count = 8 
+loop(): *variable = 1002 
+loop2(): count = 7 
+loop2(): *variable = 1003 
+loop(): *count = 6 
+loop(): *variable = 1004 
+loop2(): count = 5 
+loop2(): *variable = 1005 
+loop(): *count = 4 
+loop(): *variable = 1006 
+loop2(): count = 3 
+loop2(): *variable = 1007 
+loop(): *count = 2 
+loop(): *variable = 1008 
+loop2(): count = 1 
+loop2(): *variable = 1009 
+loop(): *count = 0 
+loop(): *variable = 1010 
+loop(): returning *variable = 1010 
+count decremented after coroutine looping : 0
+variable incremented after coroutine looping : 1010
