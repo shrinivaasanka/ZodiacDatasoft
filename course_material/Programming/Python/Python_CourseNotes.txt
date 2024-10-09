@@ -557,3 +557,13 @@ arrays: ['a', 'b', 'c', 'd', 'e']  and  ['a', 'b', 'c', 'd', 'e']  are equal aft
 Updating a container within loop - Python 3.12 code example - 3 May 2024
 ------------------------------------------------------------------------------------------------------------------------------
 Code example code/DynamicLoopUpdate.py implements a function update_container_within_loop() which updates either a list or 2-dimensional dictionary within a loop. Updating a list is deletion of element in loop while for 2D dictionary every array value is multiplied by 2 which is equivalent to concatenating the array by a copy of itself (x*2 = x + x) similar to NumPy array broadcast. Logs code/logs/DynamicLoopUpdate.log.3May2024 walkthrough the container updates.
+
+-----------------------------------------------------------------------------------------------------------------------------
+Dictionary split, update and merge - Python 3.12 dictionary merge operator - 9 October 2024
+-----------------------------------------------------------------------------------------------------------------------------
+New code example code/DynamicDictUpdate.py demonstrates (*) splitting of a python dictionary D of size 5 mapping integer to arrays into 2 dictionaries D1 and D2 of equal size (*) splitting the last key of D1 into two keys by halving the value array (*) Updating the keys of D2 by incrementing (*) merging D1 and D2 back again by dict merge operator to get a larger dictionary D of size 6. This code example is the python equivalent of text editor puzzle in course_material/ComputerScienceMiscellaneous/ComputerScienceMiscellaneous_CourseNotes.txt in following commits:
+	https://github.com/shrinivaasanka/Grafit/commit/cc13b3f1363a3fee1482564379218bdca54e4f24
+	https://gitlab.com/shrinivaasanka/Grafit/-/commit/eb3e3013fe8c878fa3ee72e461627e292edc7fc6
+	https://sourceforge.net/u/ka_shrinivaasan/Grafit/ci/fcc02855c5479887f6d52490a09690b8535b57d7/
+Logs logs/DynamicDictUpdate.log.9October2024 show contents of dictionaries D,D1,D2 before and after split,insertion and merger. List comprehension for incrementing keys of D2 is of linear time.
+
